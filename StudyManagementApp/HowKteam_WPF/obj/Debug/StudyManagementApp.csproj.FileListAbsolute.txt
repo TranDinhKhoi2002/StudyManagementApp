@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\bin\Debug\HowKteam_WPF.exe.config
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\bin\Debug\HowKteam_WPF.exe
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\bin\Debug\HowKteam_WPF.pdb
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\StudyManagementApp.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\App.g.cs
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF_MarkupCompile.cache
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF_MarkupCompile.lref
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\MainWindow.baml
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF.g.resources
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF.Properties.Resources.resources
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\StudyManagementApp.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\StudyManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF.exe
+C:\Users\Admin\source\repos\HowKteam_WPF\HowKteam_WPF\obj\Debug\HowKteam_WPF.pdb
