@@ -1,0 +1,11 @@
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.exe.config
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.exe
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.pdb
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csprojAssemblyReference.cache
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Properties.Resources.resources
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Signup.resources
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.GenerateResource.cache
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.exe
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.pdb
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Login.resources

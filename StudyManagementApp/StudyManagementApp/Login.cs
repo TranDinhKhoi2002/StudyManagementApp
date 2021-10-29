@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace StudyManagementApp
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            Signup frmSignup = new Signup();
+            frmSignup.Show(this);
+
+            this.Hide();
         }
     }
 }
