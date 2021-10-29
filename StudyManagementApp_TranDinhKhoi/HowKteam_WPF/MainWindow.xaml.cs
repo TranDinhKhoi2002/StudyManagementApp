@@ -64,5 +64,14 @@ namespace HowKteam_WPF
                 MessageBox.Show(excpt.Message);
             }
         }
+
+        private void BtnSignup_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Signup signupWindow = new Signup();
+            signupWindow.Owner = this;
+
+            signupWindow.Show();
+        }
     }
 }

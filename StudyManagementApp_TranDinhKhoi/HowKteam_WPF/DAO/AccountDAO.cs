@@ -34,5 +34,14 @@ namespace HowKteam_WPF.DAO
 
             return result.Rows.Count > 0;
         }
+
+        public bool Signup(string userName, string passWord)
+        {
+            string query = "USP_Signup @userName , @passWord";
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passWord });
+
+            return result > 0;
+        }
     }
 }

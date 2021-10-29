@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HowKteam_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation='CenterScreen'>
     <Grid x:Name="myGrid" Background="#343a40">
         <Label HorizontalAlignment="Center" FontSize="30" Foreground="White" >Learning is the eye of the mind</Label>
 
@@ -16,6 +16,6 @@
         <TextBox x:Name="txbUserName" Margin="94,248,446,137" Text="User Name" Width="252" TextAlignment="Center" FontSize="16" Background="#FFCCCCCC" GotFocus="TextBox_GotFocus"/>
         <PasswordBox x:Name="passWordBox" Margin="447,248,93,137" Background="#FFCCCCCC" PasswordChar="*" FontSize="16"/>
         <Button Margin="213,306,415,55" Background="#FF2C9C41" Foreground="White" FontSize="20" Click="Button_Click">Sign-in</Button>
-        <Button Margin="404,306,224,55"  Foreground="White"  FontSize="20" Background="#FFBB6224">Sign-up</Button>
+        <Button x:Name="btnSignup" Margin="404,306,224,55"  Foreground="White"  FontSize="20" Background="#FFBB6224" Click="BtnSignup_Click">Sign-up</Button>
     </Grid>
 </Window>
