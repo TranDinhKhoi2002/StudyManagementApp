@@ -31,8 +31,8 @@ namespace StudyManagementApp
                     if (AccountDAO.Instance.Signup(username, password) == true)
                     {
                         MessageBox.Show("Sign-up successfully!");
+                        Owner.Show();
                         this.Close();
-                        this.Owner.Show();
                     }
                     else
                     {
