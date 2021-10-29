@@ -13,11 +13,11 @@ namespace StudyManagementApp
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "")
+            if (txtUsername.Text == "Username")
                 MessageBox.Show("Username can't be blank!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else if (txtPassword.Text == "")
+            else if (txtPassword.Text == "Password")
                 MessageBox.Show("Password can't be blank!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else if (txtRepassword.Text == "")
+            else if (txtRepassword.Text == "Password")
                 MessageBox.Show("RePassword can't be blank!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else if (txtPassword.Text != txtRepassword.Text)
                 MessageBox.Show("Re-Password don't match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
