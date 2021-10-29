@@ -117,8 +117,8 @@
             // 
             // picbxLogo
             // 
-            this.picbxLogo.ImageLocation = "C:\\Users\\admin\\Documents\\Github\\StudyManagementApp\\StudyManagementApp\\StudyManage" +
-    "mentApp\\Resources\\Images\\Logo.png";
+
+            this.picbxLogo.ImageLocation= System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "..\\..\\Resources\\Images\\Logo.png");
             this.picbxLogo.Location = new System.Drawing.Point(123, 29);
             this.picbxLogo.Name = "picbxLogo";
             this.picbxLogo.Size = new System.Drawing.Size(100, 100);

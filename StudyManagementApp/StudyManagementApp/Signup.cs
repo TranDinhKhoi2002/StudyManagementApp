@@ -34,22 +34,23 @@ namespace StudyManagementApp
 
                     if (AccountDAO.Instance.Signup(username, password) == true)
                     {
-                        MessageBox.Show("Sign-up successfully!");
+                        lbInstruction.Text = "Sign-up successfully!";
                         Owner.Show();
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("Sign-up fail!");
+                        lbInstruction.Text = "Username existed, try another one!";
+
                     }
                 }
                 catch (System.Data.SqlClient.SqlException)
                 {
-                    MessageBox.Show("Sign-up fail");
+                    lbInstruction.Text = "Sign-up fail!";
                 }
                 catch (Exception exception)
                 {
-                    MessageBox.Show("Exception: " + exception.ToString());
+                    lbInstruction.Text = "Exception: " + exception.ToString();
                 }
             }
         }
