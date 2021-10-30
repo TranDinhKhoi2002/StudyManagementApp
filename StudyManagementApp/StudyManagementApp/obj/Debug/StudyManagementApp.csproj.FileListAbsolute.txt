@@ -9,3 +9,15 @@ C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManag
 C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.exe
 C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.pdb
 C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Login.resources
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.exe.config
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.exe
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\StudyManagementApp.pdb
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Login.resources
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Properties.Resources.resources
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.Signup.resources
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.GenerateResource.cache
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.exe
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.pdb
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.AssemblyReference.cache
+C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.UserControls.RoundedCornerTextBox.resources

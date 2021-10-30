@@ -62,6 +62,15 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\RoundedCornerButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\RoundedCornerTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RoundedCornerTextBox.Designer.cs">
+      <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -73,9 +82,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RoundedCornerTextBox.resx">
+      <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,7 +107,15 @@
     <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Images\about.png" />
+    <Content Include="Resources\Images\clicked about.png" />
+    <Content Include="Resources\Images\clicked help.png" />
+    <Content Include="Resources\Images\clicked home.png" />
+    <Content Include="Resources\Images\help.png" />
+    <Content Include="Resources\Images\home.png" />
     <Content Include="Resources\Images\Logo.png" />
+    <None Include="Resources\Images\Message_small.png" />
+    <None Include="Resources\Images\message_command.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
