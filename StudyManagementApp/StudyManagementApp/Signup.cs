@@ -39,15 +39,10 @@ namespace StudyManagementApp
                         Owner.Show();
                         this.Close();
                     }
-                    else
-                    {
-                        lbInstruction.Text = "Username existed, try another one!";
-
-                    }
                 }
                 catch (System.Data.SqlClient.SqlException)
                 {
-                    lbInstruction.Text = "Sign-up fail!";
+                    lbInstruction.Text = "Username existed, try another one!";
                 }
                 catch (Exception exception)
                 {
