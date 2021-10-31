@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudyManagementApp.DAO;
 
 namespace StudyManagementApp
 {
@@ -197,8 +198,37 @@ namespace StudyManagementApp
                 }
             }
         }
+
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
+                {
+                    MessageBox.Show("You have not entered user name or password", "Error login");
+                    return;
+                }
+
+                string userName = UsernameTextBox.Texts;
+                string passWord = PasswordTextBox.Texts;
+
+                if (AccountDAO.Instance.Login(userName, passWord))
+                {
+                    NotificationLabel.Text = "Login successfully!";
+                    
+                }
+                else
+                {
+                    NotificationLabel.Text = "User name or password is not correct";
+                }
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+            }
+        }
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
 
-       
+
     }
 }

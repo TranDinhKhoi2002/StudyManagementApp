@@ -28,10 +28,12 @@ namespace StudyManagementApp.DAO
 
         private DataProvider()
         {
-            string databaseDir = System.IO.Directory.GetCurrentDirectory();
-            databaseDir = databaseDir.Remove(databaseDir.IndexOf("bin\\Debug")) + "Database\\Database.mdf";
+            //string databaseDir = System.IO.Directory.GetCurrentDirectory();
+            //databaseDir = databaseDir.Remove(databaseDir.IndexOf("bin\\Debug")) + "Database\\Database.mdf";
 
-            connectionStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+databaseDir+";Integrated Security=True";
+            //connectionStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+databaseDir+";Integrated Security=True";
+
+            connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\Database\Database.mdf;Integrated Security=True;";
         }
 
         private string connectionStr;

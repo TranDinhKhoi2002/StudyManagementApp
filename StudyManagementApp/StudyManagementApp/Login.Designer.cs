@@ -35,11 +35,11 @@
             this.MiddlePanel = new System.Windows.Forms.Panel();
             this.TruyencamhungLabel = new System.Windows.Forms.Label();
             this.NotificationLabel = new System.Windows.Forms.Label();
-            this.SignInLogoPictureBox = new System.Windows.Forms.PictureBox();
             this.PasswordTextBox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.UsernameTextBox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.SignUpButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.SignInButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.SignInLogoPictureBox = new System.Windows.Forms.PictureBox();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.About)).BeginInit();
@@ -55,9 +55,10 @@
             this.BottomPanel.Controls.Add(this.About);
             this.BottomPanel.Controls.Add(this.Home);
             this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomPanel.Location = new System.Drawing.Point(0, 622);
+            this.BottomPanel.Location = new System.Drawing.Point(0, 405);
+            this.BottomPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Size = new System.Drawing.Size(1200, 70);
+            this.BottomPanel.Size = new System.Drawing.Size(800, 45);
             this.BottomPanel.TabIndex = 1;
             this.BottomPanel.SizeChanged += new System.EventHandler(this.BottomPanel_SizeChanged);
             // 
@@ -65,9 +66,10 @@
             // 
             this.Help.Image = global::StudyManagementApp.Properties.Resources.help;
             this.Help.InitialImage = global::StudyManagementApp.Properties.Resources.help;
-            this.Help.Location = new System.Drawing.Point(670, 5);
+            this.Help.Location = new System.Drawing.Point(447, 3);
+            this.Help.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(60, 60);
+            this.Help.Size = new System.Drawing.Size(40, 39);
             this.Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Help.TabIndex = 4;
             this.Help.TabStop = false;
@@ -77,9 +79,10 @@
             // 
             this.About.Image = global::StudyManagementApp.Properties.Resources.about;
             this.About.InitialImage = global::StudyManagementApp.Properties.Resources.about;
-            this.About.Location = new System.Drawing.Point(570, 5);
+            this.About.Location = new System.Drawing.Point(380, 3);
+            this.About.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(60, 60);
+            this.About.Size = new System.Drawing.Size(40, 39);
             this.About.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.About.TabIndex = 4;
             this.About.TabStop = false;
@@ -89,9 +92,10 @@
             // 
             this.Home.Image = global::StudyManagementApp.Properties.Resources.clicked_home;
             this.Home.InitialImage = global::StudyManagementApp.Properties.Resources.clicked_home;
-            this.Home.Location = new System.Drawing.Point(470, 5);
+            this.Home.Location = new System.Drawing.Point(313, 3);
+            this.Home.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(60, 60);
+            this.Home.Size = new System.Drawing.Size(40, 39);
             this.Home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Home.TabIndex = 4;
             this.Home.TabStop = false;
@@ -108,8 +112,9 @@
             this.MiddlePanel.Controls.Add(this.SignInLogoPictureBox);
             this.MiddlePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MiddlePanel.Location = new System.Drawing.Point(0, 0);
+            this.MiddlePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MiddlePanel.Name = "MiddlePanel";
-            this.MiddlePanel.Size = new System.Drawing.Size(1200, 622);
+            this.MiddlePanel.Size = new System.Drawing.Size(800, 405);
             this.MiddlePanel.TabIndex = 3;
             this.MiddlePanel.SizeChanged += new System.EventHandler(this.MiddlePanel_SizeChanged);
             // 
@@ -120,9 +125,10 @@
             this.TruyencamhungLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.TruyencamhungLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TruyencamhungLabel.Location = new System.Drawing.Point(0, 0);
+            this.TruyencamhungLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TruyencamhungLabel.Name = "TruyencamhungLabel";
-            this.TruyencamhungLabel.Padding = new System.Windows.Forms.Padding(0, 7, 0, 7);
-            this.TruyencamhungLabel.Size = new System.Drawing.Size(1200, 108);
+            this.TruyencamhungLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.TruyencamhungLabel.Size = new System.Drawing.Size(800, 70);
             this.TruyencamhungLabel.TabIndex = 5;
             this.TruyencamhungLabel.Text = "Learning is the eye of the mind";
             this.TruyencamhungLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,23 +141,14 @@
             this.NotificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NotificationLabel.Image = global::StudyManagementApp.Properties.Resources.Message_small;
             this.NotificationLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NotificationLabel.Location = new System.Drawing.Point(414, 337);
+            this.NotificationLabel.Location = new System.Drawing.Point(276, 219);
+            this.NotificationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NotificationLabel.Name = "NotificationLabel";
-            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.NotificationLabel.Size = new System.Drawing.Size(372, 48);
+            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.NotificationLabel.Size = new System.Drawing.Size(249, 32);
             this.NotificationLabel.TabIndex = 5;
             this.NotificationLabel.Text = "Sign-in for future";
             this.NotificationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // SignInLogoPictureBox
-            // 
-            this.SignInLogoPictureBox.Image = global::StudyManagementApp.Properties.Resources.Logo;
-            this.SignInLogoPictureBox.Location = new System.Drawing.Point(502, 126);
-            this.SignInLogoPictureBox.Name = "SignInLogoPictureBox";
-            this.SignInLogoPictureBox.Size = new System.Drawing.Size(196, 180);
-            this.SignInLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SignInLogoPictureBox.TabIndex = 0;
-            this.SignInLogoPictureBox.TabStop = false;
             // 
             // PasswordTextBox
             // 
@@ -162,15 +159,14 @@
             this.PasswordTextBox.BorderSize = 2;
             this.PasswordTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(670, 421);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.PasswordTextBox.Location = new System.Drawing.Point(447, 274);
             this.PasswordTextBox.Multiline = false;
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.PasswordTextBox.PasswordChar = true;
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
-            this.PasswordTextBox.Size = new System.Drawing.Size(350, 51);
+            this.PasswordTextBox.Size = new System.Drawing.Size(233, 35);
             this.PasswordTextBox.TabIndex = 3;
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
@@ -184,15 +180,14 @@
             this.UsernameTextBox.BorderSize = 2;
             this.UsernameTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.UsernameTextBox.Location = new System.Drawing.Point(180, 421);
-            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.UsernameTextBox.Location = new System.Drawing.Point(120, 274);
             this.UsernameTextBox.Multiline = false;
             this.UsernameTextBox.Name = "UsernameTextBox";
-            this.UsernameTextBox.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.UsernameTextBox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.UsernameTextBox.PasswordChar = false;
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
-            this.UsernameTextBox.Size = new System.Drawing.Size(350, 51);
+            this.UsernameTextBox.Size = new System.Drawing.Size(233, 35);
             this.UsernameTextBox.TabIndex = 3;
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;
@@ -207,9 +202,10 @@
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SignUpButton.Location = new System.Drawing.Point(641, 512);
+            this.SignUpButton.Location = new System.Drawing.Point(427, 333);
+            this.SignUpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(169, 59);
+            this.SignUpButton.Size = new System.Drawing.Size(113, 38);
             this.SignUpButton.TabIndex = 2;
             this.SignUpButton.Text = "Sign-up";
             this.SignUpButton.UseVisualStyleBackColor = false;
@@ -225,22 +221,34 @@
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SignInButton.Location = new System.Drawing.Point(391, 512);
+            this.SignInButton.Location = new System.Drawing.Point(261, 333);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(169, 59);
+            this.SignInButton.Size = new System.Drawing.Size(113, 38);
             this.SignInButton.TabIndex = 2;
             this.SignInButton.Text = "Sign-in";
             this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            // 
+            // SignInLogoPictureBox
+            // 
+            this.SignInLogoPictureBox.Image = global::StudyManagementApp.Properties.Resources.Logo;
+            this.SignInLogoPictureBox.Location = new System.Drawing.Point(335, 82);
+            this.SignInLogoPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SignInLogoPictureBox.Name = "SignInLogoPictureBox";
+            this.SignInLogoPictureBox.Size = new System.Drawing.Size(131, 117);
+            this.SignInLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SignInLogoPictureBox.TabIndex = 0;
+            this.SignInLogoPictureBox.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MiddlePanel);
             this.Controls.Add(this.BottomPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
