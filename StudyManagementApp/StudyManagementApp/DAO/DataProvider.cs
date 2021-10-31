@@ -26,9 +26,16 @@ namespace StudyManagementApp.DAO
             private set => instance = value; 
         }
 
-        private DataProvider() { }
+        private DataProvider()
+        {
+            string databaseDir = System.IO.Directory.GetCurrentDirectory();
+            databaseDir = databaseDir.Remove(databaseDir.IndexOf("bin\\Debug")) + "Database\\Database.mdf";
 
-        private string connectionStr = "Data Source=ADMIN;Initial Catalog=StudyManagementApp;Integrated Security=True";
+            connectionStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+databaseDir+";Integrated Security=True";
+        }
+
+        private string connectionStr;
+        //private string connectionStr = "Data Source=ADMIN;Initial Catalog=StudyManagementApp;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameters = null)
         {

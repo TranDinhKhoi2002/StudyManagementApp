@@ -21,3 +21,6 @@ C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\ob
 C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.pdb
 C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.csproj.AssemblyReference.cache
 C:\Users\Huy\Desktop\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.UserControls.RoundedCornerTextBox.resources
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\Database\Database.mdf
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\bin\Debug\Database\Database_log.ldf
+C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\obj\Debug\StudyManagementApp.UserControls.RoundedCornerTextBox.resources
