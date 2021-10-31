@@ -33,6 +33,7 @@ namespace StudyManagementApp
             Help.Location = new Point(BottomPanel.Width / 2 + 70, 5);
 
             SignInLogoPictureBox.Location = new Point(MiddlePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
+            NotificationLabel.Size = new Size(350, 32);
             NotificationLabel.Location = new Point(MiddlePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
             UsernameTextBox.Location = new Point(MiddlePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
             PasswordTextBox.Location = new Point(MiddlePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
@@ -46,6 +47,35 @@ namespace StudyManagementApp
             Signup frmSignup = new Signup();
             frmSignup.ShowDialog(this);
         }
+        //Nhấn nút đăng nhập thì làm gì?
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
+                {
+                    NotificationLabel.Text = "Username and Password can't be blank";
+                    return;
+                }
+
+                string userName = UsernameTextBox.Texts;
+                string passWord = PasswordTextBox.Texts;
+
+                if (AccountDAO.Instance.Login(userName, passWord))
+                {
+                    NotificationLabel.Text = "Login successfully!";
+
+                }
+                else
+                {
+                    NotificationLabel.Text = "User name or password is not correct";
+                }
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+            }
+        }
 
 
         /*---------------------------------Căn chỉnh các control---------------------------------*/
@@ -53,7 +83,7 @@ namespace StudyManagementApp
         void AlignControls_Maximum()
         {
             SignInLogoPictureBox.Size = new Size(196, 180);
-            NotificationLabel.Size = new Size(372, 48);
+            NotificationLabel.Size = new Size(500, 48);
             NotificationLabel.Font = new Font("Agency FB", 23);
             UsernameTextBox.Size = new Size(350, 51);
             UsernameTextBox.Font = new Font("Agency FB", 25);
@@ -78,7 +108,7 @@ namespace StudyManagementApp
         void AlignControls_Non_Maximum()
         {
             SignInLogoPictureBox.Size = new Size(131, 117);
-            NotificationLabel.Size = new Size(249, 32);
+            NotificationLabel.Size = new Size(350, 32);
             NotificationLabel.Font = new Font("Agency FB", 15);
             UsernameTextBox.Size = new Size(233, 35);
             UsernameTextBox.Font = new Font("Agency FB", 15);
@@ -199,34 +229,7 @@ namespace StudyManagementApp
             }
         }
 
-        private void SignInButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
-                {
-                    MessageBox.Show("You have not entered user name or password", "Error login");
-                    return;
-                }
-
-                string userName = UsernameTextBox.Texts;
-                string passWord = PasswordTextBox.Texts;
-
-                if (AccountDAO.Instance.Login(userName, passWord))
-                {
-                    NotificationLabel.Text = "Login successfully!";
-                    
-                }
-                else
-                {
-                    NotificationLabel.Text = "User name or password is not correct";
-                }
-            }
-            catch (Exception excpt)
-            {
-                MessageBox.Show(excpt.Message);
-            }
-        }
+       
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
 
 
