@@ -20,8 +20,11 @@ namespace StudyManagementApp
 
             //Khởi tạo màu cho nền
             BottomPanel.BackColor = Color.FromArgb(55, 60, 63);
-            MiddlePanel.BackColor = Color.FromArgb(47, 52, 55);
-            
+            HomePanel.BackColor = Color.FromArgb(47, 52, 55);
+            AboutPanel.BackColor = Color.FromArgb(47, 52, 55);
+            HelpPanel.BackColor = Color.FromArgb(47, 52, 55);
+            //MiddlePanel.Visible = false;
+
         }
 
 
@@ -32,14 +35,17 @@ namespace StudyManagementApp
             About.Location = new Point(BottomPanel.Width / 2 - 30, 5);
             Help.Location = new Point(BottomPanel.Width / 2 + 70, 5);
 
-            SignInLogoPictureBox.Location = new Point(MiddlePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
+            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
             NotificationLabel.Size = new Size(350, 32);
-            NotificationLabel.Location = new Point(MiddlePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
-            UsernameTextBox.Location = new Point(MiddlePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            PasswordTextBox.Location = new Point(MiddlePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            SignInButton.Location = new Point(MiddlePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            SignUpButton.Location = new Point(MiddlePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
+            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
+            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
 
+
+            //Tạo random bộ câu truyền cảm hứng
+            TruyencamhungLabel.Text = GetTruyenCamHung();
         }
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
@@ -93,16 +99,17 @@ namespace StudyManagementApp
             SignInButton.Font = new Font("Agency FB", 27);
             SignUpButton.Size = new Size(169, 59);
             SignUpButton.Font = new Font("Agency FB", 27);
+            
 
             TruyencamhungLabel.Font = new Font("Agency FB", 50, FontStyle.Bold);
             TruyencamhungLabel.Height = 130;
 
-            SignInLogoPictureBox.Location = new Point(MiddlePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 22);
-            NotificationLabel.Location = new Point(MiddlePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 40);
-            UsernameTextBox.Location = new Point(MiddlePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
-            PasswordTextBox.Location = new Point(MiddlePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
-            SignInButton.Location = new Point(MiddlePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
-            SignUpButton.Location = new Point(MiddlePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
+            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 22);
+            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 40);
+            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
+            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
         }
         //Hàm chỉnh control lúc không maximum
         void AlignControls_Non_Maximum()
@@ -119,15 +126,17 @@ namespace StudyManagementApp
             SignUpButton.Size = new Size(113, 38);
             SignUpButton.Font = new Font("Agency FB", 17);
 
+
+
             TruyencamhungLabel.Font = new Font("Agency FB", 30, FontStyle.Bold);
             TruyencamhungLabel.Height = 70;
-
-            SignInLogoPictureBox.Location = new Point(MiddlePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
-            NotificationLabel.Location = new Point(MiddlePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
-            UsernameTextBox.Location = new Point(MiddlePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            PasswordTextBox.Location = new Point(MiddlePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            SignInButton.Location = new Point(MiddlePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            SignUpButton.Location = new Point(MiddlePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            
+            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
+            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
+            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
+            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
         }
         //middle panel lúc app maximum size lên sẽ gọi hàm gì? 
         private void MiddlePanel_SizeChanged(object sender, EventArgs e)
@@ -135,6 +144,7 @@ namespace StudyManagementApp
             if(WindowState==FormWindowState.Maximized)
             {
                 AlignControls_Maximum();
+                
             }
             else 
             {
@@ -169,21 +179,26 @@ namespace StudyManagementApp
         private void Home_Click(object sender, EventArgs e)
         {
             if (isHomeClick)
+            {
                 return;
+            }     
             else
             {
                 isHomeClick = true;
                 Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
+                    bunifuTransition1.HideSync(AboutPanel);
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
+                    bunifuTransition1.HideSync(HelpPanel);
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
+                bunifuTransition2.ShowSync(HomePanel);
             }
         }
         //Nhấn About thì làm gì?
@@ -197,14 +212,19 @@ namespace StudyManagementApp
                 About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
                 if (isHomeClick)
                 {
+                    
+                    bunifuTransition1.HideSync(HomePanel);
+
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isHelpClick)
                 {
+                    bunifuTransition1.HideSync(HelpPanel);
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
+                bunifuTransition2.ShowSync(AboutPanel);
             }
         }
         //Nhấn Help thì làm gì?
@@ -218,20 +238,69 @@ namespace StudyManagementApp
                 Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
                 if (isHomeClick)
                 {
+                    bunifuTransition1.HideSync(HomePanel);
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isAboutClick)
                 {
+                    bunifuTransition1.HideSync(AboutPanel);
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
+                bunifuTransition2.ShowSync(HelpPanel);
             }
         }
 
-       
+        private void Home_MouseHover(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void Home_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+        private void About_MouseHover(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void About_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+        private void Help_MouseHover(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Hand;
+        }
+
+        private void Help_MouseLeave(object sender, EventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+        }
+
+
+
+
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
 
 
+        string GetTruyenCamHung()
+        {
+            List<string> text = new List<string>();
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader(Application.StartupPath + "\\Resources\\Text\\truyencamhung.txt");
+            while((line=file.ReadLine()) != null)
+            {
+                text.Add(line);
+            }
+
+            Random r = new Random();
+            int t = r.Next(0, text.Count);
+            return text[t];
+        }
     }
 }
