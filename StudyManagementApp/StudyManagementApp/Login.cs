@@ -21,10 +21,15 @@ namespace StudyManagementApp
             //Khởi tạo màu cho nền
             BottomPanel.BackColor = Color.FromArgb(55, 60, 63);
             HomePanel.BackColor = Color.FromArgb(47, 52, 55);
-            AboutPanel.BackColor = Color.FromArgb(47, 52, 55);
-            HelpPanel.BackColor = Color.FromArgb(47, 52, 55);
-            //MiddlePanel.Visible = false;
+            
 
+            HomePanel.Visible = true;
+            aboutUC1.Visible = false;
+            helpUC1.Visible = false;
+
+
+            DoubleBuffered = true;
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
 
 
@@ -110,6 +115,7 @@ namespace StudyManagementApp
             PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
             SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
             SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
+            
         }
         //Hàm chỉnh control lúc không maximum
         void AlignControls_Non_Maximum()
@@ -188,13 +194,13 @@ namespace StudyManagementApp
                 Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
-                    bunifuTransition1.HideSync(AboutPanel);
+                    bunifuTransition1.HideSync(aboutUC1);
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
-                    bunifuTransition1.HideSync(HelpPanel);
+                    bunifuTransition1.HideSync(helpUC1);
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
@@ -220,11 +226,11 @@ namespace StudyManagementApp
                 }
                 if (isHelpClick)
                 {
-                    bunifuTransition1.HideSync(HelpPanel);
+                    bunifuTransition1.HideSync(helpUC1);
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
-                bunifuTransition2.ShowSync(AboutPanel);
+                bunifuTransition2.ShowSync(aboutUC1);
             }
         }
         //Nhấn Help thì làm gì?
@@ -244,11 +250,11 @@ namespace StudyManagementApp
                 }
                 if (isAboutClick)
                 {
-                    bunifuTransition1.HideSync(AboutPanel);
+                    bunifuTransition1.HideSync(aboutUC1);
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
-                bunifuTransition2.ShowSync(HelpPanel);
+                bunifuTransition2.ShowSync(helpUC1);
             }
         }
 
@@ -288,6 +294,7 @@ namespace StudyManagementApp
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
 
 
+        //Lây ngẫu nhiên câu truyền cảm hứng
         string GetTruyenCamHung()
         {
             List<string> text = new List<string>();
@@ -302,5 +309,6 @@ namespace StudyManagementApp
             int t = r.Next(0, text.Count);
             return text[t];
         }
+
     }
 }

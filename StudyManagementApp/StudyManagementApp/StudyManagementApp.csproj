@@ -186,6 +186,18 @@
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\AboutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AboutUC.Designer.cs">
+      <DependentUpon>AboutUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HelpUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HelpUC.Designer.cs">
+      <DependentUpon>HelpUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\RoundedCornerButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -211,6 +223,12 @@
     </Compile>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AboutUC.resx">
+      <DependentUpon>AboutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HelpUC.resx">
+      <DependentUpon>HelpUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\RoundedCornerTextBox.resx">
       <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
