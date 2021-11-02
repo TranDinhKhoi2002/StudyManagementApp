@@ -36,7 +36,7 @@ namespace StudyManagementApp
             Help.Location = new Point(BottomPanel.Width / 2 + 70, 5);
 
             SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
-            NotificationLabel.Size = new Size(350, 32);
+            NotificationLabel.Size = new Size(500, 32);
             NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
             UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
             PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
@@ -89,7 +89,7 @@ namespace StudyManagementApp
         void AlignControls_Maximum()
         {
             SignInLogoPictureBox.Size = new Size(196, 180);
-            NotificationLabel.Size = new Size(500, 48);
+            NotificationLabel.Size = new Size(650, 48);
             NotificationLabel.Font = new Font("Agency FB", 23);
             UsernameTextBox.Size = new Size(350, 51);
             UsernameTextBox.Font = new Font("Agency FB", 25);
@@ -115,7 +115,7 @@ namespace StudyManagementApp
         void AlignControls_Non_Maximum()
         {
             SignInLogoPictureBox.Size = new Size(131, 117);
-            NotificationLabel.Size = new Size(350, 32);
+            NotificationLabel.Size = new Size(500, 32);
             NotificationLabel.Font = new Font("Agency FB", 15);
             UsernameTextBox.Size = new Size(233, 35);
             UsernameTextBox.Font = new Font("Agency FB", 15);
