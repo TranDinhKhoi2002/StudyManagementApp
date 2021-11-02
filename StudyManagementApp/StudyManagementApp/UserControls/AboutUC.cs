@@ -15,12 +15,8 @@ namespace StudyManagementApp.UserControls
         public AboutUC()
         {
             InitializeComponent();
-            AboutPanel.BackColor = Color.FromArgb(47, 52, 55);
         }
 
-        public void Maximize()
-        {
-
-        }
+      
     }
 }

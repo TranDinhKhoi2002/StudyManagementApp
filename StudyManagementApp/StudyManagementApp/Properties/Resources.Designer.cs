@@ -83,6 +83,36 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Function {
+            get {
+                object obj = ResourceManager.GetObject("Function", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Gender {
+            get {
+                object obj = ResourceManager.GetObject("Gender", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gmail {
+            get {
+                object obj = ResourceManager.GetObject("gmail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap help {
             get {
                 object obj = ResourceManager.GetObject("help", resourceCulture);
@@ -116,6 +146,26 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap Message_small {
             get {
                 object obj = ResourceManager.GetObject("Message_small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Name {
+            get {
+                object obj = ResourceManager.GetObject("Name", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Namefunction {
+            get {
+                object obj = ResourceManager.GetObject("Namefunction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

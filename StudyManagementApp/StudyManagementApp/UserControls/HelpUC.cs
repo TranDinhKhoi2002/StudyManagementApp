@@ -15,8 +15,6 @@ namespace StudyManagementApp.UserControls
         public HelpUC()
         {
             InitializeComponent();
-            Lb_Instruction.ForeColor = Color.White;
-            HelpPanel.BackColor = Color.FromArgb(47, 52, 55);
         }
     }
 }

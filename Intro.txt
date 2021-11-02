@@ -1,0 +1,24 @@
+Cùng nhìn lại nào!
+Trong quá trình học tập hay ngay trong chính cuộc sống của chúng ta, phải chăng có quá nhiều thứ cần ghi nhớ.
+Những thông tin, những sự kiện, những kế hoạch bất kể nhỏ hay lớn đều sẽ có một tầm ảnh hưởng nhất định đến cuộc sống của chúng ta.
+Việc ghi nhớ tất cả chúng đôi lúc trở nên khó khăn vì chúng quá đa dạng và thỉnh thoảng ghi nhớ xong lại quên mất.
+Sự ra đời của ứng dụng giúp ghi chép tích hợp nhiều tính năng thân thiện như Zst có thể là một sự lựa chọn tối ưu để giải quyết vấn đề này.
+
+
+Tại sao lại là Zst mà không phải là ứng dụng nào khác.
+Zst ra đời dựa trên những bất cập mà các ứng dụng hiện đang chưa giải quyết được, hoặc chỉ giải quyết một mảng rời rạc, không tích hợp đa dạng như Zst.
+Trước hết, Zst là hoạt động chủ yếu như một ứng dụng ghi chép.
+Bên cạnh các chức năng phổ biến như tạo to-do list, tạo table, lưu trữ dữ liệu hình ảnh, âm thanh, ghi chú tự do như một cuốn vở nháp 
+Zst cung cấp thêm tính năng tạo deadline hay sắp xếp lịch làm việc thông qua Calendar.
+
+Không những thế, Zst còn tích hợp cả đồng hồ Pomodoro giúp người dùng có thể quản lý thời gian làm việc giúp công việc được tối ưu và hiệu quả.
+
+Còn điều gì thú vị cần phải lưu ý nữa đây???
+Dùng Zst, chúng ta sẽ dễ dàng kiểm soát chi tiêu thông qua tính năng "Ví Zst", cụ Ví Zst hoạt động như một cuốn nhật ký, cho phép ghi chép từng khoản
+tiền thu vào và chi ra, cũng như đề xuất phương án tiết kiệm và vẽ các biểu đồ báo cáo chi tiêu giúp ta có cái nhìn trực quan về thu chi từ đó dễ dàng 
+cân đối cuộc sống hơn. Tại sao phải tốn thời gian ghi chép chúng vào giấy tập từng khoản một trong khi đã có Zst.
+
+
+Sau khi đã điểm qua tất cả mọi thứ, Zst tin chắc sẽ mang đến một trải nghiệm vô cùng thú vị cho người dùng, thay vì phải dùng giấy tập hay mở hàng loạt các app khác, 
+tại sao dùng ứng dụng tích hợp Zst. ("Zst mới, chống nắng giữ ẩm mỗi ngày" => Suy nghĩ cái slogan gì đó thảy vô đây. hi)
+ 

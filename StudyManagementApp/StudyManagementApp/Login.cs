@@ -18,15 +18,9 @@ namespace StudyManagementApp
         {
             InitializeComponent();
 
-            //Khởi tạo màu cho nền
-            BottomPanel.BackColor = Color.FromArgb(55, 60, 63);
-            HomePanel.BackColor = Color.FromArgb(47, 52, 55);
-            
-
             HomePanel.Visible = true;
             aboutUC1.Visible = false;
             helpUC1.Visible = false;
-
 
             DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
@@ -36,18 +30,8 @@ namespace StudyManagementApp
         //khi Login được load sẽ làm gì?
         private void Login_Load(object sender, EventArgs e)
         {
-            Home.Location = new Point(BottomPanel.Width / 2 - 130, 5);
-            About.Location = new Point(BottomPanel.Width / 2 - 30, 5);
-            Help.Location = new Point(BottomPanel.Width / 2 + 70, 5);
-
-            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
-            NotificationLabel.Size = new Size(350, 32);
-            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
-            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-
+            AlignHomeAboutHelp();
+            AlignControls_Non_Maximum();
 
             //Tạo random bộ câu truyền cảm hứng
             TruyencamhungLabel.Text = GetTruyenCamHung();
@@ -61,7 +45,11 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            try
+            WorkPlace workPlace = new WorkPlace();
+            workPlace.Show();
+            this.Hide();
+            //Comment để dô form workplace
+            /*try
             {
                 if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
                 {
@@ -85,7 +73,7 @@ namespace StudyManagementApp
             catch (Exception excpt)
             {
                 MessageBox.Show(excpt.Message);
-            }
+            }*/
         }
 
 
@@ -104,10 +92,11 @@ namespace StudyManagementApp
             SignInButton.Font = new Font("Agency FB", 27);
             SignUpButton.Size = new Size(169, 59);
             SignUpButton.Font = new Font("Agency FB", 27);
-            
+
 
             TruyencamhungLabel.Font = new Font("Agency FB", 50, FontStyle.Bold);
             TruyencamhungLabel.Height = 130;
+            TruyencamhungLabel.TextAlign = ContentAlignment.MiddleCenter;
 
             SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 22);
             NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 40);
@@ -136,13 +125,14 @@ namespace StudyManagementApp
 
             TruyencamhungLabel.Font = new Font("Agency FB", 30, FontStyle.Bold);
             TruyencamhungLabel.Height = 70;
-            
-            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 18);
-            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 20);
-            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 18);
-            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            TruyencamhungLabel.TextAlign = ContentAlignment.MiddleCenter;
+
+            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 20);
+            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 23);
+            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
+            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
         }
         //middle panel lúc app maximum size lên sẽ gọi hàm gì? 
         private void MiddlePanel_SizeChanged(object sender, EventArgs e)
@@ -204,6 +194,7 @@ namespace StudyManagementApp
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
+
                 bunifuTransition2.ShowSync(HomePanel);
             }
         }

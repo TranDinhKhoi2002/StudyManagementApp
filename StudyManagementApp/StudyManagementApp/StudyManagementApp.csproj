@@ -153,6 +153,9 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=5.2.2.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.5.2.3\lib\net40\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -207,6 +210,12 @@
     <Compile Include="UserControls\RoundedCornerTextBox.Designer.cs">
       <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkPlace.Designer.cs">
+      <DependentUpon>WorkPlace.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +242,9 @@
     <EmbeddedResource Include="UserControls\RoundedCornerTextBox.resx">
       <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkPlace.resx">
+      <DependentUpon>WorkPlace.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -251,6 +263,11 @@
     <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Resources\Images\Name.png" />
+    <None Include="bin\Debug\Resources\Images\Gender.png" />
+    <None Include="bin\Debug\Resources\Images\gmail.png" />
+    <None Include="bin\Debug\Resources\Images\Namefunction.png" />
+    <None Include="bin\Debug\Resources\Images\Function.png" />
     <Content Include="Database\Database.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
