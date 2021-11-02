@@ -1,11 +1,13 @@
 # StudyManagementApp
 ================ỨNG DỤNG HỖ TRỢ HỌC TẬP================
+
 I) Thành viên
-  1. Trần Đình Khôi
+  1. Trần Đình Khôi (nhóm trưởng)
   2. Nguyễn Văn Hên
   3. Nguyễn Minh Hiếu
   4. Phan Trường Huy
   5. Trần Minh Trí
+
 II) Mô tả
   1. Tổng quan:
  Đồ án lần này nhóm chúng em tạo ra một ứng dụng hỗ trợ trong việc học tập với những chức năng như: đồng hồ Pomodoro, To do list, Soạn thảo văn bản
