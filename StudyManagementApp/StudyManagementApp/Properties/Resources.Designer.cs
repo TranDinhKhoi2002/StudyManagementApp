@@ -83,6 +83,16 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fast_forward {
+            get {
+                object obj = ResourceManager.GetObject("fast-forward", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Function {
             get {
                 object obj = ResourceManager.GetObject("Function", resourceCulture);
@@ -106,6 +116,16 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap gmail {
             get {
                 object obj = ResourceManager.GetObject("gmail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GreenGear {
+            get {
+                object obj = ResourceManager.GetObject("GreenGear", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +186,36 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap Namefunction {
             get {
                 object obj = ResourceManager.GetObject("Namefunction", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TomatoBlue {
+            get {
+                object obj = ResourceManager.GetObject("TomatoBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TomatoGreen {
+            get {
+                object obj = ResourceManager.GetObject("TomatoGreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TomatoRed {
+            get {
+                object obj = ResourceManager.GetObject("TomatoRed", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -301,5 +301,9 @@ namespace StudyManagementApp
             return text[t];
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TruyencamhungLabel.Text = GetTruyenCamHung();
+        }
     }
 }
