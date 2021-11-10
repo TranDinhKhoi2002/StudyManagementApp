@@ -6,7 +6,7 @@ I) Thành viên
   2. Nguyễn Văn Hên
   3. Nguyễn Minh Hiếu
   4. Phan Trường Huy
-  5. Trần Minh Trí
+  5. Trần Thanh Trí
 
 II) Mô tả
   1. Tổng quan:
