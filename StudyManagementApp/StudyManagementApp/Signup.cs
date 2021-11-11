@@ -28,7 +28,7 @@ namespace StudyManagementApp
                 lbInstruction.Text = "Re-Password don't match!";
             else
             {
-                try
+              /*  try
                 {
                     string username = UsernameTextBox.Texts;
                     string password = PasswordTextBox.Texts;
@@ -47,7 +47,7 @@ namespace StudyManagementApp
                 catch (Exception exception)
                 {
                     lbInstruction.Text = "Exception: " + exception.ToString();
-                }
+                }*/
             }
         }
 

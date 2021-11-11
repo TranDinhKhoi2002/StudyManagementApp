@@ -184,18 +184,17 @@ namespace StudyManagementApp
                 Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
-                    bunifuTransition1.HideSync(aboutUC1);
+                    aboutUC1.Visible = false;
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
-                    bunifuTransition1.HideSync(helpUC1);
+                    helpUC1.Visible = false;
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
-
-                bunifuTransition2.ShowSync(HomePanel);
+                HomePanel.Visible = true;
             }
         }
         //Nhấn About thì làm gì?
@@ -209,19 +208,18 @@ namespace StudyManagementApp
                 About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
                 if (isHomeClick)
                 {
-                    
-                    bunifuTransition1.HideSync(HomePanel);
+                    HomePanel.Visible = false;
 
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isHelpClick)
                 {
-                    bunifuTransition1.HideSync(helpUC1);
+                    helpUC1.Visible = false;
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
-                bunifuTransition2.ShowSync(aboutUC1);
+                aboutUC1.Visible = true;
             }
         }
         //Nhấn Help thì làm gì?
@@ -235,17 +233,17 @@ namespace StudyManagementApp
                 Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
                 if (isHomeClick)
                 {
-                    bunifuTransition1.HideSync(HomePanel);
+                    HomePanel.Visible = false;
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isAboutClick)
                 {
-                    bunifuTransition1.HideSync(aboutUC1);
+                    aboutUC1.Visible = false;
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
-                bunifuTransition2.ShowSync(helpUC1);
+                helpUC1.Visible = true;
             }
         }
 
