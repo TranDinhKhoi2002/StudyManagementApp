@@ -80,7 +80,7 @@ namespace StudyManagementApp
             this.numLongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numLongBreak.Location = new System.Drawing.Point(448, 142);
             this.numLongBreak.Name = "numLongBreak";
-            this.numLongBreak.Size = new System.Drawing.Size(130, 43);
+            this.numLongBreak.Size = new System.Drawing.Size(130, 63);
             this.numLongBreak.TabIndex = 6;
             this.numLongBreak.TabStop = false;
             this.numLongBreak.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -93,7 +93,7 @@ namespace StudyManagementApp
             this.numShortBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numShortBreak.Location = new System.Drawing.Point(249, 142);
             this.numShortBreak.Name = "numShortBreak";
-            this.numShortBreak.Size = new System.Drawing.Size(130, 43);
+            this.numShortBreak.Size = new System.Drawing.Size(130, 63);
             this.numShortBreak.TabIndex = 5;
             this.numShortBreak.TabStop = false;
             this.numShortBreak.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -126,7 +126,7 @@ namespace StudyManagementApp
             this.numPomodoro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numPomodoro.Location = new System.Drawing.Point(50, 142);
             this.numPomodoro.Name = "numPomodoro";
-            this.numPomodoro.Size = new System.Drawing.Size(130, 43);
+            this.numPomodoro.Size = new System.Drawing.Size(130, 63);
             this.numPomodoro.TabIndex = 2;
             this.numPomodoro.TabStop = false;
             this.numPomodoro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -172,7 +172,7 @@ namespace StudyManagementApp
             this.numNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numNotification.Location = new System.Drawing.Point(479, 94);
             this.numNotification.Name = "numNotification";
-            this.numNotification.Size = new System.Drawing.Size(130, 43);
+            this.numNotification.Size = new System.Drawing.Size(130, 63);
             this.numNotification.TabIndex = 5;
             this.numNotification.TabStop = false;
             this.numNotification.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -185,7 +185,7 @@ namespace StudyManagementApp
             this.numInterval.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numInterval.Location = new System.Drawing.Point(50, 94);
             this.numInterval.Name = "numInterval";
-            this.numInterval.Size = new System.Drawing.Size(130, 43);
+            this.numInterval.Size = new System.Drawing.Size(130, 63);
             this.numInterval.TabIndex = 4;
             this.numInterval.TabStop = false;
             this.numInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -203,7 +203,7 @@ namespace StudyManagementApp
             "Every"});
             this.cbbNotification.Location = new System.Drawing.Point(342, 94);
             this.cbbNotification.Name = "cbbNotification";
-            this.cbbNotification.Size = new System.Drawing.Size(130, 42);
+            this.cbbNotification.Size = new System.Drawing.Size(130, 61);
             this.cbbNotification.TabIndex = 3;
             this.cbbNotification.TabStop = false;
             // 
@@ -294,7 +294,7 @@ namespace StudyManagementApp
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(767, 749);
+            this.ClientSize = new System.Drawing.Size(767, 828);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Pomo_PictureBox);
             this.Controls.Add(this.btnApply);

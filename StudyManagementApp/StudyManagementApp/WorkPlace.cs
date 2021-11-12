@@ -27,7 +27,7 @@ namespace StudyManagementApp
         //Khi tắt workplace thì làm gì?
         private void WorkPlace_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+                Application.Exit();
         }
 
         
@@ -390,7 +390,7 @@ namespace StudyManagementApp
         private void Edit_iconButton_Click(object sender, EventArgs e)
         {
             Edit edit = new Edit();
-            edit.ShowDialog();
+            edit.ShowDialog(this);
         }
 
 

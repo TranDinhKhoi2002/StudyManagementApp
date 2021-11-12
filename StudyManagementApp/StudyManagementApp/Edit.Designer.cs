@@ -38,19 +38,20 @@ namespace StudyManagementApp
             this.label1 = new System.Windows.Forms.Label();
             this.textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.CancelButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.SignUpButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.roundedCornerTextBox3 = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.roundedCornerTextBox2 = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.roundedCornerTextBox1 = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.Apply_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.CurrentPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.Logout_button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.roundedCornerTextBox3);
-            this.groupBox1.Controls.Add(this.roundedCornerTextBox2);
-            this.groupBox1.Controls.Add(this.roundedCornerTextBox1);
+            this.groupBox1.Controls.Add(this.ReNewPassword_textbox);
+            this.groupBox1.Controls.Add(this.NewPassword_textbox);
+            this.groupBox1.Controls.Add(this.CurrentPassword_textbox);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -93,7 +94,7 @@ namespace StudyManagementApp
             "Trong cuốn lịch"});
             this.cbbNotification.Location = new System.Drawing.Point(225, 188);
             this.cbbNotification.Name = "cbbNotification";
-            this.cbbNotification.Size = new System.Drawing.Size(313, 36);
+            this.cbbNotification.Size = new System.Drawing.Size(313, 52);
             this.cbbNotification.TabIndex = 9;
             this.cbbNotification.TabStop = false;
             // 
@@ -103,7 +104,7 @@ namespace StudyManagementApp
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(205, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 18);
+            this.label4.Size = new System.Drawing.Size(348, 27);
             this.label4.TabIndex = 8;
             this.label4.Text = "custom radio button nằm ở đây";
             // 
@@ -113,7 +114,7 @@ namespace StudyManagementApp
             this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 24);
+            this.label3.Size = new System.Drawing.Size(151, 36);
             this.label3.TabIndex = 7;
             this.label3.Text = "Calendar mode";
             // 
@@ -123,7 +124,7 @@ namespace StudyManagementApp
             this.label2.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 24);
+            this.label2.Size = new System.Drawing.Size(75, 36);
             this.label2.TabIndex = 6;
             this.label2.Text = "Theme";
             // 
@@ -133,7 +134,7 @@ namespace StudyManagementApp
             this.label1.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 24);
+            this.label1.Size = new System.Drawing.Size(102, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "NickName";
             // 
@@ -157,7 +158,7 @@ namespace StudyManagementApp
             this.textbox.PlaceholderColor = System.Drawing.Color.Gray;
             this.textbox.PlaceholderText = "Nickname";
             this.textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textbox.Size = new System.Drawing.Size(349, 53);
+            this.textbox.Size = new System.Drawing.Size(349, 72);
             this.textbox.TabIndex = 1;
             this.textbox.Texts = "";
             this.textbox.UnderlinedStyle = false;
@@ -172,7 +173,7 @@ namespace StudyManagementApp
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CancelButton.Location = new System.Drawing.Point(400, 656);
+            this.CancelButton.Location = new System.Drawing.Point(518, 658);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(170, 58);
             this.CancelButton.TabIndex = 13;
@@ -180,110 +181,129 @@ namespace StudyManagementApp
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // SignUpButton
+            // Apply_Button
             // 
-            this.SignUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.SignUpButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.SignUpButton.BorderRadius = 18;
-            this.SignUpButton.BorderSize = 0;
-            this.SignUpButton.FlatAppearance.BorderSize = 0;
-            this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignUpButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SignUpButton.Location = new System.Drawing.Point(167, 658);
-            this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(170, 58);
-            this.SignUpButton.TabIndex = 12;
-            this.SignUpButton.Text = "Apply";
-            this.SignUpButton.UseVisualStyleBackColor = false;
-            this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
+            this.Apply_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.Apply_Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.Apply_Button.BorderRadius = 18;
+            this.Apply_Button.BorderSize = 0;
+            this.Apply_Button.FlatAppearance.BorderSize = 0;
+            this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Apply_Button.Location = new System.Drawing.Point(48, 658);
+            this.Apply_Button.Name = "Apply_Button";
+            this.Apply_Button.Size = new System.Drawing.Size(170, 58);
+            this.Apply_Button.TabIndex = 12;
+            this.Apply_Button.Text = "Apply";
+            this.Apply_Button.UseVisualStyleBackColor = false;
+            this.Apply_Button.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
-            // roundedCornerTextBox3
+            // ReNewPassword_textbox
             // 
-            this.roundedCornerTextBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedCornerTextBox3.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.roundedCornerTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.roundedCornerTextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox3.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox3.BorderRadius = 10;
-            this.roundedCornerTextBox3.BorderSize = 2;
-            this.roundedCornerTextBox3.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerTextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerTextBox3.Location = new System.Drawing.Point(141, 203);
-            this.roundedCornerTextBox3.Margin = new System.Windows.Forms.Padding(6);
-            this.roundedCornerTextBox3.Multiline = false;
-            this.roundedCornerTextBox3.Name = "roundedCornerTextBox3";
-            this.roundedCornerTextBox3.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundedCornerTextBox3.PasswordChar = true;
-            this.roundedCornerTextBox3.PlaceholderColor = System.Drawing.Color.Gray;
-            this.roundedCornerTextBox3.PlaceholderText = "Re-New Password";
-            this.roundedCornerTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.roundedCornerTextBox3.Size = new System.Drawing.Size(349, 59);
-            this.roundedCornerTextBox3.TabIndex = 2;
-            this.roundedCornerTextBox3.Texts = "";
-            this.roundedCornerTextBox3.UnderlinedStyle = false;
+            this.ReNewPassword_textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ReNewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ReNewPassword_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ReNewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ReNewPassword_textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ReNewPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ReNewPassword_textbox.BorderRadius = 10;
+            this.ReNewPassword_textbox.BorderSize = 2;
+            this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReNewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ReNewPassword_textbox.Location = new System.Drawing.Point(141, 203);
+            this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.ReNewPassword_textbox.Multiline = false;
+            this.ReNewPassword_textbox.Name = "ReNewPassword_textbox";
+            this.ReNewPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.ReNewPassword_textbox.PasswordChar = true;
+            this.ReNewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.ReNewPassword_textbox.PlaceholderText = "Re-New Password";
+            this.ReNewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ReNewPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.ReNewPassword_textbox.TabIndex = 2;
+            this.ReNewPassword_textbox.Texts = "";
+            this.ReNewPassword_textbox.UnderlinedStyle = false;
             // 
-            // roundedCornerTextBox2
+            // NewPassword_textbox
             // 
-            this.roundedCornerTextBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedCornerTextBox2.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.roundedCornerTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.roundedCornerTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox2.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox2.BorderRadius = 10;
-            this.roundedCornerTextBox2.BorderSize = 2;
-            this.roundedCornerTextBox2.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerTextBox2.Location = new System.Drawing.Point(141, 123);
-            this.roundedCornerTextBox2.Margin = new System.Windows.Forms.Padding(6);
-            this.roundedCornerTextBox2.Multiline = false;
-            this.roundedCornerTextBox2.Name = "roundedCornerTextBox2";
-            this.roundedCornerTextBox2.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundedCornerTextBox2.PasswordChar = true;
-            this.roundedCornerTextBox2.PlaceholderColor = System.Drawing.Color.Gray;
-            this.roundedCornerTextBox2.PlaceholderText = "New Password";
-            this.roundedCornerTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.roundedCornerTextBox2.Size = new System.Drawing.Size(349, 59);
-            this.roundedCornerTextBox2.TabIndex = 2;
-            this.roundedCornerTextBox2.Texts = "";
-            this.roundedCornerTextBox2.UnderlinedStyle = false;
+            this.NewPassword_textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.NewPassword_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.NewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.NewPassword_textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.NewPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.NewPassword_textbox.BorderRadius = 10;
+            this.NewPassword_textbox.BorderSize = 2;
+            this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.NewPassword_textbox.Location = new System.Drawing.Point(141, 123);
+            this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.NewPassword_textbox.Multiline = false;
+            this.NewPassword_textbox.Name = "NewPassword_textbox";
+            this.NewPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.NewPassword_textbox.PasswordChar = true;
+            this.NewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.NewPassword_textbox.PlaceholderText = "New Password";
+            this.NewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NewPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.NewPassword_textbox.TabIndex = 2;
+            this.NewPassword_textbox.Texts = "";
+            this.NewPassword_textbox.UnderlinedStyle = false;
             // 
-            // roundedCornerTextBox1
+            // CurrentPassword_textbox
             // 
-            this.roundedCornerTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.roundedCornerTextBox1.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.roundedCornerTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.roundedCornerTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox1.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.roundedCornerTextBox1.BorderRadius = 10;
-            this.roundedCornerTextBox1.BorderSize = 2;
-            this.roundedCornerTextBox1.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerTextBox1.Location = new System.Drawing.Point(141, 43);
-            this.roundedCornerTextBox1.Margin = new System.Windows.Forms.Padding(6);
-            this.roundedCornerTextBox1.Multiline = false;
-            this.roundedCornerTextBox1.Name = "roundedCornerTextBox1";
-            this.roundedCornerTextBox1.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.roundedCornerTextBox1.PasswordChar = true;
-            this.roundedCornerTextBox1.PlaceholderColor = System.Drawing.Color.Gray;
-            this.roundedCornerTextBox1.PlaceholderText = "Your Password";
-            this.roundedCornerTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.roundedCornerTextBox1.Size = new System.Drawing.Size(349, 59);
-            this.roundedCornerTextBox1.TabIndex = 2;
-            this.roundedCornerTextBox1.Texts = "";
-            this.roundedCornerTextBox1.UnderlinedStyle = false;
+            this.CurrentPassword_textbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CurrentPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.CurrentPassword_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.CurrentPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CurrentPassword_textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.CurrentPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.CurrentPassword_textbox.BorderRadius = 10;
+            this.CurrentPassword_textbox.BorderSize = 2;
+            this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.CurrentPassword_textbox.Location = new System.Drawing.Point(141, 43);
+            this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.CurrentPassword_textbox.Multiline = false;
+            this.CurrentPassword_textbox.Name = "CurrentPassword_textbox";
+            this.CurrentPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.CurrentPassword_textbox.PasswordChar = true;
+            this.CurrentPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.CurrentPassword_textbox.PlaceholderText = "Your Password";
+            this.CurrentPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CurrentPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.CurrentPassword_textbox.TabIndex = 2;
+            this.CurrentPassword_textbox.Texts = "";
+            this.CurrentPassword_textbox.UnderlinedStyle = false;
+            // 
+            // Logout_button
+            // 
+            this.Logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.Logout_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.Logout_button.BorderRadius = 18;
+            this.Logout_button.BorderSize = 0;
+            this.Logout_button.FlatAppearance.BorderSize = 0;
+            this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout_button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Logout_button.Location = new System.Drawing.Point(283, 658);
+            this.Logout_button.Name = "Logout_button";
+            this.Logout_button.Size = new System.Drawing.Size(170, 58);
+            this.Logout_button.TabIndex = 14;
+            this.Logout_button.Text = "Log out";
+            this.Logout_button.UseVisualStyleBackColor = false;
+            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
             // 
             // Edit
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(736, 749);
+            this.ClientSize = new System.Drawing.Size(736, 763);
+            this.Controls.Add(this.Logout_button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.SignUpButton);
+            this.Controls.Add(this.Apply_Button);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -302,7 +322,7 @@ namespace StudyManagementApp
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private UserControls.RoundedCornerButton CancelButton;
-        private UserControls.RoundedCornerButton SignUpButton;
+        private UserControls.RoundedCornerButton Apply_Button;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -310,8 +330,9 @@ namespace StudyManagementApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbbNotification;
         public UserControls.RoundedCornerTextBox textbox;
-        public UserControls.RoundedCornerTextBox roundedCornerTextBox3;
-        public UserControls.RoundedCornerTextBox roundedCornerTextBox2;
-        public UserControls.RoundedCornerTextBox roundedCornerTextBox1;
+        public UserControls.RoundedCornerTextBox ReNewPassword_textbox;
+        public UserControls.RoundedCornerTextBox NewPassword_textbox;
+        public UserControls.RoundedCornerTextBox CurrentPassword_textbox;
+        private UserControls.RoundedCornerButton Logout_button;
     }
 }
