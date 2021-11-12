@@ -69,8 +69,11 @@ namespace StudyManagementApp
             this.ItemTable1_button = new System.Windows.Forms.Button();
             this.TableMenu_iconButton = new FontAwesome.Sharp.IconButton();
             this.UserInforPanel = new System.Windows.Forms.Panel();
-            this.UserNameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.UserNameLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Edit_iconButton = new FontAwesome.Sharp.IconButton();
             this.CalendarButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ThuGonTraiButton = new FontAwesome.Sharp.IconButton();
             this.FunctionTablePanel = new System.Windows.Forms.TableLayoutPanel();
@@ -109,6 +112,7 @@ namespace StudyManagementApp
             this.SubTableMenu_panel.SuspendLayout();
             this.UserInforPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tableLayoutPanel3.SuspendLayout();
             this.FunctionTablePanel.SuspendLayout();
             this.PomodoroFunctionTableLabel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -493,7 +497,7 @@ namespace StudyManagementApp
             this.SubFreeStyleMenu_panel.Margin = new System.Windows.Forms.Padding(0);
             this.SubFreeStyleMenu_panel.Name = "SubFreeStyleMenu_panel";
             this.SubFreeStyleMenu_panel.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.SubFreeStyleMenu_panel.Size = new System.Drawing.Size(281, 134);
+            this.SubFreeStyleMenu_panel.Size = new System.Drawing.Size(276, 134);
             this.SubFreeStyleMenu_panel.TabIndex = 4;
             // 
             // ItemFreeStyle3_Button
@@ -508,7 +512,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle3_Button.Location = new System.Drawing.Point(50, 80);
             this.ItemFreeStyle3_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemFreeStyle3_Button.Name = "ItemFreeStyle3_Button";
-            this.ItemFreeStyle3_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemFreeStyle3_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemFreeStyle3_Button.TabIndex = 2;
             this.ItemFreeStyle3_Button.Text = "Item3";
             this.ItemFreeStyle3_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -526,7 +530,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle2_Button.Location = new System.Drawing.Point(50, 40);
             this.ItemFreeStyle2_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemFreeStyle2_Button.Name = "ItemFreeStyle2_Button";
-            this.ItemFreeStyle2_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemFreeStyle2_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemFreeStyle2_Button.TabIndex = 1;
             this.ItemFreeStyle2_Button.Text = "Item2";
             this.ItemFreeStyle2_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,7 +548,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle1_Button.Location = new System.Drawing.Point(50, 0);
             this.ItemFreeStyle1_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemFreeStyle1_Button.Name = "ItemFreeStyle1_Button";
-            this.ItemFreeStyle1_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemFreeStyle1_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemFreeStyle1_Button.TabIndex = 0;
             this.ItemFreeStyle1_Button.Text = "Item1";
             this.ItemFreeStyle1_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -566,7 +570,7 @@ namespace StudyManagementApp
             this.FreeStyleMenu_iconButton.Location = new System.Drawing.Point(0, 364);
             this.FreeStyleMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.FreeStyleMenu_iconButton.Name = "FreeStyleMenu_iconButton";
-            this.FreeStyleMenu_iconButton.Size = new System.Drawing.Size(281, 55);
+            this.FreeStyleMenu_iconButton.Size = new System.Drawing.Size(276, 55);
             this.FreeStyleMenu_iconButton.TabIndex = 3;
             this.FreeStyleMenu_iconButton.Text = "Free style";
             this.FreeStyleMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -586,7 +590,7 @@ namespace StudyManagementApp
             this.SubToDoListMenu_panel.Margin = new System.Windows.Forms.Padding(0);
             this.SubToDoListMenu_panel.Name = "SubToDoListMenu_panel";
             this.SubToDoListMenu_panel.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.SubToDoListMenu_panel.Size = new System.Drawing.Size(281, 134);
+            this.SubToDoListMenu_panel.Size = new System.Drawing.Size(276, 134);
             this.SubToDoListMenu_panel.TabIndex = 2;
             // 
             // ItemToDoList3_Button
@@ -601,7 +605,7 @@ namespace StudyManagementApp
             this.ItemToDoList3_Button.Location = new System.Drawing.Point(50, 80);
             this.ItemToDoList3_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemToDoList3_Button.Name = "ItemToDoList3_Button";
-            this.ItemToDoList3_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemToDoList3_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemToDoList3_Button.TabIndex = 2;
             this.ItemToDoList3_Button.Text = "Item3";
             this.ItemToDoList3_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -619,7 +623,7 @@ namespace StudyManagementApp
             this.ItemToDoList2_Button.Location = new System.Drawing.Point(50, 40);
             this.ItemToDoList2_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemToDoList2_Button.Name = "ItemToDoList2_Button";
-            this.ItemToDoList2_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemToDoList2_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemToDoList2_Button.TabIndex = 1;
             this.ItemToDoList2_Button.Text = "Item2";
             this.ItemToDoList2_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -637,7 +641,7 @@ namespace StudyManagementApp
             this.ItemToDoList1_Button.Location = new System.Drawing.Point(50, 0);
             this.ItemToDoList1_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemToDoList1_Button.Name = "ItemToDoList1_Button";
-            this.ItemToDoList1_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemToDoList1_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemToDoList1_Button.TabIndex = 0;
             this.ItemToDoList1_Button.Text = "Item1";
             this.ItemToDoList1_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -659,7 +663,7 @@ namespace StudyManagementApp
             this.ToDoListMenu_iconButton.Location = new System.Drawing.Point(0, 175);
             this.ToDoListMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.ToDoListMenu_iconButton.Name = "ToDoListMenu_iconButton";
-            this.ToDoListMenu_iconButton.Size = new System.Drawing.Size(281, 55);
+            this.ToDoListMenu_iconButton.Size = new System.Drawing.Size(276, 55);
             this.ToDoListMenu_iconButton.TabIndex = 1;
             this.ToDoListMenu_iconButton.Text = "To-do list";
             this.ToDoListMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -678,7 +682,7 @@ namespace StudyManagementApp
             this.SubTableMenu_panel.Margin = new System.Windows.Forms.Padding(0);
             this.SubTableMenu_panel.Name = "SubTableMenu_panel";
             this.SubTableMenu_panel.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.SubTableMenu_panel.Size = new System.Drawing.Size(281, 120);
+            this.SubTableMenu_panel.Size = new System.Drawing.Size(276, 120);
             this.SubTableMenu_panel.TabIndex = 0;
             // 
             // ItemTable3_Button
@@ -693,7 +697,7 @@ namespace StudyManagementApp
             this.ItemTable3_Button.Location = new System.Drawing.Point(50, 80);
             this.ItemTable3_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemTable3_Button.Name = "ItemTable3_Button";
-            this.ItemTable3_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemTable3_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemTable3_Button.TabIndex = 2;
             this.ItemTable3_Button.Text = "Item3";
             this.ItemTable3_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -711,7 +715,7 @@ namespace StudyManagementApp
             this.ItemTable2_Button.Location = new System.Drawing.Point(50, 40);
             this.ItemTable2_Button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemTable2_Button.Name = "ItemTable2_Button";
-            this.ItemTable2_Button.Size = new System.Drawing.Size(231, 40);
+            this.ItemTable2_Button.Size = new System.Drawing.Size(226, 40);
             this.ItemTable2_Button.TabIndex = 1;
             this.ItemTable2_Button.Text = "Item2";
             this.ItemTable2_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -729,7 +733,7 @@ namespace StudyManagementApp
             this.ItemTable1_button.Location = new System.Drawing.Point(50, 0);
             this.ItemTable1_button.Margin = new System.Windows.Forms.Padding(0);
             this.ItemTable1_button.Name = "ItemTable1_button";
-            this.ItemTable1_button.Size = new System.Drawing.Size(231, 40);
+            this.ItemTable1_button.Size = new System.Drawing.Size(226, 40);
             this.ItemTable1_button.TabIndex = 0;
             this.ItemTable1_button.Text = "Item1";
             this.ItemTable1_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -751,7 +755,7 @@ namespace StudyManagementApp
             this.TableMenu_iconButton.Location = new System.Drawing.Point(0, 0);
             this.TableMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.TableMenu_iconButton.Name = "TableMenu_iconButton";
-            this.TableMenu_iconButton.Size = new System.Drawing.Size(281, 55);
+            this.TableMenu_iconButton.Size = new System.Drawing.Size(276, 55);
             this.TableMenu_iconButton.TabIndex = 0;
             this.TableMenu_iconButton.Text = "Table";
             this.TableMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -762,8 +766,8 @@ namespace StudyManagementApp
             // UserInforPanel
             // 
             this.UserInforPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.UserInforPanel.Controls.Add(this.UserNameLabel);
             this.UserInforPanel.Controls.Add(this.pictureBox1);
+            this.UserInforPanel.Controls.Add(this.tableLayoutPanel3);
             this.UserInforPanel.Controls.Add(this.CalendarButton);
             this.UserInforPanel.Controls.Add(this.ThuGonTraiButton);
             this.UserInforPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -772,17 +776,6 @@ namespace StudyManagementApp
             this.UserInforPanel.Name = "UserInforPanel";
             this.UserInforPanel.Size = new System.Drawing.Size(302, 299);
             this.UserInforPanel.TabIndex = 0;
-            // 
-            // UserNameLabel
-            // 
-            this.UserNameLabel.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.UserNameLabel.Location = new System.Drawing.Point(0, 185);
-            this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(298, 48);
-            this.UserNameLabel.TabIndex = 5;
-            this.UserNameLabel.Text = "User: TruongHuy";
-            this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -796,6 +789,66 @@ namespace StudyManagementApp
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 4;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
+            this.tableLayoutPanel3.Controls.Add(this.UserNameLabel, 2, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.Edit_iconButton, 3, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 182);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(302, 52);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // UserNameLabel
+            // 
+            this.UserNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserNameLabel.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.UserNameLabel.Location = new System.Drawing.Point(99, 0);
+            this.UserNameLabel.Name = "UserNameLabel";
+            this.UserNameLabel.Size = new System.Drawing.Size(145, 52);
+            this.UserNameLabel.TabIndex = 5;
+            this.UserNameLabel.Text = "TruongHuy";
+            this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.label1.Location = new System.Drawing.Point(30, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 52);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "User:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Edit_iconButton
+            // 
+            this.Edit_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Edit_iconButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Edit_iconButton.FlatAppearance.BorderSize = 0;
+            this.Edit_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit_iconButton.IconChar = FontAwesome.Sharp.IconChar.Cogs;
+            this.Edit_iconButton.IconColor = System.Drawing.Color.DimGray;
+            this.Edit_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Edit_iconButton.IconSize = 47;
+            this.Edit_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Edit_iconButton.Location = new System.Drawing.Point(247, 0);
+            this.Edit_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.Edit_iconButton.Name = "Edit_iconButton";
+            this.Edit_iconButton.Size = new System.Drawing.Size(55, 52);
+            this.Edit_iconButton.TabIndex = 2;
+            this.Edit_iconButton.UseVisualStyleBackColor = true;
+            this.Edit_iconButton.Click += new System.EventHandler(this.Edit_iconButton_Click);
             // 
             // CalendarButton
             // 
@@ -1053,7 +1106,7 @@ namespace StudyManagementApp
             this.EnterCommand_TextBox.PasswordChar = false;
             this.EnterCommand_TextBox.PlaceholderColor = System.Drawing.Color.DimGray;
             this.EnterCommand_TextBox.PlaceholderText = "Enter Command";
-            this.EnterCommand_TextBox.Size = new System.Drawing.Size(445, 59);
+            this.EnterCommand_TextBox.Size = new System.Drawing.Size(445, 68);
             this.EnterCommand_TextBox.TabIndex = 3;
             this.EnterCommand_TextBox.Texts = "";
             this.EnterCommand_TextBox.UnderlinedStyle = false;
@@ -1154,6 +1207,7 @@ namespace StudyManagementApp
             this.SubTableMenu_panel.ResumeLayout(false);
             this.UserInforPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.FunctionTablePanel.ResumeLayout(false);
             this.PomodoroFunctionTableLabel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1234,5 +1288,8 @@ namespace StudyManagementApp
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NotifyIcon Pomodoro_notifyIcon;
         private UserControls.CustomCalendar customCalendar1;
+        private FontAwesome.Sharp.IconButton Edit_iconButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label1;
     }
 }

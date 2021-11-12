@@ -35,23 +35,23 @@ namespace StudyManagementApp.UserControls
             this.panel2 = new System.Windows.Forms.Panel();
             this.Truoc_iconButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.NgayThangNam_customDateTimePicker = new StudyManagementApp.UserControls.CustomDateTimePicker();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.MainDate_TablePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.NgayThangNam_customDateTimePicker = new StudyManagementApp.UserControls.CustomDateTimePicker();
             this.roundedCornerButton6 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.CalendarButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.roundedCornerButton5 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.roundedCornerButton1 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.roundedCornerButton4 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.roundedCornerButton3 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.roundedCornerButton2 = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.MainDate_TablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -170,6 +170,24 @@ namespace StudyManagementApp.UserControls
             this.panel3.Size = new System.Drawing.Size(558, 73);
             this.panel3.TabIndex = 4;
             // 
+            // NgayThangNam_customDateTimePicker
+            // 
+            this.NgayThangNam_customDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NgayThangNam_customDateTimePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.NgayThangNam_customDateTimePicker.BorderSize = 0;
+            this.NgayThangNam_customDateTimePicker.CalendarFont = new System.Drawing.Font("Agency FB", 15F);
+            this.NgayThangNam_customDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.NgayThangNam_customDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 25F);
+            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(-2, 12);
+            this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(0, 35);
+            this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
+            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(560, 67);
+            this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.NgayThangNam_customDateTimePicker.TabIndex = 0;
+            this.NgayThangNam_customDateTimePicker.TextColor = System.Drawing.Color.White;
+            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.NgayThangNam_customDateTimePicker_ValueChanged);
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 7;
@@ -216,6 +234,26 @@ namespace StudyManagementApp.UserControls
             this.panel10.Size = new System.Drawing.Size(192, 101);
             this.panel10.TabIndex = 7;
             // 
+            // roundedCornerButton6
+            // 
+            this.roundedCornerButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton6.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton6.BorderRadius = 25;
+            this.roundedCornerButton6.BorderSize = 0;
+            this.roundedCornerButton6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton6.Enabled = false;
+            this.roundedCornerButton6.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton6.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton6.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton6.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton6.Name = "roundedCornerButton6";
+            this.roundedCornerButton6.Size = new System.Drawing.Size(182, 71);
+            this.roundedCornerButton6.TabIndex = 6;
+            this.roundedCornerButton6.Text = "Saturday";
+            this.roundedCornerButton6.UseVisualStyleBackColor = false;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.CalendarButton);
@@ -226,6 +264,26 @@ namespace StudyManagementApp.UserControls
             this.panel4.Padding = new System.Windows.Forms.Padding(5, 15, 5, 15);
             this.panel4.Size = new System.Drawing.Size(185, 101);
             this.panel4.TabIndex = 6;
+            // 
+            // CalendarButton
+            // 
+            this.CalendarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.CalendarButton.BorderColor = System.Drawing.Color.LightGray;
+            this.CalendarButton.BorderRadius = 25;
+            this.CalendarButton.BorderSize = 0;
+            this.CalendarButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CalendarButton.Enabled = false;
+            this.CalendarButton.FlatAppearance.BorderSize = 0;
+            this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.CalendarButton.Location = new System.Drawing.Point(5, 15);
+            this.CalendarButton.Margin = new System.Windows.Forms.Padding(0);
+            this.CalendarButton.Name = "CalendarButton";
+            this.CalendarButton.Size = new System.Drawing.Size(175, 71);
+            this.CalendarButton.TabIndex = 5;
+            this.CalendarButton.Text = "Sunday";
+            this.CalendarButton.UseVisualStyleBackColor = false;
             // 
             // panel9
             // 
@@ -238,6 +296,26 @@ namespace StudyManagementApp.UserControls
             this.panel9.Size = new System.Drawing.Size(185, 101);
             this.panel9.TabIndex = 7;
             // 
+            // roundedCornerButton5
+            // 
+            this.roundedCornerButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton5.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton5.BorderRadius = 25;
+            this.roundedCornerButton5.BorderSize = 0;
+            this.roundedCornerButton5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton5.Enabled = false;
+            this.roundedCornerButton5.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton5.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton5.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton5.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton5.Name = "roundedCornerButton5";
+            this.roundedCornerButton5.Size = new System.Drawing.Size(175, 71);
+            this.roundedCornerButton5.TabIndex = 6;
+            this.roundedCornerButton5.Text = "Friday";
+            this.roundedCornerButton5.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.roundedCornerButton1);
@@ -248,6 +326,26 @@ namespace StudyManagementApp.UserControls
             this.panel5.Padding = new System.Windows.Forms.Padding(5, 15, 5, 15);
             this.panel5.Size = new System.Drawing.Size(185, 101);
             this.panel5.TabIndex = 7;
+            // 
+            // roundedCornerButton1
+            // 
+            this.roundedCornerButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton1.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton1.BorderRadius = 25;
+            this.roundedCornerButton1.BorderSize = 0;
+            this.roundedCornerButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton1.Enabled = false;
+            this.roundedCornerButton1.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton1.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton1.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton1.Name = "roundedCornerButton1";
+            this.roundedCornerButton1.Size = new System.Drawing.Size(175, 71);
+            this.roundedCornerButton1.TabIndex = 6;
+            this.roundedCornerButton1.Text = "Monday";
+            this.roundedCornerButton1.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -260,6 +358,26 @@ namespace StudyManagementApp.UserControls
             this.panel8.Size = new System.Drawing.Size(185, 101);
             this.panel8.TabIndex = 7;
             // 
+            // roundedCornerButton4
+            // 
+            this.roundedCornerButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton4.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton4.BorderRadius = 25;
+            this.roundedCornerButton4.BorderSize = 0;
+            this.roundedCornerButton4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton4.Enabled = false;
+            this.roundedCornerButton4.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton4.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton4.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton4.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton4.Name = "roundedCornerButton4";
+            this.roundedCornerButton4.Size = new System.Drawing.Size(175, 71);
+            this.roundedCornerButton4.TabIndex = 6;
+            this.roundedCornerButton4.Text = "Thursday";
+            this.roundedCornerButton4.UseVisualStyleBackColor = false;
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.roundedCornerButton3);
@@ -271,6 +389,26 @@ namespace StudyManagementApp.UserControls
             this.panel7.Size = new System.Drawing.Size(185, 101);
             this.panel7.TabIndex = 7;
             // 
+            // roundedCornerButton3
+            // 
+            this.roundedCornerButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton3.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton3.BorderRadius = 25;
+            this.roundedCornerButton3.BorderSize = 0;
+            this.roundedCornerButton3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton3.Enabled = false;
+            this.roundedCornerButton3.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton3.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton3.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton3.Name = "roundedCornerButton3";
+            this.roundedCornerButton3.Size = new System.Drawing.Size(175, 71);
+            this.roundedCornerButton3.TabIndex = 6;
+            this.roundedCornerButton3.Text = "Wednesday";
+            this.roundedCornerButton3.UseVisualStyleBackColor = false;
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.roundedCornerButton2);
@@ -281,6 +419,26 @@ namespace StudyManagementApp.UserControls
             this.panel6.Padding = new System.Windows.Forms.Padding(5, 15, 5, 15);
             this.panel6.Size = new System.Drawing.Size(185, 101);
             this.panel6.TabIndex = 7;
+            // 
+            // roundedCornerButton2
+            // 
+            this.roundedCornerButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.roundedCornerButton2.BorderColor = System.Drawing.Color.LightGray;
+            this.roundedCornerButton2.BorderRadius = 25;
+            this.roundedCornerButton2.BorderSize = 0;
+            this.roundedCornerButton2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roundedCornerButton2.Enabled = false;
+            this.roundedCornerButton2.FlatAppearance.BorderSize = 0;
+            this.roundedCornerButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedCornerButton2.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedCornerButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.roundedCornerButton2.Location = new System.Drawing.Point(5, 15);
+            this.roundedCornerButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.roundedCornerButton2.Name = "roundedCornerButton2";
+            this.roundedCornerButton2.Size = new System.Drawing.Size(175, 71);
+            this.roundedCornerButton2.TabIndex = 6;
+            this.roundedCornerButton2.Text = "Tuesday";
+            this.roundedCornerButton2.UseVisualStyleBackColor = false;
             // 
             // MainDate_TablePanel
             // 
@@ -307,164 +465,6 @@ namespace StudyManagementApp.UserControls
             this.MainDate_TablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.MainDate_TablePanel.Size = new System.Drawing.Size(1302, 613);
             this.MainDate_TablePanel.TabIndex = 8;
-            // 
-            // NgayThangNam_customDateTimePicker
-            // 
-            this.NgayThangNam_customDateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NgayThangNam_customDateTimePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.NgayThangNam_customDateTimePicker.BorderSize = 0;
-            this.NgayThangNam_customDateTimePicker.CalendarFont = new System.Drawing.Font("Agency FB", 15F);
-            this.NgayThangNam_customDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NgayThangNam_customDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 25F);
-            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(-2, 12);
-            this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(0, 35);
-            this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
-            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(560, 67);
-            this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.NgayThangNam_customDateTimePicker.TabIndex = 0;
-            this.NgayThangNam_customDateTimePicker.TextColor = System.Drawing.Color.White;
-            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.NgayThangNam_customDateTimePicker_ValueChanged);
-            // 
-            // roundedCornerButton6
-            // 
-            this.roundedCornerButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton6.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton6.BorderRadius = 25;
-            this.roundedCornerButton6.BorderSize = 0;
-            this.roundedCornerButton6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton6.Enabled = false;
-            this.roundedCornerButton6.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton6.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton6.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton6.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton6.Name = "roundedCornerButton6";
-            this.roundedCornerButton6.Size = new System.Drawing.Size(182, 71);
-            this.roundedCornerButton6.TabIndex = 6;
-            this.roundedCornerButton6.Text = "Saturday";
-            this.roundedCornerButton6.UseVisualStyleBackColor = false;
-            // 
-            // CalendarButton
-            // 
-            this.CalendarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CalendarButton.BorderColor = System.Drawing.Color.LightGray;
-            this.CalendarButton.BorderRadius = 25;
-            this.CalendarButton.BorderSize = 0;
-            this.CalendarButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CalendarButton.Enabled = false;
-            this.CalendarButton.FlatAppearance.BorderSize = 0;
-            this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.CalendarButton.Location = new System.Drawing.Point(5, 15);
-            this.CalendarButton.Margin = new System.Windows.Forms.Padding(0);
-            this.CalendarButton.Name = "CalendarButton";
-            this.CalendarButton.Size = new System.Drawing.Size(175, 71);
-            this.CalendarButton.TabIndex = 5;
-            this.CalendarButton.Text = "Sunday";
-            this.CalendarButton.UseVisualStyleBackColor = false;
-            // 
-            // roundedCornerButton5
-            // 
-            this.roundedCornerButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton5.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton5.BorderRadius = 25;
-            this.roundedCornerButton5.BorderSize = 0;
-            this.roundedCornerButton5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton5.Enabled = false;
-            this.roundedCornerButton5.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton5.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton5.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton5.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton5.Name = "roundedCornerButton5";
-            this.roundedCornerButton5.Size = new System.Drawing.Size(175, 71);
-            this.roundedCornerButton5.TabIndex = 6;
-            this.roundedCornerButton5.Text = "Friday";
-            this.roundedCornerButton5.UseVisualStyleBackColor = false;
-            // 
-            // roundedCornerButton1
-            // 
-            this.roundedCornerButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton1.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton1.BorderRadius = 25;
-            this.roundedCornerButton1.BorderSize = 0;
-            this.roundedCornerButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton1.Enabled = false;
-            this.roundedCornerButton1.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton1.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton1.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton1.Name = "roundedCornerButton1";
-            this.roundedCornerButton1.Size = new System.Drawing.Size(175, 71);
-            this.roundedCornerButton1.TabIndex = 6;
-            this.roundedCornerButton1.Text = "Monday";
-            this.roundedCornerButton1.UseVisualStyleBackColor = false;
-            // 
-            // roundedCornerButton4
-            // 
-            this.roundedCornerButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton4.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton4.BorderRadius = 25;
-            this.roundedCornerButton4.BorderSize = 0;
-            this.roundedCornerButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton4.Enabled = false;
-            this.roundedCornerButton4.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton4.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton4.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton4.Name = "roundedCornerButton4";
-            this.roundedCornerButton4.Size = new System.Drawing.Size(175, 71);
-            this.roundedCornerButton4.TabIndex = 6;
-            this.roundedCornerButton4.Text = "Thursday";
-            this.roundedCornerButton4.UseVisualStyleBackColor = false;
-            // 
-            // roundedCornerButton3
-            // 
-            this.roundedCornerButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton3.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton3.BorderRadius = 25;
-            this.roundedCornerButton3.BorderSize = 0;
-            this.roundedCornerButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton3.Enabled = false;
-            this.roundedCornerButton3.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton3.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton3.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton3.Name = "roundedCornerButton3";
-            this.roundedCornerButton3.Size = new System.Drawing.Size(175, 71);
-            this.roundedCornerButton3.TabIndex = 6;
-            this.roundedCornerButton3.Text = "Wednesday";
-            this.roundedCornerButton3.UseVisualStyleBackColor = false;
-            // 
-            // roundedCornerButton2
-            // 
-            this.roundedCornerButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.roundedCornerButton2.BorderColor = System.Drawing.Color.LightGray;
-            this.roundedCornerButton2.BorderRadius = 25;
-            this.roundedCornerButton2.BorderSize = 0;
-            this.roundedCornerButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roundedCornerButton2.Enabled = false;
-            this.roundedCornerButton2.FlatAppearance.BorderSize = 0;
-            this.roundedCornerButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedCornerButton2.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedCornerButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.roundedCornerButton2.Location = new System.Drawing.Point(5, 15);
-            this.roundedCornerButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.roundedCornerButton2.Name = "roundedCornerButton2";
-            this.roundedCornerButton2.Size = new System.Drawing.Size(175, 71);
-            this.roundedCornerButton2.TabIndex = 6;
-            this.roundedCornerButton2.Text = "Tuesday";
-            this.roundedCornerButton2.UseVisualStyleBackColor = false;
             // 
             // CustomCalendar
             // 

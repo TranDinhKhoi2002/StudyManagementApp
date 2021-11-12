@@ -388,8 +388,11 @@ namespace StudyManagementApp
         }
         /*---------------------------------Pomodoro---------------------------------*/
 
-
-
+        private void Edit_iconButton_Click(object sender, EventArgs e)
+        {
+            Edit edit = new Edit();
+            edit.ShowDialog();
+        }
 
 
 
