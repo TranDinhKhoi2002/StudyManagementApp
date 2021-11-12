@@ -45,11 +45,7 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            WorkPlace workPlace = new WorkPlace();
-            workPlace.Show();
-            this.Hide();
-            //Comment để dô form workplace
-            /*try
+            try
             {
                 if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
                 {
@@ -62,8 +58,14 @@ namespace StudyManagementApp
 
                 if (AccountDAO.Instance.Login(userName, passWord))
                 {
-                    NotificationLabel.Text = "Login successfully!";
+                    //Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
+                    UserInfo.getInstance().Username = userName;
+                    UserInfo.getInstance().Password = passWord;
 
+                    //Vào chương trình
+                    WorkPlace workPlace = new WorkPlace();
+                    workPlace.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -73,7 +75,7 @@ namespace StudyManagementApp
             catch (Exception excpt)
             {
                 MessageBox.Show(excpt.Message);
-            }*/
+            }
         }
 
 

@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\Hash.cs" />
     <Compile Include="Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +134,7 @@
     <Compile Include="UserControls\RoundedCornerTextBox.Designer.cs">
       <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInfo.cs" />
     <Compile Include="WorkPlace.cs">
       <SubType>Form</SubType>
     </Compile>

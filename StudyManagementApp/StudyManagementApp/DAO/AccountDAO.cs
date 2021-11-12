@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using System.Security.Cryptography;
 
 namespace StudyManagementApp.DAO
 {
@@ -30,7 +26,14 @@ namespace StudyManagementApp.DAO
         {
             string query = "USP_Login @userName , @passWord";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, passWord});
+            string passwordHash;
+
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                passwordHash = Hash.GetHash(sha256Hash, passWord);
+            }
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { userName, passwordHash });
 
             return result.Rows.Count > 0;
         }
@@ -39,7 +42,30 @@ namespace StudyManagementApp.DAO
         {
             string query = "USP_Signup @userName , @passWord";
 
-            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passWord });
+            //Create hashcode for password
+            string passwordHash;
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                passwordHash = Hash.GetHash(sha256Hash, passWord);
+            }
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passwordHash });
+
+            return result > 0;
+        }
+
+        public bool ChangePassword(string userName, string newPassword)
+        {
+            string query = "USP_ChangePassword @username , @newPassowrd";
+
+            //Create hashcode for password
+            string passwordHash;
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                passwordHash = Hash.GetHash(sha256Hash, newPassword);
+            }
+
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passwordHash });
 
             return result > 0;
         }

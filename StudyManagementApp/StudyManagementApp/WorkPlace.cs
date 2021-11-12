@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace StudyManagementApp
 {
-    
     public partial class WorkPlace : Form
     {
        

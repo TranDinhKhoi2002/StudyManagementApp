@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Diagnostics;
+﻿using System.Linq;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -26,18 +21,10 @@ namespace StudyManagementApp.DAO
             private set => instance = value; 
         }
 
-        private DataProvider()
-        {
-            //string databaseDir = System.IO.Directory.GetCurrentDirectory();
-            //databaseDir = databaseDir.Remove(databaseDir.IndexOf("bin\\Debug")) + "Database\\Database.mdf";
+        private DataProvider() { }
 
-            //connectionStr = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+databaseDir+";Integrated Security=True";
-
-            connectionStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\admin\Documents\Github\StudyManagementApp\StudyManagementApp\StudyManagementApp\Database\Database.mdf;Integrated Security=True;";
-        }
-
-        private string connectionStr;
         //private string connectionStr = "Data Source=ADMIN;Initial Catalog=StudyManagementApp;Integrated Security=True";
+        private string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
 
         public DataTable ExecuteQuery(string query, object[] parameters = null)
         {
