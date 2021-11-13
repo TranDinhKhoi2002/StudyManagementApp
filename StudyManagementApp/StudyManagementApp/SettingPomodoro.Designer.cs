@@ -48,6 +48,7 @@ namespace StudyManagementApp
             this.label1 = new System.Windows.Forms.Label();
             this.btnApply = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.btnOK = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numLongBreak)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numShortBreak)).BeginInit();
@@ -56,10 +57,14 @@ namespace StudyManagementApp
             ((System.ComponentModel.ISupportInitialize)(this.numNotification)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInterval)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.numLongBreak);
             this.panel2.Controls.Add(this.numShortBreak);
             this.panel2.Controls.Add(this.label5);
@@ -67,13 +72,16 @@ namespace StudyManagementApp
             this.panel2.Controls.Add(this.numPomodoro);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(71, 264);
+            this.panel2.Location = new System.Drawing.Point(67, 257);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(629, 214);
             this.panel2.TabIndex = 1;
             // 
             // numLongBreak
             // 
+            this.numLongBreak.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numLongBreak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.numLongBreak.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numLongBreak.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -87,6 +95,9 @@ namespace StudyManagementApp
             // 
             // numShortBreak
             // 
+            this.numShortBreak.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numShortBreak.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.numShortBreak.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numShortBreak.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,6 +111,9 @@ namespace StudyManagementApp
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(124)))), ((int)(((byte)(164)))));
             this.label5.Location = new System.Drawing.Point(441, 93);
@@ -110,6 +124,9 @@ namespace StudyManagementApp
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(145)))), ((int)(((byte)(150)))));
             this.label4.Location = new System.Drawing.Point(242, 93);
@@ -120,6 +137,9 @@ namespace StudyManagementApp
             // 
             // numPomodoro
             // 
+            this.numPomodoro.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numPomodoro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.numPomodoro.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numPomodoro.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,6 +153,9 @@ namespace StudyManagementApp
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
             this.label3.Location = new System.Drawing.Point(43, 93);
@@ -143,6 +166,9 @@ namespace StudyManagementApp
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.label2.Location = new System.Drawing.Point(210, 12);
@@ -154,18 +180,24 @@ namespace StudyManagementApp
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.numNotification);
             this.panel3.Controls.Add(this.numInterval);
             this.panel3.Controls.Add(this.cbbNotification);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(71, 483);
+            this.panel3.Location = new System.Drawing.Point(67, 476);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(632, 181);
             this.panel3.TabIndex = 2;
             // 
             // numNotification
             // 
+            this.numNotification.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.numNotification.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numNotification.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,6 +211,9 @@ namespace StudyManagementApp
             // 
             // numInterval
             // 
+            this.numInterval.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.numInterval.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.numInterval.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.numInterval.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -192,6 +227,9 @@ namespace StudyManagementApp
             // 
             // cbbNotification
             // 
+            this.cbbNotification.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cbbNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.cbbNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -209,6 +247,9 @@ namespace StudyManagementApp
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.label7.Location = new System.Drawing.Point(336, 13);
@@ -220,6 +261,9 @@ namespace StudyManagementApp
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.label6.Location = new System.Drawing.Point(43, 13);
@@ -231,10 +275,13 @@ namespace StudyManagementApp
             // 
             // Pomo_PictureBox
             // 
+            this.Pomo_PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Pomo_PictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Pomo_PictureBox.ErrorImage")));
             this.Pomo_PictureBox.Image = global::StudyManagementApp.Properties.Resources.TomatoRed;
             this.Pomo_PictureBox.ImageLocation = "";
-            this.Pomo_PictureBox.Location = new System.Drawing.Point(242, 34);
+            this.Pomo_PictureBox.Location = new System.Drawing.Point(238, 27);
             this.Pomo_PictureBox.Margin = new System.Windows.Forms.Padding(0);
             this.Pomo_PictureBox.Name = "Pomo_PictureBox";
             this.Pomo_PictureBox.Size = new System.Drawing.Size(282, 198);
@@ -244,10 +291,13 @@ namespace StudyManagementApp
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
             this.label1.Font = new System.Drawing.Font("Agency FB", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.label1.Location = new System.Drawing.Point(299, 117);
+            this.label1.Location = new System.Drawing.Point(295, 110);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(169, 59);
             this.label1.TabIndex = 8;
@@ -256,6 +306,9 @@ namespace StudyManagementApp
             // 
             // btnApply
             // 
+            this.btnApply.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnApply.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
             this.btnApply.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
             this.btnApply.BorderRadius = 18;
@@ -264,7 +317,7 @@ namespace StudyManagementApp
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApply.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnApply.Location = new System.Drawing.Point(192, 712);
+            this.btnApply.Location = new System.Drawing.Point(188, 705);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(168, 58);
             this.btnApply.TabIndex = 6;
@@ -274,6 +327,9 @@ namespace StudyManagementApp
             // 
             // btnOK
             // 
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.btnOK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
             this.btnOK.BorderRadius = 18;
@@ -282,7 +338,7 @@ namespace StudyManagementApp
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnOK.Location = new System.Drawing.Point(405, 712);
+            this.btnOK.Location = new System.Drawing.Point(401, 705);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(170, 58);
             this.btnOK.TabIndex = 4;
@@ -290,18 +346,27 @@ namespace StudyManagementApp
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Pomo_PictureBox);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.btnApply);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.btnOK);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(767, 828);
+            this.panel1.TabIndex = 9;
+            // 
             // SettingPomodoro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(767, 828);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Pomo_PictureBox);
-            this.Controls.Add(this.btnApply);
-            this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -316,6 +381,7 @@ namespace StudyManagementApp
             ((System.ComponentModel.ISupportInitialize)(this.numNotification)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numInterval)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -339,5 +405,6 @@ namespace StudyManagementApp
         private UserControls.RoundedCornerButton btnApply;
         private System.Windows.Forms.PictureBox Pomo_PictureBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -33,8 +33,8 @@ namespace StudyManagementApp
             AlignHomeAboutHelp();
             AlignControls_Non_Maximum();
 
-            //Tạo random bộ câu truyền cảm hứng
-            TruyencamhungLabel.Text = GetTruyenCamHung();
+           /* //Tạo random bộ câu truyền cảm hứng
+            TruyencamhungLabel.Text = GetTruyenCamHung();*/
         }
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
@@ -45,10 +45,10 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            /*WorkPlace workPlace = new WorkPlace();
+            WorkPlace workPlace = new WorkPlace();
             workPlace.Show();
-            this.Hide();*/
-            try
+            this.Hide();
+            /*try
             {
                 if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
                 {
@@ -67,7 +67,7 @@ namespace StudyManagementApp
 
                     //Vào chương trình
                     WorkPlace workPlace = new WorkPlace();
-                    workPlace.ShowDialog();
+                    workPlace.Show();
                     this.Hide();
                 }
                 else
@@ -78,7 +78,7 @@ namespace StudyManagementApp
             catch (Exception excpt)
             {
                 MessageBox.Show(excpt.Message);
-            }
+            }*/
         }
 
 
@@ -280,14 +280,10 @@ namespace StudyManagementApp
         {
             this.Cursor = Cursors.Default;
         }
-
-
-
-
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
 
 
-        //Lây ngẫu nhiên câu truyền cảm hứng
+        /*---------------------------------Câu truyền cảm hứng---------------------------------*/
         string GetTruyenCamHung()
         {
             List<string> text = new List<string>();
@@ -307,5 +303,6 @@ namespace StudyManagementApp
         {
             TruyencamhungLabel.Text = GetTruyenCamHung();
         }
+        /*---------------------------------Câu truyền cảm hứng---------------------------------*/
     }
 }

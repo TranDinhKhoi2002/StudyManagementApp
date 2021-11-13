@@ -30,7 +30,12 @@ namespace StudyManagementApp
                 Application.Exit();
         }
 
-        
+        /*---------------------------------Calendar---------------------------------*/
+        private void CalendarButton_Click(object sender, EventArgs e)
+        {
+            Main_customCalendar.Visible = !Main_customCalendar.Visible;
+        }
+        /*---------------------------------Calendar---------------------------------*/
 
         /*---------------------------------Điều khiển các item trong menu bên trái---------------------------------*/
         //Hàm dấu tất cả các subMenu_panel
@@ -387,13 +392,14 @@ namespace StudyManagementApp
         }
         /*---------------------------------Pomodoro---------------------------------*/
 
+        /*---------------------------------Edit---------------------------------*/
         private void Edit_iconButton_Click(object sender, EventArgs e)
         {
             Edit edit = new Edit();
             edit.ShowDialog(this);
         }
+        /*---------------------------------Edit---------------------------------*/
 
-
-
+       
     }
 }
