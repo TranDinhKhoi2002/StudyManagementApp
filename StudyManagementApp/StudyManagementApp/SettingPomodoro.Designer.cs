@@ -286,13 +286,14 @@ namespace StudyManagementApp
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(170, 58);
             this.btnOK.TabIndex = 4;
-            this.btnOK.Text = "Cancel";
+            this.btnOK.Text = "Reset";
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // SettingPomodoro
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.ClientSize = new System.Drawing.Size(767, 828);
             this.Controls.Add(this.label1);

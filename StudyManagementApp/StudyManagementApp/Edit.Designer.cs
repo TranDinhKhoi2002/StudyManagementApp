@@ -30,18 +30,18 @@ namespace StudyManagementApp
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.CurrentPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.cbbNotification = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.CancelButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.Apply_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.CurrentPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.Logout_button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,143 +61,6 @@ namespace StudyManagementApp
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textbox);
-            this.groupBox2.Controls.Add(this.cbbNotification);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.groupBox2.Location = new System.Drawing.Point(53, 27);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(630, 265);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "User";
-            // 
-            // cbbNotification
-            // 
-            this.cbbNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.cbbNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbNotification.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.cbbNotification.FormattingEnabled = true;
-            this.cbbNotification.Items.AddRange(new object[] {
-            "Chế độ hiện",
-            "Của datetimepicker",
-            "Trong cuốn lịch"});
-            this.cbbNotification.Location = new System.Drawing.Point(225, 188);
-            this.cbbNotification.Name = "cbbNotification";
-            this.cbbNotification.Size = new System.Drawing.Size(313, 52);
-            this.cbbNotification.TabIndex = 9;
-            this.cbbNotification.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(205, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 27);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "custom radio button nằm ở đây";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 186);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 36);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Calendar mode";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 123);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 36);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Theme";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 36);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "NickName";
-            // 
-            // textbox
-            // 
-            this.textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.textbox.BorderRadius = 10;
-            this.textbox.BorderSize = 2;
-            this.textbox.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textbox.Location = new System.Drawing.Point(206, 55);
-            this.textbox.Margin = new System.Windows.Forms.Padding(6);
-            this.textbox.Multiline = false;
-            this.textbox.Name = "textbox";
-            this.textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.textbox.PasswordChar = false;
-            this.textbox.PlaceholderColor = System.Drawing.Color.Gray;
-            this.textbox.PlaceholderText = "Nickname";
-            this.textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textbox.Size = new System.Drawing.Size(349, 72);
-            this.textbox.TabIndex = 1;
-            this.textbox.Texts = "";
-            this.textbox.UnderlinedStyle = false;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(82)))));
-            this.CancelButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
-            this.CancelButton.BorderRadius = 18;
-            this.CancelButton.BorderSize = 0;
-            this.CancelButton.FlatAppearance.BorderSize = 0;
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CancelButton.Location = new System.Drawing.Point(518, 658);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(170, 58);
-            this.CancelButton.TabIndex = 13;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
-            // 
-            // Apply_Button
-            // 
-            this.Apply_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.Apply_Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.Apply_Button.BorderRadius = 18;
-            this.Apply_Button.BorderSize = 0;
-            this.Apply_Button.FlatAppearance.BorderSize = 0;
-            this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Apply_Button.Location = new System.Drawing.Point(48, 658);
-            this.Apply_Button.Name = "Apply_Button";
-            this.Apply_Button.Size = new System.Drawing.Size(170, 58);
-            this.Apply_Button.TabIndex = 12;
-            this.Apply_Button.Text = "Apply";
-            this.Apply_Button.UseVisualStyleBackColor = false;
-            this.Apply_Button.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // ReNewPassword_textbox
             // 
@@ -277,6 +140,143 @@ namespace StudyManagementApp
             this.CurrentPassword_textbox.Texts = "";
             this.CurrentPassword_textbox.UnderlinedStyle = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textbox);
+            this.groupBox2.Controls.Add(this.cbbNotification);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.groupBox2.Location = new System.Drawing.Point(53, 27);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(630, 265);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "User";
+            // 
+            // textbox
+            // 
+            this.textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.textbox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.textbox.BorderRadius = 10;
+            this.textbox.BorderSize = 2;
+            this.textbox.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.textbox.Location = new System.Drawing.Point(206, 55);
+            this.textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.textbox.Multiline = false;
+            this.textbox.Name = "textbox";
+            this.textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.textbox.PasswordChar = false;
+            this.textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.textbox.PlaceholderText = "Nickname";
+            this.textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textbox.Size = new System.Drawing.Size(349, 72);
+            this.textbox.TabIndex = 1;
+            this.textbox.Texts = "";
+            this.textbox.UnderlinedStyle = false;
+            // 
+            // cbbNotification
+            // 
+            this.cbbNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.cbbNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbNotification.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.cbbNotification.FormattingEnabled = true;
+            this.cbbNotification.Items.AddRange(new object[] {
+            "Chế độ hiện",
+            "Của datetimepicker",
+            "Trong cuốn lịch"});
+            this.cbbNotification.Location = new System.Drawing.Point(225, 188);
+            this.cbbNotification.Name = "cbbNotification";
+            this.cbbNotification.Size = new System.Drawing.Size(313, 52);
+            this.cbbNotification.TabIndex = 9;
+            this.cbbNotification.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(205, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(348, 27);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "custom radio button nằm ở đây";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(42, 186);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(151, 36);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Calendar mode";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(42, 123);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 36);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Theme";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(42, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 36);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "NickName";
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(81)))), ((int)(((byte)(82)))));
+            this.CancelButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.CancelButton.BorderRadius = 18;
+            this.CancelButton.BorderSize = 0;
+            this.CancelButton.FlatAppearance.BorderSize = 0;
+            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CancelButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.CancelButton.Location = new System.Drawing.Point(518, 658);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(170, 58);
+            this.CancelButton.TabIndex = 13;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // Apply_Button
+            // 
+            this.Apply_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.Apply_Button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.Apply_Button.BorderRadius = 18;
+            this.Apply_Button.BorderSize = 0;
+            this.Apply_Button.FlatAppearance.BorderSize = 0;
+            this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Apply_Button.Location = new System.Drawing.Point(48, 658);
+            this.Apply_Button.Name = "Apply_Button";
+            this.Apply_Button.Size = new System.Drawing.Size(170, 58);
+            this.Apply_Button.TabIndex = 12;
+            this.Apply_Button.Text = "Apply";
+            this.Apply_Button.UseVisualStyleBackColor = false;
+            this.Apply_Button.Click += new System.EventHandler(this.SignUpButton_Click);
+            // 
             // Logout_button
             // 
             this.Logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
@@ -297,7 +297,8 @@ namespace StudyManagementApp
             // 
             // Edit
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(736, 763);
             this.Controls.Add(this.Logout_button);

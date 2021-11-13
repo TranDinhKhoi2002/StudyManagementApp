@@ -214,7 +214,6 @@ namespace StudyManagementApp
                 if (isHomeClick)
                 {
                     HomePanel.Visible = false;
-
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }

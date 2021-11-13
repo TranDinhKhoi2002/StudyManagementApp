@@ -193,6 +193,8 @@
   <ItemGroup>
     <None Include="Resources\calendarWhite.png" />
     <None Include="Resources\calendarDark.png" />
+    <None Include="bin\Debug\Resources\Images\title.png" />
+    <None Include="bin\Debug\Resources\Images\Content.png" />
     <Content Include="Resources\Images\about.png" />
     <Content Include="Resources\Images\calendarDark.png" />
     <Content Include="Resources\Images\calendarWhite.png" />

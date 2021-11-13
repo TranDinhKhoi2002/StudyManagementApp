@@ -131,7 +131,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
             this.ToolTablePanel.Controls.Add(this.panel4, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -151,10 +151,10 @@ namespace StudyManagementApp
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.panel4.Controls.Add(this.iconButton4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(1512, 0);
+            this.panel4.Location = new System.Drawing.Point(1511, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(156, 86);
+            this.panel4.Size = new System.Drawing.Size(157, 86);
             this.panel4.TabIndex = 3;
             // 
             // iconButton4
@@ -168,7 +168,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(116, 0);
+            this.iconButton4.Location = new System.Drawing.Point(117, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(40, 40);
@@ -182,7 +182,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(302, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(402, 86);
+            this.WordToolPanel.Size = new System.Drawing.Size(401, 86);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -194,7 +194,7 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(1109, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(1108, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
@@ -313,7 +313,7 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(706, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(705, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
             this.PassageToolPanel.Size = new System.Drawing.Size(401, 86);
@@ -1181,7 +1181,8 @@ namespace StudyManagementApp
             // 
             // WorkPlace
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1668, 1050);
             this.Controls.Add(this.BackGroundWorkPlace_Panel);
