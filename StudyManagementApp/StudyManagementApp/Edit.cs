@@ -57,7 +57,8 @@ namespace StudyManagementApp
 
         private void Logout_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Owner.Dispose();
+            Program.globalLogin.Show();
         }
     }
 }

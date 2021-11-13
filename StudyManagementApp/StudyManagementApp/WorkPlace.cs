@@ -27,7 +27,7 @@ namespace StudyManagementApp
         //Khi tắt workplace thì làm gì?
         private void WorkPlace_FormClosed(object sender, FormClosedEventArgs e)
         {
-                Application.Exit();
+            Application.Exit();
         }
 
         /*---------------------------------Calendar---------------------------------*/
@@ -251,14 +251,19 @@ namespace StudyManagementApp
                 {
                     if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) == numNotification && int.Parse(SecondPomo_Label.Text) == 0)
                     {
+                        Pomodoro_notifyIcon.Visible = true;
                         Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", numNotification.ToString() + " phút nữa hết giờ học rồi!", ToolTipIcon.Warning);
+                        Pomodoro_notifyIcon.Visible = false;
+
                     }
                 }
                 else
                 {
                     if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) % numNotification == (numPomodoro - numNotification) % numNotification && int.Parse(SecondPomo_Label.Text) == 0)
                     {
+                        Pomodoro_notifyIcon.Visible = true;
                         Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
+                        Pomodoro_notifyIcon.Visible = false;
                     }
                 }
             }
@@ -295,7 +300,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
 
+                    Pomodoro_notifyIcon.Visible = true;
                     Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
                     Pomodoro_Timer.Start();
                 }
                 else if (pomoState == PomoState.ShortBreak)
@@ -308,7 +315,10 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
 
+                    Pomodoro_notifyIcon.Visible = true;
                     Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
+
                     Pomodoro_Timer.Start();
                 }
                 else if (pomoState == PomoState.LongBreak)
@@ -321,7 +331,10 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
 
+                    Pomodoro_notifyIcon.Visible = true;
                     Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
+
                     Pomodoro_Timer.Start();
                 }
                 SecondPomo_Label.Text = "00";
@@ -390,6 +403,7 @@ namespace StudyManagementApp
                 SecondPomo_Label.Text = "00";
             }    
         }
+
         /*---------------------------------Pomodoro---------------------------------*/
 
         /*---------------------------------Edit---------------------------------*/
@@ -400,6 +414,38 @@ namespace StudyManagementApp
         }
         /*---------------------------------Edit---------------------------------*/
 
-       
+        /*---------------------------------Background---------------------------------*/
+
+        private void notifyBackground_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
+            notifyBackground.Visible = false;
+        }
+
+        private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            notifyBackground.Visible = true;
+            e.Cancel = true;
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Show();
+            DialogResult dialogResult = MessageBox.Show("Do you want to exit?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.ExitThread();
+                Application.Exit(); 
+            }
+        }
+
+        private void WorkPlace_Load(object sender, EventArgs e)
+        {
+            UserNameLabel.Text = UserInfo.getInstance().Username;
+            notifyBackground.Visible = false;
+        }
     }
 }
