@@ -92,5 +92,7 @@ namespace StudyManagementApp
 
             this.Close();
         }
+
+      
     }
 }
