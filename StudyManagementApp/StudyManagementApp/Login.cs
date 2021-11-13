@@ -67,7 +67,7 @@ namespace StudyManagementApp
 
                     //Vào chương trình
                     WorkPlace workPlace = new WorkPlace();
-                    workPlace.ShowDialog();
+                    workPlace.Show();
                     this.Hide();
                 }
                 else
@@ -306,6 +306,13 @@ namespace StudyManagementApp
         private void timer1_Tick(object sender, EventArgs e)
         {
             TruyencamhungLabel.Text = GetTruyenCamHung();
+        }
+
+        private void SignInLogoPictureBox_Click(object sender, EventArgs e)
+        {
+            WorkPlace workPlace = new WorkPlace();
+            workPlace.Show();
+            this.Hide();
         }
     }
 }
