@@ -68,7 +68,7 @@ namespace StudyManagementApp
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(47, 176);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(419, 143);
             this.panel2.TabIndex = 1;
@@ -80,7 +80,7 @@ namespace StudyManagementApp
             this.numLongBreak.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numLongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numLongBreak.Location = new System.Drawing.Point(299, 95);
-            this.numLongBreak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numLongBreak.Margin = new System.Windows.Forms.Padding(2);
             this.numLongBreak.Name = "numLongBreak";
             this.numLongBreak.Size = new System.Drawing.Size(87, 43);
             this.numLongBreak.TabIndex = 6;
@@ -94,7 +94,7 @@ namespace StudyManagementApp
             this.numShortBreak.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numShortBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numShortBreak.Location = new System.Drawing.Point(166, 95);
-            this.numShortBreak.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numShortBreak.Margin = new System.Windows.Forms.Padding(2);
             this.numShortBreak.Name = "numShortBreak";
             this.numShortBreak.Size = new System.Drawing.Size(87, 43);
             this.numShortBreak.TabIndex = 5;
@@ -130,7 +130,7 @@ namespace StudyManagementApp
             this.numPomodoro.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPomodoro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numPomodoro.Location = new System.Drawing.Point(33, 95);
-            this.numPomodoro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numPomodoro.Margin = new System.Windows.Forms.Padding(2);
             this.numPomodoro.Name = "numPomodoro";
             this.numPomodoro.Size = new System.Drawing.Size(87, 43);
             this.numPomodoro.TabIndex = 2;
@@ -168,7 +168,7 @@ namespace StudyManagementApp
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Location = new System.Drawing.Point(47, 322);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(421, 121);
             this.panel3.TabIndex = 2;
@@ -180,7 +180,7 @@ namespace StudyManagementApp
             this.numNotification.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numNotification.Location = new System.Drawing.Point(319, 63);
-            this.numNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numNotification.Margin = new System.Windows.Forms.Padding(2);
             this.numNotification.Name = "numNotification";
             this.numNotification.Size = new System.Drawing.Size(87, 43);
             this.numNotification.TabIndex = 5;
@@ -194,7 +194,7 @@ namespace StudyManagementApp
             this.numInterval.Font = new System.Drawing.Font("Agency FB", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numInterval.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numInterval.Location = new System.Drawing.Point(33, 63);
-            this.numInterval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numInterval.Margin = new System.Windows.Forms.Padding(2);
             this.numInterval.Name = "numInterval";
             this.numInterval.Size = new System.Drawing.Size(87, 43);
             this.numInterval.TabIndex = 4;
@@ -213,7 +213,7 @@ namespace StudyManagementApp
             "Last",
             "Every"});
             this.cbbNotification.Location = new System.Drawing.Point(228, 63);
-            this.cbbNotification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbNotification.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNotification.Name = "cbbNotification";
             this.cbbNotification.Size = new System.Drawing.Size(88, 42);
             this.cbbNotification.TabIndex = 3;
@@ -280,7 +280,7 @@ namespace StudyManagementApp
             this.btnApply.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnApply.Location = new System.Drawing.Point(128, 475);
-            this.btnApply.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(2);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(112, 39);
             this.btnApply.TabIndex = 6;
@@ -299,7 +299,7 @@ namespace StudyManagementApp
             this.btnOK.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnOK.Location = new System.Drawing.Point(270, 475);
-            this.btnOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(2);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(113, 39);
             this.btnOK.TabIndex = 4;
@@ -321,7 +321,7 @@ namespace StudyManagementApp
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SettingPomodoro";

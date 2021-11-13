@@ -179,7 +179,7 @@
             this.PasswordTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.PasswordTextBox.Location = new System.Drawing.Point(447, 274);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTextBox.Multiline = false;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
@@ -187,7 +187,7 @@
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
             this.PasswordTextBox.Size = new System.Drawing.Size(233, 35);
-            this.PasswordTextBox.TabIndex = 1;
+            this.PasswordTextBox.TabIndex = 3;
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
             // 
@@ -201,7 +201,7 @@
             this.UsernameTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UsernameTextBox.Location = new System.Drawing.Point(120, 274);
-            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsernameTextBox.Multiline = false;
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
@@ -209,7 +209,7 @@
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
             this.UsernameTextBox.Size = new System.Drawing.Size(233, 35);
-            this.UsernameTextBox.TabIndex = 0;
+            this.UsernameTextBox.TabIndex = 2;
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;
             // 
@@ -227,7 +227,7 @@
             this.SignUpButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SignUpButton.Name = "SignUpButton";
             this.SignUpButton.Size = new System.Drawing.Size(113, 38);
-            this.SignUpButton.TabIndex = 3;
+            this.SignUpButton.TabIndex = 1;
             this.SignUpButton.Text = "Sign-up";
             this.SignUpButton.UseVisualStyleBackColor = false;
             this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
@@ -246,7 +246,7 @@
             this.SignInButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SignInButton.Name = "SignInButton";
             this.SignInButton.Size = new System.Drawing.Size(113, 38);
-            this.SignInButton.TabIndex = 2;
+            this.SignInButton.TabIndex = 0;
             this.SignInButton.Text = "Sign-in";
             this.SignInButton.UseVisualStyleBackColor = false;
             this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);

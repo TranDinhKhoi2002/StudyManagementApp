@@ -415,14 +415,6 @@ namespace StudyManagementApp
             this.WindowState = FormWindowState.Normal;
         }
 
-        private void WorkPlace_Resize(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Minimized)
-                this.Hide();
-            else
-                this.Show();
-        }
-
         private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
@@ -439,6 +431,11 @@ namespace StudyManagementApp
                 Application.ExitThread();
                 Application.Exit(); 
             }
+        }
+
+        private void WorkPlace_Load(object sender, EventArgs e)
+        {
+            UserNameLabel.Text = UserInfo.getInstance().Username;
         }
     }
 }
