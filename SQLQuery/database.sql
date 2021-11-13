@@ -1,7 +1,7 @@
-CREATE DATABASE StudyManagementApp
+CREATE DATABASE StudyManagementApp2
 GO
 
-USE StudyManagementApp
+USE StudyManagementApp2
 GO
 
 CREATE TABLE ACCOUNT
@@ -37,6 +37,13 @@ BEGIN
 END
 GO
 
+CREATE PROC USP_VerifyUserExist
+@userName NVARCHAR(100)
+AS
+BEGIN
+	SELECT USERNAME FROM ACCOUNT WHERE USERNAME = @userName
+END
+GO
 --CREATE PROC USP_GetAccountByUserName
 --@userName NVARCHAR(100)
 --AS
