@@ -110,7 +110,7 @@ namespace StudyManagementApp.UserControls
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 143);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 92);
+            this.panel1.Size = new System.Drawing.Size(201, 92);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox2
@@ -122,7 +122,7 @@ namespace StudyManagementApp.UserControls
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 92);
+            this.pictureBox2.Size = new System.Drawing.Size(201, 92);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -131,9 +131,9 @@ namespace StudyManagementApp.UserControls
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(209, 143);
+            this.panel2.Location = new System.Drawing.Point(210, 143);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(691, 92);
+            this.panel2.Size = new System.Drawing.Size(690, 92);
             this.panel2.TabIndex = 3;
             // 
             // pictureBox1
@@ -144,7 +144,7 @@ namespace StudyManagementApp.UserControls
             this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(691, 92);
+            this.pictureBox1.Size = new System.Drawing.Size(690, 92);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -213,8 +213,8 @@ namespace StudyManagementApp.UserControls
             // 
             // HelpUC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
