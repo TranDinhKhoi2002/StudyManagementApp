@@ -413,11 +413,13 @@ namespace StudyManagementApp
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
+            notifyBackground.Visible = false;
         }
 
         private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
+            notifyBackground.Visible = true;
             e.Cancel = true;
         }
 
@@ -436,6 +438,7 @@ namespace StudyManagementApp
         private void WorkPlace_Load(object sender, EventArgs e)
         {
             UserNameLabel.Text = UserInfo.getInstance().Username;
+            notifyBackground.Visible = false;
         }
     }
 }

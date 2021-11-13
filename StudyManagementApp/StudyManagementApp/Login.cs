@@ -307,12 +307,5 @@ namespace StudyManagementApp
         {
             TruyencamhungLabel.Text = GetTruyenCamHung();
         }
-
-        private void SignInLogoPictureBox_Click(object sender, EventArgs e)
-        {
-            WorkPlace workPlace = new WorkPlace();
-            workPlace.Show();
-            this.Hide();
-        }
     }
 }

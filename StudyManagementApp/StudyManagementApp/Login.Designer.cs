@@ -263,7 +263,6 @@
             this.SignInLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SignInLogoPictureBox.TabIndex = 0;
             this.SignInLogoPictureBox.TabStop = false;
-            this.SignInLogoPictureBox.Click += new System.EventHandler(this.SignInLogoPictureBox_Click);
             // 
             // aboutUC1
             // 
