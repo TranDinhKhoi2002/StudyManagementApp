@@ -192,9 +192,9 @@ namespace StudyManagementApp
             this.cbbNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.cbbNotification.FormattingEnabled = true;
             this.cbbNotification.Items.AddRange(new object[] {
-            "Chế độ hiện",
-            "Của datetimepicker",
-            "Trong cuốn lịch"});
+            "Che do hien thi",
+            "cua datetimepicker",
+            "trong cuon lich"});
             this.cbbNotification.Location = new System.Drawing.Point(225, 188);
             this.cbbNotification.Name = "cbbNotification";
             this.cbbNotification.Size = new System.Drawing.Size(313, 52);
@@ -214,30 +214,30 @@ namespace StudyManagementApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 186);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 36);
+            this.label3.Size = new System.Drawing.Size(169, 42);
             this.label3.TabIndex = 7;
             this.label3.Text = "Calendar mode";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 36);
+            this.label2.Size = new System.Drawing.Size(83, 42);
             this.label2.TabIndex = 6;
             this.label2.Text = "Theme";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 36);
+            this.label1.Size = new System.Drawing.Size(117, 42);
             this.label1.TabIndex = 5;
             this.label1.Text = "NickName";
             // 

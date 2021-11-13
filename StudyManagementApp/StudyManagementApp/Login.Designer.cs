@@ -45,7 +45,7 @@
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.BackGroundSignIn_Panel = new System.Windows.Forms.Panel();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ChangeCau_Timer = new System.Windows.Forms.Timer(this.components);
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.About)).BeginInit();
@@ -163,9 +163,9 @@
             this.NotificationLabel.Location = new System.Drawing.Point(276, 220);
             this.NotificationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NotificationLabel.Name = "NotificationLabel";
-            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.NotificationLabel.Size = new System.Drawing.Size(249, 32);
             this.NotificationLabel.TabIndex = 5;
+            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.NotificationLabel.Size = new System.Drawing.Size(372, 48);
             this.NotificationLabel.Text = "Sign-in for future";
             this.NotificationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -186,8 +186,8 @@
             this.PasswordTextBox.PasswordChar = true;
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
-            this.PasswordTextBox.Size = new System.Drawing.Size(233, 35);
             this.PasswordTextBox.TabIndex = 3;
+            this.PasswordTextBox.Size = new System.Drawing.Size(350, 53);
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
             // 
@@ -208,8 +208,8 @@
             this.UsernameTextBox.PasswordChar = false;
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
-            this.UsernameTextBox.Size = new System.Drawing.Size(233, 35);
             this.UsernameTextBox.TabIndex = 2;
+            this.UsernameTextBox.Size = new System.Drawing.Size(350, 53);
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;
             // 
@@ -226,8 +226,8 @@
             this.SignUpButton.Location = new System.Drawing.Point(427, 333);
             this.SignUpButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(113, 38);
             this.SignUpButton.TabIndex = 1;
+            this.SignUpButton.Size = new System.Drawing.Size(170, 58);
             this.SignUpButton.Text = "Sign-up";
             this.SignUpButton.UseVisualStyleBackColor = false;
             this.SignUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
@@ -245,7 +245,7 @@
             this.SignInButton.Location = new System.Drawing.Point(261, 333);
             this.SignInButton.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(113, 38);
+            this.SignInButton.Size = new System.Drawing.Size(170, 58);
             this.SignInButton.TabIndex = 0;
             this.SignInButton.Text = "Sign-in";
             this.SignInButton.UseVisualStyleBackColor = false;
@@ -256,10 +256,10 @@
             this.SignInLogoPictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("SignInLogoPictureBox.ErrorImage")));
             this.SignInLogoPictureBox.Image = global::StudyManagementApp.Properties.Resources.Logo;
             this.SignInLogoPictureBox.ImageLocation = "";
-            this.SignInLogoPictureBox.Location = new System.Drawing.Point(335, 82);
-            this.SignInLogoPictureBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.SignInLogoPictureBox.Location = new System.Drawing.Point(503, 120);
+            this.SignInLogoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SignInLogoPictureBox.Name = "SignInLogoPictureBox";
-            this.SignInLogoPictureBox.Size = new System.Drawing.Size(131, 117);
+            this.SignInLogoPictureBox.Size = new System.Drawing.Size(197, 186);
             this.SignInLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SignInLogoPictureBox.TabIndex = 0;
             this.SignInLogoPictureBox.TabStop = false;
@@ -298,11 +298,11 @@
             this.helpUC1.Size = new System.Drawing.Size(800, 405);
             this.helpUC1.TabIndex = 7;
             // 
-            // timer1
+            // ChangeCau_Timer
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.ChangeCau_Timer.Enabled = true;
+            this.ChangeCau_Timer.Interval = 3000;
+            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Login
             // 
@@ -343,7 +343,7 @@
         private UserControls.AboutUC aboutUC1;
         private System.Windows.Forms.Panel BackGroundSignIn_Panel;
         private UserControls.HelpUC helpUC1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer ChangeCau_Timer;
     }
 }
 

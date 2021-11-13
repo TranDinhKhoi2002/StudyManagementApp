@@ -94,7 +94,7 @@ namespace StudyManagementApp
             this.notifyBackground = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmstripBackground = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customCalendar1 = new StudyManagementApp.UserControls.CustomCalendar();
+            this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.EnterCommand_TextBox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
@@ -135,7 +135,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
             this.ToolTablePanel.Controls.Add(this.panel4, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -155,10 +155,10 @@ namespace StudyManagementApp
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.panel4.Controls.Add(this.iconButton4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(784, 0);
+            this.panel4.Location = new System.Drawing.Point(1503, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(129, 57);
+            this.panel4.Size = new System.Drawing.Size(165, 86);
             this.panel4.TabIndex = 3;
             // 
             // iconButton4
@@ -172,7 +172,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(102, 0);
+            this.iconButton4.Location = new System.Drawing.Point(125, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(27, 27);
@@ -186,7 +186,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(201, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(193, 57);
+            this.WordToolPanel.Size = new System.Drawing.Size(399, 86);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -198,13 +198,13 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(590, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(1103, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(192, 57);
+            this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(398, 86);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
             // panel2
@@ -281,10 +281,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(396, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(703, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(192, 57);
+            this.PassageToolPanel.Size = new System.Drawing.Size(398, 86);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -1034,7 +1034,7 @@ namespace StudyManagementApp
             // WorkPlacePanel
             // 
             this.WorkPlacePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.WorkPlacePanel.Controls.Add(this.customCalendar1);
+            this.WorkPlacePanel.Controls.Add(this.Main_customCalendar);
             this.WorkPlacePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WorkPlacePanel.Location = new System.Drawing.Point(0, 0);
             this.WorkPlacePanel.Margin = new System.Windows.Forms.Padding(2);
@@ -1090,16 +1090,17 @@ namespace StudyManagementApp
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            this.Pomodoro_notifyIcon.Text = "notifyIcon1";
+            this.Pomodoro_notifyIcon.Visible = true;
             // 
-            // customCalendar1
+            // Main_customCalendar
             // 
-            this.customCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.customCalendar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.customCalendar1.Margin = new System.Windows.Forms.Padding(2);
-            this.customCalendar1.Name = "customCalendar1";
-            this.customCalendar1.Size = new System.Drawing.Size(712, 403);
-            this.customCalendar1.TabIndex = 0;
+            this.Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.Main_customCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Main_customCalendar.Location = new System.Drawing.Point(0, 0);
+            this.Main_customCalendar.Name = "Main_customCalendar";
+            this.Main_customCalendar.Size = new System.Drawing.Size(1366, 906);
+            this.Main_customCalendar.TabIndex = 0;
             // 
             // aboutUC1
             // 
@@ -1136,11 +1137,11 @@ namespace StudyManagementApp
             this.EnterCommand_TextBox.Margin = new System.Windows.Forms.Padding(4);
             this.EnterCommand_TextBox.Multiline = false;
             this.EnterCommand_TextBox.Name = "EnterCommand_TextBox";
-            this.EnterCommand_TextBox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.EnterCommand_TextBox.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.EnterCommand_TextBox.PasswordChar = false;
             this.EnterCommand_TextBox.PlaceholderColor = System.Drawing.Color.DimGray;
             this.EnterCommand_TextBox.PlaceholderText = "Enter Command";
-            this.EnterCommand_TextBox.Size = new System.Drawing.Size(231, 47);
+            this.EnterCommand_TextBox.Size = new System.Drawing.Size(445, 68);
             this.EnterCommand_TextBox.TabIndex = 3;
             this.EnterCommand_TextBox.Texts = "";
             this.EnterCommand_TextBox.UnderlinedStyle = false;
@@ -1156,10 +1157,9 @@ namespace StudyManagementApp
             this.Start_Stop_Pomodoro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Start_Stop_Pomodoro_button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Start_Stop_Pomodoro_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.Start_Stop_Pomodoro_button.Location = new System.Drawing.Point(71, 90);
-            this.Start_Stop_Pomodoro_button.Margin = new System.Windows.Forms.Padding(2);
+            this.Start_Stop_Pomodoro_button.Location = new System.Drawing.Point(107, 135);
             this.Start_Stop_Pomodoro_button.Name = "Start_Stop_Pomodoro_button";
-            this.Start_Stop_Pomodoro_button.Size = new System.Drawing.Size(59, 34);
+            this.Start_Stop_Pomodoro_button.Size = new System.Drawing.Size(89, 51);
             this.Start_Stop_Pomodoro_button.TabIndex = 3;
             this.Start_Stop_Pomodoro_button.Text = "Start";
             this.Start_Stop_Pomodoro_button.UseVisualStyleBackColor = false;
@@ -1175,13 +1175,13 @@ namespace StudyManagementApp
             this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.CalendarButton.Location = new System.Drawing.Point(49, 157);
-            this.CalendarButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CalendarButton.Location = new System.Drawing.Point(73, 236);
             this.CalendarButton.Name = "CalendarButton";
-            this.CalendarButton.Size = new System.Drawing.Size(102, 35);
+            this.CalendarButton.Size = new System.Drawing.Size(153, 53);
             this.CalendarButton.TabIndex = 2;
             this.CalendarButton.Text = "Calendar";
             this.CalendarButton.UseVisualStyleBackColor = false;
+            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
             // 
             // SaveButton
             // 
@@ -1194,10 +1194,10 @@ namespace StudyManagementApp
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveButton.Location = new System.Drawing.Point(20, 9);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(20, 9, 10, 9);
+            this.SaveButton.Location = new System.Drawing.Point(30, 13);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(30, 13, 15, 13);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(66, 39);
+            this.SaveButton.Size = new System.Drawing.Size(154, 60);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -1213,10 +1213,10 @@ namespace StudyManagementApp
             this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(106, 9);
-            this.SaveAsButton.Margin = new System.Windows.Forms.Padding(10, 9, 20, 9);
+            this.SaveAsButton.Location = new System.Drawing.Point(214, 13);
+            this.SaveAsButton.Margin = new System.Windows.Forms.Padding(15, 13, 30, 13);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(66, 39);
+            this.SaveAsButton.Size = new System.Drawing.Size(154, 60);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
@@ -1334,7 +1334,7 @@ namespace StudyManagementApp
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NotifyIcon Pomodoro_notifyIcon;
-        private UserControls.CustomCalendar customCalendar1;
+        private UserControls.CustomCalendar Main_customCalendar;
         private FontAwesome.Sharp.IconButton Edit_iconButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label1;
