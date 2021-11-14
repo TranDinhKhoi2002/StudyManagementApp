@@ -1,7 +1,7 @@
-CREATE DATABASE StudyManagementApp2
+CREATE DATABASE StudyManagementApp3
 GO
 
-USE StudyManagementApp2
+USE StudyManagementApp3
 GO
 
 CREATE TABLE ACCOUNT
