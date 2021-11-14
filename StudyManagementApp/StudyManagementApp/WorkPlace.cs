@@ -183,14 +183,31 @@ namespace StudyManagementApp
         {
             Pomodoro,ShortBreak,LongBreak
         }
-        int numPomodoro = SettingPomodoro.pomodoro;
-        int numShortBreak = SettingPomodoro.shortbreak;
-        int numLongBreak = SettingPomodoro.longbreak;
         int numIntervalLongBreak = SettingPomodoro.interval;
         int numNotification = SettingPomodoro.notification;
         int typeNotification = SettingPomodoro.notification_type;
+        int numPomodoro = SettingPomodoro.pomodoro;
+        int numShortBreak = SettingPomodoro.shortbreak;
+        int numLongBreak = SettingPomodoro.longbreak;
+
         PomoState pomoState = PomoState.Pomodoro;
         bool isRunning = false;
+
+        //Nhấn nút start nghen
+        private void Start_Stop_Pomodoro_button_Click(object sender, EventArgs e)
+        {
+            isRunning = !isRunning;
+            if (isRunning)
+            {
+                Start_Stop_Pomodoro_button.Text = "Stop";
+                Pomodoro_Timer.Start();
+            }
+            else
+            {
+                Start_Stop_Pomodoro_button.Text = "Start";
+                Pomodoro_Timer.Stop();
+            }
+        }
         //Setting cho pomo nghen
         private void PomodoroSetting_iconButton_Click(object sender, EventArgs e)
         {
@@ -220,126 +237,8 @@ namespace StudyManagementApp
                 SecondPomo_Label.Text = "00";
             } 
         }
-        //Nhấn nút start nghen
-        private void Start_Stop_Pomodoro_button_Click(object sender, EventArgs e)
-        {
-            isRunning = !isRunning;
-            if (isRunning)
-            {
-                Start_Stop_Pomodoro_button.Text = "Stop";
-                Pomodoro_Timer.Start();
-            }
-            else
-            {
-                Start_Stop_Pomodoro_button.Text = "Start";
-                Pomodoro_Timer.Stop();
-            }
-        }
-        //Timmer đếm giờ nghen
-        private void Pomodoro_Timer_Tick(object sender, EventArgs e)
-        {
-            if (int.Parse(SecondPomo_Label.Text) == 0)
-            {
-                SecondPomo_Label.Text = "59";
-                MinutePomo_Label.Text = (int.Parse(MinutePomo_Label.Text) - 1).ToString();
-            }
-            else
-                SecondPomo_Label.Text = (int.Parse(SecondPomo_Label.Text) - 1).ToString();
-            if (numPomodoro>numNotification && int.Parse(MinutePomo_Label.Text) != 0)
-            {
-                if (typeNotification == 0)
-                {
-                    if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) == numNotification && int.Parse(SecondPomo_Label.Text) == 0)
-                    {
-                        Pomodoro_notifyIcon.Visible = true;
-                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", numNotification.ToString() + " phút nữa hết giờ học rồi!", ToolTipIcon.Warning);
-                        Pomodoro_notifyIcon.Visible = false;
+        
 
-                    }
-                }
-                else
-                {
-                    if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) % numNotification == (numPomodoro - numNotification) % numNotification && int.Parse(SecondPomo_Label.Text) == 0)
-                    {
-                        Pomodoro_notifyIcon.Visible = true;
-                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
-                        Pomodoro_notifyIcon.Visible = false;
-                    }
-                }
-            }
-            
-            if (int.Parse(MinutePomo_Label.Text) == 0 && int.Parse(SecondPomo_Label.Text) == 0)
-            {
-                Pomodoro_Timer.Stop();
-                if (pomoState == PomoState.Pomodoro)
-                {
-                    PomodoroCount_Label.Text = (int.Parse(PomodoroCount_Label.Text) + 1).ToString();
-                    if (int.Parse(PomodoroCount_Label.Text) % numIntervalLongBreak == 0)
-                        pomoState = PomoState.LongBreak;
-                    else
-                        pomoState = PomoState.ShortBreak;
-                }
-                else if (pomoState == PomoState.ShortBreak)
-                {
-                    ShortBreakCount_Label.Text = (int.Parse(ShortBreakCount_Label.Text) + 1).ToString();
-                    pomoState = PomoState.Pomodoro;
-                }
-                else if (pomoState == PomoState.LongBreak)
-                {
-                    LongBreakCount_Label.Text = (int.Parse(LongBreakCount_Label.Text) + 1).ToString();
-                    pomoState = PomoState.Pomodoro;
-                }
-
-                if (pomoState == PomoState.Pomodoro)
-                {
-                    MinutePomo_Label.Text = numPomodoro.ToString();
-                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoRed.png");
-                    //225, 97, 111
-                    MinutePomo_Label.BackColor = Color.FromArgb(225, 97, 111);
-                    SecondPomo_Label.BackColor = Color.FromArgb(225, 97, 111);
-                    HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
-                    NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
-
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
-                    Pomodoro_Timer.Start();
-                }
-                else if (pomoState == PomoState.ShortBreak)
-                {
-                    MinutePomo_Label.Text = numShortBreak.ToString();
-                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoGreen.png");
-                    //85, 145, 150
-                    MinutePomo_Label.BackColor = Color.FromArgb(85, 145, 150);
-                    SecondPomo_Label.BackColor = Color.FromArgb(85, 145, 150);
-                    HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
-                    NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
-
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
-
-                    Pomodoro_Timer.Start();
-                }
-                else if (pomoState == PomoState.LongBreak)
-                {
-                    MinutePomo_Label.Text = numLongBreak.ToString();
-                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoBlue.png");
-                    //76,124,164
-                    MinutePomo_Label.BackColor = Color.FromArgb(76, 124, 164);
-                    SecondPomo_Label.BackColor = Color.FromArgb(76, 124, 164);
-                    HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
-                    NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
-
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
-
-                    Pomodoro_Timer.Start();
-                }
-                SecondPomo_Label.Text = "00";
-            }
-        }
         //chuyển state pomo nghen
         private void NextStatePomo_iconButton_Click(object sender, EventArgs e)
         {
@@ -403,6 +302,130 @@ namespace StudyManagementApp
                 SecondPomo_Label.Text = "00";
             }    
         }
+        //Timmer đếm giờ nghen
+        private void Pomodoro_Timer_Tick(object sender, EventArgs e)
+        {
+            if (int.Parse(SecondPomo_Label.Text) == 0)
+            {
+                SecondPomo_Label.Text = "59";
+                int min = int.Parse(MinutePomo_Label.Text) - 1;
+                if (min < 10)
+                {
+                    MinutePomo_Label.Text = "0" + (min).ToString();
+                }
+                else
+                    MinutePomo_Label.Text = (min).ToString();
+
+            }
+            else
+            {
+                int sec = int.Parse(SecondPomo_Label.Text) - 1;
+                if (sec < 10)
+                    SecondPomo_Label.Text = "0" + (sec).ToString();
+                else
+                    SecondPomo_Label.Text = (sec).ToString();
+
+            }
+            if (numPomodoro > numNotification && int.Parse(MinutePomo_Label.Text) != 0)
+            {
+                if (typeNotification == 0)
+                {
+                    if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) == numNotification && int.Parse(SecondPomo_Label.Text) == 0)
+                    {
+                        Pomodoro_notifyIcon.Visible = true;
+                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", numNotification.ToString() + " phút nữa hết giờ học rồi!", ToolTipIcon.Warning);
+                        Pomodoro_notifyIcon.Visible = false;
+
+                    }
+                }
+                else
+                {
+                    if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) % numNotification == (numPomodoro - numNotification) % numNotification && int.Parse(SecondPomo_Label.Text) == 0)
+                    {
+                        Pomodoro_notifyIcon.Visible = true;
+                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
+                        Pomodoro_notifyIcon.Visible = false;
+                    }
+                }
+            }
+
+            if (int.Parse(MinutePomo_Label.Text) == 0 && int.Parse(SecondPomo_Label.Text) == 0)
+            {
+                Pomodoro_Timer.Stop();
+                if (pomoState == PomoState.Pomodoro)
+                {
+                    PomodoroCount_Label.Text = (int.Parse(PomodoroCount_Label.Text) + 1).ToString();
+                    if (int.Parse(PomodoroCount_Label.Text) % numIntervalLongBreak == 0)
+                    {
+                        pomoState = PomoState.LongBreak;
+                    }
+                    else
+                    {
+
+                        pomoState = PomoState.ShortBreak;
+                    }
+                }
+                else if (pomoState == PomoState.ShortBreak)
+                {
+                    ShortBreakCount_Label.Text = (int.Parse(ShortBreakCount_Label.Text) + 1).ToString();
+                    pomoState = PomoState.Pomodoro;
+                }
+                else if (pomoState == PomoState.LongBreak)
+                {
+                    LongBreakCount_Label.Text = (int.Parse(LongBreakCount_Label.Text) + 1).ToString();
+                    pomoState = PomoState.Pomodoro;
+                }
+                if (pomoState == PomoState.Pomodoro)
+                {
+                    MinutePomo_Label.Text = numPomodoro.ToString();
+                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoRed.png");
+                    //225, 97, 111
+                    MinutePomo_Label.BackColor = Color.FromArgb(225, 97, 111);
+                    SecondPomo_Label.BackColor = Color.FromArgb(225, 97, 111);
+                    HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
+                    NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
+
+                    Pomodoro_notifyIcon.Visible = true;
+                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
+                    Pomodoro_Timer.Start();
+                }
+                else if (pomoState == PomoState.ShortBreak)
+                {
+                    MinutePomo_Label.Text = numShortBreak.ToString();
+                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoGreen.png");
+                    //85, 145, 150
+                    MinutePomo_Label.BackColor = Color.FromArgb(85, 145, 150);
+                    SecondPomo_Label.BackColor = Color.FromArgb(85, 145, 150);
+                    HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
+                    NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
+
+                    Pomodoro_notifyIcon.Visible = true;
+                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
+
+                    Pomodoro_Timer.Start();
+                }
+                else if (pomoState == PomoState.LongBreak)
+                {
+                    MinutePomo_Label.Text = numLongBreak.ToString();
+                    Pomo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\TomatoBlue.png");
+                    //76,124,164
+                    MinutePomo_Label.BackColor = Color.FromArgb(76, 124, 164);
+                    SecondPomo_Label.BackColor = Color.FromArgb(76, 124, 164);
+                    HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
+                    NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
+
+                    Pomodoro_notifyIcon.Visible = true;
+                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
+                    Pomodoro_notifyIcon.Visible = false;
+
+                    Pomodoro_Timer.Start();
+                }
+                SecondPomo_Label.Text = "00";
+            }
+        }
+
 
 
         /*---------------------------------Edit---------------------------------*/
