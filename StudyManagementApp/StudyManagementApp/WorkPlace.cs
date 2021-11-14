@@ -404,7 +404,6 @@ namespace StudyManagementApp
             }    
         }
 
-        /*---------------------------------Pomodoro---------------------------------*/
 
         /*---------------------------------Edit---------------------------------*/
         private void Edit_iconButton_Click(object sender, EventArgs e)
@@ -412,7 +411,6 @@ namespace StudyManagementApp
             Edit edit = new Edit();
             edit.ShowDialog(this);
         }
-        /*---------------------------------Edit---------------------------------*/
 
         /*---------------------------------Background---------------------------------*/
 
@@ -420,13 +418,13 @@ namespace StudyManagementApp
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
-            notifyBackground.Visible = false;
+            Pomodoro_notifyIcon.Visible = false;
         }
 
         private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            notifyBackground.Visible = true;
+            Pomodoro_notifyIcon.Visible = true;
             e.Cancel = true;
         }
 
@@ -445,7 +443,7 @@ namespace StudyManagementApp
         private void WorkPlace_Load(object sender, EventArgs e)
         {
             UserNameLabel.Text = UserInfo.getInstance().Username;
-            notifyBackground.Visible = false;
+            Pomodoro_notifyIcon.Visible = false;
         }
 
         /*---------------------------------Command_textbox---------------------------------*/
@@ -466,7 +464,5 @@ namespace StudyManagementApp
                 Command_TextBox.Text = "Enter Command";
             }
         }
-
-        /*---------------------------------Command_textbox---------------------------------*/
     }
 }
