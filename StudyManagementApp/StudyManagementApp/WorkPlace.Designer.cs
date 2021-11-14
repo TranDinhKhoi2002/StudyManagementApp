@@ -36,6 +36,8 @@ namespace StudyManagementApp
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.WordToolPanel = new System.Windows.Forms.Panel();
             this.SaveButtonTablePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SaveButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.SaveAsButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Help_iconButton = new FontAwesome.Sharp.IconButton();
             this.About_iconButton = new FontAwesome.Sharp.IconButton();
@@ -43,6 +45,7 @@ namespace StudyManagementApp
             this.PassageToolPanel = new System.Windows.Forms.Panel();
             this.LeftMenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.PomodoroPanel = new System.Windows.Forms.Panel();
+            this.Start_Stop_Pomodoro_button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.NextStatePomo_iconButton = new FontAwesome.Sharp.IconButton();
             this.HaiCham_Label = new System.Windows.Forms.Label();
             this.SecondPomo_Label = new System.Windows.Forms.Label();
@@ -71,6 +74,7 @@ namespace StudyManagementApp
             this.UserNameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Edit_iconButton = new FontAwesome.Sharp.IconButton();
+            this.CalendarButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ThuGonTraiButton = new FontAwesome.Sharp.IconButton();
             this.FunctionTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.NotificationFunctionLabel = new System.Windows.Forms.Label();
@@ -94,19 +98,16 @@ namespace StudyManagementApp
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.WorkPlacePanel = new System.Windows.Forms.Panel();
+            this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
             this.BackGroundWorkPlace_Panel = new System.Windows.Forms.Panel();
+            this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
+            this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.Pomodoro_Timer = new System.Windows.Forms.Timer(this.components);
             this.Pomodoro_toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.Pomodoro_notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmstripBackground = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
-            this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
-            this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
-            this.Start_Stop_Pomodoro_button = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.CalendarButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.SaveButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.SaveAsButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.ToolTablePanel.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SaveButtonTablePanel.SuspendLayout();
@@ -220,6 +221,44 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.SaveButtonTablePanel.Size = new System.Drawing.Size(176, 57);
             this.SaveButtonTablePanel.TabIndex = 7;
+            // 
+            // SaveButton
+            // 
+            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(48)))));
+            this.SaveButton.BorderColor = System.Drawing.Color.LightGray;
+            this.SaveButton.BorderRadius = 10;
+            this.SaveButton.BorderSize = 0;
+            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaveButton.FlatAppearance.BorderSize = 0;
+            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.SaveButton.Location = new System.Drawing.Point(14, 10);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(14, 10, 7, 10);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(67, 37);
+            this.SaveButton.TabIndex = 6;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = false;
+            // 
+            // SaveAsButton
+            // 
+            this.SaveAsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(48)))));
+            this.SaveAsButton.BorderColor = System.Drawing.Color.LightGray;
+            this.SaveAsButton.BorderRadius = 10;
+            this.SaveAsButton.BorderSize = 0;
+            this.SaveAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SaveAsButton.FlatAppearance.BorderSize = 0;
+            this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveAsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.SaveAsButton.Location = new System.Drawing.Point(95, 10);
+            this.SaveAsButton.Margin = new System.Windows.Forms.Padding(7, 10, 14, 10);
+            this.SaveAsButton.Name = "SaveAsButton";
+            this.SaveAsButton.Size = new System.Drawing.Size(67, 37);
+            this.SaveAsButton.TabIndex = 6;
+            this.SaveAsButton.Text = "Save as";
+            this.SaveAsButton.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -339,6 +378,25 @@ namespace StudyManagementApp
             this.PomodoroPanel.Size = new System.Drawing.Size(201, 145);
             this.PomodoroPanel.TabIndex = 1;
             // 
+            // Start_Stop_Pomodoro_button
+            // 
+            this.Start_Stop_Pomodoro_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.Start_Stop_Pomodoro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Start_Stop_Pomodoro_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
+            this.Start_Stop_Pomodoro_button.BorderRadius = 15;
+            this.Start_Stop_Pomodoro_button.BorderSize = 0;
+            this.Start_Stop_Pomodoro_button.FlatAppearance.BorderSize = 0;
+            this.Start_Stop_Pomodoro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Start_Stop_Pomodoro_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Start_Stop_Pomodoro_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
+            this.Start_Stop_Pomodoro_button.Location = new System.Drawing.Point(71, 92);
+            this.Start_Stop_Pomodoro_button.Name = "Start_Stop_Pomodoro_button";
+            this.Start_Stop_Pomodoro_button.Size = new System.Drawing.Size(61, 30);
+            this.Start_Stop_Pomodoro_button.TabIndex = 3;
+            this.Start_Stop_Pomodoro_button.Text = "Start";
+            this.Start_Stop_Pomodoro_button.UseVisualStyleBackColor = false;
+            this.Start_Stop_Pomodoro_button.Click += new System.EventHandler(this.Start_Stop_Pomodoro_button_Click);
+            // 
             // NextStatePomo_iconButton
             // 
             this.NextStatePomo_iconButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -363,7 +421,7 @@ namespace StudyManagementApp
             // HaiCham_Label
             // 
             this.HaiCham_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.HaiCham_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HaiCham_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HaiCham_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
             this.HaiCham_Label.Location = new System.Drawing.Point(95, 45);
             this.HaiCham_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -376,7 +434,7 @@ namespace StudyManagementApp
             // SecondPomo_Label
             // 
             this.SecondPomo_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.SecondPomo_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondPomo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondPomo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
             this.SecondPomo_Label.Location = new System.Drawing.Point(105, 46);
             this.SecondPomo_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -409,7 +467,7 @@ namespace StudyManagementApp
             // MinutePomo_Label
             // 
             this.MinutePomo_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.MinutePomo_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinutePomo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinutePomo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
             this.MinutePomo_Label.Location = new System.Drawing.Point(53, 46);
             this.MinutePomo_Label.Margin = new System.Windows.Forms.Padding(0);
@@ -473,7 +531,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle3_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle3_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemFreeStyle3_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemFreeStyle3_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemFreeStyle3_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle3_Button.Location = new System.Drawing.Point(33, 54);
             this.ItemFreeStyle3_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -491,7 +549,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle2_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle2_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemFreeStyle2_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemFreeStyle2_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemFreeStyle2_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle2_Button.Location = new System.Drawing.Point(33, 27);
             this.ItemFreeStyle2_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -509,7 +567,7 @@ namespace StudyManagementApp
             this.ItemFreeStyle1_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle1_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle1_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemFreeStyle1_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemFreeStyle1_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemFreeStyle1_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemFreeStyle1_Button.Location = new System.Drawing.Point(33, 0);
             this.ItemFreeStyle1_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -527,7 +585,7 @@ namespace StudyManagementApp
             this.FreeStyleMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.FreeStyleMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
             this.FreeStyleMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FreeStyleMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FreeStyleMenu_iconButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FreeStyleMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.FreeStyleMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.FreeStyleMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -566,7 +624,7 @@ namespace StudyManagementApp
             this.ItemToDoList3_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList3_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemToDoList3_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemToDoList3_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemToDoList3_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList3_Button.Location = new System.Drawing.Point(33, 54);
             this.ItemToDoList3_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -584,7 +642,7 @@ namespace StudyManagementApp
             this.ItemToDoList2_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList2_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemToDoList2_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemToDoList2_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemToDoList2_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList2_Button.Location = new System.Drawing.Point(33, 27);
             this.ItemToDoList2_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -602,7 +660,7 @@ namespace StudyManagementApp
             this.ItemToDoList1_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList1_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList1_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemToDoList1_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemToDoList1_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemToDoList1_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemToDoList1_Button.Location = new System.Drawing.Point(33, 0);
             this.ItemToDoList1_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -620,7 +678,7 @@ namespace StudyManagementApp
             this.ToDoListMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
             this.ToDoListMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToDoListMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDoListMenu_iconButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ToDoListMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.ToDoListMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -658,7 +716,7 @@ namespace StudyManagementApp
             this.ItemTable3_Button.FlatAppearance.BorderSize = 0;
             this.ItemTable3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable3_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemTable3_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemTable3_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemTable3_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable3_Button.Location = new System.Drawing.Point(33, 54);
             this.ItemTable3_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -676,7 +734,7 @@ namespace StudyManagementApp
             this.ItemTable2_Button.FlatAppearance.BorderSize = 0;
             this.ItemTable2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable2_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemTable2_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemTable2_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemTable2_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable2_Button.Location = new System.Drawing.Point(33, 27);
             this.ItemTable2_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -694,7 +752,7 @@ namespace StudyManagementApp
             this.ItemTable1_button.FlatAppearance.BorderSize = 0;
             this.ItemTable1_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable1_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ItemTable1_button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemTable1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ItemTable1_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ItemTable1_button.Location = new System.Drawing.Point(33, 0);
             this.ItemTable1_button.Margin = new System.Windows.Forms.Padding(0);
@@ -712,7 +770,7 @@ namespace StudyManagementApp
             this.TableMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.TableMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
             this.TableMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TableMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TableMenu_iconButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TableMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.TableMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.TableMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -778,7 +836,7 @@ namespace StudyManagementApp
             // UserNameLabel
             // 
             this.UserNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserNameLabel.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UserNameLabel.Location = new System.Drawing.Point(66, 0);
             this.UserNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -791,7 +849,7 @@ namespace StudyManagementApp
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.label1.Location = new System.Drawing.Point(20, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -819,6 +877,24 @@ namespace StudyManagementApp
             this.Edit_iconButton.TabIndex = 2;
             this.Edit_iconButton.UseVisualStyleBackColor = true;
             this.Edit_iconButton.Click += new System.EventHandler(this.Edit_iconButton_Click);
+            // 
+            // CalendarButton
+            // 
+            this.CalendarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.CalendarButton.BorderColor = System.Drawing.Color.LightGray;
+            this.CalendarButton.BorderRadius = 14;
+            this.CalendarButton.BorderSize = 0;
+            this.CalendarButton.FlatAppearance.BorderSize = 0;
+            this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalendarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.CalendarButton.Location = new System.Drawing.Point(49, 156);
+            this.CalendarButton.Name = "CalendarButton";
+            this.CalendarButton.Size = new System.Drawing.Size(101, 35);
+            this.CalendarButton.TabIndex = 2;
+            this.CalendarButton.Text = "Calendar";
+            this.CalendarButton.UseVisualStyleBackColor = false;
+            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
             // 
             // ThuGonTraiButton
             // 
@@ -860,7 +936,7 @@ namespace StudyManagementApp
             // 
             this.NotificationFunctionLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.NotificationFunctionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NotificationFunctionLabel.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotificationFunctionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotificationFunctionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.NotificationFunctionLabel.Location = new System.Drawing.Point(237, 3);
             this.NotificationFunctionLabel.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
@@ -881,7 +957,7 @@ namespace StudyManagementApp
             this.PomodoroFunctionTableLabel.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.PomodoroFunctionTableLabel.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.PomodoroFunctionTableLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PomodoroFunctionTableLabel.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PomodoroFunctionTableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PomodoroFunctionTableLabel.Location = new System.Drawing.Point(477, 3);
             this.PomodoroFunctionTableLabel.Name = "PomodoroFunctionTableLabel";
             this.PomodoroFunctionTableLabel.RowCount = 1;
@@ -932,7 +1008,7 @@ namespace StudyManagementApp
             // 
             this.LongBreakCount_Label.BackColor = System.Drawing.Color.Transparent;
             this.LongBreakCount_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LongBreakCount_Label.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LongBreakCount_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LongBreakCount_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(124)))), ((int)(((byte)(164)))));
             this.LongBreakCount_Label.Location = new System.Drawing.Point(58, 0);
             this.LongBreakCount_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -984,7 +1060,7 @@ namespace StudyManagementApp
             // 
             this.ShortBreakCount_Label.BackColor = System.Drawing.Color.Transparent;
             this.ShortBreakCount_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ShortBreakCount_Label.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShortBreakCount_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShortBreakCount_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(145)))), ((int)(((byte)(150)))));
             this.ShortBreakCount_Label.Location = new System.Drawing.Point(57, 0);
             this.ShortBreakCount_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1014,7 +1090,7 @@ namespace StudyManagementApp
             // 
             this.PomodoroCount_Label.BackColor = System.Drawing.Color.Transparent;
             this.PomodoroCount_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PomodoroCount_Label.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PomodoroCount_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PomodoroCount_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
             this.PomodoroCount_Label.Location = new System.Drawing.Point(57, 0);
             this.PomodoroCount_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -1087,12 +1163,12 @@ namespace StudyManagementApp
             this.Command_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.Command_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Command_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Command_TextBox.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Command_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Command_TextBox.ForeColor = System.Drawing.Color.DarkGray;
             this.Command_TextBox.Location = new System.Drawing.Point(0, 3);
             this.Command_TextBox.Margin = new System.Windows.Forms.Padding(0);
             this.Command_TextBox.Name = "Command_TextBox";
-            this.Command_TextBox.Size = new System.Drawing.Size(190, 28);
+            this.Command_TextBox.Size = new System.Drawing.Size(190, 26);
             this.Command_TextBox.TabIndex = 0;
             this.Command_TextBox.Text = "Enter Command";
             this.Command_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1125,6 +1201,7 @@ namespace StudyManagementApp
             // WorkPlacePanel
             // 
             this.WorkPlacePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.WorkPlacePanel.Controls.Add(this.label2);
             this.WorkPlacePanel.Controls.Add(this.Main_customCalendar);
             this.WorkPlacePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WorkPlacePanel.Location = new System.Drawing.Point(0, 0);
@@ -1132,6 +1209,15 @@ namespace StudyManagementApp
             this.WorkPlacePanel.Name = "WorkPlacePanel";
             this.WorkPlacePanel.Size = new System.Drawing.Size(712, 403);
             this.WorkPlacePanel.TabIndex = 1;
+            // 
+            // Main_customCalendar
+            // 
+            this.Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.Main_customCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Main_customCalendar.Location = new System.Drawing.Point(0, 0);
+            this.Main_customCalendar.Name = "Main_customCalendar";
+            this.Main_customCalendar.Size = new System.Drawing.Size(712, 403);
+            this.Main_customCalendar.TabIndex = 0;
             // 
             // BackGroundWorkPlace_Panel
             // 
@@ -1144,6 +1230,27 @@ namespace StudyManagementApp
             this.BackGroundWorkPlace_Panel.Name = "BackGroundWorkPlace_Panel";
             this.BackGroundWorkPlace_Panel.Size = new System.Drawing.Size(712, 403);
             this.BackGroundWorkPlace_Panel.TabIndex = 12;
+            // 
+            // aboutUC1
+            // 
+            this.aboutUC1.AutoScroll = true;
+            this.aboutUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.aboutUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.aboutUC1.Location = new System.Drawing.Point(0, 0);
+            this.aboutUC1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.aboutUC1.Name = "aboutUC1";
+            this.aboutUC1.Size = new System.Drawing.Size(712, 403);
+            this.aboutUC1.TabIndex = 10;
+            // 
+            // helpUC1
+            // 
+            this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.helpUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.helpUC1.Location = new System.Drawing.Point(0, 0);
+            this.helpUC1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.helpUC1.Name = "helpUC1";
+            this.helpUC1.Size = new System.Drawing.Size(712, 403);
+            this.helpUC1.TabIndex = 11;
             // 
             // Pomodoro_Timer
             // 
@@ -1179,110 +1286,17 @@ namespace StudyManagementApp
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
-            // Main_customCalendar
+            // label2
             // 
-            this.Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Main_customCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main_customCalendar.Location = new System.Drawing.Point(0, 0);
-            this.Main_customCalendar.Name = "Main_customCalendar";
-            this.Main_customCalendar.Size = new System.Drawing.Size(712, 403);
-            this.Main_customCalendar.TabIndex = 0;
-            // 
-            // aboutUC1
-            // 
-            this.aboutUC1.AutoScroll = true;
-            this.aboutUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.aboutUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.aboutUC1.Location = new System.Drawing.Point(0, 0);
-            this.aboutUC1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.aboutUC1.Name = "aboutUC1";
-            this.aboutUC1.Size = new System.Drawing.Size(712, 403);
-            this.aboutUC1.TabIndex = 10;
-            // 
-            // helpUC1
-            // 
-            this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.helpUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.helpUC1.Location = new System.Drawing.Point(0, 0);
-            this.helpUC1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.helpUC1.Name = "helpUC1";
-            this.helpUC1.Size = new System.Drawing.Size(712, 403);
-            this.helpUC1.TabIndex = 11;
-            // 
-            // Start_Stop_Pomodoro_button
-            // 
-            this.Start_Stop_Pomodoro_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.Start_Stop_Pomodoro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Start_Stop_Pomodoro_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.Start_Stop_Pomodoro_button.BorderRadius = 15;
-            this.Start_Stop_Pomodoro_button.BorderSize = 0;
-            this.Start_Stop_Pomodoro_button.FlatAppearance.BorderSize = 0;
-            this.Start_Stop_Pomodoro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Start_Stop_Pomodoro_button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Start_Stop_Pomodoro_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.Start_Stop_Pomodoro_button.Location = new System.Drawing.Point(71, 92);
-            this.Start_Stop_Pomodoro_button.Name = "Start_Stop_Pomodoro_button";
-            this.Start_Stop_Pomodoro_button.Size = new System.Drawing.Size(61, 30);
-            this.Start_Stop_Pomodoro_button.TabIndex = 3;
-            this.Start_Stop_Pomodoro_button.Text = "Start";
-            this.Start_Stop_Pomodoro_button.UseVisualStyleBackColor = false;
-            this.Start_Stop_Pomodoro_button.Click += new System.EventHandler(this.Start_Stop_Pomodoro_button_Click);
-            // 
-            // CalendarButton
-            // 
-            this.CalendarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CalendarButton.BorderColor = System.Drawing.Color.LightGray;
-            this.CalendarButton.BorderRadius = 14;
-            this.CalendarButton.BorderSize = 0;
-            this.CalendarButton.FlatAppearance.BorderSize = 0;
-            this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.CalendarButton.Location = new System.Drawing.Point(49, 156);
-            this.CalendarButton.Name = "CalendarButton";
-            this.CalendarButton.Size = new System.Drawing.Size(101, 35);
-            this.CalendarButton.TabIndex = 2;
-            this.CalendarButton.Text = "Calendar";
-            this.CalendarButton.UseVisualStyleBackColor = false;
-            this.CalendarButton.Click += new System.EventHandler(this.CalendarButton_Click);
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(48)))));
-            this.SaveButton.BorderColor = System.Drawing.Color.LightGray;
-            this.SaveButton.BorderRadius = 10;
-            this.SaveButton.BorderSize = 0;
-            this.SaveButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButton.FlatAppearance.BorderSize = 0;
-            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveButton.Location = new System.Drawing.Point(14, 10);
-            this.SaveButton.Margin = new System.Windows.Forms.Padding(14, 10, 7, 10);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(67, 37);
-            this.SaveButton.TabIndex = 6;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
-            // 
-            // SaveAsButton
-            // 
-            this.SaveAsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(48)))));
-            this.SaveAsButton.BorderColor = System.Drawing.Color.LightGray;
-            this.SaveAsButton.BorderRadius = 10;
-            this.SaveAsButton.BorderSize = 0;
-            this.SaveAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveAsButton.FlatAppearance.BorderSize = 0;
-            this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(95, 10);
-            this.SaveAsButton.Margin = new System.Windows.Forms.Padding(7, 10, 14, 10);
-            this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(67, 37);
-            this.SaveAsButton.TabIndex = 6;
-            this.SaveAsButton.Text = "Save as";
-            this.SaveAsButton.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(576, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Give feedback";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // WorkPlace
             // 
@@ -1334,6 +1348,7 @@ namespace StudyManagementApp
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.WorkPlacePanel.ResumeLayout(false);
+            this.WorkPlacePanel.PerformLayout();
             this.BackGroundWorkPlace_Panel.ResumeLayout(false);
             this.cmstripBackground.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1418,5 +1433,6 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private UserControls.CustomCalendar Main_customCalendar;
+        private System.Windows.Forms.Label label2;
     }
 }

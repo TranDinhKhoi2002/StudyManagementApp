@@ -464,5 +464,11 @@ namespace StudyManagementApp
                 Command_TextBox.Text = "Enter Command";
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            FeedbackForm fbkForm = new FeedbackForm();
+            fbkForm.ShowDialog();
+        }
     }
 }
