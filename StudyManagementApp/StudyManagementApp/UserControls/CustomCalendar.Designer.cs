@@ -472,8 +472,8 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.CalendarFont = new System.Drawing.Font("Agency FB", 15F);
             this.NgayThangNam_customDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.NgayThangNam_customDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 17F);
-            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(21, 8);
+            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16.5F);
+            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(21, 10);
             this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(0, 35);
             this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
             this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(255, 35);

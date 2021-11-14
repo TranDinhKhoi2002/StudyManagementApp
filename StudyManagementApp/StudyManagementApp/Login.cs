@@ -264,6 +264,12 @@ namespace StudyManagementApp
         {
             TruyencamhungLabel.Text = GetTruyenCamHung();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            ForgetPasswordForm fgpForm = new ForgetPasswordForm();
+            fgpForm.Show();
+        }
         /*---------------------------------Câu truyền cảm hứng---------------------------------*/
     }
 }

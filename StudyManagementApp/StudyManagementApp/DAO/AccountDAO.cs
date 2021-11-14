@@ -1,5 +1,7 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace StudyManagementApp.DAO
 {
@@ -68,6 +70,25 @@ namespace StudyManagementApp.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passwordHash });
 
             return result > 0;
+        }
+
+        public bool UserExist(string userName)
+        {
+            try
+            {
+                string query = "USP_VerifyUserExist @userName";
+
+                if (DataProvider.Instance.ExecuteQuery(query, new object[] { userName }).Rows.Count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+                return false;
+            }
         }
     }
 }

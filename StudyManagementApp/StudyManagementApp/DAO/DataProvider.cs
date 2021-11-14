@@ -23,9 +23,11 @@ namespace StudyManagementApp.DAO
 
         private DataProvider() { }
 
-        //private string connectionStr = "Data Source=ADMIN;Initial Catalog=StudyManagementApp;Integrated Security=True";
-        private string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
+        //private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp2;Integrated Security=True";
+        private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
+        //private string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
         //private string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
+
         public DataTable ExecuteQuery(string query, object[] parameters = null)
         {
             DataTable data = new DataTable();
