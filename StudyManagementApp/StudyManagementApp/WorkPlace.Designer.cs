@@ -1160,7 +1160,7 @@ namespace StudyManagementApp
             // 
             this.Pomodoro_notifyIcon.ContextMenuStrip = this.cmstripBackground;
             this.Pomodoro_notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("Pomodoro_notifyIcon.Icon")));
-            this.Pomodoro_notifyIcon.Text = "notifyIcon1";
+            this.Pomodoro_notifyIcon.Text = "StudyManagementApp";
             this.Pomodoro_notifyIcon.Visible = true;
             this.Pomodoro_notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyBackground_MouseDoubleClick);
             // 
