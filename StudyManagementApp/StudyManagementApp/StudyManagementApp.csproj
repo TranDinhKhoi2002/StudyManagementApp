@@ -196,6 +196,9 @@
     <None Include="bin\Debug\Resources\Images\title.png" />
     <None Include="bin\Debug\Resources\Images\Content.png" />
     <None Include="bin\Debug\Resources\Images\pomodoro_text.png" />
+    <None Include="bin\Debug\Resources\Images\Pomo_text.png" />
+    <None Include="bin\Debug\Resources\Images\Short_text.png" />
+    <None Include="bin\Debug\Resources\Images\Long_text.png" />
     <Content Include="Resources\Images\about.png" />
     <Content Include="Resources\Images\calendarDark.png" />
     <Content Include="Resources\Images\calendarWhite.png" />

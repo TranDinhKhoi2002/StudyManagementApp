@@ -31,6 +31,14 @@ namespace StudyManagementApp.UserControls
             InitializeComponent();
             KhoiTaoCacList();
         }
+        WorkPlace workplace;
+        public CustomCalendar(WorkPlace x)
+        {
+            InitializeComponent();
+            KhoiTaoCacList();
+            workplace = x;
+        }
+
         //Khi cái usercontrol này load thì làm gì?
         private void CustomCalendar_Load(object sender, EventArgs e)
         {
@@ -96,7 +104,7 @@ namespace StudyManagementApp.UserControls
                     //47, 52, 55
                     arrPanel[i][j].BackColor = littlebackgroundPanel;
                     arrPanel[i][j].Margin = new Padding(0, 0, 0, 0);
-                    arrPanel[i][j].Padding = new Padding(5);
+                    arrPanel[i][j].Padding = new Padding(2, 5, 2, 5);
                     arrPanel[i][j].Dock = DockStyle.Fill;
 
                     /*Button ngay` */
@@ -104,7 +112,7 @@ namespace StudyManagementApp.UserControls
                     arrButton[i][j].Padding = new Padding(0);
                     arrButton[i][j].FlatStyle = FlatStyle.Flat;
                     arrButton[i][j].FlatAppearance.BorderSize = 0;
-                    arrButton[i][j].Size = new Size(45, 51);
+                    arrButton[i][j].Size = new Size(40, 51);
                     arrButton[i][j].Dock = DockStyle.Right;
                     arrButton[i][j].Font = new Font("Agency FB", 14);
                     arrButton[i][j].BackColor = littleButton;
@@ -247,6 +255,17 @@ namespace StudyManagementApp.UserControls
         {
             LoadDateCalendar();
             LoadColorToday_ChoosingDate();
+        }
+
+        private void CustomCalendar_SizeChanged(object sender, EventArgs e)
+        {
+            Monday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Tuesday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Wednesday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Thursday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Friday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Saturday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+            Sunday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
         }
     }
 }

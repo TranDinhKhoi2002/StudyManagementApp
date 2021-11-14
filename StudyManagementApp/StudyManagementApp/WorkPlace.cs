@@ -447,5 +447,26 @@ namespace StudyManagementApp
             UserNameLabel.Text = UserInfo.getInstance().Username;
             notifyBackground.Visible = false;
         }
+
+        /*---------------------------------Command_textbox---------------------------------*/
+        private void Command_TextBox_Enter(object sender, EventArgs e)
+        {
+            if (Command_TextBox.Text == "Enter Command")
+            {
+                Command_TextBox.ForeColor = Color.FromArgb(47, 52, 55);
+                Command_TextBox.Text = "";
+            }
+        }
+
+        private void Command_TextBox_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(Command_TextBox.Text))
+            {
+                Command_TextBox.ForeColor = Color.DarkGray;
+                Command_TextBox.Text = "Enter Command";
+            }
+        }
+
+        /*---------------------------------Command_textbox---------------------------------*/
     }
 }

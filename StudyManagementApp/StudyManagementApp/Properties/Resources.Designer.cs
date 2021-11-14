@@ -163,6 +163,16 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Long_text {
+            get {
+                object obj = ResourceManager.GetObject("Long_text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap message_command {
             get {
                 object obj = ResourceManager.GetObject("message_command", resourceCulture);
@@ -193,9 +203,29 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Pomo_text {
+            get {
+                object obj = ResourceManager.GetObject("Pomo_text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pomodoro_text {
             get {
                 object obj = ResourceManager.GetObject("pomodoro_text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Short_text {
+            get {
+                object obj = ResourceManager.GetObject("Short_text", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,9 +32,6 @@ namespace StudyManagementApp
         {
             AlignHomeAboutHelp();
             AlignControls_Non_Maximum();
-
-           /* //Tạo random bộ câu truyền cảm hứng
-            TruyencamhungLabel.Text = GetTruyenCamHung();*/
         }
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
@@ -83,39 +80,11 @@ namespace StudyManagementApp
 
 
         /*---------------------------------Căn chỉnh các control---------------------------------*/
-        //Hàm chỉnh control lúc maximum
-        void AlignControls_Maximum()
-        {
-            SignInLogoPictureBox.Size = new Size(196, 180);
-            NotificationLabel.Size = new Size(500, 48);
-            NotificationLabel.Font = new Font("Agency FB", 23);
-            UsernameTextBox.Size = new Size(350, 51);
-            UsernameTextBox.Font = new Font("Agency FB", 25);
-            PasswordTextBox.Size = new Size(350, 51);
-            PasswordTextBox.Font = new Font("Agency FB", 25);
-            SignInButton.Size = new Size(169, 59);
-            SignInButton.Font = new Font("Agency FB", 27);
-            SignUpButton.Size = new Size(169, 59);
-            SignUpButton.Font = new Font("Agency FB", 27);
-
-
-            TruyencamhungLabel.Font = new Font("Agency FB", 50, FontStyle.Bold);
-            TruyencamhungLabel.Height = 130;
-            TruyencamhungLabel.TextAlign = ContentAlignment.MiddleCenter;
-
-            SignInLogoPictureBox.Location = new Point(HomePanel.Width / 2 - SignInLogoPictureBox.Width / 2, TruyencamhungLabel.Height + 22);
-            NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 40);
-            UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
-            PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 40);
-            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
-            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 40);
-            
-        }
         //Hàm chỉnh control lúc không maximum
         void AlignControls_Non_Maximum()
         {
             SignInLogoPictureBox.Size = new Size(131, 117);
-            NotificationLabel.Size = new Size(350, 32);
+            NotificationLabel.Size = new Size(350, 38);
             NotificationLabel.Font = new Font("Agency FB", 15);
             UsernameTextBox.Size = new Size(233, 35);
             UsernameTextBox.Font = new Font("Agency FB", 15);
@@ -142,15 +111,7 @@ namespace StudyManagementApp
         //middle panel lúc app maximum size lên sẽ gọi hàm gì? 
         private void MiddlePanel_SizeChanged(object sender, EventArgs e)
         {
-            if(WindowState==FormWindowState.Maximized)
-            {
-                AlignControls_Maximum();
-                
-            }
-            else 
-            {
-                AlignControls_Non_Maximum();
-            }
+            AlignControls_Non_Maximum();
         }
         /*---------------------------------Căn chỉnh các control---------------------------------*/
 

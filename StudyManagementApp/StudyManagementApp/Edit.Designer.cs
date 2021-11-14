@@ -55,9 +55,11 @@ namespace StudyManagementApp
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.groupBox1.Location = new System.Drawing.Point(53, 320);
+            this.groupBox1.Location = new System.Drawing.Point(35, 204);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(630, 288);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(420, 182);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Account";
@@ -72,18 +74,18 @@ namespace StudyManagementApp
             this.ReNewPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.ReNewPassword_textbox.BorderRadius = 10;
             this.ReNewPassword_textbox.BorderSize = 2;
-            this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReNewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ReNewPassword_textbox.Location = new System.Drawing.Point(141, 203);
-            this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.ReNewPassword_textbox.Location = new System.Drawing.Point(94, 129);
+            this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.ReNewPassword_textbox.Multiline = false;
             this.ReNewPassword_textbox.Name = "ReNewPassword_textbox";
-            this.ReNewPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.ReNewPassword_textbox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.ReNewPassword_textbox.PasswordChar = true;
             this.ReNewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
             this.ReNewPassword_textbox.PlaceholderText = "Re-New Password";
             this.ReNewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ReNewPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.ReNewPassword_textbox.Size = new System.Drawing.Size(233, 47);
             this.ReNewPassword_textbox.TabIndex = 2;
             this.ReNewPassword_textbox.Texts = "";
             this.ReNewPassword_textbox.UnderlinedStyle = false;
@@ -98,18 +100,18 @@ namespace StudyManagementApp
             this.NewPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.NewPassword_textbox.BorderRadius = 10;
             this.NewPassword_textbox.BorderSize = 2;
-            this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NewPassword_textbox.Location = new System.Drawing.Point(141, 123);
-            this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.NewPassword_textbox.Location = new System.Drawing.Point(94, 76);
+            this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.NewPassword_textbox.Multiline = false;
             this.NewPassword_textbox.Name = "NewPassword_textbox";
-            this.NewPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.NewPassword_textbox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.NewPassword_textbox.PasswordChar = true;
             this.NewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
             this.NewPassword_textbox.PlaceholderText = "New Password";
             this.NewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NewPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.NewPassword_textbox.Size = new System.Drawing.Size(233, 47);
             this.NewPassword_textbox.TabIndex = 2;
             this.NewPassword_textbox.Texts = "";
             this.NewPassword_textbox.UnderlinedStyle = false;
@@ -124,18 +126,18 @@ namespace StudyManagementApp
             this.CurrentPassword_textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.CurrentPassword_textbox.BorderRadius = 10;
             this.CurrentPassword_textbox.BorderSize = 2;
-            this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CurrentPassword_textbox.Location = new System.Drawing.Point(141, 43);
-            this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.CurrentPassword_textbox.Location = new System.Drawing.Point(94, 23);
+            this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.CurrentPassword_textbox.Multiline = false;
             this.CurrentPassword_textbox.Name = "CurrentPassword_textbox";
-            this.CurrentPassword_textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.CurrentPassword_textbox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.CurrentPassword_textbox.PasswordChar = true;
             this.CurrentPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
             this.CurrentPassword_textbox.PlaceholderText = "Your Password";
             this.CurrentPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CurrentPassword_textbox.Size = new System.Drawing.Size(349, 79);
+            this.CurrentPassword_textbox.Size = new System.Drawing.Size(233, 47);
             this.CurrentPassword_textbox.TabIndex = 2;
             this.CurrentPassword_textbox.Texts = "";
             this.CurrentPassword_textbox.UnderlinedStyle = false;
@@ -151,9 +153,11 @@ namespace StudyManagementApp
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.groupBox2.Location = new System.Drawing.Point(53, 27);
+            this.groupBox2.Location = new System.Drawing.Point(35, 18);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(630, 265);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Size = new System.Drawing.Size(420, 177);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "User";
@@ -167,18 +171,18 @@ namespace StudyManagementApp
             this.textbox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.textbox.BorderRadius = 10;
             this.textbox.BorderSize = 2;
-            this.textbox.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textbox.Font = new System.Drawing.Font("Times New Roman", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.textbox.Location = new System.Drawing.Point(206, 55);
-            this.textbox.Margin = new System.Windows.Forms.Padding(6);
+            this.textbox.Location = new System.Drawing.Point(137, 36);
+            this.textbox.Margin = new System.Windows.Forms.Padding(4);
             this.textbox.Multiline = false;
             this.textbox.Name = "textbox";
-            this.textbox.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.textbox.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.textbox.PasswordChar = false;
             this.textbox.PlaceholderColor = System.Drawing.Color.Gray;
             this.textbox.PlaceholderText = "Nickname";
             this.textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textbox.Size = new System.Drawing.Size(349, 72);
+            this.textbox.Size = new System.Drawing.Size(233, 40);
             this.textbox.TabIndex = 1;
             this.textbox.Texts = "";
             this.textbox.UnderlinedStyle = false;
@@ -188,16 +192,17 @@ namespace StudyManagementApp
             this.cbbNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.cbbNotification.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbNotification.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbNotification.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.cbbNotification.FormattingEnabled = true;
             this.cbbNotification.Items.AddRange(new object[] {
             "Che do hien thi",
             "cua datetimepicker",
             "trong cuon lich"});
-            this.cbbNotification.Location = new System.Drawing.Point(225, 188);
+            this.cbbNotification.Location = new System.Drawing.Point(151, 126);
+            this.cbbNotification.Margin = new System.Windows.Forms.Padding(2);
             this.cbbNotification.Name = "cbbNotification";
-            this.cbbNotification.Size = new System.Drawing.Size(313, 52);
+            this.cbbNotification.Size = new System.Drawing.Size(210, 28);
             this.cbbNotification.TabIndex = 9;
             this.cbbNotification.TabStop = false;
             // 
@@ -205,9 +210,10 @@ namespace StudyManagementApp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(205, 130);
+            this.label4.Location = new System.Drawing.Point(145, 87);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(348, 27);
+            this.label4.Size = new System.Drawing.Size(222, 18);
             this.label4.TabIndex = 8;
             this.label4.Text = "custom radio button nằm ở đây";
             // 
@@ -215,9 +221,10 @@ namespace StudyManagementApp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 186);
+            this.label3.Location = new System.Drawing.Point(28, 124);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 42);
+            this.label3.Size = new System.Drawing.Size(113, 28);
             this.label3.TabIndex = 7;
             this.label3.Text = "Calendar mode";
             // 
@@ -225,9 +232,10 @@ namespace StudyManagementApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 123);
+            this.label2.Location = new System.Drawing.Point(28, 82);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 42);
+            this.label2.Size = new System.Drawing.Size(57, 28);
             this.label2.TabIndex = 6;
             this.label2.Text = "Theme";
             // 
@@ -235,9 +243,10 @@ namespace StudyManagementApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 61);
+            this.label1.Location = new System.Drawing.Point(28, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 42);
+            this.label1.Size = new System.Drawing.Size(78, 28);
             this.label1.TabIndex = 5;
             this.label1.Text = "NickName";
             // 
@@ -251,9 +260,10 @@ namespace StudyManagementApp
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CancelButton.Location = new System.Drawing.Point(518, 658);
+            this.CancelButton.Location = new System.Drawing.Point(345, 413);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(2);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(170, 58);
+            this.CancelButton.Size = new System.Drawing.Size(113, 39);
             this.CancelButton.TabIndex = 13;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
@@ -269,9 +279,10 @@ namespace StudyManagementApp
             this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Apply_Button.Location = new System.Drawing.Point(48, 658);
+            this.Apply_Button.Location = new System.Drawing.Point(32, 413);
+            this.Apply_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Apply_Button.Name = "Apply_Button";
-            this.Apply_Button.Size = new System.Drawing.Size(170, 58);
+            this.Apply_Button.Size = new System.Drawing.Size(113, 39);
             this.Apply_Button.TabIndex = 12;
             this.Apply_Button.Text = "Apply";
             this.Apply_Button.UseVisualStyleBackColor = false;
@@ -287,9 +298,10 @@ namespace StudyManagementApp
             this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout_button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Logout_button.Location = new System.Drawing.Point(283, 658);
+            this.Logout_button.Location = new System.Drawing.Point(189, 413);
+            this.Logout_button.Margin = new System.Windows.Forms.Padding(2);
             this.Logout_button.Name = "Logout_button";
-            this.Logout_button.Size = new System.Drawing.Size(170, 58);
+            this.Logout_button.Size = new System.Drawing.Size(113, 39);
             this.Logout_button.TabIndex = 14;
             this.Logout_button.Text = "Log out";
             this.Logout_button.UseVisualStyleBackColor = false;
@@ -297,10 +309,9 @@ namespace StudyManagementApp
             // 
             // Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(736, 763);
+            this.ClientSize = new System.Drawing.Size(491, 479);
             this.Controls.Add(this.Logout_button);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.CancelButton);
@@ -308,6 +319,7 @@ namespace StudyManagementApp
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Edit";

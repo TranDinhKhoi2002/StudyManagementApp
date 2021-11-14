@@ -60,5 +60,7 @@ namespace StudyManagementApp
             Owner.Dispose();
             Program.globalLogin.Show();
         }
+
+       
     }
 }
