@@ -67,7 +67,7 @@ namespace StudyManagementApp
             this.ReNewPassword_textbox.BorderSize = 2;
             this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReNewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ReNewPassword_textbox.Location = new System.Drawing.Point(103, 105);
+            this.ReNewPassword_textbox.Location = new System.Drawing.Point(103, 97);
             this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.ReNewPassword_textbox.Multiline = false;
             this.ReNewPassword_textbox.Name = "ReNewPassword_textbox";
@@ -93,7 +93,7 @@ namespace StudyManagementApp
             this.NewPassword_textbox.BorderSize = 2;
             this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NewPassword_textbox.Location = new System.Drawing.Point(103, 11);
+            this.NewPassword_textbox.Location = new System.Drawing.Point(103, 3);
             this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.NewPassword_textbox.Multiline = false;
             this.NewPassword_textbox.Name = "NewPassword_textbox";
@@ -119,7 +119,7 @@ namespace StudyManagementApp
             this.CurrentPassword_textbox.BorderSize = 2;
             this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CurrentPassword_textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CurrentPassword_textbox.Location = new System.Drawing.Point(103, 58);
+            this.CurrentPassword_textbox.Location = new System.Drawing.Point(103, 50);
             this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(4);
             this.CurrentPassword_textbox.Multiline = false;
             this.CurrentPassword_textbox.Name = "CurrentPassword_textbox";
@@ -224,10 +224,10 @@ namespace StudyManagementApp
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.CancelButton.Location = new System.Drawing.Point(338, 412);
+            this.CancelButton.Location = new System.Drawing.Point(338, 398);
             this.CancelButton.Margin = new System.Windows.Forms.Padding(20);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(106, 47);
+            this.CancelButton.Size = new System.Drawing.Size(106, 42);
             this.CancelButton.TabIndex = 13;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
@@ -244,10 +244,10 @@ namespace StudyManagementApp
             this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Apply_Button.Location = new System.Drawing.Point(46, 412);
+            this.Apply_Button.Location = new System.Drawing.Point(46, 398);
             this.Apply_Button.Margin = new System.Windows.Forms.Padding(20);
             this.Apply_Button.Name = "Apply_Button";
-            this.Apply_Button.Size = new System.Drawing.Size(106, 47);
+            this.Apply_Button.Size = new System.Drawing.Size(106, 42);
             this.Apply_Button.TabIndex = 12;
             this.Apply_Button.Text = "Apply";
             this.Apply_Button.UseVisualStyleBackColor = false;
@@ -264,10 +264,10 @@ namespace StudyManagementApp
             this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Logout_button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Logout_button.Location = new System.Drawing.Point(192, 412);
+            this.Logout_button.Location = new System.Drawing.Point(192, 398);
             this.Logout_button.Margin = new System.Windows.Forms.Padding(20);
             this.Logout_button.Name = "Logout_button";
-            this.Logout_button.Size = new System.Drawing.Size(106, 47);
+            this.Logout_button.Size = new System.Drawing.Size(106, 42);
             this.Logout_button.TabIndex = 14;
             this.Logout_button.Text = "Log out";
             this.Logout_button.UseVisualStyleBackColor = false;
@@ -295,7 +295,7 @@ namespace StudyManagementApp
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 42);
+            this.label4.Size = new System.Drawing.Size(146, 41);
             this.label4.TabIndex = 11;
             this.label4.Text = "User";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -320,11 +320,11 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.921162F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.70539F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.506224F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.23237F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.69565F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.695652F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.86957F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.63485F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(491, 479);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(491, 460);
             this.tableLayoutPanel1.TabIndex = 15;
             // 
             // panel3
@@ -337,10 +337,10 @@ namespace StudyManagementApp
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(26, 42);
+            this.panel3.Location = new System.Drawing.Point(26, 41);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(438, 147);
+            this.panel3.Size = new System.Drawing.Size(438, 155);
             this.panel3.TabIndex = 16;
             // 
             // panel2
@@ -350,14 +350,14 @@ namespace StudyManagementApp
             this.panel2.Location = new System.Drawing.Point(172, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(146, 42);
+            this.panel2.Size = new System.Drawing.Size(146, 41);
             this.panel2.TabIndex = 16;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(172, 189);
+            this.panel4.Location = new System.Drawing.Point(172, 196);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(146, 40);
@@ -383,10 +383,10 @@ namespace StudyManagementApp
             this.panel5.Controls.Add(this.CurrentPassword_textbox);
             this.panel5.Controls.Add(this.NewPassword_textbox);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(26, 229);
+            this.panel5.Location = new System.Drawing.Point(26, 236);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(438, 163);
+            this.panel5.Size = new System.Drawing.Size(438, 142);
             this.panel5.TabIndex = 16;
             // 
             // Edit
@@ -394,7 +394,7 @@ namespace StudyManagementApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(491, 479);
+            this.ClientSize = new System.Drawing.Size(491, 460);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
