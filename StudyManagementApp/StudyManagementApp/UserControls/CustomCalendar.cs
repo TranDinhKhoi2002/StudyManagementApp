@@ -328,7 +328,7 @@ namespace StudyManagementApp.UserControls
         //Khi cả cái cuốn lịch đổi size thì làm gì?
         private void CustomCalendar_SizeChanged(object sender, EventArgs e)
         {
-            if(arrButton[0][0].Width>0)
+            if(arrButton.Count>0)
             {
                 Monday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
                 Tuesday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
