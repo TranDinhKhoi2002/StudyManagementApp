@@ -29,6 +29,37 @@ namespace StudyManagementApp
             numInterval.Value = interval;
             numNotification.Value = notification;
         }
+        private void SettingPomodoro_Load(object sender, EventArgs e)
+        {
+            LoadMau();
+        }
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color x)
+        {
+            this.BackColor = x;
+            btnApply.BorderColor = x;
+            btnReset.BorderColor = x;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(Color.DarkGray);
+               
+
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam);
+             
+            }
+        }
 
         private void btnApply_Click(object sender, EventArgs e)
         {
@@ -93,6 +124,6 @@ namespace StudyManagementApp
             this.Close();
         }
 
-      
+       
     }
 }

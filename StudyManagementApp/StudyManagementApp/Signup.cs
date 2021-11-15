@@ -1,5 +1,6 @@
 ﻿using StudyManagementApp.DAO;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace StudyManagementApp
@@ -10,7 +11,55 @@ namespace StudyManagementApp
         {
             InitializeComponent();
         }
-     
+
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color x, Color y,Color z,Color t)
+        {
+            this.BackColor = x;
+            lbInstruction.ForeColor = x;
+            lbInstruction.BackColor = y;
+
+            UsernameTextBox.BackColor = x;
+            PasswordTextBox.BackColor = x;
+            RePasswordTextbox.BackColor = x;
+
+            UsernameTextBox.PlaceholderColor = z;
+            PasswordTextBox.PlaceholderColor = z;
+            RePasswordTextbox.PlaceholderColor = z;
+
+            UsernameTextBox.BorderColor = z;
+            PasswordTextBox.BorderColor = z;
+            RePasswordTextbox.BorderColor = z;
+
+            UsernameTextBox.ForeColor = t;
+            PasswordTextBox.ForeColor = t;
+            RePasswordTextbox.ForeColor = t;
+
+            UsernameTextBox.BorderFocusColor = t;
+            PasswordTextBox.BorderFocusColor = t;
+            RePasswordTextbox.BorderFocusColor = t;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(SacMau.trangvua, Color.Gray,Color.Gray,SacMau.dendam);
+
+
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam, SacMau.trangvua,Color.Gray,SacMau.trangvua);
+
+            }
+        }
+
         private void Signup_FormClosed(object sender, FormClosedEventArgs e)
         {
             Owner.Show();
@@ -60,6 +109,7 @@ namespace StudyManagementApp
         private void Signup_Load(object sender, EventArgs e)
         {
             SignUpButton.Select();
+            LoadMau();
         }
     }
 }

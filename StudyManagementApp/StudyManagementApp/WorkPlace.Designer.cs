@@ -32,11 +32,11 @@ namespace StudyManagementApp
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkPlace));
             this.ToolTablePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.AddPic_Panel = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.WordToolPanel = new System.Windows.Forms.Panel();
             this.SaveButtonTablePanel = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.BaNut_Panel = new System.Windows.Forms.Panel();
             this.Help_iconButton = new FontAwesome.Sharp.IconButton();
             this.About_iconButton = new FontAwesome.Sharp.IconButton();
             this.Home_iconButton = new FontAwesome.Sharp.IconButton();
@@ -66,10 +66,9 @@ namespace StudyManagementApp
             this.ItemTable1_button = new System.Windows.Forms.Button();
             this.TableMenu_iconButton = new FontAwesome.Sharp.IconButton();
             this.UserInforPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.UserNameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Edit_iconButton = new FontAwesome.Sharp.IconButton();
             this.ThuGonTraiButton = new FontAwesome.Sharp.IconButton();
             this.FunctionTablePanel = new System.Windows.Forms.TableLayoutPanel();
@@ -97,7 +96,7 @@ namespace StudyManagementApp
             this.BackGroundWorkPlace_Panel = new System.Windows.Forms.Panel();
             this.Pomodoro_Timer = new System.Windows.Forms.Timer(this.components);
             this.Pomodoro_toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.Pomodoro_notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.Zst_notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmstripBackground = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
@@ -108,9 +107,9 @@ namespace StudyManagementApp
             this.SaveButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.SaveAsButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ToolTablePanel.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.AddPic_Panel.SuspendLayout();
             this.SaveButtonTablePanel.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.BaNut_Panel.SuspendLayout();
             this.LeftMenuTablePanel.SuspendLayout();
             this.PomodoroPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).BeginInit();
@@ -119,7 +118,7 @@ namespace StudyManagementApp
             this.SubToDoListMenu_panel.SuspendLayout();
             this.SubTableMenu_panel.SuspendLayout();
             this.UserInforPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.FunctionTablePanel.SuspendLayout();
             this.PomodoroFunctionTableLabel.SuspendLayout();
@@ -144,16 +143,17 @@ namespace StudyManagementApp
             // 
             // ToolTablePanel
             // 
+            this.ToolTablePanel.BackColor = System.Drawing.Color.Transparent;
             this.ToolTablePanel.ColumnCount = 5;
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
-            this.ToolTablePanel.Controls.Add(this.panel4, 4, 0);
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.ToolTablePanel.Controls.Add(this.AddPic_Panel, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
-            this.ToolTablePanel.Controls.Add(this.panel2, 0, 0);
+            this.ToolTablePanel.Controls.Add(this.BaNut_Panel, 0, 0);
             this.ToolTablePanel.Controls.Add(this.PassageToolPanel, 2, 0);
             this.ToolTablePanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ToolTablePanel.Location = new System.Drawing.Point(0, 442);
@@ -164,16 +164,16 @@ namespace StudyManagementApp
             this.ToolTablePanel.Size = new System.Drawing.Size(913, 57);
             this.ToolTablePanel.TabIndex = 6;
             // 
-            // panel4
+            // AddPic_Panel
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.panel4.Controls.Add(this.iconButton4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(735, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(178, 57);
-            this.panel4.TabIndex = 3;
+            this.AddPic_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.AddPic_Panel.Controls.Add(this.iconButton4);
+            this.AddPic_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddPic_Panel.Location = new System.Drawing.Point(712, 0);
+            this.AddPic_Panel.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            this.AddPic_Panel.Name = "AddPic_Panel";
+            this.AddPic_Panel.Size = new System.Drawing.Size(201, 57);
+            this.AddPic_Panel.TabIndex = 3;
             // 
             // iconButton4
             // 
@@ -186,7 +186,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(148, 0);
+            this.iconButton4.Location = new System.Drawing.Point(171, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(27, 39);
@@ -200,7 +200,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(201, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(176, 57);
+            this.WordToolPanel.Size = new System.Drawing.Size(169, 57);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -212,27 +212,27 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(557, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(542, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(176, 57);
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(168, 57);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
-            // panel2
+            // BaNut_Panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.panel2.Controls.Add(this.Help_iconButton);
-            this.panel2.Controls.Add(this.About_iconButton);
-            this.panel2.Controls.Add(this.Home_iconButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 57);
-            this.panel2.TabIndex = 4;
+            this.BaNut_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.BaNut_Panel.Controls.Add(this.Help_iconButton);
+            this.BaNut_Panel.Controls.Add(this.About_iconButton);
+            this.BaNut_Panel.Controls.Add(this.Home_iconButton);
+            this.BaNut_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BaNut_Panel.Location = new System.Drawing.Point(0, 0);
+            this.BaNut_Panel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.BaNut_Panel.Name = "BaNut_Panel";
+            this.BaNut_Panel.Size = new System.Drawing.Size(200, 57);
+            this.BaNut_Panel.TabIndex = 4;
             // 
             // Help_iconButton
             // 
@@ -295,10 +295,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(379, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(372, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(176, 57);
+            this.PassageToolPanel.Size = new System.Drawing.Size(168, 57);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -351,7 +351,7 @@ namespace StudyManagementApp
             this.NextStatePomo_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.NextStatePomo_iconButton.IconSize = 20;
             this.NextStatePomo_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.NextStatePomo_iconButton.Location = new System.Drawing.Point(131, 95);
+            this.NextStatePomo_iconButton.Location = new System.Drawing.Point(133, 94);
             this.NextStatePomo_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.NextStatePomo_iconButton.Name = "NextStatePomo_iconButton";
             this.NextStatePomo_iconButton.Size = new System.Drawing.Size(20, 20);
@@ -362,10 +362,11 @@ namespace StudyManagementApp
             // 
             // HaiCham_Label
             // 
+            this.HaiCham_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.HaiCham_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.HaiCham_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HaiCham_Label.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HaiCham_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.HaiCham_Label.Location = new System.Drawing.Point(95, 45);
+            this.HaiCham_Label.Location = new System.Drawing.Point(92, 45);
             this.HaiCham_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HaiCham_Label.Name = "HaiCham_Label";
             this.HaiCham_Label.Size = new System.Drawing.Size(18, 37);
@@ -375,13 +376,14 @@ namespace StudyManagementApp
             // 
             // SecondPomo_Label
             // 
+            this.SecondPomo_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SecondPomo_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.SecondPomo_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SecondPomo_Label.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondPomo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.SecondPomo_Label.Location = new System.Drawing.Point(105, 46);
+            this.SecondPomo_Label.Location = new System.Drawing.Point(108, 46);
             this.SecondPomo_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SecondPomo_Label.Name = "SecondPomo_Label";
-            this.SecondPomo_Label.Size = new System.Drawing.Size(47, 37);
+            this.SecondPomo_Label.Size = new System.Drawing.Size(44, 37);
             this.SecondPomo_Label.TabIndex = 7;
             this.SecondPomo_Label.Text = "00";
             this.SecondPomo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,6 +391,7 @@ namespace StudyManagementApp
             // PomodoroSetting_iconButton
             // 
             this.PomodoroSetting_iconButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PomodoroSetting_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.PomodoroSetting_iconButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.PomodoroSetting_iconButton.FlatAppearance.BorderSize = 0;
             this.PomodoroSetting_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -403,18 +406,19 @@ namespace StudyManagementApp
             this.PomodoroSetting_iconButton.Size = new System.Drawing.Size(30, 30);
             this.PomodoroSetting_iconButton.TabIndex = 6;
             this.Pomodoro_toolTip.SetToolTip(this.PomodoroSetting_iconButton, "Make sure your \"Pomo🍅\" is stop before \"Setting⚙️\"");
-            this.PomodoroSetting_iconButton.UseVisualStyleBackColor = true;
+            this.PomodoroSetting_iconButton.UseVisualStyleBackColor = false;
             this.PomodoroSetting_iconButton.Click += new System.EventHandler(this.PomodoroSetting_iconButton_Click);
             // 
             // MinutePomo_Label
             // 
+            this.MinutePomo_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MinutePomo_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.MinutePomo_Label.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinutePomo_Label.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinutePomo_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
-            this.MinutePomo_Label.Location = new System.Drawing.Point(53, 46);
+            this.MinutePomo_Label.Location = new System.Drawing.Point(51, 46);
             this.MinutePomo_Label.Margin = new System.Windows.Forms.Padding(0);
             this.MinutePomo_Label.Name = "MinutePomo_Label";
-            this.MinutePomo_Label.Size = new System.Drawing.Size(48, 37);
+            this.MinutePomo_Label.Size = new System.Drawing.Size(43, 37);
             this.MinutePomo_Label.TabIndex = 4;
             this.MinutePomo_Label.Text = "25";
             this.MinutePomo_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -454,7 +458,7 @@ namespace StudyManagementApp
             // SubFreeStyleMenu_panel
             // 
             this.SubFreeStyleMenu_panel.AutoScroll = true;
-            this.SubFreeStyleMenu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.SubFreeStyleMenu_panel.BackColor = System.Drawing.Color.Transparent;
             this.SubFreeStyleMenu_panel.Controls.Add(this.ItemFreeStyle3_Button);
             this.SubFreeStyleMenu_panel.Controls.Add(this.ItemFreeStyle2_Button);
             this.SubFreeStyleMenu_panel.Controls.Add(this.ItemFreeStyle1_Button);
@@ -468,7 +472,7 @@ namespace StudyManagementApp
             // 
             // ItemFreeStyle3_Button
             // 
-            this.ItemFreeStyle3_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemFreeStyle3_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemFreeStyle3_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemFreeStyle3_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -486,7 +490,7 @@ namespace StudyManagementApp
             // 
             // ItemFreeStyle2_Button
             // 
-            this.ItemFreeStyle2_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemFreeStyle2_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemFreeStyle2_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemFreeStyle2_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -504,7 +508,7 @@ namespace StudyManagementApp
             // 
             // ItemFreeStyle1_Button
             // 
-            this.ItemFreeStyle1_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemFreeStyle1_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemFreeStyle1_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemFreeStyle1_Button.FlatAppearance.BorderSize = 0;
             this.ItemFreeStyle1_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -522,7 +526,7 @@ namespace StudyManagementApp
             // 
             // FreeStyleMenu_iconButton
             // 
-            this.FreeStyleMenu_iconButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.FreeStyleMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.FreeStyleMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.FreeStyleMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.FreeStyleMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
@@ -532,6 +536,7 @@ namespace StudyManagementApp
             this.FreeStyleMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.FreeStyleMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.FreeStyleMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.FreeStyleMenu_iconButton.IconSize = 40;
             this.FreeStyleMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.FreeStyleMenu_iconButton.Location = new System.Drawing.Point(0, 243);
             this.FreeStyleMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
@@ -547,7 +552,7 @@ namespace StudyManagementApp
             // SubToDoListMenu_panel
             // 
             this.SubToDoListMenu_panel.AutoScroll = true;
-            this.SubToDoListMenu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.SubToDoListMenu_panel.BackColor = System.Drawing.Color.Transparent;
             this.SubToDoListMenu_panel.Controls.Add(this.ItemToDoList3_Button);
             this.SubToDoListMenu_panel.Controls.Add(this.ItemToDoList2_Button);
             this.SubToDoListMenu_panel.Controls.Add(this.ItemToDoList1_Button);
@@ -561,7 +566,7 @@ namespace StudyManagementApp
             // 
             // ItemToDoList3_Button
             // 
-            this.ItemToDoList3_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemToDoList3_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemToDoList3_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemToDoList3_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -579,7 +584,7 @@ namespace StudyManagementApp
             // 
             // ItemToDoList2_Button
             // 
-            this.ItemToDoList2_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemToDoList2_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemToDoList2_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemToDoList2_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -597,7 +602,7 @@ namespace StudyManagementApp
             // 
             // ItemToDoList1_Button
             // 
-            this.ItemToDoList1_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemToDoList1_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemToDoList1_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemToDoList1_Button.FlatAppearance.BorderSize = 0;
             this.ItemToDoList1_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -615,7 +620,7 @@ namespace StudyManagementApp
             // 
             // ToDoListMenu_iconButton
             // 
-            this.ToDoListMenu_iconButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ToDoListMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.ToDoListMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.ToDoListMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
@@ -625,6 +630,7 @@ namespace StudyManagementApp
             this.ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.ToDoListMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ToDoListMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ToDoListMenu_iconButton.IconSize = 40;
             this.ToDoListMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ToDoListMenu_iconButton.Location = new System.Drawing.Point(0, 117);
             this.ToDoListMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
@@ -639,7 +645,7 @@ namespace StudyManagementApp
             // 
             // SubTableMenu_panel
             // 
-            this.SubTableMenu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.SubTableMenu_panel.BackColor = System.Drawing.Color.Transparent;
             this.SubTableMenu_panel.Controls.Add(this.ItemTable3_Button);
             this.SubTableMenu_panel.Controls.Add(this.ItemTable2_Button);
             this.SubTableMenu_panel.Controls.Add(this.ItemTable1_button);
@@ -653,7 +659,7 @@ namespace StudyManagementApp
             // 
             // ItemTable3_Button
             // 
-            this.ItemTable3_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemTable3_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemTable3_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemTable3_Button.FlatAppearance.BorderSize = 0;
             this.ItemTable3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -671,7 +677,7 @@ namespace StudyManagementApp
             // 
             // ItemTable2_Button
             // 
-            this.ItemTable2_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemTable2_Button.BackColor = System.Drawing.Color.Transparent;
             this.ItemTable2_Button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemTable2_Button.FlatAppearance.BorderSize = 0;
             this.ItemTable2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -689,7 +695,7 @@ namespace StudyManagementApp
             // 
             // ItemTable1_button
             // 
-            this.ItemTable1_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ItemTable1_button.BackColor = System.Drawing.Color.Transparent;
             this.ItemTable1_button.Dock = System.Windows.Forms.DockStyle.Top;
             this.ItemTable1_button.FlatAppearance.BorderSize = 0;
             this.ItemTable1_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -707,7 +713,7 @@ namespace StudyManagementApp
             // 
             // TableMenu_iconButton
             // 
-            this.TableMenu_iconButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.TableMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.TableMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.TableMenu_iconButton.FlatAppearance.BorderSize = 0;
             this.TableMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
@@ -717,6 +723,7 @@ namespace StudyManagementApp
             this.TableMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             this.TableMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.TableMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.TableMenu_iconButton.IconSize = 40;
             this.TableMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TableMenu_iconButton.Location = new System.Drawing.Point(0, 0);
             this.TableMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
@@ -732,7 +739,7 @@ namespace StudyManagementApp
             // UserInforPanel
             // 
             this.UserInforPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.UserInforPanel.Controls.Add(this.pictureBox1);
+            this.UserInforPanel.Controls.Add(this.Logo_PictureBox);
             this.UserInforPanel.Controls.Add(this.tableLayoutPanel3);
             this.UserInforPanel.Controls.Add(this.CalendarButton);
             this.UserInforPanel.Controls.Add(this.ThuGonTraiButton);
@@ -743,29 +750,28 @@ namespace StudyManagementApp
             this.UserInforPanel.Size = new System.Drawing.Size(201, 199);
             this.UserInforPanel.TabIndex = 0;
             // 
-            // pictureBox1
+            // Logo_PictureBox
             // 
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::StudyManagementApp.Properties.Resources.Logo;
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.Logo_PictureBox.ErrorImage = null;
+            this.Logo_PictureBox.Image = global::StudyManagementApp.Properties.Resources.Logo;
+            this.Logo_PictureBox.ImageLocation = "";
+            this.Logo_PictureBox.InitialImage = null;
+            this.Logo_PictureBox.Location = new System.Drawing.Point(49, 10);
+            this.Logo_PictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.Logo_PictureBox.Name = "Logo_PictureBox";
+            this.Logo_PictureBox.Size = new System.Drawing.Size(101, 100);
+            this.Logo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo_PictureBox.TabIndex = 4;
+            this.Logo_PictureBox.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.960199F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.67662F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tableLayoutPanel3.Controls.Add(this.UserNameLabel, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.Edit_iconButton, 3, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 114);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
@@ -780,26 +786,13 @@ namespace StudyManagementApp
             this.UserNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserNameLabel.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.UserNameLabel.Location = new System.Drawing.Point(66, 0);
+            this.UserNameLabel.Location = new System.Drawing.Point(36, 0);
             this.UserNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UserNameLabel.Name = "UserNameLabel";
-            this.UserNameLabel.Size = new System.Drawing.Size(96, 35);
+            this.UserNameLabel.Size = new System.Drawing.Size(126, 35);
             this.UserNameLabel.TabIndex = 5;
             this.UserNameLabel.Text = "TruongHuy";
-            this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label1.Location = new System.Drawing.Point(20, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 35);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "User:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.UserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Edit_iconButton
             // 
@@ -1156,13 +1149,14 @@ namespace StudyManagementApp
             this.Pomodoro_toolTip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Pomodoro_toolTip.ToolTipTitle = "\"Pomo🍅\" nhắc bạn!";
             // 
-            // Pomodoro_notifyIcon
+            // Zst_notifyIcon
             // 
-            this.Pomodoro_notifyIcon.ContextMenuStrip = this.cmstripBackground;
-            this.Pomodoro_notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("Pomodoro_notifyIcon.Icon")));
-            this.Pomodoro_notifyIcon.Text = "StudyManagementApp";
-            this.Pomodoro_notifyIcon.Visible = true;
-            this.Pomodoro_notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyBackground_MouseDoubleClick);
+            this.Zst_notifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Warning;
+            this.Zst_notifyIcon.ContextMenuStrip = this.cmstripBackground;
+            this.Zst_notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("Zst_notifyIcon.Icon")));
+            this.Zst_notifyIcon.Text = "StudyManagementApp";
+            this.Zst_notifyIcon.Visible = true;
+            this.Zst_notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyBackground_MouseDoubleClick);
             // 
             // cmstripBackground
             // 
@@ -1213,8 +1207,8 @@ namespace StudyManagementApp
             // 
             this.Start_Stop_Pomodoro_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.Start_Stop_Pomodoro_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Start_Stop_Pomodoro_button.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.Start_Stop_Pomodoro_button.BorderRadius = 15;
+            this.Start_Stop_Pomodoro_button.BorderColor = System.Drawing.Color.Transparent;
+            this.Start_Stop_Pomodoro_button.BorderRadius = 10;
             this.Start_Stop_Pomodoro_button.BorderSize = 0;
             this.Start_Stop_Pomodoro_button.FlatAppearance.BorderSize = 0;
             this.Start_Stop_Pomodoro_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1236,7 +1230,7 @@ namespace StudyManagementApp
             this.CalendarButton.BorderSize = 0;
             this.CalendarButton.FlatAppearance.BorderSize = 0;
             this.CalendarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.CalendarButton.Location = new System.Drawing.Point(49, 156);
             this.CalendarButton.Name = "CalendarButton";
@@ -1255,12 +1249,12 @@ namespace StudyManagementApp
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SaveButton.FlatAppearance.BorderSize = 0;
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.Font = new System.Drawing.Font("Agency FB", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.SaveButton.Location = new System.Drawing.Point(14, 10);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(14, 10, 7, 10);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(67, 37);
+            this.SaveButton.Size = new System.Drawing.Size(63, 37);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -1274,19 +1268,20 @@ namespace StudyManagementApp
             this.SaveAsButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SaveAsButton.FlatAppearance.BorderSize = 0;
             this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(95, 10);
+            this.SaveAsButton.Location = new System.Drawing.Point(91, 10);
             this.SaveAsButton.Margin = new System.Windows.Forms.Padding(7, 10, 14, 10);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(67, 37);
+            this.SaveAsButton.Size = new System.Drawing.Size(63, 37);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
             // 
             // WorkPlace
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(913, 499);
             this.Controls.Add(this.BackGroundWorkPlace_Panel);
@@ -1303,9 +1298,9 @@ namespace StudyManagementApp
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WorkPlace_FormClosed);
             this.Load += new System.EventHandler(this.WorkPlace_Load);
             this.ToolTablePanel.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.AddPic_Panel.ResumeLayout(false);
             this.SaveButtonTablePanel.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.BaNut_Panel.ResumeLayout(false);
             this.LeftMenuTablePanel.ResumeLayout(false);
             this.PomodoroPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).EndInit();
@@ -1314,7 +1309,7 @@ namespace StudyManagementApp
             this.SubToDoListMenu_panel.ResumeLayout(false);
             this.SubTableMenu_panel.ResumeLayout(false);
             this.UserInforPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.FunctionTablePanel.ResumeLayout(false);
             this.PomodoroFunctionTableLabel.ResumeLayout(false);
@@ -1343,13 +1338,13 @@ namespace StudyManagementApp
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel ToolTablePanel;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel AddPic_Panel;
         private FontAwesome.Sharp.IconButton iconButton4;
         private System.Windows.Forms.Panel WordToolPanel;
         private System.Windows.Forms.TableLayoutPanel SaveButtonTablePanel;
         private UserControls.RoundedCornerButton SaveButton;
         private UserControls.RoundedCornerButton SaveAsButton;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel BaNut_Panel;
         private FontAwesome.Sharp.IconButton Help_iconButton;
         private FontAwesome.Sharp.IconButton About_iconButton;
         private FontAwesome.Sharp.IconButton Home_iconButton;
@@ -1374,7 +1369,7 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel PomodoroPanel;
         private System.Windows.Forms.Panel UserInforPanel;
         private System.Windows.Forms.Label UserNameLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Logo_PictureBox;
         private UserControls.RoundedCornerButton CalendarButton;
         private FontAwesome.Sharp.IconButton ThuGonTraiButton;
         private System.Windows.Forms.TableLayoutPanel FunctionTablePanel;
@@ -1401,10 +1396,9 @@ namespace StudyManagementApp
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.NotifyIcon Pomodoro_notifyIcon;
+        private System.Windows.Forms.NotifyIcon Zst_notifyIcon;
         private FontAwesome.Sharp.IconButton Edit_iconButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip cmstripBackground;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;

@@ -33,13 +33,13 @@ namespace StudyManagementApp
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.numPomodoro = new System.Windows.Forms.NumericUpDown();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -55,9 +55,9 @@ namespace StudyManagementApp
             this.panel16 = new System.Windows.Forms.Panel();
             this.cbbNotification = new System.Windows.Forms.ComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.numInterval = new System.Windows.Forms.NumericUpDown();
@@ -70,13 +70,17 @@ namespace StudyManagementApp
             this.panel18 = new System.Windows.Forms.Panel();
             this.btnApply = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.btnOK = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.btnReset = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numPomodoro)).BeginInit();
             this.panel11.SuspendLayout();
@@ -91,7 +95,9 @@ namespace StudyManagementApp
             ((System.ComponentModel.ISupportInitialize)(this.numNotification)).BeginInit();
             this.panel16.SuspendLayout();
             this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numInterval)).BeginInit();
@@ -133,113 +139,106 @@ namespace StudyManagementApp
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.75817F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.67974F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.93103F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.98693F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.14379F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.21569F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(360, 153);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 44);
+            this.panel5.Location = new System.Drawing.Point(0, 52);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(120, 50);
+            this.panel5.Size = new System.Drawing.Size(120, 40);
             this.panel5.TabIndex = 7;
             // 
-            // label3
+            // pictureBox2
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(97)))), ((int)(((byte)(111)))));
-            this.label3.Location = new System.Drawing.Point(10, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 30);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Pomodoro";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox2.Image = global::StudyManagementApp.Properties.Resources.Pomo_text;
+            this.pictureBox2.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(240, 44);
+            this.panel6.Location = new System.Drawing.Point(240, 52);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(10);
-            this.panel6.Size = new System.Drawing.Size(120, 50);
+            this.panel6.Size = new System.Drawing.Size(120, 40);
             this.panel6.TabIndex = 8;
             // 
-            // label5
+            // pictureBox4
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(124)))), ((int)(((byte)(164)))));
-            this.label5.Location = new System.Drawing.Point(10, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Long Break";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox4.Image = global::StudyManagementApp.Properties.Resources.Long_text;
+            this.pictureBox4.Location = new System.Drawing.Point(-5, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(107, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 3;
+            this.pictureBox4.TabStop = false;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(120, 44);
+            this.panel7.Location = new System.Drawing.Point(120, 52);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(10);
-            this.panel7.Size = new System.Drawing.Size(120, 50);
+            this.panel7.Size = new System.Drawing.Size(120, 40);
             this.panel7.TabIndex = 9;
             // 
-            // label4
+            // pictureBox3
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(145)))), ((int)(((byte)(150)))));
-            this.label4.Location = new System.Drawing.Point(10, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Short Break";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox3.Image = global::StudyManagementApp.Properties.Resources.Short_text;
+            this.pictureBox3.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(103, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label2);
+            this.panel8.Controls.Add(this.pictureBox1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(120, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(5);
-            this.panel8.Size = new System.Drawing.Size(120, 44);
+            this.panel8.Size = new System.Drawing.Size(120, 52);
             this.panel8.TabIndex = 10;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label2.Location = new System.Drawing.Point(5, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 34);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Time(Minute): ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::StudyManagementApp.Properties.Resources.Time_text;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 52);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.numPomodoro);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 94);
+            this.panel10.Location = new System.Drawing.Point(0, 92);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(10, 17, 17, 17);
-            this.panel10.Size = new System.Drawing.Size(120, 59);
+            this.panel10.Size = new System.Drawing.Size(120, 61);
             this.panel10.TabIndex = 12;
             // 
             // numPomodoro
@@ -260,11 +259,11 @@ namespace StudyManagementApp
             // 
             this.panel11.Controls.Add(this.numShortBreak);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(120, 94);
+            this.panel11.Location = new System.Drawing.Point(120, 92);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
             this.panel11.Padding = new System.Windows.Forms.Padding(10, 17, 17, 17);
-            this.panel11.Size = new System.Drawing.Size(120, 59);
+            this.panel11.Size = new System.Drawing.Size(120, 61);
             this.panel11.TabIndex = 12;
             // 
             // numShortBreak
@@ -285,11 +284,11 @@ namespace StudyManagementApp
             // 
             this.panel9.Controls.Add(this.numLongBreak);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(240, 94);
+            this.panel9.Location = new System.Drawing.Point(240, 92);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(10, 17, 17, 17);
-            this.panel9.Size = new System.Drawing.Size(120, 59);
+            this.panel9.Size = new System.Drawing.Size(120, 61);
             this.panel9.TabIndex = 11;
             // 
             // numLongBreak
@@ -417,49 +416,45 @@ namespace StudyManagementApp
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.label7);
+            this.panel13.Controls.Add(this.pictureBox5);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(167, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Padding = new System.Windows.Forms.Padding(10);
             this.panel13.Size = new System.Drawing.Size(193, 47);
             this.panel13.TabIndex = 1;
             // 
-            // label7
+            // pictureBox5
             // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label7.Location = new System.Drawing.Point(10, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(173, 27);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Notification:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox5.Image = global::StudyManagementApp.Properties.Resources.Noti_text;
+            this.pictureBox5.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(117, 47);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.label6);
+            this.panel12.Controls.Add(this.pictureBox6);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Padding = new System.Windows.Forms.Padding(10);
             this.panel12.Size = new System.Drawing.Size(167, 47);
             this.panel12.TabIndex = 0;
             // 
-            // label6
+            // pictureBox6
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.label6.Location = new System.Drawing.Point(10, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 27);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Long Break Interval:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pictureBox6.Image = global::StudyManagementApp.Properties.Resources.Interval_text;
+            this.pictureBox6.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(164, 47);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 5;
+            this.pictureBox6.TabStop = false;
             // 
             // tableLayoutPanel5
             // 
@@ -617,7 +612,7 @@ namespace StudyManagementApp
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.btnOK);
+            this.panel19.Controls.Add(this.btnReset);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel19.Location = new System.Drawing.Point(233, 380);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
@@ -626,24 +621,24 @@ namespace StudyManagementApp
             this.panel19.Size = new System.Drawing.Size(181, 104);
             this.panel19.TabIndex = 10;
             // 
-            // btnOK
+            // btnReset
             // 
-            this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.btnOK.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
-            this.btnOK.BorderRadius = 18;
-            this.btnOK.BorderSize = 0;
-            this.btnOK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnOK.FlatAppearance.BorderSize = 0;
-            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnOK.Location = new System.Drawing.Point(30, 30);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(121, 44);
-            this.btnOK.TabIndex = 4;
-            this.btnOK.Text = "Reset";
-            this.btnOK.UseVisualStyleBackColor = false;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.btnReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.btnReset.BorderRadius = 18;
+            this.btnReset.BorderSize = 0;
+            this.btnReset.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.btnReset.Location = new System.Drawing.Point(30, 30);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(121, 44);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // SettingPomodoro
             // 
@@ -659,12 +654,17 @@ namespace StudyManagementApp
             this.Name = "SettingPomodoro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SettingPomodoro";
+            this.Load += new System.EventHandler(this.SettingPomodoro_Load);
             this.panel2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numPomodoro)).EndInit();
             this.panel11.ResumeLayout(false);
@@ -679,7 +679,9 @@ namespace StudyManagementApp
             ((System.ComponentModel.ISupportInitialize)(this.numNotification)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numInterval)).EndInit();
@@ -699,17 +701,11 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.NumericUpDown numLongBreak;
         private System.Windows.Forms.NumericUpDown numShortBreak;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numPomodoro;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.NumericUpDown numInterval;
         private System.Windows.Forms.ComboBox cbbNotification;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private UserControls.RoundedCornerButton btnOK;
+        private UserControls.RoundedCornerButton btnReset;
         private System.Windows.Forms.NumericUpDown numNotification;
         private UserControls.RoundedCornerButton btnApply;
         private System.Windows.Forms.PictureBox Pomo_PictureBox;
@@ -737,5 +733,11 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

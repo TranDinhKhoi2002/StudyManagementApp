@@ -98,6 +98,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SacMau.cs" />
     <Compile Include="SettingPomodoro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +140,9 @@
     </Compile>
     <Compile Include="UserControls\RoundedCornerTextBox.Designer.cs">
       <DependentUpon>RoundedCornerTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ToggleButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserInfo.cs" />
     <Compile Include="VerificationCodeForm.cs">
@@ -217,16 +221,23 @@
     <None Include="bin\Debug\Resources\Images\Pomo_text.png" />
     <None Include="bin\Debug\Resources\Images\Short_text.png" />
     <None Include="bin\Debug\Resources\Images\Long_text.png" />
+    <None Include="bin\Debug\Resources\Images\Time_text.png" />
+    <None Include="bin\Debug\Resources\Images\Interval_text.png" />
+    <None Include="bin\Debug\Resources\Images\Noti_text.png" />
     <Content Include="Resources\Images\about.png" />
     <Content Include="Resources\Images\calendarDark.png" />
     <Content Include="Resources\Images\calendarWhite.png" />
     <Content Include="Resources\Images\clicked about.png" />
     <Content Include="Resources\Images\clicked help.png" />
     <Content Include="Resources\Images\clicked home.png" />
+    <None Include="Resources\Images\GmailTrang.png" />
+    <None Include="Resources\Images\GenderTrang.png" />
     <Content Include="Resources\Images\help.png" />
     <Content Include="Resources\Images\home.png" />
     <Content Include="Resources\Images\Logo.png" />
+    <None Include="Resources\Images\NameTrang.png" />
     <Content Include="Resources\Images\pixlr-bg-result.png" />
+    <None Include="Resources\logoTrang.png" />
     <Content Include="Resources\Text\truyencamhung.txt" />
     <None Include="Resources\Images\Message_small.png" />
     <None Include="Resources\Images\message_command.png" />

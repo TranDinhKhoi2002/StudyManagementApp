@@ -12,13 +12,16 @@ namespace StudyManagementApp.UserControls
 {
     public partial class CustomCalendar : UserControl
     {
-        Color littlebackgroundPanel;
+       
         Color littleButton;
         Color littlecontentPanel;
         Color Today;
         Color Choosing;
         int row = 6;
         int col = 7;
+
+        Point index_ngay_choosing = new Point(-1, -1);
+        DateTime ngay_choosing = new DateTime(1, 1, 1);
 
         List<List<Panel>> arrPanel = new List<List<Panel>>();
         List<List<Button>> arrButton = new List<List<Button>>();
@@ -39,12 +42,48 @@ namespace StudyManagementApp.UserControls
             workplace = x;
         }
 
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color x,Color y,Color z)
+        {
+            this.BackColor = x;
+            Sau_iconButton.IconColor = y;
+            Truoc_iconButton.IconColor = y;
+
+            NgayThangNam_customDateTimePicker.SkinColor = x;
+            NgayThangNam_customDateTimePicker.TextColor = y;
+
+            Today_Button.BackColor = y;
+            Today_Button.ForeColor = z;
+            Today_Button.BorderColor = z;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(SacMau.trangvua, SacMau.dendam, SacMau.trangvua);
+
+
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam,SacMau.trangvua,SacMau.dennhat);
+
+            }
+        }
+
         //Khi cái usercontrol này load thì làm gì?
         private void CustomCalendar_Load(object sender, EventArgs e)
         {
             LoadControlCalendar();
             LoadDateCalendar();
-            LoadColorToday_ChoosingDate();
+            LoadColorDate();
+            LoadMau();
         }
 
         //Khi nhấn nút bên phải thì làm gì?
@@ -54,11 +93,6 @@ namespace StudyManagementApp.UserControls
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year + 1, 1, 1);
             else
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month + 1, 1);
-
-            if (NgayThangNam_customDateTimePicker.Value.Month == DateTime.Now.Month)
-                NgayThangNam_customDateTimePicker.Value = DateTime.Now.Date;
-
-
         }
         //Khi nhấn nút bên trái thì làm gì?
         private void Truoc_iconButton_Click(object sender, EventArgs e)
@@ -67,8 +101,6 @@ namespace StudyManagementApp.UserControls
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year - 1, 12, 1);
             else
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month - 1, 1);
-            if (NgayThangNam_customDateTimePicker.Value.Month == DateTime.Now.Month)
-                NgayThangNam_customDateTimePicker.Value = DateTime.Now.Date;
         }
 
         //Hàm khởi tạo 1 loạt các list
@@ -86,13 +118,74 @@ namespace StudyManagementApp.UserControls
                     arrContentPanel[i].Add(new Panel());
                 }
             }
-            littlebackgroundPanel = Color.FromArgb(47, 52, 55);
-            littleButton = Color.FromArgb(217, 217, 217);
-            littlecontentPanel = Color.FromArgb(217, 217, 217);
+            for(int i=0;i<row;i++)
+            {
+                for(int j=0;j<col;j++)
+                {
+                    arrButton[i][j].Click += new System.EventHandler(this.arrButton_Click);
+                    arrButton[i][j].Tag = i.ToString() + j.ToString();
+                }
+            }    
+            littleButton = Color.Silver;
+            littlecontentPanel = Color.Silver;
             Today = Color.FromArgb(254, 174, 130);
             Choosing = Color.FromArgb(114, 198, 218);
 
         }
+        
+        //Hàm lấy chỉ số của một ô ngày trong cuốn lịch
+        Point LayChiSoKieuPoint(string x)
+        {
+            return new Point(int.Parse(x) / 10, int.Parse(x) % 10);
+        }
+
+        //Sự kiện của Today button
+        private void Today_Button_Click(object sender, EventArgs e)
+        {
+            if (NgayThangNam_customDateTimePicker.Value == DateTime.Now.Date)
+                LoadColorDate();
+            else
+                NgayThangNam_customDateTimePicker.Value = DateTime.Now.Date;
+            index_ngay_choosing = new Point(-1, -1);
+            ngay_choosing = new DateTime(1, 1, 1);
+        }
+
+        //Sự kiện của các nút ngày trong cuốn lịch
+        private void arrButton_Click(object sender, EventArgs e)
+        {
+            
+            Button nutngay = sender as Button;
+            Point diem = LayChiSoKieuPoint(nutngay.Tag.ToString());
+            if (!string.IsNullOrEmpty(nutngay.Text))
+            {
+                if (index_ngay_choosing.X == diem.X && index_ngay_choosing.Y == diem.Y)
+                {
+                    //Hủy chọn
+                    if (NgayThangNam_customDateTimePicker.Value.Month == DateTime.Now.Month && NgayThangNam_customDateTimePicker.Value.Year == DateTime.Now.Year)
+                    {
+                        NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, DateTime.Now.Day);
+                    }
+                    else
+                    {
+                        NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, 1);
+                    }    
+                    index_ngay_choosing = new Point(-1, -1);
+                    ngay_choosing = new DateTime(1, 1, 1);
+                    LoadColorDate();
+                }
+                else
+                {
+                    LoadColorDate();
+                    //Chọn
+                    index_ngay_choosing = diem;
+                    ngay_choosing = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, int.Parse(nutngay.Text));
+                    NgayThangNam_customDateTimePicker.Value = ngay_choosing;
+                    arrButton[index_ngay_choosing.X][index_ngay_choosing.Y].BackColor = Choosing;
+                    arrContentPanel[index_ngay_choosing.X][index_ngay_choosing.Y].BackColor = Choosing;
+                }
+            }
+        }
+     
 
         //Hàm load control lên hình
         void LoadControlCalendar()
@@ -102,7 +195,7 @@ namespace StudyManagementApp.UserControls
                 for (int j = 0; j < col; j++)
                 {
                     //47, 52, 55
-                    arrPanel[i][j].BackColor = littlebackgroundPanel;
+                    arrPanel[i][j].BackColor = Color.Transparent;
                     arrPanel[i][j].Margin = new Padding(0, 0, 0, 0);
                     arrPanel[i][j].Padding = new Padding(2, 5, 2, 5);
                     arrPanel[i][j].Dock = DockStyle.Fill;
@@ -197,8 +290,8 @@ namespace StudyManagementApp.UserControls
             }
 
         }
-        //Hàm load màu today, choosing lên hình
-        void LoadColorToday_ChoosingDate()
+        //Hàm load màu date lên hình
+        void LoadColorDate()
         {
             for (int i = 0; i < row; i++)
             {
@@ -210,7 +303,6 @@ namespace StudyManagementApp.UserControls
             }
             if (NgayThangNam_customDateTimePicker.Value.Month == DateTime.Now.Month && NgayThangNam_customDateTimePicker.Value.Year == DateTime.Now.Year)
             {
-
                 for (int i = 0; i < row; i++)
                 {
                     for (int j = 0; j < col; j++)
@@ -219,31 +311,6 @@ namespace StudyManagementApp.UserControls
                         {
                             arrButton[i][j].BackColor = Today;
                             arrContentPanel[i][j].BackColor = Today;
-                        }
-                        if (NgayThangNam_customDateTimePicker.Value.Day != DateTime.Now.Day && arrButton[i][j].Text == NgayThangNam_customDateTimePicker.Value.Day.ToString())
-                        {
-                            arrButton[i][j].BackColor = Choosing;
-                            arrContentPanel[i][j].BackColor = Choosing;
-                        }
-                    }
-
-                }
-            }
-            else
-            {
-                for (int i = 0; i < row; i++)
-                {
-                    for (int j = 0; j < col; j++)
-                    {
-                        if (arrButton[i][j].Text == NgayThangNam_customDateTimePicker.Value.Day.ToString())
-                        {
-                            arrButton[i][j].BackColor = Choosing;
-                            arrContentPanel[i][j].BackColor = Choosing;
-                        }
-                        else
-                        {
-                            arrButton[i][j].BackColor = littleButton;
-                            arrContentPanel[i][j].BackColor = littlecontentPanel;
                         }
                     }
                 }
@@ -254,9 +321,11 @@ namespace StudyManagementApp.UserControls
         private void NgayThangNam_customDateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             LoadDateCalendar();
-            LoadColorToday_ChoosingDate();
+            LoadColorDate();
+          
         }
 
+        //Khi cả cái cuốn lịch đổi size thì làm gì?
         private void CustomCalendar_SizeChanged(object sender, EventArgs e)
         {
             Monday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
@@ -266,6 +335,11 @@ namespace StudyManagementApp.UserControls
             Friday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
             Saturday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
             Sunday.MaximumSize = new Size(arrPanel[0][0].Width, 10 + arrPanel[0][0].Height / 2);
+        }
+        private void customDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            LoadDateCalendar();
+            LoadColorDate();
         }
     }
 }

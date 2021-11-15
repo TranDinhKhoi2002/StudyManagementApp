@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using StudyManagementApp.DAO;
 
@@ -6,9 +7,21 @@ namespace StudyManagementApp
 {
     public partial class Edit : Form
     {
+        bool lasttheme;
         public Edit()
         {
             InitializeComponent();
+            lasttheme = Program.Theme;
+            if (Program.Theme == true)
+            {
+                toggleButton1.CheckState = CheckState.Checked;
+                HamDoiMau(SacMau.trangvua, SacMau.dendam, Color.Gray, Color.White);
+            }
+            else
+            {
+                toggleButton1.CheckState = CheckState.Unchecked;
+                HamDoiMau(SacMau.dendam, SacMau.trangvua, Color.Gray, Color.White);
+            }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -55,12 +68,58 @@ namespace StudyManagementApp
             this.Close();
         }
 
+        //Log-out nha
         private void Logout_button_Click(object sender, EventArgs e)
         {
             Owner.Dispose();
             Program.globalLogin.Show();
         }
 
-       
+        //Đổi theme nha
+        void HamDoiMau(Color x , Color y, Color z, Color t)
+        {
+            this.BackColor =x;
+            Apply_Button.BorderColor = x;
+            Logout_button.BorderColor = x;
+            CancelButton.BorderColor = x;
+            label1.ForeColor = label2.ForeColor = label3.ForeColor = label4.ForeColor = label5.ForeColor = y;
+
+            Nickname_textbox.ForeColor = y;
+            Nickname_textbox.PlaceholderColor = z;
+            Nickname_textbox.BackColor = x;
+
+            NewPassword_textbox.ForeColor = y;
+            NewPassword_textbox.PlaceholderColor = z;
+            NewPassword_textbox.BackColor = x;
+
+            CurrentPassword_textbox.ForeColor = y;
+            CurrentPassword_textbox.PlaceholderColor = z;
+            CurrentPassword_textbox.BackColor = x;
+
+            ReNewPassword_textbox.ForeColor = y;
+            ReNewPassword_textbox.PlaceholderColor = z;
+            ReNewPassword_textbox.BackColor = x;           
+        }
+        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            Program.Theme = toggleButton1.Checked;
+            if(Program.Theme==true)
+            {
+                HamDoiMau(SacMau.trangvua, SacMau.dendam, Color.Gray, Color.White);
+            }    
+            else
+            {
+                HamDoiMau(SacMau.dendam, SacMau.trangvua, Color.Gray, Color.White);
+            }    
+        }
+
+        private void Edit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (lasttheme != Program.Theme)
+            {
+                Owner.Dispose();
+                Program.globalLogin.Show();
+            }
+        }
     }
 }

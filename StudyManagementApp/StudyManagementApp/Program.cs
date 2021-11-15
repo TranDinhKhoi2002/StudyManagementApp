@@ -8,6 +8,7 @@ namespace StudyManagementApp
 {
     static class Program
     {
+        public static bool Theme; //false: dark, true: light
         public static Login globalLogin;
         /// <summary>
         /// The main entry point for the application.
@@ -16,10 +17,10 @@ namespace StudyManagementApp
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(true);
             globalLogin = new Login();
             Application.Run(globalLogin);
-            
+            Theme = false;
         }
     }
 }

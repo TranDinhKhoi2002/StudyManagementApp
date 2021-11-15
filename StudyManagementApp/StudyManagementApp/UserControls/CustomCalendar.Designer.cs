@@ -53,6 +53,8 @@ namespace StudyManagementApp.UserControls
             this.Sau_iconButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.NgayThangNam_customDateTimePicker = new StudyManagementApp.UserControls.CustomDateTimePicker();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.Today_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Saturday_Panel.SuspendLayout();
@@ -66,6 +68,7 @@ namespace StudyManagementApp.UserControls
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -82,6 +85,7 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.102073F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 7, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
@@ -148,9 +152,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Saturday
             // 
-            this.Saturday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Saturday.BorderColor = System.Drawing.Color.LightGray;
-            this.Saturday.BorderRadius = 15;
+            this.Saturday.BackColor = System.Drawing.Color.Silver;
+            this.Saturday.BorderColor = System.Drawing.Color.Transparent;
+            this.Saturday.BorderRadius = 10;
             this.Saturday.BorderSize = 0;
             this.Saturday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Saturday.Enabled = false;
@@ -179,9 +183,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Sunday
             // 
-            this.Sunday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Sunday.BorderColor = System.Drawing.Color.LightGray;
-            this.Sunday.BorderRadius = 15;
+            this.Sunday.BackColor = System.Drawing.Color.Silver;
+            this.Sunday.BorderColor = System.Drawing.Color.Transparent;
+            this.Sunday.BorderRadius = 10;
             this.Sunday.BorderSize = 0;
             this.Sunday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Sunday.Enabled = false;
@@ -210,9 +214,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Friday
             // 
-            this.Friday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Friday.BorderColor = System.Drawing.Color.LightGray;
-            this.Friday.BorderRadius = 15;
+            this.Friday.BackColor = System.Drawing.Color.Silver;
+            this.Friday.BorderColor = System.Drawing.Color.Transparent;
+            this.Friday.BorderRadius = 10;
             this.Friday.BorderSize = 0;
             this.Friday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Friday.Enabled = false;
@@ -241,9 +245,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Monday
             // 
-            this.Monday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Monday.BorderColor = System.Drawing.Color.LightGray;
-            this.Monday.BorderRadius = 15;
+            this.Monday.BackColor = System.Drawing.Color.Silver;
+            this.Monday.BorderColor = System.Drawing.Color.Transparent;
+            this.Monday.BorderRadius = 10;
             this.Monday.BorderSize = 0;
             this.Monday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Monday.Enabled = false;
@@ -272,9 +276,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Thursday
             // 
-            this.Thursday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Thursday.BorderColor = System.Drawing.Color.LightGray;
-            this.Thursday.BorderRadius = 15;
+            this.Thursday.BackColor = System.Drawing.Color.Silver;
+            this.Thursday.BorderColor = System.Drawing.Color.Transparent;
+            this.Thursday.BorderRadius = 10;
             this.Thursday.BorderSize = 0;
             this.Thursday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Thursday.Enabled = false;
@@ -303,9 +307,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Wednesday
             // 
-            this.Wednesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Wednesday.BorderColor = System.Drawing.Color.LightGray;
-            this.Wednesday.BorderRadius = 15;
+            this.Wednesday.BackColor = System.Drawing.Color.Silver;
+            this.Wednesday.BorderColor = System.Drawing.Color.Transparent;
+            this.Wednesday.BorderRadius = 10;
             this.Wednesday.BorderSize = 0;
             this.Wednesday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wednesday.Enabled = false;
@@ -334,9 +338,9 @@ namespace StudyManagementApp.UserControls
             // 
             // Tuesday
             // 
-            this.Tuesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Tuesday.BorderColor = System.Drawing.Color.LightGray;
-            this.Tuesday.BorderRadius = 15;
+            this.Tuesday.BackColor = System.Drawing.Color.Silver;
+            this.Tuesday.BorderColor = System.Drawing.Color.Transparent;
+            this.Tuesday.BorderRadius = 10;
             this.Tuesday.BorderSize = 0;
             this.Tuesday.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tuesday.Enabled = false;
@@ -411,11 +415,11 @@ namespace StudyManagementApp.UserControls
             // Truoc_iconButton
             // 
             this.Truoc_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Truoc_iconButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.Truoc_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.Truoc_iconButton.FlatAppearance.BorderSize = 0;
             this.Truoc_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Truoc_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretLeft;
-            this.Truoc_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Truoc_iconButton.IconColor = System.Drawing.Color.Silver;
             this.Truoc_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Truoc_iconButton.IconSize = 50;
             this.Truoc_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -439,11 +443,11 @@ namespace StudyManagementApp.UserControls
             // Sau_iconButton
             // 
             this.Sau_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Sau_iconButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.Sau_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.Sau_iconButton.FlatAppearance.BorderSize = 0;
             this.Sau_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sau_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
-            this.Sau_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Sau_iconButton.IconColor = System.Drawing.Color.Silver;
             this.Sau_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Sau_iconButton.IconSize = 50;
             this.Sau_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -469,23 +473,51 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.NgayThangNam_customDateTimePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.NgayThangNam_customDateTimePicker.BorderSize = 0;
-            this.NgayThangNam_customDateTimePicker.CalendarFont = new System.Drawing.Font("Agency FB", 15F);
-            this.NgayThangNam_customDateTimePicker.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NgayThangNam_customDateTimePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16.5F);
-            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(21, 10);
+            this.NgayThangNam_customDateTimePicker.Enabled = false;
+            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold);
+            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(3, 11);
             this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(0, 35);
             this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
-            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(255, 35);
+            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(290, 35);
             this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NgayThangNam_customDateTimePicker.TabIndex = 0;
             this.NgayThangNam_customDateTimePicker.TextColor = System.Drawing.Color.White;
-            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.NgayThangNam_customDateTimePicker_ValueChanged);
+            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.customDateTimePicker1_ValueChanged);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.Today_Button);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(596, 13);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(97, 50);
+            this.panel4.TabIndex = 9;
+            // 
+            // Today_Button
+            // 
+            this.Today_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Today_Button.BackColor = System.Drawing.Color.Silver;
+            this.Today_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Today_Button.BorderRadius = 10;
+            this.Today_Button.BorderSize = 0;
+            this.Today_Button.FlatAppearance.BorderSize = 0;
+            this.Today_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Today_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Today_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.Today_Button.Location = new System.Drawing.Point(2, 11);
+            this.Today_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.Today_Button.Name = "Today_Button";
+            this.Today_Button.Size = new System.Drawing.Size(92, 32);
+            this.Today_Button.TabIndex = 6;
+            this.Today_Button.Text = "Today";
+            this.Today_Button.UseVisualStyleBackColor = false;
+            this.Today_Button.Click += new System.EventHandler(this.Today_Button_Click);
             // 
             // CustomCalendar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CustomCalendar";
             this.Size = new System.Drawing.Size(712, 403);
@@ -504,6 +536,7 @@ namespace StudyManagementApp.UserControls
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -511,7 +544,6 @@ namespace StudyManagementApp.UserControls
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private CustomDateTimePicker NgayThangNam_customDateTimePicker;
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton Sau_iconButton;
         private System.Windows.Forms.Panel panel2;
@@ -534,5 +566,8 @@ namespace StudyManagementApp.UserControls
         private FontAwesome.Sharp.IconButton Truoc_iconButton;
         private System.Windows.Forms.TableLayoutPanel MainDate_TablePanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Panel panel4;
+        private RoundedCornerButton Today_Button;
+        private CustomDateTimePicker NgayThangNam_customDateTimePicker;
     }
 }

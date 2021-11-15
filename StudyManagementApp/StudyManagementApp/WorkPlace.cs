@@ -17,11 +17,8 @@ namespace StudyManagementApp
         {
             InitializeComponent();
             HideAllSubMenu();
-           
-
-            WorkPlacePanel.Visible = true;
-            aboutUC1.Visible = false;
-            helpUC1.Visible = false;
+            aboutUC1.Hide();
+            helpUC1.Hide();
         }
 
         //Khi tắt workplace thì làm gì?
@@ -30,10 +27,80 @@ namespace StudyManagementApp
             Application.Exit();
         }
 
+        /*---------------------------------Đổi theme---------------------------------*/
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color bg,Color x,Color foretemplate,Color forecanlendar)
+        {
+            this.BackColor = bg;
+            BaNut_Panel.BackColor = x;
+            WordToolPanel.BackColor = x;
+            PassageToolPanel.BackColor = x;
+            SaveButtonTablePanel.BackColor = x;
+            AddPic_Panel.BackColor = x;
+
+            UserInforPanel.BackColor = x;
+            TemplatePanel.BackColor = x;
+            PomodoroPanel.BackColor = x;
+
+            TableMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            FreeStyleMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
+
+            TableMenu_iconButton.IconColor = foretemplate;
+            ToDoListMenu_iconButton.IconColor = foretemplate;
+            FreeStyleMenu_iconButton.IconColor = foretemplate;
+
+            TableMenu_iconButton.ForeColor = foretemplate;
+            ItemTable1_button.ForeColor = foretemplate;
+            ItemTable2_Button.ForeColor = foretemplate;
+            ItemTable3_Button.ForeColor = foretemplate;
+            
+            ToDoListMenu_iconButton.ForeColor = foretemplate;
+            ItemToDoList1_Button.ForeColor = foretemplate;
+            ItemToDoList2_Button.ForeColor = foretemplate;
+            ItemToDoList3_Button.ForeColor = foretemplate;
+          
+            FreeStyleMenu_iconButton.ForeColor = foretemplate;
+            ItemFreeStyle1_Button.ForeColor = foretemplate;
+            ItemFreeStyle2_Button.ForeColor = foretemplate;
+            ItemFreeStyle3_Button.ForeColor = foretemplate;
+
+            CalendarButton.BackColor = foretemplate;
+            CalendarButton.ForeColor = forecanlendar;
+            CalendarButton.BorderColor = forecanlendar;
+
+        }
+
+        void LoadMau()
+        {
+            Start_Stop_Pomodoro_button.BorderColor = Color.FromArgb(225, 97, 111);
+            if (Program.Theme == true)
+            {
+                HamDoiMau(Color.Silver,Color.DarkGray,SacMau.dendam,SacMau.trangvua);
+                Logo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\logoTrang.png");
+
+            }
+            else
+            {
+                HamDoiMau(Color.FromArgb(73, 75, 76),SacMau.dennhat,SacMau.trangvua,SacMau.dendam);
+                Logo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\Logo.png");
+
+            }
+        }
+        /*---------------------------------Đổi theme---------------------------------*/
+
         /*---------------------------------Calendar---------------------------------*/
         private void CalendarButton_Click(object sender, EventArgs e)
         {
-            Main_customCalendar.Visible = !Main_customCalendar.Visible;
+            if (Main_customCalendar.Visible)
+                Main_customCalendar.Hide();
+            else
+                Main_customCalendar.Show();
         }
         /*---------------------------------Calendar---------------------------------*/
 
@@ -107,20 +174,20 @@ namespace StudyManagementApp
             }
             else
             {
-                WorkPlacePanel.Visible = true;
+                WorkPlacePanel.Show();
                 isHomeClick = true;
                 Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
                    
-                    aboutUC1.Visible = false;
+                    aboutUC1.Hide();
                     isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
                     
-                    helpUC1.Visible = false;
+                    helpUC1.Hide();
                     isHelpClick = false;
                     Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
@@ -133,18 +200,18 @@ namespace StudyManagementApp
                 return;
             else
             {
-                aboutUC1.Visible = true;
+                aboutUC1.Show();
                 isAboutClick = true;
                 About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
                 if (isHomeClick)
                 {
-                    WorkPlacePanel.Visible = false;
+                    WorkPlacePanel.Hide();
                     isHomeClick = false;
                     Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isHelpClick)
                 {
-                    helpUC1.Visible = false;
+                    helpUC1.Hide();
                     isHelpClick = false;
                     Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
@@ -157,18 +224,18 @@ namespace StudyManagementApp
                 return;
             else
             {
-                helpUC1.Visible = true;
+                helpUC1.Show();
                 isHelpClick = true;
                 Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
                 if (isHomeClick)
                 {
-                    WorkPlacePanel.Visible = false;
+                    WorkPlacePanel.Hide();
                     isHomeClick = false;
                     Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isAboutClick)
                 {
-                    aboutUC1.Visible = false;
+                    aboutUC1.Hide();
                     isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
@@ -251,9 +318,7 @@ namespace StudyManagementApp
                 {
                     if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) == numNotification && int.Parse(SecondPomo_Label.Text) == 0)
                     {
-                        Pomodoro_notifyIcon.Visible = true;
-                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", numNotification.ToString() + " phút nữa hết giờ học rồi!", ToolTipIcon.Warning);
-                        Pomodoro_notifyIcon.Visible = false;
+                        Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", numNotification.ToString() + " phút nữa hết giờ học rồi!", ToolTipIcon.Warning);
 
                     }
                 }
@@ -261,9 +326,8 @@ namespace StudyManagementApp
                 {
                     if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) % numNotification == (numPomodoro - numNotification) % numNotification && int.Parse(SecondPomo_Label.Text) == 0)
                     {
-                        Pomodoro_notifyIcon.Visible = true;
-                        Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
-                        Pomodoro_notifyIcon.Visible = false;
+                
+                        Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
                     }
                 }
             }
@@ -300,9 +364,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
 
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
+                   
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
+                
                     Pomodoro_Timer.Start();
                 }
                 else if (pomoState == PomoState.ShortBreak)
@@ -315,9 +379,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
 
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
+                 
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
+                  
 
                     Pomodoro_Timer.Start();
                 }
@@ -331,9 +395,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
 
-                    Pomodoro_notifyIcon.Visible = true;
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
-                    Pomodoro_notifyIcon.Visible = false;
+             
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
+          
 
                     Pomodoro_Timer.Start();
                 }
@@ -374,7 +438,7 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
 
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
                 }
                 else if (pomoState == PomoState.ShortBreak)
                 {
@@ -386,7 +450,7 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
 
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
                 }
                 else if (pomoState == PomoState.LongBreak)
                 {
@@ -398,7 +462,7 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
 
-                    Pomodoro_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
+                    Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
                 }
                 SecondPomo_Label.Text = "00";
             }    
@@ -418,13 +482,11 @@ namespace StudyManagementApp
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
-            Pomodoro_notifyIcon.Visible = false;
         }
 
         private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
         {
             this.Hide();
-            Pomodoro_notifyIcon.Visible = true;
             e.Cancel = true;
         }
 
@@ -443,7 +505,6 @@ namespace StudyManagementApp
         private void WorkPlace_Load(object sender, EventArgs e)
         {
             UserNameLabel.Text = UserInfo.getInstance().Username;
-            Pomodoro_notifyIcon.Visible = false;
         }
 
         /*---------------------------------Command_textbox---------------------------------*/

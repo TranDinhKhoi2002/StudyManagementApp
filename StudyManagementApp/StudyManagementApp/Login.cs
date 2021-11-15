@@ -21,17 +21,64 @@ namespace StudyManagementApp
             HomePanel.Visible = true;
             aboutUC1.Visible = false;
             helpUC1.Visible = false;
-
+            
             DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
 
+        //Sử lại hàm show của form
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
 
         //khi Login được load sẽ làm gì?
         private void Login_Load(object sender, EventArgs e)
         {
+            LoadMau();
             AlignHomeAboutHelp();
             AlignControls_Non_Maximum();
+        }
+
+        //Đổi theme nha
+        void HamDoiMau(Color x, Color y, Color z, Color t,Color u,Color h)
+        {
+            HomePanel.BackColor = x;
+            TruyencamhungLabel.ForeColor = h;
+
+            NotificationLabel.ForeColor = u;
+            NotificationLabel.BackColor = t;
+
+            SignInButton.BorderColor = x;
+            SignUpButton.BorderColor = x;
+
+            BottomPanel.BackColor = t;
+
+            UsernameTextBox.ForeColor = y;
+            UsernameTextBox.BorderFocusColor = y;
+            UsernameTextBox.PlaceholderColor = z;
+            UsernameTextBox.BorderColor = z;
+            UsernameTextBox.BackColor = x;
+
+            PasswordTextBox.ForeColor = y;
+            PasswordTextBox.BorderFocusColor = y;
+            PasswordTextBox.PlaceholderColor = z;
+            PasswordTextBox.BorderColor = z;
+            PasswordTextBox.BackColor = x;
+        }
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(SacMau.trangvua, SacMau.dendam, Color.Gray, Color.Gray,Color.White,Color.Gray);
+                SignInLogoPictureBox.Image=new Bitmap(Application.StartupPath +"\\Resources\\Images\\logoTrang.png");
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam, SacMau.trangvua, Color.Gray, SacMau.dennhat,SacMau.trangvua,SacMau.trangvua);
+                SignInLogoPictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\logo.png");
+            }
         }
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
@@ -150,17 +197,17 @@ namespace StudyManagementApp
                 Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
-                    aboutUC1.Visible = false;
+                    aboutUC1.Hide();
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
-                    helpUC1.Visible = false;
+                    helpUC1.Hide();
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
-                HomePanel.Visible = true;
+                HomePanel.Show();
             }
         }
         //Nhấn About thì làm gì?
@@ -174,17 +221,17 @@ namespace StudyManagementApp
                 About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
                 if (isHomeClick)
                 {
-                    HomePanel.Visible = false;
+                    HomePanel.Hide();
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isHelpClick)
                 {
-                    helpUC1.Visible = false;
+                    helpUC1.Hide();
                     isHelpClick = false;
                     Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
-                aboutUC1.Visible = true;
+                aboutUC1.Show();
             }
         }
         //Nhấn Help thì làm gì?
@@ -198,17 +245,17 @@ namespace StudyManagementApp
                 Help.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
                 if (isHomeClick)
                 {
-                    HomePanel.Visible = false;
+                    HomePanel.Hide();
                     isHomeClick = false;
                     Home.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
                 if (isAboutClick)
                 {
-                    aboutUC1.Visible = false;
+                    aboutUC1.Hide();
                     isAboutClick = false;
                     About.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
-                helpUC1.Visible = true;
+                helpUC1.Show();
             }
         }
 

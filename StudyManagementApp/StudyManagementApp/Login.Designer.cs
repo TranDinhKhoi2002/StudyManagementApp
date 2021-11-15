@@ -45,8 +45,8 @@
             this.SignInLogoPictureBox = new System.Windows.Forms.PictureBox();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.BackGroundSignIn_Panel = new System.Windows.Forms.Panel();
-            this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.ChangeCau_Timer = new System.Windows.Forms.Timer(this.components);
+            this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.About)).BeginInit();
@@ -154,6 +154,7 @@
             // 
             // TruyencamhungLabel
             // 
+            this.TruyencamhungLabel.BackColor = System.Drawing.Color.Transparent;
             this.TruyencamhungLabel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TruyencamhungLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TruyencamhungLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -171,7 +172,6 @@
             // 
             this.NotificationLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NotificationLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NotificationLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NotificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NotificationLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -308,6 +308,12 @@
             this.BackGroundSignIn_Panel.Size = new System.Drawing.Size(800, 450);
             this.BackGroundSignIn_Panel.TabIndex = 4;
             // 
+            // ChangeCau_Timer
+            // 
+            this.ChangeCau_Timer.Enabled = true;
+            this.ChangeCau_Timer.Interval = 3000;
+            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // helpUC1
             // 
             this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
@@ -317,12 +323,6 @@
             this.helpUC1.Name = "helpUC1";
             this.helpUC1.Size = new System.Drawing.Size(800, 405);
             this.helpUC1.TabIndex = 7;
-            // 
-            // ChangeCau_Timer
-            // 
-            this.ChangeCau_Timer.Enabled = true;
-            this.ChangeCau_Timer.Interval = 3000;
-            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Login
             // 
@@ -363,9 +363,9 @@
         private System.Windows.Forms.Label TruyencamhungLabel;
         private UserControls.AboutUC aboutUC1;
         private System.Windows.Forms.Panel BackGroundSignIn_Panel;
-        private UserControls.HelpUC helpUC1;
         private System.Windows.Forms.Timer ChangeCau_Timer;
         private System.Windows.Forms.Label label1;
+        private UserControls.HelpUC helpUC1;
     }
 }
 

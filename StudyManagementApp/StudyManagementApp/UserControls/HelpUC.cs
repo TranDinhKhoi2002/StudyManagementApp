@@ -16,5 +16,40 @@ namespace StudyManagementApp.UserControls
         {
             InitializeComponent();
         }
+
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color x, Color y, Color z)
+        {
+            this.BackColor = x;
+
+            panel3.BackColor = y;
+            panel4.BackColor = y;
+
+            Lb_Instruction.ForeColor = z;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+               HamDoiMau(SacMau.trangvua, Color.Gray, Color.Gray);
+              
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam, SacMau.dennhat, SacMau.trangvua);
+               
+            }
+        }
+
+        private void HelpUC_Load(object sender, EventArgs e)
+        {
+            LoadMau();
+        }
     }
 }
