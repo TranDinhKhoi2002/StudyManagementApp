@@ -51,14 +51,25 @@ namespace StudyManagementApp
             if (Program.Theme == true)
             {
                 HamDoiMau(Color.DarkGray);
-               
+
 
             }
             else
             {
                 HamDoiMau(SacMau.dendam);
-             
+
             }
+        }
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            pomodoro = 25;
+            shortbreak = 5;
+            longbreak = 15;
+            interval = 4;
+            notification = 5;
+            notification_type = 0;
+            this.Close();
+
         }
 
         private void btnApply_Click(object sender, EventArgs e)
@@ -112,17 +123,7 @@ namespace StudyManagementApp
             this.Close();
         }
 
-        private void btnOK_Click(object sender, EventArgs e)
-        {
-            pomodoro = 25;
-            shortbreak = 5;
-            longbreak = 15;
-            interval = 4;
-            notification = 5;
-            notification_type = 0;
-
-            this.Close();
-        }
+      
 
        
     }

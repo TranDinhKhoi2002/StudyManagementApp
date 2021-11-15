@@ -12,7 +12,7 @@ namespace StudyManagementApp
 {
     public partial class WorkPlace : Form
     {
-       
+
         public WorkPlace()
         {
             InitializeComponent();
@@ -34,7 +34,7 @@ namespace StudyManagementApp
             base.Show();
         }
 
-        void HamDoiMau(Color bg,Color x,Color foretemplate,Color forecanlendar)
+        void HamDoiMau(Color bg, Color x, Color foretemplate, Color forecanlendar)
         {
             this.BackColor = bg;
             BaNut_Panel.BackColor = x;
@@ -59,12 +59,12 @@ namespace StudyManagementApp
             ItemTable1_button.ForeColor = foretemplate;
             ItemTable2_Button.ForeColor = foretemplate;
             ItemTable3_Button.ForeColor = foretemplate;
-            
+
             ToDoListMenu_iconButton.ForeColor = foretemplate;
             ItemToDoList1_Button.ForeColor = foretemplate;
             ItemToDoList2_Button.ForeColor = foretemplate;
             ItemToDoList3_Button.ForeColor = foretemplate;
-          
+
             FreeStyleMenu_iconButton.ForeColor = foretemplate;
             ItemFreeStyle1_Button.ForeColor = foretemplate;
             ItemFreeStyle2_Button.ForeColor = foretemplate;
@@ -83,13 +83,13 @@ namespace StudyManagementApp
             Start_Stop_Pomodoro_button.BorderColor = Color.FromArgb(225, 97, 111);
             if (Program.Theme == true)
             {
-                HamDoiMau(Color.Silver,Color.DarkGray,SacMau.dendam,SacMau.trangvua);
+                HamDoiMau(Color.Silver, Color.DarkGray, SacMau.dendam, SacMau.trangvua);
                 Logo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\logoTrang.png");
 
             }
             else
             {
-                HamDoiMau(Color.FromArgb(73, 75, 76),SacMau.dennhat,SacMau.trangvua,SacMau.dendam);
+                HamDoiMau(Color.FromArgb(73, 75, 76), SacMau.dennhat, SacMau.trangvua, SacMau.dendam);
                 Logo_PictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\Logo.png");
 
             }
@@ -181,14 +181,14 @@ namespace StudyManagementApp
                 Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
                 if (isAboutClick)
                 {
-                   
+
                     aboutUC1.Hide();
                     isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
                 if (isHelpClick)
                 {
-                    
+
                     helpUC1.Hide();
                     isHelpClick = false;
                     Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
@@ -241,7 +241,7 @@ namespace StudyManagementApp
                     isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
-               
+
             }
         }
         /*---------------------------------Chức năng 3 nút home, about, help---------------------------------*/
@@ -250,7 +250,7 @@ namespace StudyManagementApp
         //Khai báo các biến cần thiết
         enum PomoState
         {
-            Pomodoro,ShortBreak,LongBreak
+            Pomodoro, ShortBreak, LongBreak
         }
         int numPomodoro = SettingPomodoro.pomodoro;
         int numShortBreak = SettingPomodoro.shortbreak;
@@ -287,7 +287,7 @@ namespace StudyManagementApp
                     MinutePomo_Label.Text = numLongBreak.ToString();
                 }
                 SecondPomo_Label.Text = "00";
-            } 
+            }
         }
         //Nhấn nút start nghen
         private void Start_Stop_Pomodoro_button_Click(object sender, EventArgs e)
@@ -314,7 +314,7 @@ namespace StudyManagementApp
             }
             else
                 SecondPomo_Label.Text = (int.Parse(SecondPomo_Label.Text) - 1).ToString();
-            if (numPomodoro>numNotification && int.Parse(MinutePomo_Label.Text) != 0)
+            if (numPomodoro > numNotification && int.Parse(MinutePomo_Label.Text) != 0)
             {
                 if (typeNotification == 0)
                 {
@@ -328,12 +328,12 @@ namespace StudyManagementApp
                 {
                     if (pomoState == PomoState.Pomodoro && int.Parse(MinutePomo_Label.Text) % numNotification == (numPomodoro - numNotification) % numNotification && int.Parse(SecondPomo_Label.Text) == 0)
                     {
-                
+
                         Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đã qua " + numNotification.ToString() + " phút rồi đó!", ToolTipIcon.Warning);
                     }
                 }
             }
-            
+
             if (int.Parse(MinutePomo_Label.Text) == 0 && int.Parse(SecondPomo_Label.Text) == 0)
             {
                 Pomodoro_Timer.Stop();
@@ -366,9 +366,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(225, 97, 111);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(225, 97, 111);
 
-                   
+
                     Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến giờ tập trung rồi!", ToolTipIcon.Warning);
-                
+
                     Pomodoro_Timer.Start();
                 }
                 else if (pomoState == PomoState.ShortBreak)
@@ -381,9 +381,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(85, 145, 150);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(85, 145, 150);
 
-                 
+
                     Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Hãy nghỉ ngơi chút nào!", ToolTipIcon.Warning);
-                  
+
 
                     Pomodoro_Timer.Start();
                 }
@@ -397,9 +397,9 @@ namespace StudyManagementApp
                     HaiCham_Label.BackColor = Color.FromArgb(76, 124, 164);
                     NextStatePomo_iconButton.BackColor = Color.FromArgb(76, 124, 164);
 
-             
+
                     Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
-          
+
 
                     Pomodoro_Timer.Start();
                 }
@@ -409,7 +409,7 @@ namespace StudyManagementApp
         //chuyển state pomo nghen
         private void NextStatePomo_iconButton_Click(object sender, EventArgs e)
         {
-            if(!isRunning)
+            if (!isRunning)
             {
                 if (pomoState == PomoState.Pomodoro)
                 {
@@ -467,7 +467,7 @@ namespace StudyManagementApp
                     Zst_notifyIcon.ShowBalloonTip(5000, "Pomo🍅 nhắc bạn!", "Đến lúc giải lao rồi!", ToolTipIcon.Warning);
                 }
                 SecondPomo_Label.Text = "00";
-            }    
+            }
         }
 
 
@@ -500,7 +500,7 @@ namespace StudyManagementApp
             if (dialogResult == DialogResult.Yes)
             {
                 Application.ExitThread();
-                Application.Exit(); 
+                Application.Exit();
             }
         }
 
