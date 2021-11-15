@@ -74,6 +74,8 @@ namespace StudyManagementApp
             CalendarButton.ForeColor = forecanlendar;
             CalendarButton.BorderColor = forecanlendar;
 
+            WorkPlacePanel.BackColor = forecanlendar;
+
         }
 
         void LoadMau()
