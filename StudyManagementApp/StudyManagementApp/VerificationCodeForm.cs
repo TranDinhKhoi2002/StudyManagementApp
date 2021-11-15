@@ -39,6 +39,7 @@ namespace StudyManagementApp
             {
                 MessageBox.Show("Verify successfully", "Done");
                 AccountDAO.Instance.ChangePassword(userName, txbNewPassword.Text);
+                this.Close();
             }
         }
     }

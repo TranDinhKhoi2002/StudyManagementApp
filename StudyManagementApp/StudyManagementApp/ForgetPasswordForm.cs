@@ -44,6 +44,7 @@ namespace StudyManagementApp
                 MessageBox.Show("Sent successfully", "Done");
                 VerificationCodeForm vefCodeForm = new VerificationCodeForm(code, txbUserName.Text);
                 vefCodeForm.ShowDialog();
+                this.Close();
             }
         }
     }

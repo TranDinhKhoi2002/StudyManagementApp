@@ -73,7 +73,7 @@ namespace StudyManagementApp
             MailMessage message = new MailMessage()
             {
                 From = fromEmail,
-                Subject = "Verify your account",
+                Subject = "VERIFY YOUR ACCOUNT",
                 Body = "Your verification code is: " + code
             };
             message.To.Add(toEmail);
