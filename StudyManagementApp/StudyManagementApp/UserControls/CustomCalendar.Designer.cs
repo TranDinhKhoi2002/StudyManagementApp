@@ -398,7 +398,7 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(485, 50);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
@@ -476,7 +476,7 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.Enabled = false;
             this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold);
             this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(3, 11);
-            this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(0, 35);
+            this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(4, 35);
             this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
             this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(290, 35);
             this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
@@ -516,7 +516,8 @@ namespace StudyManagementApp.UserControls
             // 
             // CustomCalendar
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "CustomCalendar";

@@ -45,8 +45,8 @@
             this.SignInLogoPictureBox = new System.Windows.Forms.PictureBox();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.BackGroundSignIn_Panel = new System.Windows.Forms.Panel();
-            this.ChangeCau_Timer = new System.Windows.Forms.Timer(this.components);
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
+            this.ChangeCau_Timer = new System.Windows.Forms.Timer(this.components);
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.About)).BeginInit();
@@ -308,12 +308,6 @@
             this.BackGroundSignIn_Panel.Size = new System.Drawing.Size(800, 450);
             this.BackGroundSignIn_Panel.TabIndex = 4;
             // 
-            // ChangeCau_Timer
-            // 
-            this.ChangeCau_Timer.Enabled = true;
-            this.ChangeCau_Timer.Interval = 3000;
-            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // helpUC1
             // 
             this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
@@ -324,10 +318,17 @@
             this.helpUC1.Size = new System.Drawing.Size(800, 405);
             this.helpUC1.TabIndex = 7;
             // 
+            // ChangeCau_Timer
+            // 
+            this.ChangeCau_Timer.Enabled = true;
+            this.ChangeCau_Timer.Interval = 3000;
+            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Login
             // 
             this.AcceptButton = this.SignInButton;
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BackGroundSignIn_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
