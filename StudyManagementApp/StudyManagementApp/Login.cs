@@ -21,7 +21,9 @@ namespace StudyManagementApp
             HomePanel.Visible = true;
             aboutUC1.Visible = false;
             helpUC1.Visible = false;
-            
+
+            formbandau = new Size(this.Width, this.Height);
+
             DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
@@ -29,6 +31,7 @@ namespace StudyManagementApp
         //Sử lại hàm show của form
         public new void Show()
         {
+            AlignControls_Non_Maximum();
             LoadMau();
             base.Show();
         }
@@ -128,23 +131,27 @@ namespace StudyManagementApp
 
         /*---------------------------------Căn chỉnh các control---------------------------------*/
         //Hàm chỉnh control lúc không maximum
+        Size formbandau;
         void AlignControls_Non_Maximum()
         {
+            this.MinimumSize = formbandau;
+           
+            this.StartPosition = FormStartPosition.CenterScreen;
             SignInLogoPictureBox.Size = new Size(131, 117);
-            NotificationLabel.Size = new Size(350, 38);
-            NotificationLabel.Font = new Font("Agency FB", 15);
+            NotificationLabel.Size = new Size(350, 40);
+            NotificationLabel.Font = new Font("Agency FB", 11);
             UsernameTextBox.Size = new Size(233, 35);
             UsernameTextBox.Font = new Font("Agency FB", 15);
             PasswordTextBox.Size = new Size(233, 35);
             PasswordTextBox.Font = new Font("Agency FB", 15);
             SignInButton.Size = new Size(113, 38);
-            SignInButton.Font = new Font("Agency FB", 17);
+            SignInButton.Font = new Font("Agency FB", 13);
             SignUpButton.Size = new Size(113, 38);
-            SignUpButton.Font = new Font("Agency FB", 17);
+            SignUpButton.Font = new Font("Agency FB", 13);
 
 
 
-            TruyencamhungLabel.Font = new Font("Agency FB", 30, FontStyle.Bold);
+            TruyencamhungLabel.Font = new Font("Agency FB", 23, FontStyle.Bold);
             TruyencamhungLabel.Height = 70;
             TruyencamhungLabel.TextAlign = ContentAlignment.MiddleCenter;
 
@@ -155,8 +162,8 @@ namespace StudyManagementApp
             SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
             SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
         }
-        //middle panel lúc app maximum size lên sẽ gọi hàm gì? 
-        private void MiddlePanel_SizeChanged(object sender, EventArgs e)
+
+        private void Login_SizeChanged(object sender, EventArgs e)
         {
             AlignControls_Non_Maximum();
         }
@@ -176,6 +183,7 @@ namespace StudyManagementApp
         {
             AlignHomeAboutHelp();
         }
+
         /*---------------------------------Căn chỉnh 3 nút dưới---------------------------------*/
 
 
@@ -317,6 +325,8 @@ namespace StudyManagementApp
             ForgetPasswordForm fgpForm = new ForgetPasswordForm();
             fgpForm.Show();
         }
+
+       
         /*---------------------------------Câu truyền cảm hứng---------------------------------*/
     }
 }

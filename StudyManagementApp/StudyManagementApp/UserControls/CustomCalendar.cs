@@ -207,7 +207,7 @@ namespace StudyManagementApp.UserControls
                     arrButton[i][j].FlatAppearance.BorderSize = 0;
                     arrButton[i][j].Size = new Size(40, 51);
                     arrButton[i][j].Dock = DockStyle.Right;
-                    arrButton[i][j].Font = new Font("Agency FB", 14);
+                    arrButton[i][j].Font = new Font("Agency FB", 12);
                     arrButton[i][j].BackColor = littleButton;
 
                     /*ContentLabel ngay` */
