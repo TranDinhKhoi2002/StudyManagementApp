@@ -92,6 +92,12 @@
     <Compile Include="ForgetPasswordForm.Designer.cs">
       <DependentUpon>ForgetPasswordForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game2048.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game2048.Designer.cs">
+      <DependentUpon>Game2048.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForgetPasswordForm.resx">
       <DependentUpon>ForgetPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game2048.resx">
+      <DependentUpon>Game2048.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

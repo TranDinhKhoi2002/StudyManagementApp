@@ -310,10 +310,28 @@ namespace StudyManagementApp
             if (int.Parse(SecondPomo_Label.Text) == 0)
             {
                 SecondPomo_Label.Text = "59";
-                MinutePomo_Label.Text = (int.Parse(MinutePomo_Label.Text) - 1).ToString();
+                int min = int.Parse(MinutePomo_Label.Text) - 1;
+                if (min < 10)
+                {
+                    MinutePomo_Label.Text = "0" + (min).ToString();
+                }
+                else
+                {
+                    MinutePomo_Label.Text = (min).ToString();
+                }
             }
             else
-                SecondPomo_Label.Text = (int.Parse(SecondPomo_Label.Text) - 1).ToString();
+            {
+                int sec = int.Parse(SecondPomo_Label.Text) - 1;
+                if (sec < 10)
+                {
+                    SecondPomo_Label.Text = "0" + (sec).ToString();
+                }
+                else
+                {
+                    SecondPomo_Label.Text = (sec).ToString();
+                }    
+            }
             if (numPomodoro > numNotification && int.Parse(MinutePomo_Label.Text) != 0)
             {
                 if (typeNotification == 0)
@@ -526,6 +544,12 @@ namespace StudyManagementApp
                 Command_TextBox.ForeColor = Color.DarkGray;
                 Command_TextBox.Text = "Enter Command";
             }
+        }
+
+        private void roundedCornerButton1_Click(object sender, EventArgs e)
+        {
+            Game2048 game = new Game2048();
+            game.Show();
         }
     }
 }
