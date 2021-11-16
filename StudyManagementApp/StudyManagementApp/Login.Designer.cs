@@ -143,7 +143,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(932, 322);
+            this.label1.Location = new System.Drawing.Point(780, 258);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 18);
@@ -155,7 +155,7 @@
             // 
             this.TruyencamhungLabel.BackColor = System.Drawing.Color.Transparent;
             this.TruyencamhungLabel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TruyencamhungLabel.Font = new System.Drawing.Font("Agency FB", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TruyencamhungLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TruyencamhungLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.TruyencamhungLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TruyencamhungLabel.Location = new System.Drawing.Point(0, 0);
@@ -170,7 +170,7 @@
             // 
             this.NotificationLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.NotificationLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.NotificationLabel.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NotificationLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NotificationLabel.Location = new System.Drawing.Point(194, 237);
@@ -189,7 +189,7 @@
             this.PasswordTextBox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.PasswordTextBox.BorderRadius = 10;
             this.PasswordTextBox.BorderSize = 2;
-            this.PasswordTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.PasswordTextBox.Location = new System.Drawing.Point(566, 337);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(6);
@@ -199,7 +199,7 @@
             this.PasswordTextBox.PasswordChar = true;
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
-            this.PasswordTextBox.Size = new System.Drawing.Size(350, 41);
+            this.PasswordTextBox.Size = new System.Drawing.Size(350, 42);
             this.PasswordTextBox.TabIndex = 3;
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
@@ -212,7 +212,7 @@
             this.UsernameTextBox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UsernameTextBox.BorderRadius = 10;
             this.UsernameTextBox.BorderSize = 2;
-            this.UsernameTextBox.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UsernameTextBox.Location = new System.Drawing.Point(-3, 337);
             this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(6);
@@ -222,7 +222,7 @@
             this.UsernameTextBox.PasswordChar = false;
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
-            this.UsernameTextBox.Size = new System.Drawing.Size(350, 41);
+            this.UsernameTextBox.Size = new System.Drawing.Size(350, 42);
             this.UsernameTextBox.TabIndex = 2;
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;
@@ -236,7 +236,7 @@
             this.SignUpButton.BorderSize = 0;
             this.SignUpButton.FlatAppearance.BorderSize = 0;
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignUpButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.SignUpButton.Location = new System.Drawing.Point(530, 418);
             this.SignUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -256,7 +256,7 @@
             this.SignInButton.BorderSize = 0;
             this.SignInButton.FlatAppearance.BorderSize = 0;
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignInButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.SignInButton.Location = new System.Drawing.Point(213, 418);
             this.SignInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -29,6 +29,7 @@ namespace StudyManagementApp.UserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Saturday_Panel = new System.Windows.Forms.Panel();
@@ -55,6 +56,7 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker = new StudyManagementApp.UserControls.CustomDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Today_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.timerEmail = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Saturday_Panel.SuspendLayout();
@@ -160,7 +162,7 @@ namespace StudyManagementApp.UserControls
             this.Saturday.Enabled = false;
             this.Saturday.FlatAppearance.BorderSize = 0;
             this.Saturday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Saturday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Saturday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saturday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Saturday.Location = new System.Drawing.Point(2, 5);
             this.Saturday.Margin = new System.Windows.Forms.Padding(0);
@@ -191,7 +193,7 @@ namespace StudyManagementApp.UserControls
             this.Sunday.Enabled = false;
             this.Sunday.FlatAppearance.BorderSize = 0;
             this.Sunday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Sunday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sunday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sunday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Sunday.Location = new System.Drawing.Point(2, 5);
             this.Sunday.Margin = new System.Windows.Forms.Padding(0);
@@ -222,7 +224,7 @@ namespace StudyManagementApp.UserControls
             this.Friday.Enabled = false;
             this.Friday.FlatAppearance.BorderSize = 0;
             this.Friday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Friday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Friday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Friday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Friday.Location = new System.Drawing.Point(2, 5);
             this.Friday.Margin = new System.Windows.Forms.Padding(0);
@@ -253,7 +255,7 @@ namespace StudyManagementApp.UserControls
             this.Monday.Enabled = false;
             this.Monday.FlatAppearance.BorderSize = 0;
             this.Monday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Monday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Monday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Monday.Location = new System.Drawing.Point(2, 5);
             this.Monday.Margin = new System.Windows.Forms.Padding(0);
@@ -284,7 +286,7 @@ namespace StudyManagementApp.UserControls
             this.Thursday.Enabled = false;
             this.Thursday.FlatAppearance.BorderSize = 0;
             this.Thursday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Thursday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Thursday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thursday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Thursday.Location = new System.Drawing.Point(2, 5);
             this.Thursday.Margin = new System.Windows.Forms.Padding(0);
@@ -315,7 +317,7 @@ namespace StudyManagementApp.UserControls
             this.Wednesday.Enabled = false;
             this.Wednesday.FlatAppearance.BorderSize = 0;
             this.Wednesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Wednesday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Wednesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wednesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Wednesday.Location = new System.Drawing.Point(2, 5);
             this.Wednesday.Margin = new System.Windows.Forms.Padding(0);
@@ -346,7 +348,7 @@ namespace StudyManagementApp.UserControls
             this.Tuesday.Enabled = false;
             this.Tuesday.FlatAppearance.BorderSize = 0;
             this.Tuesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Tuesday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tuesday.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tuesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Tuesday.Location = new System.Drawing.Point(2, 5);
             this.Tuesday.Margin = new System.Windows.Forms.Padding(0);
@@ -474,7 +476,7 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.NgayThangNam_customDateTimePicker.BorderSize = 0;
             this.NgayThangNam_customDateTimePicker.Enabled = false;
-            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold);
+            this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(3, 11);
             this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(4, 35);
             this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
@@ -503,7 +505,7 @@ namespace StudyManagementApp.UserControls
             this.Today_Button.BorderSize = 0;
             this.Today_Button.FlatAppearance.BorderSize = 0;
             this.Today_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Today_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Today_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Today_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Today_Button.Location = new System.Drawing.Point(2, 11);
             this.Today_Button.Margin = new System.Windows.Forms.Padding(0);
@@ -513,6 +515,11 @@ namespace StudyManagementApp.UserControls
             this.Today_Button.Text = "Today";
             this.Today_Button.UseVisualStyleBackColor = false;
             this.Today_Button.Click += new System.EventHandler(this.Today_Button_Click);
+            // 
+            // timerEmail
+            // 
+            this.timerEmail.Interval = 604800000;
+            this.timerEmail.Tick += new System.EventHandler(this.timerEmail_Tick);
             // 
             // CustomCalendar
             // 
@@ -570,5 +577,6 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.Panel panel4;
         private RoundedCornerButton Today_Button;
         private CustomDateTimePicker NgayThangNam_customDateTimePicker;
+        private System.Windows.Forms.Timer timerEmail;
     }
 }
