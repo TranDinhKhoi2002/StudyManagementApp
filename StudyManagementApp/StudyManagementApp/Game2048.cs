@@ -455,7 +455,7 @@ namespace StudyManagementApp
         {
             bool notMoveRight = true;
             bool anDiem = false;
-            bool kTraKhoiTao = false;
+            bool checkInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
                                 {lbl5,lbl6,lbl7,lbl8},
@@ -488,7 +488,7 @@ namespace StudyManagementApp
                         {
                             if (Game[i, m].Text == "")
                             {
-                                kTraKhoiTao = true;
+                                checkInit = true;
                                 break;
                             }
                         }
@@ -506,7 +506,7 @@ namespace StudyManagementApp
                                     {
                                         notMoveRight = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[i, j].Text) * 2).ToString();
-                                        kTraKhoiTao = true;
+                                        checkInit = true;
                                         ktra = false;
                                         Game[i, j].Text = (int.Parse(Game[i, j].Text) * 2).ToString();
                                         if (oRong != 0)
@@ -544,13 +544,14 @@ namespace StudyManagementApp
                 }
             }
            
-            if (kTraKhoiTao == true)
+            if (checkInit == true)
             {
                 initGame();
             }
         }
-        public bool KetThuc()
+        public bool endGame()
         {
+            
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
                                 {lbl5,lbl6,lbl7,lbl8},
@@ -603,7 +604,7 @@ namespace StudyManagementApp
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (KetThuc() == false)
+            if (endGame() == false)
             {
                 if (e.KeyCode == Keys.Up)
                 {
@@ -625,8 +626,10 @@ namespace StudyManagementApp
             }
             else
             {
+                label1.Enabled = false;
+                lbInstruction.Hide();
                 continueToolStripMenuItem.Visible = false;
-                lblGameOver.Text = "Game Over !!!!!!!!!!!!!!!!!";
+                lblGameOver.Text = "Game Over";
                 isPlaying = false;
                 lblGameOver.Visible = true;
                 btnNewGame.Visible = true;
@@ -640,6 +643,9 @@ namespace StudyManagementApp
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
+            label1.Enabled = true;
+            isShowing = false;
+
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             lblScore.Text = "0";
             Label[,] Game = {
@@ -779,29 +785,48 @@ namespace StudyManagementApp
 
         private void btnNewGame_MouseHover(object sender, EventArgs e)
         {
-            btnNewGame.BackColor = System.Drawing.Color.Green;
+            btnNewGame.BackColor = Color.Black;
         }
 
         private void btnNewGame_MouseLeave(object sender, EventArgs e)
         {
-            btnNewGame.BackColor = System.Drawing.Color.Orange;
+            btnNewGame.BackColor = Color.Gray;
         }
 
         private void btnExit_MouseHover(object sender, EventArgs e)
         {
-            btnExit.BackColor = System.Drawing.Color.Green;
+            btnExit.BackColor = Color.Black;
         }
 
         private void btnExit_MouseLeave(object sender, EventArgs e)
         {
-            btnExit.BackColor = System.Drawing.Color.Orange;
+            btnExit.BackColor = Color.Gray;
         }
 
         private void ptbImage_Click(object sender, EventArgs e)
         {
 
         }
-
-
+        bool isShowing = false;
+        private void label1_Click(object sender, EventArgs e)
+        {
+            lbInstruction.Show();
+            isShowing = !isShowing;
+            if (isShowing)
+            {
+                lbInstruction.Text = "1/ Nhấn phím lên, xuống, trái, phải trên bàn phím để đẩy các con số theo hướng tương ứng." +
+                   Environment.NewLine + Environment.NewLine + "2/ Nếu tồn tại 2 số giống nhau trên cùng hàng (không có số khác nằm giữa chúng) thì khi nhấn trái, phải hoặc cùng cột (không có số khác nằm giữa chúng) khi nhấn lên/xuống thì hai giá trị đó sẽ được cộng lại và được đẩy về hướng chỉ định đến lúc đụng phải viền ngoài hoặc một một ô chứa số khác." +
+                   Environment.NewLine + Environment.NewLine + "3/ Điểm mỗi lần nhấn nút là tổng tất cả ô có giá trị trùng trong lần đó." +
+                   Environment.NewLine + Environment.NewLine + "4/ Trò chơi kết thúc khi toàn bộ 16 ô bị lấp đầy bởi số và lần nhấn tiếp theo không có bất kỳ thay đổi nào nữa." +
+                   Environment.NewLine + Environment.NewLine + "Cùng chinh phục ô số 2048 nào!!!" +
+                   Environment.NewLine + Environment.NewLine + "CHÚC BẠN GIẢI LAO HIỆU QUẢ VÀ TRỞ LẠI CÔNG VIỆC NĂNG SUẤT HƠN NHÉ!";
+                label1.Text = "Instruction (Click to Close)";
+            }
+            else
+            {
+                lbInstruction.Text = "";
+                label1.Text = "Instruction (Click to Show)";
+            }
+        }
     }
 }

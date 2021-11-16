@@ -55,6 +55,8 @@
             this.continueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblAbout = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbInstruction = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -255,8 +257,8 @@
             this.lblScore.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblScore.BackColor = System.Drawing.Color.Transparent;
             this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.ForeColor = System.Drawing.Color.Red;
-            this.lblScore.Location = new System.Drawing.Point(481, 110);
+            this.lblScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
+            this.lblScore.Location = new System.Drawing.Point(737, 69);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(175, 48);
             this.lblScore.TabIndex = 4;
@@ -266,23 +268,23 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(481, 69);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
+            this.label2.Location = new System.Drawing.Point(514, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 41);
+            this.label2.Size = new System.Drawing.Size(189, 41);
             this.label2.TabIndex = 5;
-            this.label2.Text = "SCORE";
+            this.label2.Text = "SCORE: ";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblGameOver
             // 
-            this.lblGameOver.BackColor = System.Drawing.Color.Black;
+            this.lblGameOver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.lblGameOver.Font = new System.Drawing.Font("Microsoft Sans Serif", 71.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGameOver.ForeColor = System.Drawing.Color.Red;
             this.lblGameOver.Location = new System.Drawing.Point(32, 184);
             this.lblGameOver.Name = "lblGameOver";
-            this.lblGameOver.Size = new System.Drawing.Size(624, 119);
+            this.lblGameOver.Size = new System.Drawing.Size(920, 119);
             this.lblGameOver.TabIndex = 6;
             this.lblGameOver.Text = "Game Over !!!";
             this.lblGameOver.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,11 +292,12 @@
             // 
             // btnNewGame
             // 
-            this.btnNewGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnNewGame.BackColor = System.Drawing.Color.Gray;
             this.btnNewGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewGame.Location = new System.Drawing.Point(253, 323);
+            this.btnNewGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnNewGame.Location = new System.Drawing.Point(277, 323);
             this.btnNewGame.Name = "btnNewGame";
-            this.btnNewGame.Size = new System.Drawing.Size(240, 58);
+            this.btnNewGame.Size = new System.Drawing.Size(367, 58);
             this.btnNewGame.TabIndex = 7;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = false;
@@ -305,11 +308,12 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.BackColor = System.Drawing.Color.Gray;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(253, 406);
+            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnExit.Location = new System.Drawing.Point(277, 406);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(240, 58);
+            this.btnExit.Size = new System.Drawing.Size(367, 58);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -325,7 +329,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(687, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(943, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -364,18 +368,39 @@
             // lblAbout
             // 
             this.lblAbout.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblAbout.Location = new System.Drawing.Point(677, 28);
+            this.lblAbout.Location = new System.Drawing.Point(933, 28);
             this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(10, 472);
+            this.lblAbout.Size = new System.Drawing.Size(10, 537);
             this.lblAbout.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(558, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(306, 47);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Instruction (Click to Show)";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lbInstruction
+            // 
+            this.lbInstruction.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInstruction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lbInstruction.Location = new System.Drawing.Point(479, 170);
+            this.lbInstruction.Name = "lbInstruction";
+            this.lbInstruction.Size = new System.Drawing.Size(453, 309);
+            this.lbInstruction.TabIndex = 12;
             // 
             // Game2048
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(687, 500);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(63)))), ((int)(((byte)(60)))));
+            this.ClientSize = new System.Drawing.Size(943, 565);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAbout);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnNewGame);
@@ -399,6 +424,7 @@
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.lbInstruction);
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -442,7 +468,8 @@
         private System.Windows.Forms.Label lblAbout;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button btnNewGame;
-
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbInstruction;
     }
 }
 
