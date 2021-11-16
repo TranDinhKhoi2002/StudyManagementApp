@@ -8,6 +8,8 @@ namespace StudyManagementApp
     public partial class Edit : Form
     {
         bool lasttheme;
+        bool isLogingOut = false;
+
         public Edit()
         {
             InitializeComponent();
@@ -71,6 +73,7 @@ namespace StudyManagementApp
         //Log-out nha
         private void Logout_button_Click(object sender, EventArgs e)
         {
+            isLogingOut = true;
             Owner.Dispose();
             Program.globalLogin.Show();
         }
@@ -115,11 +118,12 @@ namespace StudyManagementApp
 
         private void Edit_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (lasttheme != Program.Theme)
+            if (lasttheme != Program.Theme && isLogingOut == false)
             {
                 Owner.Dispose();
                 Program.globalLogin.Show();
             }
+            isLogingOut = false;
         }
     }
 }
