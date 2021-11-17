@@ -49,6 +49,14 @@ namespace StudyManagementApp.UserControls
 
         public new void Show()
         {
+            NgayThangNam_customDateTimePicker.Font = new Font("Agency FB", 16, FontStyle.Bold);
+            Sunday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Monday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Tuesday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Wednesday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Thursday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Friday.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            Saturday.Font = new Font("Agency FB", 13, FontStyle.Bold);
             LoadMau();
             base.Show();
         }

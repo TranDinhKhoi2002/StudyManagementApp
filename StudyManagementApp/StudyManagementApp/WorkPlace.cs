@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,9 +17,26 @@ namespace StudyManagementApp
         public WorkPlace()
         {
             InitializeComponent();
-            HideAllSubMenu();
             aboutUC1.Hide();
             helpUC1.Hide();
+
+            HideAllSubMenu();
+            KhoiTaoCacIconMenu();
+            ThemItemVaoSubMenu(Relax_SubMenu_Panel, SubMenuRelax_Item);
+        }
+
+        //ấy lại hàm show
+        public new void Show()
+        {
+            KeepFont();
+            LoadMau();
+            base.Show();
+        }
+
+        //Hàm load
+        private void WorkPlace_Load(object sender, EventArgs e)
+        {
+            UserNameLabel.Text = UserInfo.getInstance().Username;
         }
 
         //Khi tắt workplace thì làm gì?
@@ -27,11 +45,24 @@ namespace StudyManagementApp
             Application.Exit();
         }
 
+        #region DoiTheme
         /*---------------------------------Đổi theme---------------------------------*/
-        public new void Show()
+        void KeepFont()
         {
-            LoadMau();
-            base.Show();
+            UserNameLabel.Font = new Font("Agency FB", 13, FontStyle.Bold);
+            CalendarButton.Font = new Font("Agency FB", 14, FontStyle.Bold);
+            ToDoListMenu_iconButton.Font = new Font("Agency FB", 16, FontStyle.Bold);
+            MinutePomo_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
+            HaiCham_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
+            SecondPomo_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
+            Command_TextBox.Font = new Font("Agency FB", 18, FontStyle.Bold);
+            NotificationFunctionLabel.Font = new Font("Agency FB", 17, FontStyle.Bold);
+            SaveButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
+            SaveAsButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
+            PomodoroCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
+            ShortBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
+            LongBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
+            Start_Stop_Pomodoro_button.Font = new Font("Agency FB", 13, FontStyle.Bold);
         }
 
         void HamDoiMau(Color bg, Color x, Color foretemplate, Color forecanlendar)
@@ -47,28 +78,13 @@ namespace StudyManagementApp
             TemplatePanel.BackColor = x;
             PomodoroPanel.BackColor = x;
 
-            TableMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            
             ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
-            FreeStyleMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
 
-            TableMenu_iconButton.IconColor = foretemplate;
             ToDoListMenu_iconButton.IconColor = foretemplate;
-            FreeStyleMenu_iconButton.IconColor = foretemplate;
-
-            TableMenu_iconButton.ForeColor = foretemplate;
-            ItemTable1_button.ForeColor = foretemplate;
-            ItemTable2_Button.ForeColor = foretemplate;
-            ItemTable3_Button.ForeColor = foretemplate;
 
             ToDoListMenu_iconButton.ForeColor = foretemplate;
-            ItemToDoList1_Button.ForeColor = foretemplate;
-            ItemToDoList2_Button.ForeColor = foretemplate;
-            ItemToDoList3_Button.ForeColor = foretemplate;
-
-            FreeStyleMenu_iconButton.ForeColor = foretemplate;
-            ItemFreeStyle1_Button.ForeColor = foretemplate;
-            ItemFreeStyle2_Button.ForeColor = foretemplate;
-            ItemFreeStyle3_Button.ForeColor = foretemplate;
+           
 
             CalendarButton.BackColor = foretemplate;
             CalendarButton.ForeColor = forecanlendar;
@@ -76,6 +92,7 @@ namespace StudyManagementApp
 
             WorkPlacePanel.BackColor = forecanlendar;
 
+            LayMauChoCacItem(SubMenuRelax_Item, foretemplate, bg);
         }
 
         void LoadMau()
@@ -95,7 +112,9 @@ namespace StudyManagementApp
             }
         }
         /*---------------------------------Đổi theme---------------------------------*/
+        #endregion
 
+        #region CuonLich
         /*---------------------------------Calendar---------------------------------*/
         private void CalendarButton_Click(object sender, EventArgs e)
         {
@@ -105,63 +124,241 @@ namespace StudyManagementApp
                 Main_customCalendar.Show();
         }
         /*---------------------------------Calendar---------------------------------*/
+        #endregion
 
+        #region MenuBenTrai
         /*---------------------------------Điều khiển các item trong menu bên trái---------------------------------*/
         //Hàm dấu tất cả các subMenu_panel
         void HideAllSubMenu()
         {
-            //Code giấu
-            SubTableMenu_panel.Visible = false;
-            SubToDoListMenu_panel.Visible = false;
-            SubFreeStyleMenu_panel.Visible = false;
-            //Code để icon tam giác trong các iconButton quay qua bên phải
-            TableMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
-            FreeStyleMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            NoteMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            FlashCardMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            RelaxMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+
+            TodoLIst_SubMenu_Panel.Visible = false;
+            Note_SubMenu_Panel.Visible = false;
+            FlashCard_SubMenu_Panel.Visible = false;
+            Relax_SubMenu_Panel.Visible = false;
+
         }
         //Hàm hiện 1 subMenu_panel được truyền vào
-        void ShowSubMenu(Panel submenu)
+        void ShowSubMenu(Panel submenu,IconButton iconmenu)
         {
             if (submenu.Visible == false)
             {
                 HideAllSubMenu();
                 submenu.Visible = true;
+                iconmenu.IconChar = IconChar.CaretDown;
             }
-            else
+           else
             {
                 submenu.Visible = false;
+                iconmenu.IconChar = IconChar.CaretRight;
             }
         }
-        //Khi click Table_menu_iconButton thì làm gì?
-        private void TableMenu_iconButton_Click(object sender, EventArgs e)
+
+        void LayMauChoCacItem(List<IconButton> item, Color fore, Color over)
         {
-            ShowSubMenu(SubTableMenu_panel);
-            if (SubTableMenu_panel.Visible == true)
-                TableMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretDown;
-            else
-                TableMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            for (int i = 0; i < item.Count; i++)
+            {
+                item[i].FlatAppearance.MouseOverBackColor = over;
+                item[i].ForeColor = fore;
+            }
         }
-        //Khi click ToDoList_menu_iconButton thì làm gì?
+        //IconMenu
+        IconButton ToDoListMenu_iconButton = new IconButton();
+        IconButton RelaxMenu_iconButton = new IconButton();
+        IconButton FlashCardMenu_iconButton = new IconButton();
+        IconButton NoteMenu_iconButton = new IconButton();
+
+        void KhoiTaoCacIconMenu()
+        {
+            // 
+            // ToDoListMenu_iconButton
+            // 
+            this.ToDoListMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.ToDoListMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ToDoListMenu_iconButton.FlatAppearance.BorderSize = 0;
+            this.ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
+            this.ToDoListMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToDoListMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToDoListMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            this.ToDoListMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ToDoListMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ToDoListMenu_iconButton.IconSize = 40;
+            this.ToDoListMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToDoListMenu_iconButton.Location = new System.Drawing.Point(0, 0);
+            this.ToDoListMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.ToDoListMenu_iconButton.Name = "ToDoListMenu_iconButton";
+            this.ToDoListMenu_iconButton.Size = new System.Drawing.Size(251, 46);
+            this.ToDoListMenu_iconButton.TabIndex = 1;
+            this.ToDoListMenu_iconButton.Tag = "Menu1";
+            this.ToDoListMenu_iconButton.Text = "To-do list";
+            this.ToDoListMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ToDoListMenu_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ToDoListMenu_iconButton.UseVisualStyleBackColor = false;
+            this.ToDoListMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
+            // 
+            // NoteMenu_iconButton
+            // 
+            this.NoteMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.NoteMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NoteMenu_iconButton.FlatAppearance.BorderSize = 0;
+            this.NoteMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
+            this.NoteMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NoteMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoteMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.NoteMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            this.NoteMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.NoteMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.NoteMenu_iconButton.IconSize = 40;
+            this.NoteMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NoteMenu_iconButton.Location = new System.Drawing.Point(0, 0);
+            this.NoteMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.NoteMenu_iconButton.Name = "NoteMenu_iconButton";
+            this.NoteMenu_iconButton.Size = new System.Drawing.Size(251, 46);
+            this.NoteMenu_iconButton.TabIndex = 2;
+            this.NoteMenu_iconButton.Tag = "Menu2";
+            this.NoteMenu_iconButton.Text = "Note";
+            this.NoteMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NoteMenu_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.NoteMenu_iconButton.UseVisualStyleBackColor = false;
+            this.NoteMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
+            // 
+            // FlashCardMenu_iconButton
+            // 
+            this.FlashCardMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.FlashCardMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FlashCardMenu_iconButton.FlatAppearance.BorderSize = 0;
+            this.FlashCardMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
+            this.FlashCardMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FlashCardMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FlashCardMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.FlashCardMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            this.FlashCardMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.FlashCardMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.FlashCardMenu_iconButton.IconSize = 40;
+            this.FlashCardMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FlashCardMenu_iconButton.Location = new System.Drawing.Point(0, 0);
+            this.FlashCardMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.FlashCardMenu_iconButton.Name = "FlashCardMenu_iconButton";
+            this.FlashCardMenu_iconButton.Size = new System.Drawing.Size(251, 46);
+            this.FlashCardMenu_iconButton.TabIndex = 3;
+            this.FlashCardMenu_iconButton.Tag = "Menu3";
+            this.FlashCardMenu_iconButton.Text = "FlashCard";
+            this.FlashCardMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.FlashCardMenu_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.FlashCardMenu_iconButton.UseVisualStyleBackColor = false;
+            this.FlashCardMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
+            // 
+            // RelaxMenu_iconButton
+            // 
+            this.RelaxMenu_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.RelaxMenu_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.RelaxMenu_iconButton.FlatAppearance.BorderSize = 0;
+            this.RelaxMenu_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
+            this.RelaxMenu_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RelaxMenu_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RelaxMenu_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.RelaxMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            this.RelaxMenu_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.RelaxMenu_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.RelaxMenu_iconButton.IconSize = 40;
+            this.RelaxMenu_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RelaxMenu_iconButton.Location = new System.Drawing.Point(0, 0);
+            this.RelaxMenu_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.RelaxMenu_iconButton.Name = "RelaxMenu_iconButton";
+            this.RelaxMenu_iconButton.Size = new System.Drawing.Size(251, 46);
+            this.RelaxMenu_iconButton.TabIndex = 4;
+            this.RelaxMenu_iconButton.Tag = "Menu4";
+            this.RelaxMenu_iconButton.Text = "Relax";
+            this.RelaxMenu_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RelaxMenu_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.RelaxMenu_iconButton.UseVisualStyleBackColor = false;
+            this.RelaxMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
+
+            //Them menuiconbutton
+            ToDoList_Menu_Panel.Controls.Add(ToDoListMenu_iconButton);
+            Note_Menu_Panel.Controls.Add(NoteMenu_iconButton);
+            FlashCard_Menu_Panel.Controls.Add(FlashCardMenu_iconButton);
+            Relax_Menu_Panel.Controls.Add(RelaxMenu_iconButton);
+        }
+
+        //Relax
+        List<IconButton> SubMenuRelax_Item = new List<IconButton>();
+        void KhoiTaoSubMenu_RelaxItem(List<IconButton> item)
+        {
+            IconButton temp = new IconButton();
+            item.Add(temp);
+            
+        }
+        //Relax item click
+        private void RelaxSubMenu_Item_Click(object sender, EventArgs e)
+        {
+            IconButton nut = sender as IconButton;
+            if (nut.Text.Trim()=="2048")
+            {
+                Game2048 game = new Game2048();
+                game.Show();
+            }
+        }
+        void ThemItemVaoSubMenu(Panel submenu,List<IconButton> item)
+        {
+            KhoiTaoSubMenu_RelaxItem(item);
+            int height = 0;
+            for (int i = 0; i < item.Count; i++)
+            {
+                item[i].Margin = new Padding(0);
+                item[i].Padding = new Padding(0);
+                item[i].Text = "2048";
+                item[i].FlatStyle = FlatStyle.Flat;
+
+                item[i].BackColor = Color.Transparent;
+                item[i].Dock = DockStyle.Top;
+                item[i].IconChar = IconChar.None;
+                item[i].TextAlign = ContentAlignment.MiddleLeft;
+                item[i].Font = new Font("Agency FB", 14, FontStyle.Bold);
+                item[i].ForeColor = SacMau.trangvua;
+                item[i].Size = new Size(251 - 41, 40);
+                item[i].FlatAppearance.BorderSize = 0;
+                item[i].FlatAppearance.MouseOverBackColor = Color.FromArgb(73, 75, 76);
+                item[i].Click += new System.EventHandler(this.RelaxSubMenu_Item_Click);
+                submenu.Controls.Add(item[i]);
+                height += item[i].Height;
+               
+            }
+            submenu.Size = new Size(251, height);
+            submenu.Visible = false;
+        }
+
+        //icon menu click
         private void ToDoListMenu_iconButton_Click(object sender, EventArgs e)
         {
-            ShowSubMenu(SubToDoListMenu_panel);
-            if (SubToDoListMenu_panel.Visible == true)
-                ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretDown;
-            else
-                ToDoListMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
-        }
-        //Khi click FreeStyle_menu_iconButton thì làm gì?
-        private void FreeStyleMenu_iconButton_Click(object sender, EventArgs e)
-        {
-            ShowSubMenu(SubFreeStyleMenu_panel);
-            if (SubFreeStyleMenu_panel.Visible == true)
-                FreeStyleMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretDown;
-            else
-                FreeStyleMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            IconButton nutClick = sender as IconButton;
+            switch (nutClick.Tag.ToString())
+            {
+                case "Menu1":
+                    ShowSubMenu(TodoLIst_SubMenu_Panel,ToDoListMenu_iconButton);
+                    break;
+                case "Menu2":
+                    ShowSubMenu(Note_SubMenu_Panel,NoteMenu_iconButton);
+                    break;
+                case "Menu3":
+                    ShowSubMenu(FlashCard_SubMenu_Panel,FlashCardMenu_iconButton);
+                    break;
+                case "Menu4":
+                    ShowSubMenu(Relax_SubMenu_Panel, RelaxMenu_iconButton);
+                    break;
+            }
+          
+           
         }
         /*---------------------------------Điều khiển các item trong menu bên trái---------------------------------*/
+        #endregion
 
-
+        #region 3nuthome_about_help
         /*---------------------------------Chức năng 3 nút home, about, help---------------------------------*/
         //Khai báo 3 biến đánh dấu các nút được click chưa hay chưa?
         bool isHomeClick = true;
@@ -245,7 +442,9 @@ namespace StudyManagementApp
             }
         }
         /*---------------------------------Chức năng 3 nút home, about, help---------------------------------*/
+        #endregion
 
+        #region Pomodoro
         /*---------------------------------Pomodoro---------------------------------*/
         //Khai báo các biến cần thiết
         enum PomoState
@@ -488,6 +687,9 @@ namespace StudyManagementApp
             }
         }
 
+        #endregion
+
+        #region FormEdit
 
         /*---------------------------------Edit---------------------------------*/
         private void Edit_iconButton_Click(object sender, EventArgs e)
@@ -495,7 +697,9 @@ namespace StudyManagementApp
             Edit edit = new Edit();
             edit.ShowDialog(this);
         }
+        #endregion
 
+        #region ChayNen
         /*---------------------------------Background---------------------------------*/
 
         private void notifyBackground_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -521,12 +725,9 @@ namespace StudyManagementApp
                 Application.Exit();
             }
         }
+        #endregion
 
-        private void WorkPlace_Load(object sender, EventArgs e)
-        {
-            UserNameLabel.Text = UserInfo.getInstance().Username;
-        }
-
+        #region CommandTextBox
         /*---------------------------------Command_textbox---------------------------------*/
         private void Command_TextBox_Enter(object sender, EventArgs e)
         {
@@ -545,11 +746,9 @@ namespace StudyManagementApp
                 Command_TextBox.Text = "Enter Command";
             }
         }
+        #endregion
 
-        private void roundedCornerButton1_Click(object sender, EventArgs e)
-        {
-            Game2048 game = new Game2048();
-            game.Show();
-        }
+
+      
     }
 }

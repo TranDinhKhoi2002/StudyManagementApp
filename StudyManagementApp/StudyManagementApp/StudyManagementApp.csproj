@@ -243,6 +243,8 @@
     <None Include="bin\Debug\Resources\Images\Time_text.png" />
     <None Include="bin\Debug\Resources\Images\Interval_text.png" />
     <None Include="bin\Debug\Resources\Images\Noti_text.png" />
+    <None Include="bin\Debug\Resources\Images\2048.png" />
+    <None Include="bin\Debug\Resources\Images\2048logo.png" />
     <Content Include="Resources\Images\about.png" />
     <Content Include="Resources\Images\calendarDark.png" />
     <Content Include="Resources\Images\calendarWhite.png" />

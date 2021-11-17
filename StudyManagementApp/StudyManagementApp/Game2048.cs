@@ -20,6 +20,7 @@ namespace StudyManagementApp
         {
             InitializeComponent();
         }
+
         public void UpdateColor()
         {
             Label[,] Game = {
@@ -35,73 +36,74 @@ namespace StudyManagementApp
 
                     if (Game[i, j].Text == "")
                     {
-                        Game[i, j].BackColor = Color.CadetBlue;
+                        Game[i, j].BackColor = Color.FromArgb(193, 177, 154);
                     }
                     if (Game[i, j].Text == "2")
                     {
-                        Game[i, j].BackColor = Color.Silver;
-                        Game[i, j].ForeColor = Color.White;
+                        Game[i, j].BackColor = Color.FromArgb(237, 224, 200);
+                        Game[i, j].ForeColor = Color.FromArgb(119, 110, 101);
 
                     }
                     if (Game[i, j].Text == "4")
                     {
-                        Game[i, j].BackColor = Color.Gray;
+                        Game[i, j].BackColor = Color.FromArgb(246, 124, 95);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "8")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+                        Game[i, j].BackColor = Color.FromArgb(242, 177, 121);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "16")
                     {
-                        Game[i, j].BackColor = Color.Black;
+                        Game[i, j].BackColor = Color.FromArgb(253, 151, 93);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "32")
                     {
-                        Game[i, j].BackColor = Color.Yellow;
-                        Game[i, j].ForeColor = Color.Silver;
+                        Game[i, j].BackColor = Color.FromArgb(254, 126, 91);
+                        Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "64")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+                        Game[i, j].BackColor = Color.FromArgb(253, 93, 49);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "128")
                     {
-                        Game[i, j].BackColor = Color.Olive;
+                        Game[i, j].BackColor = Color.FromArgb(254, 205, 100);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "256")
                     {
-                        Game[i, j].BackColor = Color.Gold;
+                        Game[i, j].BackColor = Color.FromArgb(237, 204, 97);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "512")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+                        Game[i, j].BackColor = Color.FromArgb(254, 200, 48);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "1024")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+                        Game[i, j].BackColor = Color.FromArgb(237, 197, 63);
                         Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "2048")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-                        Game[i, j].ForeColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+                        Game[i, j].BackColor = Color.FromArgb(223, 154, 2);
+                        Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "4096")
                     {
-                        Game[i, j].BackColor = Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-                        Game[i, j].ForeColor = Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+                        
+                        Game[i, j].BackColor = Color.FromArgb(237, 194, 46);
+                        Game[i, j].ForeColor = Color.White;
                     }
                     if (Game[i, j].Text == "8192")
                     {
-                        Game[i, j].BackColor = Color.Maroon;
-                        Game[i, j].ForeColor =Color.Yellow;
+                        Game[i, j].BackColor = Color.FromArgb(255, 134, 1);
+                        Game[i, j].ForeColor = Color.White;
                     }
                 }
             }
@@ -240,7 +242,7 @@ namespace StudyManagementApp
                     }
                 }
             }
-           
+
             if (kTraKhoiTao == true)
             {
                 initGame();
@@ -345,7 +347,7 @@ namespace StudyManagementApp
                     }
                 }
             }
-           
+
             if (isInit == true)
             {
                 initGame();
@@ -445,7 +447,7 @@ namespace StudyManagementApp
                     }
                 }
             }
-           
+
             if (isInit == true)
             {
                 initGame();
@@ -543,7 +545,7 @@ namespace StudyManagementApp
                     }
                 }
             }
-           
+
             if (checkInit == true)
             {
                 initGame();
@@ -551,7 +553,7 @@ namespace StudyManagementApp
         }
         public bool endGame()
         {
-            
+
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
                                 {lbl5,lbl6,lbl7,lbl8},
@@ -626,8 +628,7 @@ namespace StudyManagementApp
             }
             else
             {
-                label1.Enabled = false;
-                lbInstruction.Hide();
+             
                 continueToolStripMenuItem.Visible = false;
                 lblGameOver.Text = "Game Over";
                 isPlaying = false;
@@ -643,9 +644,6 @@ namespace StudyManagementApp
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            label1.Enabled = true;
-            isShowing = false;
-
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             lblScore.Text = "0";
             Label[,] Game = {
@@ -681,10 +679,10 @@ namespace StudyManagementApp
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-           
+
             continueToolStripMenuItem.Visible = true;
             lblAbout.Visible = false;
-          
+
             label2.Visible = true;
             lblScore.Visible = true;
 
@@ -720,10 +718,10 @@ namespace StudyManagementApp
 
         private void continueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
-           
+
+
             lblAbout.Visible = false;
-           
+
             label2.Visible = true;
             lblScore.Visible = true;
 
@@ -762,7 +760,7 @@ namespace StudyManagementApp
             lblAbout.Location = new System.Drawing.Point(0, 41);
             lblAbout.Dock = System.Windows.Forms.DockStyle.Fill;
             lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
+
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
                                 {lbl5,lbl6,lbl7,lbl8},
@@ -807,26 +805,6 @@ namespace StudyManagementApp
         {
 
         }
-        bool isShowing = false;
-        private void label1_Click(object sender, EventArgs e)
-        {
-            lbInstruction.Show();
-            isShowing = !isShowing;
-            if (isShowing)
-            {
-                lbInstruction.Text = "1/ Nhấn phím lên, xuống, trái, phải trên bàn phím để đẩy các con số theo hướng tương ứng." +
-                   Environment.NewLine + Environment.NewLine + "2/ Nếu tồn tại 2 số giống nhau trên cùng hàng (không có số khác nằm giữa chúng) thì khi nhấn trái, phải hoặc cùng cột (không có số khác nằm giữa chúng) khi nhấn lên/xuống thì hai giá trị đó sẽ được cộng lại và được đẩy về hướng chỉ định đến lúc đụng phải viền ngoài hoặc một một ô chứa số khác." +
-                   Environment.NewLine + Environment.NewLine + "3/ Điểm mỗi lần nhấn nút là tổng tất cả ô có giá trị trùng trong lần đó." +
-                   Environment.NewLine + Environment.NewLine + "4/ Trò chơi kết thúc khi toàn bộ 16 ô bị lấp đầy bởi số và lần nhấn tiếp theo không có bất kỳ thay đổi nào nữa." +
-                   Environment.NewLine + Environment.NewLine + "Cùng chinh phục ô số 2048 nào!!!" +
-                   Environment.NewLine + Environment.NewLine + "CHÚC BẠN GIẢI LAO HIỆU QUẢ VÀ TRỞ LẠI CÔNG VIỆC NĂNG SUẤT HƠN NHÉ!";
-                label1.Text = "Instruction (Click to Close)";
-            }
-            else
-            {
-                lbInstruction.Text = "";
-                label1.Text = "Instruction (Click to Show)";
-            }
-        }
+      
     }
 }
