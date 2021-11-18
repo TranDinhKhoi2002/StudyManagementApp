@@ -746,9 +746,15 @@ namespace StudyManagementApp
                 Command_TextBox.Text = "Enter Command";
             }
         }
+
+
+
         #endregion
 
-
-      
+        private void btnFlappyBird_Click(object sender, EventArgs e)
+        {
+            FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
+            gameFlappyBird.Show();
+        }
     }
 }

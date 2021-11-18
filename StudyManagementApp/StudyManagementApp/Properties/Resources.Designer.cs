@@ -93,6 +93,16 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bird {
+            get {
+                object obj = ResourceManager.GetObject("bird", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendarDark {
             get {
                 object obj = ResourceManager.GetObject("calendarDark", resourceCulture);
@@ -176,6 +186,16 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap GmailTrang {
             get {
                 object obj = ResourceManager.GetObject("GmailTrang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ground {
+            get {
+                object obj = ResourceManager.GetObject("ground", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -276,6 +296,26 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap Noti_text {
             get {
                 object obj = ResourceManager.GetObject("Noti_text", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pipe {
+            get {
+                object obj = ResourceManager.GetObject("pipe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pipedown {
+            get {
+                object obj = ResourceManager.GetObject("pipedown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
