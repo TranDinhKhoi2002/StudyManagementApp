@@ -44,6 +44,15 @@ namespace StudyManagementApp
             this.Home_iconButton = new FontAwesome.Sharp.IconButton();
             this.PassageToolPanel = new System.Windows.Forms.Panel();
             this.LeftMenuTablePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.TemplatePanel = new System.Windows.Forms.Panel();
+            this.Relax_SubMenu_Panel = new System.Windows.Forms.Panel();
+            this.Relax_Menu_Panel = new System.Windows.Forms.Panel();
+            this.FlashCard_SubMenu_Panel = new System.Windows.Forms.Panel();
+            this.FlashCard_Menu_Panel = new System.Windows.Forms.Panel();
+            this.Note_SubMenu_Panel = new System.Windows.Forms.Panel();
+            this.Note_Menu_Panel = new System.Windows.Forms.Panel();
+            this.TodoLIst_SubMenu_Panel = new System.Windows.Forms.Panel();
+            this.ToDoList_Menu_Panel = new System.Windows.Forms.Panel();
             this.PomodoroPanel = new System.Windows.Forms.Panel();
             this.Start_Stop_Pomodoro_button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.NextStatePomo_iconButton = new FontAwesome.Sharp.IconButton();
@@ -59,15 +68,6 @@ namespace StudyManagementApp
             this.Edit_iconButton = new FontAwesome.Sharp.IconButton();
             this.CalendarButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ThuGonTraiButton = new FontAwesome.Sharp.IconButton();
-            this.TemplatePanel = new System.Windows.Forms.Panel();
-            this.Relax_SubMenu_Panel = new System.Windows.Forms.Panel();
-            this.Relax_Menu_Panel = new System.Windows.Forms.Panel();
-            this.FlashCard_SubMenu_Panel = new System.Windows.Forms.Panel();
-            this.FlashCard_Menu_Panel = new System.Windows.Forms.Panel();
-            this.Note_SubMenu_Panel = new System.Windows.Forms.Panel();
-            this.Note_Menu_Panel = new System.Windows.Forms.Panel();
-            this.TodoLIst_SubMenu_Panel = new System.Windows.Forms.Panel();
-            this.ToDoList_Menu_Panel = new System.Windows.Forms.Panel();
             this.FunctionTablePanel = new System.Windows.Forms.TableLayoutPanel();
             this.NotificationFunctionLabel = new System.Windows.Forms.Label();
             this.PomodoroFunctionTableLabel = new System.Windows.Forms.TableLayoutPanel();
@@ -104,12 +104,12 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.SuspendLayout();
             this.BaNut_Panel.SuspendLayout();
             this.LeftMenuTablePanel.SuspendLayout();
+            this.TemplatePanel.SuspendLayout();
             this.PomodoroPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).BeginInit();
             this.UserInforPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
-            this.TemplatePanel.SuspendLayout();
             this.FunctionTablePanel.SuspendLayout();
             this.PomodoroFunctionTableLabel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -139,7 +139,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.ToolTablePanel.Controls.Add(this.AddPic_Panel, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -159,10 +159,10 @@ namespace StudyManagementApp
             this.AddPic_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.AddPic_Panel.Controls.Add(this.iconButton4);
             this.AddPic_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPic_Panel.Location = new System.Drawing.Point(848, 0);
+            this.AddPic_Panel.Location = new System.Drawing.Point(840, 0);
             this.AddPic_Panel.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.AddPic_Panel.Name = "AddPic_Panel";
-            this.AddPic_Panel.Size = new System.Drawing.Size(293, 71);
+            this.AddPic_Panel.Size = new System.Drawing.Size(301, 71);
             this.AddPic_Panel.TabIndex = 3;
             // 
             // iconButton4
@@ -176,7 +176,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(256, 0);
+            this.iconButton4.Location = new System.Drawing.Point(264, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(34, 49);
@@ -190,7 +190,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(251, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(197, 71);
+            this.WordToolPanel.Size = new System.Drawing.Size(195, 71);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -202,13 +202,13 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(649, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(644, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(197, 71);
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(194, 71);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
             // SaveButton
@@ -225,7 +225,7 @@ namespace StudyManagementApp
             this.SaveButton.Location = new System.Drawing.Point(18, 12);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(18, 12, 9, 12);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(71, 47);
+            this.SaveButton.Size = new System.Drawing.Size(70, 47);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -241,10 +241,10 @@ namespace StudyManagementApp
             this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(107, 12);
+            this.SaveAsButton.Location = new System.Drawing.Point(106, 12);
             this.SaveAsButton.Margin = new System.Windows.Forms.Padding(9, 12, 18, 12);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(72, 47);
+            this.SaveAsButton.Size = new System.Drawing.Size(70, 47);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
@@ -323,10 +323,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(450, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(448, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(197, 71);
+            this.PassageToolPanel.Size = new System.Drawing.Size(194, 71);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -347,6 +347,109 @@ namespace StudyManagementApp
             this.LeftMenuTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 184F));
             this.LeftMenuTablePanel.Size = new System.Drawing.Size(251, 553);
             this.LeftMenuTablePanel.TabIndex = 7;
+            // 
+            // TemplatePanel
+            // 
+            this.TemplatePanel.AutoScroll = true;
+            this.TemplatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.TemplatePanel.Controls.Add(this.Relax_SubMenu_Panel);
+            this.TemplatePanel.Controls.Add(this.Relax_Menu_Panel);
+            this.TemplatePanel.Controls.Add(this.FlashCard_SubMenu_Panel);
+            this.TemplatePanel.Controls.Add(this.FlashCard_Menu_Panel);
+            this.TemplatePanel.Controls.Add(this.Note_SubMenu_Panel);
+            this.TemplatePanel.Controls.Add(this.Note_Menu_Panel);
+            this.TemplatePanel.Controls.Add(this.TodoLIst_SubMenu_Panel);
+            this.TemplatePanel.Controls.Add(this.ToDoList_Menu_Panel);
+            this.TemplatePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TemplatePanel.Location = new System.Drawing.Point(0, 251);
+            this.TemplatePanel.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
+            this.TemplatePanel.Name = "TemplatePanel";
+            this.TemplatePanel.Size = new System.Drawing.Size(251, 117);
+            this.TemplatePanel.TabIndex = 2;
+            // 
+            // Relax_SubMenu_Panel
+            // 
+            this.Relax_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Relax_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Relax_SubMenu_Panel.Location = new System.Drawing.Point(0, 184);
+            this.Relax_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Relax_SubMenu_Panel.Name = "Relax_SubMenu_Panel";
+            this.Relax_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.Relax_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
+            this.Relax_SubMenu_Panel.TabIndex = 9;
+            // 
+            // Relax_Menu_Panel
+            // 
+            this.Relax_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Relax_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Relax_Menu_Panel.Location = new System.Drawing.Point(0, 138);
+            this.Relax_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Relax_Menu_Panel.Name = "Relax_Menu_Panel";
+            this.Relax_Menu_Panel.Size = new System.Drawing.Size(230, 46);
+            this.Relax_Menu_Panel.TabIndex = 8;
+            // 
+            // FlashCard_SubMenu_Panel
+            // 
+            this.FlashCard_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.FlashCard_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FlashCard_SubMenu_Panel.Location = new System.Drawing.Point(0, 138);
+            this.FlashCard_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.FlashCard_SubMenu_Panel.Name = "FlashCard_SubMenu_Panel";
+            this.FlashCard_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.FlashCard_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
+            this.FlashCard_SubMenu_Panel.TabIndex = 8;
+            // 
+            // FlashCard_Menu_Panel
+            // 
+            this.FlashCard_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.FlashCard_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FlashCard_Menu_Panel.Location = new System.Drawing.Point(0, 92);
+            this.FlashCard_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.FlashCard_Menu_Panel.Name = "FlashCard_Menu_Panel";
+            this.FlashCard_Menu_Panel.Size = new System.Drawing.Size(230, 46);
+            this.FlashCard_Menu_Panel.TabIndex = 7;
+            // 
+            // Note_SubMenu_Panel
+            // 
+            this.Note_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Note_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Note_SubMenu_Panel.Location = new System.Drawing.Point(0, 92);
+            this.Note_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Note_SubMenu_Panel.Name = "Note_SubMenu_Panel";
+            this.Note_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.Note_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
+            this.Note_SubMenu_Panel.TabIndex = 7;
+            // 
+            // Note_Menu_Panel
+            // 
+            this.Note_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Note_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Note_Menu_Panel.Location = new System.Drawing.Point(0, 46);
+            this.Note_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.Note_Menu_Panel.Name = "Note_Menu_Panel";
+            this.Note_Menu_Panel.Size = new System.Drawing.Size(230, 46);
+            this.Note_Menu_Panel.TabIndex = 6;
+            // 
+            // TodoLIst_SubMenu_Panel
+            // 
+            this.TodoLIst_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.TodoLIst_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TodoLIst_SubMenu_Panel.Location = new System.Drawing.Point(0, 46);
+            this.TodoLIst_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.TodoLIst_SubMenu_Panel.Name = "TodoLIst_SubMenu_Panel";
+            this.TodoLIst_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
+            this.TodoLIst_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
+            this.TodoLIst_SubMenu_Panel.TabIndex = 6;
+            // 
+            // ToDoList_Menu_Panel
+            // 
+            this.ToDoList_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.ToDoList_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ToDoList_Menu_Panel.Location = new System.Drawing.Point(0, 0);
+            this.ToDoList_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
+            this.ToDoList_Menu_Panel.Name = "ToDoList_Menu_Panel";
+            this.ToDoList_Menu_Panel.Size = new System.Drawing.Size(230, 46);
+            this.ToDoList_Menu_Panel.TabIndex = 5;
             // 
             // PomodoroPanel
             // 
@@ -599,109 +702,6 @@ namespace StudyManagementApp
             this.ThuGonTraiButton.Size = new System.Drawing.Size(39, 46);
             this.ThuGonTraiButton.TabIndex = 1;
             this.ThuGonTraiButton.UseVisualStyleBackColor = true;
-            // 
-            // TemplatePanel
-            // 
-            this.TemplatePanel.AutoScroll = true;
-            this.TemplatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.TemplatePanel.Controls.Add(this.Relax_SubMenu_Panel);
-            this.TemplatePanel.Controls.Add(this.Relax_Menu_Panel);
-            this.TemplatePanel.Controls.Add(this.FlashCard_SubMenu_Panel);
-            this.TemplatePanel.Controls.Add(this.FlashCard_Menu_Panel);
-            this.TemplatePanel.Controls.Add(this.Note_SubMenu_Panel);
-            this.TemplatePanel.Controls.Add(this.Note_Menu_Panel);
-            this.TemplatePanel.Controls.Add(this.TodoLIst_SubMenu_Panel);
-            this.TemplatePanel.Controls.Add(this.ToDoList_Menu_Panel);
-            this.TemplatePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TemplatePanel.Location = new System.Drawing.Point(0, 251);
-            this.TemplatePanel.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
-            this.TemplatePanel.Name = "TemplatePanel";
-            this.TemplatePanel.Size = new System.Drawing.Size(251, 117);
-            this.TemplatePanel.TabIndex = 2;
-            // 
-            // Relax_SubMenu_Panel
-            // 
-            this.Relax_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Relax_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Relax_SubMenu_Panel.Location = new System.Drawing.Point(0, 184);
-            this.Relax_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Relax_SubMenu_Panel.Name = "Relax_SubMenu_Panel";
-            this.Relax_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
-            this.Relax_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
-            this.Relax_SubMenu_Panel.TabIndex = 9;
-            // 
-            // Relax_Menu_Panel
-            // 
-            this.Relax_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Relax_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Relax_Menu_Panel.Location = new System.Drawing.Point(0, 138);
-            this.Relax_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Relax_Menu_Panel.Name = "Relax_Menu_Panel";
-            this.Relax_Menu_Panel.Size = new System.Drawing.Size(230, 46);
-            this.Relax_Menu_Panel.TabIndex = 8;
-            // 
-            // FlashCard_SubMenu_Panel
-            // 
-            this.FlashCard_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.FlashCard_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FlashCard_SubMenu_Panel.Location = new System.Drawing.Point(0, 138);
-            this.FlashCard_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.FlashCard_SubMenu_Panel.Name = "FlashCard_SubMenu_Panel";
-            this.FlashCard_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
-            this.FlashCard_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
-            this.FlashCard_SubMenu_Panel.TabIndex = 8;
-            // 
-            // FlashCard_Menu_Panel
-            // 
-            this.FlashCard_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.FlashCard_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.FlashCard_Menu_Panel.Location = new System.Drawing.Point(0, 92);
-            this.FlashCard_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.FlashCard_Menu_Panel.Name = "FlashCard_Menu_Panel";
-            this.FlashCard_Menu_Panel.Size = new System.Drawing.Size(230, 46);
-            this.FlashCard_Menu_Panel.TabIndex = 7;
-            // 
-            // Note_SubMenu_Panel
-            // 
-            this.Note_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Note_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Note_SubMenu_Panel.Location = new System.Drawing.Point(0, 92);
-            this.Note_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Note_SubMenu_Panel.Name = "Note_SubMenu_Panel";
-            this.Note_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
-            this.Note_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
-            this.Note_SubMenu_Panel.TabIndex = 7;
-            // 
-            // Note_Menu_Panel
-            // 
-            this.Note_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Note_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Note_Menu_Panel.Location = new System.Drawing.Point(0, 46);
-            this.Note_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.Note_Menu_Panel.Name = "Note_Menu_Panel";
-            this.Note_Menu_Panel.Size = new System.Drawing.Size(230, 46);
-            this.Note_Menu_Panel.TabIndex = 6;
-            // 
-            // TodoLIst_SubMenu_Panel
-            // 
-            this.TodoLIst_SubMenu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.TodoLIst_SubMenu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TodoLIst_SubMenu_Panel.Location = new System.Drawing.Point(0, 46);
-            this.TodoLIst_SubMenu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.TodoLIst_SubMenu_Panel.Name = "TodoLIst_SubMenu_Panel";
-            this.TodoLIst_SubMenu_Panel.Padding = new System.Windows.Forms.Padding(41, 0, 0, 0);
-            this.TodoLIst_SubMenu_Panel.Size = new System.Drawing.Size(230, 0);
-            this.TodoLIst_SubMenu_Panel.TabIndex = 6;
-            // 
-            // ToDoList_Menu_Panel
-            // 
-            this.ToDoList_Menu_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.ToDoList_Menu_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ToDoList_Menu_Panel.Location = new System.Drawing.Point(0, 0);
-            this.ToDoList_Menu_Panel.Margin = new System.Windows.Forms.Padding(0);
-            this.ToDoList_Menu_Panel.Name = "ToDoList_Menu_Panel";
-            this.ToDoList_Menu_Panel.Size = new System.Drawing.Size(230, 46);
-            this.ToDoList_Menu_Panel.TabIndex = 5;
             // 
             // FunctionTablePanel
             // 
@@ -1103,12 +1103,12 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.ResumeLayout(false);
             this.BaNut_Panel.ResumeLayout(false);
             this.LeftMenuTablePanel.ResumeLayout(false);
+            this.TemplatePanel.ResumeLayout(false);
             this.PomodoroPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Pomo_PictureBox)).EndInit();
             this.UserInforPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.TemplatePanel.ResumeLayout(false);
             this.FunctionTablePanel.ResumeLayout(false);
             this.PomodoroFunctionTableLabel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

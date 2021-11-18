@@ -23,26 +23,30 @@ namespace StudyManagementApp.UserControls
             base.Show();
         }
 
-        void HamDoiMau(Color x, Color y, Color z)
+        void HamDoiMau(Color x, Color y, Color z,Color t)
         {
             this.BackColor = x;
 
-            panel3.BackColor = y;
-            panel4.BackColor = y;
+            Pomodo_Title_Panel.BackColor = y;
+            Pomodo_Content_Panel.BackColor = y;
 
             Lb_Instruction.ForeColor = z;
+            
+            FeedBack_IconButton.IconColor = z;
+            FeedBack_IconButton.FlatAppearance.MouseOverBackColor = t;
+            FeedBack_IconButton.FlatAppearance.MouseDownBackColor = z;
         }
 
         void LoadMau()
         {
             if (Program.Theme == true)
             {
-               HamDoiMau(SacMau.trangvua, Color.Gray, Color.Gray);
+               HamDoiMau(SacMau.trangvua, Color.Gray, Color.Gray,Color.Silver);
               
             }
             else
             {
-                HamDoiMau(SacMau.dendam, SacMau.dennhat, SacMau.trangvua);
+                HamDoiMau(SacMau.dendam, SacMau.dennhat, SacMau.trangvua, Color.Gray);
                
             }
         }
@@ -50,6 +54,13 @@ namespace StudyManagementApp.UserControls
         private void HelpUC_Load(object sender, EventArgs e)
         {
             LoadMau();
+        }
+
+
+        private void FeedBack_IconButton_Click(object sender, EventArgs e)
+        {
+            FeedBackForm_FAKE feedBackForm_FAKE = new FeedBackForm_FAKE();
+            feedBackForm_FAKE.ShowDialog();
         }
     }
 }

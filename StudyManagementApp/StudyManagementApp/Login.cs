@@ -44,6 +44,7 @@ namespace StudyManagementApp
             AlignControls_Non_Maximum();
         }
 
+        #region DoiTheme
         //Đổi theme nha
         void HamDoiMau(Color x, Color y, Color z, Color t,Color u,Color h)
         {
@@ -83,6 +84,9 @@ namespace StudyManagementApp
                 SignInLogoPictureBox.Image = new Bitmap(Application.StartupPath + "\\Resources\\Images\\logo.png");
             }
         }
+        #endregion
+
+        #region NutDangKy_DangNhap
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
         {
@@ -127,8 +131,9 @@ namespace StudyManagementApp
                 MessageBox.Show(excpt.Message);
             }*/
         }
+        #endregion
 
-
+        #region CanChinhCacControl
         /*---------------------------------Căn chỉnh các control---------------------------------*/
         //Hàm chỉnh control lúc không maximum
         Size formbandau;
@@ -168,8 +173,9 @@ namespace StudyManagementApp
             AlignControls_Non_Maximum();
         }
         /*---------------------------------Căn chỉnh các control---------------------------------*/
+        #endregion
 
-
+        #region CanChinh3NutDuoi
         /*---------------------------------Căn chỉnh 3 nút dưới---------------------------------*/
         //Hàm chỉnh lại 3 nút ở bottom
         void AlignHomeAboutHelp()
@@ -185,8 +191,9 @@ namespace StudyManagementApp
         }
 
         /*---------------------------------Căn chỉnh 3 nút dưới---------------------------------*/
+        #endregion
 
-
+        #region ChucNang3NutDuoi
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
         //Khai báo 3 biến đánh dấu các nút được click chưa hay chưa?
         bool isHomeClick = true;
@@ -297,8 +304,9 @@ namespace StudyManagementApp
             this.Cursor = Cursors.Default;
         }
         /*---------------------------------Chức năng 3 nút dưới---------------------------------*/
+        #endregion
 
-
+        #region CauTruyenCamHung
         /*---------------------------------Câu truyền cảm hứng---------------------------------*/
         string GetTruyenCamHung()
         {
@@ -320,13 +328,14 @@ namespace StudyManagementApp
             TruyencamhungLabel.Text = GetTruyenCamHung();
         }
 
+        /*---------------------------------Câu truyền cảm hứng---------------------------------*/
+        #endregion
+        
+        //forget pass
         private void label1_Click(object sender, EventArgs e)
         {
             ForgetPasswordForm fgpForm = new ForgetPasswordForm();
             fgpForm.Show();
         }
-
-       
-        /*---------------------------------Câu truyền cảm hứng---------------------------------*/
     }
 }
