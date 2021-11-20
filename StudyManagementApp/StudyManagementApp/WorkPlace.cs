@@ -292,6 +292,7 @@ namespace StudyManagementApp
         {
             IconButton temp = new IconButton();
             item.Add(temp);
+
             
         }
         //Relax item click
@@ -301,18 +302,29 @@ namespace StudyManagementApp
             if (nut.Text.Trim()=="2048")
             {
                 Game2048 game = new Game2048();
-                game.Show();
+                game.ShowDialog();
             }
+            if(nut.Text=="Flappy Bird")
+            {
+                FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
+                gameFlappyBird.ShowDialog();
+            }    
         }
-        void ThemItemVaoSubMenu(Panel submenu,List<IconButton> item)
+        void ThemItemVaoSubMenu(Panel submenu, List<IconButton> item)
         {
-            KhoiTaoSubMenu_RelaxItem(item);
+            string[] games = { "Flappy Bird", "2048" };
+            foreach(var game in games)
+            {
+                IconButton nut = new IconButton();
+                item.Add(nut);
+                item[item.Count - 1].Text = game;
+            }    
+            
             int height = 0;
             for (int i = 0; i < item.Count; i++)
             {
                 item[i].Margin = new Padding(0);
                 item[i].Padding = new Padding(0);
-                item[i].Text = "2048";
                 item[i].FlatStyle = FlatStyle.Flat;
 
                 item[i].BackColor = Color.Transparent;
@@ -751,10 +763,5 @@ namespace StudyManagementApp
 
         #endregion
 
-        private void btnFlappyBird_Click(object sender, EventArgs e)
-        {
-            FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
-            gameFlappyBird.Show();
-        }
     }
 }

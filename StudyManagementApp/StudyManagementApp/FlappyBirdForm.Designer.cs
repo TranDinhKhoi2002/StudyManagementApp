@@ -44,12 +44,14 @@ namespace StudyManagementApp
             // 
             // lbScore
             // 
+            this.lbScore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbScore.AutoSize = true;
             this.lbScore.BackColor = System.Drawing.Color.White;
             this.lbScore.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScore.Location = new System.Drawing.Point(12, 638);
+            this.lbScore.Location = new System.Drawing.Point(13, 691);
+            this.lbScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbScore.Name = "lbScore";
-            this.lbScore.Size = new System.Drawing.Size(81, 31);
+            this.lbScore.Size = new System.Drawing.Size(121, 44);
             this.lbScore.TabIndex = 5;
             this.lbScore.Text = "Score: 0";
             // 
@@ -57,29 +59,34 @@ namespace StudyManagementApp
             // 
             this.ptbGround.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ptbGround.Image = global::StudyManagementApp.Properties.Resources.ground;
-            this.ptbGround.Location = new System.Drawing.Point(0, 592);
+            this.ptbGround.Location = new System.Drawing.Point(0, 624);
+            this.ptbGround.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ptbGround.Name = "ptbGround";
-            this.ptbGround.Size = new System.Drawing.Size(564, 98);
+            this.ptbGround.Size = new System.Drawing.Size(685, 151);
             this.ptbGround.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbGround.TabIndex = 4;
             this.ptbGround.TabStop = false;
             // 
             // pipeBottom
             // 
+            this.pipeBottom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pipeBottom.Image = global::StudyManagementApp.Properties.Resources.pipe;
-            this.pipeBottom.Location = new System.Drawing.Point(286, 363);
+            this.pipeBottom.Location = new System.Drawing.Point(268, 409);
+            this.pipeBottom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pipeBottom.Name = "pipeBottom";
-            this.pipeBottom.Size = new System.Drawing.Size(100, 231);
+            this.pipeBottom.Size = new System.Drawing.Size(150, 217);
             this.pipeBottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeBottom.TabIndex = 3;
             this.pipeBottom.TabStop = false;
             // 
             // pipeTop
             // 
+            this.pipeTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pipeTop.Image = global::StudyManagementApp.Properties.Resources.pipedown;
-            this.pipeTop.Location = new System.Drawing.Point(405, 1);
+            this.pipeTop.Location = new System.Drawing.Point(454, 1);
+            this.pipeTop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pipeTop.Name = "pipeTop";
-            this.pipeTop.Size = new System.Drawing.Size(100, 222);
+            this.pipeTop.Size = new System.Drawing.Size(150, 216);
             this.pipeTop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pipeTop.TabIndex = 1;
             this.pipeTop.TabStop = false;
@@ -87,9 +94,10 @@ namespace StudyManagementApp
             // flappyBird
             // 
             this.flappyBird.Image = global::StudyManagementApp.Properties.Resources.bird;
-            this.flappyBird.Location = new System.Drawing.Point(30, 200);
+            this.flappyBird.Location = new System.Drawing.Point(28, 161);
+            this.flappyBird.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.flappyBird.Name = "flappyBird";
-            this.flappyBird.Size = new System.Drawing.Size(71, 57);
+            this.flappyBird.Size = new System.Drawing.Size(106, 88);
             this.flappyBird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.flappyBird.TabIndex = 0;
             this.flappyBird.TabStop = false;
@@ -102,16 +110,19 @@ namespace StudyManagementApp
             // 
             // FlappyBirdForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(564, 690);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.ClientSize = new System.Drawing.Size(685, 775);
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.flappyBird);
             this.Controls.Add(this.ptbGround);
             this.Controls.Add(this.pipeBottom);
             this.Controls.Add(this.pipeTop);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FlappyBirdForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flappy Bird Game";
