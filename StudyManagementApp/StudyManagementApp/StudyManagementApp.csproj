@@ -86,6 +86,12 @@
     <Compile Include="FeedbackForm.Designer.cs">
       <DependentUpon>FeedbackForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeedBackForm_FAKE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBackForm_FAKE.Designer.cs">
+      <DependentUpon>FeedBackForm_FAKE.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlappyBirdForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     <EmbeddedResource Include="FeedbackForm.resx">
       <DependentUpon>FeedbackForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FeedBackForm_FAKE.resx">
+      <DependentUpon>FeedBackForm_FAKE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlappyBirdForm.resx">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +263,17 @@
     <None Include="bin\Debug\Resources\Images\Noti_text.png" />
     <None Include="bin\Debug\Resources\Images\2048.png" />
     <None Include="bin\Debug\Resources\Images\2048logo.png" />
+    <None Include="bin\Debug\Resources\Images\hello.png" />
+    <None Include="bin\Debug\Resources\Images\youremail.png" />
+    <None Include="bin\Debug\Resources\Images\yourproblem.png" />
+    <None Include="bin\Debug\Resources\Images\yourfeedback.png" />
+    <None Include="bin\Debug\Resources\Images\yourattach.png" />
+    <None Include="bin\Debug\Resources\Images\Background.png" />
+    <None Include="bin\Debug\Resources\Images\yourfile.png" />
+    <None Include="bin\Debug\Resources\Images\send.png" />
+    <None Include="bin\Debug\Resources\Images\cancle.png" />
+    <None Include="bin\Debug\Resources\Images\biagmail.jpg" />
+    <None Include="bin\Debug\Resources\Images\howdoyoufeel.png" />
     <Content Include="Resources\Images\about.png" />
     <None Include="Resources\Images\bird.png" />
     <Content Include="Resources\Images\calendarDark.png" />
