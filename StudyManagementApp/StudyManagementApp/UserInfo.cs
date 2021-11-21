@@ -8,7 +8,7 @@ namespace StudyManagementApp
 {
     class UserInfo
     {
-        private static UserInfo instance;
+        public static UserInfo instance;
 
 
         //Attribute

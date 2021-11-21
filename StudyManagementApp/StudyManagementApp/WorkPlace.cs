@@ -19,7 +19,7 @@ namespace StudyManagementApp
             InitializeComponent();
             aboutUC1.Hide();
             helpUC1.Hide();
-
+            
             HideAllSubMenu();
             KhoiTaoCacIconMenu();
             ThemItemVaoSubMenu(Relax_SubMenu_Panel, SubMenuRelax_Item);
@@ -37,6 +37,10 @@ namespace StudyManagementApp
         private void WorkPlace_Load(object sender, EventArgs e)
         {
             UserNameLabel.Text = UserInfo.getInstance().Username;
+            //toDoList1.Visible = false;
+            toDoList1.Visible = false;
+            toDoList1.Dock = DockStyle.Fill;
+            
         }
 
         //Khi tắt workplace thì làm gì?
@@ -121,7 +125,10 @@ namespace StudyManagementApp
             if (Main_customCalendar.Visible)
                 Main_customCalendar.Hide();
             else
+            {
+                CloseAllControlInWorkSpace();
                 Main_customCalendar.Show();
+            }
         }
         /*---------------------------------Calendar---------------------------------*/
         #endregion
@@ -763,5 +770,24 @@ namespace StudyManagementApp
 
         #endregion
 
+
+        #region CLoseAllControlInWorkSpace
+        void CloseAllControlInWorkSpace()
+        {
+            foreach (Control item in WorkPlacePanel.Controls)
+            {
+                item.Hide();
+            }
+        }
+        #endregion
+
+        private void OpenToDoList_Click(object sender, EventArgs e)
+        {
+            if (!toDoList1.Visible)
+            {
+                CloseAllControlInWorkSpace();
+                toDoList1.Show();
+            }
+        }
     }
 }
