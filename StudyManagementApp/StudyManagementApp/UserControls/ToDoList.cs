@@ -27,6 +27,7 @@ namespace StudyManagementApp.UserControls
             dataGridView1.Font = new Font(dataGridView1.Font.FontFamily, 13);
 
             dateTimePicker1.Value = DateTime.Now;
+            updateDataToolStripMenuItem_Click(sender, e);
             ReLoadData();
         }
         #endregion
@@ -168,8 +169,7 @@ namespace StudyManagementApp.UserControls
                 var sqlCommand = new SqlCommand("UPDATE TASK SET DONE='Past Due' " +
                                                  " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
                                                 + " AND DONE != 'Completed' "
-                                                + $" AND TIMESTART < GETDATE()"
-                                                + $" AND TIMEEND > GETDATE()", sqlConn);
+                                                + $" AND TIMEEND < GETDATE()", sqlConn);
                 sqlCommand.ExecuteNonQuery();
                 sqlConn.Close();
             }
@@ -213,7 +213,6 @@ namespace StudyManagementApp.UserControls
             {
                 MessageBox.Show(e.Message);
             }
-
         }
         #endregion
 
