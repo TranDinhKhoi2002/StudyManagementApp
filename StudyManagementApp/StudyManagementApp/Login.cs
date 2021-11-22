@@ -96,40 +96,41 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            WorkPlace workPlace = new WorkPlace();
+            /*WorkPlace workPlace = new WorkPlace();
             workPlace.Show();
-            this.Hide();
-            //try
-            //{
-            //    if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
-            //    {
-            //        NotificationLabel.Text = "Username and Password can't be blank";
-            //        return;
-            //    }
+            this.Hide();*/
+            try
+            {
+                if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
+                {
+                    NotificationLabel.Text = "Username and Password can't be blank";
+                    return;
+                }
 
-            //    string userName = UsernameTextBox.Texts;
-            //    string passWord = PasswordTextBox.Texts;
+                string userName = UsernameTextBox.Texts;
+                string passWord = PasswordTextBox.Texts;
 
-            //    if (AccountDAO.Instance.Login(userName, passWord))
-            //    {
-            //        //Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
-            //        UserInfo.getInstance().Username = userName;
-            //        UserInfo.getInstance().Password = passWord;
+                if (AccountDAO.Instance.Login(userName, passWord))
+                {
+                    //Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
+                    UserInfo.getInstance().Username = userName;
+                    UserInfo.getInstance().Password = passWord;
 
-            //        //Vào chương trình
-            //        WorkPlace workPlace = new WorkPlace();
-            //        workPlace.Show();
-            //        this.Hide();
-            //    }
-            //    else
-            //    {
-            //        NotificationLabel.Text = "User name or password is not correct";
-            //    }
-            //}
-            //catch (Exception excpt)
-            //{
-            //    MessageBox.Show(excpt.Message);
-            //}
+                    //Vào chương trình
+
+                    Program.globalWorkPlace.Show();
+                    
+                    this.Hide();
+                }
+                else
+                {
+                    NotificationLabel.Text = "User name or password is not correct";
+                }
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+            }
         }
         #endregion
 

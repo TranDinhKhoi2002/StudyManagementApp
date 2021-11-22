@@ -789,5 +789,11 @@ namespace StudyManagementApp
                 toDoList1.Show();
             }
         }
+
+        public void RefreshTodoList()
+        {
+            toDoList1.UpdateDatabase();
+            toDoList1.ReLoadData();
+        }
     }
 }

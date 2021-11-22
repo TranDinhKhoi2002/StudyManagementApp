@@ -41,34 +41,61 @@ namespace StudyManagementApp.UserControls
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            int rowindex = dataGridView1.CurrentCell.RowIndex;
-
-            try
+            if(dataGridView1.Rows.Count > 0)
             {
-                var strCons = DataProvider.Instance.sqlConn;
-                var sqlConn = new SqlConnection(strCons);
-                sqlConn.Open();
-
-                for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+                if(CountCheckBox()>0)
                 {
-                    bool ischeck = (bool)dataGridView1.Rows[i].Cells[0].Value;
-                    if (ischeck)
+                    try
                     {
-                        var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp].[dbo].[TASK] " +
-                                                " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
-                                                + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
-                                                + " AND DESCIPTION = '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'", sqlConn);
-                        sqlCommand.ExecuteNonQuery();
-                    }
-                }
-                sqlConn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                        var strCons = DataProvider.Instance.sqlConn;
+                        var sqlConn = new SqlConnection(strCons);
+                        sqlConn.Open();
 
-            refreshToolStripMenuItem_Click(sender, e);
+                        for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+                        {
+                            bool ischeck = (bool)dataGridView1.Rows[i].Cells[0].Value;
+                            if (ischeck)
+                            {
+                                var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp].[dbo].[TASK] " +
+                                                        " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                                        + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
+                                                        + " AND DESCIPTION = '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'", sqlConn);
+                                sqlCommand.ExecuteNonQuery();
+                            }
+                        }
+                        sqlConn.Close();
+                        MessageBox.Show("Xóa thành công");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    refreshToolStripMenuItem_Click(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Chưa chọn cái nào sao xóa");
+                }   
+            }
+            else
+            {
+                MessageBox.Show("Có gì đâu mà xóa!");
+            }
+        }
+
+        // Đếm số lượng checkbox ng dùng tick vào để xóa
+        private int CountCheckBox()
+        {
+            int count = 0;
+            for (int i = dataGridView1.Rows.Count - 1; i >= 0; i--)
+            {
+                
+                if((bool)dataGridView1.Rows[i].Cells[0].Value)
+                {
+                    count++;
+                }    
+            }
+            return count;
         }
 
         #endregion
@@ -158,7 +185,7 @@ namespace StudyManagementApp.UserControls
         #endregion
 
         #region Func update
-        private void UpdateDatabase()
+        public void UpdateDatabase()
         {
             try
             {
@@ -178,7 +205,7 @@ namespace StudyManagementApp.UserControls
                 MessageBox.Show(ex.Message);
             }
         }
-        private void ReLoadData()
+        public void ReLoadData()
         {
             dataGridView1.Rows.Clear();
             try
@@ -213,6 +240,7 @@ namespace StudyManagementApp.UserControls
             {
                 MessageBox.Show(e.Message);
             }
+            UpdateDatabase();
         }
         #endregion
 

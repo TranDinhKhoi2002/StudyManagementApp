@@ -10,6 +10,7 @@ namespace StudyManagementApp
     {
         public static bool Theme; //false: dark, true: light
         public static Login globalLogin;
+        public static WorkPlace globalWorkPlace;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,6 +20,7 @@ namespace StudyManagementApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
             globalLogin = new Login();
+            globalWorkPlace = new WorkPlace();
             Application.Run(globalLogin);
             Theme = false;
         }
