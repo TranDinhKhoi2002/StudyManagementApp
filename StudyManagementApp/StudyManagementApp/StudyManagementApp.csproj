@@ -53,6 +53,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
     </Reference>
@@ -130,6 +133,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SacMau.cs" />
+    <Compile Include="ScanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanForm.Designer.cs">
+      <DependentUpon>ScanForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingPomodoro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +232,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ScanForm.resx">
+      <DependentUpon>ScanForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SettingPomodoro.resx">
       <DependentUpon>SettingPomodoro.cs</DependentUpon>
     </EmbeddedResource>
@@ -310,6 +322,7 @@
     <None Include="Resources\Images\pipedown.png" />
     <Content Include="Resources\Images\pixlr-bg-result.png" />
     <None Include="Resources\logoTrang.png" />
+    <None Include="Resources\qr_code_fanpage.png" />
     <Content Include="Resources\Text\truyencamhung.txt" />
     <None Include="Resources\Images\Message_small.png" />
     <None Include="Resources\Images\message_command.png" />

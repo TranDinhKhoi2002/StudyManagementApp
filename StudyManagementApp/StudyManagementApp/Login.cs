@@ -96,9 +96,9 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            /*WorkPlace workPlace = new WorkPlace();
-            workPlace.Show();
-            this.Hide();*/
+            //WorkPlace workPlace = new WorkPlace();
+            //workPlace.Show();
+            //this.Hide();
             try
             {
                 if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
@@ -119,7 +119,7 @@ namespace StudyManagementApp
                     //Vào chương trình
 
                     Program.globalWorkPlace.Show();
-                    
+
                     this.Hide();
                 }
                 else

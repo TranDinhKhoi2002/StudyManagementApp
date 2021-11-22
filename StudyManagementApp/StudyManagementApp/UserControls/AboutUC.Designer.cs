@@ -37,6 +37,7 @@ namespace StudyManagementApp.UserControls
             this.Gmail_PictureBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.GioiThieu_Label = new System.Windows.Forms.Label();
+            this.btnScan = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Gender_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Name_PictureBox)).BeginInit();
@@ -73,6 +74,7 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel2.Controls.Add(this.Name_PictureBox, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.Gmail_PictureBox, 3, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.btnScan, 4, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
@@ -102,7 +104,7 @@ namespace StudyManagementApp.UserControls
             // 
             this.Name_PictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Name_PictureBox.ErrorImage = null;
-            this.Name_PictureBox.Image = global::StudyManagementApp.Properties.Resources.Name;
+            this.Name_PictureBox.Image = StudyManagementApp.Properties.Resources.Name;
             this.Name_PictureBox.ImageLocation = "";
             this.Name_PictureBox.Location = new System.Drawing.Point(67, 89);
             this.Name_PictureBox.Margin = new System.Windows.Forms.Padding(2);
@@ -150,6 +152,18 @@ namespace StudyManagementApp.UserControls
             this.GioiThieu_Label.TabIndex = 11;
             this.GioiThieu_Label.Text = resources.GetString("GioiThieu_Label.Text");
             // 
+            // btnScan
+            // 
+            this.btnScan.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnScan.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnScan.Location = new System.Drawing.Point(755, 90);
+            this.btnScan.Name = "btnScan";
+            this.btnScan.Size = new System.Drawing.Size(63, 230);
+            this.btnScan.TabIndex = 11;
+            this.btnScan.Text = "SCAN US";
+            this.btnScan.UseVisualStyleBackColor = false;
+            this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
+            // 
             // AboutUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -177,5 +191,6 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.PictureBox Gmail_PictureBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label GioiThieu_Label;
+        private System.Windows.Forms.Button btnScan;
     }
 }
