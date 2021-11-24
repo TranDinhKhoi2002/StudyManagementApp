@@ -42,20 +42,20 @@ namespace StudyManagementApp.UserControls
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_Delete = new System.Windows.Forms.Button();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.markAsCompleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Checkbox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Desciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeStart = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeEnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Done = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.markAsCompleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -200,81 +200,38 @@ namespace StudyManagementApp.UserControls
             this.dataGridView1.SizeChanged += new System.EventHandler(this.dataGridView1_SizeChanged);
             this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
-            // Checkbox
-            // 
-            this.Checkbox.HeaderText = "";
-            this.Checkbox.Name = "Checkbox";
-            // 
-            // Desciption
-            // 
-            this.Desciption.HeaderText = "Desciption";
-            this.Desciption.Name = "Desciption";
-            this.Desciption.ReadOnly = true;
-            this.Desciption.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Desciption.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Cate
-            // 
-            this.Cate.HeaderText = "Cate";
-            this.Cate.Name = "Cate";
-            this.Cate.ReadOnly = true;
-            this.Cate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Cate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // TimeStart
-            // 
-            this.TimeStart.HeaderText = "Time start";
-            this.TimeStart.Name = "TimeStart";
-            this.TimeStart.ReadOnly = true;
-            this.TimeStart.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.TimeStart.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // TimeEnd
-            // 
-            this.TimeEnd.HeaderText = "Time end";
-            this.TimeEnd.Name = "TimeEnd";
-            this.TimeEnd.ReadOnly = true;
-            this.TimeEnd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.TimeEnd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Done
-            // 
-            this.Done.HeaderText = "Done";
-            this.Done.Name = "Done";
-            this.Done.ReadOnly = true;
-            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btn_Delete);
+            this.panel4.Controls.Add(this.btn_Add);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(690, 56);
             this.panel4.TabIndex = 0;
             // 
-            // button2
+            // btn_Delete
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(595, 15);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "del";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Delete.Location = new System.Drawing.Point(575, 9);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(95, 35);
+            this.btn_Delete.TabIndex = 1;
+            this.btn_Delete.Text = "Delete Selected";
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btn_Add
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(490, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Add.Location = new System.Drawing.Point(457, 9);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(90, 35);
+            this.btn_Add.TabIndex = 0;
+            this.btn_Add.Text = "add";
+            this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.button1_Click);
             // 
             // contextMenuStrip1
             // 
@@ -312,6 +269,49 @@ namespace StudyManagementApp.UserControls
             this.refreshToolStripMenuItem.Text = "Refresh";
             this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
+            // Checkbox
+            // 
+            this.Checkbox.HeaderText = "";
+            this.Checkbox.Name = "Checkbox";
+            // 
+            // Desciption
+            // 
+            this.Desciption.HeaderText = "Desciption";
+            this.Desciption.Name = "Desciption";
+            this.Desciption.ReadOnly = true;
+            this.Desciption.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Desciption.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Cate
+            // 
+            this.Cate.HeaderText = "Category";
+            this.Cate.Name = "Cate";
+            this.Cate.ReadOnly = true;
+            this.Cate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Cate.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // TimeStart
+            // 
+            this.TimeStart.HeaderText = "Time start";
+            this.TimeStart.Name = "TimeStart";
+            this.TimeStart.ReadOnly = true;
+            this.TimeStart.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TimeStart.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // TimeEnd
+            // 
+            this.TimeEnd.HeaderText = "Time end";
+            this.TimeEnd.Name = "TimeEnd";
+            this.TimeEnd.ReadOnly = true;
+            this.TimeEnd.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TimeEnd.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Done
+            // 
+            this.Done.HeaderText = "Done";
+            this.Done.Name = "Done";
+            this.Done.ReadOnly = true;
+            // 
             // ToDoListTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,19 +342,19 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.Button PastDue_Btn;
         private System.Windows.Forms.Button Pending_Btn;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Delete;
+        private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem markAsCompleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Checkbox;
         private System.Windows.Forms.DataGridViewTextBoxColumn Desciption;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cate;
         private System.Windows.Forms.DataGridViewTextBoxColumn TimeStart;
         private System.Windows.Forms.DataGridViewTextBoxColumn TimeEnd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Done;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.ToolStripMenuItem markAsCompleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }
