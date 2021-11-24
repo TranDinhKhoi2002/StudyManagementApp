@@ -73,6 +73,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Function.Designer.cs">
+      <DependentUpon>Account_Function.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,12 +139,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SacMau.cs" />
-    <Compile Include="ScanForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ScanForm.Designer.cs">
-      <DependentUpon>ScanForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="SettingPomodoro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +209,9 @@
     <Compile Include="WorkPlace.Designer.cs">
       <DependentUpon>WorkPlace.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Account_Function.resx">
+      <DependentUpon>Account_Function.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,9 +240,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ScanForm.resx">
-      <DependentUpon>ScanForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SettingPomodoro.resx">
       <DependentUpon>SettingPomodoro.cs</DependentUpon>

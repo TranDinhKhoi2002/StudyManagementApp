@@ -50,10 +50,6 @@ namespace StudyManagementApp.UserControls
             }
         }
 
-        private void btnScan_Click(object sender, EventArgs e)
-        {
-            ScanForm scanForm = new ScanForm();
-            scanForm.ShowDialog();
-        }
+      
     }
 }

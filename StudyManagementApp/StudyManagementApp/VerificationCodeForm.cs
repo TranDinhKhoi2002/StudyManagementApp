@@ -14,6 +14,10 @@ namespace StudyManagementApp
     public partial class VerificationCodeForm : Form
     {
         string verifyCode, userName;
+        public VerificationCodeForm()
+        {
+            InitializeComponent();
+        }
         public VerificationCodeForm(string code, string _userName)
         {
             InitializeComponent();
@@ -39,7 +43,7 @@ namespace StudyManagementApp
             {
                 MessageBox.Show("Verify successfully", "Done");
                 AccountDAO.Instance.ChangePassword(userName, txbNewPassword.Texts);
-                this.Close();
+                this.Hide();
             }
         }
     }

@@ -32,32 +32,33 @@ namespace StudyManagementApp.UserControls
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelpUC));
             this.Lb_Instruction = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.FeedBack_IconButton = new FontAwesome.Sharp.IconButton();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Pomodo_Content_Panel = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Pomodo_Title_Panel = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.FeedBack_IconButton = new FontAwesome.Sharp.IconButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.Pomodo_Content_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.Pomodo_Title_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel5.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // Lb_Instruction
@@ -69,7 +70,7 @@ namespace StudyManagementApp.UserControls
             this.Lb_Instruction.Location = new System.Drawing.Point(2, 0);
             this.Lb_Instruction.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lb_Instruction.Name = "Lb_Instruction";
-            this.Lb_Instruction.Size = new System.Drawing.Size(614, 117);
+            this.Lb_Instruction.Size = new System.Drawing.Size(545, 148);
             this.Lb_Instruction.TabIndex = 1;
             this.Lb_Instruction.Text = "Instruction";
             this.Lb_Instruction.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -88,10 +89,29 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.26012F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.73988F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.625F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.375F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 576);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // FeedBack_IconButton
+            // 
+            this.FeedBack_IconButton.BackColor = System.Drawing.Color.Transparent;
+            this.FeedBack_IconButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FeedBack_IconButton.FlatAppearance.BorderSize = 0;
+            this.FeedBack_IconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FeedBack_IconButton.ForeColor = System.Drawing.Color.Transparent;
+            this.FeedBack_IconButton.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.FeedBack_IconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.FeedBack_IconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.FeedBack_IconButton.IconSize = 70;
+            this.FeedBack_IconButton.Location = new System.Drawing.Point(875, 237);
+            this.FeedBack_IconButton.Name = "FeedBack_IconButton";
+            this.FeedBack_IconButton.Size = new System.Drawing.Size(122, 336);
+            this.FeedBack_IconButton.TabIndex = 0;
+            this.FeedBack_IconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.FeedBack_IconButton.UseVisualStyleBackColor = false;
+            this.FeedBack_IconButton.Click += new System.EventHandler(this.FeedBack_IconButton_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -106,17 +126,17 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 59.16031F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.83969F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 64.77273F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.22727F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(753, 199);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(753, 230);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(2, 119);
+            this.panel1.Location = new System.Drawing.Point(2, 150);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(168, 78);
@@ -139,7 +159,7 @@ namespace StudyManagementApp.UserControls
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(174, 119);
+            this.panel2.Location = new System.Drawing.Point(174, 150);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(577, 78);
@@ -158,6 +178,34 @@ namespace StudyManagementApp.UserControls
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel5
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.panel5, 2);
+            this.panel5.Controls.Add(this.tableLayoutPanel4);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(753, 148);
+            this.panel5.TabIndex = 4;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.04117F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.95883F));
+            this.tableLayoutPanel4.Controls.Add(this.Lb_Instruction, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.panel3, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 117F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(753, 148);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -166,13 +214,13 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel3.Controls.Add(this.Pomodo_Content_Panel, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.Pomodo_Title_Panel, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(115, 203);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(115, 234);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.11607F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.88393F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(757, 373);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(757, 342);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // Pomodo_Content_Panel
@@ -183,7 +231,7 @@ namespace StudyManagementApp.UserControls
             this.Pomodo_Content_Panel.Location = new System.Drawing.Point(174, 0);
             this.Pomodo_Content_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Pomodo_Content_Panel.Name = "Pomodo_Content_Panel";
-            this.Pomodo_Content_Panel.Size = new System.Drawing.Size(583, 190);
+            this.Pomodo_Content_Panel.Size = new System.Drawing.Size(583, 174);
             this.Pomodo_Content_Panel.TabIndex = 1;
             // 
             // pictureBox4
@@ -194,7 +242,7 @@ namespace StudyManagementApp.UserControls
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(583, 190);
+            this.pictureBox4.Size = new System.Drawing.Size(583, 174);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -207,8 +255,8 @@ namespace StudyManagementApp.UserControls
             this.Pomodo_Title_Panel.Location = new System.Drawing.Point(0, 0);
             this.Pomodo_Title_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Pomodo_Title_Panel.Name = "Pomodo_Title_Panel";
-            this.Pomodo_Title_Panel.Padding = new System.Windows.Forms.Padding(25, 25, 25, 25);
-            this.Pomodo_Title_Panel.Size = new System.Drawing.Size(174, 190);
+            this.Pomodo_Title_Panel.Padding = new System.Windows.Forms.Padding(25);
+            this.Pomodo_Title_Panel.Size = new System.Drawing.Size(174, 174);
             this.Pomodo_Title_Panel.TabIndex = 0;
             // 
             // pictureBox3
@@ -218,61 +266,27 @@ namespace StudyManagementApp.UserControls
             this.pictureBox3.Location = new System.Drawing.Point(25, 25);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(124, 140);
+            this.pictureBox3.Size = new System.Drawing.Size(124, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // panel5
+            // panel3
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.panel5, 2);
-            this.panel5.Controls.Add(this.tableLayoutPanel4);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(753, 117);
-            this.panel5.TabIndex = 4;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 82.07172F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.92829F));
-            this.tableLayoutPanel4.Controls.Add(this.Lb_Instruction, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(753, 117);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // FeedBack_IconButton
-            // 
-            this.FeedBack_IconButton.BackColor = System.Drawing.Color.Transparent;
-            this.FeedBack_IconButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FeedBack_IconButton.FlatAppearance.BorderSize = 0;
-            this.FeedBack_IconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FeedBack_IconButton.ForeColor = System.Drawing.Color.Transparent;
-            this.FeedBack_IconButton.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.FeedBack_IconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.FeedBack_IconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.FeedBack_IconButton.IconSize = 70;
-            this.FeedBack_IconButton.Location = new System.Drawing.Point(875, 206);
-            this.FeedBack_IconButton.Name = "FeedBack_IconButton";
-            this.FeedBack_IconButton.Size = new System.Drawing.Size(122, 367);
-            this.FeedBack_IconButton.TabIndex = 0;
-            this.FeedBack_IconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.FeedBack_IconButton.UseVisualStyleBackColor = false;
-            this.FeedBack_IconButton.Click += new System.EventHandler(this.FeedBack_IconButton_Click);
+            this.panel3.BackgroundImage = global::StudyManagementApp.Properties.Resources.qr_code_fanpage;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(559, 10);
+            this.panel3.Margin = new System.Windows.Forms.Padding(10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(184, 128);
+            this.panel3.TabIndex = 2;
             // 
             // HelpUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -284,13 +298,13 @@ namespace StudyManagementApp.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.Pomodo_Content_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.Pomodo_Title_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -312,5 +326,6 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private FontAwesome.Sharp.IconButton FeedBack_IconButton;
+        private System.Windows.Forms.Panel panel3;
     }
 }

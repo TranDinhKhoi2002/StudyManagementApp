@@ -90,8 +90,10 @@ namespace StudyManagementApp
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            Signup frmSignup = new Signup();
-            frmSignup.ShowDialog(this);
+            /* Signup frmSignup = new Signup();
+             frmSignup.ShowDialog(this);*/
+            Account_Function account_Function = new Account_Function();
+            account_Function.ShowDialog();
         }
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
@@ -117,8 +119,8 @@ namespace StudyManagementApp
                     UserInfo.getInstance().Password = passWord;
 
                     //Vào chương trình
-
-                    Program.globalWorkPlace.Show();
+                    WorkPlace globalWorkPlace = new WorkPlace();
+                    globalWorkPlace.Show();
 
                     this.Hide();
                 }
@@ -154,7 +156,7 @@ namespace StudyManagementApp
             SignInButton.Font = new Font("Agency FB", 13);
             SignUpButton.Size = new Size(113, 38);
             SignUpButton.Font = new Font("Agency FB", 13);
-
+            forgot_label.Font = new Font("Agency FB", 11);
 
 
             TruyencamhungLabel.Font = new Font("Agency FB", 23, FontStyle.Bold);
@@ -165,8 +167,9 @@ namespace StudyManagementApp
             NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 23);
             UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
             PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
-            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
-            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 26);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
+            forgot_label.Location = new Point(HomePanel.Width / 2 - forgot_label.Width/2, SignInButton.Location.Y + SignInButton.Height + 8);
         }
 
         private void Login_SizeChanged(object sender, EventArgs e)
@@ -332,9 +335,9 @@ namespace StudyManagementApp
         /*---------------------------------Câu truyền cảm hứng---------------------------------*/
         #endregion
         
-        //forget pass
 
-        private void linklbForgotPassWord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        //forget pass
+        private void forgot_label_Click(object sender, EventArgs e)
         {
             ForgetPasswordForm fgpForm = new ForgetPasswordForm();
             fgpForm.Show();

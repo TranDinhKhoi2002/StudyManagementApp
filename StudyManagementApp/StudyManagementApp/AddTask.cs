@@ -63,7 +63,7 @@ namespace StudyManagementApp
 
                     sqlConn.Close();
                     MessageBox.Show("Thêm thành công");
-                    Program.globalWorkPlace.RefreshTodoList();
+                    //Program.globalWorkPlace.RefreshTodoList();
                     this.Close();
                 }
                 catch (Exception ex)
