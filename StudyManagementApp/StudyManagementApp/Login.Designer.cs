@@ -35,7 +35,6 @@
             this.About = new System.Windows.Forms.PictureBox();
             this.Home = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.TruyencamhungLabel = new System.Windows.Forms.Label();
             this.NotificationLabel = new System.Windows.Forms.Label();
             this.PasswordTextBox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
@@ -47,6 +46,7 @@
             this.BackGroundSignIn_Panel = new System.Windows.Forms.Panel();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.ChangeCau_Timer = new System.Windows.Forms.Timer(this.components);
+            this.linklbForgotPassWord = new System.Windows.Forms.LinkLabel();
             this.BottomPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.About)).BeginInit();
@@ -63,10 +63,10 @@
             this.BottomPanel.Controls.Add(this.About);
             this.BottomPanel.Controls.Add(this.Home);
             this.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BottomPanel.Location = new System.Drawing.Point(0, 530);
-            this.BottomPanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BottomPanel.Location = new System.Drawing.Point(0, 431);
+            this.BottomPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BottomPanel.Name = "BottomPanel";
-            this.BottomPanel.Size = new System.Drawing.Size(1217, 84);
+            this.BottomPanel.Size = new System.Drawing.Size(913, 68);
             this.BottomPanel.TabIndex = 1;
             this.BottomPanel.SizeChanged += new System.EventHandler(this.BottomPanel_SizeChanged);
             // 
@@ -75,10 +75,10 @@
             this.Help.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Help.ErrorImage")));
             this.Help.Image = global::StudyManagementApp.Properties.Resources.help;
             this.Help.ImageLocation = "";
-            this.Help.Location = new System.Drawing.Point(893, 5);
-            this.Help.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Help.Location = new System.Drawing.Point(670, 4);
+            this.Help.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Help.Name = "Help";
-            this.Help.Size = new System.Drawing.Size(80, 71);
+            this.Help.Size = new System.Drawing.Size(60, 58);
             this.Help.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Help.TabIndex = 4;
             this.Help.TabStop = false;
@@ -91,10 +91,10 @@
             this.About.ErrorImage = ((System.Drawing.Image)(resources.GetObject("About.ErrorImage")));
             this.About.Image = global::StudyManagementApp.Properties.Resources.about;
             this.About.ImageLocation = "";
-            this.About.Location = new System.Drawing.Point(760, 5);
-            this.About.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.About.Location = new System.Drawing.Point(570, 4);
+            this.About.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(80, 71);
+            this.About.Size = new System.Drawing.Size(60, 58);
             this.About.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.About.TabIndex = 4;
             this.About.TabStop = false;
@@ -109,10 +109,10 @@
             this.Home.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Home.ErrorImage")));
             this.Home.Image = global::StudyManagementApp.Properties.Resources.clicked_home;
             this.Home.ImageLocation = "";
-            this.Home.Location = new System.Drawing.Point(627, 5);
-            this.Home.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.Home.Location = new System.Drawing.Point(470, 4);
+            this.Home.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Home.Name = "Home";
-            this.Home.Size = new System.Drawing.Size(83, 71);
+            this.Home.Size = new System.Drawing.Size(62, 58);
             this.Home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Home.TabIndex = 4;
             this.Home.TabStop = false;
@@ -123,7 +123,7 @@
             // HomePanel
             // 
             this.HomePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.HomePanel.Controls.Add(this.label1);
+            this.HomePanel.Controls.Add(this.linklbForgotPassWord);
             this.HomePanel.Controls.Add(this.TruyencamhungLabel);
             this.HomePanel.Controls.Add(this.NotificationLabel);
             this.HomePanel.Controls.Add(this.PasswordTextBox);
@@ -133,23 +133,10 @@
             this.HomePanel.Controls.Add(this.SignInLogoPictureBox);
             this.HomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HomePanel.Location = new System.Drawing.Point(0, 0);
-            this.HomePanel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(1217, 530);
+            this.HomePanel.Size = new System.Drawing.Size(913, 431);
             this.HomePanel.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(1040, 318);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Forget password";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TruyencamhungLabel
             // 
@@ -159,10 +146,9 @@
             this.TruyencamhungLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.TruyencamhungLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TruyencamhungLabel.Location = new System.Drawing.Point(0, 0);
-            this.TruyencamhungLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TruyencamhungLabel.Name = "TruyencamhungLabel";
-            this.TruyencamhungLabel.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.TruyencamhungLabel.Size = new System.Drawing.Size(1217, 133);
+            this.TruyencamhungLabel.Padding = new System.Windows.Forms.Padding(0, 8, 0, 8);
+            this.TruyencamhungLabel.Size = new System.Drawing.Size(913, 108);
             this.TruyencamhungLabel.TabIndex = 5;
             this.TruyencamhungLabel.Text = "Learning is the eye of the mind";
             this.TruyencamhungLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,11 +160,10 @@
             this.NotificationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NotificationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NotificationLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NotificationLabel.Location = new System.Drawing.Point(259, 292);
-            this.NotificationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NotificationLabel.Location = new System.Drawing.Point(194, 237);
             this.NotificationLabel.Name = "NotificationLabel";
-            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.NotificationLabel.Size = new System.Drawing.Size(700, 70);
+            this.NotificationLabel.Padding = new System.Windows.Forms.Padding(0, 8, 0, 8);
+            this.NotificationLabel.Size = new System.Drawing.Size(525, 57);
             this.NotificationLabel.TabIndex = 5;
             this.NotificationLabel.Text = "Sign-in for future";
             this.NotificationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,15 +178,15 @@
             this.PasswordTextBox.BorderSize = 2;
             this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(755, 415);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.PasswordTextBox.Location = new System.Drawing.Point(566, 337);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PasswordTextBox.Multiline = false;
             this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(13, 5, 13, 10);
+            this.PasswordTextBox.Padding = new System.Windows.Forms.Padding(10, 4, 10, 8);
             this.PasswordTextBox.PasswordChar = true;
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
-            this.PasswordTextBox.Size = new System.Drawing.Size(467, 50);
+            this.PasswordTextBox.Size = new System.Drawing.Size(350, 37);
             this.PasswordTextBox.TabIndex = 3;
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
@@ -216,15 +201,15 @@
             this.UsernameTextBox.BorderSize = 2;
             this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.UsernameTextBox.Location = new System.Drawing.Point(-4, 415);
-            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.UsernameTextBox.Location = new System.Drawing.Point(-3, 337);
+            this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.UsernameTextBox.Multiline = false;
             this.UsernameTextBox.Name = "UsernameTextBox";
-            this.UsernameTextBox.Padding = new System.Windows.Forms.Padding(13, 5, 13, 10);
+            this.UsernameTextBox.Padding = new System.Windows.Forms.Padding(10, 4, 10, 8);
             this.UsernameTextBox.PasswordChar = false;
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
-            this.UsernameTextBox.Size = new System.Drawing.Size(467, 50);
+            this.UsernameTextBox.Size = new System.Drawing.Size(350, 37);
             this.UsernameTextBox.TabIndex = 2;
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;
@@ -240,10 +225,10 @@
             this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignUpButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SignUpButton.Location = new System.Drawing.Point(707, 514);
-            this.SignUpButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.SignUpButton.Location = new System.Drawing.Point(530, 418);
+            this.SignUpButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(227, 70);
+            this.SignUpButton.Size = new System.Drawing.Size(170, 57);
             this.SignUpButton.TabIndex = 1;
             this.SignUpButton.Text = "Sign-up";
             this.SignUpButton.UseVisualStyleBackColor = false;
@@ -260,10 +245,10 @@
             this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SignInButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SignInButton.Location = new System.Drawing.Point(284, 514);
-            this.SignInButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.SignInButton.Location = new System.Drawing.Point(213, 418);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(227, 70);
+            this.SignInButton.Size = new System.Drawing.Size(170, 57);
             this.SignInButton.TabIndex = 0;
             this.SignInButton.Text = "Sign-in";
             this.SignInButton.UseVisualStyleBackColor = false;
@@ -275,10 +260,10 @@
             this.SignInLogoPictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("SignInLogoPictureBox.ErrorImage")));
             this.SignInLogoPictureBox.Image = global::StudyManagementApp.Properties.Resources.Logo;
             this.SignInLogoPictureBox.ImageLocation = "";
-            this.SignInLogoPictureBox.Location = new System.Drawing.Point(477, 27);
-            this.SignInLogoPictureBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.SignInLogoPictureBox.Location = new System.Drawing.Point(358, 22);
+            this.SignInLogoPictureBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SignInLogoPictureBox.Name = "SignInLogoPictureBox";
-            this.SignInLogoPictureBox.Size = new System.Drawing.Size(261, 217);
+            this.SignInLogoPictureBox.Size = new System.Drawing.Size(196, 176);
             this.SignInLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SignInLogoPictureBox.TabIndex = 0;
             this.SignInLogoPictureBox.TabStop = false;
@@ -289,9 +274,9 @@
             this.aboutUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.aboutUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.aboutUC1.Location = new System.Drawing.Point(0, 0);
-            this.aboutUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.aboutUC1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.aboutUC1.Name = "aboutUC1";
-            this.aboutUC1.Size = new System.Drawing.Size(1217, 530);
+            this.aboutUC1.Size = new System.Drawing.Size(913, 431);
             this.aboutUC1.TabIndex = 6;
             // 
             // BackGroundSignIn_Panel
@@ -302,9 +287,9 @@
             this.BackGroundSignIn_Panel.Controls.Add(this.BottomPanel);
             this.BackGroundSignIn_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BackGroundSignIn_Panel.Location = new System.Drawing.Point(0, 0);
-            this.BackGroundSignIn_Panel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.BackGroundSignIn_Panel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BackGroundSignIn_Panel.Name = "BackGroundSignIn_Panel";
-            this.BackGroundSignIn_Panel.Size = new System.Drawing.Size(1217, 614);
+            this.BackGroundSignIn_Panel.Size = new System.Drawing.Size(913, 499);
             this.BackGroundSignIn_Panel.TabIndex = 4;
             // 
             // helpUC1
@@ -312,9 +297,9 @@
             this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.helpUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpUC1.Location = new System.Drawing.Point(0, 0);
-            this.helpUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.helpUC1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.helpUC1.Name = "helpUC1";
-            this.helpUC1.Size = new System.Drawing.Size(1217, 530);
+            this.helpUC1.Size = new System.Drawing.Size(913, 431);
             this.helpUC1.TabIndex = 7;
             // 
             // ChangeCau_Timer
@@ -323,15 +308,29 @@
             this.ChangeCau_Timer.Interval = 3000;
             this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // linklbForgotPassWord
+            // 
+            this.linklbForgotPassWord.ActiveLinkColor = System.Drawing.Color.Indigo;
+            this.linklbForgotPassWord.AutoSize = true;
+            this.linklbForgotPassWord.Font = new System.Drawing.Font("Agency FB", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linklbForgotPassWord.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.linklbForgotPassWord.Location = new System.Drawing.Point(352, 399);
+            this.linklbForgotPassWord.Name = "linklbForgotPassWord";
+            this.linklbForgotPassWord.Size = new System.Drawing.Size(213, 34);
+            this.linklbForgotPassWord.TabIndex = 6;
+            this.linklbForgotPassWord.TabStop = true;
+            this.linklbForgotPassWord.Text = "Forgot your password?";
+            this.linklbForgotPassWord.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklbForgotPassWord_LinkClicked);
+            // 
             // Login
             // 
             this.AcceptButton = this.SignInButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 614);
+            this.ClientSize = new System.Drawing.Size(913, 499);
             this.Controls.Add(this.BackGroundSignIn_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -366,8 +365,8 @@
         private UserControls.AboutUC aboutUC1;
         private System.Windows.Forms.Panel BackGroundSignIn_Panel;
         private System.Windows.Forms.Timer ChangeCau_Timer;
-        private System.Windows.Forms.Label label1;
         private UserControls.HelpUC helpUC1;
+        private System.Windows.Forms.LinkLabel linklbForgotPassWord;
     }
 }
 

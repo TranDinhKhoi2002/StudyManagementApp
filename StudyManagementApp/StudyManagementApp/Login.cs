@@ -333,7 +333,8 @@ namespace StudyManagementApp
         #endregion
         
         //forget pass
-        private void label1_Click(object sender, EventArgs e)
+
+        private void linklbForgotPassWord_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ForgetPasswordForm fgpForm = new ForgetPasswordForm();
             fgpForm.Show();

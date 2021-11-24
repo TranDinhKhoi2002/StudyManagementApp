@@ -21,24 +21,24 @@ namespace StudyManagementApp
             userName = _userName;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnVerify_Click(object sender, EventArgs e)
         {
-            if (txbCode.Text == "" || txbNewPassword.Text == "" || txbConfirmPassword.Text == "")
+            if (txbCode.Texts == "" || txbNewPassword.Texts == "" || txbConfirmPassword.Texts == "")
             {
                 MessageBox.Show("Verification code or password can't be blank", "Error");
             }
-            else if (txbCode.Text != verifyCode)
+            else if (txbCode.Texts != verifyCode)
             {
                 MessageBox.Show("Verification code is not correct", "Error");
             }
-            else if (txbNewPassword.Text != txbConfirmPassword.Text)
+            else if (txbNewPassword.Texts != txbConfirmPassword.Texts)
             {
                 MessageBox.Show("Confirm password is not correct", "Error");
             }
             else
             {
                 MessageBox.Show("Verify successfully", "Done");
-                AccountDAO.Instance.ChangePassword(userName, txbNewPassword.Text);
+                AccountDAO.Instance.ChangePassword(userName, txbNewPassword.Texts);
                 this.Close();
             }
         }

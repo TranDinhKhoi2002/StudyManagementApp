@@ -29,65 +29,96 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbUserName = new System.Windows.Forms.TextBox();
-            this.txbEmail = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbUserName = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.txbEmail = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.btnReset = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.SuspendLayout();
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Email";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(104, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(170, 34);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "RESET PASSWORD";
             // 
             // txbUserName
             // 
-            this.txbUserName.Location = new System.Drawing.Point(120, 26);
+            this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.txbUserName.BorderColor = System.Drawing.Color.Gray;
+            this.txbUserName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txbUserName.BorderRadius = 10;
+            this.txbUserName.BorderSize = 2;
+            this.txbUserName.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txbUserName.Location = new System.Drawing.Point(67, 84);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txbUserName.Multiline = false;
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(100, 20);
-            this.txbUserName.TabIndex = 2;
+            this.txbUserName.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.txbUserName.PasswordChar = false;
+            this.txbUserName.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txbUserName.PlaceholderText = "User Name";
+            this.txbUserName.Size = new System.Drawing.Size(233, 35);
+            this.txbUserName.TabIndex = 12;
+            this.txbUserName.Texts = "";
+            this.txbUserName.UnderlinedStyle = false;
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(120, 77);
+            this.txbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.txbEmail.BorderColor = System.Drawing.Color.Gray;
+            this.txbEmail.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txbEmail.BorderRadius = 10;
+            this.txbEmail.BorderSize = 2;
+            this.txbEmail.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.txbEmail.Location = new System.Drawing.Point(67, 141);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txbEmail.Multiline = false;
             this.txbEmail.Name = "txbEmail";
-            this.txbEmail.Size = new System.Drawing.Size(100, 20);
-            this.txbEmail.TabIndex = 3;
+            this.txbEmail.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.txbEmail.PasswordChar = false;
+            this.txbEmail.PlaceholderColor = System.Drawing.Color.Gray;
+            this.txbEmail.PlaceholderText = "Your Email";
+            this.txbEmail.Size = new System.Drawing.Size(233, 35);
+            this.txbEmail.TabIndex = 13;
+            this.txbEmail.Texts = "";
+            this.txbEmail.UnderlinedStyle = false;
             // 
-            // button1
+            // btnReset
             // 
-            this.button1.Location = new System.Drawing.Point(120, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Verify";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(158)))), ((int)(((byte)(253)))));
+            this.btnReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.btnReset.BorderRadius = 18;
+            this.btnReset.BorderSize = 0;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.btnReset.Location = new System.Drawing.Point(67, 210);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(233, 38);
+            this.btnReset.TabIndex = 15;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // ForgetPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 243);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.ClientSize = new System.Drawing.Size(378, 283);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbUserName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Name = "ForgetPasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetPasswordForm";
@@ -97,11 +128,9 @@ namespace StudyManagementApp
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txbUserName;
-        private System.Windows.Forms.TextBox txbEmail;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private UserControls.RoundedCornerTextBox txbUserName;
+        private UserControls.RoundedCornerTextBox txbEmail;
+        private UserControls.RoundedCornerButton btnReset;
     }
 }

@@ -24,25 +24,25 @@ namespace StudyManagementApp
 
         string code;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            if(txbEmail.Text == "" || txbUserName.Text == "")
+            if (txbEmail.Texts == "" || txbUserName.Texts == "")
             {
-                MessageBox.Show("User name or email can't be blank");
+                MessageBox.Show("User name or email can't be blank", "Error");
             }
-            else if(!AccountDAO.Instance.UserExist(txbUserName.Text))
+            else if (!AccountDAO.Instance.UserExist(txbUserName.Texts))
             {
                 MessageBox.Show("User can't be found", "Error");
             }
-            else if (!Email.IsValidEmail(txbEmail.Text))
+            else if (!Email.IsValidEmail(txbEmail.Texts))
             {
-                MessageBox.Show("Your email is invalid");
+                MessageBox.Show("Your email is invalid", "Error");
             }
             else
             {
-                Email.SendEmail(txbEmail.Text, out code);
+                Email.SendEmail(txbEmail.Texts, out code);
                 MessageBox.Show("Sent successfully", "Done");
-                VerificationCodeForm vefCodeForm = new VerificationCodeForm(code, txbUserName.Text);
+                VerificationCodeForm vefCodeForm = new VerificationCodeForm(code, txbUserName.Texts);
                 vefCodeForm.ShowDialog();
                 this.Close();
             }
