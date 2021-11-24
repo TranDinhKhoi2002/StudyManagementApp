@@ -41,8 +41,6 @@ namespace StudyManagementApp.UserControls
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Search_Btn = new FontAwesome.Sharp.IconButton();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.btn_AddTask = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -60,8 +58,6 @@ namespace StudyManagementApp.UserControls
             this.btn_complete = new System.Windows.Forms.Button();
             this.btn_PastDue = new System.Windows.Forms.Button();
             this.btn_Pending = new System.Windows.Forms.Button();
-            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.updateDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -69,7 +65,6 @@ namespace StudyManagementApp.UserControls
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.contextMenuStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -110,8 +105,6 @@ namespace StudyManagementApp.UserControls
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox1);
-            this.panel4.Controls.Add(this.Search_Btn);
             this.panel4.Controls.Add(this.btn_Delete);
             this.panel4.Controls.Add(this.btn_AddTask);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -119,29 +112,6 @@ namespace StudyManagementApp.UserControls
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1014, 58);
             this.panel4.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(23, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(229, 27);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Search by name";
-            // 
-            // Search_Btn
-            // 
-            this.Search_Btn.BackgroundImage = global::StudyManagementApp.Properties.Resources.TomatoRed;
-            this.Search_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Search_Btn.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Search_Btn.IconColor = System.Drawing.Color.Black;
-            this.Search_Btn.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Search_Btn.Location = new System.Drawing.Point(272, 12);
-            this.Search_Btn.Name = "Search_Btn";
-            this.Search_Btn.Size = new System.Drawing.Size(34, 30);
-            this.Search_Btn.TabIndex = 3;
-            this.Search_Btn.UseVisualStyleBackColor = true;
             // 
             // btn_Delete
             // 
@@ -382,20 +352,6 @@ namespace StudyManagementApp.UserControls
             this.btn_Pending.UseVisualStyleBackColor = true;
             this.btn_Pending.Click += new System.EventHandler(this.btn_Pending_Click);
             // 
-            // contextMenuStrip3
-            // 
-            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateDataToolStripMenuItem});
-            this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(181, 48);
-            // 
-            // updateDataToolStripMenuItem
-            // 
-            this.updateDataToolStripMenuItem.Name = "updateDataToolStripMenuItem";
-            this.updateDataToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateDataToolStripMenuItem.Text = "UpdateData";
-            this.updateDataToolStripMenuItem.Click += new System.EventHandler(this.updateDataToolStripMenuItem_Click);
-            // 
             // ToDoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,12 +364,10 @@ namespace StudyManagementApp.UserControls
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.contextMenuStrip3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -425,7 +379,6 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
         private FontAwesome.Sharp.IconButton Search_Btn;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Button btn_AddTask;
@@ -444,7 +397,5 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.Button btn_complete;
         private System.Windows.Forms.Button btn_PastDue;
         private System.Windows.Forms.Button btn_Pending;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
-        private System.Windows.Forms.ToolStripMenuItem updateDataToolStripMenuItem;
     }
 }

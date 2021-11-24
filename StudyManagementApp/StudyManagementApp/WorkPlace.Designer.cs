@@ -92,7 +92,7 @@ namespace StudyManagementApp
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.WorkPlacePanel = new System.Windows.Forms.Panel();
             this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
-            this.toDoList1 = new StudyManagementApp.UserControls.ToDoList();
+            this.toDoListTest1 = new StudyManagementApp.UserControls.ToDoListTest();
             this.BackGroundWorkPlace_Panel = new System.Windows.Forms.Panel();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
@@ -141,7 +141,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.ToolTablePanel.Controls.Add(this.AddPic_Panel, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -161,10 +161,10 @@ namespace StudyManagementApp
             this.AddPic_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.AddPic_Panel.Controls.Add(this.iconButton4);
             this.AddPic_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPic_Panel.Location = new System.Drawing.Point(793, 0);
+            this.AddPic_Panel.Location = new System.Drawing.Point(763, 0);
             this.AddPic_Panel.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.AddPic_Panel.Name = "AddPic_Panel";
-            this.AddPic_Panel.Size = new System.Drawing.Size(271, 57);
+            this.AddPic_Panel.Size = new System.Drawing.Size(301, 57);
             this.AddPic_Panel.TabIndex = 3;
             // 
             // iconButton4
@@ -178,7 +178,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(237, 0);
+            this.iconButton4.Location = new System.Drawing.Point(267, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(27, 39);
@@ -192,7 +192,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(201, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(196, 57);
+            this.WordToolPanel.Size = new System.Drawing.Size(186, 57);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -204,13 +204,13 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(596, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(576, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(195, 57);
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(185, 57);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
             // SaveButton
@@ -227,7 +227,7 @@ namespace StudyManagementApp
             this.SaveButton.Location = new System.Drawing.Point(14, 10);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(14, 10, 7, 10);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(76, 37);
+            this.SaveButton.Size = new System.Drawing.Size(71, 37);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -243,10 +243,10 @@ namespace StudyManagementApp
             this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(104, 10);
+            this.SaveAsButton.Location = new System.Drawing.Point(99, 10);
             this.SaveAsButton.Margin = new System.Windows.Forms.Padding(7, 10, 14, 10);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(77, 37);
+            this.SaveAsButton.Size = new System.Drawing.Size(72, 37);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
@@ -325,10 +325,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(399, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(389, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(195, 57);
+            this.PassageToolPanel.Size = new System.Drawing.Size(185, 57);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -1002,7 +1002,7 @@ namespace StudyManagementApp
             // 
             this.WorkPlacePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.WorkPlacePanel.Controls.Add(this.Main_customCalendar);
-            this.WorkPlacePanel.Controls.Add(this.toDoList1);
+            this.WorkPlacePanel.Controls.Add(this.toDoListTest1);
             this.WorkPlacePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WorkPlacePanel.Location = new System.Drawing.Point(0, 0);
             this.WorkPlacePanel.Margin = new System.Windows.Forms.Padding(2);
@@ -1020,13 +1020,12 @@ namespace StudyManagementApp
             this.Main_customCalendar.Size = new System.Drawing.Size(863, 403);
             this.Main_customCalendar.TabIndex = 0;
             // 
-            // toDoList1
+            // toDoListTest1
             // 
-            this.toDoList1.Location = new System.Drawing.Point(89, -537);
-            this.toDoList1.Name = "toDoList1";
-            this.toDoList1.Size = new System.Drawing.Size(1252, 607);
-            this.toDoList1.TabIndex = 1;
-            this.toDoList1.Visible = false;
+            this.toDoListTest1.Location = new System.Drawing.Point(132, 199);
+            this.toDoListTest1.Name = "toDoListTest1";
+            this.toDoListTest1.Size = new System.Drawing.Size(152, 56);
+            this.toDoListTest1.TabIndex = 1;
             // 
             // BackGroundWorkPlace_Panel
             // 
@@ -1222,6 +1221,6 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel FlashCard_SubMenu_Panel;
         private System.Windows.Forms.Panel Note_SubMenu_Panel;
         private System.Windows.Forms.Button OpenToDoList;
-        private UserControls.ToDoList toDoList1;
+        private UserControls.ToDoListTest toDoListTest1;
     }
 }

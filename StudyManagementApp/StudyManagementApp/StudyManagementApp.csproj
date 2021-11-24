@@ -187,6 +187,12 @@
     <Compile Include="UserControls\ToDoList.Designer.cs">
       <DependentUpon>ToDoList.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ToDoListTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ToDoListTest.Designer.cs">
+      <DependentUpon>ToDoListTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ToDoList.resx">
       <DependentUpon>ToDoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ToDoListTest.resx">
+      <DependentUpon>ToDoListTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerificationCodeForm.resx">
       <DependentUpon>VerificationCodeForm.cs</DependentUpon>

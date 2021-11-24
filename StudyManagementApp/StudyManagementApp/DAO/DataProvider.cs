@@ -8,11 +8,11 @@ namespace StudyManagementApp.DAO
     public class DataProvider
     {
         //private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp2;Integrated Security=True";
-        private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
+       // private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
         //private string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
         //private string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
-        //private string connectionStr = @"Data Source=DESKTOP-3HC7LCK\TRITRAN;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
-        private DateTime _time_choose = DateTime.Now;
+        static string connectionStr = @"Data Source=DESKTOP-3HC7LCK\TRITRAN;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
+        static DateTime time_choose = DateTime.Now;
 
         public string sqlConn
         {
@@ -21,11 +21,11 @@ namespace StudyManagementApp.DAO
 
         public DateTime User_Time_Choose
         {
-            get { return _time_choose; }
-            set { _time_choose = value; }
+            get { return time_choose; }
+            set { time_choose = value; }
         }
 
-        private static DataProvider instance;
+        public static DataProvider instance = new DataProvider();
 
         public static DataProvider Instance 
         { 

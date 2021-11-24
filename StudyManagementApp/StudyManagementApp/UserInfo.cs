@@ -8,12 +8,12 @@ namespace StudyManagementApp
 {
     class UserInfo
     {
-        public static UserInfo instance;
+        public static UserInfo instance = new UserInfo();
 
 
         //Attribute
-        private string username;
-        private string password;
+        private string username = "";
+        private string password = "";
 
         private UserInfo() { }
 

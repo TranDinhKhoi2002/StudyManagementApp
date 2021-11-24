@@ -38,9 +38,9 @@ namespace StudyManagementApp
         {
             UserNameLabel.Text = UserInfo.getInstance().Username;
             //toDoList1.Visible = false;
-            toDoList1.Visible = false;
-            toDoList1.Dock = DockStyle.Fill;
-            
+            toDoListTest1.Hide();
+            toDoListTest1.Dock = DockStyle.Fill;
+
         }
 
         //Khi tắt workplace thì làm gì?
@@ -126,7 +126,7 @@ namespace StudyManagementApp
                 Main_customCalendar.Hide();
             else
             {
-                CloseAllControlInWorkSpace();
+                HideAllControlInWorkPlacePanel();
                 Main_customCalendar.Show();
             }
         }
@@ -772,7 +772,7 @@ namespace StudyManagementApp
 
 
         #region CLoseAllControlInWorkSpace
-        void CloseAllControlInWorkSpace()
+        void HideAllControlInWorkPlacePanel()
         {
             foreach (Control item in WorkPlacePanel.Controls)
             {
@@ -783,17 +783,14 @@ namespace StudyManagementApp
 
         private void OpenToDoList_Click(object sender, EventArgs e)
         {
-            if (!toDoList1.Visible)
-            {
-                CloseAllControlInWorkSpace();
-                toDoList1.Show();
-            }
+            HideAllControlInWorkPlacePanel();
+            toDoListTest1.Show();
         }
 
         public void RefreshTodoList()
         {
-            toDoList1.UpdateDatabase();
-            toDoList1.ReLoadData();
+            toDoListTest1.UpdateDatabase();
+            toDoListTest1.ReLoadData();
         }
     }
 }
