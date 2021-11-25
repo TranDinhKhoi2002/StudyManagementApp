@@ -90,9 +90,7 @@ namespace StudyManagementApp
         //Nhấn nút đăng ký thì làm gì?
         private void SignUpButton_Click(object sender, EventArgs e)
         {
-            /* Signup frmSignup = new Signup();
-             frmSignup.ShowDialog(this);*/
-            Account_Function account_Function = new Account_Function();
+            Account_Function account_Function = new Account_Function("signup");
             account_Function.ShowDialog();
         }
         //Nhấn nút đăng nhập thì làm gì?
@@ -334,13 +332,14 @@ namespace StudyManagementApp
 
         /*---------------------------------Câu truyền cảm hứng---------------------------------*/
         #endregion
-        
 
+        #region Quên pass
         //forget pass
         private void forgot_label_Click(object sender, EventArgs e)
         {
-            ForgetPasswordForm fgpForm = new ForgetPasswordForm();
-            fgpForm.Show();
+            Account_Function account_Function = new Account_Function("forgot");
+            account_Function.ShowDialog();
         }
+        #endregion
     }
 }

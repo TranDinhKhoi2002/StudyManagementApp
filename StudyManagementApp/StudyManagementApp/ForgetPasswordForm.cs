@@ -20,6 +20,47 @@ namespace StudyManagementApp
             InitializeComponent();
         }
 
+        public new void Show()
+        {
+            LoadMau();
+            base.Show();
+        }
+
+        void HamDoiMau(Color x,Color y, Color z,Color t,Color u)
+        {
+            this.BackColor = x;
+            lbInstruction.ForeColor = y;
+            lbInstruction.BackColor = z;
+
+            txbUserName.BackColor = x;
+            txbUserName.ForeColor = t;
+            txbUserName.BorderFocusColor = t;
+            txbUserName.BorderColor = u;
+            txbUserName.PlaceholderColor = u;
+
+            txbEmail.BackColor = x;
+            txbEmail.ForeColor = t;
+            txbEmail.BorderFocusColor = t;
+            txbEmail.BorderColor = u;
+            txbEmail.PlaceholderColor = u;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(SacMau.trangvua,Color.White,Color.Gray,SacMau.dendam,Color.Gray);
+
+
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam,SacMau.trangvua,SacMau.dennhat,SacMau.trangvua,Color.Gray);
+
+            }
+        }
+
+
         public static string DomainMapper { get; private set; }
 
         public static string code;
@@ -42,10 +83,14 @@ namespace StudyManagementApp
             else
             {
                 Email.SendEmail(txbEmail.Texts, out code);
-                lbInstruction.Text = "Sent successfully";
+                lbInstruction.Text = "Sent successfully. Let move to verify!";
                 username = txbUserName.Texts;
-                this.Hide();
             }
+        }
+
+        private void ForgetPasswordForm_Load(object sender, EventArgs e)
+        {
+            LoadMau();
         }
     }
 }

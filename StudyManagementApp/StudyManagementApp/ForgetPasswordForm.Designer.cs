@@ -33,15 +33,15 @@ namespace StudyManagementApp
             this.txbEmail = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.txbUserName = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lbInstruction = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,15 +135,15 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.Size = new System.Drawing.Size(504, 422);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
-            // panel1
+            // panel3
             // 
-            this.panel1.Controls.Add(this.txbUserName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(40, 125);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(424, 85);
-            this.panel1.TabIndex = 17;
+            this.panel3.Controls.Add(this.btnReset);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(40, 295);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(424, 85);
+            this.panel3.TabIndex = 19;
             // 
             // panel2
             // 
@@ -155,15 +155,15 @@ namespace StudyManagementApp
             this.panel2.Size = new System.Drawing.Size(424, 85);
             this.panel2.TabIndex = 18;
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.Controls.Add(this.btnReset);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(40, 295);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(424, 85);
-            this.panel3.TabIndex = 19;
+            this.panel1.Controls.Add(this.txbUserName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(40, 125);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(424, 85);
+            this.panel1.TabIndex = 17;
             // 
             // panel4
             // 
@@ -201,10 +201,11 @@ namespace StudyManagementApp
             this.Name = "ForgetPasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetPasswordForm";
+            this.Load += new System.EventHandler(this.ForgetPasswordForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 

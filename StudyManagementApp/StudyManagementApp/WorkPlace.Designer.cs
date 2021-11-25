@@ -141,7 +141,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 378F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 381F));
             this.ToolTablePanel.Controls.Add(this.AddPic_Panel, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -161,10 +161,10 @@ namespace StudyManagementApp
             this.AddPic_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.AddPic_Panel.Controls.Add(this.iconButton4);
             this.AddPic_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPic_Panel.Location = new System.Drawing.Point(951, 0);
+            this.AddPic_Panel.Location = new System.Drawing.Point(948, 0);
             this.AddPic_Panel.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.AddPic_Panel.Name = "AddPic_Panel";
-            this.AddPic_Panel.Size = new System.Drawing.Size(379, 71);
+            this.AddPic_Panel.Size = new System.Drawing.Size(382, 71);
             this.AddPic_Panel.TabIndex = 3;
             // 
             // iconButton4
@@ -178,7 +178,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(337, 0);
+            this.iconButton4.Location = new System.Drawing.Point(340, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(34, 49);
@@ -192,7 +192,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(251, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(232, 71);
+            this.WordToolPanel.Size = new System.Drawing.Size(231, 71);
             this.WordToolPanel.TabIndex = 3;
             // 
             // SaveButtonTablePanel
@@ -204,13 +204,13 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(718, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(716, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(231, 71);
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(230, 71);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
             // SaveButton
@@ -246,7 +246,7 @@ namespace StudyManagementApp
             this.SaveAsButton.Location = new System.Drawing.Point(124, 12);
             this.SaveAsButton.Margin = new System.Windows.Forms.Padding(9, 12, 18, 12);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(89, 47);
+            this.SaveAsButton.Size = new System.Drawing.Size(88, 47);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
@@ -325,10 +325,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(485, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(484, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(231, 71);
+            this.PassageToolPanel.Size = new System.Drawing.Size(230, 71);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -468,7 +468,7 @@ namespace StudyManagementApp
             this.PomodoroPanel.Location = new System.Drawing.Point(0, 370);
             this.PomodoroPanel.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.PomodoroPanel.Name = "PomodoroPanel";
-            this.PomodoroPanel.Padding = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.PomodoroPanel.Padding = new System.Windows.Forms.Padding(9);
             this.PomodoroPanel.Size = new System.Drawing.Size(251, 182);
             this.PomodoroPanel.TabIndex = 1;
             // 
@@ -484,7 +484,7 @@ namespace StudyManagementApp
             this.Start_Stop_Pomodoro_button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Start_Stop_Pomodoro_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(204)))));
             this.Start_Stop_Pomodoro_button.Location = new System.Drawing.Point(89, 115);
-            this.Start_Stop_Pomodoro_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Start_Stop_Pomodoro_button.Margin = new System.Windows.Forms.Padding(4);
             this.Start_Stop_Pomodoro_button.Name = "Start_Stop_Pomodoro_button";
             this.Start_Stop_Pomodoro_button.Size = new System.Drawing.Size(76, 38);
             this.Start_Stop_Pomodoro_button.TabIndex = 3;
@@ -609,7 +609,7 @@ namespace StudyManagementApp
             // OpenToDoList
             // 
             this.OpenToDoList.Location = new System.Drawing.Point(100, 64);
-            this.OpenToDoList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OpenToDoList.Margin = new System.Windows.Forms.Padding(4);
             this.OpenToDoList.Name = "OpenToDoList";
             this.OpenToDoList.Size = new System.Drawing.Size(138, 29);
             this.OpenToDoList.TabIndex = 1;
@@ -691,7 +691,7 @@ namespace StudyManagementApp
             this.CalendarButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CalendarButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.CalendarButton.Location = new System.Drawing.Point(61, 195);
-            this.CalendarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CalendarButton.Margin = new System.Windows.Forms.Padding(4);
             this.CalendarButton.Name = "CalendarButton";
             this.CalendarButton.Size = new System.Drawing.Size(126, 44);
             this.CalendarButton.TabIndex = 2;
@@ -762,7 +762,7 @@ namespace StudyManagementApp
             this.PomodoroFunctionTableLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PomodoroFunctionTableLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PomodoroFunctionTableLabel.Location = new System.Drawing.Point(722, 4);
-            this.PomodoroFunctionTableLabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PomodoroFunctionTableLabel.Margin = new System.Windows.Forms.Padding(4);
             this.PomodoroFunctionTableLabel.Name = "PomodoroFunctionTableLabel";
             this.PomodoroFunctionTableLabel.RowCount = 1;
             this.PomodoroFunctionTableLabel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -932,7 +932,7 @@ namespace StudyManagementApp
             this.CommnadFunctionPanel.Controls.Add(this.tableLayoutPanel5);
             this.CommnadFunctionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CommnadFunctionPanel.Location = new System.Drawing.Point(4, 4);
-            this.CommnadFunctionPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CommnadFunctionPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CommnadFunctionPanel.Name = "CommnadFunctionPanel";
             this.CommnadFunctionPanel.Size = new System.Drawing.Size(351, 41);
             this.CommnadFunctionPanel.TabIndex = 0;
@@ -997,7 +997,7 @@ namespace StudyManagementApp
             this.pictureBox2.Image = global::StudyManagementApp.Properties.Resources.message_command;
             this.pictureBox2.ImageLocation = "";
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(51, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1021,7 +1021,7 @@ namespace StudyManagementApp
             this.Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.Main_customCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Main_customCalendar.Location = new System.Drawing.Point(0, 0);
-            this.Main_customCalendar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Main_customCalendar.Margin = new System.Windows.Forms.Padding(5);
             this.Main_customCalendar.Name = "Main_customCalendar";
             this.Main_customCalendar.Size = new System.Drawing.Size(1079, 504);
             this.Main_customCalendar.TabIndex = 0;
@@ -1029,7 +1029,7 @@ namespace StudyManagementApp
             // toDoListTest1
             // 
             this.toDoListTest1.Location = new System.Drawing.Point(165, 249);
-            this.toDoListTest1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.toDoListTest1.Margin = new System.Windows.Forms.Padding(5);
             this.toDoListTest1.Name = "toDoListTest1";
             this.toDoListTest1.Size = new System.Drawing.Size(190, 70);
             this.toDoListTest1.TabIndex = 1;
@@ -1059,6 +1059,7 @@ namespace StudyManagementApp
             // 
             // helpUC1
             // 
+            this.helpUC1.AutoScroll = true;
             this.helpUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.helpUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.helpUC1.Location = new System.Drawing.Point(0, 0);
