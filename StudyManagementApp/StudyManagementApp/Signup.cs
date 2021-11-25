@@ -74,16 +74,26 @@ namespace StudyManagementApp
                 lbInstruction.Text = "Re-Password can't be blank!";
             else if (PasswordTextBox.Texts != RePasswordTextbox.Texts)
                 lbInstruction.Text = "Re-Password don't match!";
+            else if(!Email.IsValidEmail(Email_TextBox.Texts))
+            {
+                lbInstruction.Text = "Email is invalid";
+            }
+            else if (AccountDAO.Instance.EmailExist(Email_TextBox.Texts))
+            {
+                lbInstruction.Text = "Email is already used";
+            }
             else
             {
                 try
                 {
                     string username = UsernameTextBox.Texts;
                     string password = PasswordTextBox.Texts;
+                    string email = Email_TextBox.Texts;
 
-                    if (AccountDAO.Instance.Signup(username, password) == true)
+                    if (AccountDAO.Instance.Signup(username, password, email) == true)
                     {
                         lbInstruction.Text = "Sign-up successfully!";
+                        UsernameTextBox.Texts = PasswordTextBox.Texts = RePasswordTextbox.Texts = Email_TextBox.Texts = "";
                     }
                 }
                 catch (System.Data.SqlClient.SqlException)

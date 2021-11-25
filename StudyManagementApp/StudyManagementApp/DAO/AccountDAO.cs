@@ -40,9 +40,9 @@ namespace StudyManagementApp.DAO
             return result.Rows.Count > 0;
         }
 
-        public bool Signup(string userName, string passWord)
+        public bool Signup(string userName, string passWord, string email)
         {
-            string query = "USP_Signup @userName , @passWord";
+            string query = "USP_Signup @userName , @passWord , @email";
 
             //Create hashcode for password
             string passwordHash;
@@ -51,7 +51,7 @@ namespace StudyManagementApp.DAO
                 passwordHash = Hash.GetHash(sha256Hash, passWord);
             }
 
-            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passwordHash });
+            int result = DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, passwordHash, email });
 
             return result > 0;
         }
@@ -79,6 +79,43 @@ namespace StudyManagementApp.DAO
                 string query = "USP_VerifyUserExist @userName";
 
                 if (DataProvider.Instance.ExecuteQuery(query, new object[] { userName }).Rows.Count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+                return false;
+            }
+        }
+
+        public bool EmailExist(string email)
+        {
+            try
+            {
+                string query = "USP_VerifyEmailExist @email";
+
+                if (DataProvider.Instance.ExecuteQuery(query, new object[] { email}).Rows.Count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception excpt)
+            {
+                MessageBox.Show(excpt.Message);
+                return false;
+            }
+        }
+
+        public bool EmailOfEachUser(string userName, string email)
+        {
+            try
+            {
+                string query = "USP_EmailOfEachUser @userName , @email";
+                if (DataProvider.Instance.ExecuteQuery(query, new object[] { userName, email}).Rows.Count > 0)
                 {
                     return true;
                 }

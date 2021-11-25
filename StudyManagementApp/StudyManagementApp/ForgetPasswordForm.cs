@@ -80,11 +80,16 @@ namespace StudyManagementApp
             {
                 lbInstruction.Text = "Your email is invalid";
             }
+            else if (!AccountDAO.Instance.EmailOfEachUser(txbUserName.Texts, txbEmail.Texts))
+            {
+                lbInstruction.Text = "Your email is incorrect";
+            }
             else
             {
                 Email.SendEmail(txbEmail.Texts, out code);
-                lbInstruction.Text = "Sent successfully. Let move to verify!";
+                lbInstruction.Text = "We just sent you an email. Verify now!";
                 username = txbUserName.Texts;
+                txbUserName.Texts = txbEmail.Texts = "";
             }
         }
 

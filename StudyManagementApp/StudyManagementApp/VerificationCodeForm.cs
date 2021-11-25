@@ -89,9 +89,9 @@ namespace StudyManagementApp
             }
             else
             {
-                MessageBox.Show("Verify successfully", "Done");
+                lbInstruction.Text = "Verify successfully";
                 AccountDAO.Instance.ChangePassword(userName, txbNewPassword.Texts);
-                this.Hide();
+                txbCode.Texts = txbNewPassword.Texts = txbConfirmPassword.Texts = "";
             }
         }
     }
