@@ -135,7 +135,7 @@ namespace StudyManagementApp.UserControls
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
             this.dateTimePicker1.TabIndex = 0;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
             // panel2
             // 
@@ -196,9 +196,9 @@ namespace StudyManagementApp.UserControls
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(690, 455);
             this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
-            this.dataGridView1.SizeChanged += new System.EventHandler(this.dataGridView1_SizeChanged);
-            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataGridView1_CellMouseClick);
+            this.dataGridView1.SizeChanged += new System.EventHandler(this.DataGridView1_SizeChanged);
+            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DataGridView1_MouseClick);
             // 
             // panel4
             // 
@@ -220,7 +220,7 @@ namespace StudyManagementApp.UserControls
             this.btn_Delete.TabIndex = 1;
             this.btn_Delete.Text = "Delete Selected";
             this.btn_Delete.UseVisualStyleBackColor = true;
-            this.btn_Delete.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Delete.Click += new System.EventHandler(this.Button2_Click);
             // 
             // btn_Add
             // 
@@ -231,7 +231,7 @@ namespace StudyManagementApp.UserControls
             this.btn_Add.TabIndex = 0;
             this.btn_Add.Text = "add";
             this.btn_Add.UseVisualStyleBackColor = true;
-            this.btn_Add.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Add.Click += new System.EventHandler(this.Button1_Click);
             // 
             // contextMenuStrip1
             // 
@@ -246,14 +246,14 @@ namespace StudyManagementApp.UserControls
             this.markAsCompleteToolStripMenuItem.Name = "markAsCompleteToolStripMenuItem";
             this.markAsCompleteToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.markAsCompleteToolStripMenuItem.Text = "Mark as completed";
-            this.markAsCompleteToolStripMenuItem.Click += new System.EventHandler(this.markAsCompleteToolStripMenuItem_Click);
+            this.markAsCompleteToolStripMenuItem.Click += new System.EventHandler(this.MarkAsCompleteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
             this.deleteToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
             // 
             // contextMenuStrip2
             // 
@@ -267,7 +267,7 @@ namespace StudyManagementApp.UserControls
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.RefreshToolStripMenuItem_Click);
             // 
             // Checkbox
             // 

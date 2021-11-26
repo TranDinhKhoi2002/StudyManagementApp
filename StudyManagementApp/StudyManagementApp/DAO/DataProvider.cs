@@ -7,14 +7,14 @@ namespace StudyManagementApp.DAO
 {
     public class DataProvider
     {
-        //private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp2;Integrated Security=True";
-        private string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
-        //private string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
-        //private string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
-        //static string connectionStr = @"Data Source=DESKTOP-3HC7LCK\TRITRAN;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
+        //private readonly string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp2;Integrated Security=True";
+        //private readonly string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
+        private readonly string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
+        //private readonly string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
+        //static readonly string connectionStr = @"Data Source=DESKTOP-3HC7LCK\TRITRAN;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
         static DateTime time_choose = DateTime.Now;
 
-        public string sqlConn
+        public string SqlConn
         {
             get { return connectionStr; }
         }
@@ -25,7 +25,7 @@ namespace StudyManagementApp.DAO
             set { time_choose = value; }
         }
 
-        public static DataProvider instance = new DataProvider();
+        private static DataProvider instance;
 
         public static DataProvider Instance 
         { 

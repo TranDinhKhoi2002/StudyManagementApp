@@ -314,7 +314,7 @@ namespace StudyManagementApp
             this.toggleButton1.Size = new System.Drawing.Size(116, 42);
             this.toggleButton1.TabIndex = 10;
             this.toggleButton1.UseVisualStyleBackColor = true;
-            this.toggleButton1.CheckedChanged += new System.EventHandler(this.toggleButton1_CheckedChanged);
+            this.toggleButton1.CheckedChanged += new System.EventHandler(this.ToggleButton1_CheckedChanged);
             // 
             // label4
             // 

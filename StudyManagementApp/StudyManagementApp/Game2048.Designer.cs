@@ -313,9 +313,9 @@
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = false;
             this.btnNewGame.Visible = false;
-            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
-            this.btnNewGame.MouseLeave += new System.EventHandler(this.btnNewGame_MouseLeave);
-            this.btnNewGame.MouseHover += new System.EventHandler(this.btnNewGame_MouseHover);
+            this.btnNewGame.Click += new System.EventHandler(this.BtnNewGame_Click);
+            this.btnNewGame.MouseLeave += new System.EventHandler(this.BtnNewGame_MouseLeave);
+            this.btnNewGame.MouseHover += new System.EventHandler(this.BtnNewGame_MouseHover);
             // 
             // btnExit
             // 
@@ -333,9 +333,9 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Visible = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            this.btnExit.MouseLeave += new System.EventHandler(this.btnExit_MouseLeave);
-            this.btnExit.MouseHover += new System.EventHandler(this.btnExit_MouseHover);
+            this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            this.btnExit.MouseLeave += new System.EventHandler(this.BtnExit_MouseLeave);
+            this.btnExit.MouseHover += new System.EventHandler(this.BtnExit_MouseHover);
             // 
             // menuStrip1
             // 
@@ -365,21 +365,21 @@
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(191, 36);
             this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGameToolStripMenuItem_Click);
             // 
             // continueToolStripMenuItem
             // 
             this.continueToolStripMenuItem.Name = "continueToolStripMenuItem";
             this.continueToolStripMenuItem.Size = new System.Drawing.Size(191, 36);
             this.continueToolStripMenuItem.Text = "Continue";
-            this.continueToolStripMenuItem.Click += new System.EventHandler(this.continueToolStripMenuItem_Click);
+            this.continueToolStripMenuItem.Click += new System.EventHandler(this.ContinueToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(191, 36);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // lblAbout
             // 

@@ -45,7 +45,7 @@ namespace StudyManagementApp
             }
 
             //Kiểm tra thông tin nhập
-            if (!CurrentPassword_textbox.Texts.Equals(UserInfo.getInstance().Password))
+            if (!CurrentPassword_textbox.Texts.Equals(UserInfo.Instance.Password))
             {
                 MessageBox.Show("Current password wrong, try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 CurrentPassword_textbox.Texts = "";
@@ -61,7 +61,7 @@ namespace StudyManagementApp
             }
             //Đổi mật khẩu
             AccountDAO.Instance.ChangePassword(
-                UserInfo.getInstance().Username,
+                UserInfo.Instance.Username,
                 ReNewPassword_textbox.Texts
                 );
 
@@ -103,7 +103,7 @@ namespace StudyManagementApp
             ReNewPassword_textbox.PlaceholderColor = z;
             ReNewPassword_textbox.BackColor = x;           
         }
-        private void toggleButton1_CheckedChanged(object sender, EventArgs e)
+        private void ToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
             Program.Theme = toggleButton1.Checked;
             if(Program.Theme==true)

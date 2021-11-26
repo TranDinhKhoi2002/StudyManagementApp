@@ -49,7 +49,7 @@ namespace StudyManagementApp.UserControls
                 if (CountCheckBox() > 0)
                 {
 
-                    var strCons = DataProvider.Instance.sqlConn;
+                    var strCons = DataProvider.Instance.SqlConn;
                     var sqlConn = new SqlConnection(strCons);
                     sqlConn.Open();
 
@@ -59,7 +59,7 @@ namespace StudyManagementApp.UserControls
                         if (ischeck)
                         {
                             var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp].[dbo].[TASK] " +
-                                                    " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                                    " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                                     + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                                     + " AND DESCIPTION = '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'", sqlConn);
                             sqlCommand.ExecuteNonQuery();
@@ -134,11 +134,11 @@ namespace StudyManagementApp.UserControls
         {
             int rowindex = dataGridView1.SelectedRows[0].Index;
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
             var sqlCommand = new SqlCommand("UPDATE TASK SET DONE = 'Completed'" +
-                                            " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                            " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                             + " AND DESCIPTION = '" + dataGridView1.Rows[rowindex].Cells[1].Value.ToString() + "'", sqlConn);
             sqlCommand.ExecuteNonQuery();
@@ -149,11 +149,11 @@ namespace StudyManagementApp.UserControls
         private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             int rowindex = dataGridView1.SelectedRows[0].Index;
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
             var sqlCommand = new SqlCommand("DELETE FROM TASK" +
-                                            " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                            " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                             + " AND DESCIPTION = '" + dataGridView1.Rows[rowindex].Cells[1].Value.ToString() + "'", sqlConn);
             sqlCommand.ExecuteNonQuery();
@@ -172,12 +172,12 @@ namespace StudyManagementApp.UserControls
         public void UpdateDatabase()
         {
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
 
             var sqlCommand = new SqlCommand("UPDATE TASK SET DONE='Past Due' " +
-                                             " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                             " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DONE != 'Completed' "
                                             + $" AND TIMEEND < GETDATE()", sqlConn);
             sqlCommand.ExecuteNonQuery();
@@ -188,7 +188,7 @@ namespace StudyManagementApp.UserControls
         {
             dataGridView1.Rows.Clear();
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
 
@@ -196,7 +196,7 @@ namespace StudyManagementApp.UserControls
             sqlCommand.Parameters.AddWithValue("@Year", DataProvider.Instance.User_Time_Choose.Year);
             sqlCommand.Parameters.AddWithValue("@Month", DataProvider.Instance.User_Time_Choose.Month);
             sqlCommand.Parameters.AddWithValue("@Day", DataProvider.Instance.User_Time_Choose.Day);
-            sqlCommand.Parameters.AddWithValue("@User", UserInfo.instance.Username);
+            sqlCommand.Parameters.AddWithValue("@User", UserInfo.Instance.Username);
             //sqlCommand.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
 
 

@@ -36,7 +36,7 @@ namespace StudyManagementApp
         //Hàm load
         private void WorkPlace_Load(object sender, EventArgs e)
         {
-            UserNameLabel.Text = UserInfo.getInstance().Username;
+            UserNameLabel.Text = UserInfo.Instance.Username;
             //toDoList1.Visible = false;
             toDoListTest1.Hide();
             toDoListTest1.Dock = DockStyle.Fill;
@@ -721,7 +721,7 @@ namespace StudyManagementApp
         #region ChayNen
         /*---------------------------------Background---------------------------------*/
 
-        private void notifyBackground_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void NotifyBackground_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             this.Show();
             this.WindowState = FormWindowState.Normal;
@@ -733,7 +733,7 @@ namespace StudyManagementApp
             e.Cancel = true;
         }
 
-        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Show();
             DialogResult dialogResult = MessageBox.Show("Do you want to exit?", "Notification", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

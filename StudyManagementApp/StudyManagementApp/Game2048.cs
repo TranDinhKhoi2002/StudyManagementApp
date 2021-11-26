@@ -110,7 +110,7 @@ namespace StudyManagementApp
 
         }
 
-        public void initGame()
+        public void InitGame()
         {
             arrNumberOfBlanks.Clear();
 
@@ -245,15 +245,15 @@ namespace StudyManagementApp
 
             if (kTraKhoiTao == true)
             {
-                initGame();
+                InitGame();
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            initGame();
-            initGame();
-            initGame();
+            InitGame();
+            InitGame();
+            InitGame();
         }
         public void MoveDown()
         {
@@ -350,7 +350,7 @@ namespace StudyManagementApp
 
             if (isInit == true)
             {
-                initGame();
+                InitGame();
             }
         }
         public void MoveLeft()
@@ -450,7 +450,7 @@ namespace StudyManagementApp
 
             if (isInit == true)
             {
-                initGame();
+                InitGame();
             }
         }
         public void MoveRight()
@@ -548,10 +548,10 @@ namespace StudyManagementApp
 
             if (checkInit == true)
             {
-                initGame();
+                InitGame();
             }
         }
-        public bool endGame()
+        public bool EndGame()
         {
 
             Label[,] Game = {
@@ -606,7 +606,7 @@ namespace StudyManagementApp
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (endGame() == false)
+            if (EndGame() == false)
             {
                 if (e.KeyCode == Keys.Up)
                 {
@@ -642,7 +642,7 @@ namespace StudyManagementApp
 
         }
 
-        private void btnNewGame_Click(object sender, EventArgs e)
+        private void BtnNewGame_Click(object sender, EventArgs e)
         {
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             lblScore.Text = "0";
@@ -665,18 +665,18 @@ namespace StudyManagementApp
                     Game[i, j].Text = "";
                 }
             }
-            initGame();
-            initGame();
-            initGame();
+            InitGame();
+            InitGame();
+            InitGame();
 
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void BtnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NewGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
 
@@ -711,12 +711,12 @@ namespace StudyManagementApp
                     Game[i, j].Text = "";
                 }
             }
-            initGame();
-            initGame();
-            initGame();
+            InitGame();
+            InitGame();
+            InitGame();
         }
 
-        private void continueToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ContinueToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
 
@@ -749,7 +749,7 @@ namespace StudyManagementApp
             }
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             lblGameOver.Visible = false;
             lblScore.Visible = false;
@@ -776,32 +776,32 @@ namespace StudyManagementApp
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnNewGame_MouseHover(object sender, EventArgs e)
+        private void BtnNewGame_MouseHover(object sender, EventArgs e)
         {
             btnNewGame.BackColor = Color.Black;
         }
 
-        private void btnNewGame_MouseLeave(object sender, EventArgs e)
+        private void BtnNewGame_MouseLeave(object sender, EventArgs e)
         {
             btnNewGame.BackColor = Color.Gray;
         }
 
-        private void btnExit_MouseHover(object sender, EventArgs e)
+        private void BtnExit_MouseHover(object sender, EventArgs e)
         {
             btnExit.BackColor = Color.Black;
         }
 
-        private void btnExit_MouseLeave(object sender, EventArgs e)
+        private void BtnExit_MouseLeave(object sender, EventArgs e)
         {
             btnExit.BackColor = Color.Gray;
         }
 
-        private void ptbImage_Click(object sender, EventArgs e)
+        private void PtbImage_Click(object sender, EventArgs e)
         {
 
         }

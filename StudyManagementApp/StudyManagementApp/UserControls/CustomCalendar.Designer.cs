@@ -487,7 +487,7 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NgayThangNam_customDateTimePicker.TabIndex = 0;
             this.NgayThangNam_customDateTimePicker.TextColor = System.Drawing.Color.White;
-            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.customDateTimePicker1_ValueChanged);
+            this.NgayThangNam_customDateTimePicker.ValueChanged += new System.EventHandler(this.CustomDateTimePicker1_ValueChanged);
             // 
             // panel4
             // 
@@ -522,7 +522,7 @@ namespace StudyManagementApp.UserControls
             // timerEmail
             // 
             this.timerEmail.Interval = 604800000;
-            this.timerEmail.Tick += new System.EventHandler(this.timerEmail_Tick);
+            this.timerEmail.Tick += new System.EventHandler(this.TimerEmail_Tick);
             // 
             // CustomCalendar
             // 

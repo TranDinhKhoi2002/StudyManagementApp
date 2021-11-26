@@ -149,7 +149,7 @@
             this.forgot_label.TabIndex = 6;
             this.forgot_label.Text = " Forget something?";
             this.forgot_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.forgot_label.Click += new System.EventHandler(this.forgot_label_Click);
+            this.forgot_label.Click += new System.EventHandler(this.Forgot_label_Click);
             // 
             // TruyencamhungLabel
             // 
@@ -322,7 +322,7 @@
             // 
             this.ChangeCau_Timer.Enabled = true;
             this.ChangeCau_Timer.Interval = 3000;
-            this.ChangeCau_Timer.Tick += new System.EventHandler(this.timer1_Tick);
+            this.ChangeCau_Timer.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Login
             // 

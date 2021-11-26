@@ -113,8 +113,8 @@ namespace StudyManagementApp
                 if (AccountDAO.Instance.Login(userName, passWord))
                 {
                     //Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
-                    UserInfo.getInstance().Username = userName;
-                    UserInfo.getInstance().Password = passWord;
+                    UserInfo.Instance.Username = userName;
+                    UserInfo.Instance.Password = passWord;
 
                     //Vào chương trình
                     WorkPlace globalWorkPlace = new WorkPlace();
@@ -325,7 +325,7 @@ namespace StudyManagementApp
             return text[t];
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void Timer1_Tick(object sender, EventArgs e)
         {
             TruyencamhungLabel.Text = GetTruyenCamHung();
         }
@@ -335,7 +335,7 @@ namespace StudyManagementApp
 
         #region Quên pass
         //forget pass
-        private void forgot_label_Click(object sender, EventArgs e)
+        private void Forgot_label_Click(object sender, EventArgs e)
         {
             Account_Function account_Function = new Account_Function("forgot");
             account_Function.ShowDialog();

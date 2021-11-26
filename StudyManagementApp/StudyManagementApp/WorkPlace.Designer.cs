@@ -1086,7 +1086,7 @@ namespace StudyManagementApp
             this.Zst_notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("Zst_notifyIcon.Icon")));
             this.Zst_notifyIcon.Text = "StudyManagementApp";
             this.Zst_notifyIcon.Visible = true;
-            this.Zst_notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyBackground_MouseDoubleClick);
+            this.Zst_notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.NotifyBackground_MouseDoubleClick);
             // 
             // cmstripBackground
             // 
@@ -1101,7 +1101,7 @@ namespace StudyManagementApp
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
             this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItem_Click);
             // 
             // WorkPlace
             // 

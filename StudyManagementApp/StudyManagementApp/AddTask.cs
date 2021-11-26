@@ -43,11 +43,11 @@ namespace StudyManagementApp
                 try
                 {
 
-                    var strCons = DataProvider.Instance.sqlConn;
+                    var strCons = DataProvider.Instance.SqlConn;
                     var sqlConn = new SqlConnection(strCons);
                     sqlConn.Open();
 
-                    var sqlCommand = new SqlCommand("INSERT INTO [StudyManagementApp].[dbo].[TASK] VALUES ('" + UserInfo.instance.Username + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "','" + tb_descip.Text + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + starttime_picker.Value.ToString(" HH:mm") + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + endtime_picker.Value.ToString("HH:mm") + "','Pending')", sqlConn);
+                    var sqlCommand = new SqlCommand("INSERT INTO [StudyManagementApp].[dbo].[TASK] VALUES ('" + UserInfo.Instance.Username + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "','" + tb_descip.Text + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + starttime_picker.Value.ToString(" HH:mm") + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + endtime_picker.Value.ToString("HH:mm") + "','Pending')", sqlConn);
                     sqlCommand.ExecuteNonQuery();
 
                     /*  var sqlCommand = new SqlCommand("Insert into [StudyManagementApp].[dbo].[TASK] values ('@USERNAME' , '@DATECREATE' , '@Desciption' , '@TimeStart' , '@TimeEnd' , NULL)",sqlConn);

@@ -8,8 +8,18 @@ namespace StudyManagementApp
 {
     class UserInfo
     {
-        public static UserInfo instance = new UserInfo();
+        private static UserInfo instance = new UserInfo();
 
+        public static UserInfo Instance
+        {
+            get
+            {
+                if (instance == null)
+                    instance = new UserInfo();
+                return instance;
+            }
+            private set => instance = value;
+        }
 
         //Attribute
         private string username = "";
@@ -20,14 +30,5 @@ namespace StudyManagementApp
         //Property
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
-
-        public static UserInfo getInstance()
-        {
-            if (instance == null)
-            {
-                instance = new UserInfo();
-            }
-            return instance;
-        }
     }
 }

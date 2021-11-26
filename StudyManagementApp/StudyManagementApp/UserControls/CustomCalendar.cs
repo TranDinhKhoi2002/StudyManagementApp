@@ -135,7 +135,7 @@ namespace StudyManagementApp.UserControls
             {
                 for(int j=0;j<col;j++)
                 {
-                    arrButton[i][j].Click += new System.EventHandler(this.arrButton_Click);
+                    arrButton[i][j].Click += new System.EventHandler(this.ArrButton_Click);
                     arrButton[i][j].Tag = i.ToString() + j.ToString();
                 }
             }    
@@ -164,7 +164,7 @@ namespace StudyManagementApp.UserControls
         }
 
         //Sự kiện của các nút ngày trong cuốn lịch
-        private void arrButton_Click(object sender, EventArgs e)
+        private void ArrButton_Click(object sender, EventArgs e)
         {
             
             Button nutngay = sender as Button;
@@ -353,13 +353,13 @@ namespace StudyManagementApp.UserControls
             }    
             
         }
-        private void customDateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void CustomDateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             LoadDateCalendar();
             LoadColorDate();
         }
 
-        private void timerEmail_Tick(object sender, EventArgs e)
+        private void TimerEmail_Tick(object sender, EventArgs e)
         {
             for (int i = 0; i < row; i++)
             {

@@ -26,12 +26,12 @@ namespace StudyManagementApp.UserControls
         {
             dataGridView1.Rows.Clear();
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
 
             var sqlCommand = new SqlCommand();
-            sqlCommand = new SqlCommand("SELECT * FROM TASK WHERE USERNAME= '" + UserInfo.instance.Username + "' AND YEAR(DATECREATE) =" + DataProvider.instance.User_Time_Choose.Year + "AND MONTH(DATECREATE) = " + DataProvider.instance.User_Time_Choose.Month + " AND DAY(DATECREATE) = " + DataProvider.instance.User_Time_Choose.Day, sqlConn);
+            sqlCommand = new SqlCommand("SELECT * FROM TASK WHERE USERNAME= '" + UserInfo.Instance.Username + "' AND YEAR(DATECREATE) =" + DataProvider.Instance.User_Time_Choose.Year + "AND MONTH(DATECREATE) = " + DataProvider.Instance.User_Time_Choose.Month + " AND DAY(DATECREATE) = " + DataProvider.Instance.User_Time_Choose.Day, sqlConn);
 
             //sqlCommand.Parameters.AddWithValue("@Date", dateTimePicker1.Value);
 
@@ -50,12 +50,12 @@ namespace StudyManagementApp.UserControls
         public void UpdateDatabase()
         {
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
 
             var sqlCommand = new SqlCommand("UPDATE TASK SET DONE='Past Due' " +
-                                             " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                             " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DONE != 'Completed' "
                                             + $" AND TIMEEND < GETDATE()", sqlConn);
             sqlCommand.ExecuteNonQuery();
@@ -65,20 +65,20 @@ namespace StudyManagementApp.UserControls
         #endregion
 
         #region 2 nút add delete
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Form f = new AddTask();
             f.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             if (dataGridView1.Rows.Count > 0)
             {
                 if (CountCheckBox() > 0)
                 {
 
-                    var strCons = DataProvider.Instance.sqlConn;
+                    var strCons = DataProvider.Instance.SqlConn;
                     var sqlConn = new SqlConnection(strCons);
                     sqlConn.Open();
 
@@ -88,7 +88,7 @@ namespace StudyManagementApp.UserControls
                         if (ischeck)
                         {
                             var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp].[dbo].[TASK] " +
-                                                    " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                                    " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                                     + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                                     + " AND DESCIPTION = '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'", sqlConn);
                             sqlCommand.ExecuteNonQuery();
@@ -125,7 +125,7 @@ namespace StudyManagementApp.UserControls
         #endregion
 
         #region Event cuốn lịch, UI làm lại sau
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void DateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             DataProvider.Instance.User_Time_Choose = dateTimePicker1.Value;
             ReLoadData();
@@ -133,13 +133,13 @@ namespace StudyManagementApp.UserControls
         #endregion
 
         #region Event DataGrid
-        private void dataGridView1_SizeChanged(object sender, EventArgs e)
+        private void DataGridView1_SizeChanged(object sender, EventArgs e)
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             ReLoadData();
         }
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void DataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
@@ -147,7 +147,7 @@ namespace StudyManagementApp.UserControls
             }
         }
 
-        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+        private void DataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
 
             if (e.Button == MouseButtons.Right)
@@ -161,38 +161,38 @@ namespace StudyManagementApp.UserControls
 
         #endregion
 
-        private void markAsCompleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void MarkAsCompleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int rowindex = dataGridView1.SelectedRows[0].Index;
 
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
             var sqlCommand = new SqlCommand("UPDATE TASK SET DONE = 'Completed'" +
-                                            " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                            " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                             + " AND DESCIPTION = '" + dataGridView1.Rows[rowindex].Cells[1].Value.ToString() + "'", sqlConn);
             sqlCommand.ExecuteNonQuery();
             sqlConn.Close();
-            refreshToolStripMenuItem_Click(sender, e);
+            RefreshToolStripMenuItem_Click(sender, e);
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int rowindex = dataGridView1.SelectedRows[0].Index;
-            var strCons = DataProvider.Instance.sqlConn;
+            var strCons = DataProvider.Instance.SqlConn;
             var sqlConn = new SqlConnection(strCons);
             sqlConn.Open();
             var sqlCommand = new SqlCommand("DELETE FROM TASK" +
-                                            " WHERE USERNAME = '" + UserInfo.instance.Username + "'"
+                                            " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                             + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                             + " AND DESCIPTION = '" + dataGridView1.Rows[rowindex].Cells[1].Value.ToString() + "'", sqlConn);
             sqlCommand.ExecuteNonQuery();
             sqlConn.Close();
-            refreshToolStripMenuItem_Click(sender, e);
+            RefreshToolStripMenuItem_Click(sender, e);
         }
 
-        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             UpdateDatabase();
             ReLoadData();
