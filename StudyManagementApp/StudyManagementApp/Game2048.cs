@@ -120,24 +120,25 @@ namespace StudyManagementApp
                                 {lbl9,lbl10,lbl11,lbl12},
                                 {lbl13,lbl14,lbl15,lbl16}
                               };
+     //Đánh số cho chỗ trống
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
                 {
                     if (Game[i, j].Text == "")
                     {
-                        arrNumberOfBlanks.Add(i * 4 + j + 1);
+                        arrNumberOfBlanks.Add(i * 4 + j + 1); // *4 là xuống dòng, +1 là do mảng từ 0
                     }
                 }
             }
-
+//Nếu còn tồn tại ô trống thì bắt đầu thêm ngẫu nhiên
             if (arrNumberOfBlanks.Count > 0)
             {
 
-                int IndexImage = int.Parse(arrNumberOfBlanks[random.Next(0, arrNumberOfBlanks.Count - 1)].ToString());
-                int i0 = (IndexImage - 1) / 4;
-                int j0 = (IndexImage - 1) - i0 * 4;
-                int Randomize = random.Next(1, 10);
+                int IndexImage = int.Parse(arrNumberOfBlanks[random.Next(0, arrNumberOfBlanks.Count - 1)].ToString()); //Chọn ngẫu nhiên một ô trống trong tập ô trống
+                int i0 = (IndexImage - 1) / 4; //Một phép tính random ra hàng
+                int j0 = (IndexImage - 1) - i0 * 4; //Một phép tính random ra cột
+                int Randomize = random.Next(1, 10); //Một cái random chọn số thêm vô
                 if (Randomize == 1 || Randomize == 2 || Randomize == 3 || Randomize == 4 || Randomize == 5 || Randomize == 6)
                 {
                     Game[i0, j0].Text = "2";
@@ -152,9 +153,11 @@ namespace StudyManagementApp
         }
         public void MoveUp()
         {
+            //Hai biến này để làm hiệu ứng âm thanh nhưng chưa có file âm thanh nên để sẵn, nào rãnh thì làm
             bool notMove = true;
             bool score = false;
-            bool kTraKhoiTao = false;
+           
+            bool CheckInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
                                 {lbl5,lbl6,lbl7,lbl8},
@@ -163,11 +166,15 @@ namespace StudyManagementApp
                               };
             for (int i = 0; i < 4; i++)
             {
+                //Đang xử lí nút lên, nên phải xét từng cột, khi qua cột mới Blank trả lại = 0
                 int Blank = 0;
                 for (int j = 0; j < 4; j++)
                 {
+                    //Khúc for này là xử lý điểm cộng
                     for (int k = j + 1; k < 4; k++)
                     {
+                        //Trong từng cái cột xét ô đó và ô lần lượt dưới nó
+                        //Nếu không trống thì xét coi có bằng không
                         if (Game[k, i].Text != "")
                         {
                             if (Game[k, i].Text == Game[j, i].Text)
@@ -175,23 +182,27 @@ namespace StudyManagementApp
                                 score = true;
                             }
                             break;
+                            //Không bằng thì thoát khỏi cái j hiện tại, xét cái j tiếp theo
                         }
                     }
                     if (Game[j, i].Text == "")
                     {
                         Blank++;
+                        //Đếm ô rỗng trong cột, nếu không rỗng thì tới công chuyện
                     }
+                    //Khúc else này là xử lý biến đổi của cái game
                     else
                     {
-                        for (int m = j; m >= 0; m--)
+                        for (int m = j - 1; m >= 0; m--)
                         {
+                           //Check coi có khởi tạo tiếp được không, nếu đẩy lên được thì khởi tạo tiếp được
                             if (Game[m, i].Text == "")
                             {
-                                kTraKhoiTao = true;
+                                CheckInit = true;
                                 break;
                             }
                         }
-                        if (j + 1 < 4)
+                        if (j + 1 < 4) //Là hàng cuối thì không được
                         {
                             bool flag = true;
 
@@ -201,11 +212,15 @@ namespace StudyManagementApp
                                 {
                                     if (Game[j, i].Text == Game[k, i].Text)
                                     {
+                                        //Cập nhật điểm
                                         notMove = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[j, i].Text) * 2).ToString();
-                                        kTraKhoiTao = true;
+                                        CheckInit = true;
                                         flag = false;
+                                        //Cập nhật ô được nhận 2
                                         Game[j, i].Text = (int.Parse(Game[j, i].Text) * 2).ToString();
+
+                                        //Đẩy mọi thứ lên phía trên
                                         if (Blank != 0)
                                         {
                                             Game[j - Blank, i].Text = Game[j, i].Text;
@@ -243,7 +258,7 @@ namespace StudyManagementApp
                 }
             }
 
-            if (kTraKhoiTao == true)
+            if (CheckInit == true)
             {
                 InitGame();
             }
@@ -251,6 +266,7 @@ namespace StudyManagementApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Khi khởi tạo cho sẵn 3 số
             InitGame();
             InitGame();
             InitGame();
@@ -356,7 +372,7 @@ namespace StudyManagementApp
         public void MoveLeft()
         {
             bool notMoveLeft = true;
-            bool anDiem = false;
+            bool Score = false;
             bool isInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -376,7 +392,7 @@ namespace StudyManagementApp
                         {
                             if (Game[i, j].Text == Game[i, k].Text)
                             {
-                                anDiem = true;
+                                Score = true;
                             }
                             break;
                         }
@@ -456,7 +472,7 @@ namespace StudyManagementApp
         public void MoveRight()
         {
             bool notMoveRight = true;
-            bool anDiem = false;
+            bool Score = false;
             bool checkInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -475,7 +491,7 @@ namespace StudyManagementApp
                         {
                             if (Game[i, k].Text == Game[i, j].Text)
                             {
-                                anDiem = true;
+                                Score = true;
                             }
                             break;
                         }
@@ -560,6 +576,8 @@ namespace StudyManagementApp
                                 {lbl9,lbl10,lbl11,lbl12},
                                 {lbl13,lbl14,lbl15,lbl16}
                               };
+
+    //Kiểm tra hàng dọc còn đi tiếp được không
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -581,6 +599,7 @@ namespace StudyManagementApp
                     }
                 }
             }
+    //Kiểm tra hàng ngang còn đi tiếp được không
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -637,14 +656,14 @@ namespace StudyManagementApp
                 btnExit.Visible = true;
                 btnExit.Enabled = true;
                 btnNewGame.Enabled = true;
-                this.KeyDown -= new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+                this.KeyDown -= new KeyEventHandler(this.Form1_KeyDown);
             }
 
         }
 
         private void BtnNewGame_Click(object sender, EventArgs e)
         {
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyDown += new KeyEventHandler(this.Form1_KeyDown);
             lblScore.Text = "0";
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},

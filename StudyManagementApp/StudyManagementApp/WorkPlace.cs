@@ -792,5 +792,23 @@ namespace StudyManagementApp
             toDoListTest1.UpdateDatabase();
             toDoListTest1.ReLoadData();
         }
+
+        private void Current_Timer_Tick(object sender, EventArgs e)
+        {
+            var hour = DateTime.Now.Hour;
+            var minute = DateTime.Now.Minute;
+            var second = DateTime.Now.Second;
+            if (second % 2 == 0)
+            {
+                lbl_splash.Visible = true;
+            }
+            else
+            {
+                lbl_splash.Visible = false;
+            }
+            txt_hour.Value = hour;
+            txt_minute.Value = minute;
+            txt_second.Value = second;
+        }
     }
 }
