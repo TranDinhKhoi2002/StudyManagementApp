@@ -69,6 +69,7 @@ namespace StudyManagementApp.UserControls
         {
             Form f = new AddTask();
             f.ShowDialog();
+            ReLoadData();
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -87,7 +88,7 @@ namespace StudyManagementApp.UserControls
                         bool ischeck = (bool)dataGridView1.Rows[i].Cells[0].Value;
                         if (ischeck)
                         {
-                            var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp].[dbo].[TASK] " +
+                            var sqlCommand = new SqlCommand("DELETE FROM [StudyManagementApp3].[dbo].[TASK] " +
                                                     " WHERE USERNAME = '" + UserInfo.Instance.Username + "'"
                                                     + " AND DATECREATE = '" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "'"
                                                     + " AND DESCIPTION = '" + dataGridView1.Rows[i].Cells[1].Value.ToString() + "'", sqlConn);
@@ -95,17 +96,18 @@ namespace StudyManagementApp.UserControls
                         }
                     }
                     sqlConn.Close();
-                    MessageBox.Show("Xóa thành công");
+                    MessageBox.Show("Deleted successfully", "Notification");
+                    ReLoadData();
                     //refreshToolStripMenuItem_Click(sender, e);
                 }
                 else
                 {
-                    MessageBox.Show("Chọn vào ô checkbox item cần xóa!");
+                    MessageBox.Show("Please click to the checkbox", "Notification");
                 }
             }
             else
             {
-                MessageBox.Show("Có gì đâu mà xóa!");
+                MessageBox.Show("Nothing to delete!", "Notification");
             }
         }
 
@@ -196,6 +198,12 @@ namespace StudyManagementApp.UserControls
         {
             UpdateDatabase();
             ReLoadData();
+        }
+
+        private void btnProgress_Click(object sender, EventArgs e)
+        {
+            ProgressForm progress = new ProgressForm();
+            progress.Show();
         }
     }
 }

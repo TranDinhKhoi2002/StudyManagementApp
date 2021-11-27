@@ -33,10 +33,10 @@ namespace StudyManagementApp
         private void Apply_btn_Click(object sender, EventArgs e)
         {
             if (tb_descip.Text == "")
-                MessageBox.Show("Nội dung desciption không được bỏ trống");
+                MessageBox.Show("Description can't be blank", "Notification");
             else if (endtime_picker.Value.Hour * 60 + endtime_picker.Value.Minute - starttime_picker.Value.Hour * 60 - starttime_picker.Value.Minute <= 0)
             {
-                MessageBox.Show("Thời gian endtime phải cách starttime ít nhất 1 phút");
+                MessageBox.Show("End time must be at least 1 minute greater than start time", "Notification");
             }
             else
             {
@@ -47,7 +47,7 @@ namespace StudyManagementApp
                     var sqlConn = new SqlConnection(strCons);
                     sqlConn.Open();
 
-                    var sqlCommand = new SqlCommand("INSERT INTO [StudyManagementApp].[dbo].[TASK] VALUES ('" + UserInfo.Instance.Username + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "','" + tb_descip.Text + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + starttime_picker.Value.ToString(" HH:mm") + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + endtime_picker.Value.ToString("HH:mm") + "','Pending')", sqlConn);
+                    var sqlCommand = new SqlCommand("INSERT INTO [StudyManagementApp3].[dbo].[TASK] VALUES ('" + UserInfo.Instance.Username + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd") + "','" + tb_descip.Text + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + starttime_picker.Value.ToString(" HH:mm") + "','" + DataProvider.Instance.User_Time_Choose.ToString("yyyy-MM-dd ") + endtime_picker.Value.ToString("HH:mm") + "','Pending')", sqlConn);
                     sqlCommand.ExecuteNonQuery();
 
                     /*  var sqlCommand = new SqlCommand("Insert into [StudyManagementApp].[dbo].[TASK] values ('@USERNAME' , '@DATECREATE' , '@Desciption' , '@TimeStart' , '@TimeEnd' , NULL)",sqlConn);
@@ -62,7 +62,7 @@ namespace StudyManagementApp
 
 
                     sqlConn.Close();
-                    MessageBox.Show("Thêm thành công");
+                    MessageBox.Show("Added successfully", "Notification");
                     //Program.globalWorkPlace.RefreshTodoList();
                     this.Close();
                 }
@@ -70,8 +70,6 @@ namespace StudyManagementApp
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
-
-
             }
         }
     }

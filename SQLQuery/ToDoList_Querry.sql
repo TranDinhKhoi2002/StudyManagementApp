@@ -1,4 +1,4 @@
-use StudyManagementApp
+use StudyManagementApp3
 go
 
 CREATE TABLE TASK(
