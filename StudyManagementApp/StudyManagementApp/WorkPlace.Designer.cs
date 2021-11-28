@@ -100,7 +100,7 @@ namespace StudyManagementApp
             this.txt_second = new CounterLib.Counter();
             this.Current_Timer = new System.Windows.Forms.Timer(this.components);
             this.Main_customCalendar = new StudyManagementApp.UserControls.CustomCalendar();
-            this.toDoListTest1 = new StudyManagementApp.UserControls.ToDoListTest();
+            this.toDoListTest1 = new StudyManagementApp.UserControls.ToDoList();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
             this.Start_Stop_Pomodoro_button = new StudyManagementApp.UserControls.RoundedCornerButton();
@@ -1300,7 +1300,7 @@ namespace StudyManagementApp
         private System.Windows.Forms.Panel FlashCard_SubMenu_Panel;
         private System.Windows.Forms.Panel Note_SubMenu_Panel;
         private System.Windows.Forms.Button OpenToDoList;
-        private UserControls.ToDoListTest toDoListTest1;
+        private UserControls.ToDoList toDoListTest1;
         private CounterLib.Counter txt_second;
         private System.Windows.Forms.Label lbl_splash;
         private CounterLib.Counter txt_minute;

@@ -781,6 +781,7 @@ namespace StudyManagementApp
         }
         #endregion
 
+        #region TodoList
         private void OpenToDoList_Click(object sender, EventArgs e)
         {
             HideAllControlInWorkPlacePanel();
@@ -792,7 +793,7 @@ namespace StudyManagementApp
             toDoListTest1.UpdateDatabase();
             toDoListTest1.ReLoadData();
         }
-
+        #endregion
         private void Current_Timer_Tick(object sender, EventArgs e)
         {
             var hour = DateTime.Now.Hour;
