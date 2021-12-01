@@ -17,6 +17,7 @@ II) Mô tả
   năng suất cho công việc
   - To do list: việc liệt kê các công việc cần làm trong ngày là thực sự cần thiết, nó cho chúng ta biết được trong một ngày sẽ có những công việc nào cần hoàn thành,
   công việc nào quan trọng, công việc nào cần phải giải quyết gấp rút để ta có thể quản lý công việc chặt chẽ, hiệu quả. Đồ án cũng cung cấp tác vụ liệt kê To do list
-  giúp chúng ta dễ dàng thiết kế một ngày làm việc hiểu quả, chất lượng
+  giúp chúng ta dễ dàng thiết kế một ngày làm việc hiểu quả, chất lượng. Người dùng có thể thêm, xóa các mục to do list và xem được tiến độ công việc thông qua live chart
   - Đặt lịch: mô tả tổng quan những công việc nào chưa hoàn thành lên màn hình chính, khi ta nhấn vào một ngày bất kỳ thì thể hiện chi tiết những công việc ở ngày đó
   giúp cho việc quản lý công việc trong từng ngày được hiệu quả hơn
+  - Giải trí: ứng dụng được tích hợp một số trò chơi đơn giản giúp người dùng có thể thư giản trong thời gian rảnh hoặc bị stress do công việc
