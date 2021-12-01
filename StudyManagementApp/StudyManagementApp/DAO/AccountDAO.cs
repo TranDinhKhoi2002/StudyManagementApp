@@ -127,5 +127,50 @@ namespace StudyManagementApp.DAO
                 return false;
             }
         }
+
+        public DataTable GetAll_TYPEITEM_TDL(string userName)
+        {
+            string query = "LOAD_ALL_COLORITEM @userName ";
+
+            DataTable result = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
+
+            return result;
+        }
+
+        public DataTable GetAll_TASK_TDL(string userName)
+        {
+            string query = "LOAD_ALLITEM @userName ";
+
+            DataTable result = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
+
+            return result;
+        }
+
+        public bool Add_TYPEITEM_TDL(string userName, string typeCOLOR, string nameTYPE)
+        {
+            string query = "ADD_COLORITEM @pk_COLOR , @userName , @typeCOLOR , @nameTYPE ";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName + typeCOLOR, userName, typeCOLOR, nameTYPE });
+
+            return result > 0;
+        }
+
+        public bool Add_TASK_TDL(string userName, DateTime datetimeCREATE, string taskNAME, DateTime datetimeDEADLINE, string note, bool done, string pk_COLOR)
+        {
+            string query = "ADD_ITEM @userName , @datetimeCREATE , @taskNAME , @datetimeDEADLINE , @note , @done , @pk_COLOR ";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCREATE, taskNAME, datetimeDEADLINE, note, done, pk_COLOR });
+
+            return result > 0;
+        }
+        public bool Update_TASKDONE_TDL(string userName, DateTime datetimeCreate, bool done)
+        {
+            string query = "UPDATE_CHECK @userName , @datetimeCreate , @done ";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCreate, done });
+
+            return result > 0;
+        }
+
     }
 }

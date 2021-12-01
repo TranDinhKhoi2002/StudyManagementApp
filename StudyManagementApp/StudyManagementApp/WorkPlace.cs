@@ -13,16 +13,25 @@ namespace StudyManagementApp
 {
     public partial class WorkPlace : Form
     {
+        enum State
+        {
+            Home, About, Help
+        }
+
+        State currentstate_WorkPlace = State.Home;
 
         public WorkPlace()
         {
             InitializeComponent();
             aboutUC1.Hide();
             helpUC1.Hide();
-            
             HideAllSubMenu();
             KhoiTaoCacIconMenu();
-            ThemItemVaoSubMenu(Relax_SubMenu_Panel, SubMenuRelax_Item);
+            ThemItemVaoSubMenu(Relax_SubMenu_Panel, SubMenuRelax_Item, relax_item);
+            ThemItemVaoSubMenu(TodoLIst_SubMenu_Panel, SubMenuTodo_Item, todo_item);
+            todolist_Form.TopLevel = false;
+            todolist_Form.Dock = DockStyle.Fill;
+            HomePanel.Controls.Add(todolist_Form);
         }
 
         //ấy lại hàm show
@@ -36,10 +45,10 @@ namespace StudyManagementApp
         //Hàm load
         private void WorkPlace_Load(object sender, EventArgs e)
         {
+            KhoiTaoCuonLich();
             UserNameLabel.Text = UserInfo.Instance.Username;
-            //toDoList1.Visible = false;
-            toDoListTest1.Hide();
-            toDoListTest1.Dock = DockStyle.Fill;
+            bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
+            bang_AllTYPEITEM_TDL = DAO.AccountDAO.Instance.GetAll_TYPEITEM_TDL(UserInfo.Instance.Username);
 
         }
 
@@ -82,21 +91,23 @@ namespace StudyManagementApp
             TemplatePanel.BackColor = x;
             PomodoroPanel.BackColor = x;
 
-            
+
             ToDoListMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
 
             ToDoListMenu_iconButton.IconColor = foretemplate;
 
             ToDoListMenu_iconButton.ForeColor = foretemplate;
-           
+
 
             CalendarButton.BackColor = foretemplate;
             CalendarButton.ForeColor = forecanlendar;
             CalendarButton.BorderColor = forecanlendar;
 
-            WorkPlacePanel.BackColor = forecanlendar;
+            HomePanel.BackColor = forecanlendar;
 
             LayMauChoCacItem(SubMenuRelax_Item, foretemplate, bg);
+            LayMauChoCacItem(SubMenuTodo_Item, foretemplate, bg);
+            
         }
 
         void LoadMau()
@@ -119,7 +130,12 @@ namespace StudyManagementApp
         #endregion
 
         #region CuonLich
-        /*---------------------------------Calendar---------------------------------*/
+
+        public static DataTable bang_AllTASK_TDL = new DataTable();
+        public static DataTable bang_AllTYPEITEM_TDL = new DataTable();
+        public static TodolistFolder.Todolist_Form todolist_Form = new TodolistFolder.Todolist_Form();
+        public static DateTime date_Choosing_ofWeek_ToDoList = DateTime.Now;
+        public UserControls.CustomCalendar Main_customCalendar = new UserControls.CustomCalendar();
         private void CalendarButton_Click(object sender, EventArgs e)
         {
             if (Main_customCalendar.Visible)
@@ -130,7 +146,18 @@ namespace StudyManagementApp
                 Main_customCalendar.Show();
             }
         }
-        /*---------------------------------Calendar---------------------------------*/
+       
+        void KhoiTaoCuonLich()
+        {
+            Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            Main_customCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            Main_customCalendar.Location = new System.Drawing.Point(0, 0);
+            Main_customCalendar.Margin = new System.Windows.Forms.Padding(5);
+            Main_customCalendar.Size = new System.Drawing.Size(1079, 504);
+            Main_customCalendar.TabIndex = 0;
+            HomePanel.Controls.Add(Main_customCalendar);
+            Main_customCalendar.Hide();
+        }
         #endregion
 
         #region MenuBenTrai
@@ -143,24 +170,24 @@ namespace StudyManagementApp
             FlashCardMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
             RelaxMenu_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
 
-            TodoLIst_SubMenu_Panel.Visible = false;
-            Note_SubMenu_Panel.Visible = false;
-            FlashCard_SubMenu_Panel.Visible = false;
-            Relax_SubMenu_Panel.Visible = false;
+            TodoLIst_SubMenu_Panel.Hide();
+            Note_SubMenu_Panel.Hide();
+            FlashCard_SubMenu_Panel.Hide();
+            Relax_SubMenu_Panel.Hide();
 
         }
         //Hàm hiện 1 subMenu_panel được truyền vào
         void ShowSubMenu(Panel submenu,IconButton iconmenu)
         {
-            if (submenu.Visible == false)
+            if (!submenu.Visible)
             {
                 HideAllSubMenu();
-                submenu.Visible = true;
+                submenu.Hide();
                 iconmenu.IconChar = IconChar.CaretDown;
             }
            else
             {
-                submenu.Visible = false;
+                submenu.Show();
                 iconmenu.IconChar = IconChar.CaretRight;
             }
         }
@@ -178,7 +205,6 @@ namespace StudyManagementApp
         IconButton RelaxMenu_iconButton = new IconButton();
         IconButton FlashCardMenu_iconButton = new IconButton();
         IconButton NoteMenu_iconButton = new IconButton();
-
         void KhoiTaoCacIconMenu()
         {
             // 
@@ -293,38 +319,75 @@ namespace StudyManagementApp
             Relax_Menu_Panel.Controls.Add(RelaxMenu_iconButton);
         }
 
-        //Relax
-        List<IconButton> SubMenuRelax_Item = new List<IconButton>();
-        void KhoiTaoSubMenu_RelaxItem(List<IconButton> item)
-        {
-            IconButton temp = new IconButton();
-            item.Add(temp);
+        //
+        //Todo
+        //
+        static List<IconButton> SubMenuTodo_Item = new List<IconButton>();
+        static string[] todo_item = { "Previous", "Next", "Current" };
+        //
+        //Todo
+        //
 
-            
+        //
+        //Relax
+        //
+        static List<IconButton> SubMenuRelax_Item = new List<IconButton>();
+        static string[] relax_item = { "Flappy Bird", "2048" };
+        //
+        //Relax
+        //
+
+        //Submenu item click của 4 dạng luôn
+        void ALL_SubMenu_Item_Click(IconButton nut)
+        {
+            if (nut.Tag.ToString() == "todo")
+            {
+                if (nut.Text.Trim() == todo_item[2])
+                {
+                    HideAllControlInWorkPlacePanel();
+                    todolist_Form.Show(date_Choosing_ofWeek_ToDoList);
+                }
+                if (nut.Text.Trim() == todo_item[1])
+                {
+                    date_Choosing_ofWeek_ToDoList = date_Choosing_ofWeek_ToDoList.AddDays(7);
+                    HideAllControlInWorkPlacePanel();
+                    todolist_Form.Show(date_Choosing_ofWeek_ToDoList);
+                }
+                if (nut.Text == todo_item[0])
+                {
+                    date_Choosing_ofWeek_ToDoList = date_Choosing_ofWeek_ToDoList.AddDays(-7);
+                    HideAllControlInWorkPlacePanel();
+                    todolist_Form.Show(date_Choosing_ofWeek_ToDoList);
+                }
+            }
+            if (nut.Tag.ToString() == "relax")
+            {
+                if (nut.Text.Trim() == relax_item[1])
+                {
+                    Game2048 game = new Game2048();
+                    game.ShowDialog();
+                }
+                if (nut.Text == relax_item[0])
+                {
+                    FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
+                    gameFlappyBird.ShowDialog();
+                }
+            }
         }
-        //Relax item click
-        private void RelaxSubMenu_Item_Click(object sender, EventArgs e)
+        private void SubMenu_Item_Click(object sender, EventArgs e)
         {
             IconButton nut = sender as IconButton;
-            if (nut.Text.Trim()=="2048")
-            {
-                Game2048 game = new Game2048();
-                game.ShowDialog();
-            }
-            if(nut.Text=="Flappy Bird")
-            {
-                FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
-                gameFlappyBird.ShowDialog();
-            }    
+            ALL_SubMenu_Item_Click(nut);
         }
-        void ThemItemVaoSubMenu(Panel submenu, List<IconButton> item)
+        void ThemItemVaoSubMenu(Panel submenu, List<IconButton> item, string[] mang)
         {
-            string[] games = { "Flappy Bird", "2048" };
-            foreach(var game in games)
+            
+            foreach(var x in mang)
             {
                 IconButton nut = new IconButton();
                 item.Add(nut);
-                item[item.Count - 1].Text = game;
+                item[item.Count - 1].Text = x;
+                item[item.Count - 1].Tag = submenu.Tag;
             }    
             
             int height = 0;
@@ -343,7 +406,7 @@ namespace StudyManagementApp
                 item[i].Size = new Size(251 - 41, 40);
                 item[i].FlatAppearance.BorderSize = 0;
                 item[i].FlatAppearance.MouseOverBackColor = Color.FromArgb(73, 75, 76);
-                item[i].Click += new System.EventHandler(this.RelaxSubMenu_Item_Click);
+                item[i].Click += new System.EventHandler(this.SubMenu_Item_Click);
                 submenu.Controls.Add(item[i]);
                 height += item[i].Height;
                
@@ -362,10 +425,10 @@ namespace StudyManagementApp
                     ShowSubMenu(TodoLIst_SubMenu_Panel,ToDoListMenu_iconButton);
                     break;
                 case "Menu2":
-                    ShowSubMenu(Note_SubMenu_Panel,NoteMenu_iconButton);
+                    //ShowSubMenu(Note_SubMenu_Panel,NoteMenu_iconButton);
                     break;
                 case "Menu3":
-                    ShowSubMenu(FlashCard_SubMenu_Panel,FlashCardMenu_iconButton);
+                   // ShowSubMenu(FlashCard_SubMenu_Panel,FlashCardMenu_iconButton);
                     break;
                 case "Menu4":
                     ShowSubMenu(Relax_SubMenu_Panel, RelaxMenu_iconButton);
@@ -379,84 +442,74 @@ namespace StudyManagementApp
 
         #region 3nuthome_about_help
         /*---------------------------------Chức năng 3 nút home, about, help---------------------------------*/
-        //Khai báo 3 biến đánh dấu các nút được click chưa hay chưa?
-        bool isHomeClick = true;
-        bool isAboutClick = false;
-        bool isHelpClick = false;
         //Nhấn Home thì làm gì?
         private void Home_iconButton_Click(object sender, EventArgs e)
         {
-            if (isHomeClick)
+            if (currentstate_WorkPlace==State.Home)
             {
                 return;
             }
             else
             {
-                WorkPlacePanel.Show();
-                isHomeClick = true;
-                Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
-                if (isAboutClick)
+                if (currentstate_WorkPlace==State.About)
                 {
-
                     aboutUC1.Hide();
-                    isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
-                if (isHelpClick)
+                if (currentstate_WorkPlace == State.Help)
                 {
 
                     helpUC1.Hide();
-                    isHelpClick = false;
                     Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
+                HomePanel.Show();
+                currentstate_WorkPlace = State.Home;
+                Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
             }
         }
         //Nhấn About thì làm gì?
         private void About_iconButton_Click(object sender, EventArgs e)
         {
-            if (isAboutClick)
+            if (currentstate_WorkPlace == State.About)
                 return;
             else
             {
-                aboutUC1.Show();
-                isAboutClick = true;
-                About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
-                if (isHomeClick)
+                if (currentstate_WorkPlace == State.Home)
                 {
-                    WorkPlacePanel.Hide();
-                    isHomeClick = false;
+                    HomePanel.Hide();
                     Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
-                if (isHelpClick)
+                if (currentstate_WorkPlace == State.Help)
                 {
                     helpUC1.Hide();
-                    isHelpClick = false;
                     Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
                 }
+                aboutUC1.Show();
+                currentstate_WorkPlace = State.About;
+                About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked about.png");
+
             }
         }
         //Nhấn Help thì làm gì?
         private void Help_iconButton_Click(object sender, EventArgs e)
         {
-            if (isHelpClick)
+            if (currentstate_WorkPlace == State.Help)
                 return;
             else
             {
-                helpUC1.Show();
-                isHelpClick = true;
-                Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
-                if (isHomeClick)
+                if (currentstate_WorkPlace == State.Home)
                 {
-                    WorkPlacePanel.Hide();
-                    isHomeClick = false;
+                    HomePanel.Hide();
                     Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\home.png");
                 }
-                if (isAboutClick)
+                if (currentstate_WorkPlace == State.About)
                 {
                     aboutUC1.Hide();
-                    isAboutClick = false;
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
                 }
+                helpUC1.Show();
+                currentstate_WorkPlace = State.Help;
+                Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked help.png");
 
             }
         }
@@ -771,27 +824,32 @@ namespace StudyManagementApp
         #endregion
 
 
-        #region CLoseAllControlInWorkSpace
+        #region HideAllControlInHomePanel
         void HideAllControlInWorkPlacePanel()
         {
-            foreach (Control item in WorkPlacePanel.Controls)
+            if(currentstate_WorkPlace!=State.Home)
+            {
+                if (currentstate_WorkPlace == State.About)
+                {
+                    aboutUC1.Hide();
+                    About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
+                }
+                if (currentstate_WorkPlace == State.Help)
+                {
+
+                    helpUC1.Hide();
+                    Help_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\help.png");
+                }
+                HomePanel.Show();
+                currentstate_WorkPlace = State.Home;
+                Home_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\clicked home.png");
+            }
+            foreach (Control item in HomePanel.Controls)
             {
                 item.Hide();
             }
         }
         #endregion
-
-        private void OpenToDoList_Click(object sender, EventArgs e)
-        {
-            HideAllControlInWorkPlacePanel();
-            toDoListTest1.Show();
-        }
-
-        public void RefreshTodoList()
-        {
-            toDoListTest1.UpdateDatabase();
-            toDoListTest1.ReLoadData();
-        }
 
         private void Current_Timer_Tick(object sender, EventArgs e)
         {

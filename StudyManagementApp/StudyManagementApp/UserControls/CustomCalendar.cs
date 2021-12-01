@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +15,7 @@ namespace StudyManagementApp.UserControls
 {
     public partial class CustomCalendar : UserControl
     {
-       
-        Color littleButton;
-        Color littlecontentPanel;
-        Color Today;
-        Color Choosing;
+        
         int row = 6;
         int col = 7;
 
@@ -35,18 +32,16 @@ namespace StudyManagementApp.UserControls
         {
             InitializeComponent();
             KhoiTaoCacList();
-
+            
             // Mỗi khi lịch được load lên thì đồng hồ bắt đầu đếm để nhắc lịch với chu kì 1 tuần
             timerEmail.Start();
         }
-        WorkPlace workplace;
-        public CustomCalendar(WorkPlace x)
-        {
-            InitializeComponent();
-            KhoiTaoCacList();
-            workplace = x;
-        }
 
+        #region Đổi theme
+        Color littleButton;
+        Color littlecontentPanel;
+        Color Today;
+        Color Choosing;
         public new void Show()
         {
             NgayThangNam_customDateTimePicker.Font = new Font("Agency FB", 16, FontStyle.Bold);
@@ -58,6 +53,7 @@ namespace StudyManagementApp.UserControls
             Friday.Font = new Font("Agency FB", 13, FontStyle.Bold);
             Saturday.Font = new Font("Agency FB", 13, FontStyle.Bold);
             LoadMau();
+            Load_Ngay_IconItem(new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, 1));
             base.Show();
         }
 
@@ -89,6 +85,84 @@ namespace StudyManagementApp.UserControls
 
             }
         }
+        #endregion
+
+        #region Mấy icon nhỏ nhỏ
+        Color Get_Color_FromPK_COLOR(string pk_color)
+        {
+            DataTable allTYPEITEM = WorkPlace.bang_AllTYPEITEM_TDL;
+            string typecolor = "";
+            for (int i = 0; i < allTYPEITEM.Rows.Count; i++)
+            {
+                if (allTYPEITEM.Rows[i]["PK_COLOR"].ToString() == pk_color)
+                {
+                    typecolor = allTYPEITEM.Rows[i]["TYPECOLOR"].ToString();
+
+                }
+            }
+            if (string.IsNullOrEmpty(typecolor))
+            {
+                return Color.Silver;
+            }
+            else
+                return ColorTranslator.FromHtml(typecolor);
+        }
+
+        void Setting_IconItem(IconButton iconButton)
+        {
+            iconButton.BackColor = System.Drawing.Color.Transparent;
+            iconButton.Dock = System.Windows.Forms.DockStyle.Left;
+            iconButton.FlatAppearance.BorderSize = 0;
+            iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            iconButton.IconChar = FontAwesome.Sharp.IconChar.Circle;
+            iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            iconButton.IconSize = 15;
+            iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            iconButton.Margin = new System.Windows.Forms.Padding(0);
+            iconButton.Padding = new System.Windows.Forms.Padding(0, 12, 0, 0);
+            iconButton.Size = new System.Drawing.Size(17, 24);
+        }
+
+        void Load_IconItem_Date(DateTime dateTime, Panel iconitempanel)
+        {
+            iconitempanel.Controls.Clear();
+            DataTable allTask = WorkPlace.bang_AllTASK_TDL;
+            for (int i = 0; i < allTask.Rows.Count; i++)
+            {
+                DateTime temp = (DateTime)allTask.Rows[i]["DATETIMEDEADLINE"];
+                if (temp.Date == dateTime.Date)
+                {
+                    string pk_color = allTask.Rows[i]["PK_COLOR"].ToString();
+                    Color color = Get_Color_FromPK_COLOR(pk_color);
+                    IconButton iconButton = new IconButton();
+                    Setting_IconItem(iconButton);
+                    iconButton.IconColor = color;
+                    iconitempanel.Controls.Add(iconButton);
+                }
+            }
+
+        }
+
+        void Load_Ngay_IconItem(DateTime temp)
+        {
+            int tangngay = 0;
+
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col ; j++)
+                {
+                    arrContentPanel[i][j].Controls.Clear();
+                    if (arrButton[i][j].Text!="")
+                    {
+                        Load_IconItem_Date(temp.AddDays(tangngay++), arrContentPanel[i][j]);
+                    }
+                }
+                
+            }
+        }
+        #endregion
 
         //Khi cái usercontrol này load thì làm gì?
         private void CustomCalendar_Load(object sender, EventArgs e)
@@ -97,6 +171,8 @@ namespace StudyManagementApp.UserControls
             LoadDateCalendar();
             LoadColorDate();
             LoadMau();
+            Load_Ngay_IconItem(new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1));
+
         }
 
         //Khi nhấn nút bên phải thì làm gì?
@@ -106,6 +182,7 @@ namespace StudyManagementApp.UserControls
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year + 1, 1, 1);
             else
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month + 1, 1);
+            Load_Ngay_IconItem(new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, 1));
         }
         //Khi nhấn nút bên trái thì làm gì?
         private void Truoc_iconButton_Click(object sender, EventArgs e)
@@ -114,6 +191,7 @@ namespace StudyManagementApp.UserControls
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year - 1, 12, 1);
             else
                 NgayThangNam_customDateTimePicker.Value = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month - 1, 1);
+            Load_Ngay_IconItem(new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, 1));
         }
 
         //Hàm khởi tạo 1 loạt các list
@@ -152,7 +230,7 @@ namespace StudyManagementApp.UserControls
             return new Point(int.Parse(x) / 10, int.Parse(x) % 10);
         }
 
-        //Sự kiện của Today button
+        //Sự kiện của Today button click
         private void Today_Button_Click(object sender, EventArgs e)
         {
             if (NgayThangNam_customDateTimePicker.Value == DateTime.Now.Date)
@@ -184,6 +262,7 @@ namespace StudyManagementApp.UserControls
                     }    
                     index_ngay_choosing = new Point(-1, -1);
                     ngay_choosing = new DateTime(1, 1, 1);
+                    WorkPlace.date_Choosing_ofWeek_ToDoList = DateTime.Now;
                     LoadColorDate();
                 }
                 else
@@ -192,13 +271,15 @@ namespace StudyManagementApp.UserControls
                     //Chọn
                     index_ngay_choosing = diem;
                     ngay_choosing = new DateTime(NgayThangNam_customDateTimePicker.Value.Year, NgayThangNam_customDateTimePicker.Value.Month, int.Parse(nutngay.Text));
+                    WorkPlace.date_Choosing_ofWeek_ToDoList = ngay_choosing;
+                    WorkPlace.todolist_Form.Show(ngay_choosing);
+                    this.Hide();
                     NgayThangNam_customDateTimePicker.Value = ngay_choosing;
                     arrButton[index_ngay_choosing.X][index_ngay_choosing.Y].BackColor = Choosing;
                     arrContentPanel[index_ngay_choosing.X][index_ngay_choosing.Y].BackColor = Choosing;
                 }
             }
         }
-     
 
         //Hàm load control lên hình
         void LoadControlCalendar()
@@ -232,10 +313,11 @@ namespace StudyManagementApp.UserControls
                     arrPanel[i][j].Controls.Add(arrButton[i][j]);
                     arrPanel[i][j].Controls.Add(arrContentPanel[i][j]);
                     MainDate_TablePanel.Controls.Add(arrPanel[i][j], j, i);
-                   
+
                 }
             }
         }
+
         //Hàm lấy ngày cuối tháng
         int LastDayOfMonth(int month, int year)
         {
