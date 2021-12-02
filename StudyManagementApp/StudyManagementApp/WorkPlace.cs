@@ -179,15 +179,15 @@ namespace StudyManagementApp
         //Hàm hiện 1 subMenu_panel được truyền vào
         void ShowSubMenu(Panel submenu,IconButton iconmenu)
         {
-            if (!submenu.Visible)
+            if (submenu.Visible != true)
             {
                 HideAllSubMenu();
-                submenu.Hide();
+                submenu.Show();
                 iconmenu.IconChar = IconChar.CaretDown;
             }
            else
             {
-                submenu.Show();
+                submenu.Hide();
                 iconmenu.IconChar = IconChar.CaretRight;
             }
         }
