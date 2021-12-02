@@ -179,15 +179,15 @@ namespace StudyManagementApp
         //Hàm hiện 1 subMenu_panel được truyền vào
         void ShowSubMenu(Panel submenu,IconButton iconmenu)
         {
-            if (!submenu.Visible)
+            if (submenu.Visible != true)
             {
                 HideAllSubMenu();
-                submenu.Hide();
+                submenu.Show();
                 iconmenu.IconChar = IconChar.CaretDown;
             }
            else
             {
-                submenu.Show();
+                submenu.Hide();
                 iconmenu.IconChar = IconChar.CaretRight;
             }
         }
@@ -205,6 +205,7 @@ namespace StudyManagementApp
         IconButton RelaxMenu_iconButton = new IconButton();
         IconButton FlashCardMenu_iconButton = new IconButton();
         IconButton NoteMenu_iconButton = new IconButton();
+        IconButton ChatBot_iconButton = new IconButton();
         void KhoiTaoCacIconMenu()
         {
             // 
@@ -312,18 +313,46 @@ namespace StudyManagementApp
             this.RelaxMenu_iconButton.UseVisualStyleBackColor = false;
             this.RelaxMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
 
+            // 
+            // ChatBot_iconButton
+            // 
+
+            this.ChatBot_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.ChatBot_iconButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ChatBot_iconButton.FlatAppearance.BorderSize = 0;
+            this.ChatBot_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(47)))));
+            this.ChatBot_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChatBot_iconButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChatBot_iconButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ChatBot_iconButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;
+            this.ChatBot_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ChatBot_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ChatBot_iconButton.IconSize = 40;
+            this.ChatBot_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ChatBot_iconButton.Location = new System.Drawing.Point(0, 0);
+            this.ChatBot_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.ChatBot_iconButton.Name = "ChatBot_iconButton";
+            this.ChatBot_iconButton.Size = new System.Drawing.Size(251, 46);
+            this.ChatBot_iconButton.TabIndex = 5;
+            this.ChatBot_iconButton.Tag = "Menu5";
+            this.ChatBot_iconButton.Text = "Relax";
+            this.ChatBot_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ChatBot_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ChatBot_iconButton.UseVisualStyleBackColor = false;
+            this.ChatBot_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
             //Them menuiconbutton
             ToDoList_Menu_Panel.Controls.Add(ToDoListMenu_iconButton);
             Note_Menu_Panel.Controls.Add(NoteMenu_iconButton);
             FlashCard_Menu_Panel.Controls.Add(FlashCardMenu_iconButton);
             Relax_Menu_Panel.Controls.Add(RelaxMenu_iconButton);
+
         }
 
         //
         //Todo
         //
         static List<IconButton> SubMenuTodo_Item = new List<IconButton>();
-        static string[] todo_item = { "Previous", "Next", "Current" };
+        static string[] todo_item = { "Previous", "Next", "Current", "Show Progress" };
         //
         //Todo
         //
@@ -867,6 +896,18 @@ namespace StudyManagementApp
             txt_hour.Value = hour;
             txt_minute.Value = minute;
             txt_second.Value = second;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProgressForm progress = new ProgressForm();
+            progress.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            ChatBotForm chatbot = new ChatBotForm();
+            chatbot.Show();
         }
     }
 }

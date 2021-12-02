@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AIMLBot">
+      <HintPath>..\..\..\AI-Chatbot-AIML\Artificial Intelligence Chatbot\bin\Debug\AIMLBot.dll</HintPath>
+    </Reference>
     <Reference Include="CounterLib">
       <HintPath>..\..\..\..\..\Downloads\dll\CounterLib.dll</HintPath>
     </Reference>
@@ -94,6 +97,12 @@
     </Compile>
     <Compile Include="Account_Function.Designer.cs">
       <DependentUpon>Account_Function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBotForm.Designer.cs">
+      <DependentUpon>ChatBotForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
@@ -228,6 +237,9 @@
     </Compile>
     <EmbeddedResource Include="Account_Function.resx">
       <DependentUpon>Account_Function.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBotForm.resx">
+      <DependentUpon>ChatBotForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
