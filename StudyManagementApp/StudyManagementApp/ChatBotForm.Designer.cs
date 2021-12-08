@@ -32,14 +32,17 @@ namespace StudyManagementApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.rtxbChatBot = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.rtbSending = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.rtxbSending = new System.Windows.Forms.RichTextBox();
-            this.btnSend = new System.Windows.Forms.Button();
+            this.btnSend = new StudyManagementApp.UserControls.RoundedCornerButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(143, 9);
@@ -51,6 +54,7 @@ namespace StudyManagementApp
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(12, 73);
@@ -61,6 +65,7 @@ namespace StudyManagementApp
             // 
             // rtxbChatBot
             // 
+            this.rtxbChatBot.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxbChatBot.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxbChatBot.Location = new System.Drawing.Point(18, 107);
             this.rtxbChatBot.Name = "rtxbChatBot";
@@ -69,37 +74,56 @@ namespace StudyManagementApp
             this.rtxbChatBot.TabIndex = 2;
             this.rtxbChatBot.Text = "";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::StudyManagementApp.Properties.Resources.chatbot;
+            this.pictureBox1.InitialImage = global::StudyManagementApp.Properties.Resources.chatbot;
+            this.pictureBox1.Location = new System.Drawing.Point(74, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // rtbSending
+            // 
+            this.rtbSending.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbSending.Location = new System.Drawing.Point(18, 355);
+            this.rtbSending.Name = "rtbSending";
+            this.rtbSending.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.rtbSending.Size = new System.Drawing.Size(436, 35);
+            this.rtbSending.TabIndex = 1;
+            this.rtbSending.Text = "";
+            this.rtbSending.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtbSending_KeyDown);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(12, 313);
+            this.label3.Location = new System.Drawing.Point(12, 312);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(279, 31);
-            this.label3.TabIndex = 3;
+            this.label3.TabIndex = 11;
             this.label3.Text = "Ask me anything about your study:";
-            // 
-            // rtxbSending
-            // 
-            this.rtxbSending.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxbSending.Location = new System.Drawing.Point(18, 347);
-            this.rtxbSending.Name = "rtxbSending";
-            this.rtxbSending.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.rtxbSending.Size = new System.Drawing.Size(436, 38);
-            this.rtxbSending.TabIndex = 1;
-            this.rtxbSending.Text = "";
-            this.rtxbSending.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rtxbSending_KeyDown);
             // 
             // btnSend
             // 
-            this.btnSend.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSend.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSend.Location = new System.Drawing.Point(460, 347);
+            this.btnSend.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
+            this.btnSend.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.btnSend.BorderRadius = 18;
+            this.btnSend.BorderSize = 0;
+            this.btnSend.FlatAppearance.BorderSize = 0;
+            this.btnSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSend.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.ForeColor = System.Drawing.Color.White;
+            this.btnSend.Location = new System.Drawing.Point(460, 355);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(73, 38);
-            this.btnSend.TabIndex = 5;
+            this.btnSend.Size = new System.Drawing.Size(73, 35);
+            this.btnSend.TabIndex = 9;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -109,18 +133,22 @@ namespace StudyManagementApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(545, 416);
-            this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.rtxbSending);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(545, 413);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.rtbSending);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnSend);
             this.Controls.Add(this.rtxbChatBot);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Agency FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "ChatBotForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChatBotForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,8 +159,9 @@ namespace StudyManagementApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox rtxbChatBot;
+        private UserControls.RoundedCornerButton btnSend;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox rtbSending;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox rtxbSending;
-        private System.Windows.Forms.Button btnSend;
     }
 }

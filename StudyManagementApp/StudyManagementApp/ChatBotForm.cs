@@ -20,7 +20,7 @@ namespace StudyManagementApp
 
         private void btnSend_Click(object sender, EventArgs e)
         {
-            if (rtxbSending.Text == "")
+            if (rtbSending.Text == "")
             {
                 MessageBox.Show("Please ask something!!!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -34,16 +34,16 @@ namespace StudyManagementApp
             botAI.isAcceptingUserInput = false;
             User user = new User("dinhkhoi", botAI);
             botAI.isAcceptingUserInput = true;
-            Request req = new Request(rtxbSending.Text, user, botAI);
+            Request req = new Request(rtbSending.Text, user, botAI);
             Result res = botAI.Chat(req);
 
             rtxbChatBot.Text = "Chat bot: " + res.Output;
-            rtxbSending.Clear();
+            rtbSending.Text = "";
         }
 
-        private void rtxbSending_KeyDown(object sender, KeyEventArgs e)
+        private void rtbSending_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 btnSend_Click(this, new EventArgs());
             }

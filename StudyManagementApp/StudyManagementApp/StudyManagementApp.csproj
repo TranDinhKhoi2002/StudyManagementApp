@@ -345,6 +345,8 @@
     <None Include="bin\Debug\Resources\Images\background_dayofweek.png" />
     <Content Include="CounterLib.dll" />
     <Content Include="Guna.UI2.dll" />
+    <None Include="Resources\chatbot.png" />
+    <None Include="Resources\background_chatbot.png" />
     <Content Include="Resources\Images\about.png" />
     <None Include="Resources\Images\bird.png" />
     <Content Include="Resources\Images\calendarDark.png" />

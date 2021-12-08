@@ -103,6 +103,16 @@ namespace StudyManagementApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap background_chatbot {
+            get {
+                object obj = ResourceManager.GetObject("background_chatbot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background_dayofweek {
             get {
                 object obj = ResourceManager.GetObject("background_dayofweek", resourceCulture);
@@ -156,6 +166,16 @@ namespace StudyManagementApp.Properties {
         internal static System.Drawing.Bitmap cancle {
             get {
                 object obj = ResourceManager.GetObject("cancle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chatbot {
+            get {
+                object obj = ResourceManager.GetObject("chatbot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
