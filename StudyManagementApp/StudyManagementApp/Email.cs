@@ -65,7 +65,7 @@ namespace StudyManagementApp
                 }
             };
 
-            MailAddress fromEmail = new MailAddress("trandinhkhoi102@gmail.com", "Khoi test email");
+            MailAddress fromEmail = new MailAddress("trandinhkhoi102@gmail.com", "STUDY MANAGEMENT APP");
             MailAddress toEmail = new MailAddress(_toEmail, "Someone");
 
             Random rd = new Random();

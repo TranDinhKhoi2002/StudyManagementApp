@@ -907,7 +907,7 @@ namespace StudyManagementApp
         private void label2_Click(object sender, EventArgs e)
         {
             ChatBotForm chatbot = new ChatBotForm();
-            chatbot.Show();
+            chatbot.ShowDialog();
         }
     }
 }

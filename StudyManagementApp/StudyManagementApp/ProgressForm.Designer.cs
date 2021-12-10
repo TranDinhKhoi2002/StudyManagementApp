@@ -29,7 +29,6 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.pieChartToDo = new LiveCharts.WinForms.PieChart();
             this.dtgvTodo = new System.Windows.Forms.DataGridView();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,9 +38,10 @@ namespace StudyManagementApp
             // 
             // pieChartToDo
             // 
-            this.pieChartToDo.Location = new System.Drawing.Point(12, 12);
+            this.pieChartToDo.Location = new System.Drawing.Point(10, 17);
+            this.pieChartToDo.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.pieChartToDo.Name = "pieChartToDo";
-            this.pieChartToDo.Size = new System.Drawing.Size(452, 414);
+            this.pieChartToDo.Size = new System.Drawing.Size(377, 558);
             this.pieChartToDo.TabIndex = 1;
             this.pieChartToDo.Text = "pieChart1";
             // 
@@ -52,9 +52,10 @@ namespace StudyManagementApp
             this.colStatus,
             this.colTotal});
             this.dtgvTodo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dtgvTodo.Location = new System.Drawing.Point(498, 0);
+            this.dtgvTodo.Location = new System.Drawing.Point(415, 0);
+            this.dtgvTodo.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.dtgvTodo.Name = "dtgvTodo";
-            this.dtgvTodo.Size = new System.Drawing.Size(346, 497);
+            this.dtgvTodo.Size = new System.Drawing.Size(337, 588);
             this.dtgvTodo.TabIndex = 2;
             // 
             // colStatus
@@ -71,12 +72,14 @@ namespace StudyManagementApp
             // 
             // ProgressForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(844, 497);
+            this.ClientSize = new System.Drawing.Size(752, 588);
             this.Controls.Add(this.dtgvTodo);
             this.Controls.Add(this.pieChartToDo);
+            this.Font = new System.Drawing.Font("Agency FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.MaximizeBox = false;
             this.Name = "ProgressForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

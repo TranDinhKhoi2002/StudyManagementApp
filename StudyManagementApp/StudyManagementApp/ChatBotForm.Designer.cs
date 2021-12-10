@@ -47,9 +47,9 @@ namespace StudyManagementApp
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(143, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 39);
+            this.label1.Size = new System.Drawing.Size(261, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Hi, my nam is Chat Bot";
+            this.label1.Text = "Hi, my name is Chat Bot";
             // 
             // label2
             // 
@@ -145,6 +145,7 @@ namespace StudyManagementApp
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Agency FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.MaximizeBox = false;
             this.Name = "ChatBotForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChatBotForm";
