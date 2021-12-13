@@ -44,7 +44,7 @@ namespace StudyManagementApp
         private void WorkPlace_Load(object sender, EventArgs e)
         {
             KhoiTaoCuonLich();
-            
+
             UserNameLabel.Text = UserInfo.Instance.Username;
             bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
             bang_AllTYPEITEM_TDL = DAO.AccountDAO.Instance.GetAll_TYPEITEM_TDL(UserInfo.Instance.Username);
@@ -173,7 +173,7 @@ namespace StudyManagementApp
                 Main_customCalendar.Show();
             }
         }
-       
+
         void KhoiTaoCuonLich()
         {
             Main_customCalendar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
@@ -204,7 +204,7 @@ namespace StudyManagementApp
 
         }
         //Hàm hiện 1 subMenu_panel được truyền vào
-        void ShowSubMenu(Panel submenu,IconButton iconmenu)
+        void ShowSubMenu(Panel submenu, IconButton iconmenu)
         {
             if (submenu.Visible != true)
             {
@@ -212,7 +212,7 @@ namespace StudyManagementApp
                 submenu.Show();
                 iconmenu.IconChar = IconChar.CaretDown;
             }
-           else
+            else
             {
                 submenu.Hide();
                 iconmenu.IconChar = IconChar.CaretRight;
@@ -267,7 +267,7 @@ namespace StudyManagementApp
                     game.ShowDialog();
                     break;
                 case "Flappy bird":
-                    FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
+                    lbStart gameFlappyBird = new lbStart();
                     gameFlappyBird.ShowDialog();
                     break;
                 default:
@@ -293,8 +293,8 @@ namespace StudyManagementApp
                     ShowSubMenu(Relax_SubMenu_Panel, RelaxMenu_iconButton);
                     break;
             }
-          
-           
+
+
         }
         /*---------------------------------Điều khiển các item trong menu bên trái---------------------------------*/
         #endregion
@@ -304,13 +304,13 @@ namespace StudyManagementApp
         //Nhấn Home thì làm gì?
         private void Home_iconButton_Click(object sender, EventArgs e)
         {
-            if (currentstate_WorkPlace==State.Home)
+            if (currentstate_WorkPlace == State.Home)
             {
                 return;
             }
             else
             {
-                if (currentstate_WorkPlace==State.About)
+                if (currentstate_WorkPlace == State.About)
                 {
                     aboutUC1.Hide();
                     About_iconButton.BackgroundImage = new Bitmap(Application.StartupPath + "\\Resources\\Images\\about.png");
@@ -460,7 +460,7 @@ namespace StudyManagementApp
                 else
                 {
                     SecondPomo_Label.Text = (sec).ToString();
-                }    
+                }
             }
             if (numPomodoro > numNotification && int.Parse(MinutePomo_Label.Text) != 0)
             {
@@ -686,7 +686,7 @@ namespace StudyManagementApp
         #region HideAllControlInHomePanel
         void HideAllControlInWorkPlacePanel()
         {
-            if(currentstate_WorkPlace!=State.Home)
+            if (currentstate_WorkPlace != State.Home)
             {
                 if (currentstate_WorkPlace == State.About)
                 {
@@ -712,20 +712,20 @@ namespace StudyManagementApp
 
         private void Current_Timer_Tick(object sender, EventArgs e)
         {
-          /*  var hour = DateTime.Now.Hour;
-            var minute = DateTime.Now.Minute;
-            var second = DateTime.Now.Second;
-            if (second % 2 == 0)
-            {
-                lbl_splash.Visible = true;
-            }
-            else
-            {
-                lbl_splash.Visible = false;
-            }
-            txt_hour.Value = hour;
-            txt_minute.Value = minute;
-            txt_second.Value = second;*/
+            /*  var hour = DateTime.Now.Hour;
+              var minute = DateTime.Now.Minute;
+              var second = DateTime.Now.Second;
+              if (second % 2 == 0)
+              {
+                  lbl_splash.Visible = true;
+              }
+              else
+              {
+                  lbl_splash.Visible = false;
+              }
+              txt_hour.Value = hour;
+              txt_minute.Value = minute;
+              txt_second.Value = second;*/
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -734,6 +734,6 @@ namespace StudyManagementApp
             chatbot.ShowDialog();
         }
 
-       
+
     }
 }
