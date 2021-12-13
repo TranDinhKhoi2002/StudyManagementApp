@@ -1,7 +1,7 @@
 ﻿
 namespace StudyManagementApp
 {
-    partial class FlappyBirdForm
+    partial class lbStart
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@ namespace StudyManagementApp
             this.pipeTop = new System.Windows.Forms.PictureBox();
             this.flappyBird = new System.Windows.Forms.PictureBox();
             this.timerFlappyBird = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeBottom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pipeTop)).BeginInit();
@@ -99,16 +100,28 @@ namespace StudyManagementApp
             // 
             // timerFlappyBird
             // 
-            this.timerFlappyBird.Enabled = true;
             this.timerFlappyBird.Interval = 20;
             this.timerFlappyBird.Tick += new System.EventHandler(this.timerFlappyBird_Tick);
             // 
-            // FlappyBirdForm
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightCoral;
+            this.label1.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(362, 448);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 42);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Start";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lbStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(457, 499);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.flappyBird);
             this.Controls.Add(this.ptbGround);
@@ -117,7 +130,7 @@ namespace StudyManagementApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FlappyBirdForm";
+            this.Name = "lbStart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Flappy Bird Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FlappyBirdForm_KeyDown);
@@ -139,5 +152,6 @@ namespace StudyManagementApp
         private System.Windows.Forms.PictureBox ptbGround;
         private System.Windows.Forms.Label lbScore;
         private System.Windows.Forms.Timer timerFlappyBird;
+        private System.Windows.Forms.Label label1;
     }
 }

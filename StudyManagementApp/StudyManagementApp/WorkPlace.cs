@@ -398,7 +398,7 @@ namespace StudyManagementApp
                 }
                 if (nut.Text == relax_item[0])
                 {
-                    FlappyBirdForm gameFlappyBird = new FlappyBirdForm();
+                    lbStart gameFlappyBird = new lbStart();
                     gameFlappyBird.ShowDialog();
                 }
             }
