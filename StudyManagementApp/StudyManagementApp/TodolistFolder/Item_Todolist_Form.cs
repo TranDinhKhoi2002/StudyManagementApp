@@ -133,7 +133,7 @@ namespace StudyManagementApp.TodolistFolder
         void Delete_Mot_Item(string userName, DateTime datetimeCreate)
         {
             string query = "DELETE_MOT_ITEM @userName , @datetimeCreate ";
-            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCreate });
+            DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCreate });
             WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
             this.Close();
         }

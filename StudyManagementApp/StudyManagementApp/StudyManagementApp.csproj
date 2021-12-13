@@ -48,8 +48,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AIMLBot">
-      <HintPath>..\..\..\AI-Chatbot-AIML\Artificial Intelligence Chatbot\bin\Debug\AIMLBot.dll</HintPath>
+    <Reference Include="AIMLbot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AIMLBot.2.0.0\lib\dotnet\AIMLbot.dll</HintPath>
     </Reference>
     <Reference Include="CounterLib">
       <HintPath>..\..\..\..\..\Downloads\dll\CounterLib.dll</HintPath>
@@ -177,6 +177,12 @@
       <DependentUpon>AddItem_Todolist.cs</DependentUpon>
     </Compile>
     <Compile Include="TodolistFolder\DataItem_Todolist.cs" />
+    <Compile Include="TodolistFolder\Display_TYPEITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Display_TYPEITEM.Designer.cs">
+      <DependentUpon>Display_TYPEITEM.cs</DependentUpon>
+    </Compile>
     <Compile Include="TodolistFolder\Item_Todolist_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,12 @@
     </Compile>
     <Compile Include="TodolistFolder\Todolist_Form.Designer.cs">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_Delete_TYPECOLOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_Delete_TYPECOLOR.Designer.cs">
+      <DependentUpon>Update_Delete_TYPECOLOR.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\AboutUC.cs">
       <SubType>UserControl</SubType>
@@ -276,11 +288,17 @@
     <EmbeddedResource Include="TodolistFolder\AddItem_Todolist.resx">
       <DependentUpon>AddItem_Todolist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Display_TYPEITEM.resx">
+      <DependentUpon>Display_TYPEITEM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Item_Todolist_Form.resx">
       <DependentUpon>Item_Todolist_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Todolist_Form.resx">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Update_Delete_TYPECOLOR.resx">
+      <DependentUpon>Update_Delete_TYPECOLOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AboutUC.resx">
       <DependentUpon>AboutUC.cs</DependentUpon>

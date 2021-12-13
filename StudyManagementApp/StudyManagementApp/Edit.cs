@@ -74,7 +74,7 @@ namespace StudyManagementApp
         private void Logout_button_Click(object sender, EventArgs e)
         {
             isLogingOut = true;
-            Owner.Dispose();
+            Owner.Close();
             Program.globalLogin.Show();
         }
 
@@ -120,7 +120,7 @@ namespace StudyManagementApp
         {
             if (lasttheme != Program.Theme && isLogingOut == false)
             {
-                Owner.Dispose();
+                Owner.Close();
                 Program.globalLogin.Show();
             }
             isLogingOut = false;

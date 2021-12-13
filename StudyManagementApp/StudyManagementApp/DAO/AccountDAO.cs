@@ -150,7 +150,7 @@ namespace StudyManagementApp.DAO
         {
             string query = "ADD_COLORITEM @pk_COLOR , @userName , @typeCOLOR , @nameTYPE ";
 
-            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName + typeCOLOR, userName, typeCOLOR, nameTYPE });
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName + DateTime.Now.ToString("MM/dd/yyyyHH:mm:ss"), userName, typeCOLOR, nameTYPE });
 
             return result > 0;
         }
@@ -172,5 +172,13 @@ namespace StudyManagementApp.DAO
             return result > 0;
         }
 
+        public bool Update_TYPEITEM_TDL(string pk_color,string userName, string typeColor, string nameType)
+        {
+            string query = "UPDATE_TYPEITEM @pk_COLOR , @userName , @typeCOLOR , @nameTYPE ";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { pk_color, userName, typeColor, nameType });
+
+            return result > 0;
+        }
     }
 }

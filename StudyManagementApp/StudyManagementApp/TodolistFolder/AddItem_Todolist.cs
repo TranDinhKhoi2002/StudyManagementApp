@@ -17,6 +17,14 @@ namespace StudyManagementApp.TodolistFolder
             InitializeComponent();
         }
 
+        DateTime calendar;
+        public AddItem_Todolist(DateTime dateTime)
+        {
+            InitializeComponent();
+            calendar = dateTime;
+           
+        }
+
         List<string> colorType = new List<string>();
         List<string> nameType = new List<string>();
 
@@ -37,13 +45,12 @@ namespace StudyManagementApp.TodolistFolder
                 {
                     type_combobox.Items.Add(item);
                 }
+                date_monthCalendar.SetDate(calendar);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("AddItem_Todolist_Load: " + ex.Message);
             }
-            
-
         }
 
         #endregion
@@ -110,16 +117,23 @@ namespace StudyManagementApp.TodolistFolder
 
                 string note = note_textBox.Text;
                 bool done = false;
-                string pk_color = username + ColorTranslator.ToHtml(temp);
-                
-                if (note==note_textBox.Tag.ToString())
+                string pk_color;
+                DataTable alltypeitem = WorkPlace.bang_AllTYPEITEM_TDL;
+                for (int i = 0; i < alltypeitem.Rows.Count; i++)
                 {
-                    note = "";
-                }
+                    if (alltypeitem.Rows[i]["USERNAME"].ToString()== UserInfo.Instance.Username && alltypeitem.Rows[i]["TYPECOLOR"].ToString()== ColorTranslator.ToHtml(temp))
+                    {
+                        pk_color = alltypeitem.Rows[i]["PK_COLOR"].ToString();
+                        if (note == note_textBox.Tag.ToString())
+                        {
+                            note = "";
+                        }
 
-                DAO.AccountDAO.Instance.Add_TASK_TDL(username, datetimecreate, taskname, datetimedeadline, note, done, pk_color);
-                WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
-               
+                        DAO.AccountDAO.Instance.Add_TASK_TDL(username, datetimecreate, taskname, datetimedeadline, note, done, pk_color);
+                        WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
+                        break;
+                    }
+                }
                 this.Close();
             }
             catch (Exception ex)
@@ -183,8 +197,9 @@ namespace StudyManagementApp.TodolistFolder
             }
         }
 
+
         #endregion
 
-
+      
     }
 }
