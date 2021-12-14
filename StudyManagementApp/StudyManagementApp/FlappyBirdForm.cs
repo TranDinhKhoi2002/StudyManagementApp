@@ -15,11 +15,15 @@ namespace StudyManagementApp
         int pipeSpeed = 8;
         int gravity = 10;
         int score = 0;
+        Point birdOldPoint, ptOldPoint, pbOldPoint;
 
         public lbStart()
         {
             InitializeComponent();
             DoubleBuffered = true;
+            birdOldPoint = flappyBird.Location;
+            ptOldPoint = pipeTop.Location;
+            pbOldPoint = pipeBottom.Location;
         }
 
         private void timerFlappyBird_Tick(object sender, EventArgs e)
@@ -83,9 +87,9 @@ namespace StudyManagementApp
 
         private void label1_Click(object sender, EventArgs e)
         {
-            flappyBird.Location = new Point(19, 107);
-            pipeTop.Location = new Point(303, 1);
-            pipeBottom.Location = new Point(179, 273);
+            flappyBird.Location = birdOldPoint;
+            pipeTop.Location = ptOldPoint;
+            pipeBottom.Location = pbOldPoint;
             score = 0;
             pipeSpeed = 8;
             timerFlappyBird.Enabled = true;
