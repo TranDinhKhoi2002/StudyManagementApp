@@ -46,6 +46,8 @@ namespace StudyManagementApp.TodolistFolder
                     type_combobox.Items.Add(item);
                 }
                 date_monthCalendar.SetDate(calendar);
+                daynoti_comboBox.SelectedIndex = 0;
+                timenoti_comboBox.SelectedIndex = 0;
             }
             catch (Exception ex)
             {
@@ -60,6 +62,55 @@ namespace StudyManagementApp.TodolistFolder
         private void btnCancle_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        DateTime Get_datetime_NOTI(DateTime datetimedeadline)
+        {
+            DateTime dateTime = datetimedeadline;
+            switch (daynoti_comboBox.SelectedIndex)
+            {
+                case 0:
+                    //dateTime = datetimedeadline;
+                    break;
+                case 1:
+                    dateTime = datetimedeadline.AddDays(-1);
+                    break;
+                case 2:
+                    dateTime = datetimedeadline.AddDays(-2);
+                    break;
+                case 3:
+                    dateTime = datetimedeadline.AddDays(-7);
+                    break;
+                default:
+                    break;
+            }
+            switch (timenoti_comboBox.SelectedIndex)
+            {
+                case 0:
+                    //dateTime = dateTime;
+                    break;
+                case 1:
+                    dateTime = dateTime.AddMinutes(-5);
+                    break;
+                case 2:
+                    dateTime = dateTime.AddMinutes(-10);
+                    break;
+                case 3:
+                    dateTime = dateTime.AddMinutes(-15);
+                    break;
+                case 4:
+                    dateTime = dateTime.AddMinutes(-30);
+                    break;
+                case 5:
+                    dateTime = dateTime.AddHours(-1);
+                    break;
+                case 6:
+                    dateTime = dateTime.AddHours(-2);
+                    break;
+                default:
+                    break;
+            }
+            return dateTime;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -118,6 +169,7 @@ namespace StudyManagementApp.TodolistFolder
                 string note = note_textBox.Text;
                 bool done = false;
                 string pk_color;
+                DateTime datetimeNOTI = Get_datetime_NOTI(datetimedeadline);
                 DataTable alltypeitem = WorkPlace.bang_AllTYPEITEM_TDL;
                 for (int i = 0; i < alltypeitem.Rows.Count; i++)
                 {
@@ -129,7 +181,7 @@ namespace StudyManagementApp.TodolistFolder
                             note = "";
                         }
 
-                        DAO.AccountDAO.Instance.Add_TASK_TDL(username, datetimecreate, taskname, datetimedeadline, note, done, pk_color);
+                        DAO.AccountDAO.Instance.Add_TASK_TDL(username, datetimecreate, taskname, datetimedeadline, note, done, pk_color, datetimeNOTI);
                         WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
                         break;
                     }

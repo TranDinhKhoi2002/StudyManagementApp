@@ -195,6 +195,12 @@
     <Compile Include="TodolistFolder\Todolist_Form.Designer.cs">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="TodolistFolder\Update_DatetimeNoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_DatetimeNoti.Designer.cs">
+      <DependentUpon>Update_DatetimeNoti.cs</DependentUpon>
+    </Compile>
     <Compile Include="TodolistFolder\Update_Delete_TYPECOLOR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +302,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Todolist_Form.resx">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Update_DatetimeNoti.resx">
+      <DependentUpon>Update_DatetimeNoti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Update_Delete_TYPECOLOR.resx">
       <DependentUpon>Update_Delete_TYPECOLOR.cs</DependentUpon>

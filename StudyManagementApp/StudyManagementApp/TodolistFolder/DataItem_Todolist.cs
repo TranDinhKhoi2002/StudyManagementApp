@@ -15,9 +15,10 @@ namespace StudyManagementApp.TodolistFolder
         private string Note;
         private string PK_Color;
         private bool Done;
+        private DateTime DateTimeNOTI;
         public DataItem_Todolist()
         { }
-        public DataItem_Todolist(DateTime dateTimeCreate, string taskName, DateTime dateTimeDeadline, string note, string pK_Color, bool done)
+        public DataItem_Todolist(DateTime dateTimeCreate, string taskName, DateTime dateTimeDeadline, string note, string pK_Color, bool done, DateTime dateTimeNOTI)
         {
             DateTimeCreate = dateTimeCreate;
             TaskName = taskName;
@@ -25,6 +26,7 @@ namespace StudyManagementApp.TodolistFolder
             Note = note;
             PK_Color = pK_Color;
             Done = done;
+            DateTimeNOTI = dateTimeNOTI;
         }
 
         public DateTime dateTimeCreate { get => DateTimeCreate; set => DateTimeCreate = value; }
@@ -33,5 +35,6 @@ namespace StudyManagementApp.TodolistFolder
         public string note { get => Note; set => Note = value; }
         public string pk_Color { get => PK_Color; set => PK_Color = value; }
         public bool done { get => Done; set => Done = value; }
+        public DateTime dateTimeNOTI { get => DateTimeNOTI; set => DateTimeNOTI = value; }
     }
 }

@@ -1394,8 +1394,8 @@
         3qCj8qgO7LdwslUXcEcgPpznu60ByLfOloXzW/dJRfb/Af/HYsvqzIE/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="Current_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 68</value>
+  <metadata name="Remind_taskdeadline_timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1020, 19</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>119</value>

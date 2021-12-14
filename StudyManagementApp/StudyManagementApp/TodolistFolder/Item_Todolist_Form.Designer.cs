@@ -36,6 +36,8 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.Noti_iconButton = new FontAwesome.Sharp.IconButton();
             this.type_iconButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,6 +53,7 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -76,7 +79,7 @@ namespace StudyManagementApp.TodolistFolder
             this.delete_iconButton.FlatAppearance.BorderSize = 0;
             this.delete_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_iconButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.delete_iconButton.IconColor = System.Drawing.Color.DarkGray;
+            this.delete_iconButton.IconColor = System.Drawing.Color.Gray;
             this.delete_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.delete_iconButton.IconSize = 50;
             this.delete_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -106,7 +109,7 @@ namespace StudyManagementApp.TodolistFolder
             this.checkbox_iconButton.FlatAppearance.BorderSize = 0;
             this.checkbox_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkbox_iconButton.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.checkbox_iconButton.IconColor = System.Drawing.Color.DarkGray;
+            this.checkbox_iconButton.IconColor = System.Drawing.Color.Gray;
             this.checkbox_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkbox_iconButton.IconSize = 55;
             this.checkbox_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -150,13 +153,55 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.type_iconButton);
+            this.panel5.Controls.Add(this.tableLayoutPanel4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 80);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(739, 22);
             this.panel5.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.Noti_iconButton, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.type_iconButton, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(739, 22);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // Noti_iconButton
+            // 
+            this.Noti_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.Noti_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Noti_iconButton.FlatAppearance.BorderSize = 0;
+            this.Noti_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Noti_iconButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Noti_iconButton.ForeColor = System.Drawing.Color.Black;
+            this.Noti_iconButton.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.Noti_iconButton.IconColor = System.Drawing.Color.Black;
+            this.Noti_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.Noti_iconButton.IconSize = 17;
+            this.Noti_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Noti_iconButton.Location = new System.Drawing.Point(369, 0);
+            this.Noti_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.Noti_iconButton.Name = "Noti_iconButton";
+            this.Noti_iconButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Noti_iconButton.Size = new System.Drawing.Size(370, 22);
+            this.Noti_iconButton.TabIndex = 4;
+            this.Noti_iconButton.Text = "time";
+            this.Noti_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Noti_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Noti_iconButton.UseVisualStyleBackColor = false;
+            this.Noti_iconButton.Click += new System.EventHandler(this.Noti_iconButton_Click);
             // 
             // type_iconButton
             // 
@@ -177,7 +222,7 @@ namespace StudyManagementApp.TodolistFolder
             this.type_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.type_iconButton.Name = "type_iconButton";
             this.type_iconButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.type_iconButton.Size = new System.Drawing.Size(739, 22);
+            this.type_iconButton.Size = new System.Drawing.Size(369, 22);
             this.type_iconButton.TabIndex = 3;
             this.type_iconButton.Text = "Team";
             this.type_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,6 +370,7 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -355,5 +401,7 @@ namespace StudyManagementApp.TodolistFolder
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label note_label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private FontAwesome.Sharp.IconButton Noti_iconButton;
     }
 }

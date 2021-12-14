@@ -11,6 +11,7 @@ namespace StudyManagementApp
         public static bool Theme; //false: dark, true: light
         public static Login globalLogin;
         
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -22,6 +23,7 @@ namespace StudyManagementApp
             globalLogin = new Login();
             Application.Run(globalLogin);
             Theme = false;
+          
         }
     }
 }

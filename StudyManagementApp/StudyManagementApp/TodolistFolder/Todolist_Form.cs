@@ -431,7 +431,8 @@ namespace StudyManagementApp.TodolistFolder
                     string Note = allTASK.Rows[i]["NOTE"].ToString();
                     string PK_Color = allTASK.Rows[i]["PK_COLOR"].ToString();
                     bool Done = (bool)allTASK.Rows[i]["DONE"];
-                    DataItem_Todolist dataItem_Todolist = new DataItem_Todolist(DateTimeCreate, TaskName, DateTimeDeadline, Note, PK_Color, Done);
+                    DateTime DateTimeNOTI = (DateTime)allTASK.Rows[i]["DATETIMENOTI"];
+                    DataItem_Todolist dataItem_Todolist = new DataItem_Todolist(DateTimeCreate, TaskName, DateTimeDeadline, Note, PK_Color, Done, DateTimeNOTI);
                     mangItemTheoDate.Add(dataItem_Todolist);
                 }
             }
@@ -449,7 +450,8 @@ namespace StudyManagementApp.TodolistFolder
                 string Note = item.note;
                 string PK_Color = item.pk_Color;
                 bool Done = item.done;
-                Item_Todolist_Form item_Todolist_Form = new Item_Todolist_Form(DateTimeCreate, TaskName, DateTimeDeadline, Note, Done, PK_Color);
+                DateTime DateTimeNOTI = item.dateTimeNOTI;
+                Item_Todolist_Form item_Todolist_Form = new Item_Todolist_Form(DateTimeCreate, TaskName, DateTimeDeadline, Note, Done, PK_Color, DateTimeNOTI);
                 mangFormTheoDate.Add(item_Todolist_Form);
             }
 

@@ -39,11 +39,14 @@ namespace StudyManagementApp.TodolistFolder
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.type_combobox = new System.Windows.Forms.ComboBox();
-            this.typeColor_iconButton = new FontAwesome.Sharp.IconButton();
+            this.timenoti_comboBox = new System.Windows.Forms.ComboBox();
+            this.daynoti_comboBox = new System.Windows.Forms.ComboBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel13 = new System.Windows.Forms.Panel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.type_combobox = new System.Windows.Forms.ComboBox();
             this.time_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.typeColor_iconButton = new FontAwesome.Sharp.IconButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.date_monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -182,7 +185,6 @@ namespace StudyManagementApp.TodolistFolder
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Controls.Add(this.panel17, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel13, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -192,15 +194,14 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(285, 259);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.type_combobox);
-            this.panel17.Controls.Add(this.typeColor_iconButton);
+            this.panel17.Controls.Add(this.timenoti_comboBox);
+            this.panel17.Controls.Add(this.daynoti_comboBox);
+            this.panel17.Controls.Add(this.iconButton1);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(0, 129);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
@@ -208,49 +209,79 @@ namespace StudyManagementApp.TodolistFolder
             this.panel17.Size = new System.Drawing.Size(285, 130);
             this.panel17.TabIndex = 10;
             // 
-            // type_combobox
+            // timenoti_comboBox
             // 
-            this.type_combobox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.type_combobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.type_combobox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.type_combobox.BackColor = System.Drawing.Color.White;
-            this.type_combobox.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.type_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.type_combobox.FormattingEnabled = true;
-            this.type_combobox.Location = new System.Drawing.Point(62, 46);
-            this.type_combobox.Margin = new System.Windows.Forms.Padding(4);
-            this.type_combobox.Name = "type_combobox";
-            this.type_combobox.Size = new System.Drawing.Size(212, 40);
-            this.type_combobox.TabIndex = 7;
-            this.type_combobox.TabStop = false;
-            this.type_combobox.TextChanged += new System.EventHandler(this.type_combobox_TextChanged);
+            this.timenoti_comboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.timenoti_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.timenoti_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.timenoti_comboBox.BackColor = System.Drawing.Color.White;
+            this.timenoti_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.timenoti_comboBox.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timenoti_comboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.timenoti_comboBox.FormattingEnabled = true;
+            this.timenoti_comboBox.Items.AddRange(new object[] {
+            "At time of task",
+            "5 minutes before",
+            "10 minutes before",
+            "15 minutes before",
+            "30 minutes before",
+            "1 hour before",
+            "2 hours before"});
+            this.timenoti_comboBox.Location = new System.Drawing.Point(62, 63);
+            this.timenoti_comboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.timenoti_comboBox.Name = "timenoti_comboBox";
+            this.timenoti_comboBox.Size = new System.Drawing.Size(212, 36);
+            this.timenoti_comboBox.TabIndex = 8;
+            this.timenoti_comboBox.TabStop = false;
             // 
-            // typeColor_iconButton
+            // daynoti_comboBox
             // 
-            this.typeColor_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.typeColor_iconButton.BackColor = System.Drawing.Color.Transparent;
-            this.typeColor_iconButton.FlatAppearance.BorderSize = 0;
-            this.typeColor_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.typeColor_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.typeColor_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.typeColor_iconButton.IconChar = FontAwesome.Sharp.IconChar.Palette;
-            this.typeColor_iconButton.IconColor = System.Drawing.Color.White;
-            this.typeColor_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.typeColor_iconButton.IconSize = 42;
-            this.typeColor_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.typeColor_iconButton.Location = new System.Drawing.Point(15, 40);
-            this.typeColor_iconButton.Margin = new System.Windows.Forms.Padding(0);
-            this.typeColor_iconButton.Name = "typeColor_iconButton";
-            this.typeColor_iconButton.Size = new System.Drawing.Size(43, 50);
-            this.typeColor_iconButton.TabIndex = 7;
-            this.typeColor_iconButton.TabStop = false;
-            this.typeColor_iconButton.UseVisualStyleBackColor = false;
-            this.typeColor_iconButton.Click += new System.EventHandler(this.typeColor_iconButton_Click);
+            this.daynoti_comboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.daynoti_comboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.daynoti_comboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.daynoti_comboBox.BackColor = System.Drawing.Color.White;
+            this.daynoti_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.daynoti_comboBox.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daynoti_comboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.daynoti_comboBox.FormattingEnabled = true;
+            this.daynoti_comboBox.Items.AddRange(new object[] {
+            "On day of task",
+            "1 day before",
+            "2 days before",
+            "1 week before"});
+            this.daynoti_comboBox.Location = new System.Drawing.Point(62, 13);
+            this.daynoti_comboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.daynoti_comboBox.Name = "daynoti_comboBox";
+            this.daynoti_comboBox.Size = new System.Drawing.Size(212, 36);
+            this.daynoti_comboBox.TabIndex = 8;
+            this.daynoti_comboBox.TabStop = false;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.iconButton1.IconSize = 42;
+            this.iconButton1.Location = new System.Drawing.Point(10, 12);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(43, 45);
+            this.iconButton1.TabIndex = 9;
+            this.iconButton1.TabStop = false;
+            this.iconButton1.UseVisualStyleBackColor = false;
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.iconButton5);
+            this.panel13.Controls.Add(this.type_combobox);
             this.panel13.Controls.Add(this.time_dateTimePicker);
+            this.panel13.Controls.Add(this.typeColor_iconButton);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
@@ -270,7 +301,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton5.IconSize = 42;
-            this.iconButton5.Location = new System.Drawing.Point(15, 42);
+            this.iconButton5.Location = new System.Drawing.Point(10, 18);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(43, 45);
@@ -278,18 +309,55 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton5.TabStop = false;
             this.iconButton5.UseVisualStyleBackColor = false;
             // 
+            // type_combobox
+            // 
+            this.type_combobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.type_combobox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.type_combobox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.type_combobox.BackColor = System.Drawing.Color.White;
+            this.type_combobox.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.type_combobox.FormattingEnabled = true;
+            this.type_combobox.Location = new System.Drawing.Point(62, 80);
+            this.type_combobox.Margin = new System.Windows.Forms.Padding(4);
+            this.type_combobox.Name = "type_combobox";
+            this.type_combobox.Size = new System.Drawing.Size(212, 36);
+            this.type_combobox.TabIndex = 7;
+            this.type_combobox.TabStop = false;
+            this.type_combobox.TextChanged += new System.EventHandler(this.type_combobox_TextChanged);
+            // 
             // time_dateTimePicker
             // 
             this.time_dateTimePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.time_dateTimePicker.CustomFormat = "hh:mm tt";
-            this.time_dateTimePicker.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_dateTimePicker.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.time_dateTimePicker.Location = new System.Drawing.Point(62, 43);
+            this.time_dateTimePicker.Location = new System.Drawing.Point(62, 21);
             this.time_dateTimePicker.Name = "time_dateTimePicker";
             this.time_dateTimePicker.ShowUpDown = true;
-            this.time_dateTimePicker.Size = new System.Drawing.Size(212, 40);
+            this.time_dateTimePicker.Size = new System.Drawing.Size(212, 36);
             this.time_dateTimePicker.TabIndex = 6;
             this.time_dateTimePicker.TabStop = false;
+            // 
+            // typeColor_iconButton
+            // 
+            this.typeColor_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.typeColor_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.typeColor_iconButton.FlatAppearance.BorderSize = 0;
+            this.typeColor_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.typeColor_iconButton.IconChar = FontAwesome.Sharp.IconChar.Palette;
+            this.typeColor_iconButton.IconColor = System.Drawing.Color.White;
+            this.typeColor_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.typeColor_iconButton.IconSize = 42;
+            this.typeColor_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.typeColor_iconButton.Location = new System.Drawing.Point(10, 75);
+            this.typeColor_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.typeColor_iconButton.Name = "typeColor_iconButton";
+            this.typeColor_iconButton.Size = new System.Drawing.Size(43, 41);
+            this.typeColor_iconButton.TabIndex = 7;
+            this.typeColor_iconButton.TabStop = false;
+            this.typeColor_iconButton.UseVisualStyleBackColor = false;
+            this.typeColor_iconButton.Click += new System.EventHandler(this.typeColor_iconButton_Click);
             // 
             // panel4
             // 
@@ -472,5 +540,8 @@ namespace StudyManagementApp.TodolistFolder
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.ComboBox daynoti_comboBox;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private System.Windows.Forms.ComboBox timenoti_comboBox;
     }
 }

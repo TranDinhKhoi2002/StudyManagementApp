@@ -8,28 +8,24 @@ namespace StudyManagementApp
     public partial class Edit : Form
     {
         bool lasttheme;
-        bool isLogingOut = false;
-
+      
         public Edit()
         {
             InitializeComponent();
             lasttheme = Program.Theme;
+            passwork_panel.Hide();
+            mode_panel.Dock = DockStyle.Fill;
+
             if (Program.Theme == true)
             {
-                toggleButton1.CheckState = CheckState.Checked;
-                HamDoiMau(SacMau.trangvua, SacMau.dendam, Color.Gray, Color.White);
+                theme_toggleButton.CheckState = CheckState.Checked;
             }
             else
             {
-                toggleButton1.CheckState = CheckState.Unchecked;
-                HamDoiMau(SacMau.dendam, SacMau.trangvua, Color.Gray, Color.White);
+                theme_toggleButton.CheckState = CheckState.Unchecked;
             }
         }
 
-        private void CancelButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
@@ -73,57 +69,105 @@ namespace StudyManagementApp
         //Log-out nha
         private void Logout_button_Click(object sender, EventArgs e)
         {
-            isLogingOut = true;
-            Owner.Close();
+            Owner.Dispose();
             Program.globalLogin.Show();
         }
-
-        //Đổi theme nha
-        void HamDoiMau(Color x , Color y, Color z, Color t)
+        
+        //nút mode menu trái
+        private void Mode_iconButton_Click(object sender, EventArgs e)
         {
-            this.BackColor =x;
-            Apply_Button.BorderColor = x;
-            Logout_button.BorderColor = x;
-            CancelButton.BorderColor = x;
-            label1.ForeColor = label2.ForeColor = label3.ForeColor = label4.ForeColor = label5.ForeColor = y;
-
-            Nickname_textbox.ForeColor = y;
-            Nickname_textbox.PlaceholderColor = z;
-            Nickname_textbox.BackColor = x;
-
-            NewPassword_textbox.ForeColor = y;
-            NewPassword_textbox.PlaceholderColor = z;
-            NewPassword_textbox.BackColor = x;
-
-            CurrentPassword_textbox.ForeColor = y;
-            CurrentPassword_textbox.PlaceholderColor = z;
-            CurrentPassword_textbox.BackColor = x;
-
-            ReNewPassword_textbox.ForeColor = y;
-            ReNewPassword_textbox.PlaceholderColor = z;
-            ReNewPassword_textbox.BackColor = x;           
+            if (mode_panel.Visible==false)
+            {
+                passwork_panel.Hide();
+                pass_iconButton.BackColor = Color.DimGray;
+                mode_panel.Show();
+                mode_panel.Dock = DockStyle.Fill;
+                Mode_iconButton.BackColor = Color.Gray;
+                Title_Label.Text = "Mode";
+            }
+           
         }
-        private void ToggleButton1_CheckedChanged(object sender, EventArgs e)
+        //nút pass menu trái
+        private void pass_iconButton_Click(object sender, EventArgs e)
         {
-            Program.Theme = toggleButton1.Checked;
-            if(Program.Theme==true)
+            if (passwork_panel.Visible == false)
             {
-                HamDoiMau(SacMau.trangvua, SacMau.dendam, Color.Gray, Color.White);
-            }    
-            else
-            {
-                HamDoiMau(SacMau.dendam, SacMau.trangvua, Color.Gray, Color.White);
-            }    
+                mode_panel.Hide();
+                Mode_iconButton.BackColor = Color.DimGray;
+                passwork_panel.Show();
+                passwork_panel.Dock = DockStyle.Fill;
+                pass_iconButton.BackColor = Color.Gray;
+                Title_Label.Text = "Change Password";
+            }
+        }
+        
+        //btn đóng form
+        private void close_iconButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
-        private void Edit_FormClosed(object sender, FormClosedEventArgs e)
+        //btn Apply các thể loại mode
+        private void mode_apply_btn_Click(object sender, EventArgs e)
         {
-            if (lasttheme != Program.Theme && isLogingOut == false)
+            Program.Theme = theme_toggleButton.Checked;
+            if (lasttheme != Program.Theme )
             {
-                Owner.Close();
+                Owner.Dispose();
+                this.Close();
                 Program.globalLogin.Show();
             }
-            isLogingOut = false;
+         
+        }
+
+        private void theme_toggleButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!theme_toggleButton.Checked)
+            {
+                darktheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                lighttheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            }
+            else
+            {
+                darktheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                lighttheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            }
+        }
+
+        private void background_toggleButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!background_toggleButton.Checked)
+            {
+                no_background_running_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                no_background_running_iconButton.IconColor = Color.IndianRed;
+                yes_background_running_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                yes_background_running_iconButton.IconColor = Color.Black;
+            }
+            else
+            {
+                no_background_running_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                no_background_running_iconButton.IconColor = Color.Black;
+                yes_background_running_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                yes_background_running_iconButton.IconColor = Color.LightGreen;
+            }
+        }
+
+        private void startup_toggleButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!startup_toggleButton.Checked)
+            {
+                no_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                no_startup_iconButton.IconColor = Color.IndianRed;
+                yes_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                yes_startup_iconButton.IconColor = Color.Black;
+            }
+            else
+            {
+                no_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+                no_startup_iconButton.IconColor = Color.Black;
+                yes_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+                yes_startup_iconButton.IconColor = Color.LightGreen;
+            }
         }
     }
 }

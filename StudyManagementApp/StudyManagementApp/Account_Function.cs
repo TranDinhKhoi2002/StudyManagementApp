@@ -111,6 +111,7 @@ namespace StudyManagementApp
         {
             this.BackColor = x;
             Title_panel.BackColor = y;
+            close_panel.BackColor = y;
         }
 
         void LoadMau()
@@ -181,7 +182,11 @@ namespace StudyManagementApp
             }
         }
 
-      
+        private void close_iconButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void ForgotPass_iconButton_Click(object sender, EventArgs e)
         {
             if (state != State.forgot)
