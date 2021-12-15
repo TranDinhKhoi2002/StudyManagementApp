@@ -69,6 +69,7 @@ namespace StudyManagementApp
             this.MinutePomo_Label = new System.Windows.Forms.Label();
             this.Pomo_PictureBox = new System.Windows.Forms.PictureBox();
             this.UserInforPanel = new System.Windows.Forms.Panel();
+            this.FlashCardRcbtn = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.UserNameLabel = new System.Windows.Forms.Label();
@@ -97,6 +98,7 @@ namespace StudyManagementApp
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.Panel();
+            this.flashCardUC = new StudyManagementApp.UserControls.FlashCardUC();
             this.BackGroundWorkPlace_Panel = new System.Windows.Forms.Panel();
             this.aboutUC1 = new StudyManagementApp.UserControls.AboutUC();
             this.helpUC1 = new StudyManagementApp.UserControls.HelpUC();
@@ -106,8 +108,6 @@ namespace StudyManagementApp
             this.cmstripBackground = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Current_Timer = new System.Windows.Forms.Timer(this.components);
-            this.flashCardUC = new StudyManagementApp.UserControls.FlashCardUC();
-            this.FlashCardRcbtn = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ToolTablePanel.SuspendLayout();
             this.AddPic_Panel.SuspendLayout();
             this.WordToolPanel.SuspendLayout();
@@ -149,7 +149,7 @@ namespace StudyManagementApp
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 368F));
+            this.ToolTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 374F));
             this.ToolTablePanel.Controls.Add(this.AddPic_Panel, 4, 0);
             this.ToolTablePanel.Controls.Add(this.WordToolPanel, 1, 0);
             this.ToolTablePanel.Controls.Add(this.SaveButtonTablePanel, 3, 0);
@@ -174,10 +174,10 @@ namespace StudyManagementApp
             this.AddPic_Panel.Controls.Add(this.iconButton4);
             this.AddPic_Panel.Controls.Add(this.txt_second);
             this.AddPic_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddPic_Panel.Location = new System.Drawing.Point(696, 0);
+            this.AddPic_Panel.Location = new System.Drawing.Point(690, 0);
             this.AddPic_Panel.Margin = new System.Windows.Forms.Padding(1, 0, 0, 0);
             this.AddPic_Panel.Name = "AddPic_Panel";
-            this.AddPic_Panel.Size = new System.Drawing.Size(368, 57);
+            this.AddPic_Panel.Size = new System.Drawing.Size(374, 57);
             this.AddPic_Panel.TabIndex = 3;
             // 
             // txt_hour
@@ -238,7 +238,7 @@ namespace StudyManagementApp
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton4.Location = new System.Drawing.Point(334, 0);
+            this.iconButton4.Location = new System.Drawing.Point(340, 0);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(27, 39);
@@ -266,7 +266,7 @@ namespace StudyManagementApp
             this.WordToolPanel.Location = new System.Drawing.Point(201, 0);
             this.WordToolPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.WordToolPanel.Name = "WordToolPanel";
-            this.WordToolPanel.Size = new System.Drawing.Size(163, 57);
+            this.WordToolPanel.Size = new System.Drawing.Size(161, 57);
             this.WordToolPanel.TabIndex = 3;
             // 
             // label2
@@ -298,13 +298,13 @@ namespace StudyManagementApp
             this.SaveButtonTablePanel.Controls.Add(this.SaveButton, 0, 0);
             this.SaveButtonTablePanel.Controls.Add(this.SaveAsButton, 1, 0);
             this.SaveButtonTablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SaveButtonTablePanel.Location = new System.Drawing.Point(531, 0);
+            this.SaveButtonTablePanel.Location = new System.Drawing.Point(527, 0);
             this.SaveButtonTablePanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SaveButtonTablePanel.Name = "SaveButtonTablePanel";
             this.SaveButtonTablePanel.RowCount = 1;
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.SaveButtonTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
-            this.SaveButtonTablePanel.Size = new System.Drawing.Size(163, 57);
+            this.SaveButtonTablePanel.Size = new System.Drawing.Size(161, 57);
             this.SaveButtonTablePanel.TabIndex = 7;
             // 
             // SaveButton
@@ -321,7 +321,7 @@ namespace StudyManagementApp
             this.SaveButton.Location = new System.Drawing.Point(14, 10);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(14, 10, 7, 10);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(60, 37);
+            this.SaveButton.Size = new System.Drawing.Size(59, 37);
             this.SaveButton.TabIndex = 6;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -337,10 +337,10 @@ namespace StudyManagementApp
             this.SaveAsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveAsButton.Font = new System.Drawing.Font("Agency FB", 12.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveAsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.SaveAsButton.Location = new System.Drawing.Point(88, 10);
+            this.SaveAsButton.Location = new System.Drawing.Point(87, 10);
             this.SaveAsButton.Margin = new System.Windows.Forms.Padding(7, 10, 14, 10);
             this.SaveAsButton.Name = "SaveAsButton";
-            this.SaveAsButton.Size = new System.Drawing.Size(61, 37);
+            this.SaveAsButton.Size = new System.Drawing.Size(60, 37);
             this.SaveAsButton.TabIndex = 6;
             this.SaveAsButton.Text = "Save as";
             this.SaveAsButton.UseVisualStyleBackColor = false;
@@ -419,10 +419,10 @@ namespace StudyManagementApp
             // 
             this.PassageToolPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.PassageToolPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PassageToolPanel.Location = new System.Drawing.Point(366, 0);
+            this.PassageToolPanel.Location = new System.Drawing.Point(364, 0);
             this.PassageToolPanel.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.PassageToolPanel.Name = "PassageToolPanel";
-            this.PassageToolPanel.Size = new System.Drawing.Size(163, 57);
+            this.PassageToolPanel.Size = new System.Drawing.Size(161, 57);
             this.PassageToolPanel.TabIndex = 8;
             // 
             // LeftMenuTablePanel
@@ -702,6 +702,21 @@ namespace StudyManagementApp
             this.UserInforPanel.Name = "UserInforPanel";
             this.UserInforPanel.Size = new System.Drawing.Size(201, 199);
             this.UserInforPanel.TabIndex = 0;
+            // 
+            // FlashCardRcbtn
+            // 
+            this.FlashCardRcbtn.BackColor = System.Drawing.Color.DarkGray;
+            this.FlashCardRcbtn.BorderColor = System.Drawing.Color.LightGray;
+            this.FlashCardRcbtn.BorderRadius = 10;
+            this.FlashCardRcbtn.BorderSize = 0;
+            this.FlashCardRcbtn.FlatAppearance.BorderSize = 0;
+            this.FlashCardRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FlashCardRcbtn.Location = new System.Drawing.Point(156, 151);
+            this.FlashCardRcbtn.Name = "FlashCardRcbtn";
+            this.FlashCardRcbtn.Size = new System.Drawing.Size(40, 40);
+            this.FlashCardRcbtn.TabIndex = 5;
+            this.FlashCardRcbtn.Text = "FC";
+            this.FlashCardRcbtn.UseVisualStyleBackColor = false;
             // 
             // Logo_PictureBox
             // 
@@ -1097,6 +1112,15 @@ namespace StudyManagementApp
             this.HomePanel.Size = new System.Drawing.Size(863, 403);
             this.HomePanel.TabIndex = 1;
             // 
+            // flashCardUC
+            // 
+            this.flashCardUC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.flashCardUC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flashCardUC.Location = new System.Drawing.Point(0, 0);
+            this.flashCardUC.Name = "flashCardUC";
+            this.flashCardUC.Size = new System.Drawing.Size(863, 403);
+            this.flashCardUC.TabIndex = 0;
+            // 
             // BackGroundWorkPlace_Panel
             // 
             this.BackGroundWorkPlace_Panel.Controls.Add(this.HomePanel);
@@ -1171,29 +1195,6 @@ namespace StudyManagementApp
             this.Current_Timer.Enabled = true;
             this.Current_Timer.Interval = 1000;
             this.Current_Timer.Tick += new System.EventHandler(this.Current_Timer_Tick);
-            // 
-            // flashCardUC
-            // 
-            this.flashCardUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flashCardUC.Location = new System.Drawing.Point(0, 0);
-            this.flashCardUC.Name = "flashCardUC";
-            this.flashCardUC.Size = new System.Drawing.Size(863, 403);
-            this.flashCardUC.TabIndex = 0;
-            // 
-            // FlashCardRcbtn
-            // 
-            this.FlashCardRcbtn.BackColor = System.Drawing.Color.DarkGray;
-            this.FlashCardRcbtn.BorderColor = System.Drawing.Color.LightGray;
-            this.FlashCardRcbtn.BorderRadius = 10;
-            this.FlashCardRcbtn.BorderSize = 0;
-            this.FlashCardRcbtn.FlatAppearance.BorderSize = 0;
-            this.FlashCardRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlashCardRcbtn.Location = new System.Drawing.Point(156, 151);
-            this.FlashCardRcbtn.Name = "FlashCardRcbtn";
-            this.FlashCardRcbtn.Size = new System.Drawing.Size(40, 40);
-            this.FlashCardRcbtn.TabIndex = 5;
-            this.FlashCardRcbtn.Text = "FC";
-            this.FlashCardRcbtn.UseVisualStyleBackColor = false;
             // 
             // WorkPlace
             // 
