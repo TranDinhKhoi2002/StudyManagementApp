@@ -180,5 +180,41 @@ namespace StudyManagementApp.DAO
 
             return result > 0;
         }
+
+        // User's configuration
+        public DataTable GetUserConfig(string username)
+        {
+            string query = "GetUserConfig @username";
+
+            DataTable result = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { username });
+
+            return result;
+        }
+
+        public bool InsertUserConfig(string username, bool theme, bool background, bool startup)
+        {
+            string query = "InsertUserConfig @username , @theme , @background , @startup";
+
+            string themeStr = theme ? "true" : "false";
+            string backgroundStr = background ? "true" : "false";
+            string startupStr = startup ? "true" : "false";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, themeStr, backgroundStr, startupStr });
+
+            return result > 0;
+        }
+
+        public bool UpdateUserConfig(string username, bool theme, bool background, bool startup)
+        {
+            string query = "UpdateUserConfig @username , @theme , @background , @startup";
+
+            string themeStr = theme ? "true" : "false";
+            string backgroundStr = background ? "true" : "false";
+            string startupStr = startup ? "true" : "false";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { username, themeStr, backgroundStr, startupStr });
+
+            return result > 0;
+        }
     }
 }

@@ -112,15 +112,23 @@ namespace StudyManagementApp
 
                 if (AccountDAO.Instance.Login(userName, passWord))
                 {
-                    //Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
+                    // Cập nhật thông tin vào UserInfo để sử dụng trong chương trình
                     UserInfo.Instance.Username = userName;
                     UserInfo.Instance.Password = passWord;
 
-                    //Vào chương trình
+                    // Lấy config của người dùng: Themes, Backgroundruning, Startup,...
+                    GetUserConfiguration(); 
+
+                    // Vào chương trình
                     WorkPlace globalWorkPlace = new WorkPlace();
                     globalWorkPlace.Show();
 
                     this.Hide();
+                    
+                    // Xóa username và password textbox
+                    UsernameTextBox.Texts = string.Empty;
+                    PasswordTextBox.Texts = string.Empty;
+                    SignInButton.Select();
                 }
                 else
                 {
@@ -132,6 +140,26 @@ namespace StudyManagementApp
                 MessageBox.Show(excpt.Message);
             }
         }
+
+        // Hàm lấy cấu hình/settings của người dùng
+        private void GetUserConfiguration()
+        {
+            DataTable userConfigTable = AccountDAO.Instance.GetUserConfig(UserInfo.Instance.Username);
+            if (userConfigTable.Rows.Count > 0)
+            {
+                Program.Theme = userConfigTable.Rows[0]["THEME"].ToString() == "True" ? true : false;
+                Program.IsBackgroundRunningEnable = userConfigTable.Rows[0]["BACKGROUND_RUNNING_ENABLE"].ToString() == "True" ? true : false;
+                Program.IsStartupEnable = userConfigTable.Rows[0]["STARTUP_ENABLE"].ToString() == "True" ? true : false;
+            }
+            else
+            {
+                AccountDAO.Instance.InsertUserConfig(UserInfo.Instance.Username, false, false, false);
+                Program.Theme = false;
+                Program.IsBackgroundRunningEnable = false;
+                Program.IsStartupEnable = false;
+            }
+        }
+
         #endregion
 
         #region CanChinhCacControl

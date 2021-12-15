@@ -7,6 +7,7 @@ using StudyManagementApp.DAO;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Collections;
+using System.Drawing;
 
 namespace StudyManagementApp.FlashCardFolder
 {
@@ -228,6 +229,26 @@ namespace StudyManagementApp.FlashCardFolder
             }
         }
 
+        private void ToggleDeckTab_AddDeck()
+        {
+            if (isDeckTab_AddDeckOpen)
+            {
+                isDeckTab_AddDeckOpen = false;
+                DeckTabTableLayout.RowStyles[1].Height = 80;
+                DeckTabTableLayout.RowStyles[2].Height = 10;
+                DeckTabTableLayout.RowStyles[3].Height = 0;
+            }
+            else
+            {
+                isDeckTab_AddDeckOpen = true;
+                DeckTabTableLayout.RowStyles[1].Height = 70;
+                DeckTabTableLayout.RowStyles[2].Height = 0;
+                DeckTabTableLayout.RowStyles[3].Height = 20;
+
+                DeckTab_AddDeck_DeckNameTxt.Select();
+            }
+        }
+
         private void SetState(State state)
         {
             switch (state)
@@ -298,13 +319,18 @@ namespace StudyManagementApp.FlashCardFolder
         private void DeckTabLoad()
         {
             DeckTab_Datagridview.DataSource = FlashCardDAO.Instance.GetDecks(UserInfo.Instance.Username);
-            DeckTab_Datagridview.Columns["ID"].Visible = false;
+            DeckTab_Datagridview.Columns[0].Visible = false;
+            DeckTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            DeckTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void DeckDetailLoad()
         {
             FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(currentDeckID);
-            FCDetailTab_Datagridview.Columns["ID"].Visible = false;
+            FCDetailTab_Datagridview.Columns[0].Visible = false;
+            FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
         private void AddFCTab_ChangeWithNavigation()
@@ -340,6 +366,9 @@ namespace StudyManagementApp.FlashCardFolder
         //
         private void FlashCardUC_Load(object sender, EventArgs e)
         {
+            // Theme
+            LoadMau();
+
             // Set initial state
             isFlip = false;
             WordPanel.Visible = true;
@@ -614,7 +643,7 @@ namespace StudyManagementApp.FlashCardFolder
                 }
 
                 // Reload Decks (Decks tab)
-                DeckTab_Datagridview.DataSource = FlashCardDAO.Instance.GetDecks(UserInfo.Instance.Username);
+                DeckTabLoad();
 
                 // Reload Decks (Bar)
                 GetDecks();
@@ -687,7 +716,7 @@ namespace StudyManagementApp.FlashCardFolder
                 }
 
                 // Reload Decks (Decks tab)
-                DeckTab_Datagridview.DataSource = FlashCardDAO.Instance.GetDecks(UserInfo.Instance.Username);
+                DeckTabLoad();
 
                 // Reload Decks (Bar)
                 GetDecks();
@@ -740,23 +769,7 @@ namespace StudyManagementApp.FlashCardFolder
             ToggleDeckTab_AddDeck();
         }
 
-        private void ToggleDeckTab_AddDeck()
-        {
-            if (isDeckTab_AddDeckOpen)
-            {
-                isDeckTab_AddDeckOpen = false;
-                DeckTabTableLayout.RowStyles[1].Height = 80;
-                DeckTabTableLayout.RowStyles[2].Height = 10;
-                DeckTabTableLayout.RowStyles[3].Height = 0;
-            }
-            else
-            {
-                isDeckTab_AddDeckOpen = true;
-                DeckTabTableLayout.RowStyles[1].Height = 65;
-                DeckTabTableLayout.RowStyles[2].Height = 0;
-                DeckTabTableLayout.RowStyles[3].Height = 25;
-            }
-        }
+        
 
         private void DeckTabDeckAddCancelButton_Click(object sender, EventArgs e)
         {
@@ -768,7 +781,13 @@ namespace StudyManagementApp.FlashCardFolder
             if (DeckTab_Datagridview.Rows.Count > 1)
             {
                 fcDetailID = DeckTab_Datagridview.Rows[e.RowIndex].Cells[0].Value.ToString();
+
                 FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(fcDetailID);
+                FCDetailTab_Datagridview.Columns[0].Visible = false;
+                FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
                 FCDetailTab_InstructionLabel.Text = DeckTab_Datagridview.Rows[e.RowIndex].Cells[1].Value.ToString();
                 ToggleFCDetail();
             }
@@ -968,6 +987,11 @@ namespace StudyManagementApp.FlashCardFolder
 
                 // Reload deck detail
                 FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(fcDetailID);
+                FCDetailTab_Datagridview.Columns[0].Visible = false;
+                FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
                 GetFlashCards();
                 if (fcList.Count > 0 && currentFCDeleted)
                     currentFCIndex = 0;
@@ -999,6 +1023,51 @@ namespace StudyManagementApp.FlashCardFolder
                     break;
                 }
         }
+        #endregion
+
+        #region  Theme
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                this.BackColor = Color.FromArgb(236, 235, 235);
+                ControlTableLayout.BackColor = Color.FromArgb(213, 208, 210);
+                DeckTabTableLayout.BackColor = Color.FromArgb(213, 208, 210);
+                DeckTab_Datagridview.BackgroundColor = Color.FromArgb(213, 208, 210);
+                DeckTab_AddDeckPanel.BackColor = Color.FromArgb(100, 101, 110);
+                AddFCTabTableLayout.BackColor = Color.FromArgb(213, 208, 210);
+                AddFCTab_SearchSectionPanel.BackColor = Color.FromArgb(100, 101, 110);
+                FCDetailTabTableLayout.BackColor = Color.FromArgb(100, 101, 110);
+                FCDetailTab_Datagridview.BackgroundColor = Color.FromArgb(100, 101, 110);
+
+                // Font
+                FlashCardCountLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                WordLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                DefinitionLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                DescriptionContentLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                DescriptionTitleLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                AddFCTab_WordTitleLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                AddFCTab_DefinitionTitleLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                AddFCTab_DescriptionTitleLabel.ForeColor = Color.FromArgb(5, 5, 5);
+                AddFCTab_SearchResultLabel.ForeColor = Color.FromArgb(5, 5, 5);
+            }
+            else
+            {
+                this.BackColor = SacMau.dendam;
+
+                ControlTableLayout.BackColor = Color.FromArgb(37, 42, 45);
+                DeckTabTableLayout.BackColor = Color.FromArgb(37, 42, 45);
+                AddFCTabTableLayout.BackColor = Color.FromArgb(37, 42, 45);
+                DeckTab_Datagridview.BackgroundColor = Color.FromArgb(37, 42, 45);
+
+                FCDetailTabTableLayout.BackColor = Color.FromArgb(27, 32, 35);
+                DeckTab_AddDeckPanel.BackColor = Color.FromArgb(27, 32, 35);
+                AddFCTab_SearchSectionPanel.BackColor = Color.FromArgb(27, 32, 35);
+                FCDetailTab_Datagridview.BackgroundColor = Color.FromArgb(27, 32, 35);
+            }
+        }
+
         #endregion
     }
 }

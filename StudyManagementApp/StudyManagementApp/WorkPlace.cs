@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using StudyManagementApp.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,18 +36,28 @@ namespace StudyManagementApp
             flashcard_Form.TopLevel = false;
             flashcard_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(flashcard_Form);
-
         }
+
+        
 
         //ấy lại hàm show
         public new void Show()
         {
             bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
             bang_AllTYPEITEM_TDL = DAO.AccountDAO.Instance.GetAll_TYPEITEM_TDL(UserInfo.Instance.Username);
+            
+            // Todolist
             todolist_Form = new TodolistFolder.Todolist_Form();
             todolist_Form.TopLevel = false;
             todolist_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(todolist_Form);
+
+            // Flashcard
+            flashcard_Form = new FlashCardFolder.FlashCardForm();
+            flashcard_Form.TopLevel = false;
+            flashcard_Form.Dock = DockStyle.Fill;
+            HomePanel.Controls.Add(flashcard_Form);
+
             date_Choosing_ofWeek_ToDoList = DateTime.Now;
             Main_customCalendar = new UserControls.CustomCalendar();
             SETTING_CuonLich();
@@ -742,9 +753,15 @@ namespace StudyManagementApp
 
         private void WorkPlace_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Hide();
-           
-            e.Cancel = true;
+            if (Program.IsBackgroundRunningEnable)
+            {
+                this.Hide();
+                e.Cancel = true;
+            }
+            else
+            {
+                Program.globalLogin.Show();
+            }
         }
 
         private void CloseToolStripMenuItem_Click(object sender, EventArgs e)

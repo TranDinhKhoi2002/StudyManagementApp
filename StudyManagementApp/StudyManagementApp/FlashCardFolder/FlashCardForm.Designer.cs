@@ -120,7 +120,7 @@
             // 
             // GlobalTableLayoutPanel
             // 
-            this.GlobalTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.GlobalTableLayoutPanel.BackColor = System.Drawing.Color.Transparent;
             this.GlobalTableLayoutPanel.ColumnCount = 1;
             this.GlobalTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.GlobalTableLayoutPanel.Controls.Add(this.ControlTableLayout, 0, 0);
@@ -136,7 +136,7 @@
             // 
             // ControlTableLayout
             // 
-            this.ControlTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(58)))));
+            this.ControlTableLayout.BackColor = System.Drawing.Color.Transparent;
             this.ControlTableLayout.ColumnCount = 8;
             this.ControlTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.331388F));
             this.ControlTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00417F));
@@ -155,16 +155,17 @@
             this.ControlTableLayout.Controls.Add(this.FlipRcbtn, 7, 0);
             this.ControlTableLayout.Controls.Add(this.FCEditButton, 6, 0);
             this.ControlTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ControlTableLayout.Location = new System.Drawing.Point(3, 3);
+            this.ControlTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.ControlTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.ControlTableLayout.Name = "ControlTableLayout";
             this.ControlTableLayout.RowCount = 1;
             this.ControlTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ControlTableLayout.Size = new System.Drawing.Size(690, 30);
+            this.ControlTableLayout.Size = new System.Drawing.Size(696, 36);
             this.ControlTableLayout.TabIndex = 1;
             // 
             // DeckMoreRcbtn
             // 
-            this.DeckMoreRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.DeckMoreRcbtn.BackColor = System.Drawing.Color.Silver;
             this.DeckMoreRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.DeckMoreRcbtn.BorderRadius = 10;
             this.DeckMoreRcbtn.BorderSize = 0;
@@ -172,11 +173,11 @@
             this.DeckMoreRcbtn.FlatAppearance.BorderSize = 0;
             this.DeckMoreRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeckMoreRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckMoreRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
+            this.DeckMoreRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DeckMoreRcbtn.Location = new System.Drawing.Point(5, 5);
             this.DeckMoreRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.DeckMoreRcbtn.Name = "DeckMoreRcbtn";
-            this.DeckMoreRcbtn.Size = new System.Drawing.Size(47, 20);
+            this.DeckMoreRcbtn.Size = new System.Drawing.Size(47, 26);
             this.DeckMoreRcbtn.TabIndex = 5;
             this.DeckMoreRcbtn.Text = "More";
             this.DeckMoreRcbtn.UseVisualStyleBackColor = false;
@@ -184,7 +185,7 @@
             // 
             // RandomRcbtn
             // 
-            this.RandomRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.RandomRcbtn.BackColor = System.Drawing.Color.Silver;
             this.RandomRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.RandomRcbtn.BorderRadius = 10;
             this.RandomRcbtn.BorderSize = 0;
@@ -192,11 +193,11 @@
             this.RandomRcbtn.FlatAppearance.BorderSize = 0;
             this.RandomRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RandomRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RandomRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.RandomRcbtn.Location = new System.Drawing.Point(405, 5);
+            this.RandomRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.RandomRcbtn.Location = new System.Drawing.Point(407, 5);
             this.RandomRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.RandomRcbtn.Name = "RandomRcbtn";
-            this.RandomRcbtn.Size = new System.Drawing.Size(47, 20);
+            this.RandomRcbtn.Size = new System.Drawing.Size(47, 26);
             this.RandomRcbtn.TabIndex = 1;
             this.RandomRcbtn.Text = "?";
             this.RandomRcbtn.UseVisualStyleBackColor = false;
@@ -204,7 +205,7 @@
             // 
             // NextRcbtn
             // 
-            this.NextRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.NextRcbtn.BackColor = System.Drawing.Color.Silver;
             this.NextRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.NextRcbtn.BorderRadius = 10;
             this.NextRcbtn.BorderSize = 0;
@@ -212,11 +213,11 @@
             this.NextRcbtn.FlatAppearance.BorderSize = 0;
             this.NextRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.NextRcbtn.Location = new System.Drawing.Point(348, 5);
+            this.NextRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.NextRcbtn.Location = new System.Drawing.Point(350, 5);
             this.NextRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.NextRcbtn.Name = "NextRcbtn";
-            this.NextRcbtn.Size = new System.Drawing.Size(47, 20);
+            this.NextRcbtn.Size = new System.Drawing.Size(47, 26);
             this.NextRcbtn.TabIndex = 2;
             this.NextRcbtn.Text = ">";
             this.NextRcbtn.UseVisualStyleBackColor = false;
@@ -224,7 +225,7 @@
             // 
             // PreviousRcbtn
             // 
-            this.PreviousRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.PreviousRcbtn.BackColor = System.Drawing.Color.Silver;
             this.PreviousRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.PreviousRcbtn.BorderRadius = 10;
             this.PreviousRcbtn.BorderSize = 0;
@@ -232,11 +233,11 @@
             this.PreviousRcbtn.FlatAppearance.BorderSize = 0;
             this.PreviousRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PreviousRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.PreviousRcbtn.Location = new System.Drawing.Point(291, 5);
+            this.PreviousRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.PreviousRcbtn.Location = new System.Drawing.Point(293, 5);
             this.PreviousRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.PreviousRcbtn.Name = "PreviousRcbtn";
-            this.PreviousRcbtn.Size = new System.Drawing.Size(47, 20);
+            this.PreviousRcbtn.Size = new System.Drawing.Size(47, 26);
             this.PreviousRcbtn.TabIndex = 3;
             this.PreviousRcbtn.Text = "<";
             this.PreviousRcbtn.UseVisualStyleBackColor = false;
@@ -244,7 +245,7 @@
             // 
             // FCAddRcbtn
             // 
-            this.FCAddRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.FCAddRcbtn.BackColor = System.Drawing.Color.Silver;
             this.FCAddRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.FCAddRcbtn.BorderRadius = 10;
             this.FCAddRcbtn.BorderSize = 0;
@@ -252,11 +253,11 @@
             this.FCAddRcbtn.FlatAppearance.BorderSize = 0;
             this.FCAddRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FCAddRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCAddRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.FCAddRcbtn.Location = new System.Drawing.Point(234, 5);
+            this.FCAddRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.FCAddRcbtn.Location = new System.Drawing.Point(236, 5);
             this.FCAddRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.FCAddRcbtn.Name = "FCAddRcbtn";
-            this.FCAddRcbtn.Size = new System.Drawing.Size(47, 20);
+            this.FCAddRcbtn.Size = new System.Drawing.Size(47, 26);
             this.FCAddRcbtn.TabIndex = 4;
             this.FCAddRcbtn.Text = "+";
             this.FCAddRcbtn.UseVisualStyleBackColor = false;
@@ -270,13 +271,13 @@
             this.DeckComboBox.Location = new System.Drawing.Point(62, 5);
             this.DeckComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.DeckComboBox.Name = "DeckComboBox";
-            this.DeckComboBox.Size = new System.Drawing.Size(162, 28);
+            this.DeckComboBox.Size = new System.Drawing.Size(164, 28);
             this.DeckComboBox.TabIndex = 6;
             this.DeckComboBox.SelectedIndexChanged += new System.EventHandler(this.DeckComboBox_SelectedIndexChanged);
             // 
             // FlipRcbtn
             // 
-            this.FlipRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(43)))), ((int)(((byte)(86)))));
+            this.FlipRcbtn.BackColor = System.Drawing.Color.DimGray;
             this.FlipRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.FlipRcbtn.BorderRadius = 10;
             this.FlipRcbtn.BorderSize = 0;
@@ -284,11 +285,11 @@
             this.FlipRcbtn.FlatAppearance.BorderSize = 0;
             this.FlipRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FlipRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlipRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.FlipRcbtn.Location = new System.Drawing.Point(519, 5);
+            this.FlipRcbtn.ForeColor = System.Drawing.Color.White;
+            this.FlipRcbtn.Location = new System.Drawing.Point(521, 5);
             this.FlipRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.FlipRcbtn.Name = "FlipRcbtn";
-            this.FlipRcbtn.Size = new System.Drawing.Size(166, 20);
+            this.FlipRcbtn.Size = new System.Drawing.Size(170, 26);
             this.FlipRcbtn.TabIndex = 0;
             this.FlipRcbtn.Text = "Flip";
             this.FlipRcbtn.UseVisualStyleBackColor = false;
@@ -296,7 +297,7 @@
             // 
             // FCEditButton
             // 
-            this.FCEditButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.FCEditButton.BackColor = System.Drawing.Color.Silver;
             this.FCEditButton.BorderColor = System.Drawing.Color.LightGray;
             this.FCEditButton.BorderRadius = 10;
             this.FCEditButton.BorderSize = 0;
@@ -304,11 +305,11 @@
             this.FCEditButton.FlatAppearance.BorderSize = 0;
             this.FCEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FCEditButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FCEditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.FCEditButton.Location = new System.Drawing.Point(462, 5);
+            this.FCEditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.FCEditButton.Location = new System.Drawing.Point(464, 5);
             this.FCEditButton.Margin = new System.Windows.Forms.Padding(5);
             this.FCEditButton.Name = "FCEditButton";
-            this.FCEditButton.Size = new System.Drawing.Size(47, 20);
+            this.FCEditButton.Size = new System.Drawing.Size(47, 26);
             this.FCEditButton.TabIndex = 7;
             this.FCEditButton.Text = "Edit";
             this.FCEditButton.UseVisualStyleBackColor = false;
@@ -316,7 +317,7 @@
             // 
             // TabsDisplayTableLayout
             // 
-            this.TabsDisplayTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(56)))));
+            this.TabsDisplayTableLayout.BackColor = System.Drawing.Color.Transparent;
             this.TabsDisplayTableLayout.ColumnCount = 4;
             this.TabsDisplayTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.TabsDisplayTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0F));
@@ -336,7 +337,8 @@
             // 
             // FCDetailTabTableLayout
             // 
-            this.FCDetailTabTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
+            this.FCDetailTabTableLayout.BackColor = System.Drawing.Color.Transparent;
+            this.FCDetailTabTableLayout.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.FCDetailTabTableLayout.ColumnCount = 1;
             this.FCDetailTabTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.FCDetailTabTableLayout.Controls.Add(this.FCDetailTab_InstructionLabel, 0, 0);
@@ -359,9 +361,10 @@
             this.FCDetailTab_InstructionLabel.BackColor = System.Drawing.Color.White;
             this.FCDetailTab_InstructionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FCDetailTab_InstructionLabel.Font = new System.Drawing.Font("Agency FB", 14F);
-            this.FCDetailTab_InstructionLabel.Location = new System.Drawing.Point(3, 0);
+            this.FCDetailTab_InstructionLabel.Location = new System.Drawing.Point(1, 1);
+            this.FCDetailTab_InstructionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.FCDetailTab_InstructionLabel.Name = "FCDetailTab_InstructionLabel";
-            this.FCDetailTab_InstructionLabel.Size = new System.Drawing.Size(1, 32);
+            this.FCDetailTab_InstructionLabel.Size = new System.Drawing.Size(1, 31);
             this.FCDetailTab_InstructionLabel.TabIndex = 1;
             this.FCDetailTab_InstructionLabel.Text = "[Deck name]";
             this.FCDetailTab_InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -370,11 +373,12 @@
             // 
             this.FCDetailTab_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FCDetailTab_Datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FCDetailTab_Datagridview.Location = new System.Drawing.Point(3, 35);
+            this.FCDetailTab_Datagridview.Location = new System.Drawing.Point(1, 33);
+            this.FCDetailTab_Datagridview.Margin = new System.Windows.Forms.Padding(0);
             this.FCDetailTab_Datagridview.Name = "FCDetailTab_Datagridview";
             this.FCDetailTab_Datagridview.ReadOnly = true;
             this.FCDetailTab_Datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.FCDetailTab_Datagridview.Size = new System.Drawing.Size(1, 251);
+            this.FCDetailTab_Datagridview.Size = new System.Drawing.Size(1, 254);
             this.FCDetailTab_Datagridview.TabIndex = 2;
             this.FCDetailTab_Datagridview.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FCDetailTab_Datagridview_CellDoubleClick);
             // 
@@ -388,16 +392,17 @@
             this.FCDetailTab_ButtonsTableLayout.Controls.Add(this.FCDetailTab_FCRemoveButton, 0, 0);
             this.FCDetailTab_ButtonsTableLayout.Controls.Add(this.FCDetailTab_AddFCButton, 0, 0);
             this.FCDetailTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FCDetailTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 292);
+            this.FCDetailTab_ButtonsTableLayout.Location = new System.Drawing.Point(1, 288);
+            this.FCDetailTab_ButtonsTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.FCDetailTab_ButtonsTableLayout.Name = "FCDetailTab_ButtonsTableLayout";
             this.FCDetailTab_ButtonsTableLayout.RowCount = 1;
             this.FCDetailTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.FCDetailTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 27);
+            this.FCDetailTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 33);
             this.FCDetailTab_ButtonsTableLayout.TabIndex = 3;
             // 
             // FCDetailTab_ReturnButton
             // 
-            this.FCDetailTab_ReturnButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.FCDetailTab_ReturnButton.BackColor = System.Drawing.Color.Silver;
             this.FCDetailTab_ReturnButton.BorderColor = System.Drawing.Color.LightGray;
             this.FCDetailTab_ReturnButton.BorderRadius = 10;
             this.FCDetailTab_ReturnButton.BorderSize = 0;
@@ -408,7 +413,7 @@
             this.FCDetailTab_ReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_ReturnButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_ReturnButton.Name = "FCDetailTab_ReturnButton";
-            this.FCDetailTab_ReturnButton.Size = new System.Drawing.Size(1, 21);
+            this.FCDetailTab_ReturnButton.Size = new System.Drawing.Size(1, 27);
             this.FCDetailTab_ReturnButton.TabIndex = 7;
             this.FCDetailTab_ReturnButton.Text = "Return";
             this.FCDetailTab_ReturnButton.UseVisualStyleBackColor = false;
@@ -416,7 +421,7 @@
             // 
             // FCDetailTab_FCRemoveButton
             // 
-            this.FCDetailTab_FCRemoveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.FCDetailTab_FCRemoveButton.BackColor = System.Drawing.Color.Silver;
             this.FCDetailTab_FCRemoveButton.BorderColor = System.Drawing.Color.LightGray;
             this.FCDetailTab_FCRemoveButton.BorderRadius = 10;
             this.FCDetailTab_FCRemoveButton.BorderSize = 0;
@@ -427,7 +432,7 @@
             this.FCDetailTab_FCRemoveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_FCRemoveButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_FCRemoveButton.Name = "FCDetailTab_FCRemoveButton";
-            this.FCDetailTab_FCRemoveButton.Size = new System.Drawing.Size(1, 21);
+            this.FCDetailTab_FCRemoveButton.Size = new System.Drawing.Size(1, 27);
             this.FCDetailTab_FCRemoveButton.TabIndex = 6;
             this.FCDetailTab_FCRemoveButton.Text = "Remove";
             this.FCDetailTab_FCRemoveButton.UseVisualStyleBackColor = false;
@@ -435,7 +440,7 @@
             // 
             // FCDetailTab_AddFCButton
             // 
-            this.FCDetailTab_AddFCButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.FCDetailTab_AddFCButton.BackColor = System.Drawing.Color.Silver;
             this.FCDetailTab_AddFCButton.BorderColor = System.Drawing.Color.LightGray;
             this.FCDetailTab_AddFCButton.BorderRadius = 10;
             this.FCDetailTab_AddFCButton.BorderSize = 0;
@@ -446,7 +451,7 @@
             this.FCDetailTab_AddFCButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_AddFCButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_AddFCButton.Name = "FCDetailTab_AddFCButton";
-            this.FCDetailTab_AddFCButton.Size = new System.Drawing.Size(1, 21);
+            this.FCDetailTab_AddFCButton.Size = new System.Drawing.Size(1, 27);
             this.FCDetailTab_AddFCButton.TabIndex = 5;
             this.FCDetailTab_AddFCButton.Text = "Add";
             this.FCDetailTab_AddFCButton.UseVisualStyleBackColor = false;
@@ -454,7 +459,7 @@
             // 
             // AddFCTabTableLayout
             // 
-            this.AddFCTabTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(58)))));
+            this.AddFCTabTableLayout.BackColor = System.Drawing.Color.Transparent;
             this.AddFCTabTableLayout.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.AddFCTabTableLayout.ColumnCount = 1;
             this.AddFCTabTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -487,12 +492,13 @@
             this.AddFCTab_DefinitionTableLayoutPanel.Controls.Add(this.AddFCTab_DefinitionTitleLabel, 0, 0);
             this.AddFCTab_DefinitionTableLayoutPanel.Controls.Add(this.AddFCTab_DefinitionTxt, 0, 1);
             this.AddFCTab_DefinitionTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_DefinitionTableLayoutPanel.Location = new System.Drawing.Point(4, 132);
+            this.AddFCTab_DefinitionTableLayoutPanel.Location = new System.Drawing.Point(1, 129);
+            this.AddFCTab_DefinitionTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_DefinitionTableLayoutPanel.Name = "AddFCTab_DefinitionTableLayoutPanel";
             this.AddFCTab_DefinitionTableLayoutPanel.RowCount = 2;
             this.AddFCTab_DefinitionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_DefinitionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_DefinitionTableLayoutPanel.Size = new System.Drawing.Size(1, 41);
+            this.AddFCTab_DefinitionTableLayoutPanel.Size = new System.Drawing.Size(1, 47);
             this.AddFCTab_DefinitionTableLayoutPanel.TabIndex = 13;
             // 
             // AddFCTab_DefinitionTitleLabel
@@ -503,19 +509,19 @@
             this.AddFCTab_DefinitionTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_DefinitionTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_DefinitionTitleLabel.Name = "AddFCTab_DefinitionTitleLabel";
-            this.AddFCTab_DefinitionTitleLabel.Size = new System.Drawing.Size(1, 20);
+            this.AddFCTab_DefinitionTitleLabel.Size = new System.Drawing.Size(1, 23);
             this.AddFCTab_DefinitionTitleLabel.TabIndex = 0;
             this.AddFCTab_DefinitionTitleLabel.Text = "Definition:";
             // 
             // AddFCTab_DefinitionTxt
             // 
             this.AddFCTab_DefinitionTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_DefinitionTxt.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.AddFCTab_DefinitionTxt.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.AddFCTab_DefinitionTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.AddFCTab_DefinitionTxt.Location = new System.Drawing.Point(3, 23);
+            this.AddFCTab_DefinitionTxt.Location = new System.Drawing.Point(3, 26);
             this.AddFCTab_DefinitionTxt.Name = "AddFCTab_DefinitionTxt";
-            this.AddFCTab_DefinitionTxt.Size = new System.Drawing.Size(1, 22);
-            this.AddFCTab_DefinitionTxt.TabIndex = 1;
+            this.AddFCTab_DefinitionTxt.Size = new System.Drawing.Size(1, 26);
+            this.AddFCTab_DefinitionTxt.TabIndex = 2;
             // 
             // AddFCTab_InstructionLabel
             // 
@@ -533,14 +539,15 @@
             // 
             // AddFCTab_SearchSectionPanel
             // 
-            this.AddFCTab_SearchSectionPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(57)))), ((int)(((byte)(68)))));
+            this.AddFCTab_SearchSectionPanel.BackColor = System.Drawing.Color.Transparent;
             this.AddFCTab_SearchSectionPanel.Controls.Add(this.AddFCTab_Search_ButtonsPanel);
             this.AddFCTab_SearchSectionPanel.Controls.Add(this.AddFCTab_SearchResultLabel);
             this.AddFCTab_SearchSectionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_SearchSectionPanel.Font = new System.Drawing.Font("Agency FB", 14F);
-            this.AddFCTab_SearchSectionPanel.Location = new System.Drawing.Point(4, 322);
+            this.AddFCTab_SearchSectionPanel.Location = new System.Drawing.Point(1, 319);
+            this.AddFCTab_SearchSectionPanel.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_SearchSectionPanel.Name = "AddFCTab_SearchSectionPanel";
-            this.AddFCTab_SearchSectionPanel.Size = new System.Drawing.Size(1, 1);
+            this.AddFCTab_SearchSectionPanel.Size = new System.Drawing.Size(1, 2);
             this.AddFCTab_SearchSectionPanel.TabIndex = 6;
             // 
             // AddFCTab_Search_ButtonsPanel
@@ -560,7 +567,7 @@
             // 
             // AddFCTab_Search_CancelButton
             // 
-            this.AddFCTab_Search_CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.AddFCTab_Search_CancelButton.BackColor = System.Drawing.Color.Silver;
             this.AddFCTab_Search_CancelButton.BorderColor = System.Drawing.Color.LightGray;
             this.AddFCTab_Search_CancelButton.BorderRadius = 10;
             this.AddFCTab_Search_CancelButton.BorderSize = 0;
@@ -579,7 +586,7 @@
             // 
             // AddFCTab_Search_AcceptButton
             // 
-            this.AddFCTab_Search_AcceptButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.AddFCTab_Search_AcceptButton.BackColor = System.Drawing.Color.Silver;
             this.AddFCTab_Search_AcceptButton.BorderColor = System.Drawing.Color.LightGray;
             this.AddFCTab_Search_AcceptButton.BorderRadius = 10;
             this.AddFCTab_Search_AcceptButton.BorderSize = 0;
@@ -598,8 +605,9 @@
             // 
             // AddFCTab_SearchResultLabel
             // 
-            this.AddFCTab_SearchResultLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(78)))));
+            this.AddFCTab_SearchResultLabel.BackColor = System.Drawing.Color.Transparent;
             this.AddFCTab_SearchResultLabel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AddFCTab_SearchResultLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.AddFCTab_SearchResultLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_SearchResultLabel.Location = new System.Drawing.Point(0, 0);
             this.AddFCTab_SearchResultLabel.Name = "AddFCTab_SearchResultLabel";
@@ -613,19 +621,21 @@
             this.DescriptionPanel.Controls.Add(this.AddFCTab_DescriptionContentRichTextBox);
             this.DescriptionPanel.Controls.Add(this.AddFCTab_DescriptionTitleLabel);
             this.DescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DescriptionPanel.Location = new System.Drawing.Point(4, 180);
+            this.DescriptionPanel.Location = new System.Drawing.Point(1, 182);
+            this.DescriptionPanel.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.DescriptionPanel.Name = "DescriptionPanel";
-            this.DescriptionPanel.Size = new System.Drawing.Size(1, 103);
+            this.DescriptionPanel.Size = new System.Drawing.Size(1, 99);
             this.DescriptionPanel.TabIndex = 3;
             // 
             // AddFCTab_DescriptionContentRichTextBox
             // 
             this.AddFCTab_DescriptionContentRichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AddFCTab_DescriptionContentRichTextBox.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.AddFCTab_DescriptionContentRichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.AddFCTab_DescriptionContentRichTextBox.Location = new System.Drawing.Point(0, 28);
             this.AddFCTab_DescriptionContentRichTextBox.Name = "AddFCTab_DescriptionContentRichTextBox";
-            this.AddFCTab_DescriptionContentRichTextBox.Size = new System.Drawing.Size(1, 75);
-            this.AddFCTab_DescriptionContentRichTextBox.TabIndex = 2;
+            this.AddFCTab_DescriptionContentRichTextBox.Size = new System.Drawing.Size(1, 71);
+            this.AddFCTab_DescriptionContentRichTextBox.TabIndex = 3;
             this.AddFCTab_DescriptionContentRichTextBox.Text = "";
             // 
             // AddFCTab_DescriptionTitleLabel
@@ -649,11 +659,12 @@
             this.AddFCTab_WordTableLayout.Controls.Add(this.AddFCTab_WordTableLayoutPanel, 0, 0);
             this.AddFCTab_WordTableLayout.Controls.Add(this.AddFCTab_SearchRcbtn, 1, 0);
             this.AddFCTab_WordTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_WordTableLayout.Location = new System.Drawing.Point(4, 84);
+            this.AddFCTab_WordTableLayout.Location = new System.Drawing.Point(1, 81);
+            this.AddFCTab_WordTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_WordTableLayout.Name = "AddFCTab_WordTableLayout";
             this.AddFCTab_WordTableLayout.RowCount = 1;
             this.AddFCTab_WordTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_WordTableLayout.Size = new System.Drawing.Size(1, 41);
+            this.AddFCTab_WordTableLayout.Size = new System.Drawing.Size(1, 47);
             this.AddFCTab_WordTableLayout.TabIndex = 5;
             // 
             // AddFCTab_WordTableLayoutPanel
@@ -669,7 +680,7 @@
             this.AddFCTab_WordTableLayoutPanel.RowCount = 2;
             this.AddFCTab_WordTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_WordTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_WordTableLayoutPanel.Size = new System.Drawing.Size(1, 41);
+            this.AddFCTab_WordTableLayoutPanel.Size = new System.Drawing.Size(1, 47);
             this.AddFCTab_WordTableLayoutPanel.TabIndex = 13;
             // 
             // AddFCTab_WordTitleLabel
@@ -680,35 +691,35 @@
             this.AddFCTab_WordTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_WordTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_WordTitleLabel.Name = "AddFCTab_WordTitleLabel";
-            this.AddFCTab_WordTitleLabel.Size = new System.Drawing.Size(1, 20);
+            this.AddFCTab_WordTitleLabel.Size = new System.Drawing.Size(1, 23);
             this.AddFCTab_WordTitleLabel.TabIndex = 0;
             this.AddFCTab_WordTitleLabel.Text = "Word:";
             // 
             // AddFCTab_WordTxt
             // 
             this.AddFCTab_WordTxt.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_WordTxt.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
+            this.AddFCTab_WordTxt.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.AddFCTab_WordTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.AddFCTab_WordTxt.Location = new System.Drawing.Point(3, 23);
+            this.AddFCTab_WordTxt.Location = new System.Drawing.Point(3, 26);
             this.AddFCTab_WordTxt.Name = "AddFCTab_WordTxt";
-            this.AddFCTab_WordTxt.Size = new System.Drawing.Size(1, 22);
+            this.AddFCTab_WordTxt.Size = new System.Drawing.Size(1, 26);
             this.AddFCTab_WordTxt.TabIndex = 1;
             // 
             // AddFCTab_SearchRcbtn
             // 
-            this.AddFCTab_SearchRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.AddFCTab_SearchRcbtn.BackColor = System.Drawing.Color.DimGray;
             this.AddFCTab_SearchRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.AddFCTab_SearchRcbtn.BorderRadius = 10;
             this.AddFCTab_SearchRcbtn.BorderSize = 0;
             this.AddFCTab_SearchRcbtn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_SearchRcbtn.FlatAppearance.BorderSize = 0;
             this.AddFCTab_SearchRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddFCTab_SearchRcbtn.Font = new System.Drawing.Font("Agency FB", 8F, System.Drawing.FontStyle.Bold);
-            this.AddFCTab_SearchRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.AddFCTab_SearchRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
+            this.AddFCTab_SearchRcbtn.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_SearchRcbtn.Location = new System.Drawing.Point(3, 3);
             this.AddFCTab_SearchRcbtn.Name = "AddFCTab_SearchRcbtn";
-            this.AddFCTab_SearchRcbtn.Size = new System.Drawing.Size(1, 35);
-            this.AddFCTab_SearchRcbtn.TabIndex = 3;
+            this.AddFCTab_SearchRcbtn.Size = new System.Drawing.Size(1, 41);
+            this.AddFCTab_SearchRcbtn.TabIndex = 6;
             this.AddFCTab_SearchRcbtn.Text = "Search";
             this.AddFCTab_SearchRcbtn.UseVisualStyleBackColor = false;
             this.AddFCTab_SearchRcbtn.Click += new System.EventHandler(this.FCAddSearchRcbtn_Click);
@@ -721,16 +732,17 @@
             this.AddFCTab_ButtonsTableLayout.Controls.Add(this.AddFCTab_CloseRcbtn, 0, 0);
             this.AddFCTab_ButtonsTableLayout.Controls.Add(this.AddFCTab_ConfirmRcbtn, 0, 0);
             this.AddFCTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_ButtonsTableLayout.Location = new System.Drawing.Point(4, 290);
+            this.AddFCTab_ButtonsTableLayout.Location = new System.Drawing.Point(1, 287);
+            this.AddFCTab_ButtonsTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_ButtonsTableLayout.Name = "AddFCTab_ButtonsTableLayout";
             this.AddFCTab_ButtonsTableLayout.RowCount = 1;
             this.AddFCTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 25);
+            this.AddFCTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 31);
             this.AddFCTab_ButtonsTableLayout.TabIndex = 11;
             // 
             // AddFCTab_CloseRcbtn
             // 
-            this.AddFCTab_CloseRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.AddFCTab_CloseRcbtn.BackColor = System.Drawing.Color.DimGray;
             this.AddFCTab_CloseRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.AddFCTab_CloseRcbtn.BorderRadius = 10;
             this.AddFCTab_CloseRcbtn.BorderSize = 0;
@@ -738,18 +750,19 @@
             this.AddFCTab_CloseRcbtn.FlatAppearance.BorderSize = 0;
             this.AddFCTab_CloseRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddFCTab_CloseRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddFCTab_CloseRcbtn.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_CloseRcbtn.Location = new System.Drawing.Point(2, 0);
             this.AddFCTab_CloseRcbtn.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.AddFCTab_CloseRcbtn.Name = "AddFCTab_CloseRcbtn";
-            this.AddFCTab_CloseRcbtn.Size = new System.Drawing.Size(1, 25);
-            this.AddFCTab_CloseRcbtn.TabIndex = 2;
+            this.AddFCTab_CloseRcbtn.Size = new System.Drawing.Size(1, 31);
+            this.AddFCTab_CloseRcbtn.TabIndex = 5;
             this.AddFCTab_CloseRcbtn.Text = "Close";
             this.AddFCTab_CloseRcbtn.UseVisualStyleBackColor = false;
             this.AddFCTab_CloseRcbtn.Click += new System.EventHandler(this.FCAddCloseRcbtn_Click);
             // 
             // AddFCTab_ConfirmRcbtn
             // 
-            this.AddFCTab_ConfirmRcbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.AddFCTab_ConfirmRcbtn.BackColor = System.Drawing.Color.DimGray;
             this.AddFCTab_ConfirmRcbtn.BorderColor = System.Drawing.Color.LightGray;
             this.AddFCTab_ConfirmRcbtn.BorderRadius = 10;
             this.AddFCTab_ConfirmRcbtn.BorderSize = 0;
@@ -757,28 +770,31 @@
             this.AddFCTab_ConfirmRcbtn.FlatAppearance.BorderSize = 0;
             this.AddFCTab_ConfirmRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddFCTab_ConfirmRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddFCTab_ConfirmRcbtn.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_ConfirmRcbtn.Location = new System.Drawing.Point(0, 0);
             this.AddFCTab_ConfirmRcbtn.Margin = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.AddFCTab_ConfirmRcbtn.Name = "AddFCTab_ConfirmRcbtn";
-            this.AddFCTab_ConfirmRcbtn.Size = new System.Drawing.Size(1, 25);
-            this.AddFCTab_ConfirmRcbtn.TabIndex = 1;
+            this.AddFCTab_ConfirmRcbtn.Size = new System.Drawing.Size(1, 31);
+            this.AddFCTab_ConfirmRcbtn.TabIndex = 4;
             this.AddFCTab_ConfirmRcbtn.Text = "Add";
             this.AddFCTab_ConfirmRcbtn.UseVisualStyleBackColor = false;
             this.AddFCTab_ConfirmRcbtn.Click += new System.EventHandler(this.FCAddConfirmRcbtn_Click);
             // 
             // AddFCTab_DecksTableLayout
             // 
+            this.AddFCTab_DecksTableLayout.BackColor = System.Drawing.Color.Transparent;
             this.AddFCTab_DecksTableLayout.ColumnCount = 1;
             this.AddFCTab_DecksTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_DecksTableLayout.Controls.Add(this.AddFCTab_DeckTitleLabel, 0, 0);
             this.AddFCTab_DecksTableLayout.Controls.Add(this.AddFCTab_DeckCombobox, 0, 1);
             this.AddFCTab_DecksTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_DecksTableLayout.Location = new System.Drawing.Point(4, 36);
+            this.AddFCTab_DecksTableLayout.Location = new System.Drawing.Point(1, 33);
+            this.AddFCTab_DecksTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_DecksTableLayout.Name = "AddFCTab_DecksTableLayout";
             this.AddFCTab_DecksTableLayout.RowCount = 2;
             this.AddFCTab_DecksTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_DecksTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_DecksTableLayout.Size = new System.Drawing.Size(1, 41);
+            this.AddFCTab_DecksTableLayout.Size = new System.Drawing.Size(1, 47);
             this.AddFCTab_DecksTableLayout.TabIndex = 12;
             // 
             // AddFCTab_DeckTitleLabel
@@ -789,7 +805,7 @@
             this.AddFCTab_DeckTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_DeckTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_DeckTitleLabel.Name = "AddFCTab_DeckTitleLabel";
-            this.AddFCTab_DeckTitleLabel.Size = new System.Drawing.Size(1, 20);
+            this.AddFCTab_DeckTitleLabel.Size = new System.Drawing.Size(1, 23);
             this.AddFCTab_DeckTitleLabel.TabIndex = 0;
             this.AddFCTab_DeckTitleLabel.Text = "Deck:";
             // 
@@ -797,13 +813,13 @@
             // 
             this.AddFCTab_DeckCombobox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_DeckCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.AddFCTab_DeckCombobox.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddFCTab_DeckCombobox.Font = new System.Drawing.Font("Arial Narrow", 12F);
             this.AddFCTab_DeckCombobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.AddFCTab_DeckCombobox.FormattingEnabled = true;
-            this.AddFCTab_DeckCombobox.Location = new System.Drawing.Point(3, 23);
+            this.AddFCTab_DeckCombobox.Location = new System.Drawing.Point(3, 26);
             this.AddFCTab_DeckCombobox.Name = "AddFCTab_DeckCombobox";
-            this.AddFCTab_DeckCombobox.Size = new System.Drawing.Size(1, 24);
-            this.AddFCTab_DeckCombobox.TabIndex = 1;
+            this.AddFCTab_DeckCombobox.Size = new System.Drawing.Size(1, 28);
+            this.AddFCTab_DeckCombobox.TabIndex = 0;
             // 
             // FCDisplayPanel
             // 
@@ -841,7 +857,7 @@
             // 
             // WordLabel
             // 
-            this.WordLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(55)))), ((int)(((byte)(56)))));
+            this.WordLabel.BackColor = System.Drawing.Color.Transparent;
             this.WordLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WordLabel.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WordLabel.ForeColor = System.Drawing.Color.White;
@@ -918,7 +934,8 @@
             // 
             // DeckTabTableLayout
             // 
-            this.DeckTabTableLayout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(58)))));
+            this.DeckTabTableLayout.BackColor = System.Drawing.Color.Transparent;
+            this.DeckTabTableLayout.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.DeckTabTableLayout.ColumnCount = 1;
             this.DeckTabTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.DeckTabTableLayout.Controls.Add(this.DeckTab_InstructionLabel, 0, 0);
@@ -942,9 +959,10 @@
             this.DeckTab_InstructionLabel.BackColor = System.Drawing.Color.White;
             this.DeckTab_InstructionLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeckTab_InstructionLabel.Font = new System.Drawing.Font("Agency FB", 14F);
-            this.DeckTab_InstructionLabel.Location = new System.Drawing.Point(3, 0);
+            this.DeckTab_InstructionLabel.Location = new System.Drawing.Point(1, 1);
+            this.DeckTab_InstructionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_InstructionLabel.Name = "DeckTab_InstructionLabel";
-            this.DeckTab_InstructionLabel.Size = new System.Drawing.Size(1, 32);
+            this.DeckTab_InstructionLabel.Size = new System.Drawing.Size(1, 31);
             this.DeckTab_InstructionLabel.TabIndex = 1;
             this.DeckTab_InstructionLabel.Text = "Decks";
             this.DeckTab_InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -953,11 +971,12 @@
             // 
             this.DeckTab_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DeckTab_Datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_Datagridview.Location = new System.Drawing.Point(3, 35);
+            this.DeckTab_Datagridview.Location = new System.Drawing.Point(1, 33);
+            this.DeckTab_Datagridview.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_Datagridview.Name = "DeckTab_Datagridview";
             this.DeckTab_Datagridview.ReadOnly = true;
             this.DeckTab_Datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 251);
+            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 253);
             this.DeckTab_Datagridview.TabIndex = 2;
             this.DeckTab_Datagridview.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DeckTab_Datagridview_CellMouseDoubleClick);
             // 
@@ -971,16 +990,17 @@
             this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_RemoveDeckButton, 0, 0);
             this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_AddDeckButton, 0, 0);
             this.DeckTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 292);
+            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(1, 287);
+            this.DeckTab_ButtonsTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_ButtonsTableLayout.Name = "DeckTab_ButtonsTableLayout";
             this.DeckTab_ButtonsTableLayout.RowCount = 1;
             this.DeckTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.DeckTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 26);
+            this.DeckTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 31);
             this.DeckTab_ButtonsTableLayout.TabIndex = 3;
             // 
             // DeckTab_CloseButton
             // 
-            this.DeckTab_CloseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.DeckTab_CloseButton.BackColor = System.Drawing.Color.DimGray;
             this.DeckTab_CloseButton.BorderColor = System.Drawing.Color.LightGray;
             this.DeckTab_CloseButton.BorderRadius = 10;
             this.DeckTab_CloseButton.BorderSize = 0;
@@ -988,10 +1008,10 @@
             this.DeckTab_CloseButton.FlatAppearance.BorderSize = 0;
             this.DeckTab_CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeckTab_CloseButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckTab_CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_CloseButton.ForeColor = System.Drawing.Color.White;
             this.DeckTab_CloseButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_CloseButton.Name = "DeckTab_CloseButton";
-            this.DeckTab_CloseButton.Size = new System.Drawing.Size(1, 20);
+            this.DeckTab_CloseButton.Size = new System.Drawing.Size(1, 25);
             this.DeckTab_CloseButton.TabIndex = 7;
             this.DeckTab_CloseButton.Text = "Close";
             this.DeckTab_CloseButton.UseVisualStyleBackColor = false;
@@ -999,7 +1019,7 @@
             // 
             // DeckTab_RemoveDeckButton
             // 
-            this.DeckTab_RemoveDeckButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.DeckTab_RemoveDeckButton.BackColor = System.Drawing.Color.DimGray;
             this.DeckTab_RemoveDeckButton.BorderColor = System.Drawing.Color.LightGray;
             this.DeckTab_RemoveDeckButton.BorderRadius = 10;
             this.DeckTab_RemoveDeckButton.BorderSize = 0;
@@ -1007,10 +1027,10 @@
             this.DeckTab_RemoveDeckButton.FlatAppearance.BorderSize = 0;
             this.DeckTab_RemoveDeckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeckTab_RemoveDeckButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckTab_RemoveDeckButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_RemoveDeckButton.ForeColor = System.Drawing.Color.White;
             this.DeckTab_RemoveDeckButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_RemoveDeckButton.Name = "DeckTab_RemoveDeckButton";
-            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 20);
+            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 25);
             this.DeckTab_RemoveDeckButton.TabIndex = 6;
             this.DeckTab_RemoveDeckButton.Text = "Remove";
             this.DeckTab_RemoveDeckButton.UseVisualStyleBackColor = false;
@@ -1018,7 +1038,7 @@
             // 
             // DeckTab_AddDeckButton
             // 
-            this.DeckTab_AddDeckButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(190)))), ((int)(((byte)(29)))));
+            this.DeckTab_AddDeckButton.BackColor = System.Drawing.Color.DimGray;
             this.DeckTab_AddDeckButton.BorderColor = System.Drawing.Color.LightGray;
             this.DeckTab_AddDeckButton.BorderRadius = 10;
             this.DeckTab_AddDeckButton.BorderSize = 0;
@@ -1026,10 +1046,10 @@
             this.DeckTab_AddDeckButton.FlatAppearance.BorderSize = 0;
             this.DeckTab_AddDeckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeckTab_AddDeckButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckTab_AddDeckButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_AddDeckButton.ForeColor = System.Drawing.Color.White;
             this.DeckTab_AddDeckButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_AddDeckButton.Name = "DeckTab_AddDeckButton";
-            this.DeckTab_AddDeckButton.Size = new System.Drawing.Size(1, 20);
+            this.DeckTab_AddDeckButton.Size = new System.Drawing.Size(1, 25);
             this.DeckTab_AddDeckButton.TabIndex = 5;
             this.DeckTab_AddDeckButton.Text = "Add";
             this.DeckTab_AddDeckButton.UseVisualStyleBackColor = false;
@@ -1040,10 +1060,11 @@
             this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_ButtonsTableLayoutPanel);
             this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_DeckNameTxt);
             this.DeckTab_AddDeckPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_AddDeckPanel.Location = new System.Drawing.Point(3, 324);
+            this.DeckTab_AddDeckPanel.Location = new System.Drawing.Point(1, 319);
+            this.DeckTab_AddDeckPanel.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_AddDeckPanel.Name = "DeckTab_AddDeckPanel";
             this.DeckTab_AddDeckPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.DeckTab_AddDeckPanel.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_AddDeckPanel.Size = new System.Drawing.Size(1, 2);
             this.DeckTab_AddDeckPanel.TabIndex = 4;
             // 
             // DeckTab_AddDeck_ButtonsTableLayoutPanel
@@ -1055,6 +1076,7 @@
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Controls.Add(this.DeckTab_AddDeck_AccpetButton, 0, 0);
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Location = new System.Drawing.Point(5, 36);
+            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Name = "DeckTab_AddDeck_ButtonsTableLayoutPanel";
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.RowCount = 1;
             this.DeckTab_AddDeck_ButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -1063,7 +1085,7 @@
             // 
             // DeckTab_AddDeck_CancelButton
             // 
-            this.DeckTab_AddDeck_CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.DeckTab_AddDeck_CancelButton.BackColor = System.Drawing.Color.Silver;
             this.DeckTab_AddDeck_CancelButton.BorderColor = System.Drawing.Color.LightGray;
             this.DeckTab_AddDeck_CancelButton.BorderRadius = 10;
             this.DeckTab_AddDeck_CancelButton.BorderSize = 0;
@@ -1082,7 +1104,7 @@
             // 
             // DeckTab_AddDeck_AccpetButton
             // 
-            this.DeckTab_AddDeck_AccpetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(254)))), ((int)(((byte)(245)))));
+            this.DeckTab_AddDeck_AccpetButton.BackColor = System.Drawing.Color.Silver;
             this.DeckTab_AddDeck_AccpetButton.BorderColor = System.Drawing.Color.LightGray;
             this.DeckTab_AddDeck_AccpetButton.BorderRadius = 10;
             this.DeckTab_AddDeck_AccpetButton.BorderSize = 0;
@@ -1132,9 +1154,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(696, 364);
             this.Controls.Add(this.GlobalTableLayoutPanel);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FlashCardForm";
             this.Load += new System.EventHandler(this.FlashCardUC_Load);

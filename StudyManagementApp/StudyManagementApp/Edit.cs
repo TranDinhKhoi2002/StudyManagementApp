@@ -24,8 +24,10 @@ namespace StudyManagementApp
             {
                 theme_toggleButton.CheckState = CheckState.Unchecked;
             }
-        }
 
+            background_toggleButton.CheckState = Program.IsBackgroundRunningEnable ? CheckState.Checked : CheckState.Unchecked;
+            startup_toggleButton.CheckState = Program.IsStartupEnable ? CheckState.Checked : CheckState.Unchecked;
+        }
 
         private void SignUpButton_Click(object sender, EventArgs e)
         {
@@ -111,13 +113,41 @@ namespace StudyManagementApp
         private void mode_apply_btn_Click(object sender, EventArgs e)
         {
             Program.Theme = theme_toggleButton.Checked;
+            Program.IsBackgroundRunningEnable = background_toggleButton.Checked;
+            Program.IsStartupEnable = startup_toggleButton.Checked;
+
+            AccountDAO.Instance.UpdateUserConfig(
+                UserInfo.Instance.Username,
+                Program.Theme,
+                Program.IsBackgroundRunningEnable,
+                Program.IsStartupEnable
+                );
+
             if (lasttheme != Program.Theme )
             {
                 Owner.Dispose();
                 this.Close();
                 Program.globalLogin.Show();
             }
-         
+
+            using (Microsoft.Win32.RegistryKey reg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+            {
+                string name = "StudyManagementApp";
+
+                try
+                {
+                    if (Program.IsStartupEnable)
+                    {
+                        reg.SetValue(name, Application.ExecutablePath.ToString());
+                    }
+                    else
+                    {
+                        reg.DeleteValue(name);
+                    }
+                }
+                catch (System.Exception ex) { }
+            }
+                
         }
 
         private void theme_toggleButton_CheckedChanged(object sender, EventArgs e)

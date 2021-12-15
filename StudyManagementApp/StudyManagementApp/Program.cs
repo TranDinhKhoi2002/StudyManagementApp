@@ -9,8 +9,10 @@ namespace StudyManagementApp
     static class Program
     {
         public static bool Theme; //false: dark, true: light
+        public static bool IsBackgroundRunningEnable;
+        public static bool IsStartupEnable;
+
         public static Login globalLogin;
-        
         
         /// <summary>
         /// The main entry point for the application.
