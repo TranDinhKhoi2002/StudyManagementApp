@@ -602,6 +602,7 @@ namespace StudyManagementApp.FlashCardFolder
                 string deckName = DeckTab_AddDeck_DeckNameTxt.Texts;
                 string username = UserInfo.Instance.Username;
                 bool isHasNoDeck = fcDeckList.Count == 0;
+
                 try
                 {
                     FlashCardDAO.Instance.InsertDeck(username, deckName);
@@ -645,6 +646,9 @@ namespace StudyManagementApp.FlashCardFolder
                 {
                     LoadDecks();
                 }
+
+                DeckTab_AddDeck_DeckNameTxt.Texts = string.Empty;
+                ToggleDeckTab_AddDeck();
             }
         }
 

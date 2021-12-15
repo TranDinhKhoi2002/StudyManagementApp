@@ -31,6 +31,11 @@ namespace StudyManagementApp
             todolist_Form.TopLevel = false;
             todolist_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(todolist_Form);
+
+            flashcard_Form.TopLevel = false;
+            flashcard_Form.Dock = DockStyle.Fill;
+            HomePanel.Controls.Add(flashcard_Form);
+
         }
 
         //ấy lại hàm show
@@ -193,6 +198,8 @@ namespace StudyManagementApp
         public static TodolistFolder.Todolist_Form todolist_Form = new TodolistFolder.Todolist_Form();
         public static DateTime date_Choosing_ofWeek_ToDoList = DateTime.Now;
         public UserControls.CustomCalendar Main_customCalendar = new UserControls.CustomCalendar();
+        public static FlashCardFolder.FlashCardForm flashcard_Form = new FlashCardFolder.FlashCardForm();
+
         private void CalendarButton_Click(object sender, EventArgs e)
         {
             if (Main_customCalendar.Visible)
@@ -342,6 +349,8 @@ namespace StudyManagementApp
             switch (iconButton.Text)
             {
                 case "Main":
+                    HideAllControlInWorkPlacePanel();
+                    flashcard_Form.Show();
                     //Hên's code
                     break;
                 default:

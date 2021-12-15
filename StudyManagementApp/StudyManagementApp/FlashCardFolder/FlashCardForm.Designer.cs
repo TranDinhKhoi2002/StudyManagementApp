@@ -1135,6 +1135,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(696, 364);
             this.Controls.Add(this.GlobalTableLayoutPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FlashCardForm";
             this.Load += new System.EventHandler(this.FlashCardUC_Load);
             this.GlobalTableLayoutPanel.ResumeLayout(false);

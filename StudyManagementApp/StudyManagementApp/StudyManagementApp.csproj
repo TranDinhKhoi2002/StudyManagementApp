@@ -234,12 +234,6 @@
     <Compile Include="UserControls\CustomDateTimePicker.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserControls\FlashCardUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\FlashCardUC.Designer.cs">
-      <DependentUpon>FlashCardUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\HelpUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -335,9 +329,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CustomCalendar.resx">
       <DependentUpon>CustomCalendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\FlashCardUC.resx">
-      <DependentUpon>FlashCardUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HelpUC.resx">
       <DependentUpon>HelpUC.cs</DependentUpon>

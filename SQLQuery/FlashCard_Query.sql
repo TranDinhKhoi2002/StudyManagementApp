@@ -36,8 +36,6 @@ BEGIN
 END
 GO
 
-drop procedure getdecks
-
 CREATE PROCEDURE GetFlashCards
 @deckID INT
 AS
