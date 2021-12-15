@@ -47,6 +47,7 @@ namespace StudyManagementApp
             bang_AllTYPEITEM_TDL = DAO.AccountDAO.Instance.GetAll_TYPEITEM_TDL(UserInfo.Instance.Username);
             
             // Todolist
+            bang_ALLNOTES = DAO.AccountDAO.Instance.GetAll_ITEMNOTES(UserInfo.Instance.Username);
             todolist_Form = new TodolistFolder.Todolist_Form();
             todolist_Form.TopLevel = false;
             todolist_Form.Dock = DockStyle.Fill;
@@ -58,6 +59,10 @@ namespace StudyManagementApp
             flashcard_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(flashcard_Form);
 
+            notes_Form = new NoteFolder.Note_Form();
+            notes_Form.TopLevel = false;
+            notes_Form.Dock = DockStyle.Fill;
+            HomePanel.Controls.Add(notes_Form);
             date_Choosing_ofWeek_ToDoList = DateTime.Now;
             Main_customCalendar = new UserControls.CustomCalendar();
             SETTING_CuonLich();
@@ -85,6 +90,7 @@ namespace StudyManagementApp
             UserNameLabel.Text = UserInfo.Instance.Username;
             bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
             bang_AllTYPEITEM_TDL = DAO.AccountDAO.Instance.GetAll_TYPEITEM_TDL(UserInfo.Instance.Username);
+            bang_ALLNOTES = DAO.AccountDAO.Instance.GetAll_ITEMNOTES(UserInfo.Instance.Username);
             HideAllControlInWorkPlacePanel();
             Main_customCalendar.Show();
             MoRongLeftMenu_iconButton.Hide();
@@ -103,7 +109,7 @@ namespace StudyManagementApp
             Command_TextBox.Font = new Font("Agency FB", 18, FontStyle.Bold);
             NotificationFunctionLabel.Font = new Font("Agency FB", 17, FontStyle.Bold);
             SaveButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
-            SaveAsButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
+ 
             PomodoroCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
             ShortBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
             LongBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
@@ -206,7 +212,9 @@ namespace StudyManagementApp
 
         public static DataTable bang_AllTASK_TDL = new DataTable();
         public static DataTable bang_AllTYPEITEM_TDL = new DataTable();
+        public static DataTable bang_ALLNOTES = new DataTable();
         public static TodolistFolder.Todolist_Form todolist_Form = new TodolistFolder.Todolist_Form();
+        public static NoteFolder.Note_Form notes_Form = new NoteFolder.Note_Form();
         public static DateTime date_Choosing_ofWeek_ToDoList = DateTime.Now;
         public UserControls.CustomCalendar Main_customCalendar = new UserControls.CustomCalendar();
         public static FlashCardFolder.FlashCardForm flashcard_Form = new FlashCardFolder.FlashCardForm();
@@ -346,7 +354,8 @@ namespace StudyManagementApp
             switch (iconButton.Text)
             {
                 case "Main":
-                    //Huy's code
+                    HideAllControlInWorkPlacePanel();
+                    notes_Form.Show();
                     break;
                 default:
                     break;

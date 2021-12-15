@@ -156,6 +156,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoteFolder\Item_Note_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteFolder\Item_Note_Form.Designer.cs">
+      <DependentUpon>Item_Note_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteFolder\Note_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteFolder\Note_Form.Designer.cs">
+      <DependentUpon>Note_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgressForm.cs">
       <SubType>Form</SubType>
@@ -291,6 +303,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteFolder\Item_Note_Form.resx">
+      <DependentUpon>Item_Note_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteFolder\Note_Form.resx">
+      <DependentUpon>Note_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgressForm.resx">
       <DependentUpon>ProgressForm.cs</DependentUpon>

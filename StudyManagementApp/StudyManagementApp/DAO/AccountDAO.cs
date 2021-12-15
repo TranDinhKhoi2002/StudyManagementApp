@@ -181,13 +181,30 @@ namespace StudyManagementApp.DAO
             return result > 0;
         }
 
+        public DataTable GetAll_ITEMNOTES(string userName)
+        {
+            string query = "LOAD_ALLNOTEITEM @userName ";
+
+            DataTable result = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { userName });
+
+            return result;
+        }
+
+        public bool Add_NOTESITEM(string userName,DateTime datetimeCreate, string title, string content, string color_id)
+        {
+            string query = "ADD_NOTEITEM @pk_Notes , @userName , @datetimeCreate , @title , @content , @color_id";
+
+            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName + datetimeCreate.ToString("MM/dd/yyyy HH:mm:ss:ff"), userName, datetimeCreate, title, content, color_id });
+            return result > 0;
+        }
+
         // User's configuration
         public DataTable GetUserConfig(string username)
         {
             string query = "GetUserConfig @username";
 
             DataTable result = DAO.DataProvider.Instance.ExecuteQuery(query, new object[] { username });
-
+            
             return result;
         }
 

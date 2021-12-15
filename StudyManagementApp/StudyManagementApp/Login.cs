@@ -369,5 +369,6 @@ namespace StudyManagementApp
             account_Function.ShowDialog();
         }
         #endregion
+
     }
 }
