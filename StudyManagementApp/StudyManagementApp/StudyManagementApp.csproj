@@ -69,6 +69,9 @@
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -106,6 +109,7 @@
     </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\FlashCardDAO.cs" />
     <Compile Include="DAO\Hash.cs" />
     <Compile Include="Edit.cs">
       <SubType>Form</SubType>
@@ -125,6 +129,14 @@
     </Compile>
     <Compile Include="FlappyBirdForm.Designer.cs">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlashCardFolder\FlashCard.cs" />
+    <Compile Include="FlashCardFolder\FlashCardDeck.cs" />
+    <Compile Include="FlashCardFolder\FlashCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashCardFolder\FlashCardForm.Designer.cs">
+      <DependentUpon>FlashCardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgetPasswordForm.cs">
       <SubType>Form</SubType>
@@ -279,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlappyBirdForm.resx">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlashCardFolder\FlashCardForm.resx">
+      <DependentUpon>FlashCardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgetPasswordForm.resx">
       <DependentUpon>ForgetPasswordForm.cs</DependentUpon>

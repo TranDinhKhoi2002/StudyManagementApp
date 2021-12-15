@@ -31,6 +31,11 @@ namespace StudyManagementApp
             todolist_Form.TopLevel = false;
             todolist_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(todolist_Form);
+
+            flashcard_Form.TopLevel = false;
+            flashcard_Form.Dock = DockStyle.Fill;
+            HomePanel.Controls.Add(flashcard_Form);
+
         }
 
         //ấy lại hàm show
@@ -93,7 +98,7 @@ namespace StudyManagementApp
             Command_TextBox.Font = new Font("Agency FB", 18, FontStyle.Bold);
             NotificationFunctionLabel.Font = new Font("Agency FB", 17, FontStyle.Bold);
             SaveButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
-            SaveAsButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
+ 
             PomodoroCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
             ShortBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
             LongBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
@@ -201,6 +206,8 @@ namespace StudyManagementApp
         public static NoteFolder.Note_Form notes_Form = new NoteFolder.Note_Form();
         public static DateTime date_Choosing_ofWeek_ToDoList = DateTime.Now;
         public UserControls.CustomCalendar Main_customCalendar = new UserControls.CustomCalendar();
+        public static FlashCardFolder.FlashCardForm flashcard_Form = new FlashCardFolder.FlashCardForm();
+
         private void CalendarButton_Click(object sender, EventArgs e)
         {
             if (Main_customCalendar.Visible)
@@ -351,6 +358,8 @@ namespace StudyManagementApp
             switch (iconButton.Text)
             {
                 case "Main":
+                    HideAllControlInWorkPlacePanel();
+                    flashcard_Form.Show();
                     //Hên's code
                     break;
                 default:
