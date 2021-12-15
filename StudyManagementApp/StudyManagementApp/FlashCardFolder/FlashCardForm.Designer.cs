@@ -1,13 +1,13 @@
-﻿namespace StudyManagementApp.UserControls
+﻿namespace StudyManagementApp.FlashCardFolder
 {
-    partial class FlashCardUC
+    partial class FlashCardForm
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,10 +20,10 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
@@ -131,7 +131,7 @@
             this.GlobalTableLayoutPanel.RowCount = 2;
             this.GlobalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.GlobalTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.GlobalTableLayoutPanel.Size = new System.Drawing.Size(712, 403);
+            this.GlobalTableLayoutPanel.Size = new System.Drawing.Size(696, 364);
             this.GlobalTableLayoutPanel.TabIndex = 0;
             // 
             // ControlTableLayout
@@ -159,7 +159,7 @@
             this.ControlTableLayout.Name = "ControlTableLayout";
             this.ControlTableLayout.RowCount = 1;
             this.ControlTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ControlTableLayout.Size = new System.Drawing.Size(706, 34);
+            this.ControlTableLayout.Size = new System.Drawing.Size(690, 30);
             this.ControlTableLayout.TabIndex = 1;
             // 
             // DeckMoreRcbtn
@@ -176,7 +176,7 @@
             this.DeckMoreRcbtn.Location = new System.Drawing.Point(5, 5);
             this.DeckMoreRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.DeckMoreRcbtn.Name = "DeckMoreRcbtn";
-            this.DeckMoreRcbtn.Size = new System.Drawing.Size(48, 24);
+            this.DeckMoreRcbtn.Size = new System.Drawing.Size(47, 20);
             this.DeckMoreRcbtn.TabIndex = 5;
             this.DeckMoreRcbtn.Text = "More";
             this.DeckMoreRcbtn.UseVisualStyleBackColor = false;
@@ -193,10 +193,10 @@
             this.RandomRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RandomRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RandomRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.RandomRcbtn.Location = new System.Drawing.Point(413, 5);
+            this.RandomRcbtn.Location = new System.Drawing.Point(405, 5);
             this.RandomRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.RandomRcbtn.Name = "RandomRcbtn";
-            this.RandomRcbtn.Size = new System.Drawing.Size(48, 24);
+            this.RandomRcbtn.Size = new System.Drawing.Size(47, 20);
             this.RandomRcbtn.TabIndex = 1;
             this.RandomRcbtn.Text = "?";
             this.RandomRcbtn.UseVisualStyleBackColor = false;
@@ -213,10 +213,10 @@
             this.NextRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NextRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.NextRcbtn.Location = new System.Drawing.Point(355, 5);
+            this.NextRcbtn.Location = new System.Drawing.Point(348, 5);
             this.NextRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.NextRcbtn.Name = "NextRcbtn";
-            this.NextRcbtn.Size = new System.Drawing.Size(48, 24);
+            this.NextRcbtn.Size = new System.Drawing.Size(47, 20);
             this.NextRcbtn.TabIndex = 2;
             this.NextRcbtn.Text = ">";
             this.NextRcbtn.UseVisualStyleBackColor = false;
@@ -233,10 +233,10 @@
             this.PreviousRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PreviousRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.PreviousRcbtn.Location = new System.Drawing.Point(297, 5);
+            this.PreviousRcbtn.Location = new System.Drawing.Point(291, 5);
             this.PreviousRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.PreviousRcbtn.Name = "PreviousRcbtn";
-            this.PreviousRcbtn.Size = new System.Drawing.Size(48, 24);
+            this.PreviousRcbtn.Size = new System.Drawing.Size(47, 20);
             this.PreviousRcbtn.TabIndex = 3;
             this.PreviousRcbtn.Text = "<";
             this.PreviousRcbtn.UseVisualStyleBackColor = false;
@@ -253,10 +253,10 @@
             this.FCAddRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FCAddRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCAddRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.FCAddRcbtn.Location = new System.Drawing.Point(239, 5);
+            this.FCAddRcbtn.Location = new System.Drawing.Point(234, 5);
             this.FCAddRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.FCAddRcbtn.Name = "FCAddRcbtn";
-            this.FCAddRcbtn.Size = new System.Drawing.Size(48, 24);
+            this.FCAddRcbtn.Size = new System.Drawing.Size(47, 20);
             this.FCAddRcbtn.TabIndex = 4;
             this.FCAddRcbtn.Text = "+";
             this.FCAddRcbtn.UseVisualStyleBackColor = false;
@@ -267,10 +267,10 @@
             this.DeckComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeckComboBox.Font = new System.Drawing.Font("Agency FB", 12F);
             this.DeckComboBox.FormattingEnabled = true;
-            this.DeckComboBox.Location = new System.Drawing.Point(63, 5);
+            this.DeckComboBox.Location = new System.Drawing.Point(62, 5);
             this.DeckComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.DeckComboBox.Name = "DeckComboBox";
-            this.DeckComboBox.Size = new System.Drawing.Size(166, 28);
+            this.DeckComboBox.Size = new System.Drawing.Size(162, 28);
             this.DeckComboBox.TabIndex = 6;
             this.DeckComboBox.SelectedIndexChanged += new System.EventHandler(this.DeckComboBox_SelectedIndexChanged);
             // 
@@ -285,10 +285,10 @@
             this.FlipRcbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FlipRcbtn.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FlipRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.FlipRcbtn.Location = new System.Drawing.Point(529, 5);
+            this.FlipRcbtn.Location = new System.Drawing.Point(519, 5);
             this.FlipRcbtn.Margin = new System.Windows.Forms.Padding(5);
             this.FlipRcbtn.Name = "FlipRcbtn";
-            this.FlipRcbtn.Size = new System.Drawing.Size(172, 24);
+            this.FlipRcbtn.Size = new System.Drawing.Size(166, 20);
             this.FlipRcbtn.TabIndex = 0;
             this.FlipRcbtn.Text = "Flip";
             this.FlipRcbtn.UseVisualStyleBackColor = false;
@@ -305,10 +305,10 @@
             this.FCEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FCEditButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FCEditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(45)))));
-            this.FCEditButton.Location = new System.Drawing.Point(471, 5);
+            this.FCEditButton.Location = new System.Drawing.Point(462, 5);
             this.FCEditButton.Margin = new System.Windows.Forms.Padding(5);
             this.FCEditButton.Name = "FCEditButton";
-            this.FCEditButton.Size = new System.Drawing.Size(48, 24);
+            this.FCEditButton.Size = new System.Drawing.Size(47, 20);
             this.FCEditButton.TabIndex = 7;
             this.FCEditButton.Text = "Edit";
             this.FCEditButton.UseVisualStyleBackColor = false;
@@ -327,11 +327,11 @@
             this.TabsDisplayTableLayout.Controls.Add(this.FCDisplayPanel, 2, 0);
             this.TabsDisplayTableLayout.Controls.Add(this.DeckTabTableLayout, 1, 0);
             this.TabsDisplayTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TabsDisplayTableLayout.Location = new System.Drawing.Point(3, 43);
+            this.TabsDisplayTableLayout.Location = new System.Drawing.Point(3, 39);
             this.TabsDisplayTableLayout.Name = "TabsDisplayTableLayout";
             this.TabsDisplayTableLayout.RowCount = 1;
             this.TabsDisplayTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TabsDisplayTableLayout.Size = new System.Drawing.Size(706, 357);
+            this.TabsDisplayTableLayout.Size = new System.Drawing.Size(690, 322);
             this.TabsDisplayTableLayout.TabIndex = 0;
             // 
             // FCDetailTabTableLayout
@@ -351,7 +351,7 @@
             this.FCDetailTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.FCDetailTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.FCDetailTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.FCDetailTabTableLayout.Size = new System.Drawing.Size(1, 357);
+            this.FCDetailTabTableLayout.Size = new System.Drawing.Size(1, 322);
             this.FCDetailTabTableLayout.TabIndex = 3;
             // 
             // FCDetailTab_InstructionLabel
@@ -361,7 +361,7 @@
             this.FCDetailTab_InstructionLabel.Font = new System.Drawing.Font("Agency FB", 14F);
             this.FCDetailTab_InstructionLabel.Location = new System.Drawing.Point(3, 0);
             this.FCDetailTab_InstructionLabel.Name = "FCDetailTab_InstructionLabel";
-            this.FCDetailTab_InstructionLabel.Size = new System.Drawing.Size(1, 35);
+            this.FCDetailTab_InstructionLabel.Size = new System.Drawing.Size(1, 32);
             this.FCDetailTab_InstructionLabel.TabIndex = 1;
             this.FCDetailTab_InstructionLabel.Text = "[Deck name]";
             this.FCDetailTab_InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -370,11 +370,11 @@
             // 
             this.FCDetailTab_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.FCDetailTab_Datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FCDetailTab_Datagridview.Location = new System.Drawing.Point(3, 38);
+            this.FCDetailTab_Datagridview.Location = new System.Drawing.Point(3, 35);
             this.FCDetailTab_Datagridview.Name = "FCDetailTab_Datagridview";
             this.FCDetailTab_Datagridview.ReadOnly = true;
             this.FCDetailTab_Datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.FCDetailTab_Datagridview.Size = new System.Drawing.Size(1, 279);
+            this.FCDetailTab_Datagridview.Size = new System.Drawing.Size(1, 251);
             this.FCDetailTab_Datagridview.TabIndex = 2;
             this.FCDetailTab_Datagridview.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FCDetailTab_Datagridview_CellDoubleClick);
             // 
@@ -388,11 +388,11 @@
             this.FCDetailTab_ButtonsTableLayout.Controls.Add(this.FCDetailTab_FCRemoveButton, 0, 0);
             this.FCDetailTab_ButtonsTableLayout.Controls.Add(this.FCDetailTab_AddFCButton, 0, 0);
             this.FCDetailTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FCDetailTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 323);
+            this.FCDetailTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 292);
             this.FCDetailTab_ButtonsTableLayout.Name = "FCDetailTab_ButtonsTableLayout";
             this.FCDetailTab_ButtonsTableLayout.RowCount = 1;
             this.FCDetailTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.FCDetailTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 31);
+            this.FCDetailTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 27);
             this.FCDetailTab_ButtonsTableLayout.TabIndex = 3;
             // 
             // FCDetailTab_ReturnButton
@@ -408,7 +408,7 @@
             this.FCDetailTab_ReturnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_ReturnButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_ReturnButton.Name = "FCDetailTab_ReturnButton";
-            this.FCDetailTab_ReturnButton.Size = new System.Drawing.Size(1, 25);
+            this.FCDetailTab_ReturnButton.Size = new System.Drawing.Size(1, 21);
             this.FCDetailTab_ReturnButton.TabIndex = 7;
             this.FCDetailTab_ReturnButton.Text = "Return";
             this.FCDetailTab_ReturnButton.UseVisualStyleBackColor = false;
@@ -427,7 +427,7 @@
             this.FCDetailTab_FCRemoveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_FCRemoveButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_FCRemoveButton.Name = "FCDetailTab_FCRemoveButton";
-            this.FCDetailTab_FCRemoveButton.Size = new System.Drawing.Size(1, 25);
+            this.FCDetailTab_FCRemoveButton.Size = new System.Drawing.Size(1, 21);
             this.FCDetailTab_FCRemoveButton.TabIndex = 6;
             this.FCDetailTab_FCRemoveButton.Text = "Remove";
             this.FCDetailTab_FCRemoveButton.UseVisualStyleBackColor = false;
@@ -446,7 +446,7 @@
             this.FCDetailTab_AddFCButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.FCDetailTab_AddFCButton.Location = new System.Drawing.Point(3, 3);
             this.FCDetailTab_AddFCButton.Name = "FCDetailTab_AddFCButton";
-            this.FCDetailTab_AddFCButton.Size = new System.Drawing.Size(1, 25);
+            this.FCDetailTab_AddFCButton.Size = new System.Drawing.Size(1, 21);
             this.FCDetailTab_AddFCButton.TabIndex = 5;
             this.FCDetailTab_AddFCButton.Text = "Add";
             this.FCDetailTab_AddFCButton.UseVisualStyleBackColor = false;
@@ -466,7 +466,7 @@
             this.AddFCTabTableLayout.Controls.Add(this.AddFCTab_ButtonsTableLayout, 0, 5);
             this.AddFCTabTableLayout.Controls.Add(this.AddFCTab_DecksTableLayout, 0, 1);
             this.AddFCTabTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTabTableLayout.Location = new System.Drawing.Point(706, 0);
+            this.AddFCTabTableLayout.Location = new System.Drawing.Point(690, 0);
             this.AddFCTabTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTabTableLayout.Name = "AddFCTabTableLayout";
             this.AddFCTabTableLayout.RowCount = 7;
@@ -477,7 +477,7 @@
             this.AddFCTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.AddFCTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.AddFCTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
-            this.AddFCTabTableLayout.Size = new System.Drawing.Size(1, 357);
+            this.AddFCTabTableLayout.Size = new System.Drawing.Size(1, 322);
             this.AddFCTabTableLayout.TabIndex = 1;
             // 
             // AddFCTab_DefinitionTableLayoutPanel
@@ -487,12 +487,12 @@
             this.AddFCTab_DefinitionTableLayoutPanel.Controls.Add(this.AddFCTab_DefinitionTitleLabel, 0, 0);
             this.AddFCTab_DefinitionTableLayoutPanel.Controls.Add(this.AddFCTab_DefinitionTxt, 0, 1);
             this.AddFCTab_DefinitionTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_DefinitionTableLayoutPanel.Location = new System.Drawing.Point(4, 145);
+            this.AddFCTab_DefinitionTableLayoutPanel.Location = new System.Drawing.Point(4, 132);
             this.AddFCTab_DefinitionTableLayoutPanel.Name = "AddFCTab_DefinitionTableLayoutPanel";
             this.AddFCTab_DefinitionTableLayoutPanel.RowCount = 2;
             this.AddFCTab_DefinitionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_DefinitionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_DefinitionTableLayoutPanel.Size = new System.Drawing.Size(1, 46);
+            this.AddFCTab_DefinitionTableLayoutPanel.Size = new System.Drawing.Size(1, 41);
             this.AddFCTab_DefinitionTableLayoutPanel.TabIndex = 13;
             // 
             // AddFCTab_DefinitionTitleLabel
@@ -503,7 +503,7 @@
             this.AddFCTab_DefinitionTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_DefinitionTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_DefinitionTitleLabel.Name = "AddFCTab_DefinitionTitleLabel";
-            this.AddFCTab_DefinitionTitleLabel.Size = new System.Drawing.Size(1, 23);
+            this.AddFCTab_DefinitionTitleLabel.Size = new System.Drawing.Size(1, 20);
             this.AddFCTab_DefinitionTitleLabel.TabIndex = 0;
             this.AddFCTab_DefinitionTitleLabel.Text = "Definition:";
             // 
@@ -512,7 +512,7 @@
             this.AddFCTab_DefinitionTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_DefinitionTxt.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
             this.AddFCTab_DefinitionTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.AddFCTab_DefinitionTxt.Location = new System.Drawing.Point(3, 26);
+            this.AddFCTab_DefinitionTxt.Location = new System.Drawing.Point(3, 23);
             this.AddFCTab_DefinitionTxt.Name = "AddFCTab_DefinitionTxt";
             this.AddFCTab_DefinitionTxt.Size = new System.Drawing.Size(1, 22);
             this.AddFCTab_DefinitionTxt.TabIndex = 1;
@@ -526,7 +526,7 @@
             this.AddFCTab_InstructionLabel.Location = new System.Drawing.Point(1, 1);
             this.AddFCTab_InstructionLabel.Margin = new System.Windows.Forms.Padding(0);
             this.AddFCTab_InstructionLabel.Name = "AddFCTab_InstructionLabel";
-            this.AddFCTab_InstructionLabel.Size = new System.Drawing.Size(1, 34);
+            this.AddFCTab_InstructionLabel.Size = new System.Drawing.Size(1, 31);
             this.AddFCTab_InstructionLabel.TabIndex = 0;
             this.AddFCTab_InstructionLabel.Text = "Add FlashCard";
             this.AddFCTab_InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,7 +538,7 @@
             this.AddFCTab_SearchSectionPanel.Controls.Add(this.AddFCTab_SearchResultLabel);
             this.AddFCTab_SearchSectionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_SearchSectionPanel.Font = new System.Drawing.Font("Agency FB", 14F);
-            this.AddFCTab_SearchSectionPanel.Location = new System.Drawing.Point(4, 356);
+            this.AddFCTab_SearchSectionPanel.Location = new System.Drawing.Point(4, 322);
             this.AddFCTab_SearchSectionPanel.Name = "AddFCTab_SearchSectionPanel";
             this.AddFCTab_SearchSectionPanel.Size = new System.Drawing.Size(1, 1);
             this.AddFCTab_SearchSectionPanel.TabIndex = 6;
@@ -613,9 +613,9 @@
             this.DescriptionPanel.Controls.Add(this.AddFCTab_DescriptionContentRichTextBox);
             this.DescriptionPanel.Controls.Add(this.AddFCTab_DescriptionTitleLabel);
             this.DescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DescriptionPanel.Location = new System.Drawing.Point(4, 198);
+            this.DescriptionPanel.Location = new System.Drawing.Point(4, 180);
             this.DescriptionPanel.Name = "DescriptionPanel";
-            this.DescriptionPanel.Size = new System.Drawing.Size(1, 116);
+            this.DescriptionPanel.Size = new System.Drawing.Size(1, 103);
             this.DescriptionPanel.TabIndex = 3;
             // 
             // AddFCTab_DescriptionContentRichTextBox
@@ -624,7 +624,7 @@
             this.AddFCTab_DescriptionContentRichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.AddFCTab_DescriptionContentRichTextBox.Location = new System.Drawing.Point(0, 28);
             this.AddFCTab_DescriptionContentRichTextBox.Name = "AddFCTab_DescriptionContentRichTextBox";
-            this.AddFCTab_DescriptionContentRichTextBox.Size = new System.Drawing.Size(1, 88);
+            this.AddFCTab_DescriptionContentRichTextBox.Size = new System.Drawing.Size(1, 75);
             this.AddFCTab_DescriptionContentRichTextBox.TabIndex = 2;
             this.AddFCTab_DescriptionContentRichTextBox.Text = "";
             // 
@@ -649,11 +649,11 @@
             this.AddFCTab_WordTableLayout.Controls.Add(this.AddFCTab_WordTableLayoutPanel, 0, 0);
             this.AddFCTab_WordTableLayout.Controls.Add(this.AddFCTab_SearchRcbtn, 1, 0);
             this.AddFCTab_WordTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_WordTableLayout.Location = new System.Drawing.Point(4, 92);
+            this.AddFCTab_WordTableLayout.Location = new System.Drawing.Point(4, 84);
             this.AddFCTab_WordTableLayout.Name = "AddFCTab_WordTableLayout";
             this.AddFCTab_WordTableLayout.RowCount = 1;
             this.AddFCTab_WordTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_WordTableLayout.Size = new System.Drawing.Size(1, 46);
+            this.AddFCTab_WordTableLayout.Size = new System.Drawing.Size(1, 41);
             this.AddFCTab_WordTableLayout.TabIndex = 5;
             // 
             // AddFCTab_WordTableLayoutPanel
@@ -669,7 +669,7 @@
             this.AddFCTab_WordTableLayoutPanel.RowCount = 2;
             this.AddFCTab_WordTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_WordTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_WordTableLayoutPanel.Size = new System.Drawing.Size(1, 46);
+            this.AddFCTab_WordTableLayoutPanel.Size = new System.Drawing.Size(1, 41);
             this.AddFCTab_WordTableLayoutPanel.TabIndex = 13;
             // 
             // AddFCTab_WordTitleLabel
@@ -680,7 +680,7 @@
             this.AddFCTab_WordTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_WordTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_WordTitleLabel.Name = "AddFCTab_WordTitleLabel";
-            this.AddFCTab_WordTitleLabel.Size = new System.Drawing.Size(1, 23);
+            this.AddFCTab_WordTitleLabel.Size = new System.Drawing.Size(1, 20);
             this.AddFCTab_WordTitleLabel.TabIndex = 0;
             this.AddFCTab_WordTitleLabel.Text = "Word:";
             // 
@@ -689,7 +689,7 @@
             this.AddFCTab_WordTxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AddFCTab_WordTxt.Font = new System.Drawing.Font("Arial Narrow", 9.75F);
             this.AddFCTab_WordTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.AddFCTab_WordTxt.Location = new System.Drawing.Point(3, 26);
+            this.AddFCTab_WordTxt.Location = new System.Drawing.Point(3, 23);
             this.AddFCTab_WordTxt.Name = "AddFCTab_WordTxt";
             this.AddFCTab_WordTxt.Size = new System.Drawing.Size(1, 22);
             this.AddFCTab_WordTxt.TabIndex = 1;
@@ -707,7 +707,7 @@
             this.AddFCTab_SearchRcbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.AddFCTab_SearchRcbtn.Location = new System.Drawing.Point(3, 3);
             this.AddFCTab_SearchRcbtn.Name = "AddFCTab_SearchRcbtn";
-            this.AddFCTab_SearchRcbtn.Size = new System.Drawing.Size(1, 40);
+            this.AddFCTab_SearchRcbtn.Size = new System.Drawing.Size(1, 35);
             this.AddFCTab_SearchRcbtn.TabIndex = 3;
             this.AddFCTab_SearchRcbtn.Text = "Search";
             this.AddFCTab_SearchRcbtn.UseVisualStyleBackColor = false;
@@ -721,11 +721,11 @@
             this.AddFCTab_ButtonsTableLayout.Controls.Add(this.AddFCTab_CloseRcbtn, 0, 0);
             this.AddFCTab_ButtonsTableLayout.Controls.Add(this.AddFCTab_ConfirmRcbtn, 0, 0);
             this.AddFCTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_ButtonsTableLayout.Location = new System.Drawing.Point(4, 321);
+            this.AddFCTab_ButtonsTableLayout.Location = new System.Drawing.Point(4, 290);
             this.AddFCTab_ButtonsTableLayout.Name = "AddFCTab_ButtonsTableLayout";
             this.AddFCTab_ButtonsTableLayout.RowCount = 1;
             this.AddFCTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 28);
+            this.AddFCTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 25);
             this.AddFCTab_ButtonsTableLayout.TabIndex = 11;
             // 
             // AddFCTab_CloseRcbtn
@@ -741,7 +741,7 @@
             this.AddFCTab_CloseRcbtn.Location = new System.Drawing.Point(2, 0);
             this.AddFCTab_CloseRcbtn.Margin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.AddFCTab_CloseRcbtn.Name = "AddFCTab_CloseRcbtn";
-            this.AddFCTab_CloseRcbtn.Size = new System.Drawing.Size(1, 28);
+            this.AddFCTab_CloseRcbtn.Size = new System.Drawing.Size(1, 25);
             this.AddFCTab_CloseRcbtn.TabIndex = 2;
             this.AddFCTab_CloseRcbtn.Text = "Close";
             this.AddFCTab_CloseRcbtn.UseVisualStyleBackColor = false;
@@ -760,7 +760,7 @@
             this.AddFCTab_ConfirmRcbtn.Location = new System.Drawing.Point(0, 0);
             this.AddFCTab_ConfirmRcbtn.Margin = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.AddFCTab_ConfirmRcbtn.Name = "AddFCTab_ConfirmRcbtn";
-            this.AddFCTab_ConfirmRcbtn.Size = new System.Drawing.Size(1, 28);
+            this.AddFCTab_ConfirmRcbtn.Size = new System.Drawing.Size(1, 25);
             this.AddFCTab_ConfirmRcbtn.TabIndex = 1;
             this.AddFCTab_ConfirmRcbtn.Text = "Add";
             this.AddFCTab_ConfirmRcbtn.UseVisualStyleBackColor = false;
@@ -773,12 +773,12 @@
             this.AddFCTab_DecksTableLayout.Controls.Add(this.AddFCTab_DeckTitleLabel, 0, 0);
             this.AddFCTab_DecksTableLayout.Controls.Add(this.AddFCTab_DeckCombobox, 0, 1);
             this.AddFCTab_DecksTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AddFCTab_DecksTableLayout.Location = new System.Drawing.Point(4, 39);
+            this.AddFCTab_DecksTableLayout.Location = new System.Drawing.Point(4, 36);
             this.AddFCTab_DecksTableLayout.Name = "AddFCTab_DecksTableLayout";
             this.AddFCTab_DecksTableLayout.RowCount = 2;
             this.AddFCTab_DecksTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.AddFCTab_DecksTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.AddFCTab_DecksTableLayout.Size = new System.Drawing.Size(1, 46);
+            this.AddFCTab_DecksTableLayout.Size = new System.Drawing.Size(1, 41);
             this.AddFCTab_DecksTableLayout.TabIndex = 12;
             // 
             // AddFCTab_DeckTitleLabel
@@ -789,7 +789,7 @@
             this.AddFCTab_DeckTitleLabel.ForeColor = System.Drawing.Color.White;
             this.AddFCTab_DeckTitleLabel.Location = new System.Drawing.Point(3, 0);
             this.AddFCTab_DeckTitleLabel.Name = "AddFCTab_DeckTitleLabel";
-            this.AddFCTab_DeckTitleLabel.Size = new System.Drawing.Size(1, 23);
+            this.AddFCTab_DeckTitleLabel.Size = new System.Drawing.Size(1, 20);
             this.AddFCTab_DeckTitleLabel.TabIndex = 0;
             this.AddFCTab_DeckTitleLabel.Text = "Deck:";
             // 
@@ -800,7 +800,7 @@
             this.AddFCTab_DeckCombobox.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddFCTab_DeckCombobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.AddFCTab_DeckCombobox.FormattingEnabled = true;
-            this.AddFCTab_DeckCombobox.Location = new System.Drawing.Point(3, 26);
+            this.AddFCTab_DeckCombobox.Location = new System.Drawing.Point(3, 23);
             this.AddFCTab_DeckCombobox.Name = "AddFCTab_DeckCombobox";
             this.AddFCTab_DeckCombobox.Size = new System.Drawing.Size(1, 24);
             this.AddFCTab_DeckCombobox.TabIndex = 1;
@@ -814,7 +814,7 @@
             this.FCDisplayPanel.Location = new System.Drawing.Point(0, 0);
             this.FCDisplayPanel.Margin = new System.Windows.Forms.Padding(0);
             this.FCDisplayPanel.Name = "FCDisplayPanel";
-            this.FCDisplayPanel.Size = new System.Drawing.Size(706, 357);
+            this.FCDisplayPanel.Size = new System.Drawing.Size(690, 322);
             this.FCDisplayPanel.TabIndex = 0;
             // 
             // FlashCardCountLabel
@@ -836,7 +836,7 @@
             this.WordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WordPanel.Location = new System.Drawing.Point(0, 0);
             this.WordPanel.Name = "WordPanel";
-            this.WordPanel.Size = new System.Drawing.Size(706, 357);
+            this.WordPanel.Size = new System.Drawing.Size(690, 322);
             this.WordPanel.TabIndex = 0;
             // 
             // WordLabel
@@ -847,7 +847,7 @@
             this.WordLabel.ForeColor = System.Drawing.Color.White;
             this.WordLabel.Location = new System.Drawing.Point(0, 0);
             this.WordLabel.Name = "WordLabel";
-            this.WordLabel.Size = new System.Drawing.Size(706, 357);
+            this.WordLabel.Size = new System.Drawing.Size(690, 322);
             this.WordLabel.TabIndex = 0;
             this.WordLabel.Text = "[Word]";
             this.WordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -865,7 +865,7 @@
             this.DefDesTableLayout.RowCount = 2;
             this.DefDesTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.DefDesTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DefDesTableLayout.Size = new System.Drawing.Size(706, 357);
+            this.DefDesTableLayout.Size = new System.Drawing.Size(690, 322);
             this.DefDesTableLayout.TabIndex = 1;
             // 
             // DefinitionLabel
@@ -875,7 +875,7 @@
             this.DefinitionLabel.ForeColor = System.Drawing.Color.White;
             this.DefinitionLabel.Location = new System.Drawing.Point(3, 0);
             this.DefinitionLabel.Name = "DefinitionLabel";
-            this.DefinitionLabel.Size = new System.Drawing.Size(700, 178);
+            this.DefinitionLabel.Size = new System.Drawing.Size(684, 161);
             this.DefinitionLabel.TabIndex = 1;
             this.DefinitionLabel.Text = "[Definition]";
             this.DefinitionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -886,9 +886,9 @@
             this.FCDisplay_DescriptionPanel.Controls.Add(this.DescriptionContentLabel);
             this.FCDisplay_DescriptionPanel.Controls.Add(this.DescriptionTitleLabel);
             this.FCDisplay_DescriptionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FCDisplay_DescriptionPanel.Location = new System.Drawing.Point(3, 181);
+            this.FCDisplay_DescriptionPanel.Location = new System.Drawing.Point(3, 164);
             this.FCDisplay_DescriptionPanel.Name = "FCDisplay_DescriptionPanel";
-            this.FCDisplay_DescriptionPanel.Size = new System.Drawing.Size(700, 173);
+            this.FCDisplay_DescriptionPanel.Size = new System.Drawing.Size(684, 155);
             this.FCDisplay_DescriptionPanel.TabIndex = 2;
             // 
             // DescriptionContentLabel
@@ -899,7 +899,7 @@
             this.DescriptionContentLabel.ForeColor = System.Drawing.Color.White;
             this.DescriptionContentLabel.Location = new System.Drawing.Point(0, 28);
             this.DescriptionContentLabel.Name = "DescriptionContentLabel";
-            this.DescriptionContentLabel.Size = new System.Drawing.Size(698, 143);
+            this.DescriptionContentLabel.Size = new System.Drawing.Size(682, 125);
             this.DescriptionContentLabel.TabIndex = 1;
             this.DescriptionContentLabel.Text = "[Description]";
             // 
@@ -911,7 +911,7 @@
             this.DescriptionTitleLabel.ForeColor = System.Drawing.Color.White;
             this.DescriptionTitleLabel.Location = new System.Drawing.Point(0, 0);
             this.DescriptionTitleLabel.Name = "DescriptionTitleLabel";
-            this.DescriptionTitleLabel.Size = new System.Drawing.Size(698, 28);
+            this.DescriptionTitleLabel.Size = new System.Drawing.Size(682, 28);
             this.DescriptionTitleLabel.TabIndex = 0;
             this.DescriptionTitleLabel.Text = "Description";
             this.DescriptionTitleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -934,7 +934,7 @@
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
-            this.DeckTabTableLayout.Size = new System.Drawing.Size(1, 357);
+            this.DeckTabTableLayout.Size = new System.Drawing.Size(1, 322);
             this.DeckTabTableLayout.TabIndex = 2;
             // 
             // DeckTab_InstructionLabel
@@ -944,7 +944,7 @@
             this.DeckTab_InstructionLabel.Font = new System.Drawing.Font("Agency FB", 14F);
             this.DeckTab_InstructionLabel.Location = new System.Drawing.Point(3, 0);
             this.DeckTab_InstructionLabel.Name = "DeckTab_InstructionLabel";
-            this.DeckTab_InstructionLabel.Size = new System.Drawing.Size(1, 35);
+            this.DeckTab_InstructionLabel.Size = new System.Drawing.Size(1, 32);
             this.DeckTab_InstructionLabel.TabIndex = 1;
             this.DeckTab_InstructionLabel.Text = "Decks";
             this.DeckTab_InstructionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -953,11 +953,11 @@
             // 
             this.DeckTab_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DeckTab_Datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_Datagridview.Location = new System.Drawing.Point(3, 38);
+            this.DeckTab_Datagridview.Location = new System.Drawing.Point(3, 35);
             this.DeckTab_Datagridview.Name = "DeckTab_Datagridview";
             this.DeckTab_Datagridview.ReadOnly = true;
             this.DeckTab_Datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 279);
+            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 251);
             this.DeckTab_Datagridview.TabIndex = 2;
             this.DeckTab_Datagridview.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DeckTab_Datagridview_CellMouseDoubleClick);
             // 
@@ -971,11 +971,11 @@
             this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_RemoveDeckButton, 0, 0);
             this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_AddDeckButton, 0, 0);
             this.DeckTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 323);
+            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(3, 292);
             this.DeckTab_ButtonsTableLayout.Name = "DeckTab_ButtonsTableLayout";
             this.DeckTab_ButtonsTableLayout.RowCount = 1;
             this.DeckTab_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.DeckTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 29);
+            this.DeckTab_ButtonsTableLayout.Size = new System.Drawing.Size(1, 26);
             this.DeckTab_ButtonsTableLayout.TabIndex = 3;
             // 
             // DeckTab_CloseButton
@@ -991,7 +991,7 @@
             this.DeckTab_CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DeckTab_CloseButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_CloseButton.Name = "DeckTab_CloseButton";
-            this.DeckTab_CloseButton.Size = new System.Drawing.Size(1, 23);
+            this.DeckTab_CloseButton.Size = new System.Drawing.Size(1, 20);
             this.DeckTab_CloseButton.TabIndex = 7;
             this.DeckTab_CloseButton.Text = "Close";
             this.DeckTab_CloseButton.UseVisualStyleBackColor = false;
@@ -1010,7 +1010,7 @@
             this.DeckTab_RemoveDeckButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DeckTab_RemoveDeckButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_RemoveDeckButton.Name = "DeckTab_RemoveDeckButton";
-            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 23);
+            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 20);
             this.DeckTab_RemoveDeckButton.TabIndex = 6;
             this.DeckTab_RemoveDeckButton.Text = "Remove";
             this.DeckTab_RemoveDeckButton.UseVisualStyleBackColor = false;
@@ -1029,7 +1029,7 @@
             this.DeckTab_AddDeckButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
             this.DeckTab_AddDeckButton.Location = new System.Drawing.Point(3, 3);
             this.DeckTab_AddDeckButton.Name = "DeckTab_AddDeckButton";
-            this.DeckTab_AddDeckButton.Size = new System.Drawing.Size(1, 23);
+            this.DeckTab_AddDeckButton.Size = new System.Drawing.Size(1, 20);
             this.DeckTab_AddDeckButton.TabIndex = 5;
             this.DeckTab_AddDeckButton.Text = "Add";
             this.DeckTab_AddDeckButton.UseVisualStyleBackColor = false;
@@ -1040,7 +1040,7 @@
             this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_ButtonsTableLayoutPanel);
             this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_DeckNameTxt);
             this.DeckTab_AddDeckPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_AddDeckPanel.Location = new System.Drawing.Point(3, 358);
+            this.DeckTab_AddDeckPanel.Location = new System.Drawing.Point(3, 324);
             this.DeckTab_AddDeckPanel.Name = "DeckTab_AddDeckPanel";
             this.DeckTab_AddDeckPanel.Padding = new System.Windows.Forms.Padding(5);
             this.DeckTab_AddDeckPanel.Size = new System.Drawing.Size(1, 1);
@@ -1128,14 +1128,14 @@
             this.SearchBackgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.SearchBackgroundWorker_DoWork);
             this.SearchBackgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.SearchBackgroundWorker_RunWorkerCompleted);
             // 
-            // FlashCardUC
+            // FlashCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.ClientSize = new System.Drawing.Size(696, 364);
             this.Controls.Add(this.GlobalTableLayoutPanel);
-            this.Name = "FlashCardUC";
-            this.Size = new System.Drawing.Size(712, 403);
+            this.Name = "FlashCardForm";
             this.Load += new System.EventHandler(this.FlashCardUC_Load);
             this.GlobalTableLayoutPanel.ResumeLayout(false);
             this.ControlTableLayout.ResumeLayout(false);
@@ -1171,69 +1171,69 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel GlobalTableLayoutPanel;
-        private System.Windows.Forms.TableLayoutPanel ControlTableLayout;
-        private RoundedCornerButton DeckMoreRcbtn;
-        private RoundedCornerButton FlipRcbtn;
-        private RoundedCornerButton RandomRcbtn;
-        private RoundedCornerButton NextRcbtn;
-        private RoundedCornerButton PreviousRcbtn;
-        private RoundedCornerButton FCAddRcbtn;
-        private System.Windows.Forms.TableLayoutPanel TabsDisplayTableLayout;
-        private System.Windows.Forms.ComboBox DeckComboBox;
+        private System.Windows.Forms.Label AddFCTab_WordTitleLabel;
+        private UserControls.RoundedCornerButton AddFCTab_SearchRcbtn;
+        private System.Windows.Forms.Panel DescriptionPanel;
+        private System.Windows.Forms.RichTextBox AddFCTab_DescriptionContentRichTextBox;
+        private System.Windows.Forms.Label AddFCTab_DescriptionTitleLabel;
+        private UserControls.RoundedCornerButton AddFCTab_CloseRcbtn;
+        private UserControls.RoundedCornerButton AddFCTab_ConfirmRcbtn;
+        private System.Windows.Forms.Label AddFCTab_DeckTitleLabel;
+        private System.Windows.Forms.ComboBox AddFCTab_DeckCombobox;
+        private System.Windows.Forms.Label AddFCTab_InstructionLabel;
+        private System.Windows.Forms.Panel AddFCTab_SearchSectionPanel;
+        private System.Windows.Forms.TableLayoutPanel AddFCTab_Search_ButtonsPanel;
+        private UserControls.RoundedCornerButton AddFCTab_Search_CancelButton;
+        private UserControls.RoundedCornerButton AddFCTab_Search_AcceptButton;
+        private System.Windows.Forms.Label AddFCTab_SearchResultLabel;
         private System.Windows.Forms.Panel FCDisplayPanel;
+        private System.Windows.Forms.Label FlashCardCountLabel;
+        private System.Windows.Forms.Panel WordPanel;
+        private System.Windows.Forms.Label WordLabel;
         private System.Windows.Forms.TableLayoutPanel DefDesTableLayout;
         private System.Windows.Forms.Label DefinitionLabel;
         private System.Windows.Forms.Panel FCDisplay_DescriptionPanel;
         private System.Windows.Forms.Label DescriptionContentLabel;
         private System.Windows.Forms.Label DescriptionTitleLabel;
-        private System.Windows.Forms.Panel WordPanel;
-        private System.Windows.Forms.Label WordLabel;
-        private System.Windows.Forms.TableLayoutPanel AddFCTabTableLayout;
-        private System.Windows.Forms.Label AddFCTab_InstructionLabel;
-        private System.Windows.Forms.Panel DescriptionPanel;
-        private System.Windows.Forms.RichTextBox AddFCTab_DescriptionContentRichTextBox;
-        private System.Windows.Forms.Label AddFCTab_DescriptionTitleLabel;
-        private System.Windows.Forms.Panel AddFCTab_SearchSectionPanel;
-        private System.Windows.Forms.Label AddFCTab_SearchResultLabel;
-        private System.ComponentModel.BackgroundWorker SearchBackgroundWorker;
+        private System.Windows.Forms.TableLayoutPanel AddFCTab_DefinitionTableLayoutPanel;
+        private System.Windows.Forms.Label AddFCTab_DefinitionTitleLabel;
+        private System.Windows.Forms.TextBox AddFCTab_DefinitionTxt;
         private System.Windows.Forms.TableLayoutPanel DeckTabTableLayout;
         private System.Windows.Forms.Label DeckTab_InstructionLabel;
         private System.Windows.Forms.DataGridView DeckTab_Datagridview;
         private System.Windows.Forms.TableLayoutPanel DeckTab_ButtonsTableLayout;
-        private RoundedCornerButton DeckTab_CloseButton;
-        private RoundedCornerButton DeckTab_RemoveDeckButton;
-        private RoundedCornerButton DeckTab_AddDeckButton;
+        private UserControls.RoundedCornerButton DeckTab_CloseButton;
+        private UserControls.RoundedCornerButton DeckTab_RemoveDeckButton;
+        private UserControls.RoundedCornerButton DeckTab_AddDeckButton;
         private System.Windows.Forms.Panel DeckTab_AddDeckPanel;
         private System.Windows.Forms.TableLayoutPanel DeckTab_AddDeck_ButtonsTableLayoutPanel;
-        private RoundedCornerButton DeckTab_AddDeck_CancelButton;
-        private RoundedCornerButton DeckTab_AddDeck_AccpetButton;
-        private RoundedCornerTextBox DeckTab_AddDeck_DeckNameTxt;
-        private System.Windows.Forms.Label FlashCardCountLabel;
+        private UserControls.RoundedCornerButton DeckTab_AddDeck_CancelButton;
+        private UserControls.RoundedCornerButton DeckTab_AddDeck_AccpetButton;
+        private UserControls.RoundedCornerTextBox DeckTab_AddDeck_DeckNameTxt;
+        private System.Windows.Forms.TextBox AddFCTab_WordTxt;
+        private System.ComponentModel.BackgroundWorker SearchBackgroundWorker;
+        private System.Windows.Forms.TableLayoutPanel AddFCTab_WordTableLayout;
+        private System.Windows.Forms.TableLayoutPanel AddFCTab_WordTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel GlobalTableLayoutPanel;
+        private System.Windows.Forms.TableLayoutPanel ControlTableLayout;
+        private UserControls.RoundedCornerButton DeckMoreRcbtn;
+        private UserControls.RoundedCornerButton RandomRcbtn;
+        private UserControls.RoundedCornerButton NextRcbtn;
+        private UserControls.RoundedCornerButton PreviousRcbtn;
+        private UserControls.RoundedCornerButton FCAddRcbtn;
+        private System.Windows.Forms.ComboBox DeckComboBox;
+        private UserControls.RoundedCornerButton FlipRcbtn;
+        private UserControls.RoundedCornerButton FCEditButton;
+        private System.Windows.Forms.TableLayoutPanel TabsDisplayTableLayout;
         private System.Windows.Forms.TableLayoutPanel FCDetailTabTableLayout;
         private System.Windows.Forms.Label FCDetailTab_InstructionLabel;
         private System.Windows.Forms.DataGridView FCDetailTab_Datagridview;
         private System.Windows.Forms.TableLayoutPanel FCDetailTab_ButtonsTableLayout;
-        private RoundedCornerButton FCDetailTab_ReturnButton;
-        private RoundedCornerButton FCDetailTab_FCRemoveButton;
-        private RoundedCornerButton FCDetailTab_AddFCButton;
-        private RoundedCornerButton FCEditButton;
-        private System.Windows.Forms.TableLayoutPanel AddFCTab_WordTableLayout;
-        private RoundedCornerButton AddFCTab_SearchRcbtn;
-        private System.Windows.Forms.TableLayoutPanel AddFCTab_Search_ButtonsPanel;
-        private RoundedCornerButton AddFCTab_Search_CancelButton;
-        private RoundedCornerButton AddFCTab_Search_AcceptButton;
+        private UserControls.RoundedCornerButton FCDetailTab_ReturnButton;
+        private UserControls.RoundedCornerButton FCDetailTab_FCRemoveButton;
+        private UserControls.RoundedCornerButton FCDetailTab_AddFCButton;
+        private System.Windows.Forms.TableLayoutPanel AddFCTabTableLayout;
         private System.Windows.Forms.TableLayoutPanel AddFCTab_ButtonsTableLayout;
-        private RoundedCornerButton AddFCTab_CloseRcbtn;
-        private RoundedCornerButton AddFCTab_ConfirmRcbtn;
-        private System.Windows.Forms.TableLayoutPanel AddFCTab_DefinitionTableLayoutPanel;
-        private System.Windows.Forms.Label AddFCTab_DefinitionTitleLabel;
-        private System.Windows.Forms.TextBox AddFCTab_DefinitionTxt;
-        private System.Windows.Forms.TableLayoutPanel AddFCTab_WordTableLayoutPanel;
-        private System.Windows.Forms.Label AddFCTab_WordTitleLabel;
-        private System.Windows.Forms.TextBox AddFCTab_WordTxt;
         private System.Windows.Forms.TableLayoutPanel AddFCTab_DecksTableLayout;
-        private System.Windows.Forms.Label AddFCTab_DeckTitleLabel;
-        private System.Windows.Forms.ComboBox AddFCTab_DeckCombobox;
     }
 }

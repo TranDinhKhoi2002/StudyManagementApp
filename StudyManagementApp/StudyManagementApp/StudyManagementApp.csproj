@@ -132,6 +132,12 @@
     </Compile>
     <Compile Include="FlashCardFolder\FlashCard.cs" />
     <Compile Include="FlashCardFolder\FlashCardDeck.cs" />
+    <Compile Include="FlashCardFolder\FlashCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashCardFolder\FlashCardForm.Designer.cs">
+      <DependentUpon>FlashCardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlappyBirdForm.resx">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlashCardFolder\FlashCardForm.resx">
+      <DependentUpon>FlashCardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgetPasswordForm.resx">
       <DependentUpon>ForgetPasswordForm.cs</DependentUpon>
