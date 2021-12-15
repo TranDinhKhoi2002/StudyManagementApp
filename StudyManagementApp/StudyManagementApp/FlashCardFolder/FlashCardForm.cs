@@ -57,7 +57,10 @@ namespace StudyManagementApp.FlashCardFolder
         bool isAddFCTab_SearchResultOpen;
         bool isDeckTabOpen;
         bool isDeckTab_AddDeckOpen;
+        bool isDeckTab_DeckEditOpen;
+        string deckIDToEdit;
         bool isFCDetailOpen;
+
 
         bool isUpdateFCMode;
 
@@ -234,18 +237,46 @@ namespace StudyManagementApp.FlashCardFolder
             if (isDeckTab_AddDeckOpen)
             {
                 isDeckTab_AddDeckOpen = false;
+                DeckTabTableLayout.RowStyles[0].Height = 10;
                 DeckTabTableLayout.RowStyles[1].Height = 80;
                 DeckTabTableLayout.RowStyles[2].Height = 10;
                 DeckTabTableLayout.RowStyles[3].Height = 0;
+                DeckTabTableLayout.RowStyles[4].Height = 0;
             }
             else
             {
                 isDeckTab_AddDeckOpen = true;
-                DeckTabTableLayout.RowStyles[1].Height = 70;
+                DeckTabTableLayout.RowStyles[0].Height = 10;
+                DeckTabTableLayout.RowStyles[1].Height = 60;
                 DeckTabTableLayout.RowStyles[2].Height = 0;
-                DeckTabTableLayout.RowStyles[3].Height = 20;
+                DeckTabTableLayout.RowStyles[3].Height = 30;
+                DeckTabTableLayout.RowStyles[4].Height = 0;
 
                 DeckTab_AddDeck_DeckNameTxt.Select();
+            }
+        }
+
+        private void ToggleDeckTab_DeckEdit()
+        {
+            if (isDeckTab_DeckEditOpen)
+            {
+                isDeckTab_DeckEditOpen = false;
+
+                DeckTabTableLayout.RowStyles[0].Height = 10;
+                DeckTabTableLayout.RowStyles[1].Height = 80;
+                DeckTabTableLayout.RowStyles[2].Height = 10;
+                DeckTabTableLayout.RowStyles[3].Height = 0;
+                DeckTabTableLayout.RowStyles[4].Height = 0;
+            }
+            else
+            {
+                isDeckTab_DeckEditOpen = true;
+
+                DeckTabTableLayout.RowStyles[0].Height = 10;
+                DeckTabTableLayout.RowStyles[1].Height = 60;
+                DeckTabTableLayout.RowStyles[2].Height = 0;
+                DeckTabTableLayout.RowStyles[3].Height = 0;
+                DeckTabTableLayout.RowStyles[4].Height = 30;
             }
         }
 
@@ -273,6 +304,7 @@ namespace StudyManagementApp.FlashCardFolder
             {
                 // Fill deck name in combobox
                 DeckComboBox.DataSource = DecksToList();
+                AddFCTab_DeckCombobox.DataSource = DecksToList();
             }
             else
             {
@@ -333,6 +365,16 @@ namespace StudyManagementApp.FlashCardFolder
             FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
         }
 
+        private void DeckDetailLoad(string deckID)
+        {
+            FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(deckID);
+            FCDetailTab_Datagridview.Columns[0].Visible = false;
+            FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+        }
+
+
         private void AddFCTab_ChangeWithNavigation()
         {
             FlashCard currentFlashCard = fcList[currentFCIndex];
@@ -355,6 +397,10 @@ namespace StudyManagementApp.FlashCardFolder
             {
                 AddFCTab_InstructionLabel.Text = "Add FlashCard";
                 AddFCTab_ConfirmRcbtn.Text = "Add";
+
+                AddFCTab_WordTxt.Text = string.Empty;
+                AddFCTab_DefinitionTxt.Text = string.Empty;
+                AddFCTab_DescriptionContentRichTextBox.Text = string.Empty;
             }
         }
 
@@ -379,7 +425,8 @@ namespace StudyManagementApp.FlashCardFolder
 
             isDeckTabOpen = false;
             isDeckTab_AddDeckOpen = false;
-
+            isDeckTab_DeckEditOpen= false;
+            
             isFCDetailOpen = false;
 
             // Load Decks
@@ -624,7 +671,6 @@ namespace StudyManagementApp.FlashCardFolder
             if (DeckTab_AddDeck_DeckNameTxt.Texts.Equals(string.Empty))
             {
                 DeckTab_InstructionLabel.Text = "Deck name empty";
-                return;
             }
             else
             {
@@ -641,6 +687,8 @@ namespace StudyManagementApp.FlashCardFolder
                     DeckTab_InstructionLabel.Text = "Deck name existed";
                     return;
                 }
+
+                DeckTab_InstructionLabel.Text = "Deck added";
 
                 // Reload Decks (Decks tab)
                 DeckTabLoad();
@@ -690,8 +738,21 @@ namespace StudyManagementApp.FlashCardFolder
         {
             if (DeckTab_Datagridview.SelectedRows.Count <= 0 || DeckTab_Datagridview.Rows.Count <= 1)
             {
-                DeckTab_InstructionLabel.Text = "No flashcard to remove";
+                DeckTab_InstructionLabel.Text = "No deck to remove";
                 return;
+            }
+
+            if (DeckTab_Datagridview.SelectedRows.Count == 1)
+            {
+                try
+                {
+                    string id = DeckTab_Datagridview.SelectedRows[0].Cells[0].Value.ToString();
+                }
+                catch
+                {
+                    DeckTab_InstructionLabel.Text = "No deck to remove";
+                    return;
+                }
             }
 
             if (MessageBox.Show("Delete these decks?", "Delete confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -781,17 +842,84 @@ namespace StudyManagementApp.FlashCardFolder
             if (DeckTab_Datagridview.Rows.Count > 1)
             {
                 fcDetailID = DeckTab_Datagridview.Rows[e.RowIndex].Cells[0].Value.ToString();
+                if (fcDetailID != string.Empty)
+                {
+                    FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(fcDetailID);
+                    FCDetailTab_Datagridview.Columns[0].Visible = false;
+                    FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                    FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-                FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(fcDetailID);
-                FCDetailTab_Datagridview.Columns[0].Visible = false;
-                FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-                FCDetailTab_InstructionLabel.Text = DeckTab_Datagridview.Rows[e.RowIndex].Cells[1].Value.ToString();
-                ToggleFCDetail();
+                    FCDetailTab_InstructionLabel.Text = DeckTab_Datagridview.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    ToggleFCDetail();
+                }
             }
         }
+
+        
+
+        private void DeckTab_EditButton_Click(object sender, EventArgs e)
+        {
+            if (DeckTab_Datagridview.Rows.Count <= 1)
+            {
+                DeckTab_InstructionLabel.Text = "No deck to edit";
+                return;
+            }
+            if (DeckTab_Datagridview.SelectedRows.Count != 1)
+            {
+                DeckTab_InstructionLabel.Text = "One deck only";
+                return;
+            }
+            try
+            {
+                DeckTab_EditDeck_DeckNameTxt.Text = DeckTab_Datagridview.SelectedRows[0].Cells[1].Value.ToString();
+                deckIDToEdit = DeckTab_Datagridview.SelectedRows[0].Cells[0].Value.ToString();
+            }
+            catch
+            {
+                DeckTab_InstructionLabel.Text = "No deck to edit";
+                return;
+            }
+
+            if (isDeckTab_AddDeckOpen)
+                ToggleDeckTab_AddDeck();
+            ToggleDeckTab_DeckEdit();
+        }
+
+        private void DeckTab_EditDeck_AccpetButton_Click(object sender, EventArgs e)
+        {
+            if (DeckTab_EditDeck_DeckNameTxt.Text.Equals(string.Empty))
+            {
+                DeckTab_InstructionLabel.Text = "Deck name empty";
+                return;
+            }
+
+            try
+            {
+                FlashCardDAO.Instance.UpdateDeck(deckIDToEdit, DeckTab_EditDeck_DeckNameTxt.Text);
+            }
+            catch
+            {
+                DeckTab_InstructionLabel.Text = "Deck name existed";
+            }
+
+            DeckTab_InstructionLabel.Text = "Deck's name updated";
+
+            // Reload Decks (Decks tab)
+            DeckTabLoad();
+
+            // Reload Decks (Bar)
+            GetDecks();
+            LoadDecks();
+
+            ToggleDeckTab_DeckEdit();
+        }
+
+        private void DeckTab_EditDeck_CancelButton_Click(object sender, EventArgs e)
+        {
+            ToggleDeckTab_DeckEdit();
+        }
+
         //
         // FlashCard Add Tab
         //
@@ -851,8 +979,8 @@ namespace StudyManagementApp.FlashCardFolder
 
                 // Update datagridview in decktab and detail deck tab
                 DeckTabLoad();
-                if (isFCDetailOpen && fcDetailID == currentDeckID)
-                    DeckDetailLoad();
+                if (isFCDetailOpen && fcDetailID == deckID)
+                    DeckDetailLoad(deckID);
 
                 if (fcList.Count == 0)
                 {
@@ -874,13 +1002,13 @@ namespace StudyManagementApp.FlashCardFolder
                 // Notify add flashcard successfully
                 AddFCTab_InstructionLabel.Text = "Flashcard added";
 
-                LoadDecks();
+                //LoadDecks();
                 GetFlashCards();
 
                 // Update datagridview in decktab and detail deck tab
                 DeckTabLoad();
-                if (isFCDetailOpen && fcDetailID == currentDeckID)
-                    DeckDetailLoad();
+                if (isFCDetailOpen && fcDetailID == deckID)
+                    DeckDetailLoad(deckID);
             }
 
         }
@@ -970,22 +1098,42 @@ namespace StudyManagementApp.FlashCardFolder
                 return;
             }
 
+            if (FCDetailTab_Datagridview.SelectedRows.Count == 1)
+            {
+                try
+                {
+                    string id = FCDetailTab_Datagridview.SelectedRows[0].Cells[0].Value.ToString();
+                }
+                catch
+                {
+                    FCDetailTab_InstructionLabel.Text = "No flashcard to remove";
+                    return;
+                }
+            }
+
             if (MessageBox.Show("Delete these flashcards?", "Delete confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 bool currentFCDeleted = false;
+                int fcDeletedCount = 0;
 
                 foreach (DataGridViewRow row in FCDetailTab_Datagridview.SelectedRows)
                 {
                     try
                     {
-                        if (row.Cells[0].Value.ToString() == fcList[currentDeckIndex].Id)
+                        if (row.Cells[0].Value.ToString() == fcList[currentFCIndex].Id)
                             currentFCDeleted = true;
                         FlashCardDAO.Instance.DeleteFlashCard(row.Cells[0].Value.ToString());
                     }
-                    catch { }
+                    catch
+                    {
+                        fcDeletedCount--;
+                    }
+                    fcDeletedCount++;
                 }
 
                 // Reload deck detail
+                DeckTabLoad();
+
                 FCDetailTab_Datagridview.DataSource = FlashCardDAO.Instance.GetFlashCards(fcDetailID);
                 FCDetailTab_Datagridview.Columns[0].Visible = false;
                 FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -993,9 +1141,23 @@ namespace StudyManagementApp.FlashCardFolder
                 FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
                 GetFlashCards();
-                if (fcList.Count > 0 && currentFCDeleted)
-                    currentFCIndex = 0;
+                if (fcList.Count > 0)
+                {
+                    if (currentFCDeleted)
+                        currentFCIndex = 0; 
+                }
+                else
+                {
+                    if (isAddFCTabOpen)
+                    {
+                        if (isUpdateFCMode)
+                            ToggleUpdateFCMode(false);
+                        ToggleAddFCTab();
+                    }
+                }
                 PrepareFlashCard(currentFCIndex);
+
+                FCDetailTab_InstructionLabel.Text = string.Format("{0} flashcards deleted", fcDeletedCount);
             }
         }
 
@@ -1035,7 +1197,8 @@ namespace StudyManagementApp.FlashCardFolder
                 ControlTableLayout.BackColor = Color.FromArgb(213, 208, 210);
                 DeckTabTableLayout.BackColor = Color.FromArgb(213, 208, 210);
                 DeckTab_Datagridview.BackgroundColor = Color.FromArgb(213, 208, 210);
-                DeckTab_AddDeckPanel.BackColor = Color.FromArgb(100, 101, 110);
+                DeckTab_AddDeckTableLayout.BackColor = Color.FromArgb(100, 101, 110);
+                DeckTab_EditDeck_TableLayout.BackColor = Color.FromArgb(100, 101, 110);
                 AddFCTabTableLayout.BackColor = Color.FromArgb(213, 208, 210);
                 AddFCTab_SearchSectionPanel.BackColor = Color.FromArgb(100, 101, 110);
                 FCDetailTabTableLayout.BackColor = Color.FromArgb(100, 101, 110);
@@ -1062,12 +1225,18 @@ namespace StudyManagementApp.FlashCardFolder
                 DeckTab_Datagridview.BackgroundColor = Color.FromArgb(37, 42, 45);
 
                 FCDetailTabTableLayout.BackColor = Color.FromArgb(27, 32, 35);
-                DeckTab_AddDeckPanel.BackColor = Color.FromArgb(27, 32, 35);
+                DeckTab_AddDeckTableLayout.BackColor = Color.FromArgb(27, 32, 35);
+                DeckTab_EditDeck_ButtonsTableLayout.BackColor = Color.FromArgb(27, 32, 35);
                 AddFCTab_SearchSectionPanel.BackColor = Color.FromArgb(27, 32, 35);
                 FCDetailTab_Datagridview.BackgroundColor = Color.FromArgb(27, 32, 35);
             }
         }
 
+        
+
         #endregion
+
+        
+
     }
 }
