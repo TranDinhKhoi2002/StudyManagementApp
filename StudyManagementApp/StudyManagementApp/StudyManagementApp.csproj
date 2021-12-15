@@ -189,6 +189,12 @@
       <DependentUpon>AddItem_Todolist.cs</DependentUpon>
     </Compile>
     <Compile Include="TodolistFolder\DataItem_Todolist.cs" />
+    <Compile Include="TodolistFolder\Display_TYPEITEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Display_TYPEITEM.Designer.cs">
+      <DependentUpon>Display_TYPEITEM.cs</DependentUpon>
+    </Compile>
     <Compile Include="TodolistFolder\Item_Todolist_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,18 @@
     </Compile>
     <Compile Include="TodolistFolder\Todolist_Form.Designer.cs">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_DatetimeNoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_DatetimeNoti.Designer.cs">
+      <DependentUpon>Update_DatetimeNoti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_Delete_TYPECOLOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodolistFolder\Update_Delete_TYPECOLOR.Designer.cs">
+      <DependentUpon>Update_Delete_TYPECOLOR.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\AboutUC.cs">
       <SubType>UserControl</SubType>
@@ -297,11 +315,20 @@
     <EmbeddedResource Include="TodolistFolder\AddItem_Todolist.resx">
       <DependentUpon>AddItem_Todolist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Display_TYPEITEM.resx">
+      <DependentUpon>Display_TYPEITEM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Item_Todolist_Form.resx">
       <DependentUpon>Item_Todolist_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\Todolist_Form.resx">
       <DependentUpon>Todolist_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Update_DatetimeNoti.resx">
+      <DependentUpon>Update_DatetimeNoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodolistFolder\Update_Delete_TYPECOLOR.resx">
+      <DependentUpon>Update_Delete_TYPECOLOR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\AboutUC.resx">
       <DependentUpon>AboutUC.cs</DependentUpon>
@@ -369,6 +396,8 @@
     <None Include="bin\Debug\Resources\Images\background_dayofweek.png" />
     <Content Include="CounterLib.dll" />
     <Content Include="Guna.UI2.dll" />
+    <None Include="Resources\chatbot.png" />
+    <None Include="Resources\background_chatbot.png" />
     <Content Include="Resources\Images\about.png" />
     <None Include="Resources\Images\bird.png" />
     <Content Include="Resources\Images\calendarDark.png" />

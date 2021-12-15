@@ -10,16 +10,20 @@ using System.Windows.Forms;
 
 namespace StudyManagementApp
 {
-    public partial class FlappyBirdForm : Form
+    public partial class lbStart : Form
     {
         int pipeSpeed = 8;
         int gravity = 10;
         int score = 0;
+        Point birdOldPoint, ptOldPoint, pbOldPoint;
 
-        public FlappyBirdForm()
+        public lbStart()
         {
             InitializeComponent();
             DoubleBuffered = true;
+            birdOldPoint = flappyBird.Location;
+            ptOldPoint = pipeTop.Location;
+            pbOldPoint = pipeBottom.Location;
         }
 
         private void timerFlappyBird_Tick(object sender, EventArgs e)
@@ -64,7 +68,6 @@ namespace StudyManagementApp
             if (e.KeyCode == Keys.Space)
             {
                 gravity = -10;
-
             }
         }
 
@@ -73,7 +76,6 @@ namespace StudyManagementApp
             if (e.KeyCode == Keys.Space)
             {
                 gravity = 10;
-
             }
         }
 
@@ -81,6 +83,16 @@ namespace StudyManagementApp
         {
             timerFlappyBird.Stop();
             lbScore.Text += " Game over";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            flappyBird.Location = birdOldPoint;
+            pipeTop.Location = ptOldPoint;
+            pipeBottom.Location = pbOldPoint;
+            score = 0;
+            pipeSpeed = 8;
+            timerFlappyBird.Enabled = true;
         }
     }
 }

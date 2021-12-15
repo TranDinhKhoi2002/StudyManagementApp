@@ -18,14 +18,14 @@ namespace StudyManagementApp.TodolistFolder
         string note;
         bool done;
         string pk_Color;
-
+        DateTime datetimeNOTI;
         Color typeColor;//suy ra tu pk_color
         string nameType;
         public Item_Todolist_Form()
         {
             InitializeComponent();
         }
-        public Item_Todolist_Form(DateTime datetimeCreate_,string taskName_, DateTime datetimeDeadline_, string note_, bool done_, string pk_Color_)
+        public Item_Todolist_Form(DateTime datetimeCreate_,string taskName_, DateTime datetimeDeadline_, string note_, bool done_, string pk_Color_, DateTime datetimeNoti)
         {
             InitializeComponent();
             datetimeCreate = datetimeCreate_;
@@ -34,7 +34,7 @@ namespace StudyManagementApp.TodolistFolder
             note = note_;
             done = done_;
             pk_Color = pk_Color_;
-            
+            datetimeNOTI = datetimeNoti;
         }
         private void Item_Todolist_Form_Load(object sender, EventArgs e)
         {
@@ -98,6 +98,7 @@ namespace StudyManagementApp.TodolistFolder
             {
                 checkbox_iconButton.IconChar = FontAwesome.Sharp.IconChar.Square;
             }
+            Noti_iconButton.Text = datetimeNOTI.ToString("dd/MM/yyyy hh:mm tt");
         }
         #endregion
 
@@ -133,10 +134,28 @@ namespace StudyManagementApp.TodolistFolder
         void Delete_Mot_Item(string userName, DateTime datetimeCreate)
         {
             string query = "DELETE_MOT_ITEM @userName , @datetimeCreate ";
-            int result = DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCreate });
+            DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { userName, datetimeCreate });
             WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
             this.Close();
         }
         #endregion
+
+        private void Noti_iconButton_Click(object sender, EventArgs e)
+        {
+            Update_DatetimeNoti update_DatetimeNoti = new Update_DatetimeNoti(datetimeCreate, datetimeDeadline, datetimeNOTI);
+            update_DatetimeNoti.ShowDialog();
+            DataTable all_taskitem = WorkPlace.bang_AllTASK_TDL;
+            for (int i = 0; i < all_taskitem.Rows.Count; i++)
+            {
+                string userNAME = all_taskitem.Rows[i]["USERNAME"].ToString();
+                DateTime datetimecreate = (DateTime)all_taskitem.Rows[i]["DATETIMECREATE"];
+                if (UserInfo.Instance.Username == userNAME && datetimeCreate == datetimecreate)
+                {
+                    datetimeNOTI = (DateTime)all_taskitem.Rows[i]["DATETIMENOTI"];
+                    Noti_iconButton.Text = datetimeNOTI.ToString("dd/MM/yyyy hh:mm tt");
+                }
+            }
+
+        }
     }
 }

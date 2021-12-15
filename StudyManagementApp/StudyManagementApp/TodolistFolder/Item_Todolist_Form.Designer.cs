@@ -36,6 +36,8 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.Noti_iconButton = new FontAwesome.Sharp.IconButton();
             this.type_iconButton = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,6 +53,7 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -63,10 +66,10 @@ namespace StudyManagementApp.TodolistFolder
             // 
             this.panel2.Controls.Add(this.delete_iconButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(703, 16);
+            this.panel2.Location = new System.Drawing.Point(879, 20);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(80, 82);
+            this.panel2.Size = new System.Drawing.Size(100, 102);
             this.panel2.TabIndex = 2;
             // 
             // delete_iconButton
@@ -76,14 +79,14 @@ namespace StudyManagementApp.TodolistFolder
             this.delete_iconButton.FlatAppearance.BorderSize = 0;
             this.delete_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete_iconButton.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
-            this.delete_iconButton.IconColor = System.Drawing.Color.DarkGray;
+            this.delete_iconButton.IconColor = System.Drawing.Color.Gray;
             this.delete_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.delete_iconButton.IconSize = 50;
             this.delete_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.delete_iconButton.Location = new System.Drawing.Point(19, 19);
+            this.delete_iconButton.Location = new System.Drawing.Point(24, 24);
             this.delete_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.delete_iconButton.Name = "delete_iconButton";
-            this.delete_iconButton.Size = new System.Drawing.Size(42, 43);
+            this.delete_iconButton.Size = new System.Drawing.Size(52, 54);
             this.delete_iconButton.TabIndex = 1;
             this.delete_iconButton.UseVisualStyleBackColor = false;
             this.delete_iconButton.Click += new System.EventHandler(this.delete_iconButton_Click);
@@ -93,10 +96,10 @@ namespace StudyManagementApp.TodolistFolder
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.checkbox_iconButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(16, 16);
+            this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(80, 82);
+            this.panel1.Size = new System.Drawing.Size(100, 102);
             this.panel1.TabIndex = 0;
             // 
             // checkbox_iconButton
@@ -106,14 +109,14 @@ namespace StudyManagementApp.TodolistFolder
             this.checkbox_iconButton.FlatAppearance.BorderSize = 0;
             this.checkbox_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkbox_iconButton.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.checkbox_iconButton.IconColor = System.Drawing.Color.DarkGray;
+            this.checkbox_iconButton.IconColor = System.Drawing.Color.Gray;
             this.checkbox_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.checkbox_iconButton.IconSize = 55;
             this.checkbox_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.checkbox_iconButton.Location = new System.Drawing.Point(19, 19);
+            this.checkbox_iconButton.Location = new System.Drawing.Point(24, 24);
             this.checkbox_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.checkbox_iconButton.Name = "checkbox_iconButton";
-            this.checkbox_iconButton.Size = new System.Drawing.Size(42, 43);
+            this.checkbox_iconButton.Size = new System.Drawing.Size(52, 54);
             this.checkbox_iconButton.TabIndex = 0;
             this.checkbox_iconButton.UseVisualStyleBackColor = false;
             this.checkbox_iconButton.Click += new System.EventHandler(this.checkbox_iconButton_Click);
@@ -123,10 +126,10 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel.BackColor = System.Drawing.Color.Silver;
             this.background_task_panel.Controls.Add(this.tableLayoutPanel2);
             this.background_task_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.background_task_panel.Location = new System.Drawing.Point(112, 16);
+            this.background_task_panel.Location = new System.Drawing.Point(140, 20);
             this.background_task_panel.Margin = new System.Windows.Forms.Padding(0);
             this.background_task_panel.Name = "background_task_panel";
-            this.background_task_panel.Size = new System.Drawing.Size(591, 82);
+            this.background_task_panel.Size = new System.Drawing.Size(739, 102);
             this.background_task_panel.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -145,18 +148,60 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(591, 82);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(739, 102);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.type_iconButton);
+            this.panel5.Controls.Add(this.tableLayoutPanel4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 64);
+            this.panel5.Location = new System.Drawing.Point(0, 80);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(591, 18);
+            this.panel5.Size = new System.Drawing.Size(739, 22);
             this.panel5.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Controls.Add(this.Noti_iconButton, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.type_iconButton, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(739, 22);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // Noti_iconButton
+            // 
+            this.Noti_iconButton.BackColor = System.Drawing.Color.Transparent;
+            this.Noti_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Noti_iconButton.FlatAppearance.BorderSize = 0;
+            this.Noti_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Noti_iconButton.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Noti_iconButton.ForeColor = System.Drawing.Color.Black;
+            this.Noti_iconButton.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.Noti_iconButton.IconColor = System.Drawing.Color.Black;
+            this.Noti_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.Noti_iconButton.IconSize = 17;
+            this.Noti_iconButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Noti_iconButton.Location = new System.Drawing.Point(369, 0);
+            this.Noti_iconButton.Margin = new System.Windows.Forms.Padding(0);
+            this.Noti_iconButton.Name = "Noti_iconButton";
+            this.Noti_iconButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.Noti_iconButton.Size = new System.Drawing.Size(370, 22);
+            this.Noti_iconButton.TabIndex = 4;
+            this.Noti_iconButton.Text = "time";
+            this.Noti_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Noti_iconButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Noti_iconButton.UseVisualStyleBackColor = false;
+            this.Noti_iconButton.Click += new System.EventHandler(this.Noti_iconButton_Click);
             // 
             // type_iconButton
             // 
@@ -176,8 +221,8 @@ namespace StudyManagementApp.TodolistFolder
             this.type_iconButton.Location = new System.Drawing.Point(0, 0);
             this.type_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.type_iconButton.Name = "type_iconButton";
-            this.type_iconButton.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.type_iconButton.Size = new System.Drawing.Size(591, 18);
+            this.type_iconButton.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.type_iconButton.Size = new System.Drawing.Size(369, 22);
             this.type_iconButton.TabIndex = 3;
             this.type_iconButton.Text = "Team";
             this.type_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +236,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(591, 28);
+            this.panel3.Size = new System.Drawing.Size(739, 35);
             this.panel3.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -207,17 +252,17 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(591, 28);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(739, 35);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.thoigian_deadline_label);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(413, 0);
+            this.panel7.Location = new System.Drawing.Point(517, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(178, 28);
+            this.panel7.Size = new System.Drawing.Size(222, 35);
             this.panel7.TabIndex = 3;
             // 
             // thoigian_deadline_label
@@ -228,8 +273,8 @@ namespace StudyManagementApp.TodolistFolder
             this.thoigian_deadline_label.Location = new System.Drawing.Point(0, 0);
             this.thoigian_deadline_label.Margin = new System.Windows.Forms.Padding(0);
             this.thoigian_deadline_label.Name = "thoigian_deadline_label";
-            this.thoigian_deadline_label.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.thoigian_deadline_label.Size = new System.Drawing.Size(178, 28);
+            this.thoigian_deadline_label.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.thoigian_deadline_label.Size = new System.Drawing.Size(222, 35);
             this.thoigian_deadline_label.TabIndex = 1;
             this.thoigian_deadline_label.Text = "12:00";
             this.thoigian_deadline_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -241,7 +286,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(413, 28);
+            this.panel6.Size = new System.Drawing.Size(517, 35);
             this.panel6.TabIndex = 2;
             // 
             // taskname_label
@@ -252,8 +297,8 @@ namespace StudyManagementApp.TodolistFolder
             this.taskname_label.Location = new System.Drawing.Point(0, 0);
             this.taskname_label.Margin = new System.Windows.Forms.Padding(0);
             this.taskname_label.Name = "taskname_label";
-            this.taskname_label.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.taskname_label.Size = new System.Drawing.Size(413, 28);
+            this.taskname_label.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.taskname_label.Size = new System.Drawing.Size(517, 35);
             this.taskname_label.TabIndex = 0;
             this.taskname_label.Text = "Task Name";
             this.taskname_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,10 +308,10 @@ namespace StudyManagementApp.TodolistFolder
             this.panel4.AutoScroll = true;
             this.panel4.Controls.Add(this.note_label);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 28);
+            this.panel4.Location = new System.Drawing.Point(0, 35);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(591, 36);
+            this.panel4.Size = new System.Drawing.Size(739, 45);
             this.panel4.TabIndex = 1;
             // 
             // note_label
@@ -278,21 +323,21 @@ namespace StudyManagementApp.TodolistFolder
             this.note_label.Location = new System.Drawing.Point(0, 0);
             this.note_label.Margin = new System.Windows.Forms.Padding(0);
             this.note_label.Name = "note_label";
-            this.note_label.Padding = new System.Windows.Forms.Padding(8, 2, 0, 0);
-            this.note_label.Size = new System.Drawing.Size(290, 20);
+            this.note_label.Padding = new System.Windows.Forms.Padding(10, 2, 0, 0);
+            this.note_label.Size = new System.Drawing.Size(88, 25);
             this.note_label.TabIndex = 2;
-            this.note_label.Text = "Thời gian trôi như chó chạy ngoài đồng.\r\n";
+            this.note_label.Text = "Note nè";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.background_task_panel, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 4, 1);
@@ -301,21 +346,21 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(799, 114);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(999, 142);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Item_Todolist_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(799, 114);
+            this.ClientSize = new System.Drawing.Size(999, 142);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Item_Todolist_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item_Todolist_Form";
@@ -325,6 +370,7 @@ namespace StudyManagementApp.TodolistFolder
             this.background_task_panel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
@@ -355,5 +401,7 @@ namespace StudyManagementApp.TodolistFolder
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label note_label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private FontAwesome.Sharp.IconButton Noti_iconButton;
     }
 }

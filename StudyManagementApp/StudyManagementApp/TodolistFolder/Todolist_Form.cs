@@ -22,6 +22,15 @@ namespace StudyManagementApp.TodolistFolder
         public static List<DataItem_Todolist> mangItemTheoDate = new List<DataItem_Todolist>();
         public static List<Item_Todolist_Form> mangFormTheoDate = new List<Item_Todolist_Form>();
 
+        bool timedeadline_asc = true; //6am->7pm
+        enum DisplayState
+        {
+            all, check_ed, uncheck_ed
+        }
+
+        DisplayState Filter_display_Task = DisplayState.all;
+
+
         public Todolist_Form()
         {
             InitializeComponent();
@@ -32,14 +41,34 @@ namespace StudyManagementApp.TodolistFolder
         private void Todolist_Form_Load(object sender, EventArgs e)
         {
             KhoiTao();
+            LoadMau();
         }
 
         public void Show(DateTime temp)
         {
+            search_textBox.Text = "";
             ngayToanCuc = temp;
             date_choose = temp;
             KhoiTao();
+            LoadMau();
             base.Show();
+        }
+
+        void HamDoiMau(Color x)
+        {
+            this.BackColor = x;
+        }
+
+        void LoadMau()
+        {
+            if (Program.Theme == true)
+            {
+                HamDoiMau(SacMau.trangvua);
+            }
+            else
+            {
+                HamDoiMau(SacMau.dendam);
+            }
         }
 
         private void ChuaItem_Panel_ControlRemoved(object sender, ControlEventArgs e)
@@ -107,7 +136,7 @@ namespace StudyManagementApp.TodolistFolder
             {
                 iconButton.BackColor = choose;
                 date_choose = dateTime;
-                LoadItem_ChoosingDate(date_choose);
+                LoadItemTheoDate(date_choose);
             }
         }
         
@@ -191,16 +220,205 @@ namespace StudyManagementApp.TodolistFolder
         }
         #endregion
 
-        #region Add task
+        #region Các chức năng ở dưới
         private void additem_iconButton_Click(object sender, EventArgs e)
         {
-            AddItem_Todolist addItem_Todolist = new AddItem_Todolist();
+            AddItem_Todolist addItem_Todolist = new AddItem_Todolist(date_choose);
             addItem_Todolist.ShowDialog();
-            LoadItem_ChoosingDate(date_choose);
+            LoadItemTheoDate(date_choose);
+        }
+        private void sort_timedeadline_iconButton_Click(object sender, EventArgs e)
+        {
+            timedeadline_asc = !timedeadline_asc;
+            ChuaItem_Panel.Controls.Clear();
+            mangItemTheoDate.Reverse();
+            mangFormTheoDate.Reverse();
+            for (int i = 0; i < mangFormTheoDate.Count; i++)
+            {
+                if (Filter_display_Task != DisplayState.all)
+                {
+                    if (Filter_display_Task == DisplayState.check_ed)
+                    {
+                        if (mangItemTheoDate[i].done == true)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                    if (Filter_display_Task == DisplayState.uncheck_ed)
+                    {
+                        if (mangItemTheoDate[i].done == false)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                }
+                else
+                {
+                    mangFormTheoDate[i].TopLevel = false;
+                    mangFormTheoDate[i].Dock = DockStyle.Top;
+                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                    mangFormTheoDate[i].Show();
+                }
+
+            }
+        }
+        private void filter_iconButton_Click(object sender, EventArgs e)
+        {
+            IconButton iconButton = sender as IconButton;
+            switch (iconButton.Tag.ToString())
+            {
+                case "all":
+                    Filter_display_Task = DisplayState.check_ed;
+                    iconButton.IconChar = IconChar.CheckSquare;
+                    iconButton.Tag = "checked";
+                    break;
+                case "checked":
+                    Filter_display_Task = DisplayState.uncheck_ed;
+                    iconButton.IconChar = IconChar.Square;
+                    iconButton.Tag = "unchecked";
+                    break;
+                case "unchecked":
+                    Filter_display_Task = DisplayState.all;
+                    iconButton.IconChar = IconChar.Th;
+                    iconButton.Tag = "all";
+                    break;
+                default:
+                    break;
+            }
+            ChuaItem_Panel.Controls.Clear();
+            for (int i = 0; i < mangFormTheoDate.Count; i++)
+            {
+                if (Filter_display_Task != DisplayState.all)
+                {
+                    if (Filter_display_Task == DisplayState.check_ed)
+                    {
+                        if (mangItemTheoDate[i].done == true)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                    if (Filter_display_Task == DisplayState.uncheck_ed)
+                    {
+                        if (mangItemTheoDate[i].done == false)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                }
+                else
+                {
+                    mangFormTheoDate[i].TopLevel = false;
+                    mangFormTheoDate[i].Dock = DockStyle.Top;
+                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                    mangFormTheoDate[i].Show();
+                }
+
+            }
         }
 
+        private void typecolor_iconButton_Click(object sender, EventArgs e)
+        {
+            Update_Delete_TYPECOLOR update_Delete_TYPECOLOR = new Update_Delete_TYPECOLOR();
+            update_Delete_TYPECOLOR.ShowDialog();
+            LoadItemTheoDate(date_choose);
+        }
+
+        private void search_textBox_TextChanged(object sender, EventArgs e)
+        {
+            ChuaItem_Panel.Controls.Clear();
+            for (int i = 0; i < mangFormTheoDate.Count; i++)
+            {
+                if (string.IsNullOrEmpty(search_textBox.Text))
+                {
+                    if (Filter_display_Task != DisplayState.all)
+                    {
+                        if (Filter_display_Task == DisplayState.check_ed)
+                        {
+                            if (mangItemTheoDate[i].done == true)
+                            {
+                                mangFormTheoDate[i].TopLevel = false;
+                                mangFormTheoDate[i].Dock = DockStyle.Top;
+                                ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                mangFormTheoDate[i].Show();
+                            }
+                        }
+                        if (Filter_display_Task == DisplayState.uncheck_ed)
+                        {
+                            if (mangItemTheoDate[i].done == false)
+                            {
+                                mangFormTheoDate[i].TopLevel = false;
+                                mangFormTheoDate[i].Dock = DockStyle.Top;
+                                ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                mangFormTheoDate[i].Show();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        mangFormTheoDate[i].TopLevel = false;
+                        mangFormTheoDate[i].Dock = DockStyle.Top;
+                        ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                        mangFormTheoDate[i].Show();
+                    }
+                }
+                else
+                {
+                    if (mangItemTheoDate[i].taskName.Contains(search_textBox.Text))
+                    {
+                        if (Filter_display_Task != DisplayState.all)
+                        {
+                            if (Filter_display_Task == DisplayState.check_ed)
+                            {
+                                if (mangItemTheoDate[i].done == true)
+                                {
+                                    mangFormTheoDate[i].TopLevel = false;
+                                    mangFormTheoDate[i].Dock = DockStyle.Top;
+                                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                    mangFormTheoDate[i].Show();
+                                }
+                            }
+                            if (Filter_display_Task == DisplayState.uncheck_ed)
+                            {
+                                if (mangItemTheoDate[i].done == false)
+                                {
+                                    mangFormTheoDate[i].TopLevel = false;
+                                    mangFormTheoDate[i].Dock = DockStyle.Top;
+                                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                    mangFormTheoDate[i].Show();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                }
+            }
+        }
+        #endregion
+
+        #region Hiện task
         void LoadItemTheoDate(DateTime datetimeDeadline)
         {
+            mangItemTheoDate.Clear();
+            mangFormTheoDate.Clear();
+            ChuaItem_Panel.Controls.Clear();
             DataTable allTASK = WorkPlace.bang_AllTASK_TDL;
            
             for (int i = 0; i < allTASK.Rows.Count; i++)
@@ -213,11 +431,17 @@ namespace StudyManagementApp.TodolistFolder
                     string Note = allTASK.Rows[i]["NOTE"].ToString();
                     string PK_Color = allTASK.Rows[i]["PK_COLOR"].ToString();
                     bool Done = (bool)allTASK.Rows[i]["DONE"];
-                    DataItem_Todolist dataItem_Todolist = new DataItem_Todolist(DateTimeCreate, TaskName, DateTimeDeadline, Note, PK_Color, Done);
+                    DateTime DateTimeNOTI = (DateTime)allTASK.Rows[i]["DATETIMENOTI"];
+                    DataItem_Todolist dataItem_Todolist = new DataItem_Todolist(DateTimeCreate, TaskName, DateTimeDeadline, Note, PK_Color, Done, DateTimeNOTI);
                     mangItemTheoDate.Add(dataItem_Todolist);
                 }
             }
-
+            //hàm sort này cho ra kết quả desc
+            mangItemTheoDate = mangItemTheoDate.OrderBy(o => o.dateTimeDeadline.TimeOfDay).ToList();
+            if (timedeadline_asc == true)
+            {
+                mangItemTheoDate.Reverse();
+            }
             foreach (var item in mangItemTheoDate)
             {
                 DateTime DateTimeCreate = item.dateTimeCreate;
@@ -226,28 +450,48 @@ namespace StudyManagementApp.TodolistFolder
                 string Note = item.note;
                 string PK_Color = item.pk_Color;
                 bool Done = item.done;
-                Item_Todolist_Form item_Todolist_Form = new Item_Todolist_Form(DateTimeCreate, TaskName, DateTimeDeadline, Note, Done, PK_Color);
+                DateTime DateTimeNOTI = item.dateTimeNOTI;
+                Item_Todolist_Form item_Todolist_Form = new Item_Todolist_Form(DateTimeCreate, TaskName, DateTimeDeadline, Note, Done, PK_Color, DateTimeNOTI);
                 mangFormTheoDate.Add(item_Todolist_Form);
             }
 
             for (int i = 0; i < mangFormTheoDate.Count; i++)
             {
-                mangFormTheoDate[i].TopLevel = false;
-                mangFormTheoDate[i].Dock = DockStyle.Top;
-                ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
-                mangFormTheoDate[i].Show();
+                if (Filter_display_Task != DisplayState.all)
+                {
+                    if (Filter_display_Task == DisplayState.check_ed)
+                    {
+                        if (mangItemTheoDate[i].done==true)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                    if (Filter_display_Task == DisplayState.uncheck_ed)
+                    {
+                        if (mangItemTheoDate[i].done == false)
+                        {
+                            mangFormTheoDate[i].TopLevel = false;
+                            mangFormTheoDate[i].Dock = DockStyle.Top;
+                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                            mangFormTheoDate[i].Show();
+                        }
+                    }
+                }
+                else
+                {
+                    mangFormTheoDate[i].TopLevel = false;
+                    mangFormTheoDate[i].Dock = DockStyle.Top;
+                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                    mangFormTheoDate[i].Show();
+                }    
+               
             }
-
         }
 
-        void LoadItem_ChoosingDate(DateTime dateTime)
-        {
-            mangItemTheoDate.Clear();
-            mangFormTheoDate.Clear();
-            ChuaItem_Panel.Controls.Clear();
-            LoadItemTheoDate(dateTime);
-            
-        }
+       
         #endregion
 
         #region Click các nút ngày ở trên
@@ -263,6 +507,7 @@ namespace StudyManagementApp.TodolistFolder
             day_sat_button.BackColor = khongchoose;
 
             iconButton.BackColor = choose;
+            search_textBox.Text = "";
             if (iconButton.Tag.ToString()=="sun")
             {
                 date_choose = ngayToanCuc;
@@ -291,8 +536,11 @@ namespace StudyManagementApp.TodolistFolder
             {
                 date_choose = ngayToanCuc.AddDays(6);
             }
-            LoadItem_ChoosingDate(date_choose);
+            LoadItemTheoDate(date_choose);
         }
+
+
+
         #endregion
 
        

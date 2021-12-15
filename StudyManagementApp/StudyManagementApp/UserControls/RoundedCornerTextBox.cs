@@ -190,6 +190,11 @@ namespace StudyManagementApp.UserControls
             }
         }
 
+        [Category("Border_Advanced")]
+        public TextBox TextAlign
+        {
+            set => TextAlign = value;
+        }
 
 
         #endregion
