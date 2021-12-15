@@ -7,12 +7,12 @@ namespace StudyManagementApp.DAO
 {
     public class DataProvider
     {
-        private readonly string connectionStr = "Data Source = admin; Initial Catalog = StudyManagementApp; Integrated Security = True";
+        //private readonly string connectionStr = "Data Source = admin; Initial Catalog = StudyManagementApp; Integrated Security = True";
         //private readonly string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp2;Integrated Security=True";
         //private readonly string connectionStr = "Data Source=admin;Initial Catalog=StudyManagementApp3;Integrated Security=True";
         //HEN private readonly string connectionStr = @"Data Source=DESKTOP-K3KS644\SQLEXPRESS;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
         //private readonly string connectionStr = @"Data Source=DESKTOP-QQN0GU3\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True"; //Hiếu
-        //private readonly string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
+        private readonly string connectionStr = @"Data Source=DESKTOP-OI8ITQQ\SQLEXPRESS;Initial Catalog=StudyManagementApp;Integrated Security=True";
         //static readonly string connectionStr = @"Data Source=DESKTOP-3HC7LCK\TRITRAN;Initial Catalog=StudyManagementApp;User ID=sa;Password=123456";
         static DateTime time_choose = DateTime.Now;
 
