@@ -84,13 +84,21 @@
             this.DeckTab_Datagridview = new System.Windows.Forms.DataGridView();
             this.DeckTab_ButtonsTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.DeckTab_CloseButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.DeckTab_RemoveDeckButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.DeckTab_AddDeckButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.DeckTab_AddDeckPanel = new System.Windows.Forms.Panel();
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.DeckTab_AddDeck_CancelButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.DeckTab_AddDeck_AccpetButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_RemoveDeckButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_EditButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_EditDeck_TableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.DeckTab_EditDeck_DeckNameLabel = new System.Windows.Forms.Label();
+            this.DeckTab_EditDeck_DeckNameTxt = new System.Windows.Forms.TextBox();
+            this.DeckTab_EditDeck_ButtonsTableLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.DeckTab_EditDeck_CancelButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_EditDeck_AccpetButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_AddDeckTableLayout = new System.Windows.Forms.TableLayoutPanel();
             this.DeckTab_AddDeck_DeckNameTxt = new StudyManagementApp.UserControls.RoundedCornerTextBox();
+            this.DeckTab_AddDeck_DeckNameLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.DeckTab_AddDeck_AccpetButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.DeckTab_AddDeck_CancelButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.SearchBackgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.GlobalTableLayoutPanel.SuspendLayout();
             this.ControlTableLayout.SuspendLayout();
@@ -114,8 +122,10 @@
             this.DeckTabTableLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DeckTab_Datagridview)).BeginInit();
             this.DeckTab_ButtonsTableLayout.SuspendLayout();
-            this.DeckTab_AddDeckPanel.SuspendLayout();
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.SuspendLayout();
+            this.DeckTab_EditDeck_TableLayout.SuspendLayout();
+            this.DeckTab_EditDeck_ButtonsTableLayout.SuspendLayout();
+            this.DeckTab_AddDeckTableLayout.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // GlobalTableLayoutPanel
@@ -941,15 +951,17 @@
             this.DeckTabTableLayout.Controls.Add(this.DeckTab_InstructionLabel, 0, 0);
             this.DeckTabTableLayout.Controls.Add(this.DeckTab_Datagridview, 0, 1);
             this.DeckTabTableLayout.Controls.Add(this.DeckTab_ButtonsTableLayout, 0, 2);
-            this.DeckTabTableLayout.Controls.Add(this.DeckTab_AddDeckPanel, 0, 3);
+            this.DeckTabTableLayout.Controls.Add(this.DeckTab_EditDeck_TableLayout, 0, 4);
+            this.DeckTabTableLayout.Controls.Add(this.DeckTab_AddDeckTableLayout, 0, 3);
             this.DeckTabTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DeckTabTableLayout.Location = new System.Drawing.Point(0, 0);
             this.DeckTabTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTabTableLayout.Name = "DeckTabTableLayout";
-            this.DeckTabTableLayout.RowCount = 4;
+            this.DeckTabTableLayout.RowCount = 5;
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.DeckTabTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0F));
             this.DeckTabTableLayout.Size = new System.Drawing.Size(1, 322);
             this.DeckTabTableLayout.TabIndex = 2;
@@ -976,21 +988,23 @@
             this.DeckTab_Datagridview.Name = "DeckTab_Datagridview";
             this.DeckTab_Datagridview.ReadOnly = true;
             this.DeckTab_Datagridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 253);
+            this.DeckTab_Datagridview.Size = new System.Drawing.Size(1, 252);
             this.DeckTab_Datagridview.TabIndex = 2;
             this.DeckTab_Datagridview.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DeckTab_Datagridview_CellMouseDoubleClick);
             // 
             // DeckTab_ButtonsTableLayout
             // 
-            this.DeckTab_ButtonsTableLayout.ColumnCount = 3;
-            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_CloseButton, 0, 0);
-            this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_RemoveDeckButton, 0, 0);
+            this.DeckTab_ButtonsTableLayout.ColumnCount = 4;
+            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.DeckTab_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_CloseButton, 3, 0);
             this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_AddDeckButton, 0, 0);
+            this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_RemoveDeckButton, 2, 0);
+            this.DeckTab_ButtonsTableLayout.Controls.Add(this.DeckTab_EditButton, 1, 0);
             this.DeckTab_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(1, 287);
+            this.DeckTab_ButtonsTableLayout.Location = new System.Drawing.Point(1, 286);
             this.DeckTab_ButtonsTableLayout.Margin = new System.Windows.Forms.Padding(0);
             this.DeckTab_ButtonsTableLayout.Name = "DeckTab_ButtonsTableLayout";
             this.DeckTab_ButtonsTableLayout.RowCount = 1;
@@ -1017,25 +1031,6 @@
             this.DeckTab_CloseButton.UseVisualStyleBackColor = false;
             this.DeckTab_CloseButton.Click += new System.EventHandler(this.DecksTabCloseButton_Click);
             // 
-            // DeckTab_RemoveDeckButton
-            // 
-            this.DeckTab_RemoveDeckButton.BackColor = System.Drawing.Color.DimGray;
-            this.DeckTab_RemoveDeckButton.BorderColor = System.Drawing.Color.LightGray;
-            this.DeckTab_RemoveDeckButton.BorderRadius = 10;
-            this.DeckTab_RemoveDeckButton.BorderSize = 0;
-            this.DeckTab_RemoveDeckButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_RemoveDeckButton.FlatAppearance.BorderSize = 0;
-            this.DeckTab_RemoveDeckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeckTab_RemoveDeckButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckTab_RemoveDeckButton.ForeColor = System.Drawing.Color.White;
-            this.DeckTab_RemoveDeckButton.Location = new System.Drawing.Point(3, 3);
-            this.DeckTab_RemoveDeckButton.Name = "DeckTab_RemoveDeckButton";
-            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 25);
-            this.DeckTab_RemoveDeckButton.TabIndex = 6;
-            this.DeckTab_RemoveDeckButton.Text = "Remove";
-            this.DeckTab_RemoveDeckButton.UseVisualStyleBackColor = false;
-            this.DeckTab_RemoveDeckButton.Click += new System.EventHandler(this.DeckTabRemoveDeckButton_Click);
-            // 
             // DeckTab_AddDeckButton
             // 
             this.DeckTab_AddDeckButton.BackColor = System.Drawing.Color.DimGray;
@@ -1055,52 +1050,208 @@
             this.DeckTab_AddDeckButton.UseVisualStyleBackColor = false;
             this.DeckTab_AddDeckButton.Click += new System.EventHandler(this.DeckTabAddDeckButton_Click);
             // 
-            // DeckTab_AddDeckPanel
+            // DeckTab_RemoveDeckButton
             // 
-            this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_ButtonsTableLayoutPanel);
-            this.DeckTab_AddDeckPanel.Controls.Add(this.DeckTab_AddDeck_DeckNameTxt);
-            this.DeckTab_AddDeckPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_AddDeckPanel.Location = new System.Drawing.Point(1, 319);
-            this.DeckTab_AddDeckPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.DeckTab_AddDeckPanel.Name = "DeckTab_AddDeckPanel";
-            this.DeckTab_AddDeckPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.DeckTab_AddDeckPanel.Size = new System.Drawing.Size(1, 2);
-            this.DeckTab_AddDeckPanel.TabIndex = 4;
+            this.DeckTab_RemoveDeckButton.BackColor = System.Drawing.Color.DimGray;
+            this.DeckTab_RemoveDeckButton.BorderColor = System.Drawing.Color.LightGray;
+            this.DeckTab_RemoveDeckButton.BorderRadius = 10;
+            this.DeckTab_RemoveDeckButton.BorderSize = 0;
+            this.DeckTab_RemoveDeckButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_RemoveDeckButton.FlatAppearance.BorderSize = 0;
+            this.DeckTab_RemoveDeckButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeckTab_RemoveDeckButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeckTab_RemoveDeckButton.ForeColor = System.Drawing.Color.White;
+            this.DeckTab_RemoveDeckButton.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_RemoveDeckButton.Name = "DeckTab_RemoveDeckButton";
+            this.DeckTab_RemoveDeckButton.Size = new System.Drawing.Size(1, 25);
+            this.DeckTab_RemoveDeckButton.TabIndex = 6;
+            this.DeckTab_RemoveDeckButton.Text = "Remove";
+            this.DeckTab_RemoveDeckButton.UseVisualStyleBackColor = false;
+            this.DeckTab_RemoveDeckButton.Click += new System.EventHandler(this.DeckTabRemoveDeckButton_Click);
             // 
-            // DeckTab_AddDeck_ButtonsTableLayoutPanel
+            // DeckTab_EditButton
             // 
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.ColumnCount = 2;
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Controls.Add(this.DeckTab_AddDeck_CancelButton, 0, 0);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Controls.Add(this.DeckTab_AddDeck_AccpetButton, 0, 0);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Location = new System.Drawing.Point(5, 36);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Name = "DeckTab_AddDeck_ButtonsTableLayoutPanel";
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.RowCount = 1;
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.Size = new System.Drawing.Size(0, 0);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.TabIndex = 1;
+            this.DeckTab_EditButton.BackColor = System.Drawing.Color.DimGray;
+            this.DeckTab_EditButton.BorderColor = System.Drawing.Color.LightGray;
+            this.DeckTab_EditButton.BorderRadius = 10;
+            this.DeckTab_EditButton.BorderSize = 0;
+            this.DeckTab_EditButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditButton.FlatAppearance.BorderSize = 0;
+            this.DeckTab_EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeckTab_EditButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeckTab_EditButton.ForeColor = System.Drawing.Color.White;
+            this.DeckTab_EditButton.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_EditButton.Name = "DeckTab_EditButton";
+            this.DeckTab_EditButton.Size = new System.Drawing.Size(1, 25);
+            this.DeckTab_EditButton.TabIndex = 8;
+            this.DeckTab_EditButton.Text = "Edit";
+            this.DeckTab_EditButton.UseVisualStyleBackColor = false;
+            this.DeckTab_EditButton.Click += new System.EventHandler(this.DeckTab_EditButton_Click);
             // 
-            // DeckTab_AddDeck_CancelButton
+            // DeckTab_EditDeck_TableLayout
             // 
-            this.DeckTab_AddDeck_CancelButton.BackColor = System.Drawing.Color.Silver;
-            this.DeckTab_AddDeck_CancelButton.BorderColor = System.Drawing.Color.LightGray;
-            this.DeckTab_AddDeck_CancelButton.BorderRadius = 10;
-            this.DeckTab_AddDeck_CancelButton.BorderSize = 0;
-            this.DeckTab_AddDeck_CancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeckTab_AddDeck_CancelButton.FlatAppearance.BorderSize = 0;
-            this.DeckTab_AddDeck_CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeckTab_AddDeck_CancelButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
-            this.DeckTab_AddDeck_CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
-            this.DeckTab_AddDeck_CancelButton.Location = new System.Drawing.Point(3, 3);
-            this.DeckTab_AddDeck_CancelButton.Name = "DeckTab_AddDeck_CancelButton";
-            this.DeckTab_AddDeck_CancelButton.Size = new System.Drawing.Size(1, 1);
-            this.DeckTab_AddDeck_CancelButton.TabIndex = 2;
-            this.DeckTab_AddDeck_CancelButton.Text = "Cancel";
-            this.DeckTab_AddDeck_CancelButton.UseVisualStyleBackColor = false;
-            this.DeckTab_AddDeck_CancelButton.Click += new System.EventHandler(this.DeckTabDeckAddCancelButton_Click);
+            this.DeckTab_EditDeck_TableLayout.ColumnCount = 1;
+            this.DeckTab_EditDeck_TableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.DeckTab_EditDeck_TableLayout.Controls.Add(this.DeckTab_EditDeck_DeckNameLabel, 0, 0);
+            this.DeckTab_EditDeck_TableLayout.Controls.Add(this.DeckTab_EditDeck_DeckNameTxt, 0, 1);
+            this.DeckTab_EditDeck_TableLayout.Controls.Add(this.DeckTab_EditDeck_ButtonsTableLayout, 0, 2);
+            this.DeckTab_EditDeck_TableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_TableLayout.Location = new System.Drawing.Point(4, 322);
+            this.DeckTab_EditDeck_TableLayout.Name = "DeckTab_EditDeck_TableLayout";
+            this.DeckTab_EditDeck_TableLayout.RowCount = 3;
+            this.DeckTab_EditDeck_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_EditDeck_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_EditDeck_TableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_EditDeck_TableLayout.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_EditDeck_TableLayout.TabIndex = 6;
+            // 
+            // DeckTab_EditDeck_DeckNameLabel
+            // 
+            this.DeckTab_EditDeck_DeckNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DeckTab_EditDeck_DeckNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_DeckNameLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold);
+            this.DeckTab_EditDeck_DeckNameLabel.ForeColor = System.Drawing.Color.White;
+            this.DeckTab_EditDeck_DeckNameLabel.Location = new System.Drawing.Point(0, 0);
+            this.DeckTab_EditDeck_DeckNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.DeckTab_EditDeck_DeckNameLabel.Name = "DeckTab_EditDeck_DeckNameLabel";
+            this.DeckTab_EditDeck_DeckNameLabel.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_EditDeck_DeckNameLabel.TabIndex = 3;
+            this.DeckTab_EditDeck_DeckNameLabel.Text = "Deck name";
+            this.DeckTab_EditDeck_DeckNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DeckTab_EditDeck_DeckNameTxt
+            // 
+            this.DeckTab_EditDeck_DeckNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_DeckNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DeckTab_EditDeck_DeckNameTxt.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_EditDeck_DeckNameTxt.Name = "DeckTab_EditDeck_DeckNameTxt";
+            this.DeckTab_EditDeck_DeckNameTxt.Size = new System.Drawing.Size(1, 26);
+            this.DeckTab_EditDeck_DeckNameTxt.TabIndex = 2;
+            // 
+            // DeckTab_EditDeck_ButtonsTableLayout
+            // 
+            this.DeckTab_EditDeck_ButtonsTableLayout.ColumnCount = 2;
+            this.DeckTab_EditDeck_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DeckTab_EditDeck_ButtonsTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DeckTab_EditDeck_ButtonsTableLayout.Controls.Add(this.DeckTab_EditDeck_CancelButton, 0, 0);
+            this.DeckTab_EditDeck_ButtonsTableLayout.Controls.Add(this.DeckTab_EditDeck_AccpetButton, 0, 0);
+            this.DeckTab_EditDeck_ButtonsTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_ButtonsTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.DeckTab_EditDeck_ButtonsTableLayout.Margin = new System.Windows.Forms.Padding(0);
+            this.DeckTab_EditDeck_ButtonsTableLayout.Name = "DeckTab_EditDeck_ButtonsTableLayout";
+            this.DeckTab_EditDeck_ButtonsTableLayout.RowCount = 1;
+            this.DeckTab_EditDeck_ButtonsTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.DeckTab_EditDeck_ButtonsTableLayout.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_EditDeck_ButtonsTableLayout.TabIndex = 1;
+            // 
+            // DeckTab_EditDeck_CancelButton
+            // 
+            this.DeckTab_EditDeck_CancelButton.BackColor = System.Drawing.Color.Silver;
+            this.DeckTab_EditDeck_CancelButton.BorderColor = System.Drawing.Color.LightGray;
+            this.DeckTab_EditDeck_CancelButton.BorderRadius = 10;
+            this.DeckTab_EditDeck_CancelButton.BorderSize = 0;
+            this.DeckTab_EditDeck_CancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_CancelButton.FlatAppearance.BorderSize = 0;
+            this.DeckTab_EditDeck_CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeckTab_EditDeck_CancelButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
+            this.DeckTab_EditDeck_CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_EditDeck_CancelButton.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_EditDeck_CancelButton.Name = "DeckTab_EditDeck_CancelButton";
+            this.DeckTab_EditDeck_CancelButton.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_EditDeck_CancelButton.TabIndex = 2;
+            this.DeckTab_EditDeck_CancelButton.Text = "Cancel";
+            this.DeckTab_EditDeck_CancelButton.UseVisualStyleBackColor = false;
+            this.DeckTab_EditDeck_CancelButton.Click += new System.EventHandler(this.DeckTab_EditDeck_CancelButton_Click);
+            // 
+            // DeckTab_EditDeck_AccpetButton
+            // 
+            this.DeckTab_EditDeck_AccpetButton.BackColor = System.Drawing.Color.Silver;
+            this.DeckTab_EditDeck_AccpetButton.BorderColor = System.Drawing.Color.LightGray;
+            this.DeckTab_EditDeck_AccpetButton.BorderRadius = 10;
+            this.DeckTab_EditDeck_AccpetButton.BorderSize = 0;
+            this.DeckTab_EditDeck_AccpetButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_EditDeck_AccpetButton.FlatAppearance.BorderSize = 0;
+            this.DeckTab_EditDeck_AccpetButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeckTab_EditDeck_AccpetButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
+            this.DeckTab_EditDeck_AccpetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_EditDeck_AccpetButton.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_EditDeck_AccpetButton.Name = "DeckTab_EditDeck_AccpetButton";
+            this.DeckTab_EditDeck_AccpetButton.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_EditDeck_AccpetButton.TabIndex = 1;
+            this.DeckTab_EditDeck_AccpetButton.Text = "Update";
+            this.DeckTab_EditDeck_AccpetButton.UseVisualStyleBackColor = false;
+            this.DeckTab_EditDeck_AccpetButton.Click += new System.EventHandler(this.DeckTab_EditDeck_AccpetButton_Click);
+            // 
+            // DeckTab_AddDeckTableLayout
+            // 
+            this.DeckTab_AddDeckTableLayout.ColumnCount = 1;
+            this.DeckTab_AddDeckTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.DeckTab_AddDeckTableLayout.Controls.Add(this.DeckTab_AddDeck_DeckNameTxt, 0, 1);
+            this.DeckTab_AddDeckTableLayout.Controls.Add(this.DeckTab_AddDeck_DeckNameLabel, 0, 0);
+            this.DeckTab_AddDeckTableLayout.Controls.Add(this.tableLayoutPanel2, 0, 2);
+            this.DeckTab_AddDeckTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_AddDeckTableLayout.Location = new System.Drawing.Point(4, 321);
+            this.DeckTab_AddDeckTableLayout.Name = "DeckTab_AddDeckTableLayout";
+            this.DeckTab_AddDeckTableLayout.RowCount = 3;
+            this.DeckTab_AddDeckTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_AddDeckTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_AddDeckTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.DeckTab_AddDeckTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.DeckTab_AddDeckTableLayout.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_AddDeckTableLayout.TabIndex = 7;
+            // 
+            // DeckTab_AddDeck_DeckNameTxt
+            // 
+            this.DeckTab_AddDeck_DeckNameTxt.BackColor = System.Drawing.SystemColors.Window;
+            this.DeckTab_AddDeck_DeckNameTxt.BorderColor = System.Drawing.Color.Silver;
+            this.DeckTab_AddDeck_DeckNameTxt.BorderFocusColor = System.Drawing.Color.Crimson;
+            this.DeckTab_AddDeck_DeckNameTxt.BorderRadius = 10;
+            this.DeckTab_AddDeck_DeckNameTxt.BorderSize = 2;
+            this.DeckTab_AddDeck_DeckNameTxt.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_AddDeck_DeckNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DeckTab_AddDeck_DeckNameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DeckTab_AddDeck_DeckNameTxt.Location = new System.Drawing.Point(4, 4);
+            this.DeckTab_AddDeck_DeckNameTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.DeckTab_AddDeck_DeckNameTxt.Multiline = false;
+            this.DeckTab_AddDeck_DeckNameTxt.Name = "DeckTab_AddDeck_DeckNameTxt";
+            this.DeckTab_AddDeck_DeckNameTxt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.DeckTab_AddDeck_DeckNameTxt.PasswordChar = false;
+            this.DeckTab_AddDeck_DeckNameTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.DeckTab_AddDeck_DeckNameTxt.PlaceholderText = "Deck name";
+            this.DeckTab_AddDeck_DeckNameTxt.Size = new System.Drawing.Size(1, 35);
+            this.DeckTab_AddDeck_DeckNameTxt.TabIndex = 0;
+            this.DeckTab_AddDeck_DeckNameTxt.Texts = "";
+            this.DeckTab_AddDeck_DeckNameTxt.UnderlinedStyle = false;
+            // 
+            // DeckTab_AddDeck_DeckNameLabel
+            // 
+            this.DeckTab_AddDeck_DeckNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DeckTab_AddDeck_DeckNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_AddDeck_DeckNameLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold);
+            this.DeckTab_AddDeck_DeckNameLabel.ForeColor = System.Drawing.Color.White;
+            this.DeckTab_AddDeck_DeckNameLabel.Location = new System.Drawing.Point(0, 0);
+            this.DeckTab_AddDeck_DeckNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.DeckTab_AddDeck_DeckNameLabel.Name = "DeckTab_AddDeck_DeckNameLabel";
+            this.DeckTab_AddDeck_DeckNameLabel.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_AddDeck_DeckNameLabel.TabIndex = 3;
+            this.DeckTab_AddDeck_DeckNameLabel.Text = "Deck name";
+            this.DeckTab_AddDeck_DeckNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.DeckTab_AddDeck_AccpetButton, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.DeckTab_AddDeck_CancelButton, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1, 1);
+            this.tableLayoutPanel2.TabIndex = 1;
             // 
             // DeckTab_AddDeck_AccpetButton
             // 
@@ -1121,28 +1272,24 @@
             this.DeckTab_AddDeck_AccpetButton.UseVisualStyleBackColor = false;
             this.DeckTab_AddDeck_AccpetButton.Click += new System.EventHandler(this.DeckTabDeckAddAccpetButton_Click);
             // 
-            // DeckTab_AddDeck_DeckNameTxt
+            // DeckTab_AddDeck_CancelButton
             // 
-            this.DeckTab_AddDeck_DeckNameTxt.BackColor = System.Drawing.SystemColors.Window;
-            this.DeckTab_AddDeck_DeckNameTxt.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.DeckTab_AddDeck_DeckNameTxt.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.DeckTab_AddDeck_DeckNameTxt.BorderRadius = 0;
-            this.DeckTab_AddDeck_DeckNameTxt.BorderSize = 2;
-            this.DeckTab_AddDeck_DeckNameTxt.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DeckTab_AddDeck_DeckNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeckTab_AddDeck_DeckNameTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DeckTab_AddDeck_DeckNameTxt.Location = new System.Drawing.Point(5, 5);
-            this.DeckTab_AddDeck_DeckNameTxt.Margin = new System.Windows.Forms.Padding(10);
-            this.DeckTab_AddDeck_DeckNameTxt.Multiline = false;
-            this.DeckTab_AddDeck_DeckNameTxt.Name = "DeckTab_AddDeck_DeckNameTxt";
-            this.DeckTab_AddDeck_DeckNameTxt.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.DeckTab_AddDeck_DeckNameTxt.PasswordChar = false;
-            this.DeckTab_AddDeck_DeckNameTxt.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.DeckTab_AddDeck_DeckNameTxt.PlaceholderText = "Deck name";
-            this.DeckTab_AddDeck_DeckNameTxt.Size = new System.Drawing.Size(0, 31);
-            this.DeckTab_AddDeck_DeckNameTxt.TabIndex = 0;
-            this.DeckTab_AddDeck_DeckNameTxt.Texts = "";
-            this.DeckTab_AddDeck_DeckNameTxt.UnderlinedStyle = false;
+            this.DeckTab_AddDeck_CancelButton.BackColor = System.Drawing.Color.Silver;
+            this.DeckTab_AddDeck_CancelButton.BorderColor = System.Drawing.Color.LightGray;
+            this.DeckTab_AddDeck_CancelButton.BorderRadius = 10;
+            this.DeckTab_AddDeck_CancelButton.BorderSize = 0;
+            this.DeckTab_AddDeck_CancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeckTab_AddDeck_CancelButton.FlatAppearance.BorderSize = 0;
+            this.DeckTab_AddDeck_CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeckTab_AddDeck_CancelButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold);
+            this.DeckTab_AddDeck_CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(5)))), ((int)(((byte)(5)))));
+            this.DeckTab_AddDeck_CancelButton.Location = new System.Drawing.Point(3, 3);
+            this.DeckTab_AddDeck_CancelButton.Name = "DeckTab_AddDeck_CancelButton";
+            this.DeckTab_AddDeck_CancelButton.Size = new System.Drawing.Size(1, 1);
+            this.DeckTab_AddDeck_CancelButton.TabIndex = 2;
+            this.DeckTab_AddDeck_CancelButton.Text = "Cancel";
+            this.DeckTab_AddDeck_CancelButton.UseVisualStyleBackColor = false;
+            this.DeckTab_AddDeck_CancelButton.Click += new System.EventHandler(this.DeckTabDeckAddCancelButton_Click);
             // 
             // SearchBackgroundWorker
             // 
@@ -1187,8 +1334,11 @@
             this.DeckTabTableLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DeckTab_Datagridview)).EndInit();
             this.DeckTab_ButtonsTableLayout.ResumeLayout(false);
-            this.DeckTab_AddDeckPanel.ResumeLayout(false);
-            this.DeckTab_AddDeck_ButtonsTableLayoutPanel.ResumeLayout(false);
+            this.DeckTab_EditDeck_TableLayout.ResumeLayout(false);
+            this.DeckTab_EditDeck_TableLayout.PerformLayout();
+            this.DeckTab_EditDeck_ButtonsTableLayout.ResumeLayout(false);
+            this.DeckTab_AddDeckTableLayout.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1229,11 +1379,8 @@
         private UserControls.RoundedCornerButton DeckTab_CloseButton;
         private UserControls.RoundedCornerButton DeckTab_RemoveDeckButton;
         private UserControls.RoundedCornerButton DeckTab_AddDeckButton;
-        private System.Windows.Forms.Panel DeckTab_AddDeckPanel;
-        private System.Windows.Forms.TableLayoutPanel DeckTab_AddDeck_ButtonsTableLayoutPanel;
         private UserControls.RoundedCornerButton DeckTab_AddDeck_CancelButton;
         private UserControls.RoundedCornerButton DeckTab_AddDeck_AccpetButton;
-        private UserControls.RoundedCornerTextBox DeckTab_AddDeck_DeckNameTxt;
         private System.Windows.Forms.TextBox AddFCTab_WordTxt;
         private System.ComponentModel.BackgroundWorker SearchBackgroundWorker;
         private System.Windows.Forms.TableLayoutPanel AddFCTab_WordTableLayout;
@@ -1259,5 +1406,16 @@
         private System.Windows.Forms.TableLayoutPanel AddFCTabTableLayout;
         private System.Windows.Forms.TableLayoutPanel AddFCTab_ButtonsTableLayout;
         private System.Windows.Forms.TableLayoutPanel AddFCTab_DecksTableLayout;
+        private System.Windows.Forms.TableLayoutPanel DeckTab_EditDeck_ButtonsTableLayout;
+        private UserControls.RoundedCornerButton DeckTab_EditDeck_CancelButton;
+        private UserControls.RoundedCornerButton DeckTab_EditDeck_AccpetButton;
+        private UserControls.RoundedCornerButton DeckTab_EditButton;
+        private System.Windows.Forms.TableLayoutPanel DeckTab_EditDeck_TableLayout;
+        private System.Windows.Forms.TextBox DeckTab_EditDeck_DeckNameTxt;
+        private System.Windows.Forms.Label DeckTab_EditDeck_DeckNameLabel;
+        private System.Windows.Forms.TableLayoutPanel DeckTab_AddDeckTableLayout;
+        private UserControls.RoundedCornerTextBox DeckTab_AddDeck_DeckNameTxt;
+        private System.Windows.Forms.Label DeckTab_AddDeck_DeckNameLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }
