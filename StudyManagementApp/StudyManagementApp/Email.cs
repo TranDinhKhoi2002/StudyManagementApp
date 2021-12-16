@@ -86,7 +86,8 @@ namespace StudyManagementApp
         {
             if (e.Error != null)
             {
-                MessageBox.Show("Something wrong: " + e.Error.Message, "Error");
+                CustomMessageBox customMessageBox = new CustomMessageBox("App nhắc nhở", "Điều gì đó đã xảy ra: " + e.Error.Message);
+                customMessageBox.ShowDialog();
                 return;
             }
         }

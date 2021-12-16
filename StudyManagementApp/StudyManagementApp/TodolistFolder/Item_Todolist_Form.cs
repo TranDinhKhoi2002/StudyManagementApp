@@ -55,13 +55,10 @@ namespace StudyManagementApp.TodolistFolder
             if (Program.Theme == true)
             {
                 HamDoiMau(SacMau.trangvua);
-
-
             }
             else
             {
                 HamDoiMau(SacMau.dendam);
-
             }
         }
 
@@ -84,9 +81,16 @@ namespace StudyManagementApp.TodolistFolder
         #region load content: taskname, thời gian,... cho form
         void LoadData()
         {
-            taskname_label.Text = taskName;
+            taskname_textbox.Text = taskName;
             thoigian_deadline_label.Text = datetimeDeadline.ToShortTimeString();
-            note_label.Text = note;
+            if (note=="")
+            {
+                description_textbox.Text = "Empty";
+            }
+            else
+            {
+                description_textbox.Text = note;
+            }
             type_iconButton.IconColor = typeColor;
             type_iconButton.ForeColor = typeColor;
             type_iconButton.Text = nameType;
@@ -140,6 +144,7 @@ namespace StudyManagementApp.TodolistFolder
         }
         #endregion
 
+        #region cập nhật nhắc deadline
         private void Noti_iconButton_Click(object sender, EventArgs e)
         {
             Update_DatetimeNoti update_DatetimeNoti = new Update_DatetimeNoti(datetimeCreate, datetimeDeadline, datetimeNOTI);
@@ -156,6 +161,46 @@ namespace StudyManagementApp.TodolistFolder
                 }
             }
 
+        }
+        #endregion
+
+        private void taskname_textbox_Leave(object sender, EventArgs e)
+        {
+            if (taskname_textbox.Text=="")
+            {
+                taskname_textbox.Text = taskName;
+                return;
+            }
+            if (taskname_textbox.Text!=taskName)
+            {
+                taskName = taskname_textbox.Text;
+                string query = "UPDATE_TASKNAME @userName , @datetimeCreate , @taskNAME ";
+                DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { UserInfo.Instance.Username, datetimeCreate, taskName });
+                WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
+            }
+        }
+
+        private void description_textbox_Leave(object sender, EventArgs e)
+        {
+            if (description_textbox.Text != note)
+            {
+                note = description_textbox.Text;
+                string query = "UPDATE_DESCRIPTION @userName , @datetimeCreate , @note ";
+                DAO.DataProvider.Instance.ExecuteNonQuery(query, new object[] { UserInfo.Instance.Username, datetimeCreate, note });
+                WorkPlace.bang_AllTASK_TDL = DAO.AccountDAO.Instance.GetAll_TASK_TDL(UserInfo.Instance.Username);
+            }
+            if (description_textbox.Text == "")
+            {
+                    description_textbox.Text = "Empty";
+            }
+        }
+
+        private void description_textbox_Enter(object sender, EventArgs e)
+        {
+            if (description_textbox.Text=="Empty")
+            {
+                description_textbox.Clear();
+            }
         }
     }
 }

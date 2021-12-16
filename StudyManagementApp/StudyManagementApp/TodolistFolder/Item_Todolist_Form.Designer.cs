@@ -44,10 +44,10 @@ namespace StudyManagementApp.TodolistFolder
             this.panel7 = new System.Windows.Forms.Panel();
             this.thoigian_deadline_label = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.taskname_label = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.note_label = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.taskname_textbox = new System.Windows.Forms.TextBox();
+            this.description_textbox = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.background_task_panel.SuspendLayout();
@@ -281,52 +281,24 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.taskname_label);
+            this.panel6.Controls.Add(this.taskname_textbox);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Margin = new System.Windows.Forms.Padding(0);
+            this.panel6.Location = new System.Drawing.Point(6, 3);
+            this.panel6.Margin = new System.Windows.Forms.Padding(6, 3, 0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(517, 35);
+            this.panel6.Size = new System.Drawing.Size(511, 32);
             this.panel6.TabIndex = 2;
-            // 
-            // taskname_label
-            // 
-            this.taskname_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.taskname_label.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taskname_label.ForeColor = System.Drawing.Color.Black;
-            this.taskname_label.Location = new System.Drawing.Point(0, 0);
-            this.taskname_label.Margin = new System.Windows.Forms.Padding(0);
-            this.taskname_label.Name = "taskname_label";
-            this.taskname_label.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.taskname_label.Size = new System.Drawing.Size(517, 35);
-            this.taskname_label.TabIndex = 0;
-            this.taskname_label.Text = "Task Name";
-            this.taskname_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.note_label);
+            this.panel4.Controls.Add(this.description_textbox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 35);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Location = new System.Drawing.Point(11, 37);
+            this.panel4.Margin = new System.Windows.Forms.Padding(11, 2, 0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(739, 45);
+            this.panel4.Size = new System.Drawing.Size(728, 43);
             this.panel4.TabIndex = 1;
-            // 
-            // note_label
-            // 
-            this.note_label.AutoSize = true;
-            this.note_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.note_label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.note_label.ForeColor = System.Drawing.Color.White;
-            this.note_label.Location = new System.Drawing.Point(0, 0);
-            this.note_label.Margin = new System.Windows.Forms.Padding(0);
-            this.note_label.Name = "note_label";
-            this.note_label.Padding = new System.Windows.Forms.Padding(10, 2, 0, 0);
-            this.note_label.Size = new System.Drawing.Size(88, 25);
-            this.note_label.TabIndex = 2;
-            this.note_label.Text = "Note nè";
             // 
             // tableLayoutPanel1
             // 
@@ -352,6 +324,37 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel1.Size = new System.Drawing.Size(999, 142);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // taskname_textbox
+            // 
+            this.taskname_textbox.BackColor = System.Drawing.Color.Silver;
+            this.taskname_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.taskname_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.taskname_textbox.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taskname_textbox.Location = new System.Drawing.Point(0, 0);
+            this.taskname_textbox.Margin = new System.Windows.Forms.Padding(0);
+            this.taskname_textbox.Name = "taskname_textbox";
+            this.taskname_textbox.Size = new System.Drawing.Size(511, 27);
+            this.taskname_textbox.TabIndex = 1;
+            this.taskname_textbox.Text = "Task Name";
+            this.taskname_textbox.Leave += new System.EventHandler(this.taskname_textbox_Leave);
+            // 
+            // description_textbox
+            // 
+            this.description_textbox.BackColor = System.Drawing.Color.Silver;
+            this.description_textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.description_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.description_textbox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description_textbox.ForeColor = System.Drawing.Color.White;
+            this.description_textbox.Location = new System.Drawing.Point(0, 0);
+            this.description_textbox.Margin = new System.Windows.Forms.Padding(0);
+            this.description_textbox.Multiline = true;
+            this.description_textbox.Name = "description_textbox";
+            this.description_textbox.Size = new System.Drawing.Size(728, 43);
+            this.description_textbox.TabIndex = 2;
+            this.description_textbox.Text = "Description nè";
+            this.description_textbox.Enter += new System.EventHandler(this.description_textbox_Enter);
+            this.description_textbox.Leave += new System.EventHandler(this.description_textbox_Leave);
+            // 
             // Item_Todolist_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -375,6 +378,7 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -397,11 +401,11 @@ namespace StudyManagementApp.TodolistFolder
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label thoigian_deadline_label;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label taskname_label;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label note_label;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private FontAwesome.Sharp.IconButton Noti_iconButton;
+        private System.Windows.Forms.TextBox taskname_textbox;
+        private System.Windows.Forms.TextBox description_textbox;
     }
 }

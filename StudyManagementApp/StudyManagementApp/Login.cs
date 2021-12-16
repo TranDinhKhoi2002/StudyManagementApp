@@ -32,6 +32,7 @@ namespace StudyManagementApp
         public new void Show()
         {
             AlignControls_Non_Maximum();
+            AlignHomeAboutHelp();
             LoadMau();
             base.Show();
         }
@@ -174,9 +175,9 @@ namespace StudyManagementApp
             SignInLogoPictureBox.Size = new Size(131, 117);
             NotificationLabel.Size = new Size(350, 40);
             NotificationLabel.Font = new Font("Agency FB", 11);
-            UsernameTextBox.Size = new Size(233, 35);
+            UsernameTextBox.Size = new Size(233, 42);
             UsernameTextBox.Font = new Font("Agency FB", 15);
-            PasswordTextBox.Size = new Size(233, 35);
+            PasswordTextBox.Size = new Size(233, 42);
             PasswordTextBox.Font = new Font("Agency FB", 15);
             SignInButton.Size = new Size(113, 38);
             SignInButton.Font = new Font("Agency FB", 13);

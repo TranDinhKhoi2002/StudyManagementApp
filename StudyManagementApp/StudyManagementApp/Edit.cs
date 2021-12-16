@@ -38,21 +38,24 @@ namespace StudyManagementApp
                 ReNewPassword_textbox.Texts.Equals("")
                 )
             {
-                MessageBox.Show("Please fill in old password and new password.", "Fill in textbox", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Hãy điền đầy đủ thông tin nhé!");
+                customMessageBox.ShowDialog();
                 return;
             }
 
             //Kiểm tra thông tin nhập
             if (!CurrentPassword_textbox.Texts.Equals(UserInfo.Instance.Password))
             {
-                MessageBox.Show("Current password wrong, try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Mật khẩu chưa đúng!");
+                customMessageBox.ShowDialog();
                 CurrentPassword_textbox.Texts = "";
                 CurrentPassword_textbox.Focus();
                 return;
             }
             else if (!NewPassword_textbox.Texts.Equals(ReNewPassword_textbox.Texts))
             {
-                MessageBox.Show("New password don't matched, try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Mật khẩu mới chưa khớp!");
+                customMessageBox.ShowDialog();
                 ReNewPassword_textbox.Texts = "";
                 ReNewPassword_textbox.Focus();
                 return;
@@ -63,8 +66,8 @@ namespace StudyManagementApp
                 ReNewPassword_textbox.Texts
                 );
 
-            MessageBox.Show("Your password has been changed successfully.", "Password changed successfully", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            CustomMessageBox customMessageBox1 = new CustomMessageBox("Sign up nhắc nhở", "Đổi mật khẩu thành công!");
+            customMessageBox1.ShowDialog();
             this.Close();
         }
 

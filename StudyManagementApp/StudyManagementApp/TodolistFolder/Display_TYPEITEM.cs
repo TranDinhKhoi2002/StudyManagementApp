@@ -51,7 +51,8 @@ namespace StudyManagementApp.TodolistFolder
                 {
                     if (temp_color==all_typeitem.Rows[i]["TYPECOLOR"].ToString())
                     {
-                        MessageBox.Show("-Màu không có sẵn!", "Nhắc nhở");
+                        CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Màu không có sẵn!");
+                        customMessageBox.ShowDialog();
                         return;
                     }
                 }
@@ -79,7 +80,8 @@ namespace StudyManagementApp.TodolistFolder
             {
                 if (all_task.Rows[i]["PK_COLOR"].ToString()== pk_color)
                 {
-                    MessageBox.Show("-Không thể xóa màu này!\n-Màu vẫn đang được TASK nào đó sử dụng!", "Nhắc nhở");
+                    CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Không thể xóa màu này.\nMàu vẫn đang được TASK nào đó sử dụng!");
+                    customMessageBox.ShowDialog();
                     return;
                 }
             }

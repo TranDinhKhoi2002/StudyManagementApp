@@ -822,34 +822,6 @@
         AAAA/Dg+fPg/pdEVtRssMrYAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox2.ErrorImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
   <metadata name="Pomodoro_Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

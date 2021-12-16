@@ -107,6 +107,12 @@
     <Compile Include="ChatBotForm.Designer.cs">
       <DependentUpon>ChatBotForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\FlashCardDAO.cs" />
@@ -283,6 +289,9 @@
     <EmbeddedResource Include="ChatBotForm.resx">
       <DependentUpon>ChatBotForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +412,12 @@
     <None Include="bin\Debug\Resources\Images\biagmail.jpg" />
     <None Include="bin\Debug\Resources\Images\howdoyoufeel.png" />
     <None Include="bin\Debug\Resources\Images\background_dayofweek.png" />
+    <None Include="bin\Debug\Resources\Images\title_todo_help.png" />
+    <None Include="bin\Debug\Resources\Images\content_todo_help.png" />
+    <None Include="bin\Debug\Resources\Images\title_note_help.png" />
+    <None Include="bin\Debug\Resources\Images\content_note_help.png" />
+    <None Include="bin\Debug\Resources\Images\title_flashcard_help.png" />
+    <None Include="bin\Debug\Resources\Images\content_flashcard_help.png" />
     <Content Include="CounterLib.dll" />
     <Content Include="Guna.UI2.dll" />
     <None Include="Resources\chatbot.png" />

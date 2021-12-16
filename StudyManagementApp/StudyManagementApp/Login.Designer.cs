@@ -191,7 +191,7 @@
             this.PasswordTextBox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.PasswordTextBox.BorderRadius = 10;
             this.PasswordTextBox.BorderSize = 2;
-            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.PasswordTextBox.Location = new System.Drawing.Point(690, 323);
             this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -201,7 +201,7 @@
             this.PasswordTextBox.PasswordChar = true;
             this.PasswordTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.PasswordTextBox.PlaceholderText = "Password";
-            this.PasswordTextBox.Size = new System.Drawing.Size(467, 45);
+            this.PasswordTextBox.Size = new System.Drawing.Size(389, 42);
             this.PasswordTextBox.TabIndex = 3;
             this.PasswordTextBox.Texts = "";
             this.PasswordTextBox.UnderlinedStyle = false;
@@ -214,7 +214,7 @@
             this.UsernameTextBox.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UsernameTextBox.BorderRadius = 10;
             this.UsernameTextBox.BorderSize = 2;
-            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.UsernameTextBox.Location = new System.Drawing.Point(71, 323);
             this.UsernameTextBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
@@ -224,7 +224,7 @@
             this.UsernameTextBox.PasswordChar = false;
             this.UsernameTextBox.PlaceholderColor = System.Drawing.Color.Gray;
             this.UsernameTextBox.PlaceholderText = "Username";
-            this.UsernameTextBox.Size = new System.Drawing.Size(467, 45);
+            this.UsernameTextBox.Size = new System.Drawing.Size(389, 42);
             this.UsernameTextBox.TabIndex = 2;
             this.UsernameTextBox.Texts = "";
             this.UsernameTextBox.UnderlinedStyle = false;

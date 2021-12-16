@@ -1077,8 +1077,8 @@ namespace StudyManagementApp.TodolistFolder
             this.typecolor_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.typecolor_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typecolor_iconButton.FlatAppearance.BorderSize = 0;
-            this.typecolor_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.typecolor_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.typecolor_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.typecolor_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.typecolor_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typecolor_iconButton.IconChar = FontAwesome.Sharp.IconChar.Palette;
             this.typecolor_iconButton.IconColor = System.Drawing.Color.White;
@@ -1166,8 +1166,8 @@ namespace StudyManagementApp.TodolistFolder
             this.filter_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.filter_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filter_iconButton.FlatAppearance.BorderSize = 0;
-            this.filter_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.filter_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.filter_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.filter_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.filter_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.filter_iconButton.IconChar = FontAwesome.Sharp.IconChar.Th;
             this.filter_iconButton.IconColor = System.Drawing.Color.White;
@@ -1286,8 +1286,8 @@ namespace StudyManagementApp.TodolistFolder
             this.sort_timedeadline_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.sort_timedeadline_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sort_timedeadline_iconButton.FlatAppearance.BorderSize = 0;
-            this.sort_timedeadline_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.sort_timedeadline_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.sort_timedeadline_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.sort_timedeadline_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.sort_timedeadline_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sort_timedeadline_iconButton.IconChar = FontAwesome.Sharp.IconChar.Sort;
             this.sort_timedeadline_iconButton.IconColor = System.Drawing.Color.White;
@@ -1399,6 +1399,8 @@ namespace StudyManagementApp.TodolistFolder
             this.additem_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.additem_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.additem_iconButton.FlatAppearance.BorderSize = 0;
+            this.additem_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.additem_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.additem_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.additem_iconButton.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
             this.additem_iconButton.IconColor = System.Drawing.Color.White;

@@ -119,14 +119,16 @@ namespace StudyManagementApp.TodolistFolder
             {
                 if (string.IsNullOrEmpty(taskname_textBox.Text))
                 {
-                    MessageBox.Show("Task name không được để trống!");
+                    CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Task name không được để trống!");
+                    customMessageBox.ShowDialog();
                     taskname_textBox.Focus();
                     return;
                 }
 
                 if (string.IsNullOrEmpty(type_combobox.Text))
                 {
-                    MessageBox.Show("Type không được để trống!");
+                    CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Type không được để trống!");
+                    customMessageBox.ShowDialog();
                     return;
                 }
 
@@ -147,7 +149,8 @@ namespace StudyManagementApp.TodolistFolder
                 {
                     if (type_combobox.SelectedIndex!=index)
                     {
-                        MessageBox.Show("TYPE không hợp lệ!");
+                        CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Type không hợp lệ!");
+                        customMessageBox.ShowDialog();
                         type_combobox.Text = "";
                         type_combobox.Focus();
                         return;

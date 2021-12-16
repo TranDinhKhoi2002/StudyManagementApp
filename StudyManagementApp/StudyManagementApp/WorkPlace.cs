@@ -59,10 +59,12 @@ namespace StudyManagementApp
             flashcard_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(flashcard_Form);
 
+            //Notes
             notes_Form = new NoteFolder.Note_Form();
             notes_Form.TopLevel = false;
             notes_Form.Dock = DockStyle.Fill;
             HomePanel.Controls.Add(notes_Form);
+
             date_Choosing_ofWeek_ToDoList = DateTime.Now;
             Main_customCalendar = new UserControls.CustomCalendar();
             SETTING_CuonLich();
@@ -94,6 +96,7 @@ namespace StudyManagementApp
             HideAllControlInWorkPlacePanel();
             Main_customCalendar.Show();
             MoRongLeftMenu_iconButton.Hide();
+            MoreFunction_panel.Visible = false;
         }
 
         #region DoiTheme
@@ -106,9 +109,9 @@ namespace StudyManagementApp
             MinutePomo_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
             HaiCham_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
             SecondPomo_Label.Font = new Font("Agency FB", 19, FontStyle.Bold);
-            Command_TextBox.Font = new Font("Agency FB", 18, FontStyle.Bold);
-            NotificationFunctionLabel.Font = new Font("Agency FB", 17, FontStyle.Bold);
-            SaveButton.Font = new Font("Agency FB", 12, FontStyle.Bold);
+          
+            Time_Label.Font = new Font("Agency FB", 17, FontStyle.Bold);
+          
  
             PomodoroCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
             ShortBreakCount_Label.Font = new Font("Agency FB", 10, FontStyle.Bold);
@@ -120,10 +123,10 @@ namespace StudyManagementApp
         {
             this.BackColor = bg;
             BaNut_Panel.BackColor = x;
-            WordToolPanel.BackColor = x;
-            PassageToolPanel.BackColor = x;
-            SaveButtonTablePanel.BackColor = x;
-            AddPic_Panel.BackColor = x;
+            panel8.BackColor = x;
+            panel9.BackColor = x;
+           
+          
 
             UserInforPanel.BackColor = x;
             TemplatePanel.BackColor = x;
@@ -134,6 +137,18 @@ namespace StudyManagementApp
             CalendarButton.BorderColor = forecanlendar;
 
             HomePanel.BackColor = forecanlendar;
+
+
+
+            morefunction_iconButton.IconColor = foretemplate;
+            morefunction_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            fileexport_iconButton.IconColor = foretemplate;
+            fileexport_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            feedback_iconButton.IconColor = foretemplate;
+            feedback_iconButton.FlatAppearance.MouseOverBackColor = bg;
+            chatbot_iconButton.IconColor = foretemplate;
+            chatbot_iconButton.FlatAppearance.MouseOverBackColor = bg;
+
 
             //
             //todo
@@ -179,14 +194,6 @@ namespace StudyManagementApp
             flappybird_relaxitem_iconbutton.FlatAppearance.MouseOverBackColor = bg;
             //
 
-            //
-            //ChatBot
-            ChatbotMenu_iconButton.FlatAppearance.MouseOverBackColor = bg;
-            ChatbotMenu_iconButton.IconColor = foretemplate;
-            ChatbotMenu_iconButton.ForeColor = foretemplate;
-            start_chatbotitem_iconButton.ForeColor = foretemplate;
-            start_chatbotitem_iconButton.FlatAppearance.MouseOverBackColor = bg;
-            //
         }
 
         void LoadMau()
@@ -268,12 +275,12 @@ namespace StudyManagementApp
             NoteMenu_iconButton.IconChar = IconChar.CaretRight;
             FlashCardMenu_iconButton.IconChar = IconChar.CaretRight;
             RelaxMenu_iconButton.IconChar = IconChar.CaretRight;
-            ChatbotMenu_iconButton.IconChar = IconChar.CaretRight;
+          
             TodoLIst_SubMenu_Panel.Hide();
             Note_SubMenu_Panel.Hide();
             FlashCard_SubMenu_Panel.Hide();
             Relax_SubMenu_Panel.Hide();
-            Chatbot_submenu_panel.Hide();
+          
         }
         //Hàm hiện 1 subMenu_panel được truyền vào
         void ShowSubMenu(Panel submenu, IconButton iconmenu)
@@ -297,7 +304,7 @@ namespace StudyManagementApp
             this.NoteMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
             this.FlashCardMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
             this.RelaxMenu_iconButton.Click += new System.EventHandler(this.ToDoListMenu_iconButton_Click);
-            this.ChatbotMenu_iconButton.Click+= new System.EventHandler(this.ToDoListMenu_iconButton_Click);
+          
         }
 
         //Current, Previous, Next, Progress-click
@@ -371,21 +378,6 @@ namespace StudyManagementApp
                 case "Main":
                     HideAllControlInWorkPlacePanel();
                     flashcard_Form.Show();
-                    //Hên's code
-                    break;
-                default:
-                    break;
-            }
-        }
-        //start của chatbot click
-        private void start_chatbotitem_iconButton_Click(object sender, EventArgs e)
-        {
-            IconButton iconButton = sender as IconButton;
-            switch (iconButton.Text)
-            {
-                case "Start":
-                    ChatBotForm chatbot = new ChatBotForm();
-                    chatbot.ShowDialog();
                     break;
                 default:
                     break;
@@ -409,9 +401,6 @@ namespace StudyManagementApp
                     break;
                 case "Menu4":
                     ShowSubMenu(Relax_SubMenu_Panel, RelaxMenu_iconButton);
-                    break;
-                case "Menu5":
-                    ShowSubMenu(Chatbot_submenu_panel, ChatbotMenu_iconButton);
                     break;
             }
 
@@ -786,30 +775,6 @@ namespace StudyManagementApp
         }
         #endregion
 
-        #region CommandTextBox
-        /*---------------------------------Command_textbox---------------------------------*/
-        private void Command_TextBox_Enter(object sender, EventArgs e)
-        {
-            if (Command_TextBox.Text == "Enter Command")
-            {
-                Command_TextBox.ForeColor = Color.FromArgb(47, 52, 55);
-                Command_TextBox.Text = "";
-            }
-        }
-
-        private void Command_TextBox_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(Command_TextBox.Text))
-            {
-                Command_TextBox.ForeColor = Color.DarkGray;
-                Command_TextBox.Text = "Enter Command";
-            }
-        }
-
-
-
-        #endregion
-
 
         #region HideAllControlInHomePanel
         void HideAllControlInWorkPlacePanel()
@@ -840,24 +805,58 @@ namespace StudyManagementApp
         #endregion
 
         #region Nhắc nhở deadline của task
+        string GetTaskName_OfNextDeadline()
+        {
+            int min = -1;
+            for (int i = 0; i < bang_AllTASK_TDL.Rows.Count; i++)
+            {
+                if ((bool)bang_AllTASK_TDL.Rows[i]["DONE"] == false)
+                {
+                    DateTime datetimedeadline = (DateTime)bang_AllTASK_TDL.Rows[i]["DATETIMEDEADLINE"];
+                    DateTime current = DateTime.Now;
+                    if (datetimedeadline > current)
+                    {
+                        if (min == -1)
+                        {
+                            min = i;
+                            continue;
+                        }
+                        TimeSpan time1 = ((DateTime)bang_AllTASK_TDL.Rows[min]["DATETIMEDEADLINE"]).Subtract(current);
+                        TimeSpan time2= datetimedeadline.Subtract(current);
+                        if (TimeSpan.Compare(time1,time2)>0)
+                        {
+                            min = i;
+                        }
+                    }
+                }
+            }
+            if (min != -1)
+            {
+                return bang_AllTASK_TDL.Rows[min]["TASKNAME"].ToString() + " is coming!";
+            }
+            else
+                return "Enjoy your studies";
+        }
         private void Remind_taskdeadline_timer_Tick(object sender, EventArgs e)
         {
-            for (int i = 0; i < WorkPlace.bang_AllTASK_TDL.Rows.Count; i++)
+            Nextdeadline_label.Text = GetTaskName_OfNextDeadline();
+            Time_Label.Text = DateTime.Now.ToString("HH:mm:ss");
+            for (int i = 0; i < bang_AllTASK_TDL.Rows.Count; i++)
             {
-                DateTime datetimeNOTI = (DateTime)WorkPlace.bang_AllTASK_TDL.Rows[i]["DATETIMENOTI"];
+                DateTime datetimeNOTI = (DateTime)bang_AllTASK_TDL.Rows[i]["DATETIMENOTI"];
                 DateTime current = DateTime.Now;
                 if (datetimeNOTI.Day == current.Day && datetimeNOTI.Month == current.Month && datetimeNOTI.Year == current.Year && datetimeNOTI.Hour == current.Hour && datetimeNOTI.Minute == current.Minute && current.Second == 0)
                 {
-                    if ((bool)WorkPlace.bang_AllTASK_TDL.Rows[i]["DONE"] == false)
+                    if ((bool)bang_AllTASK_TDL.Rows[i]["DONE"] == false)
                     {
-                        string taskname = WorkPlace.bang_AllTASK_TDL.Rows[i]["TASKNAME"].ToString();
-                        DateTime datetimeDeadline = (DateTime)WorkPlace.bang_AllTASK_TDL.Rows[i]["DATETIMEDEADLINE"];
+                        string taskname = bang_AllTASK_TDL.Rows[i]["TASKNAME"].ToString();
+                        DateTime datetimeDeadline = (DateTime)bang_AllTASK_TDL.Rows[i]["DATETIMEDEADLINE"];
                         string type;
-                        for (int j = 0; j < WorkPlace.bang_AllTYPEITEM_TDL.Rows.Count; j++)
+                        for (int j = 0; j < bang_AllTYPEITEM_TDL.Rows.Count; j++)
                         {
-                            if (WorkPlace.bang_AllTASK_TDL.Rows[i]["PK_COLOR"].ToString() == WorkPlace.bang_AllTYPEITEM_TDL.Rows[j]["PK_COLOR"].ToString())
+                            if (bang_AllTASK_TDL.Rows[i]["PK_COLOR"].ToString() == bang_AllTYPEITEM_TDL.Rows[j]["PK_COLOR"].ToString())
                             {
-                                type = WorkPlace.bang_AllTYPEITEM_TDL.Rows[j]["NAMETYPE"].ToString();
+                                type = bang_AllTYPEITEM_TDL.Rows[j]["NAMETYPE"].ToString();
                     
                                 Zst_notifyIcon.ShowBalloonTip(5000, "Z-st nhắc bạn!", "Task: " + taskname + "\n-Deadline:\n   Day: " + datetimeDeadline.ToString("dddd, dd MMMM yyyy") + "\n   Time: " + datetimeDeadline.ToString("hh:mm tt") + "\n-Task's type: " + type, ToolTipIcon.Warning);
                                 break;
@@ -869,8 +868,35 @@ namespace StudyManagementApp
 
         }
 
+
         #endregion
 
-        
+        #region function góc phải
+        private void chatbot_iconButton_Click(object sender, EventArgs e)
+        {
+            ChatBotForm chatbot = new ChatBotForm();
+            chatbot.ShowDialog();
+        }
+
+        private void morefunction_iconButton_Click(object sender, EventArgs e)
+        {
+            if (MoreFunction_panel.Visible)
+            {
+                MoreFunction_panel.Visible = false;
+            }
+            else
+            {
+                MoreFunction_panel.Visible = true;
+            }
+        }
+        private void feedback_iconButton_Click(object sender, EventArgs e)
+        {
+            FeedBackForm_FAKE feedBackForm_FAKE = new FeedBackForm_FAKE();
+            feedBackForm_FAKE.ShowDialog();
+        }
+
+        #endregion
+
+
     }
 }

@@ -22,7 +22,8 @@ namespace StudyManagementApp
         {
             if (rtbSending.Text == "")
             {
-                MessageBox.Show("Please ask something!!!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Bot nhắc nhở", "Hãy hỏi điều gì đó!");
+                customMessageBox.ShowDialog();
                 return;
             }
 

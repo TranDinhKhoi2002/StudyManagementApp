@@ -30,11 +30,18 @@ namespace StudyManagementApp.UserControls
             Pomodo_Title_Panel.BackColor = y;
             Pomodo_Content_Panel.BackColor = y;
 
+            note_title_panel.BackColor = y;
+            note_content_panel.BackColor = y;
+
+            flashcard_title_panel.BackColor = y;
+            flashcard_content_panel.BackColor = y;
+
+            todo_title_panel.BackColor = y;
+            todo_content_panel.BackColor = y;
+
             Lb_Instruction.ForeColor = z;
             
-            FeedBack_IconButton.IconColor = z;
-            FeedBack_IconButton.FlatAppearance.MouseOverBackColor = t;
-            FeedBack_IconButton.FlatAppearance.MouseDownBackColor = z;
+         
         }
 
         void LoadMau()
@@ -54,13 +61,6 @@ namespace StudyManagementApp.UserControls
         private void HelpUC_Load(object sender, EventArgs e)
         {
             LoadMau();
-        }
-
-
-        private void FeedBack_IconButton_Click(object sender, EventArgs e)
-        {
-            FeedBackForm_FAKE feedBackForm_FAKE = new FeedBackForm_FAKE();
-            feedBackForm_FAKE.ShowDialog();
         }
     }
 }

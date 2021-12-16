@@ -216,18 +216,7 @@ namespace StudyManagementApp
         //Thuc ra cancle button la 1 panel co image background
         private void Cancle_Button_Click(object sender, EventArgs e)
         {
-            if (txbEmail.Text != "" || txbSubject.Text != "" || rtxbFeedback.Text != "")
-            {
-                DialogResult dlgResult = MessageBox.Show("You have not finished entering, do you really want to exit?", "Notification", MessageBoxButtons.YesNo);
-                if (dlgResult == DialogResult.Yes)
-                {
-                    this.Close();
-                }
-            }
-            else
-            {
-                this.Close();
-            }
+            this.Close();
         }
 
         //bool isAttached = false;
@@ -236,11 +225,13 @@ namespace StudyManagementApp
         {
             if (txbEmail.Text == "" || txbSubject.Text == "" || rtxbFeedback.Text == "")
             {
-                MessageBox.Show("Email, Subject or Feedback can't be blank", "Error");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Email, Subject, FeedBack không được để trống nhé!");
+                customMessageBox.ShowDialog();
             }
             else if (!Email.IsValidEmail(txbEmail.Text))
             {
-                MessageBox.Show("Your email is invalid");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Có vẻ Email chưa đúng!");
+                customMessageBox.ShowDialog();
             }
             else
             {
@@ -289,7 +280,8 @@ namespace StudyManagementApp
                 txbSubject.Clear();
                 rtxbFeedback.Clear();
                 txbEmail.Focus();
-                MessageBox.Show("Thank you for your feedback, we will try to be better in the future", "Done");   
+                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Cám ơn bạn nhé!");
+                customMessageBox.ShowDialog();
             }
         }
 
@@ -297,7 +289,8 @@ namespace StudyManagementApp
         {
             if (e.Error != null)
             {
-                MessageBox.Show("Something wrong: " + e.Error.Message, "Error");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Điều gì đó đã xảy ra: " + e.Error.Message);
+                customMessageBox.ShowDialog();
                 return;
             }
         }
