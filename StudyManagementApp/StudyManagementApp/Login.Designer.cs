@@ -332,11 +332,12 @@
             this.ClientSize = new System.Drawing.Size(1217, 614);
             this.Controls.Add(this.BackGroundSignIn_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Z-st: Ứng dụng hỗ trợ học tập";
+            this.Text = "Z-st";
             this.Load += new System.EventHandler(this.Login_Load);
             this.SizeChanged += new System.EventHandler(this.Login_SizeChanged);
             this.BottomPanel.ResumeLayout(false);

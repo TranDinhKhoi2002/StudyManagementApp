@@ -29,6 +29,7 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChatBotForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSend = new StudyManagementApp.UserControls.RoundedCornerButton();
@@ -46,7 +47,7 @@ namespace StudyManagementApp
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(143, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 39);
+            this.label1.Size = new System.Drawing.Size(340, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hi, my name is Chat Bot";
             // 
@@ -58,7 +59,7 @@ namespace StudyManagementApp
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(12, 277);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(279, 31);
+            this.label3.Size = new System.Drawing.Size(331, 36);
             this.label3.TabIndex = 11;
             this.label3.Text = "Ask me anything about your study:";
             // 
@@ -101,7 +102,7 @@ namespace StudyManagementApp
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(12, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 31);
+            this.label2.Size = new System.Drawing.Size(97, 36);
             this.label2.TabIndex = 1;
             this.label2.Text = "Chat Bot:";
             // 
@@ -134,7 +135,7 @@ namespace StudyManagementApp
             // 
             // ChatBotForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(4F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -148,6 +149,7 @@ namespace StudyManagementApp
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Agency FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.Name = "ChatBotForm";

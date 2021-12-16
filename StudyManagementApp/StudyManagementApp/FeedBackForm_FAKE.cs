@@ -307,5 +307,10 @@ namespace StudyManagementApp
                 NamFile_Label.Text = opfDialog.FileName;
             }
         }
+
+        private void close_iconButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

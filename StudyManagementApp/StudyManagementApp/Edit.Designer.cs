@@ -29,6 +29,7 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit));
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.close_panel = new System.Windows.Forms.Panel();
@@ -41,29 +42,30 @@ namespace StudyManagementApp
             this.main_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.store_pane = new System.Windows.Forms.Panel();
-            this.mode_panel = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.passwork_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.mode_panel = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lighttheme_iconButton = new FontAwesome.Sharp.IconButton();
-            this.darktheme_iconButton = new FontAwesome.Sharp.IconButton();
-            this.no_background_running_iconButton = new FontAwesome.Sharp.IconButton();
-            this.yes_background_running_iconButton = new FontAwesome.Sharp.IconButton();
             this.no_startup_iconButton = new FontAwesome.Sharp.IconButton();
             this.yes_startup_iconButton = new FontAwesome.Sharp.IconButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.no_background_running_iconButton = new FontAwesome.Sharp.IconButton();
+            this.yes_background_running_iconButton = new FontAwesome.Sharp.IconButton();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.darktheme_iconButton = new FontAwesome.Sharp.IconButton();
+            this.lighttheme_iconButton = new FontAwesome.Sharp.IconButton();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Apply_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
@@ -80,21 +82,22 @@ namespace StudyManagementApp
             this.main_panel.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.store_pane.SuspendLayout();
-            this.mode_panel.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.passwork_panel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.mode_panel.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -112,7 +115,7 @@ namespace StudyManagementApp
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.DimGray;
             this.tableLayoutPanel4.ColumnCount = 2;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.73171F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 79.26829F));
@@ -120,7 +123,8 @@ namespace StudyManagementApp
             this.tableLayoutPanel4.Controls.Add(this.panel14, 0, 2);
             this.tableLayoutPanel4.Controls.Add(this.Title_panel, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.main_panel, 1, 2);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
@@ -277,109 +281,6 @@ namespace StudyManagementApp
             this.store_pane.Size = new System.Drawing.Size(440, 333);
             this.store_pane.TabIndex = 20;
             // 
-            // mode_panel
-            // 
-            this.mode_panel.Controls.Add(this.tableLayoutPanel6);
-            this.mode_panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.mode_panel.Location = new System.Drawing.Point(0, 0);
-            this.mode_panel.Margin = new System.Windows.Forms.Padding(0);
-            this.mode_panel.Name = "mode_panel";
-            this.mode_panel.Size = new System.Drawing.Size(419, 216);
-            this.mode_panel.TabIndex = 19;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 2;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.72093F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.27907F));
-            this.tableLayoutPanel6.Controls.Add(this.panel6, 1, 2);
-            this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 2);
-            this.tableLayoutPanel6.Controls.Add(this.panel19, 0, 3);
-            this.tableLayoutPanel6.Controls.Add(this.panel18, 1, 1);
-            this.tableLayoutPanel6.Controls.Add(this.panel17, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.panel16, 1, 0);
-            this.tableLayoutPanel6.Controls.Add(this.panel15, 0, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 4;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(419, 216);
-            this.tableLayoutPanel6.TabIndex = 20;
-            // 
-            // panel19
-            // 
-            this.tableLayoutPanel6.SetColumnSpan(this.panel19, 2);
-            this.panel19.Controls.Add(this.Logout_button);
-            this.panel19.Controls.Add(this.mode_apply_btn);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(0, 151);
-            this.panel19.Margin = new System.Windows.Forms.Padding(0);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(419, 65);
-            this.panel19.TabIndex = 25;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.no_background_running_iconButton);
-            this.panel18.Controls.Add(this.yes_background_running_iconButton);
-            this.panel18.Controls.Add(this.background_toggleButton);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(141, 43);
-            this.panel18.Margin = new System.Windows.Forms.Padding(0);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(278, 54);
-            this.panel18.TabIndex = 24;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.label6);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(0, 43);
-            this.panel17.Margin = new System.Windows.Forms.Padding(0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(141, 54);
-            this.panel17.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 54);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "BackGround\r\nRunning";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.darktheme_iconButton);
-            this.panel16.Controls.Add(this.lighttheme_iconButton);
-            this.panel16.Controls.Add(this.theme_toggleButton);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(141, 0);
-            this.panel16.Margin = new System.Windows.Forms.Padding(0);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(278, 43);
-            this.panel16.TabIndex = 22;
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.label2);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Margin = new System.Windows.Forms.Padding(0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(141, 43);
-            this.panel15.TabIndex = 21;
-            // 
             // passwork_panel
             // 
             this.passwork_panel.Controls.Add(this.tableLayoutPanel1);
@@ -455,15 +356,39 @@ namespace StudyManagementApp
             this.panel1.Size = new System.Drawing.Size(419, 91);
             this.panel1.TabIndex = 26;
             // 
-            // panel5
+            // mode_panel
             // 
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 97);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(141, 54);
-            this.panel5.TabIndex = 20;
+            this.mode_panel.Controls.Add(this.tableLayoutPanel6);
+            this.mode_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.mode_panel.Location = new System.Drawing.Point(0, 0);
+            this.mode_panel.Margin = new System.Windows.Forms.Padding(0);
+            this.mode_panel.Name = "mode_panel";
+            this.mode_panel.Size = new System.Drawing.Size(419, 216);
+            this.mode_panel.TabIndex = 19;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 2;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.72093F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.27907F));
+            this.tableLayoutPanel6.Controls.Add(this.panel6, 1, 2);
+            this.tableLayoutPanel6.Controls.Add(this.panel5, 0, 2);
+            this.tableLayoutPanel6.Controls.Add(this.panel19, 0, 3);
+            this.tableLayoutPanel6.Controls.Add(this.panel18, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel17, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.panel16, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.panel15, 0, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 4;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(419, 216);
+            this.tableLayoutPanel6.TabIndex = 20;
             // 
             // panel6
             // 
@@ -476,6 +401,48 @@ namespace StudyManagementApp
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(278, 54);
             this.panel6.TabIndex = 26;
+            // 
+            // no_startup_iconButton
+            // 
+            this.no_startup_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.no_startup_iconButton.FlatAppearance.BorderSize = 0;
+            this.no_startup_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.no_startup_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.no_startup_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.no_startup_iconButton.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
+            this.no_startup_iconButton.IconColor = System.Drawing.Color.IndianRed;
+            this.no_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.no_startup_iconButton.Location = new System.Drawing.Point(9, 7);
+            this.no_startup_iconButton.Name = "no_startup_iconButton";
+            this.no_startup_iconButton.Size = new System.Drawing.Size(60, 51);
+            this.no_startup_iconButton.TabIndex = 23;
+            this.no_startup_iconButton.UseVisualStyleBackColor = true;
+            // 
+            // yes_startup_iconButton
+            // 
+            this.yes_startup_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.yes_startup_iconButton.FlatAppearance.BorderSize = 0;
+            this.yes_startup_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.yes_startup_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.yes_startup_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.yes_startup_iconButton.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
+            this.yes_startup_iconButton.IconColor = System.Drawing.Color.Black;
+            this.yes_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.yes_startup_iconButton.Location = new System.Drawing.Point(209, 7);
+            this.yes_startup_iconButton.Name = "yes_startup_iconButton";
+            this.yes_startup_iconButton.Size = new System.Drawing.Size(60, 51);
+            this.yes_startup_iconButton.TabIndex = 22;
+            this.yes_startup_iconButton.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(0, 97);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(141, 54);
+            this.panel5.TabIndex = 20;
             // 
             // label1
             // 
@@ -490,37 +457,29 @@ namespace StudyManagementApp
             this.label1.Text = "Startup";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lighttheme_iconButton
+            // panel19
             // 
-            this.lighttheme_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lighttheme_iconButton.FlatAppearance.BorderSize = 0;
-            this.lighttheme_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.lighttheme_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.lighttheme_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lighttheme_iconButton.IconChar = FontAwesome.Sharp.IconChar.Circle;
-            this.lighttheme_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lighttheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.lighttheme_iconButton.Location = new System.Drawing.Point(211, 1);
-            this.lighttheme_iconButton.Name = "lighttheme_iconButton";
-            this.lighttheme_iconButton.Size = new System.Drawing.Size(60, 51);
-            this.lighttheme_iconButton.TabIndex = 20;
-            this.lighttheme_iconButton.UseVisualStyleBackColor = true;
+            this.tableLayoutPanel6.SetColumnSpan(this.panel19, 2);
+            this.panel19.Controls.Add(this.Logout_button);
+            this.panel19.Controls.Add(this.mode_apply_btn);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel19.Location = new System.Drawing.Point(0, 151);
+            this.panel19.Margin = new System.Windows.Forms.Padding(0);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(419, 65);
+            this.panel19.TabIndex = 25;
             // 
-            // darktheme_iconButton
+            // panel18
             // 
-            this.darktheme_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.darktheme_iconButton.FlatAppearance.BorderSize = 0;
-            this.darktheme_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.darktheme_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.darktheme_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.darktheme_iconButton.IconChar = FontAwesome.Sharp.IconChar.Circle;
-            this.darktheme_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.darktheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.darktheme_iconButton.Location = new System.Drawing.Point(11, 1);
-            this.darktheme_iconButton.Name = "darktheme_iconButton";
-            this.darktheme_iconButton.Size = new System.Drawing.Size(60, 51);
-            this.darktheme_iconButton.TabIndex = 21;
-            this.darktheme_iconButton.UseVisualStyleBackColor = true;
+            this.panel18.Controls.Add(this.no_background_running_iconButton);
+            this.panel18.Controls.Add(this.yes_background_running_iconButton);
+            this.panel18.Controls.Add(this.background_toggleButton);
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel18.Location = new System.Drawing.Point(141, 43);
+            this.panel18.Margin = new System.Windows.Forms.Padding(0);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(278, 54);
+            this.panel18.TabIndex = 24;
             // 
             // no_background_running_iconButton
             // 
@@ -554,37 +513,101 @@ namespace StudyManagementApp
             this.yes_background_running_iconButton.TabIndex = 22;
             this.yes_background_running_iconButton.UseVisualStyleBackColor = true;
             // 
-            // no_startup_iconButton
+            // panel17
             // 
-            this.no_startup_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.no_startup_iconButton.FlatAppearance.BorderSize = 0;
-            this.no_startup_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.no_startup_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.no_startup_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.no_startup_iconButton.IconChar = FontAwesome.Sharp.IconChar.TimesCircle;
-            this.no_startup_iconButton.IconColor = System.Drawing.Color.IndianRed;
-            this.no_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
-            this.no_startup_iconButton.Location = new System.Drawing.Point(9, 7);
-            this.no_startup_iconButton.Name = "no_startup_iconButton";
-            this.no_startup_iconButton.Size = new System.Drawing.Size(60, 51);
-            this.no_startup_iconButton.TabIndex = 23;
-            this.no_startup_iconButton.UseVisualStyleBackColor = true;
+            this.panel17.Controls.Add(this.label6);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel17.Location = new System.Drawing.Point(0, 43);
+            this.panel17.Margin = new System.Windows.Forms.Padding(0);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(141, 54);
+            this.panel17.TabIndex = 23;
             // 
-            // yes_startup_iconButton
+            // label6
             // 
-            this.yes_startup_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.yes_startup_iconButton.FlatAppearance.BorderSize = 0;
-            this.yes_startup_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.yes_startup_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.yes_startup_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.yes_startup_iconButton.IconChar = FontAwesome.Sharp.IconChar.CheckCircle;
-            this.yes_startup_iconButton.IconColor = System.Drawing.Color.Black;
-            this.yes_startup_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.yes_startup_iconButton.Location = new System.Drawing.Point(209, 7);
-            this.yes_startup_iconButton.Name = "yes_startup_iconButton";
-            this.yes_startup_iconButton.Size = new System.Drawing.Size(60, 51);
-            this.yes_startup_iconButton.TabIndex = 22;
-            this.yes_startup_iconButton.UseVisualStyleBackColor = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Margin = new System.Windows.Forms.Padding(0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 54);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "BackGround\r\nRunning";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.darktheme_iconButton);
+            this.panel16.Controls.Add(this.lighttheme_iconButton);
+            this.panel16.Controls.Add(this.theme_toggleButton);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel16.Location = new System.Drawing.Point(141, 0);
+            this.panel16.Margin = new System.Windows.Forms.Padding(0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(278, 43);
+            this.panel16.TabIndex = 22;
+            // 
+            // darktheme_iconButton
+            // 
+            this.darktheme_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.darktheme_iconButton.FlatAppearance.BorderSize = 0;
+            this.darktheme_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.darktheme_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.darktheme_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.darktheme_iconButton.IconChar = FontAwesome.Sharp.IconChar.Circle;
+            this.darktheme_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.darktheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.darktheme_iconButton.Location = new System.Drawing.Point(11, 1);
+            this.darktheme_iconButton.Name = "darktheme_iconButton";
+            this.darktheme_iconButton.Size = new System.Drawing.Size(60, 51);
+            this.darktheme_iconButton.TabIndex = 21;
+            this.darktheme_iconButton.UseVisualStyleBackColor = true;
+            // 
+            // lighttheme_iconButton
+            // 
+            this.lighttheme_iconButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lighttheme_iconButton.FlatAppearance.BorderSize = 0;
+            this.lighttheme_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.lighttheme_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.lighttheme_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lighttheme_iconButton.IconChar = FontAwesome.Sharp.IconChar.Circle;
+            this.lighttheme_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.lighttheme_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.lighttheme_iconButton.Location = new System.Drawing.Point(211, 1);
+            this.lighttheme_iconButton.Name = "lighttheme_iconButton";
+            this.lighttheme_iconButton.Size = new System.Drawing.Size(60, 51);
+            this.lighttheme_iconButton.TabIndex = 20;
+            this.lighttheme_iconButton.UseVisualStyleBackColor = true;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.label2);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Margin = new System.Windows.Forms.Padding(0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(141, 43);
+            this.panel15.TabIndex = 21;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Black;
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 1, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(625, 509);
+            this.tableLayoutPanel2.TabIndex = 17;
             // 
             // Apply_Button
             // 
@@ -777,10 +800,11 @@ namespace StudyManagementApp
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(605, 489);
-            this.Controls.Add(this.tableLayoutPanel4);
+            this.ClientSize = new System.Drawing.Size(625, 509);
+            this.Controls.Add(this.tableLayoutPanel2);
             this.Font = new System.Drawing.Font("Agency FB", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -794,21 +818,22 @@ namespace StudyManagementApp
             this.main_panel.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.store_pane.ResumeLayout(false);
-            this.mode_panel.ResumeLayout(false);
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
             this.passwork_panel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.mode_panel.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -858,5 +883,6 @@ namespace StudyManagementApp
         private FontAwesome.Sharp.IconButton yes_background_running_iconButton;
         private FontAwesome.Sharp.IconButton darktheme_iconButton;
         private FontAwesome.Sharp.IconButton lighttheme_iconButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     }
 }

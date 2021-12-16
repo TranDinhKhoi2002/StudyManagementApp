@@ -33,9 +33,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.btnCancle = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnCreate = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -56,6 +54,9 @@ namespace StudyManagementApp.TodolistFolder
             this.panel7 = new System.Windows.Forms.Panel();
             this.note_textBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnCancle = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.btnCreate = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -69,6 +70,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // type_colorDialog
@@ -82,7 +84,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel1.Location = new System.Drawing.Point(20, 20);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(570, 547);
+            this.panel1.Size = new System.Drawing.Size(550, 527);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -108,77 +110,37 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37176F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.19627F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(570, 547);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(550, 527);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.btnCancle);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(285, 468);
+            this.panel9.Location = new System.Drawing.Point(275, 450);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(285, 79);
+            this.panel9.Size = new System.Drawing.Size(275, 77);
             this.panel9.TabIndex = 16;
-            // 
-            // btnCancle
-            // 
-            this.btnCancle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.btnCancle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
-            this.btnCancle.BorderRadius = 18;
-            this.btnCancle.BorderSize = 0;
-            this.btnCancle.FlatAppearance.BorderSize = 0;
-            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancle.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancle.ForeColor = System.Drawing.Color.White;
-            this.btnCancle.Location = new System.Drawing.Point(17, 25);
-            this.btnCancle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(125, 44);
-            this.btnCancle.TabIndex = 0;
-            this.btnCancle.Text = "Cancle";
-            this.btnCancle.UseVisualStyleBackColor = false;
-            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.btnCreate);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(0, 468);
+            this.panel8.Location = new System.Drawing.Point(0, 450);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(285, 79);
+            this.panel8.Size = new System.Drawing.Size(275, 77);
             this.panel8.TabIndex = 15;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
-            this.btnCreate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
-            this.btnCreate.BorderRadius = 18;
-            this.btnCreate.BorderSize = 0;
-            this.btnCreate.FlatAppearance.BorderSize = 0;
-            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreate.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(142, 25);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(125, 44);
-            this.btnCreate.TabIndex = 0;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = false;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(285, 114);
+            this.panel5.Location = new System.Drawing.Point(275, 110);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(285, 259);
+            this.panel5.Size = new System.Drawing.Size(275, 249);
             this.panel5.TabIndex = 12;
             // 
             // tableLayoutPanel4
@@ -194,7 +156,7 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(285, 259);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(275, 249);
             this.tableLayoutPanel4.TabIndex = 16;
             // 
             // panel17
@@ -203,10 +165,10 @@ namespace StudyManagementApp.TodolistFolder
             this.panel17.Controls.Add(this.daynoti_comboBox);
             this.panel17.Controls.Add(this.iconButton1);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(0, 129);
+            this.panel17.Location = new System.Drawing.Point(0, 124);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(285, 130);
+            this.panel17.Size = new System.Drawing.Size(275, 125);
             this.panel17.TabIndex = 10;
             // 
             // timenoti_comboBox
@@ -227,7 +189,7 @@ namespace StudyManagementApp.TodolistFolder
             "30 minutes before",
             "1 hour before",
             "2 hours before"});
-            this.timenoti_comboBox.Location = new System.Drawing.Point(62, 63);
+            this.timenoti_comboBox.Location = new System.Drawing.Point(57, 60);
             this.timenoti_comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.timenoti_comboBox.Name = "timenoti_comboBox";
             this.timenoti_comboBox.Size = new System.Drawing.Size(212, 36);
@@ -249,7 +211,7 @@ namespace StudyManagementApp.TodolistFolder
             "1 day before",
             "2 days before",
             "1 week before"});
-            this.daynoti_comboBox.Location = new System.Drawing.Point(62, 13);
+            this.daynoti_comboBox.Location = new System.Drawing.Point(57, 10);
             this.daynoti_comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.daynoti_comboBox.Name = "daynoti_comboBox";
             this.daynoti_comboBox.Size = new System.Drawing.Size(212, 36);
@@ -268,7 +230,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 42;
-            this.iconButton1.Location = new System.Drawing.Point(10, 12);
+            this.iconButton1.Location = new System.Drawing.Point(5, 9);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(43, 45);
@@ -286,7 +248,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel13.Location = new System.Drawing.Point(0, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(285, 129);
+            this.panel13.Size = new System.Drawing.Size(275, 124);
             this.panel13.TabIndex = 9;
             // 
             // iconButton5
@@ -301,7 +263,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton5.IconColor = System.Drawing.Color.White;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton5.IconSize = 42;
-            this.iconButton5.Location = new System.Drawing.Point(10, 18);
+            this.iconButton5.Location = new System.Drawing.Point(5, 16);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(0);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(43, 45);
@@ -318,7 +280,7 @@ namespace StudyManagementApp.TodolistFolder
             this.type_combobox.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_combobox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.type_combobox.FormattingEnabled = true;
-            this.type_combobox.Location = new System.Drawing.Point(62, 80);
+            this.type_combobox.Location = new System.Drawing.Point(57, 78);
             this.type_combobox.Margin = new System.Windows.Forms.Padding(4);
             this.type_combobox.Name = "type_combobox";
             this.type_combobox.Size = new System.Drawing.Size(212, 36);
@@ -332,7 +294,7 @@ namespace StudyManagementApp.TodolistFolder
             this.time_dateTimePicker.CustomFormat = "hh:mm tt";
             this.time_dateTimePicker.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.time_dateTimePicker.Location = new System.Drawing.Point(62, 21);
+            this.time_dateTimePicker.Location = new System.Drawing.Point(57, 19);
             this.time_dateTimePicker.Name = "time_dateTimePicker";
             this.time_dateTimePicker.ShowUpDown = true;
             this.time_dateTimePicker.Size = new System.Drawing.Size(212, 36);
@@ -350,7 +312,7 @@ namespace StudyManagementApp.TodolistFolder
             this.typeColor_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.typeColor_iconButton.IconSize = 42;
             this.typeColor_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.typeColor_iconButton.Location = new System.Drawing.Point(10, 75);
+            this.typeColor_iconButton.Location = new System.Drawing.Point(5, 73);
             this.typeColor_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.typeColor_iconButton.Name = "typeColor_iconButton";
             this.typeColor_iconButton.Size = new System.Drawing.Size(43, 41);
@@ -363,16 +325,16 @@ namespace StudyManagementApp.TodolistFolder
             // 
             this.panel4.Controls.Add(this.date_monthCalendar);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 114);
+            this.panel4.Location = new System.Drawing.Point(0, 110);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(285, 259);
+            this.panel4.Size = new System.Drawing.Size(275, 249);
             this.panel4.TabIndex = 11;
             // 
             // date_monthCalendar
             // 
             this.date_monthCalendar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.date_monthCalendar.Location = new System.Drawing.Point(12, 21);
+            this.date_monthCalendar.Location = new System.Drawing.Point(7, 16);
             this.date_monthCalendar.MaxSelectionCount = 1;
             this.date_monthCalendar.Name = "date_monthCalendar";
             this.date_monthCalendar.TabIndex = 4;
@@ -383,10 +345,10 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel2.SetColumnSpan(this.panel3, 2);
             this.panel3.Controls.Add(this.taskname_textBox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 49);
+            this.panel3.Location = new System.Drawing.Point(0, 47);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 65);
+            this.panel3.Size = new System.Drawing.Size(550, 63);
             this.panel3.TabIndex = 10;
             // 
             // taskname_textBox
@@ -396,7 +358,7 @@ namespace StudyManagementApp.TodolistFolder
             this.taskname_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.taskname_textBox.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taskname_textBox.ForeColor = System.Drawing.Color.Silver;
-            this.taskname_textBox.Location = new System.Drawing.Point(12, 16);
+            this.taskname_textBox.Location = new System.Drawing.Point(2, 15);
             this.taskname_textBox.Margin = new System.Windows.Forms.Padding(0);
             this.taskname_textBox.Name = "taskname_textBox";
             this.taskname_textBox.Size = new System.Drawing.Size(547, 33);
@@ -416,7 +378,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(570, 49);
+            this.panel2.Size = new System.Drawing.Size(550, 47);
             this.panel2.TabIndex = 9;
             // 
             // label1
@@ -426,7 +388,7 @@ namespace StudyManagementApp.TodolistFolder
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(570, 49);
+            this.label1.Size = new System.Drawing.Size(550, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "New Task";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -438,10 +400,10 @@ namespace StudyManagementApp.TodolistFolder
             this.tableLayoutPanel2.SetColumnSpan(this.panel7, 2);
             this.panel7.Controls.Add(this.note_textBox);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(0, 373);
+            this.panel7.Location = new System.Drawing.Point(0, 359);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(570, 95);
+            this.panel7.Size = new System.Drawing.Size(550, 91);
             this.panel7.TabIndex = 17;
             // 
             // note_textBox
@@ -451,7 +413,7 @@ namespace StudyManagementApp.TodolistFolder
             this.note_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.note_textBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.note_textBox.ForeColor = System.Drawing.Color.Silver;
-            this.note_textBox.Location = new System.Drawing.Point(12, 6);
+            this.note_textBox.Location = new System.Drawing.Point(2, 4);
             this.note_textBox.Margin = new System.Windows.Forms.Padding(0);
             this.note_textBox.Multiline = true;
             this.note_textBox.Name = "note_textBox";
@@ -466,22 +428,81 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkGray;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(610, 587);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(590, 567);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
+            this.tableLayoutPanel3.ColumnCount = 3;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 1, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 3;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(610, 587);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // btnCancle
+            // 
+            this.btnCancle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.btnCancle.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.btnCancle.BorderRadius = 18;
+            this.btnCancle.BorderSize = 0;
+            this.btnCancle.FlatAppearance.BorderSize = 0;
+            this.btnCancle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancle.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancle.ForeColor = System.Drawing.Color.White;
+            this.btnCancle.Location = new System.Drawing.Point(12, 24);
+            this.btnCancle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancle.Name = "btnCancle";
+            this.btnCancle.Size = new System.Drawing.Size(125, 44);
+            this.btnCancle.TabIndex = 0;
+            this.btnCancle.Text = "Cancle";
+            this.btnCancle.UseVisualStyleBackColor = false;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(147)))), ((int)(((byte)(117)))));
+            this.btnCreate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.btnCreate.BorderRadius = 18;
+            this.btnCreate.BorderSize = 0;
+            this.btnCreate.FlatAppearance.BorderSize = 0;
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.White;
+            this.btnCreate.Location = new System.Drawing.Point(137, 24);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(125, 44);
+            this.btnCreate.TabIndex = 0;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // AddItem_Todolist
             // 
@@ -489,7 +510,7 @@ namespace StudyManagementApp.TodolistFolder
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(610, 587);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tableLayoutPanel3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddItem_Todolist";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -511,6 +532,7 @@ namespace StudyManagementApp.TodolistFolder
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -543,5 +565,6 @@ namespace StudyManagementApp.TodolistFolder
         private System.Windows.Forms.ComboBox daynoti_comboBox;
         private FontAwesome.Sharp.IconButton iconButton1;
         private System.Windows.Forms.ComboBox timenoti_comboBox;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
     }
 }

@@ -1017,7 +1017,7 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // tableLayoutPanel14
             // 
-            this.tableLayoutPanel14.BackColor = System.Drawing.Color.Gray;
+            this.tableLayoutPanel14.BackColor = System.Drawing.Color.Silver;
             this.tableLayoutPanel14.ColumnCount = 3;
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -1078,10 +1078,9 @@ namespace StudyManagementApp.TodolistFolder
             this.typecolor_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typecolor_iconButton.FlatAppearance.BorderSize = 0;
             this.typecolor_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.typecolor_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.typecolor_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.typecolor_iconButton.IconChar = FontAwesome.Sharp.IconChar.Palette;
-            this.typecolor_iconButton.IconColor = System.Drawing.Color.White;
+            this.typecolor_iconButton.IconColor = System.Drawing.Color.DimGray;
             this.typecolor_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.typecolor_iconButton.IconSize = 45;
             this.typecolor_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1112,7 +1111,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Cog;
-            this.iconButton5.IconColor = System.Drawing.Color.White;
+            this.iconButton5.IconColor = System.Drawing.Color.Gray;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 25;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1167,10 +1166,9 @@ namespace StudyManagementApp.TodolistFolder
             this.filter_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filter_iconButton.FlatAppearance.BorderSize = 0;
             this.filter_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.filter_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.filter_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.filter_iconButton.IconChar = FontAwesome.Sharp.IconChar.Th;
-            this.filter_iconButton.IconColor = System.Drawing.Color.White;
+            this.filter_iconButton.IconColor = System.Drawing.Color.DimGray;
             this.filter_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.filter_iconButton.IconSize = 45;
             this.filter_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1202,7 +1200,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Filter;
-            this.iconButton4.IconColor = System.Drawing.Color.White;
+            this.iconButton4.IconColor = System.Drawing.Color.Gray;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 25;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1259,7 +1257,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Clock;
-            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconColor = System.Drawing.Color.Gray;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton2.IconSize = 25;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1287,10 +1285,9 @@ namespace StudyManagementApp.TodolistFolder
             this.sort_timedeadline_iconButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sort_timedeadline_iconButton.FlatAppearance.BorderSize = 0;
             this.sort_timedeadline_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.sort_timedeadline_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.sort_timedeadline_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sort_timedeadline_iconButton.IconChar = FontAwesome.Sharp.IconChar.Sort;
-            this.sort_timedeadline_iconButton.IconColor = System.Drawing.Color.White;
+            this.sort_timedeadline_iconButton.IconColor = System.Drawing.Color.DimGray;
             this.sort_timedeadline_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.sort_timedeadline_iconButton.IconSize = 45;
             this.sort_timedeadline_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1315,7 +1312,7 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // tableLayoutPanel15
             // 
-            this.tableLayoutPanel15.BackColor = System.Drawing.Color.Gray;
+            this.tableLayoutPanel15.BackColor = System.Drawing.Color.Transparent;
             this.tableLayoutPanel15.ColumnCount = 2;
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -1350,7 +1347,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconColor = System.Drawing.Color.Gray;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1375,7 +1372,10 @@ namespace StudyManagementApp.TodolistFolder
             // search_textBox
             // 
             this.search_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.search_textBox.BackColor = System.Drawing.Color.Silver;
+            this.search_textBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.search_textBox.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_textBox.ForeColor = System.Drawing.Color.Black;
             this.search_textBox.Location = new System.Drawing.Point(21, 8);
             this.search_textBox.Margin = new System.Windows.Forms.Padding(0);
             this.search_textBox.Name = "search_textBox";
@@ -1385,7 +1385,7 @@ namespace StudyManagementApp.TodolistFolder
             // 
             // middletool_panel
             // 
-            this.middletool_panel.BackColor = System.Drawing.Color.Gray;
+            this.middletool_panel.BackColor = System.Drawing.Color.Silver;
             this.middletool_panel.Controls.Add(this.additem_iconButton);
             this.middletool_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.middletool_panel.Location = new System.Drawing.Point(331, 0);
@@ -1400,10 +1400,9 @@ namespace StudyManagementApp.TodolistFolder
             this.additem_iconButton.BackColor = System.Drawing.Color.Transparent;
             this.additem_iconButton.FlatAppearance.BorderSize = 0;
             this.additem_iconButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.additem_iconButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.additem_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.additem_iconButton.IconChar = FontAwesome.Sharp.IconChar.PlusSquare;
-            this.additem_iconButton.IconColor = System.Drawing.Color.White;
+            this.additem_iconButton.IconColor = System.Drawing.Color.DimGray;
             this.additem_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.additem_iconButton.IconSize = 75;
             this.additem_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopCenter;

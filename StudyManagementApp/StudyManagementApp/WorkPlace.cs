@@ -835,7 +835,7 @@ namespace StudyManagementApp
                 return bang_AllTASK_TDL.Rows[min]["TASKNAME"].ToString() + " is coming!";
             }
             else
-                return "Enjoy your studies";
+                return "Enjoy your study";
         }
         private void Remind_taskdeadline_timer_Tick(object sender, EventArgs e)
         {
@@ -858,7 +858,7 @@ namespace StudyManagementApp
                             {
                                 type = bang_AllTYPEITEM_TDL.Rows[j]["NAMETYPE"].ToString();
                     
-                                Zst_notifyIcon.ShowBalloonTip(5000, "Z-st nhắc bạn!", "Task: " + taskname + "\n-Deadline:\n   Day: " + datetimeDeadline.ToString("dddd, dd MMMM yyyy") + "\n   Time: " + datetimeDeadline.ToString("hh:mm tt") + "\n-Task's type: " + type, ToolTipIcon.Warning);
+                                Zst_notifyIcon.ShowBalloonTip(5000, "Z-st nhắc bạn!", "Task: " + taskname + "\nDeadline:\n\tDay: " + datetimeDeadline.ToString("dddd, dd MMMM yyyy") + "\n\tTime: " + datetimeDeadline.ToString("hh:mm tt") + "\n-Task's type: " + type, ToolTipIcon.Warning);
                                 break;
                             }
                         }
