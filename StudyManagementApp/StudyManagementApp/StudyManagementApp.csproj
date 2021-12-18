@@ -124,6 +124,12 @@
       <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Email.cs" />
+    <Compile Include="Export.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export.Designer.cs">
+      <DependentUpon>Export.cs</DependentUpon>
+    </Compile>
     <Compile Include="FeedBackForm_FAKE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,12 @@
     </Compile>
     <Compile Include="FlappyBirdForm.Designer.cs">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlashcardExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlashcardExportForm.Designer.cs">
+      <DependentUpon>FlashcardExportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FlashCardFolder\FlashCard.cs" />
     <Compile Include="FlashCardFolder\FlashCardDeck.cs" />
@@ -161,6 +173,12 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoteExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteExportForm.Designer.cs">
+      <DependentUpon>NoteExportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NoteFolder\Item_Note_Form.cs">
       <SubType>Form</SubType>
@@ -199,6 +217,12 @@
     </Compile>
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TodoExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TodoExportForm.Designer.cs">
+      <DependentUpon>TodoExportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TodolistFolder\AddItem_Todolist.cs">
       <SubType>Form</SubType>
@@ -295,11 +319,17 @@
     <EmbeddedResource Include="Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Export.resx">
+      <DependentUpon>Export.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FeedBackForm_FAKE.resx">
       <DependentUpon>FeedBackForm_FAKE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlappyBirdForm.resx">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlashcardExportForm.resx">
+      <DependentUpon>FlashcardExportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlashCardFolder\FlashCardForm.resx">
       <DependentUpon>FlashCardForm.cs</DependentUpon>
@@ -312,6 +342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteExportForm.resx">
+      <DependentUpon>NoteExportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoteFolder\Item_Note_Form.resx">
       <DependentUpon>Item_Note_Form.cs</DependentUpon>
@@ -332,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodoExportForm.resx">
+      <DependentUpon>TodoExportForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TodolistFolder\AddItem_Todolist.resx">
       <DependentUpon>AddItem_Todolist.cs</DependentUpon>
@@ -422,6 +458,8 @@
     <Content Include="Guna.UI2.dll" />
     <None Include="Resources\chatbot.png" />
     <None Include="Resources\background_chatbot.png" />
+    <None Include="Resources\ExcelIcon.png" />
+    <None Include="Resources\ExcelIcon1.png" />
     <Content Include="Resources\Images\about.png" />
     <None Include="Resources\Images\bird.png" />
     <Content Include="Resources\Images\calendarDark.png" />

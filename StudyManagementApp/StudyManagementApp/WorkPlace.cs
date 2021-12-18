@@ -895,8 +895,13 @@ namespace StudyManagementApp
             feedBackForm_FAKE.ShowDialog();
         }
 
+
         #endregion
 
-
+        private void fileexport_iconButton_Click(object sender, EventArgs e)
+        {
+            Export export = new Export();
+            export.Show();
+        }
     }
 }
