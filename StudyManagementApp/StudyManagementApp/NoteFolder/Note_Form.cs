@@ -13,21 +13,24 @@ namespace StudyManagementApp.NoteFolder
     public partial class Note_Form : Form
     {
         List<Item_Note_Form> mang_item_Note_Forms = new List<Item_Note_Form>();
+        static public DataTable All_notesitem;
         
         public Note_Form()
         {
             InitializeComponent();
+          
         }
 
 
-        void LoadDATA()
+        public void LoadDATA()
         {
+            DataTable all_notesitem = WorkPlace.bang_ALLNOTES;
             for (int i = 0; i < mang_item_Note_Forms.Count; i++)
             {
                 main_flowLayoutPanel.Controls.Remove(mang_item_Note_Forms[i]);
             }
             mang_item_Note_Forms.Clear();
-            DataTable all_notesitem = WorkPlace.bang_ALLNOTES;
+            
             for (int i = 0; i <all_notesitem.Rows.Count ; i++)
             {
                 string pk_Notes = all_notesitem.Rows[i]["PK_NOTES"].ToString();
@@ -45,7 +48,8 @@ namespace StudyManagementApp.NoteFolder
                 main_flowLayoutPanel.Controls.Add(mang_item_Note_Forms[i]);
                 mang_item_Note_Forms[i].Show();
             }
-          
+            All_notesitem = all_notesitem;
+           
         }
 
         public new void Show()
@@ -76,6 +80,10 @@ namespace StudyManagementApp.NoteFolder
         {
             LoadDATA();
         }
+        private void Note_Form_Paint(object sender, PaintEventArgs e)
+        {
+            LoadDATA();
+        }
 
         private void AddNote_iconButton_Click(object sender, EventArgs e)
         {
@@ -83,5 +91,7 @@ namespace StudyManagementApp.NoteFolder
             WorkPlace.bang_ALLNOTES = DAO.AccountDAO.Instance.GetAll_ITEMNOTES(UserInfo.Instance.Username);
             LoadDATA();
         }
+
+        
     }
 }

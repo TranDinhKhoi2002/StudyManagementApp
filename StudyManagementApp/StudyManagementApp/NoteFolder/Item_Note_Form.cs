@@ -146,5 +146,11 @@ namespace StudyManagementApp.NoteFolder
                 Update_NOTESITEM();
             }
         }
+
+        private void content_richTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Note_Form temp = new Note_Form();               
+            temp.LoadDATA();
+        }
     }
 }

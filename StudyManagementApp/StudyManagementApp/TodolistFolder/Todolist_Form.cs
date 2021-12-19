@@ -22,6 +22,9 @@ namespace StudyManagementApp.TodolistFolder
         public static List<DataItem_Todolist> mangItemTheoDate = new List<DataItem_Todolist>();
         public static List<Item_Todolist_Form> mangFormTheoDate = new List<Item_Todolist_Form>();
 
+        static public DataTable TypeItem;
+        static public DataTable Task;
+
         bool timedeadline_asc = true; //6am->7pm
         enum DisplayState
         {
@@ -165,12 +168,13 @@ namespace StudyManagementApp.TodolistFolder
 
                 }
             }
+            TypeItem = allTYPEITEM;
             if (string.IsNullOrEmpty(typecolor))
-            {
                 return Color.Silver;
-            }
             else
                 return ColorTranslator.FromHtml(typecolor);
+
+           
         }
         void Setting_IconItem(IconButton iconButton)
         {
@@ -489,6 +493,8 @@ namespace StudyManagementApp.TodolistFolder
                 }    
                
             }
+            Task = allTASK;
+            
         }
 
        

@@ -13,16 +13,19 @@ namespace StudyManagementApp.FlashCardFolder
 {
     public partial class FlashCardForm : Form
     {
+        
         // Enum
         private enum State { NoDeck, EmptyDeck, OK }
 
         // Constants
         private const string NO_DECK = "[You have no Deck]";
         private const string EMPTY_DECK = "[This deck is empty]";
-
+        static public DataTable deckTab;
+        static public  DataTable FCDetail;
         public FlashCardForm()
         {
             InitializeComponent();
+            
         }
 
         #region API
@@ -81,6 +84,9 @@ namespace StudyManagementApp.FlashCardFolder
                 return deckID;
             }
         }
+
+       
+
         private int currentFCIndex = -1;
         private int currentDeckIndex = -1;
 
@@ -103,6 +109,8 @@ namespace StudyManagementApp.FlashCardFolder
                     fcDeckList.Add(new FlashCardDeck(row["ID"].ToString(), row["NAME"].ToString()));
                 }
             }
+            deckTab = deckTable;
+         
         }
 
         private void GetFlashCards()
@@ -125,6 +133,8 @@ namespace StudyManagementApp.FlashCardFolder
             }
             else
                 currentFCIndex = -1;
+
+            FCDetail = flashcardTable;
         }
 
         private List<string> DecksToList()
@@ -372,6 +382,7 @@ namespace StudyManagementApp.FlashCardFolder
             FCDetailTab_Datagridview.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             FCDetailTab_Datagridview.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             FCDetailTab_Datagridview.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
         }
 
 
@@ -414,7 +425,7 @@ namespace StudyManagementApp.FlashCardFolder
         {
             // Theme
             LoadMau();
-
+     
             // Set initial state
             isFlip = false;
             WordPanel.Visible = true;

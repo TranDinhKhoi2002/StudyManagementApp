@@ -116,10 +116,10 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
             this.panel2.Controls.Add(this.tableLayoutPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(64, 155);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(77, 186);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 191);
+            this.panel2.Size = new System.Drawing.Size(539, 229);
             this.panel2.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -143,17 +143,17 @@ namespace StudyManagementApp
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.98693F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.14379F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.21569F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(450, 191);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(539, 229);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 65);
+            this.panel5.Location = new System.Drawing.Point(0, 78);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(150, 50);
+            this.panel5.Size = new System.Drawing.Size(179, 60);
             this.panel5.TabIndex = 7;
             // 
             // pictureBox2
@@ -162,7 +162,7 @@ namespace StudyManagementApp
             this.pictureBox2.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(110, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(132, 60);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -171,19 +171,19 @@ namespace StudyManagementApp
             // 
             this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(300, 65);
+            this.panel6.Location = new System.Drawing.Point(358, 78);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 50);
+            this.panel6.Size = new System.Drawing.Size(181, 60);
             this.panel6.TabIndex = 8;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::StudyManagementApp.Properties.Resources.Long_text;
-            this.pictureBox4.Location = new System.Drawing.Point(-6, 0);
+            this.pictureBox4.Location = new System.Drawing.Point(-7, 0);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(134, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(161, 60);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -192,10 +192,10 @@ namespace StudyManagementApp
             // 
             this.panel7.Controls.Add(this.pictureBox3);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(150, 65);
+            this.panel7.Location = new System.Drawing.Point(179, 78);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(150, 50);
+            this.panel7.Size = new System.Drawing.Size(179, 60);
             this.panel7.TabIndex = 9;
             // 
             // pictureBox3
@@ -204,7 +204,7 @@ namespace StudyManagementApp
             this.pictureBox3.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(129, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(155, 60);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -213,10 +213,10 @@ namespace StudyManagementApp
             // 
             this.panel8.Controls.Add(this.pictureBox1);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(150, 0);
+            this.panel8.Location = new System.Drawing.Point(179, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(150, 65);
+            this.panel8.Size = new System.Drawing.Size(179, 78);
             this.panel8.TabIndex = 10;
             // 
             // pictureBox1
@@ -226,7 +226,7 @@ namespace StudyManagementApp
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 65);
+            this.pictureBox1.Size = new System.Drawing.Size(179, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -235,11 +235,11 @@ namespace StudyManagementApp
             // 
             this.panel10.Controls.Add(this.numPomodoro);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(0, 115);
+            this.panel10.Location = new System.Drawing.Point(0, 138);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
-            this.panel10.Padding = new System.Windows.Forms.Padding(12, 21, 21, 21);
-            this.panel10.Size = new System.Drawing.Size(150, 76);
+            this.panel10.Padding = new System.Windows.Forms.Padding(14, 25, 25, 25);
+            this.panel10.Size = new System.Drawing.Size(179, 91);
             this.panel10.TabIndex = 12;
             // 
             // numPomodoro
@@ -249,10 +249,10 @@ namespace StudyManagementApp
             this.numPomodoro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numPomodoro.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPomodoro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.numPomodoro.Location = new System.Drawing.Point(12, 21);
-            this.numPomodoro.Margin = new System.Windows.Forms.Padding(4);
+            this.numPomodoro.Location = new System.Drawing.Point(14, 25);
+            this.numPomodoro.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numPomodoro.Name = "numPomodoro";
-            this.numPomodoro.Size = new System.Drawing.Size(117, 39);
+            this.numPomodoro.Size = new System.Drawing.Size(140, 46);
             this.numPomodoro.TabIndex = 2;
             this.numPomodoro.TabStop = false;
             this.numPomodoro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -261,11 +261,11 @@ namespace StudyManagementApp
             // 
             this.panel11.Controls.Add(this.numShortBreak);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(150, 115);
+            this.panel11.Location = new System.Drawing.Point(179, 138);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
-            this.panel11.Padding = new System.Windows.Forms.Padding(12, 21, 21, 21);
-            this.panel11.Size = new System.Drawing.Size(150, 76);
+            this.panel11.Padding = new System.Windows.Forms.Padding(14, 25, 25, 25);
+            this.panel11.Size = new System.Drawing.Size(179, 91);
             this.panel11.TabIndex = 12;
             // 
             // numShortBreak
@@ -275,10 +275,10 @@ namespace StudyManagementApp
             this.numShortBreak.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numShortBreak.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numShortBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.numShortBreak.Location = new System.Drawing.Point(12, 21);
-            this.numShortBreak.Margin = new System.Windows.Forms.Padding(4);
+            this.numShortBreak.Location = new System.Drawing.Point(14, 25);
+            this.numShortBreak.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numShortBreak.Name = "numShortBreak";
-            this.numShortBreak.Size = new System.Drawing.Size(117, 39);
+            this.numShortBreak.Size = new System.Drawing.Size(140, 46);
             this.numShortBreak.TabIndex = 5;
             this.numShortBreak.TabStop = false;
             this.numShortBreak.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -287,11 +287,11 @@ namespace StudyManagementApp
             // 
             this.panel9.Controls.Add(this.numLongBreak);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(300, 115);
+            this.panel9.Location = new System.Drawing.Point(358, 138);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(12, 21, 21, 21);
-            this.panel9.Size = new System.Drawing.Size(150, 76);
+            this.panel9.Padding = new System.Windows.Forms.Padding(14, 25, 25, 25);
+            this.panel9.Size = new System.Drawing.Size(181, 91);
             this.panel9.TabIndex = 11;
             // 
             // numLongBreak
@@ -301,10 +301,10 @@ namespace StudyManagementApp
             this.numLongBreak.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numLongBreak.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numLongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.numLongBreak.Location = new System.Drawing.Point(12, 21);
-            this.numLongBreak.Margin = new System.Windows.Forms.Padding(4);
+            this.numLongBreak.Location = new System.Drawing.Point(14, 25);
+            this.numLongBreak.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numLongBreak.Name = "numLongBreak";
-            this.numLongBreak.Size = new System.Drawing.Size(117, 39);
+            this.numLongBreak.Size = new System.Drawing.Size(142, 46);
             this.numLongBreak.TabIndex = 6;
             this.numLongBreak.TabStop = false;
             this.numLongBreak.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -314,10 +314,10 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
             this.panel3.Controls.Add(this.tableLayoutPanel3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(64, 354);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(77, 425);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 117);
+            this.panel3.Size = new System.Drawing.Size(539, 140);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel3
@@ -336,17 +336,17 @@ namespace StudyManagementApp
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(450, 117);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(539, 140);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // panel15
             // 
             this.panel15.Controls.Add(this.tableLayoutPanel4);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(209, 58);
+            this.panel15.Location = new System.Drawing.Point(251, 70);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(241, 59);
+            this.panel15.Size = new System.Drawing.Size(288, 70);
             this.panel15.TabIndex = 3;
             // 
             // tableLayoutPanel4
@@ -358,23 +358,23 @@ namespace StudyManagementApp
             this.tableLayoutPanel4.Controls.Add(this.panel16, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(241, 59);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(288, 70);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
             // panel17
             // 
             this.panel17.Controls.Add(this.numNotification);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(120, 0);
+            this.panel17.Location = new System.Drawing.Point(144, 0);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Padding = new System.Windows.Forms.Padding(12);
-            this.panel17.Size = new System.Drawing.Size(121, 59);
+            this.panel17.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel17.Size = new System.Drawing.Size(144, 70);
             this.panel17.TabIndex = 5;
             // 
             // numNotification
@@ -384,10 +384,10 @@ namespace StudyManagementApp
             this.numNotification.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numNotification.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.numNotification.Location = new System.Drawing.Point(12, 12);
-            this.numNotification.Margin = new System.Windows.Forms.Padding(4);
+            this.numNotification.Location = new System.Drawing.Point(14, 14);
+            this.numNotification.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numNotification.Name = "numNotification";
-            this.numNotification.Size = new System.Drawing.Size(97, 39);
+            this.numNotification.Size = new System.Drawing.Size(116, 46);
             this.numNotification.TabIndex = 5;
             this.numNotification.TabStop = false;
             this.numNotification.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -399,8 +399,8 @@ namespace StudyManagementApp
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
-            this.panel16.Padding = new System.Windows.Forms.Padding(12);
-            this.panel16.Size = new System.Drawing.Size(120, 59);
+            this.panel16.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel16.Size = new System.Drawing.Size(144, 70);
             this.panel16.TabIndex = 4;
             // 
             // cbbNotification
@@ -415,10 +415,10 @@ namespace StudyManagementApp
             this.cbbNotification.Items.AddRange(new object[] {
             "Last",
             "Every"});
-            this.cbbNotification.Location = new System.Drawing.Point(12, 12);
-            this.cbbNotification.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNotification.Location = new System.Drawing.Point(14, 14);
+            this.cbbNotification.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cbbNotification.Name = "cbbNotification";
-            this.cbbNotification.Size = new System.Drawing.Size(96, 40);
+            this.cbbNotification.Size = new System.Drawing.Size(116, 48);
             this.cbbNotification.TabIndex = 3;
             this.cbbNotification.TabStop = false;
             // 
@@ -426,10 +426,10 @@ namespace StudyManagementApp
             // 
             this.panel13.Controls.Add(this.pictureBox5);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(209, 0);
+            this.panel13.Location = new System.Drawing.Point(251, 0);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(241, 58);
+            this.panel13.Size = new System.Drawing.Size(288, 70);
             this.panel13.TabIndex = 1;
             // 
             // pictureBox5
@@ -438,7 +438,7 @@ namespace StudyManagementApp
             this.pictureBox5.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(146, 59);
+            this.pictureBox5.Size = new System.Drawing.Size(175, 71);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
@@ -450,7 +450,7 @@ namespace StudyManagementApp
             this.panel12.Location = new System.Drawing.Point(0, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(209, 58);
+            this.panel12.Size = new System.Drawing.Size(251, 70);
             this.panel12.TabIndex = 0;
             // 
             // pictureBox6
@@ -459,7 +459,7 @@ namespace StudyManagementApp
             this.pictureBox6.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(205, 59);
+            this.pictureBox6.Size = new System.Drawing.Size(246, 71);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
@@ -471,13 +471,13 @@ namespace StudyManagementApp
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.51095F));
             this.tableLayoutPanel5.Controls.Add(this.panel14, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 58);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 70);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(209, 59);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(251, 70);
             this.tableLayoutPanel5.TabIndex = 4;
             // 
             // panel14
@@ -487,8 +487,8 @@ namespace StudyManagementApp
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Padding = new System.Windows.Forms.Padding(12);
-            this.panel14.Size = new System.Drawing.Size(124, 59);
+            this.panel14.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel14.Size = new System.Drawing.Size(149, 70);
             this.panel14.TabIndex = 2;
             // 
             // numInterval
@@ -498,10 +498,10 @@ namespace StudyManagementApp
             this.numInterval.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numInterval.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numInterval.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.numInterval.Location = new System.Drawing.Point(12, 12);
-            this.numInterval.Margin = new System.Windows.Forms.Padding(4);
+            this.numInterval.Location = new System.Drawing.Point(14, 14);
+            this.numInterval.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.numInterval.Name = "numInterval";
-            this.numInterval.Size = new System.Drawing.Size(100, 39);
+            this.numInterval.Size = new System.Drawing.Size(121, 46);
             this.numInterval.TabIndex = 4;
             this.numInterval.TabStop = false;
             this.numInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -511,9 +511,9 @@ namespace StudyManagementApp
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(590, 605);
+            this.panel1.Size = new System.Drawing.Size(708, 726);
             this.panel1.TabIndex = 9;
             // 
             // tableLayoutPanel1
@@ -530,14 +530,14 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.Controls.Add(this.panel19, 2, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.83784F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.67568F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.21622F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(590, 605);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(708, 726);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
             // panel4
@@ -545,10 +545,10 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
             this.panel4.Controls.Add(this.tableLayoutPanel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(64, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(77, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 143);
+            this.panel4.Size = new System.Drawing.Size(539, 171);
             this.panel4.TabIndex = 8;
             // 
             // tableLayoutPanel6
@@ -564,18 +564,18 @@ namespace StudyManagementApp
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(450, 143);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(539, 171);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // panel20
             // 
             this.panel20.Controls.Add(this.Pomo_PictureBox);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(112, 0);
+            this.panel20.Location = new System.Drawing.Point(134, 0);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
-            this.panel20.Padding = new System.Windows.Forms.Padding(12);
-            this.panel20.Size = new System.Drawing.Size(225, 143);
+            this.panel20.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel20.Size = new System.Drawing.Size(269, 171);
             this.panel20.TabIndex = 9;
             // 
             // Pomo_PictureBox
@@ -584,10 +584,10 @@ namespace StudyManagementApp
             this.Pomo_PictureBox.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Pomo_PictureBox.ErrorImage")));
             this.Pomo_PictureBox.Image = global::StudyManagementApp.Properties.Resources.pomodoro_text;
             this.Pomo_PictureBox.ImageLocation = "";
-            this.Pomo_PictureBox.Location = new System.Drawing.Point(12, 12);
+            this.Pomo_PictureBox.Location = new System.Drawing.Point(14, 14);
             this.Pomo_PictureBox.Margin = new System.Windows.Forms.Padding(0);
             this.Pomo_PictureBox.Name = "Pomo_PictureBox";
-            this.Pomo_PictureBox.Size = new System.Drawing.Size(201, 119);
+            this.Pomo_PictureBox.Size = new System.Drawing.Size(241, 143);
             this.Pomo_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pomo_PictureBox.TabIndex = 7;
             this.Pomo_PictureBox.TabStop = false;
@@ -596,11 +596,11 @@ namespace StudyManagementApp
             // 
             this.panel18.Controls.Add(this.btnApply);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(60, 475);
+            this.panel18.Location = new System.Drawing.Point(72, 570);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Padding = new System.Windows.Forms.Padding(38);
-            this.panel18.Size = new System.Drawing.Size(232, 130);
+            this.panel18.Padding = new System.Windows.Forms.Padding(46, 46, 46, 46);
+            this.panel18.Size = new System.Drawing.Size(278, 156);
             this.panel18.TabIndex = 9;
             // 
             // btnApply
@@ -614,10 +614,10 @@ namespace StudyManagementApp
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnApply.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnApply.Location = new System.Drawing.Point(38, 38);
-            this.btnApply.Margin = new System.Windows.Forms.Padding(4);
+            this.btnApply.Location = new System.Drawing.Point(46, 46);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(156, 54);
+            this.btnApply.Size = new System.Drawing.Size(186, 64);
             this.btnApply.TabIndex = 6;
             this.btnApply.Text = "Apply";
             this.btnApply.UseVisualStyleBackColor = false;
@@ -627,11 +627,11 @@ namespace StudyManagementApp
             // 
             this.panel19.Controls.Add(this.btnReset);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(292, 475);
+            this.panel19.Location = new System.Drawing.Point(350, 570);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
-            this.panel19.Padding = new System.Windows.Forms.Padding(38);
-            this.panel19.Size = new System.Drawing.Size(226, 130);
+            this.panel19.Padding = new System.Windows.Forms.Padding(46, 46, 46, 46);
+            this.panel19.Size = new System.Drawing.Size(271, 156);
             this.panel19.TabIndex = 10;
             // 
             // btnReset
@@ -645,10 +645,10 @@ namespace StudyManagementApp
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.btnReset.Location = new System.Drawing.Point(38, 38);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReset.Location = new System.Drawing.Point(46, 46);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(150, 54);
+            this.btnReset.Size = new System.Drawing.Size(179, 64);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -657,10 +657,10 @@ namespace StudyManagementApp
             // SettingPomodoro
             // 
             this.AcceptButton = this.btnApply;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(590, 605);
+            this.ClientSize = new System.Drawing.Size(708, 726);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

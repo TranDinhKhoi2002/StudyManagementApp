@@ -29,32 +29,16 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbInstruction = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnVerify = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.NoteExportButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbInstruction
-            // 
-            this.lbInstruction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbInstruction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lbInstruction.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInstruction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.lbInstruction.Location = new System.Drawing.Point(12, 0);
-            this.lbInstruction.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.lbInstruction.Name = "lbInstruction";
-            this.lbInstruction.Size = new System.Drawing.Size(497, 82);
-            this.lbInstruction.TabIndex = 10;
-            this.lbInstruction.Text = "FILL IN THE FOLLOWING TABLE";
-            this.lbInstruction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -93,6 +77,7 @@ namespace StudyManagementApp
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.NoteExportButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(48, 212);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
@@ -111,7 +96,6 @@ namespace StudyManagementApp
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.lbInstruction);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(48, 48);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
@@ -121,7 +105,6 @@ namespace StudyManagementApp
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnVerify);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(48, 375);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
@@ -129,24 +112,25 @@ namespace StudyManagementApp
             this.panel5.Size = new System.Drawing.Size(509, 82);
             this.panel5.TabIndex = 21;
             // 
-            // btnVerify
+            // NoteExportButton
             // 
-            this.btnVerify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVerify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(200)))), ((int)(((byte)(100)))));
-            this.btnVerify.BorderColor = System.Drawing.Color.White;
-            this.btnVerify.BorderRadius = 18;
-            this.btnVerify.BorderSize = 0;
-            this.btnVerify.FlatAppearance.BorderSize = 0;
-            this.btnVerify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerify.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerify.ForeColor = System.Drawing.Color.Green;
-            this.btnVerify.Location = new System.Drawing.Point(58, 13);
-            this.btnVerify.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btnVerify.Name = "btnVerify";
-            this.btnVerify.Size = new System.Drawing.Size(373, 56);
-            this.btnVerify.TabIndex = 14;
-            this.btnVerify.Text = "EXPORT NOTE";
-            this.btnVerify.UseVisualStyleBackColor = false;
+            this.NoteExportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.NoteExportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(200)))), ((int)(((byte)(100)))));
+            this.NoteExportButton.BorderColor = System.Drawing.Color.White;
+            this.NoteExportButton.BorderRadius = 18;
+            this.NoteExportButton.BorderSize = 0;
+            this.NoteExportButton.FlatAppearance.BorderSize = 0;
+            this.NoteExportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NoteExportButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NoteExportButton.ForeColor = System.Drawing.Color.Green;
+            this.NoteExportButton.Location = new System.Drawing.Point(59, 13);
+            this.NoteExportButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.NoteExportButton.Name = "NoteExportButton";
+            this.NoteExportButton.Size = new System.Drawing.Size(373, 56);
+            this.NoteExportButton.TabIndex = 14;
+            this.NoteExportButton.Text = "EXPORT NOTE";
+            this.NoteExportButton.UseVisualStyleBackColor = false;
+            this.NoteExportButton.Click += new System.EventHandler(this.NoteExportButton_Click);
             // 
             // NoteExportForm
             // 
@@ -156,20 +140,18 @@ namespace StudyManagementApp
             this.ClientSize = new System.Drawing.Size(605, 506);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "NoteExportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Verification Code Form";
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lbInstruction;
-        private UserControls.RoundedCornerButton btnVerify;
+        private UserControls.RoundedCornerButton NoteExportButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;

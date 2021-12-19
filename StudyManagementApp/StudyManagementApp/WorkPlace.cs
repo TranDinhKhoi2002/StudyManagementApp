@@ -48,6 +48,7 @@ namespace StudyManagementApp
             
             // Todolist
             bang_ALLNOTES = DAO.AccountDAO.Instance.GetAll_ITEMNOTES(UserInfo.Instance.Username);
+           
             todolist_Form = new TodolistFolder.Todolist_Form();
             todolist_Form.TopLevel = false;
             todolist_Form.Dock = DockStyle.Fill;

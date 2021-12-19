@@ -29,55 +29,30 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbInstruction = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.SignUpButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.ExportFCButton = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbInstruction = new System.Windows.Forms.Label();
+            this.DeckRadioButton = new System.Windows.Forms.RadioButton();
+            this.FCRadioButton = new System.Windows.Forms.RadioButton();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbInstruction
-            // 
-            this.lbInstruction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lbInstruction.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbInstruction.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInstruction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.lbInstruction.Location = new System.Drawing.Point(0, 0);
-            this.lbInstruction.Margin = new System.Windows.Forms.Padding(0);
-            this.lbInstruction.Name = "lbInstruction";
-            this.lbInstruction.Size = new System.Drawing.Size(484, 40);
-            this.lbInstruction.TabIndex = 9;
-            this.lbInstruction.Text = "FILL IN THE FOLLOWING TABLE";
-            this.lbInstruction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
-            this.panel3.Controls.Add(this.lbInstruction);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(60, 72);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0, 12, 0, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(484, 40);
-            this.panel3.TabIndex = 10;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 18F));
             this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 6);
@@ -100,70 +75,115 @@ namespace StudyManagementApp
             // panel4
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
-            this.panel4.Location = new System.Drawing.Point(60, 252);
+            this.panel4.Controls.Add(this.DeckRadioButton);
+            this.panel4.Controls.Add(this.FCRadioButton);
+            this.panel4.Location = new System.Drawing.Point(18, 252);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(483, 63);
+            this.panel4.Size = new System.Drawing.Size(558, 64);
             this.panel4.TabIndex = 13;
-            // 
-            // panel2
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(60, 188);
-            this.panel2.Margin = new System.Windows.Forms.Padding(0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(484, 64);
-            this.panel2.TabIndex = 12;
             // 
             // panel1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(60, 124);
+            this.panel1.Location = new System.Drawing.Point(18, 124);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 64);
+            this.panel1.Size = new System.Drawing.Size(568, 64);
             this.panel1.TabIndex = 11;
             // 
             // panel5
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel5, 2);
-            this.panel5.Controls.Add(this.SignUpButton);
+            this.panel5.Controls.Add(this.ExportFCButton);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(60, 380);
+            this.panel5.Location = new System.Drawing.Point(18, 380);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(484, 64);
+            this.panel5.Size = new System.Drawing.Size(568, 64);
             this.panel5.TabIndex = 14;
             // 
-            // SignUpButton
+            // ExportFCButton
             // 
-            this.SignUpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.SignUpButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SignUpButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.SignUpButton.BorderRadius = 18;
-            this.SignUpButton.BorderSize = 0;
-            this.SignUpButton.FlatAppearance.BorderSize = 0;
-            this.SignUpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignUpButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpButton.ForeColor = System.Drawing.Color.Green;
-            this.SignUpButton.Location = new System.Drawing.Point(57, 4);
-            this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(373, 57);
-            this.SignUpButton.TabIndex = 15;
-            this.SignUpButton.Text = "EXPORT FLASHCARD";
-            this.SignUpButton.UseVisualStyleBackColor = false;
+            this.ExportFCButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExportFCButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ExportFCButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ExportFCButton.BorderRadius = 18;
+            this.ExportFCButton.BorderSize = 0;
+            this.ExportFCButton.FlatAppearance.BorderSize = 0;
+            this.ExportFCButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExportFCButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExportFCButton.ForeColor = System.Drawing.Color.Green;
+            this.ExportFCButton.Location = new System.Drawing.Point(40, 0);
+            this.ExportFCButton.Name = "ExportFCButton";
+            this.ExportFCButton.Size = new System.Drawing.Size(457, 57);
+            this.ExportFCButton.TabIndex = 15;
+            this.ExportFCButton.Text = "EXPORT FLASHCARD";
+            this.ExportFCButton.UseVisualStyleBackColor = false;
+            this.ExportFCButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // panel6
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel6, 2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(60, 316);
+            this.panel6.Location = new System.Drawing.Point(18, 316);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(484, 64);
+            this.panel6.Size = new System.Drawing.Size(568, 64);
             this.panel6.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
+            this.panel3.Controls.Add(this.lbInstruction);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(18, 72);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0, 12, 0, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(568, 40);
+            this.panel3.TabIndex = 10;
+            // 
+            // lbInstruction
+            // 
+            this.lbInstruction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.lbInstruction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbInstruction.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInstruction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
+            this.lbInstruction.Location = new System.Drawing.Point(0, 0);
+            this.lbInstruction.Margin = new System.Windows.Forms.Padding(0);
+            this.lbInstruction.Name = "lbInstruction";
+            this.lbInstruction.Size = new System.Drawing.Size(568, 40);
+            this.lbInstruction.TabIndex = 9;
+            this.lbInstruction.Text = "CHOOSE WHAT TO EXPORT";
+            this.lbInstruction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DeckRadioButton
+            // 
+            this.DeckRadioButton.AutoSize = true;
+            this.DeckRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeckRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DeckRadioButton.Location = new System.Drawing.Point(19, 15);
+            this.DeckRadioButton.Name = "DeckRadioButton";
+            this.DeckRadioButton.Size = new System.Drawing.Size(195, 36);
+            this.DeckRadioButton.TabIndex = 1;
+            this.DeckRadioButton.TabStop = true;
+            this.DeckRadioButton.Text = "ALL DECKS";
+            this.DeckRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // FCRadioButton
+            // 
+            this.FCRadioButton.AutoSize = true;
+            this.FCRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FCRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.FCRadioButton.Location = new System.Drawing.Point(268, 15);
+            this.FCRadioButton.Name = "FCRadioButton";
+            this.FCRadioButton.Size = new System.Drawing.Size(287, 36);
+            this.FCRadioButton.TabIndex = 1;
+            this.FCRadioButton.TabStop = true;
+            this.FCRadioButton.Text = "ALL FLASHCARDS";
+            this.FCRadioButton.UseVisualStyleBackColor = true;
             // 
             // FlashcardExportForm
             // 
@@ -173,28 +193,31 @@ namespace StudyManagementApp
             this.ClientSize = new System.Drawing.Size(604, 507);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FlashcardExportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signup";
-            this.panel3.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label lbInstruction;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private UserControls.RoundedCornerButton SignUpButton;
+        private UserControls.RoundedCornerButton ExportFCButton;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lbInstruction;
+        private System.Windows.Forms.RadioButton FCRadioButton;
+        private System.Windows.Forms.RadioButton DeckRadioButton;
     }
 }
