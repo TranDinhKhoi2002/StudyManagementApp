@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Application = Microsoft.Office.Interop.Excel.Application;
+using StudyManagementApp.DAO;
+
 
 namespace StudyManagementApp
 {
@@ -23,9 +25,8 @@ namespace StudyManagementApp
         {
             if (FCRadioButton.Checked == true)
             {
-
                 var lines = new List<string>();
-                string[] columnNames = FlashCardForm.FCDetail.Columns
+                string[] columnNames = FlashCardForm.fc.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
@@ -33,7 +34,7 @@ namespace StudyManagementApp
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
 
-                var valueLines = FlashCardForm.FCDetail.AsEnumerable()
+                var valueLines = FlashCardForm.fc.AsEnumerable()
                     .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
@@ -41,13 +42,19 @@ namespace StudyManagementApp
                 open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
+                if (open.FileName == "")
+                    ExcelFilePath = "No name";
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                MessageBox.Show("Saved successfully.", "Congratulation!");
+                InformSuccess inform = new InformSuccess();
+                inform.Show();
+       
             }
             if (DeckRadioButton.Checked == true)
             {
                 var lines = new List<string>();
-                string[] columnNames = FlashCardForm.deckTab.Columns
+
+                
+                string[] columnNames = FlashCardForm.deck.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
@@ -55,7 +62,7 @@ namespace StudyManagementApp
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
 
-                var valueLines = FlashCardForm.deckTab.AsEnumerable()
+                var valueLines = FlashCardForm.deck.AsEnumerable()
                     .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
@@ -63,8 +70,13 @@ namespace StudyManagementApp
                 open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
+                if (open.FileName == "")
+                    ExcelFilePath = "No name";
+
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                MessageBox.Show("Saved successfully.", "Congratulation!");
+                InformSuccess inform = new InformSuccess();
+                inform.Show();
+      
             }    
 
 

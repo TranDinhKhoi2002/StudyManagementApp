@@ -25,9 +25,9 @@ namespace StudyManagementApp
 
         private void NoteExportButton_Click(object sender, EventArgs e)
         {
-          
-           var lines = new List<string>();
-            string[] columnNames = Note_Form.All_notesitem.Columns
+       
+        var lines = new List<string>();
+            string[] columnNames = WorkPlace.bang_ALLNOTES.Columns
                 .Cast<DataColumn>()
                 .Select(column => column.ColumnName)
                 .ToArray();
@@ -35,16 +35,23 @@ namespace StudyManagementApp
             var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
             lines.Add(header);
 
-            var valueLines = Note_Form.All_notesitem.AsEnumerable()
+
+            var valueLines = WorkPlace.bang_ALLNOTES.AsEnumerable()
                 .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
+
             string ExcelFilePath = "";
             lines.AddRange(valueLines);
+
             SaveFileDialog open = new SaveFileDialog();
             open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
             if (open.ShowDialog() == DialogResult.OK)
                  ExcelFilePath = open.FileName;
+            if (open.FileName == "")
+                ExcelFilePath = "No name";
             File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-            MessageBox.Show("Lưu thành công.", "Congratulation!");
+            InformSuccess inform = new InformSuccess();
+            inform.Show();
+          
         }
     }
 }

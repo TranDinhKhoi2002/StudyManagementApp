@@ -153,7 +153,7 @@ namespace StudyManagementApp
         }
         public void MoveUp()
         {
-            //Hai biến này để làm hiệu ứng âm thanh nhưng chưa có file âm thanh nên để sẵn, nào rãnh thì làm
+     
             bool notMove = true;
             bool score = false;
            

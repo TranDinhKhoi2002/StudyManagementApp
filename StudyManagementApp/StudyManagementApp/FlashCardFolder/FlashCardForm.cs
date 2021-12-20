@@ -20,8 +20,8 @@ namespace StudyManagementApp.FlashCardFolder
         // Constants
         private const string NO_DECK = "[You have no Deck]";
         private const string EMPTY_DECK = "[This deck is empty]";
-        static public DataTable deckTab;
-        static public  DataTable FCDetail;
+        static public DataTable fc;  
+        static public DataTable deck; 
         public FlashCardForm()
         {
             InitializeComponent();
@@ -94,7 +94,7 @@ namespace StudyManagementApp.FlashCardFolder
 
         #region Data Manager
 
-        private void GetDecks()
+        public void GetDecks()
         {
             // Get Username
             string username = UserInfo.Instance.Username;
@@ -109,14 +109,14 @@ namespace StudyManagementApp.FlashCardFolder
                     fcDeckList.Add(new FlashCardDeck(row["ID"].ToString(), row["NAME"].ToString()));
                 }
             }
-            deckTab = deckTable;
+            deck = deckTable;
          
         }
 
-        private void GetFlashCards()
+        public void GetFlashCards()
         {
             // Load Flashcards
-            DataTable flashcardTable = FlashCardDAO.Instance.GetFlashCards(currentDeckID);
+           DataTable flashcardTable = FlashCardDAO.Instance.GetFlashCards(currentDeckID);
             fcList.Clear();
             if (flashcardTable.Rows.Count > 0)
             {
@@ -134,7 +134,7 @@ namespace StudyManagementApp.FlashCardFolder
             else
                 currentFCIndex = -1;
 
-            FCDetail = flashcardTable;
+            fc = flashcardTable;
         }
 
         private List<string> DecksToList()
@@ -308,7 +308,7 @@ namespace StudyManagementApp.FlashCardFolder
             }
         }
 
-        private void LoadDecks()
+        public void LoadDecks()
         {
             if (fcDeckList.Count > 0)
             {

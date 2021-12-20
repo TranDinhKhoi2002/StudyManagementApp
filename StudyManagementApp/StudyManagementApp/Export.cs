@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudyManagementApp.FlashCardFolder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -126,6 +127,9 @@ namespace StudyManagementApp
         private void FlashcardExportButton_Click(object sender, EventArgs e)
         {
             PictureExcel.Visible = false;
+            FlashCardForm fc = new FlashCardForm();
+            fc.Show();
+            fc.Close();
            
             if (state != State.Flashcard)
             {

@@ -117,7 +117,7 @@ namespace StudyManagementApp
             this.panel2.Controls.Add(this.tableLayoutPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(77, 186);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(539, 229);
             this.panel2.TabIndex = 1;
@@ -250,7 +250,7 @@ namespace StudyManagementApp
             this.numPomodoro.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPomodoro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numPomodoro.Location = new System.Drawing.Point(14, 25);
-            this.numPomodoro.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numPomodoro.Margin = new System.Windows.Forms.Padding(5);
             this.numPomodoro.Name = "numPomodoro";
             this.numPomodoro.Size = new System.Drawing.Size(140, 46);
             this.numPomodoro.TabIndex = 2;
@@ -276,7 +276,7 @@ namespace StudyManagementApp
             this.numShortBreak.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numShortBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numShortBreak.Location = new System.Drawing.Point(14, 25);
-            this.numShortBreak.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numShortBreak.Margin = new System.Windows.Forms.Padding(5);
             this.numShortBreak.Name = "numShortBreak";
             this.numShortBreak.Size = new System.Drawing.Size(140, 46);
             this.numShortBreak.TabIndex = 5;
@@ -302,7 +302,7 @@ namespace StudyManagementApp
             this.numLongBreak.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numLongBreak.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numLongBreak.Location = new System.Drawing.Point(14, 25);
-            this.numLongBreak.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numLongBreak.Margin = new System.Windows.Forms.Padding(5);
             this.numLongBreak.Name = "numLongBreak";
             this.numLongBreak.Size = new System.Drawing.Size(142, 46);
             this.numLongBreak.TabIndex = 6;
@@ -315,7 +315,7 @@ namespace StudyManagementApp
             this.panel3.Controls.Add(this.tableLayoutPanel3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(77, 425);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(539, 140);
             this.panel3.TabIndex = 2;
@@ -358,11 +358,11 @@ namespace StudyManagementApp
             this.tableLayoutPanel4.Controls.Add(this.panel16, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(288, 70);
             this.tableLayoutPanel4.TabIndex = 7;
             // 
@@ -373,7 +373,7 @@ namespace StudyManagementApp
             this.panel17.Location = new System.Drawing.Point(144, 0);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
-            this.panel17.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel17.Padding = new System.Windows.Forms.Padding(14);
             this.panel17.Size = new System.Drawing.Size(144, 70);
             this.panel17.TabIndex = 5;
             // 
@@ -385,7 +385,7 @@ namespace StudyManagementApp
             this.numNotification.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numNotification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numNotification.Location = new System.Drawing.Point(14, 14);
-            this.numNotification.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numNotification.Margin = new System.Windows.Forms.Padding(5);
             this.numNotification.Name = "numNotification";
             this.numNotification.Size = new System.Drawing.Size(116, 46);
             this.numNotification.TabIndex = 5;
@@ -399,7 +399,7 @@ namespace StudyManagementApp
             this.panel16.Location = new System.Drawing.Point(0, 0);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
-            this.panel16.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel16.Padding = new System.Windows.Forms.Padding(14);
             this.panel16.Size = new System.Drawing.Size(144, 70);
             this.panel16.TabIndex = 4;
             // 
@@ -416,7 +416,7 @@ namespace StudyManagementApp
             "Last",
             "Every"});
             this.cbbNotification.Location = new System.Drawing.Point(14, 14);
-            this.cbbNotification.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cbbNotification.Margin = new System.Windows.Forms.Padding(5);
             this.cbbNotification.Name = "cbbNotification";
             this.cbbNotification.Size = new System.Drawing.Size(116, 48);
             this.cbbNotification.TabIndex = 3;
@@ -476,7 +476,7 @@ namespace StudyManagementApp
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(251, 70);
             this.tableLayoutPanel5.TabIndex = 4;
             // 
@@ -487,7 +487,7 @@ namespace StudyManagementApp
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel14.Padding = new System.Windows.Forms.Padding(14);
             this.panel14.Size = new System.Drawing.Size(149, 70);
             this.panel14.TabIndex = 2;
             // 
@@ -499,7 +499,7 @@ namespace StudyManagementApp
             this.numInterval.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numInterval.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
             this.numInterval.Location = new System.Drawing.Point(14, 14);
-            this.numInterval.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.numInterval.Margin = new System.Windows.Forms.Padding(5);
             this.numInterval.Name = "numInterval";
             this.numInterval.Size = new System.Drawing.Size(121, 46);
             this.numInterval.TabIndex = 4;
@@ -511,7 +511,7 @@ namespace StudyManagementApp
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(708, 726);
             this.panel1.TabIndex = 9;
@@ -530,7 +530,7 @@ namespace StudyManagementApp
             this.tableLayoutPanel1.Controls.Add(this.panel19, 2, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
@@ -546,7 +546,7 @@ namespace StudyManagementApp
             this.panel4.Controls.Add(this.tableLayoutPanel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(77, 5);
-            this.panel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(539, 171);
             this.panel4.TabIndex = 8;
@@ -574,7 +574,7 @@ namespace StudyManagementApp
             this.panel20.Location = new System.Drawing.Point(134, 0);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
-            this.panel20.Padding = new System.Windows.Forms.Padding(14, 14, 14, 14);
+            this.panel20.Padding = new System.Windows.Forms.Padding(14);
             this.panel20.Size = new System.Drawing.Size(269, 171);
             this.panel20.TabIndex = 9;
             // 
@@ -599,7 +599,7 @@ namespace StudyManagementApp
             this.panel18.Location = new System.Drawing.Point(72, 570);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
-            this.panel18.Padding = new System.Windows.Forms.Padding(46, 46, 46, 46);
+            this.panel18.Padding = new System.Windows.Forms.Padding(46);
             this.panel18.Size = new System.Drawing.Size(278, 156);
             this.panel18.TabIndex = 9;
             // 
@@ -615,7 +615,7 @@ namespace StudyManagementApp
             this.btnApply.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnApply.Location = new System.Drawing.Point(46, 46);
-            this.btnApply.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnApply.Margin = new System.Windows.Forms.Padding(5);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(186, 64);
             this.btnApply.TabIndex = 6;
@@ -630,7 +630,7 @@ namespace StudyManagementApp
             this.panel19.Location = new System.Drawing.Point(350, 570);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
-            this.panel19.Padding = new System.Windows.Forms.Padding(46, 46, 46, 46);
+            this.panel19.Padding = new System.Windows.Forms.Padding(46);
             this.panel19.Size = new System.Drawing.Size(271, 156);
             this.panel19.TabIndex = 10;
             // 
@@ -646,7 +646,7 @@ namespace StudyManagementApp
             this.btnReset.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.btnReset.Location = new System.Drawing.Point(46, 46);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(5);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(179, 64);
             this.btnReset.TabIndex = 4;

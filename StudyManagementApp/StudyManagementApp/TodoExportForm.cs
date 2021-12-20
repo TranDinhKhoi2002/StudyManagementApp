@@ -22,11 +22,10 @@ namespace StudyManagementApp
 
         private void TodoExportButton_Click(object sender, EventArgs e)
         {
-            
             if (TypesRadioButton.Checked == true)
             {
                 var lines = new List<string>();
-                string[] columnNames = Todolist_Form.TypeItem.Columns
+                string[] columnNames = WorkPlace.bang_AllTYPEITEM_TDL.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
@@ -34,21 +33,28 @@ namespace StudyManagementApp
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
 
-                var valueLines = Todolist_Form.TypeItem.AsEnumerable()
+                var valueLines = WorkPlace.bang_AllTYPEITEM_TDL.AsEnumerable()
                     .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
                 SaveFileDialog open = new SaveFileDialog();
                 open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
+
+                if (open.FileName == "")
+                    ExcelFilePath = "No name";
+
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                MessageBox.Show("Saved successfully.", "Congratulation!");
+                InformSuccess inform = new InformSuccess();
+                inform.Show();
+             
             }
            if (TasksRadioButtion.Checked == true)
             {
                 var lines = new List<string>();
-                string[] columnNames = Todolist_Form.Task.Columns
+                string[] columnNames = WorkPlace.bang_AllTASK_TDL.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
@@ -56,16 +62,23 @@ namespace StudyManagementApp
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
 
-                var valueLines = Todolist_Form.Task.AsEnumerable()
+                var valueLines = WorkPlace.bang_AllTASK_TDL.AsEnumerable()
                     .Select(row => string.Join(",", row.ItemArray.Select(val => $"\"{val}\"")));
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
+
                 SaveFileDialog open = new SaveFileDialog();
                 open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
+                if (open.FileName == "")
+                    ExcelFilePath = "No name";
+
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                MessageBox.Show("Saved successfully.", "Congratulation!");
+
+                InformSuccess inform = new InformSuccess();
+                inform.Show();
+             
             }    
             
         }

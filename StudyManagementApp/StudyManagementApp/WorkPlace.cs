@@ -902,6 +902,7 @@ namespace StudyManagementApp
         private void fileexport_iconButton_Click(object sender, EventArgs e)
         {
             Export export = new Export();
+
             export.Show();
         }
     }
