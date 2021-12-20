@@ -29,89 +29,69 @@ namespace StudyManagementApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.TodoExportButton = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbInstruction = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TypesRadioButton = new System.Windows.Forms.RadioButton();
             this.TasksRadioButtion = new System.Windows.Forms.RadioButton();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lbInstruction = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TodoExportButton = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TodoExportButton
+            // panel4
             // 
-            this.TodoExportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TodoExportButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(100)))));
-            this.TodoExportButton.BorderColor = System.Drawing.Color.SeaGreen;
-            this.TodoExportButton.BorderRadius = 18;
-            this.TodoExportButton.BorderSize = 0;
-            this.TodoExportButton.FlatAppearance.BorderSize = 0;
-            this.TodoExportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TodoExportButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TodoExportButton.ForeColor = System.Drawing.Color.Green;
-            this.TodoExportButton.Location = new System.Drawing.Point(68, 57);
-            this.TodoExportButton.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.TodoExportButton.Name = "TodoExportButton";
-            this.TodoExportButton.Size = new System.Drawing.Size(451, 56);
-            this.TodoExportButton.TabIndex = 15;
-            this.TodoExportButton.Text = "EXPORT TO-DO";
-            this.TodoExportButton.UseVisualStyleBackColor = false;
-            this.TodoExportButton.Click += new System.EventHandler(this.TodoExportButton_Click);
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.lbInstruction);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(10, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(0);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel4.Size = new System.Drawing.Size(460, 78);
+            this.panel4.TabIndex = 20;
             // 
-            // tableLayoutPanel1
+            // lbInstruction
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.00062F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 506);
-            this.tableLayoutPanel1.TabIndex = 16;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.TodoExportButton);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(10, 336);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(587, 170);
-            this.panel3.TabIndex = 19;
+            this.lbInstruction.BackColor = System.Drawing.Color.SeaGreen;
+            this.lbInstruction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbInstruction.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbInstruction.ForeColor = System.Drawing.Color.White;
+            this.lbInstruction.Location = new System.Drawing.Point(10, 0);
+            this.lbInstruction.Margin = new System.Windows.Forms.Padding(0);
+            this.lbInstruction.Name = "lbInstruction";
+            this.lbInstruction.Size = new System.Drawing.Size(440, 44);
+            this.lbInstruction.TabIndex = 10;
+            this.lbInstruction.Text = "CHOOSE WHAT TO EXPORT";
+            this.lbInstruction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.TypesRadioButton);
             this.panel2.Controls.Add(this.TasksRadioButtion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(10, 168);
+            this.panel2.Location = new System.Drawing.Point(10, 78);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(587, 168);
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.panel2.Size = new System.Drawing.Size(460, 195);
             this.panel2.TabIndex = 18;
             // 
             // TypesRadioButton
             // 
             this.TypesRadioButton.AutoSize = true;
-            this.TypesRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TypesRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TypesRadioButton.Location = new System.Drawing.Point(134, 22);
+            this.TypesRadioButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TypesRadioButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypesRadioButton.ForeColor = System.Drawing.Color.White;
+            this.TypesRadioButton.Location = new System.Drawing.Point(10, 45);
+            this.TypesRadioButton.Margin = new System.Windows.Forms.Padding(0);
             this.TypesRadioButton.Name = "TypesRadioButton";
-            this.TypesRadioButton.Size = new System.Drawing.Size(329, 36);
+            this.TypesRadioButton.Size = new System.Drawing.Size(440, 45);
             this.TypesRadioButton.TabIndex = 0;
             this.TypesRadioButton.TabStop = true;
             this.TypesRadioButton.Text = "ALL TYPES OF ITEMS";
@@ -120,69 +100,100 @@ namespace StudyManagementApp
             // TasksRadioButtion
             // 
             this.TasksRadioButtion.AutoSize = true;
-            this.TasksRadioButtion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TasksRadioButtion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.TasksRadioButtion.Location = new System.Drawing.Point(134, 101);
+            this.TasksRadioButtion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TasksRadioButtion.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TasksRadioButtion.ForeColor = System.Drawing.Color.White;
+            this.TasksRadioButtion.Location = new System.Drawing.Point(10, 0);
+            this.TasksRadioButtion.Margin = new System.Windows.Forms.Padding(0);
             this.TasksRadioButtion.Name = "TasksRadioButtion";
-            this.TasksRadioButtion.Size = new System.Drawing.Size(191, 36);
+            this.TasksRadioButtion.Size = new System.Drawing.Size(440, 45);
             this.TasksRadioButtion.TabIndex = 1;
             this.TasksRadioButtion.TabStop = true;
             this.TasksRadioButtion.Text = "ALL TASKS";
             this.TasksRadioButtion.UseVisualStyleBackColor = true;
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.Controls.Add(this.lbInstruction);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(10, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(587, 168);
-            this.panel4.TabIndex = 20;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.TodoExportButton);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(10, 273);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(460, 118);
+            this.panel3.TabIndex = 19;
             // 
-            // lbInstruction
+            // TodoExportButton
             // 
-            this.lbInstruction.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbInstruction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.lbInstruction.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbInstruction.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.lbInstruction.Location = new System.Drawing.Point(12, 57);
-            this.lbInstruction.Margin = new System.Windows.Forms.Padding(0);
-            this.lbInstruction.Name = "lbInstruction";
-            this.lbInstruction.Size = new System.Drawing.Size(563, 53);
-            this.lbInstruction.TabIndex = 10;
-            this.lbInstruction.Text = "CHOOSE WHAT TO EXPORT";
-            this.lbInstruction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TodoExportButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TodoExportButton.BackColor = System.Drawing.Color.SeaGreen;
+            this.TodoExportButton.BorderColor = System.Drawing.Color.SeaGreen;
+            this.TodoExportButton.BorderRadius = 18;
+            this.TodoExportButton.BorderSize = 0;
+            this.TodoExportButton.FlatAppearance.BorderSize = 0;
+            this.TodoExportButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TodoExportButton.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TodoExportButton.ForeColor = System.Drawing.Color.White;
+            this.TodoExportButton.Location = new System.Drawing.Point(131, 36);
+            this.TodoExportButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TodoExportButton.Name = "TodoExportButton";
+            this.TodoExportButton.Size = new System.Drawing.Size(198, 47);
+            this.TodoExportButton.TabIndex = 15;
+            this.TodoExportButton.Text = "EXPORT TO-DO";
+            this.TodoExportButton.UseVisualStyleBackColor = false;
+            this.TodoExportButton.Click += new System.EventHandler(this.TodoExportButton_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(480, 391);
+            this.tableLayoutPanel1.TabIndex = 16;
             // 
             // TodoExportForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(605, 506);
+            this.ClientSize = new System.Drawing.Size(480, 391);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TodoExportForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgetPasswordForm";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private UserControls.RoundedCornerButton TodoExportButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lbInstruction;
-        private System.Windows.Forms.RadioButton TasksRadioButtion;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton TypesRadioButton;
+        private System.Windows.Forms.RadioButton TasksRadioButtion;
+        private System.Windows.Forms.Panel panel3;
+        private UserControls.RoundedCornerButton TodoExportButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

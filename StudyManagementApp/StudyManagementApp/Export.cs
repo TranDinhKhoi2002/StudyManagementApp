@@ -26,10 +26,9 @@ namespace StudyManagementApp
         public Export()
         {
             InitializeComponent();
-            Flashcard = Color.FromArgb(192, 255, 192);
-            Todo = Color.FromArgb(150, 255, 100);
-            Note = Color.FromArgb(50, 200, 100);
-
+            Flashcard = Color.Teal;
+            Todo = Color.SeaGreen;
+            Note = Color.DarkGoldenrod;
         }
         public Export(string x)
         {
@@ -47,9 +46,6 @@ namespace StudyManagementApp
             {
                 state = State.Note;
             }
-            Flashcard = Color.FromArgb(192, 255, 192);
-            Todo = Color.FromArgb(150, 255, 100);
-            Note = Color.FromArgb(50,200,100);
         }
 
         private void Export_Load(object sender, EventArgs e)
@@ -91,36 +87,6 @@ namespace StudyManagementApp
                     break;
                 default:
                     break;
-            }
-           
-            LoadMau();
-        }
-
-
-        public new void Show()
-        {
-            LoadMau();
-            base.Show();
-        }
-
-        void HamDoiMau(Color x, Color y)
-        {
-            this.BackColor = x;
-            Title_panel.BackColor = y;
-            close_panel.BackColor = y;
-        }
-
-        void LoadMau()
-        {
-            if (Program.Theme == true)
-            {
-                HamDoiMau(Color.Gray, SacMau.trangvua);
-
-            }
-            else
-            {
-                HamDoiMau(SacMau.dennhat, SacMau.dendam);
-
             }
         }
 
