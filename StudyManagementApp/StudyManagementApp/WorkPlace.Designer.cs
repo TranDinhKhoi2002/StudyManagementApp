@@ -214,7 +214,6 @@ namespace StudyManagementApp
             this.chatbot_iconButton.Size = new System.Drawing.Size(80, 74);
             this.chatbot_iconButton.TabIndex = 5;
             this.chatbot_iconButton.UseVisualStyleBackColor = true;
-            this.chatbot_iconButton.Click += new System.EventHandler(this.chatbot_iconButton_Click);
             // 
             // feedback_iconButton
             // 

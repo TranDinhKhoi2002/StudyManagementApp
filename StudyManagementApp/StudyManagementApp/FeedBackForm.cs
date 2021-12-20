@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace StudyManagementApp
 {
-    public partial class FeedBackForm_FAKE : Form
+    public partial class FeedBackForm : Form
     {
-        public FeedBackForm_FAKE()
+        public FeedBackForm()
         {
             InitializeComponent(); 
             KhoiTaoEmoji();
@@ -249,7 +249,7 @@ namespace StudyManagementApp
                     }
                 };
 
-                MailAddress fromEmail = new MailAddress("trandinhkhoi102@gmail.com", "Khoi test email");
+                MailAddress fromEmail = new MailAddress("trandinhkhoi102@gmail.com", "STUDY MANAGEMENT APP");
                 MailAddress toEmailClient = new MailAddress(txbEmail.Text, "Someone");
                 MailAddress toEmailProducer = new MailAddress("trandinhkhoi102@gmail.com", "Feedback from user with email" + txbEmail.Text);
 
@@ -259,6 +259,7 @@ namespace StudyManagementApp
                     Subject = "THANKS FOR YOUR FEEDBACK",
                     Body = "Thank you for your valuable feedback, we will try to improve the product in the future"
                 };
+                messageThanks.Attachments.Add(new Attachment(Application.StartupPath + "\\Resources\\Image-email\\Thankyou.png"));
                 messageThanks.To.Add(toEmailClient);
 
                 MailMessage messageFeedback = new MailMessage()
@@ -280,7 +281,7 @@ namespace StudyManagementApp
                 txbSubject.Clear();
                 rtxbFeedback.Clear();
                 txbEmail.Focus();
-                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Cám ơn bạn nhé!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Thanks for your feedback!");
                 customMessageBox.ShowDialog();
             }
         }
@@ -289,7 +290,7 @@ namespace StudyManagementApp
         {
             if (e.Error != null)
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Điều gì đó đã xảy ra: " + e.Error.Message);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Something wrong: " + e.Error.Message);
                 customMessageBox.ShowDialog();
                 return;
             }

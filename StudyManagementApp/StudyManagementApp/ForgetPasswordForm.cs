@@ -86,7 +86,7 @@ namespace StudyManagementApp
             }
             else
             {
-                Email.SendEmail(txbEmail.Texts, out code);
+                Email.SendEmail(txbEmail.Texts, out code, Application.StartupPath + "\\Resources\\Image-email\\Verification.png");
                 lbInstruction.Text = "We just sent you an email. Verify now!";
                 username = txbUserName.Texts;
                 txbUserName.Texts = txbEmail.Texts = "";

@@ -873,11 +873,6 @@ namespace StudyManagementApp
         #endregion
 
         #region function góc phải
-        private void chatbot_iconButton_Click(object sender, EventArgs e)
-        {
-            ChatBotForm chatbot = new ChatBotForm();
-            chatbot.ShowDialog();
-        }
 
         private void morefunction_iconButton_Click(object sender, EventArgs e)
         {
@@ -892,7 +887,7 @@ namespace StudyManagementApp
         }
         private void feedback_iconButton_Click(object sender, EventArgs e)
         {
-            FeedBackForm_FAKE feedBackForm_FAKE = new FeedBackForm_FAKE();
+            FeedBackForm feedBackForm_FAKE = new FeedBackForm();
             feedBackForm_FAKE.ShowDialog();
         }
 

@@ -120,12 +120,6 @@
     <Compile Include="Account_Function.Designer.cs">
       <DependentUpon>Account_Function.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChatBotForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChatBotForm.Designer.cs">
-      <DependentUpon>ChatBotForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomMessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +143,11 @@
     <Compile Include="Export.Designer.cs">
       <DependentUpon>Export.cs</DependentUpon>
     </Compile>
-    <Compile Include="FeedBackForm_FAKE.cs">
+    <Compile Include="FeedBackForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FeedBackForm_FAKE.Designer.cs">
-      <DependentUpon>FeedBackForm_FAKE.cs</DependentUpon>
+    <Compile Include="FeedBackForm.Designer.cs">
+      <DependentUpon>FeedBackForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FlappyBirdForm.cs">
       <SubType>Form</SubType>
@@ -335,9 +329,6 @@
     <EmbeddedResource Include="Account_Function.resx">
       <DependentUpon>Account_Function.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChatBotForm.resx">
-      <DependentUpon>ChatBotForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -347,8 +338,8 @@
     <EmbeddedResource Include="Export.resx">
       <DependentUpon>Export.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FeedBackForm_FAKE.resx">
-      <DependentUpon>FeedBackForm_FAKE.cs</DependentUpon>
+    <EmbeddedResource Include="FeedBackForm.resx">
+      <DependentUpon>FeedBackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlappyBirdForm.resx">
       <DependentUpon>FlappyBirdForm.cs</DependentUpon>

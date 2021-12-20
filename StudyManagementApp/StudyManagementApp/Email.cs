@@ -49,7 +49,7 @@ namespace StudyManagementApp
             }
         }
 
-        public static void SendEmail(string _toEmail, out string code)
+        public static void SendEmail(string _toEmail, out string code, string attachmentFile = "")
         {
             SmtpClient client = new SmtpClient()
             {
@@ -74,8 +74,12 @@ namespace StudyManagementApp
             {
                 From = fromEmail,
                 Subject = "VERIFY YOUR ACCOUNT",
-                Body = "Your verification code is: " + code
+                Body = "Your verification code is: " + code + "\nThanks for using our application. Have a nice day!!!"
             };
+            if (attachmentFile != "")
+            {
+                message.Attachments.Add(new Attachment(attachmentFile));
+            }
             message.To.Add(toEmail);
 
             client.SendCompleted += Client_SendCompleted; ;
@@ -86,7 +90,7 @@ namespace StudyManagementApp
         {
             if (e.Error != null)
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("App nhắc nhở", "Điều gì đó đã xảy ra: " + e.Error.Message);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Something wrong: " + e.Error.Message);
                 customMessageBox.ShowDialog();
                 return;
             }
