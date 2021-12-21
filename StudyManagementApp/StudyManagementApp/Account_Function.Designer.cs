@@ -91,7 +91,7 @@ namespace StudyManagementApp
             this.close_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_iconButton.ForeColor = System.Drawing.Color.Black;
             this.close_iconButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.close_iconButton.IconColor = System.Drawing.Color.Gray;
+            this.close_iconButton.IconColor = System.Drawing.Color.DimGray;
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 40;
             this.close_iconButton.Location = new System.Drawing.Point(430, 0);
@@ -209,7 +209,7 @@ namespace StudyManagementApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.tableLayoutPanel2.SetColumnSpan(this.panel1, 3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -220,7 +220,7 @@ namespace StudyManagementApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.tableLayoutPanel2.SetColumnSpan(this.panel2, 3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 590);
@@ -231,7 +231,7 @@ namespace StudyManagementApp
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.BackColor = System.Drawing.Color.DimGray;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 10);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
@@ -241,7 +241,7 @@ namespace StudyManagementApp
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.Black;
+            this.panel5.BackColor = System.Drawing.Color.DimGray;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(602, 10);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);

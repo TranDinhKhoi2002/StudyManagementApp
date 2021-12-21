@@ -48,7 +48,7 @@ namespace StudyManagementApp
 
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
                 InformSuccess inform = new InformSuccess();
-                inform.Show();
+                inform.ShowDialog();
              
             }
            if (TasksRadioButtion.Checked == true)
@@ -77,7 +77,7 @@ namespace StudyManagementApp
                 File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
 
                 InformSuccess inform = new InformSuccess();
-                inform.Show();
+                inform.ShowDialog();
              
             }    
             

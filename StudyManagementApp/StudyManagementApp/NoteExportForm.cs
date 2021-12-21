@@ -50,7 +50,7 @@ namespace StudyManagementApp
                 ExcelFilePath = "No name";
             File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
             InformSuccess inform = new InformSuccess();
-            inform.Show();
+            inform.ShowDialog();
           
         }
     }

@@ -120,7 +120,7 @@ namespace StudyManagementApp.TodolistFolder
             this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.iconButton1.IconSize = 35;
             this.iconButton1.Location = new System.Drawing.Point(0, 12);
@@ -186,7 +186,7 @@ namespace StudyManagementApp.TodolistFolder
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
             this.label1.Location = new System.Drawing.Point(40, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
@@ -222,7 +222,7 @@ namespace StudyManagementApp.TodolistFolder
             this.close_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_iconButton.ForeColor = System.Drawing.Color.Black;
             this.close_iconButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.close_iconButton.IconColor = System.Drawing.Color.White;
+            this.close_iconButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 40;
             this.close_iconButton.Location = new System.Drawing.Point(0, 0);

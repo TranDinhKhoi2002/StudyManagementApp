@@ -83,7 +83,7 @@ namespace StudyManagementApp
             // 
             this.Title_label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Title_label.Font = new System.Drawing.Font("Arial", 13.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title_label.ForeColor = System.Drawing.Color.DimGray;
+            this.Title_label.ForeColor = System.Drawing.Color.IndianRed;
             this.Title_label.Location = new System.Drawing.Point(0, 0);
             this.Title_label.Margin = new System.Windows.Forms.Padding(0);
             this.Title_label.Name = "Title_label";
@@ -100,7 +100,7 @@ namespace StudyManagementApp
             this.close_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_iconButton.ForeColor = System.Drawing.Color.Black;
             this.close_iconButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.close_iconButton.IconColor = System.Drawing.Color.DimGray;
+            this.close_iconButton.IconColor = System.Drawing.Color.IndianRed;
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 40;
             this.close_iconButton.Location = new System.Drawing.Point(341, 0);

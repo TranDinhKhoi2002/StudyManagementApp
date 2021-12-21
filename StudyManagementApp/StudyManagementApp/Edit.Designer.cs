@@ -45,36 +45,36 @@ namespace StudyManagementApp
             this.passwork_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.Apply_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CurrentPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
             this.mode_panel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.no_startup_iconButton = new FontAwesome.Sharp.IconButton();
             this.yes_startup_iconButton = new FontAwesome.Sharp.IconButton();
+            this.startup_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.Logout_button = new StudyManagementApp.UserControls.RoundedCornerButton();
+            this.mode_apply_btn = new StudyManagementApp.UserControls.RoundedCornerButton();
             this.panel18 = new System.Windows.Forms.Panel();
             this.no_background_running_iconButton = new FontAwesome.Sharp.IconButton();
             this.yes_background_running_iconButton = new FontAwesome.Sharp.IconButton();
+            this.background_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.darktheme_iconButton = new FontAwesome.Sharp.IconButton();
             this.lighttheme_iconButton = new FontAwesome.Sharp.IconButton();
+            this.theme_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
             this.panel15 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.Apply_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.ReNewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.NewPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.CurrentPassword_textbox = new StudyManagementApp.UserControls.RoundedCornerTextBox();
-            this.startup_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
-            this.Logout_button = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.mode_apply_btn = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.background_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
-            this.theme_toggleButton = new StudyManagementApp.UserControls.ToggleButton();
             this.tableLayoutPanel4.SuspendLayout();
             this.close_panel.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -153,7 +153,7 @@ namespace StudyManagementApp
             this.close_iconButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_iconButton.ForeColor = System.Drawing.Color.Black;
             this.close_iconButton.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.close_iconButton.IconColor = System.Drawing.Color.White;
+            this.close_iconButton.IconColor = System.Drawing.Color.Black;
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 40;
             this.close_iconButton.Location = new System.Drawing.Point(440, 0);
@@ -323,6 +323,26 @@ namespace StudyManagementApp
             this.panel4.Size = new System.Drawing.Size(419, 94);
             this.panel4.TabIndex = 29;
             // 
+            // Apply_Button
+            // 
+            this.Apply_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Apply_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.Apply_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Apply_Button.BorderRadius = 14;
+            this.Apply_Button.BorderSize = 0;
+            this.Apply_Button.FlatAppearance.BorderSize = 0;
+            this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Apply_Button.Location = new System.Drawing.Point(134, 21);
+            this.Apply_Button.Margin = new System.Windows.Forms.Padding(25);
+            this.Apply_Button.Name = "Apply_Button";
+            this.Apply_Button.Size = new System.Drawing.Size(132, 53);
+            this.Apply_Button.TabIndex = 12;
+            this.Apply_Button.Text = "Apply";
+            this.Apply_Button.UseVisualStyleBackColor = false;
+            this.Apply_Button.Click += new System.EventHandler(this.SignUpButton_Click);
+            // 
             // panel3
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
@@ -333,6 +353,32 @@ namespace StudyManagementApp
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(419, 91);
             this.panel3.TabIndex = 28;
+            // 
+            // ReNewPassword_textbox
+            // 
+            this.ReNewPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ReNewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.ReNewPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
+            this.ReNewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ReNewPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
+            this.ReNewPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.ReNewPassword_textbox.BorderRadius = 10;
+            this.ReNewPassword_textbox.BorderSize = 2;
+            this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReNewPassword_textbox.ForeColor = System.Drawing.Color.Black;
+            this.ReNewPassword_textbox.Location = new System.Drawing.Point(0, 18);
+            this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
+            this.ReNewPassword_textbox.Multiline = false;
+            this.ReNewPassword_textbox.Name = "ReNewPassword_textbox";
+            this.ReNewPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.ReNewPassword_textbox.PasswordChar = true;
+            this.ReNewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.ReNewPassword_textbox.PlaceholderText = "Re-New Password";
+            this.ReNewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ReNewPassword_textbox.Size = new System.Drawing.Size(419, 55);
+            this.ReNewPassword_textbox.TabIndex = 2;
+            this.ReNewPassword_textbox.Texts = "";
+            this.ReNewPassword_textbox.UnderlinedStyle = false;
             // 
             // panel2
             // 
@@ -345,6 +391,32 @@ namespace StudyManagementApp
             this.panel2.Size = new System.Drawing.Size(419, 91);
             this.panel2.TabIndex = 27;
             // 
+            // NewPassword_textbox
+            // 
+            this.NewPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.NewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.NewPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
+            this.NewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.NewPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
+            this.NewPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.NewPassword_textbox.BorderRadius = 10;
+            this.NewPassword_textbox.BorderSize = 2;
+            this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPassword_textbox.ForeColor = System.Drawing.Color.Black;
+            this.NewPassword_textbox.Location = new System.Drawing.Point(0, 18);
+            this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
+            this.NewPassword_textbox.Multiline = false;
+            this.NewPassword_textbox.Name = "NewPassword_textbox";
+            this.NewPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.NewPassword_textbox.PasswordChar = true;
+            this.NewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.NewPassword_textbox.PlaceholderText = "New Password";
+            this.NewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.NewPassword_textbox.Size = new System.Drawing.Size(419, 55);
+            this.NewPassword_textbox.TabIndex = 2;
+            this.NewPassword_textbox.Texts = "";
+            this.NewPassword_textbox.UnderlinedStyle = false;
+            // 
             // panel1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
@@ -355,6 +427,32 @@ namespace StudyManagementApp
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(419, 91);
             this.panel1.TabIndex = 26;
+            // 
+            // CurrentPassword_textbox
+            // 
+            this.CurrentPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrentPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.CurrentPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
+            this.CurrentPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CurrentPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
+            this.CurrentPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
+            this.CurrentPassword_textbox.BorderRadius = 10;
+            this.CurrentPassword_textbox.BorderSize = 2;
+            this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CurrentPassword_textbox.ForeColor = System.Drawing.Color.Black;
+            this.CurrentPassword_textbox.Location = new System.Drawing.Point(0, 18);
+            this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
+            this.CurrentPassword_textbox.Multiline = false;
+            this.CurrentPassword_textbox.Name = "CurrentPassword_textbox";
+            this.CurrentPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
+            this.CurrentPassword_textbox.PasswordChar = true;
+            this.CurrentPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
+            this.CurrentPassword_textbox.PlaceholderText = "Your Password";
+            this.CurrentPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CurrentPassword_textbox.Size = new System.Drawing.Size(419, 55);
+            this.CurrentPassword_textbox.TabIndex = 2;
+            this.CurrentPassword_textbox.Texts = "";
+            this.CurrentPassword_textbox.UnderlinedStyle = false;
             // 
             // mode_panel
             // 
@@ -434,6 +532,22 @@ namespace StudyManagementApp
             this.yes_startup_iconButton.TabIndex = 22;
             this.yes_startup_iconButton.UseVisualStyleBackColor = true;
             // 
+            // startup_toggleButton
+            // 
+            this.startup_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.startup_toggleButton.Location = new System.Drawing.Point(85, 6);
+            this.startup_toggleButton.Margin = new System.Windows.Forms.Padding(4);
+            this.startup_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
+            this.startup_toggleButton.Name = "startup_toggleButton";
+            this.startup_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.startup_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.startup_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.startup_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.startup_toggleButton.Size = new System.Drawing.Size(109, 42);
+            this.startup_toggleButton.TabIndex = 12;
+            this.startup_toggleButton.UseVisualStyleBackColor = true;
+            this.startup_toggleButton.CheckedChanged += new System.EventHandler(this.startup_toggleButton_CheckedChanged);
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label1);
@@ -468,6 +582,46 @@ namespace StudyManagementApp
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(419, 65);
             this.panel19.TabIndex = 25;
+            // 
+            // Logout_button
+            // 
+            this.Logout_button.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
+            this.Logout_button.BorderColor = System.Drawing.Color.Transparent;
+            this.Logout_button.BorderRadius = 14;
+            this.Logout_button.BorderSize = 0;
+            this.Logout_button.FlatAppearance.BorderSize = 0;
+            this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logout_button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Logout_button.Location = new System.Drawing.Point(220, 15);
+            this.Logout_button.Margin = new System.Windows.Forms.Padding(25);
+            this.Logout_button.Name = "Logout_button";
+            this.Logout_button.Size = new System.Drawing.Size(132, 53);
+            this.Logout_button.TabIndex = 15;
+            this.Logout_button.Text = "Log out";
+            this.Logout_button.UseVisualStyleBackColor = false;
+            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
+            // 
+            // mode_apply_btn
+            // 
+            this.mode_apply_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mode_apply_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
+            this.mode_apply_btn.BorderColor = System.Drawing.Color.Transparent;
+            this.mode_apply_btn.BorderRadius = 14;
+            this.mode_apply_btn.BorderSize = 0;
+            this.mode_apply_btn.FlatAppearance.BorderSize = 0;
+            this.mode_apply_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mode_apply_btn.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mode_apply_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.mode_apply_btn.Location = new System.Drawing.Point(66, 15);
+            this.mode_apply_btn.Margin = new System.Windows.Forms.Padding(25);
+            this.mode_apply_btn.Name = "mode_apply_btn";
+            this.mode_apply_btn.Size = new System.Drawing.Size(132, 53);
+            this.mode_apply_btn.TabIndex = 13;
+            this.mode_apply_btn.Text = "Apply";
+            this.mode_apply_btn.UseVisualStyleBackColor = false;
+            this.mode_apply_btn.Click += new System.EventHandler(this.mode_apply_btn_Click);
             // 
             // panel18
             // 
@@ -512,6 +666,22 @@ namespace StudyManagementApp
             this.yes_background_running_iconButton.Size = new System.Drawing.Size(60, 51);
             this.yes_background_running_iconButton.TabIndex = 22;
             this.yes_background_running_iconButton.UseVisualStyleBackColor = true;
+            // 
+            // background_toggleButton
+            // 
+            this.background_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.background_toggleButton.Location = new System.Drawing.Point(86, 6);
+            this.background_toggleButton.Margin = new System.Windows.Forms.Padding(4);
+            this.background_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
+            this.background_toggleButton.Name = "background_toggleButton";
+            this.background_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.background_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.background_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.background_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.background_toggleButton.Size = new System.Drawing.Size(109, 42);
+            this.background_toggleButton.TabIndex = 11;
+            this.background_toggleButton.UseVisualStyleBackColor = true;
+            this.background_toggleButton.CheckedChanged += new System.EventHandler(this.background_toggleButton_CheckedChanged);
             // 
             // panel17
             // 
@@ -580,6 +750,22 @@ namespace StudyManagementApp
             this.lighttheme_iconButton.TabIndex = 20;
             this.lighttheme_iconButton.UseVisualStyleBackColor = true;
             // 
+            // theme_toggleButton
+            // 
+            this.theme_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.theme_toggleButton.Location = new System.Drawing.Point(86, 0);
+            this.theme_toggleButton.Margin = new System.Windows.Forms.Padding(4);
+            this.theme_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
+            this.theme_toggleButton.Name = "theme_toggleButton";
+            this.theme_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.theme_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.theme_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
+            this.theme_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.theme_toggleButton.Size = new System.Drawing.Size(109, 42);
+            this.theme_toggleButton.TabIndex = 10;
+            this.theme_toggleButton.UseVisualStyleBackColor = true;
+            this.theme_toggleButton.CheckedChanged += new System.EventHandler(this.theme_toggleButton_CheckedChanged);
+            // 
             // panel15
             // 
             this.panel15.Controls.Add(this.label2);
@@ -608,192 +794,6 @@ namespace StudyManagementApp
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(625, 509);
             this.tableLayoutPanel2.TabIndex = 17;
-            // 
-            // Apply_Button
-            // 
-            this.Apply_Button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Apply_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.Apply_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Apply_Button.BorderRadius = 14;
-            this.Apply_Button.BorderSize = 0;
-            this.Apply_Button.FlatAppearance.BorderSize = 0;
-            this.Apply_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Apply_Button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Apply_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Apply_Button.Location = new System.Drawing.Point(134, 21);
-            this.Apply_Button.Margin = new System.Windows.Forms.Padding(25);
-            this.Apply_Button.Name = "Apply_Button";
-            this.Apply_Button.Size = new System.Drawing.Size(132, 53);
-            this.Apply_Button.TabIndex = 12;
-            this.Apply_Button.Text = "Apply";
-            this.Apply_Button.UseVisualStyleBackColor = false;
-            this.Apply_Button.Click += new System.EventHandler(this.SignUpButton_Click);
-            // 
-            // ReNewPassword_textbox
-            // 
-            this.ReNewPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReNewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ReNewPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
-            this.ReNewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ReNewPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
-            this.ReNewPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.ReNewPassword_textbox.BorderRadius = 10;
-            this.ReNewPassword_textbox.BorderSize = 2;
-            this.ReNewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReNewPassword_textbox.ForeColor = System.Drawing.Color.Black;
-            this.ReNewPassword_textbox.Location = new System.Drawing.Point(0, 18);
-            this.ReNewPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.ReNewPassword_textbox.Multiline = false;
-            this.ReNewPassword_textbox.Name = "ReNewPassword_textbox";
-            this.ReNewPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.ReNewPassword_textbox.PasswordChar = true;
-            this.ReNewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
-            this.ReNewPassword_textbox.PlaceholderText = "Re-New Password";
-            this.ReNewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ReNewPassword_textbox.Size = new System.Drawing.Size(419, 55);
-            this.ReNewPassword_textbox.TabIndex = 2;
-            this.ReNewPassword_textbox.Texts = "";
-            this.ReNewPassword_textbox.UnderlinedStyle = false;
-            // 
-            // NewPassword_textbox
-            // 
-            this.NewPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.NewPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.NewPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
-            this.NewPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.NewPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
-            this.NewPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.NewPassword_textbox.BorderRadius = 10;
-            this.NewPassword_textbox.BorderSize = 2;
-            this.NewPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NewPassword_textbox.ForeColor = System.Drawing.Color.Black;
-            this.NewPassword_textbox.Location = new System.Drawing.Point(0, 18);
-            this.NewPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.NewPassword_textbox.Multiline = false;
-            this.NewPassword_textbox.Name = "NewPassword_textbox";
-            this.NewPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.NewPassword_textbox.PasswordChar = true;
-            this.NewPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
-            this.NewPassword_textbox.PlaceholderText = "New Password";
-            this.NewPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NewPassword_textbox.Size = new System.Drawing.Size(419, 55);
-            this.NewPassword_textbox.TabIndex = 2;
-            this.NewPassword_textbox.Texts = "";
-            this.NewPassword_textbox.UnderlinedStyle = false;
-            // 
-            // CurrentPassword_textbox
-            // 
-            this.CurrentPassword_textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.CurrentPassword_textbox.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.CurrentPassword_textbox.BackColor = System.Drawing.Color.DarkGray;
-            this.CurrentPassword_textbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CurrentPassword_textbox.BorderColor = System.Drawing.Color.Transparent;
-            this.CurrentPassword_textbox.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.CurrentPassword_textbox.BorderRadius = 10;
-            this.CurrentPassword_textbox.BorderSize = 2;
-            this.CurrentPassword_textbox.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentPassword_textbox.ForeColor = System.Drawing.Color.Black;
-            this.CurrentPassword_textbox.Location = new System.Drawing.Point(0, 18);
-            this.CurrentPassword_textbox.Margin = new System.Windows.Forms.Padding(0);
-            this.CurrentPassword_textbox.Multiline = false;
-            this.CurrentPassword_textbox.Name = "CurrentPassword_textbox";
-            this.CurrentPassword_textbox.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
-            this.CurrentPassword_textbox.PasswordChar = true;
-            this.CurrentPassword_textbox.PlaceholderColor = System.Drawing.Color.Gray;
-            this.CurrentPassword_textbox.PlaceholderText = "Your Password";
-            this.CurrentPassword_textbox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CurrentPassword_textbox.Size = new System.Drawing.Size(419, 55);
-            this.CurrentPassword_textbox.TabIndex = 2;
-            this.CurrentPassword_textbox.Texts = "";
-            this.CurrentPassword_textbox.UnderlinedStyle = false;
-            // 
-            // startup_toggleButton
-            // 
-            this.startup_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.startup_toggleButton.Location = new System.Drawing.Point(85, 6);
-            this.startup_toggleButton.Margin = new System.Windows.Forms.Padding(4);
-            this.startup_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
-            this.startup_toggleButton.Name = "startup_toggleButton";
-            this.startup_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.startup_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.startup_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.startup_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.startup_toggleButton.Size = new System.Drawing.Size(109, 42);
-            this.startup_toggleButton.TabIndex = 12;
-            this.startup_toggleButton.UseVisualStyleBackColor = true;
-            this.startup_toggleButton.CheckedChanged += new System.EventHandler(this.startup_toggleButton_CheckedChanged);
-            // 
-            // Logout_button
-            // 
-            this.Logout_button.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Logout_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(73)))), ((int)(((byte)(18)))));
-            this.Logout_button.BorderColor = System.Drawing.Color.Transparent;
-            this.Logout_button.BorderRadius = 14;
-            this.Logout_button.BorderSize = 0;
-            this.Logout_button.FlatAppearance.BorderSize = 0;
-            this.Logout_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Logout_button.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logout_button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Logout_button.Location = new System.Drawing.Point(220, 15);
-            this.Logout_button.Margin = new System.Windows.Forms.Padding(25);
-            this.Logout_button.Name = "Logout_button";
-            this.Logout_button.Size = new System.Drawing.Size(132, 53);
-            this.Logout_button.TabIndex = 15;
-            this.Logout_button.Text = "Log out";
-            this.Logout_button.UseVisualStyleBackColor = false;
-            this.Logout_button.Click += new System.EventHandler(this.Logout_button_Click);
-            // 
-            // mode_apply_btn
-            // 
-            this.mode_apply_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mode_apply_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(143)))), ((int)(((byte)(105)))));
-            this.mode_apply_btn.BorderColor = System.Drawing.Color.Transparent;
-            this.mode_apply_btn.BorderRadius = 14;
-            this.mode_apply_btn.BorderSize = 0;
-            this.mode_apply_btn.FlatAppearance.BorderSize = 0;
-            this.mode_apply_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mode_apply_btn.Font = new System.Drawing.Font("Agency FB", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mode_apply_btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.mode_apply_btn.Location = new System.Drawing.Point(66, 15);
-            this.mode_apply_btn.Margin = new System.Windows.Forms.Padding(25);
-            this.mode_apply_btn.Name = "mode_apply_btn";
-            this.mode_apply_btn.Size = new System.Drawing.Size(132, 53);
-            this.mode_apply_btn.TabIndex = 13;
-            this.mode_apply_btn.Text = "Apply";
-            this.mode_apply_btn.UseVisualStyleBackColor = false;
-            this.mode_apply_btn.Click += new System.EventHandler(this.mode_apply_btn_Click);
-            // 
-            // background_toggleButton
-            // 
-            this.background_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.background_toggleButton.Location = new System.Drawing.Point(86, 6);
-            this.background_toggleButton.Margin = new System.Windows.Forms.Padding(4);
-            this.background_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
-            this.background_toggleButton.Name = "background_toggleButton";
-            this.background_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.background_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.background_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.background_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.background_toggleButton.Size = new System.Drawing.Size(109, 42);
-            this.background_toggleButton.TabIndex = 11;
-            this.background_toggleButton.UseVisualStyleBackColor = true;
-            this.background_toggleButton.CheckedChanged += new System.EventHandler(this.background_toggleButton_CheckedChanged);
-            // 
-            // theme_toggleButton
-            // 
-            this.theme_toggleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.theme_toggleButton.Location = new System.Drawing.Point(86, 0);
-            this.theme_toggleButton.Margin = new System.Windows.Forms.Padding(4);
-            this.theme_toggleButton.MinimumSize = new System.Drawing.Size(56, 28);
-            this.theme_toggleButton.Name = "theme_toggleButton";
-            this.theme_toggleButton.OffBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.theme_toggleButton.OffToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.theme_toggleButton.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(60)))), ((int)(((byte)(63)))));
-            this.theme_toggleButton.OnToggleColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.theme_toggleButton.Size = new System.Drawing.Size(109, 42);
-            this.theme_toggleButton.TabIndex = 10;
-            this.theme_toggleButton.UseVisualStyleBackColor = true;
-            this.theme_toggleButton.CheckedChanged += new System.EventHandler(this.theme_toggleButton_CheckedChanged);
             // 
             // Edit
             // 

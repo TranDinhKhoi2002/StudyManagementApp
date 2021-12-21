@@ -233,44 +233,48 @@ namespace StudyManagementApp.TodolistFolder
         }
         private void sort_timedeadline_iconButton_Click(object sender, EventArgs e)
         {
-            timedeadline_asc = !timedeadline_asc;
-            ChuaItem_Panel.Controls.Clear();
-            mangItemTheoDate.Reverse();
-            mangFormTheoDate.Reverse();
-            for (int i = 0; i < mangFormTheoDate.Count; i++)
+            if (ChuaItem_Panel.Controls.Count>0)
             {
-                if (Filter_display_Task != DisplayState.all)
+                timedeadline_asc = !timedeadline_asc;
+                ChuaItem_Panel.Controls.Clear();
+                mangItemTheoDate.Reverse();
+                mangFormTheoDate.Reverse();
+                for (int i = 0; i < mangFormTheoDate.Count; i++)
                 {
-                    if (Filter_display_Task == DisplayState.check_ed)
+                    if (Filter_display_Task != DisplayState.all)
                     {
-                        if (mangItemTheoDate[i].done == true)
+                        if (Filter_display_Task == DisplayState.check_ed)
                         {
-                            mangFormTheoDate[i].TopLevel = false;
-                            mangFormTheoDate[i].Dock = DockStyle.Top;
-                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
-                            mangFormTheoDate[i].Show();
+                            if (mangItemTheoDate[i].done == true)
+                            {
+                                mangFormTheoDate[i].TopLevel = false;
+                                mangFormTheoDate[i].Dock = DockStyle.Top;
+                                ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                mangFormTheoDate[i].Show();
+                            }
+                        }
+                        if (Filter_display_Task == DisplayState.uncheck_ed)
+                        {
+                            if (mangItemTheoDate[i].done == false)
+                            {
+                                mangFormTheoDate[i].TopLevel = false;
+                                mangFormTheoDate[i].Dock = DockStyle.Top;
+                                ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                                mangFormTheoDate[i].Show();
+                            }
                         }
                     }
-                    if (Filter_display_Task == DisplayState.uncheck_ed)
+                    else
                     {
-                        if (mangItemTheoDate[i].done == false)
-                        {
-                            mangFormTheoDate[i].TopLevel = false;
-                            mangFormTheoDate[i].Dock = DockStyle.Top;
-                            ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
-                            mangFormTheoDate[i].Show();
-                        }
+                        mangFormTheoDate[i].TopLevel = false;
+                        mangFormTheoDate[i].Dock = DockStyle.Top;
+                        ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
+                        mangFormTheoDate[i].Show();
                     }
-                }
-                else
-                {
-                    mangFormTheoDate[i].TopLevel = false;
-                    mangFormTheoDate[i].Dock = DockStyle.Top;
-                    ChuaItem_Panel.Controls.Add(mangFormTheoDate[i]);
-                    mangFormTheoDate[i].Show();
-                }
 
+                }
             }
+            
         }
         private void filter_iconButton_Click(object sender, EventArgs e)
         {
