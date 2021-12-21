@@ -225,12 +225,12 @@ namespace StudyManagementApp
         {
             if (txbEmail.Text == "" || txbSubject.Text == "" || rtxbFeedback.Text == "")
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Email, Subject, FeedBack không được để trống nhé!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Email, Subject, Feedback can't be blank!");
                 customMessageBox.ShowDialog();
             }
             else if (!Email.IsValidEmail(txbEmail.Text))
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Feedback nhắc nhở", "Có vẻ Email chưa đúng!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Email is invalid!");
                 customMessageBox.ShowDialog();
             }
             else

@@ -119,7 +119,7 @@ namespace StudyManagementApp.TodolistFolder
             {
                 if (string.IsNullOrEmpty(taskname_textBox.Text))
                 {
-                    CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Task name không được để trống!");
+                    CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Task name can't be blank!");
                     customMessageBox.ShowDialog();
                     taskname_textBox.Focus();
                     return;
@@ -127,7 +127,7 @@ namespace StudyManagementApp.TodolistFolder
 
                 if (string.IsNullOrEmpty(type_combobox.Text))
                 {
-                    CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Type không được để trống!");
+                    CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Type can't be blank!");
                     customMessageBox.ShowDialog();
                     return;
                 }
@@ -149,7 +149,7 @@ namespace StudyManagementApp.TodolistFolder
                 {
                     if (type_combobox.SelectedIndex!=index)
                     {
-                        CustomMessageBox customMessageBox = new CustomMessageBox("Todo nhắc nhở", "Type không hợp lệ!");
+                        CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Type is invalid!");
                         customMessageBox.ShowDialog();
                         type_combobox.Text = "";
                         type_combobox.Focus();

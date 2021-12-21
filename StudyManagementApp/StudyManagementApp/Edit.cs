@@ -38,7 +38,7 @@ namespace StudyManagementApp
                 ReNewPassword_textbox.Texts.Equals("")
                 )
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Hãy điền đầy đủ thông tin nhé!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Please fill all the blanks!");
                 customMessageBox.ShowDialog();
                 return;
             }
@@ -46,7 +46,7 @@ namespace StudyManagementApp
             //Kiểm tra thông tin nhập
             if (!CurrentPassword_textbox.Texts.Equals(UserInfo.Instance.Password))
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Mật khẩu chưa đúng!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Password is incorrect!");
                 customMessageBox.ShowDialog();
                 CurrentPassword_textbox.Texts = "";
                 CurrentPassword_textbox.Focus();
@@ -54,7 +54,7 @@ namespace StudyManagementApp
             }
             else if (!NewPassword_textbox.Texts.Equals(ReNewPassword_textbox.Texts))
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("Sign up nhắc nhở", "Mật khẩu mới chưa khớp!");
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "New password is invalid!");
                 customMessageBox.ShowDialog();
                 ReNewPassword_textbox.Texts = "";
                 ReNewPassword_textbox.Focus();
@@ -66,7 +66,7 @@ namespace StudyManagementApp
                 ReNewPassword_textbox.Texts
                 );
 
-            CustomMessageBox customMessageBox1 = new CustomMessageBox("Sign up nhắc nhở", "Đổi mật khẩu thành công!");
+            CustomMessageBox customMessageBox1 = new CustomMessageBox("Notification", "Changed password successfully!");
             customMessageBox1.ShowDialog();
             this.Close();
         }

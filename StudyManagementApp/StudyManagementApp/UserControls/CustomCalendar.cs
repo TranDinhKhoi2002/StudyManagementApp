@@ -32,9 +32,6 @@ namespace StudyManagementApp.UserControls
         {
             InitializeComponent();
             KhoiTaoCacList();
-            
-            // Mỗi khi lịch được load lên thì đồng hồ bắt đầu đếm để nhắc lịch với chu kì 1 tuần
-            timerEmail.Start();
         }
 
         #region Đổi theme
@@ -441,52 +438,11 @@ namespace StudyManagementApp.UserControls
             LoadColorDate();
         }
 
-        private void TimerEmail_Tick(object sender, EventArgs e)
-        {
-            for (int i = 0; i < row; i++)
-            {
-                for (int j = 0; j < col; j++)
-                {
-                    if (arrButton[i][j].BackColor == Choosing)
-                    {
-                        SmtpClient client = new SmtpClient()
-                        {
-                            Host = "smtp.gmail.com",
-                            Port = 587,
-                            EnableSsl = true,
-                            DeliveryMethod = SmtpDeliveryMethod.Network,
-                            UseDefaultCredentials = false,
-                            Credentials = new NetworkCredential()
-                            {
-                                UserName = "trandinhkhoi102@gmail.com",
-                                Password = "fjbkcbthlqcrdrtu"
-                            }
-                        };
-
-                        MailAddress fromEmail = new MailAddress("trandinhkhoi102@gmail.com", "Khoi test email");
-                        MailAddress toEmail = new MailAddress("20520224@gm.uit.edu.vn", "Someone");
-
-                        MailMessage message = new MailMessage()
-                        {
-                            From = fromEmail,
-                            Subject = "REMIND YOUR WORK",
-                            Body = "You have some tasks to complete during the week, always keep an eye on the progress"
-                        };
-                        message.To.Add(toEmail);
-
-                        client.SendCompleted += Client_SendCompleted; ;
-                        client.SendMailAsync(message);
-                        return;
-                    }
-                }
-            }
-        }
-
         private static void Client_SendCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
             if (e.Error != null)
             {
-                CustomMessageBox customMessageBox = new CustomMessageBox("App nhắc nhở", "Điều gì đó đã xảy ra: \n" + e.Error.Message);
+                CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Something wrong: \n" + e.Error.Message);
                 customMessageBox.ShowDialog();
                 return;
             }

@@ -29,7 +29,6 @@ namespace StudyManagementApp.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Saturday_Panel = new System.Windows.Forms.Panel();
@@ -56,7 +55,6 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker = new StudyManagementApp.UserControls.CustomDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Today_Button = new StudyManagementApp.UserControls.RoundedCornerButton();
-            this.timerEmail = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.Saturday_Panel.SuspendLayout();
@@ -103,7 +101,7 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.34816F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.34816F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.607354F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(890, 504);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(712, 403);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -126,7 +124,7 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel2.Controls.Add(this.Tuesday_Panel, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.MainDate_TablePanel, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(18, 78);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(14, 63);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 7;
@@ -138,18 +136,18 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(847, 399);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(679, 315);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // Saturday_Panel
             // 
             this.Saturday_Panel.Controls.Add(this.Saturday);
             this.Saturday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Saturday_Panel.Location = new System.Drawing.Point(720, 0);
+            this.Saturday_Panel.Location = new System.Drawing.Point(576, 0);
             this.Saturday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Saturday_Panel.Name = "Saturday_Panel";
-            this.Saturday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Saturday_Panel.Size = new System.Drawing.Size(127, 56);
+            this.Saturday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Saturday_Panel.Size = new System.Drawing.Size(103, 44);
             this.Saturday_Panel.TabIndex = 7;
             // 
             // Saturday
@@ -164,10 +162,10 @@ namespace StudyManagementApp.UserControls
             this.Saturday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Saturday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Saturday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Saturday.Location = new System.Drawing.Point(2, 6);
+            this.Saturday.Location = new System.Drawing.Point(2, 5);
             this.Saturday.Margin = new System.Windows.Forms.Padding(0);
             this.Saturday.Name = "Saturday";
-            this.Saturday.Size = new System.Drawing.Size(123, 44);
+            this.Saturday.Size = new System.Drawing.Size(99, 34);
             this.Saturday.TabIndex = 6;
             this.Saturday.Text = "Saturday";
             this.Saturday.UseVisualStyleBackColor = false;
@@ -179,8 +177,8 @@ namespace StudyManagementApp.UserControls
             this.Sunday_Panel.Location = new System.Drawing.Point(0, 0);
             this.Sunday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Sunday_Panel.Name = "Sunday_Panel";
-            this.Sunday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Sunday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Sunday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Sunday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Sunday_Panel.TabIndex = 6;
             // 
             // Sunday
@@ -195,10 +193,10 @@ namespace StudyManagementApp.UserControls
             this.Sunday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sunday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sunday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Sunday.Location = new System.Drawing.Point(2, 6);
+            this.Sunday.Location = new System.Drawing.Point(2, 5);
             this.Sunday.Margin = new System.Windows.Forms.Padding(0);
             this.Sunday.Name = "Sunday";
-            this.Sunday.Size = new System.Drawing.Size(116, 44);
+            this.Sunday.Size = new System.Drawing.Size(92, 34);
             this.Sunday.TabIndex = 5;
             this.Sunday.Text = "Sunday";
             this.Sunday.UseVisualStyleBackColor = false;
@@ -207,11 +205,11 @@ namespace StudyManagementApp.UserControls
             // 
             this.Friday_Panel.Controls.Add(this.Friday);
             this.Friday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Friday_Panel.Location = new System.Drawing.Point(600, 0);
+            this.Friday_Panel.Location = new System.Drawing.Point(480, 0);
             this.Friday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Friday_Panel.Name = "Friday_Panel";
-            this.Friday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Friday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Friday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Friday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Friday_Panel.TabIndex = 7;
             // 
             // Friday
@@ -226,10 +224,10 @@ namespace StudyManagementApp.UserControls
             this.Friday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Friday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Friday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Friday.Location = new System.Drawing.Point(2, 6);
+            this.Friday.Location = new System.Drawing.Point(2, 5);
             this.Friday.Margin = new System.Windows.Forms.Padding(0);
             this.Friday.Name = "Friday";
-            this.Friday.Size = new System.Drawing.Size(116, 44);
+            this.Friday.Size = new System.Drawing.Size(92, 34);
             this.Friday.TabIndex = 6;
             this.Friday.Text = "Friday";
             this.Friday.UseVisualStyleBackColor = false;
@@ -238,11 +236,11 @@ namespace StudyManagementApp.UserControls
             // 
             this.Monday_Panel.Controls.Add(this.Monday);
             this.Monday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Monday_Panel.Location = new System.Drawing.Point(120, 0);
+            this.Monday_Panel.Location = new System.Drawing.Point(96, 0);
             this.Monday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Monday_Panel.Name = "Monday_Panel";
-            this.Monday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Monday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Monday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Monday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Monday_Panel.TabIndex = 7;
             // 
             // Monday
@@ -257,10 +255,10 @@ namespace StudyManagementApp.UserControls
             this.Monday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Monday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Monday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Monday.Location = new System.Drawing.Point(2, 6);
+            this.Monday.Location = new System.Drawing.Point(2, 5);
             this.Monday.Margin = new System.Windows.Forms.Padding(0);
             this.Monday.Name = "Monday";
-            this.Monday.Size = new System.Drawing.Size(116, 44);
+            this.Monday.Size = new System.Drawing.Size(92, 34);
             this.Monday.TabIndex = 6;
             this.Monday.Text = "Monday";
             this.Monday.UseVisualStyleBackColor = false;
@@ -269,11 +267,11 @@ namespace StudyManagementApp.UserControls
             // 
             this.Thursday_Panel.Controls.Add(this.Thursday);
             this.Thursday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Thursday_Panel.Location = new System.Drawing.Point(480, 0);
+            this.Thursday_Panel.Location = new System.Drawing.Point(384, 0);
             this.Thursday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Thursday_Panel.Name = "Thursday_Panel";
-            this.Thursday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Thursday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Thursday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Thursday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Thursday_Panel.TabIndex = 7;
             // 
             // Thursday
@@ -288,10 +286,10 @@ namespace StudyManagementApp.UserControls
             this.Thursday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Thursday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Thursday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Thursday.Location = new System.Drawing.Point(2, 6);
+            this.Thursday.Location = new System.Drawing.Point(2, 5);
             this.Thursday.Margin = new System.Windows.Forms.Padding(0);
             this.Thursday.Name = "Thursday";
-            this.Thursday.Size = new System.Drawing.Size(116, 44);
+            this.Thursday.Size = new System.Drawing.Size(92, 34);
             this.Thursday.TabIndex = 6;
             this.Thursday.Text = "Thursday";
             this.Thursday.UseVisualStyleBackColor = false;
@@ -300,11 +298,11 @@ namespace StudyManagementApp.UserControls
             // 
             this.Wednesday_Panel.Controls.Add(this.Wednesday);
             this.Wednesday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wednesday_Panel.Location = new System.Drawing.Point(360, 0);
+            this.Wednesday_Panel.Location = new System.Drawing.Point(288, 0);
             this.Wednesday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Wednesday_Panel.Name = "Wednesday_Panel";
-            this.Wednesday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Wednesday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Wednesday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Wednesday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Wednesday_Panel.TabIndex = 7;
             // 
             // Wednesday
@@ -319,10 +317,10 @@ namespace StudyManagementApp.UserControls
             this.Wednesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Wednesday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Wednesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Wednesday.Location = new System.Drawing.Point(2, 6);
+            this.Wednesday.Location = new System.Drawing.Point(2, 5);
             this.Wednesday.Margin = new System.Windows.Forms.Padding(0);
             this.Wednesday.Name = "Wednesday";
-            this.Wednesday.Size = new System.Drawing.Size(116, 44);
+            this.Wednesday.Size = new System.Drawing.Size(92, 34);
             this.Wednesday.TabIndex = 6;
             this.Wednesday.Text = "Wednesday";
             this.Wednesday.UseVisualStyleBackColor = false;
@@ -331,11 +329,11 @@ namespace StudyManagementApp.UserControls
             // 
             this.Tuesday_Panel.Controls.Add(this.Tuesday);
             this.Tuesday_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Tuesday_Panel.Location = new System.Drawing.Point(240, 0);
+            this.Tuesday_Panel.Location = new System.Drawing.Point(192, 0);
             this.Tuesday_Panel.Margin = new System.Windows.Forms.Padding(0);
             this.Tuesday_Panel.Name = "Tuesday_Panel";
-            this.Tuesday_Panel.Padding = new System.Windows.Forms.Padding(2, 6, 2, 6);
-            this.Tuesday_Panel.Size = new System.Drawing.Size(120, 56);
+            this.Tuesday_Panel.Padding = new System.Windows.Forms.Padding(2, 5, 2, 5);
+            this.Tuesday_Panel.Size = new System.Drawing.Size(96, 44);
             this.Tuesday_Panel.TabIndex = 7;
             // 
             // Tuesday
@@ -350,10 +348,10 @@ namespace StudyManagementApp.UserControls
             this.Tuesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Tuesday.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tuesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Tuesday.Location = new System.Drawing.Point(2, 6);
+            this.Tuesday.Location = new System.Drawing.Point(2, 5);
             this.Tuesday.Margin = new System.Windows.Forms.Padding(0);
             this.Tuesday.Name = "Tuesday";
-            this.Tuesday.Size = new System.Drawing.Size(116, 44);
+            this.Tuesday.Size = new System.Drawing.Size(92, 34);
             this.Tuesday.TabIndex = 6;
             this.Tuesday.Text = "Tuesday";
             this.Tuesday.UseVisualStyleBackColor = false;
@@ -370,7 +368,7 @@ namespace StudyManagementApp.UserControls
             this.MainDate_TablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.MainDate_TablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.MainDate_TablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainDate_TablePanel.Location = new System.Drawing.Point(0, 56);
+            this.MainDate_TablePanel.Location = new System.Drawing.Point(0, 44);
             this.MainDate_TablePanel.Margin = new System.Windows.Forms.Padding(0);
             this.MainDate_TablePanel.Name = "MainDate_TablePanel";
             this.MainDate_TablePanel.RowCount = 6;
@@ -381,7 +379,7 @@ namespace StudyManagementApp.UserControls
             this.MainDate_TablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.MainDate_TablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.MainDate_TablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.MainDate_TablePanel.Size = new System.Drawing.Size(847, 343);
+            this.MainDate_TablePanel.Size = new System.Drawing.Size(679, 271);
             this.MainDate_TablePanel.TabIndex = 8;
             // 
             // tableLayoutPanel3
@@ -395,13 +393,13 @@ namespace StudyManagementApp.UserControls
             this.tableLayoutPanel3.Controls.Add(this.panel1, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(139, 16);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(111, 13);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(605, 62);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(485, 50);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // panel2
@@ -411,7 +409,7 @@ namespace StudyManagementApp.UserControls
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(118, 62);
+            this.panel2.Size = new System.Drawing.Size(94, 50);
             this.panel2.TabIndex = 3;
             // 
             // Truoc_iconButton
@@ -425,10 +423,9 @@ namespace StudyManagementApp.UserControls
             this.Truoc_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Truoc_iconButton.IconSize = 50;
             this.Truoc_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Truoc_iconButton.Location = new System.Drawing.Point(29, 5);
-            this.Truoc_iconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Truoc_iconButton.Location = new System.Drawing.Point(23, 4);
             this.Truoc_iconButton.Name = "Truoc_iconButton";
-            this.Truoc_iconButton.Size = new System.Drawing.Size(58, 55);
+            this.Truoc_iconButton.Size = new System.Drawing.Size(46, 44);
             this.Truoc_iconButton.TabIndex = 2;
             this.Truoc_iconButton.UseVisualStyleBackColor = false;
             this.Truoc_iconButton.Click += new System.EventHandler(this.Truoc_iconButton_Click);
@@ -437,10 +434,10 @@ namespace StudyManagementApp.UserControls
             // 
             this.panel1.Controls.Add(this.Sau_iconButton);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(487, 0);
+            this.panel1.Location = new System.Drawing.Point(390, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(118, 62);
+            this.panel1.Size = new System.Drawing.Size(95, 50);
             this.panel1.TabIndex = 2;
             // 
             // Sau_iconButton
@@ -454,10 +451,9 @@ namespace StudyManagementApp.UserControls
             this.Sau_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Sau_iconButton.IconSize = 50;
             this.Sau_iconButton.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.Sau_iconButton.Location = new System.Drawing.Point(32, 4);
-            this.Sau_iconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Sau_iconButton.Location = new System.Drawing.Point(26, 3);
             this.Sau_iconButton.Name = "Sau_iconButton";
-            this.Sau_iconButton.Size = new System.Drawing.Size(58, 55);
+            this.Sau_iconButton.Size = new System.Drawing.Size(46, 44);
             this.Sau_iconButton.TabIndex = 1;
             this.Sau_iconButton.UseVisualStyleBackColor = false;
             this.Sau_iconButton.Click += new System.EventHandler(this.Sau_iconButton_Click);
@@ -466,10 +462,10 @@ namespace StudyManagementApp.UserControls
             // 
             this.panel3.Controls.Add(this.NgayThangNam_customDateTimePicker);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(118, 0);
+            this.panel3.Location = new System.Drawing.Point(94, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(369, 62);
+            this.panel3.Size = new System.Drawing.Size(296, 50);
             this.panel3.TabIndex = 4;
             // 
             // NgayThangNam_customDateTimePicker
@@ -479,11 +475,10 @@ namespace StudyManagementApp.UserControls
             this.NgayThangNam_customDateTimePicker.BorderSize = 0;
             this.NgayThangNam_customDateTimePicker.Enabled = false;
             this.NgayThangNam_customDateTimePicker.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold);
-            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(4, 14);
-            this.NgayThangNam_customDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NgayThangNam_customDateTimePicker.Location = new System.Drawing.Point(3, 11);
             this.NgayThangNam_customDateTimePicker.MinimumSize = new System.Drawing.Size(4, 35);
             this.NgayThangNam_customDateTimePicker.Name = "NgayThangNam_customDateTimePicker";
-            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(361, 39);
+            this.NgayThangNam_customDateTimePicker.Size = new System.Drawing.Size(291, 35);
             this.NgayThangNam_customDateTimePicker.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
             this.NgayThangNam_customDateTimePicker.TabIndex = 0;
             this.NgayThangNam_customDateTimePicker.TextColor = System.Drawing.Color.White;
@@ -493,10 +488,10 @@ namespace StudyManagementApp.UserControls
             // 
             this.panel4.Controls.Add(this.Today_Button);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(744, 16);
+            this.panel4.Location = new System.Drawing.Point(596, 13);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(121, 62);
+            this.panel4.Size = new System.Drawing.Size(97, 50);
             this.panel4.TabIndex = 9;
             // 
             // Today_Button
@@ -510,29 +505,23 @@ namespace StudyManagementApp.UserControls
             this.Today_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Today_Button.Font = new System.Drawing.Font("Agency FB", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Today_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.Today_Button.Location = new System.Drawing.Point(2, 14);
+            this.Today_Button.Location = new System.Drawing.Point(2, 11);
             this.Today_Button.Margin = new System.Windows.Forms.Padding(0);
             this.Today_Button.Name = "Today_Button";
-            this.Today_Button.Size = new System.Drawing.Size(115, 40);
+            this.Today_Button.Size = new System.Drawing.Size(92, 32);
             this.Today_Button.TabIndex = 6;
             this.Today_Button.Text = "Today";
             this.Today_Button.UseVisualStyleBackColor = false;
             this.Today_Button.Click += new System.EventHandler(this.Today_Button_Click);
             // 
-            // timerEmail
-            // 
-            this.timerEmail.Interval = 604800000;
-            this.timerEmail.Tick += new System.EventHandler(this.TimerEmail_Tick);
-            // 
             // CustomCalendar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CustomCalendar";
-            this.Size = new System.Drawing.Size(890, 504);
+            this.Size = new System.Drawing.Size(712, 403);
             this.Load += new System.EventHandler(this.CustomCalendar_Load);
             this.SizeChanged += new System.EventHandler(this.CustomCalendar_SizeChanged);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -581,6 +570,5 @@ namespace StudyManagementApp.UserControls
         private System.Windows.Forms.Panel panel4;
         private RoundedCornerButton Today_Button;
         private CustomDateTimePicker NgayThangNam_customDateTimePicker;
-        private System.Windows.Forms.Timer timerEmail;
     }
 }

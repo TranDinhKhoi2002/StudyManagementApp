@@ -194,9 +194,9 @@ namespace StudyManagementApp
             NotificationLabel.Location = new Point(HomePanel.Width / 2 - NotificationLabel.Width / 2, SignInLogoPictureBox.Location.Y + SignInLogoPictureBox.Height + 23);
             UsernameTextBox.Location = new Point(HomePanel.Width / 2 - 70 - UsernameTextBox.Width, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
             PasswordTextBox.Location = new Point(HomePanel.Width / 2 + 70, NotificationLabel.Location.Y + NotificationLabel.Height + 21);
-            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 24);
-            forgot_label.Location = new Point(HomePanel.Width / 2 - forgot_label.Width/2, SignInButton.Location.Y + SignInButton.Height + 8);
+            SignInButton.Location = new Point(HomePanel.Width / 2 - SignInButton.Width - 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 22);
+            SignUpButton.Location = new Point(HomePanel.Width / 2 + 40, UsernameTextBox.Location.Y + UsernameTextBox.Height + 22);
+            forgot_label.Location = new Point(HomePanel.Width / 2 - forgot_label.Width/2, SignInButton.Location.Y + SignInButton.Height + 2);
         }
 
         private void Login_SizeChanged(object sender, EventArgs e)

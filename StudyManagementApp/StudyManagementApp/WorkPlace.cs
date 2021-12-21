@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Mail;
 
 namespace StudyManagementApp
 {
@@ -147,8 +149,6 @@ namespace StudyManagementApp
             fileexport_iconButton.FlatAppearance.MouseOverBackColor = bg;
             feedback_iconButton.IconColor = foretemplate;
             feedback_iconButton.FlatAppearance.MouseOverBackColor = bg;
-            chatbot_iconButton.IconColor = foretemplate;
-            chatbot_iconButton.FlatAppearance.MouseOverBackColor = bg;
 
 
             //
@@ -887,8 +887,8 @@ namespace StudyManagementApp
         }
         private void feedback_iconButton_Click(object sender, EventArgs e)
         {
-            FeedBackForm feedBackForm_FAKE = new FeedBackForm();
-            feedBackForm_FAKE.ShowDialog();
+            FeedBackForm feedBackForm = new FeedBackForm();
+            feedBackForm.ShowDialog();
         }
 
 
@@ -898,7 +898,7 @@ namespace StudyManagementApp
         {
             Export export = new Export();
 
-            export.Show();
+            export.ShowDialog();
         }
     }
 }

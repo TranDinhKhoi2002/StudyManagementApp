@@ -39,7 +39,7 @@ namespace StudyManagementApp
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
                 SaveFileDialog open = new SaveFileDialog();
-                open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
                 if (open.FileName == "")
@@ -67,7 +67,7 @@ namespace StudyManagementApp
                 string ExcelFilePath = "";
                 lines.AddRange(valueLines);
                 SaveFileDialog open = new SaveFileDialog();
-                open.Filter = "xml files (*.xlsx)|*.xlsx|All files (*.*)|*.*";
+                open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
                     ExcelFilePath = open.FileName;
                 if (open.FileName == "")
