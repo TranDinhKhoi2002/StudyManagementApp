@@ -328,16 +328,16 @@ namespace StudyManagementApp.FlashCardFolder
             if (index < 0)
             {
                 if (fcList.Count > 0)
-                    index = 0;
+                    currentFCIndex = 0;
                 else
                 {
                     SetState(State.EmptyDeck);
-
                     return;
                 }
             }
 
-            FlashCard currentFlashCard = fcList[index];
+
+            FlashCard currentFlashCard = fcList[currentFCIndex];
 
             WordLabel.Text = currentFlashCard.Word;
             DefinitionLabel.Text = currentFlashCard.Definition;
@@ -355,7 +355,7 @@ namespace StudyManagementApp.FlashCardFolder
             }
 
             // Change flashcardcount label
-            FlashCardCountLabel.Text = string.Format("[{0}/{1}]", index + 1, fcList.Count);
+            FlashCardCountLabel.Text = string.Format("[{0}/{1}]", currentFCIndex + 1, fcList.Count);
         }
 
         private void DeckTabLoad()
@@ -515,6 +515,7 @@ namespace StudyManagementApp.FlashCardFolder
                 ToggleAddFCTab();
                 ToggleUpdateFCMode(true);
             }
+
             //Get current FC data
             AddFCTab_ChangeWithNavigation();
         }
@@ -1015,6 +1016,7 @@ namespace StudyManagementApp.FlashCardFolder
 
                 //LoadDecks();
                 GetFlashCards();
+                PrepareFlashCard(currentFCIndex);
 
                 // Update datagridview in decktab and detail deck tab
                 DeckTabLoad();
