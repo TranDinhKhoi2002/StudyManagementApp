@@ -34,7 +34,7 @@ namespace StudyManagementApp
             AlignControls_Non_Maximum();
             AlignHomeAboutHelp();
             LoadMau();
-            base.Show();
+            base.ShowDialog();
         }
 
         //khi Login được load sẽ làm gì?
@@ -183,7 +183,7 @@ namespace StudyManagementApp
             SignInButton.Font = new Font("Agency FB", 13);
             SignUpButton.Size = new Size(113, 38);
             SignUpButton.Font = new Font("Agency FB", 13);
-            forgot_label.Font = new Font("Agency FB", 11);
+            forgot_label.Font = new Font("Agency FB", 10);
 
 
             TruyencamhungLabel.Font = new Font("Agency FB", 23, FontStyle.Bold);
