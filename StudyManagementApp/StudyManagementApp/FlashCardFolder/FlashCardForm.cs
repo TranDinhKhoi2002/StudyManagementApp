@@ -1249,7 +1249,14 @@ namespace StudyManagementApp.FlashCardFolder
 
         #endregion
 
-        
+        public int GetQuantityDeck()
+        {
+            return fcDeckList.Count;
+        }
 
+        public int GetQuantityFC()
+        {
+            return fcList.Count;
+        }
     }
 }

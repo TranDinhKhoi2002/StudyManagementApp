@@ -49,19 +49,19 @@ namespace StudyManagementApp.NoteFolder
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.Controls.Add(this.mainbackground_panel, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 12F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(630, 272);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(420, 181);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // mainbackground_panel
@@ -69,10 +69,10 @@ namespace StudyManagementApp.NoteFolder
             this.mainbackground_panel.BackColor = System.Drawing.Color.Gray;
             this.mainbackground_panel.Controls.Add(this.tableLayoutPanel2);
             this.mainbackground_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainbackground_panel.Location = new System.Drawing.Point(12, 12);
+            this.mainbackground_panel.Location = new System.Drawing.Point(8, 8);
             this.mainbackground_panel.Margin = new System.Windows.Forms.Padding(0);
             this.mainbackground_panel.Name = "mainbackground_panel";
-            this.mainbackground_panel.Size = new System.Drawing.Size(606, 248);
+            this.mainbackground_panel.Size = new System.Drawing.Size(404, 165);
             this.mainbackground_panel.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -87,10 +87,10 @@ namespace StudyManagementApp.NoteFolder
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(606, 248);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(404, 165);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel4
@@ -98,10 +98,10 @@ namespace StudyManagementApp.NoteFolder
             this.panel4.Controls.Add(this.title_textBox);
             this.panel4.Controls.Add(this.color_comboBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(12, 205);
-            this.panel4.Margin = new System.Windows.Forms.Padding(12, 17, 12, 12);
+            this.panel4.Location = new System.Drawing.Point(8, 136);
+            this.panel4.Margin = new System.Windows.Forms.Padding(8, 11, 8, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(582, 31);
+            this.panel4.Size = new System.Drawing.Size(388, 21);
             this.panel4.TabIndex = 2;
             // 
             // title_textBox
@@ -114,7 +114,7 @@ namespace StudyManagementApp.NoteFolder
             this.title_textBox.Location = new System.Drawing.Point(0, 0);
             this.title_textBox.Margin = new System.Windows.Forms.Padding(0);
             this.title_textBox.Name = "title_textBox";
-            this.title_textBox.Size = new System.Drawing.Size(520, 33);
+            this.title_textBox.Size = new System.Drawing.Size(345, 22);
             this.title_textBox.TabIndex = 0;
             this.title_textBox.Text = "Title";
             this.title_textBox.Leave += new System.EventHandler(this.title_textBox_Leave);
@@ -128,10 +128,9 @@ namespace StudyManagementApp.NoteFolder
             this.color_comboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.color_comboBox.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.color_comboBox.FormattingEnabled = true;
-            this.color_comboBox.Location = new System.Drawing.Point(520, 0);
-            this.color_comboBox.Margin = new System.Windows.Forms.Padding(4);
+            this.color_comboBox.Location = new System.Drawing.Point(345, 0);
             this.color_comboBox.Name = "color_comboBox";
-            this.color_comboBox.Size = new System.Drawing.Size(62, 34);
+            this.color_comboBox.Size = new System.Drawing.Size(43, 25);
             this.color_comboBox.TabIndex = 1;
             this.color_comboBox.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.color_comboBox_DrawItem);
             this.color_comboBox.SelectedIndexChanged += new System.EventHandler(this.color_comboBox_SelectedIndexChanged);
@@ -144,7 +143,7 @@ namespace StudyManagementApp.NoteFolder
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(606, 36);
+            this.panel3.Size = new System.Drawing.Size(404, 24);
             this.panel3.TabIndex = 1;
             // 
             // Noti_iconButton
@@ -165,8 +164,8 @@ namespace StudyManagementApp.NoteFolder
             this.Noti_iconButton.Location = new System.Drawing.Point(0, 0);
             this.Noti_iconButton.Margin = new System.Windows.Forms.Padding(0);
             this.Noti_iconButton.Name = "Noti_iconButton";
-            this.Noti_iconButton.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.Noti_iconButton.Size = new System.Drawing.Size(569, 36);
+            this.Noti_iconButton.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.Noti_iconButton.Size = new System.Drawing.Size(379, 24);
             this.Noti_iconButton.TabIndex = 5;
             this.Noti_iconButton.Text = "time";
             this.Noti_iconButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,10 +183,9 @@ namespace StudyManagementApp.NoteFolder
             this.close_iconButton.IconColor = System.Drawing.Color.LightGray;
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 30;
-            this.close_iconButton.Location = new System.Drawing.Point(569, 0);
-            this.close_iconButton.Margin = new System.Windows.Forms.Padding(4);
+            this.close_iconButton.Location = new System.Drawing.Point(379, 0);
             this.close_iconButton.Name = "close_iconButton";
-            this.close_iconButton.Size = new System.Drawing.Size(37, 36);
+            this.close_iconButton.Size = new System.Drawing.Size(25, 24);
             this.close_iconButton.TabIndex = 1;
             this.close_iconButton.UseVisualStyleBackColor = false;
             this.close_iconButton.Click += new System.EventHandler(this.close_iconButton_Click);
@@ -198,10 +196,10 @@ namespace StudyManagementApp.NoteFolder
             this.content_richTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.content_richTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.content_richTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.content_richTextBox.Location = new System.Drawing.Point(12, 36);
-            this.content_richTextBox.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.content_richTextBox.Location = new System.Drawing.Point(8, 24);
+            this.content_richTextBox.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.content_richTextBox.Name = "content_richTextBox";
-            this.content_richTextBox.Size = new System.Drawing.Size(582, 152);
+            this.content_richTextBox.Size = new System.Drawing.Size(388, 101);
             this.content_richTextBox.TabIndex = 3;
             this.content_richTextBox.Text = "";
             this.content_richTextBox.TextChanged += new System.EventHandler(this.content_richTextBox_TextChanged);
@@ -209,13 +207,12 @@ namespace StudyManagementApp.NoteFolder
             // 
             // Item_Note_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(52)))), ((int)(((byte)(55)))));
-            this.ClientSize = new System.Drawing.Size(630, 272);
+            this.ClientSize = new System.Drawing.Size(420, 181);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Item_Note_Form";
             this.Text = "Item_Note_Form";
             this.Load += new System.EventHandler(this.Item_Note_Form_Load);

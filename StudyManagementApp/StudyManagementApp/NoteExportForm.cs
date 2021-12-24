@@ -26,11 +26,21 @@ namespace StudyManagementApp
         private void NoteExportButton_Click(object sender, EventArgs e)
         {
        
-        var lines = new List<string>();
-            string[] columnNames = WorkPlace.bang_ALLNOTES.Columns
+            var lines = new List<string>();
+            string[] columnNames;
+            if (WorkPlace.bang_ALLNOTES != null)
+            {
+                columnNames = WorkPlace.bang_ALLNOTES.Columns
                 .Cast<DataColumn>()
                 .Select(column => column.ColumnName)
                 .ToArray();
+            }
+            else
+            {
+                CustomMessageBox mssBox = new CustomMessageBox("Error", "You have no Note to export");
+                mssBox.ShowDialog();
+                return;
+            }
 
             var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
             lines.Add(header);
@@ -45,13 +55,16 @@ namespace StudyManagementApp
             SaveFileDialog open = new SaveFileDialog();
             open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
             if (open.ShowDialog() == DialogResult.OK)
-                 ExcelFilePath = open.FileName;
+            {
+                ExcelFilePath = open.FileName;
+                File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
+                InformSuccess inform = new InformSuccess();
+                inform.ShowDialog();
+            }
+
             if (open.FileName == "")
                 ExcelFilePath = "No name";
-            File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-            InformSuccess inform = new InformSuccess();
-            inform.ShowDialog();
-          
+
         }
     }
 }

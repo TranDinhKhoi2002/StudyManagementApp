@@ -26,10 +26,21 @@ namespace StudyManagementApp
             if (FCRadioButton.Checked == true)
             {
                 var lines = new List<string>();
-                string[] columnNames = FlashCardForm.fc.Columns
+                string[] columnNames;
+                if (FlashCardForm.fc != null)
+                {
+                    columnNames = FlashCardForm.fc.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
+                }
+                else
+                {
+                    CustomMessageBox mssBox = new CustomMessageBox("Error", "You have no FlashCard to export");
+                    mssBox.ShowDialog();
+                    return;
+                }
+                
 
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
@@ -41,23 +52,37 @@ namespace StudyManagementApp
                 SaveFileDialog open = new SaveFileDialog();
                 open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
+                {
                     ExcelFilePath = open.FileName;
+                    File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
+                    InformSuccess inform = new InformSuccess();
+                    inform.ShowDialog();
+                }
+                    
                 if (open.FileName == "")
                     ExcelFilePath = "No name";
-                File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                InformSuccess inform = new InformSuccess();
-                inform.ShowDialog();
        
             }
             if (DeckRadioButton.Checked == true)
             {
                 var lines = new List<string>();
+                string[] columnNames;
 
-                
-                string[] columnNames = FlashCardForm.deck.Columns
+
+
+                if (FlashCardForm.deck != null)
+                {
+                    columnNames = FlashCardForm.deck.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
+                }
+                else
+                {
+                    CustomMessageBox mssBox = new CustomMessageBox("Error", "You have no Deck to export");
+                    mssBox.ShowDialog();
+                    return;
+                }
 
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
@@ -69,14 +94,15 @@ namespace StudyManagementApp
                 SaveFileDialog open = new SaveFileDialog();
                 open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
+                {
                     ExcelFilePath = open.FileName;
+                    File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
+                    InformSuccess inform = new InformSuccess();
+                    inform.ShowDialog();
+                }
+                    
                 if (open.FileName == "")
                     ExcelFilePath = "No name";
-
-                File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                InformSuccess inform = new InformSuccess();
-                inform.ShowDialog();
-      
             }    
 
 
