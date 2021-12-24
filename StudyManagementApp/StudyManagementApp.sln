@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyManagementApp", "StudyManagementApp\StudyManagementApp.csproj", "{AA2393D4-2E80-41D4-9213-D4564A8667F9}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ZenSt", "ZenSt\ZenSt.vdproj", "{85A8804E-E7C4-43E3-BBE1-DB3F75534B6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{AA2393D4-2E80-41D4-9213-D4564A8667F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA2393D4-2E80-41D4-9213-D4564A8667F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA2393D4-2E80-41D4-9213-D4564A8667F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A8804E-E7C4-43E3-BBE1-DB3F75534B6F}.Debug|Any CPU.ActiveCfg = Debug
+		{85A8804E-E7C4-43E3-BBE1-DB3F75534B6F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

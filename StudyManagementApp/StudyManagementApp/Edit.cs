@@ -146,7 +146,7 @@ namespace StudyManagementApp
                         reg.DeleteValue(name);
                     }
                 }
-                catch (System.Exception ex) { }
+                catch (System.Exception) { }
             }
                 
         }

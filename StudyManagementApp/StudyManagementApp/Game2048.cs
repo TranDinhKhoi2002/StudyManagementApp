@@ -153,10 +153,6 @@ namespace StudyManagementApp
         }
         public void MoveUp()
         {
-     
-            bool notMove = true;
-            bool score = false;
-           
             bool CheckInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -179,7 +175,6 @@ namespace StudyManagementApp
                         {
                             if (Game[k, i].Text == Game[j, i].Text)
                             {
-                                score = true;
                             }
                             break;
                             //Không bằng thì thoát khỏi cái j hiện tại, xét cái j tiếp theo
@@ -212,8 +207,6 @@ namespace StudyManagementApp
                                 {
                                     if (Game[j, i].Text == Game[k, i].Text)
                                     {
-                                        //Cập nhật điểm
-                                        notMove = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[j, i].Text) * 2).ToString();
                                         CheckInit = true;
                                         flag = false;
@@ -236,7 +229,6 @@ namespace StudyManagementApp
                             }
                             if (flag == true && Blank != 0)
                             {
-                                notMove = false;
                                 Game[j - Blank, i].Text = Game[j, i].Text;
                                 Game[j, i].Text = "";
 
@@ -246,7 +238,6 @@ namespace StudyManagementApp
                         {
                             if (Blank != 0)
                             {
-                                notMove = false;
                                 Game[j - Blank, i].Text = Game[j, i].Text;
                                 Game[j, i].Text = "";
 
@@ -273,8 +264,6 @@ namespace StudyManagementApp
         }
         public void MoveDown()
         {
-            bool notMoveDown = true;
-            bool Score = false;
             bool isInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -293,7 +282,6 @@ namespace StudyManagementApp
                         {
                             if (Game[k, i].Text == Game[j, i].Text)
                             {
-                                Score = true;
                             }
                             break;
                         }
@@ -322,7 +310,6 @@ namespace StudyManagementApp
                                 {
                                     if (Game[j, i].Text == Game[k, i].Text)
                                     {
-                                        notMoveDown = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[j, i].Text) * 2).ToString();
                                         isInit = true;
                                         flag = false;
@@ -342,7 +329,6 @@ namespace StudyManagementApp
                             }
                             if (flag == true && blank != 0)
                             {
-                                notMoveDown = false;
                                 Game[j + blank, i].Text = Game[j, i].Text;
                                 Game[j, i].Text = "";
 
@@ -352,7 +338,6 @@ namespace StudyManagementApp
                         {
                             if (blank != 0)
                             {
-                                notMoveDown = false;
                                 Game[j + blank, i].Text = Game[j, i].Text;
                                 Game[j, i].Text = "";
 
@@ -371,8 +356,6 @@ namespace StudyManagementApp
         }
         public void MoveLeft()
         {
-            bool notMoveLeft = true;
-            bool Score = false;
             bool isInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -392,7 +375,6 @@ namespace StudyManagementApp
                         {
                             if (Game[i, j].Text == Game[i, k].Text)
                             {
-                                Score = true;
                             }
                             break;
                         }
@@ -422,7 +404,6 @@ namespace StudyManagementApp
 
                                     if (Game[i, j].Text == Game[i, k].Text)
                                     {
-                                        notMoveLeft = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[i, j].Text) * 2).ToString();
                                         isInit = true;
                                         flag = false;
@@ -442,7 +423,6 @@ namespace StudyManagementApp
                             }
                             if (flag == true && Blank != 0)
                             {
-                                notMoveLeft = false;
                                 Game[i, j - Blank].Text = Game[i, j].Text;
                                 Game[i, j].Text = "";
 
@@ -452,7 +432,6 @@ namespace StudyManagementApp
                         {
                             if (Blank != 0)
                             {
-                                notMoveLeft = false;
                                 Game[i, j - Blank].Text = Game[i, j].Text;
                                 Game[i, j].Text = "";
 
@@ -471,8 +450,6 @@ namespace StudyManagementApp
         }
         public void MoveRight()
         {
-            bool notMoveRight = true;
-            bool Score = false;
             bool checkInit = false;
             Label[,] Game = {
                                 {lbl1,lbl2,lbl3,lbl4},
@@ -491,7 +468,6 @@ namespace StudyManagementApp
                         {
                             if (Game[i, k].Text == Game[i, j].Text)
                             {
-                                Score = true;
                             }
                             break;
                         }
@@ -522,7 +498,6 @@ namespace StudyManagementApp
 
                                     if (Game[i, j].Text == Game[i, k].Text)
                                     {
-                                        notMoveRight = false;
                                         lblScore.Text = (int.Parse(lblScore.Text) + int.Parse(Game[i, j].Text) * 2).ToString();
                                         checkInit = true;
                                         ktra = false;
@@ -542,7 +517,6 @@ namespace StudyManagementApp
                             }
                             if (ktra == true && oRong != 0)
                             {
-                                notMoveRight = false;
                                 Game[i, j + oRong].Text = Game[i, j].Text;
                                 Game[i, j].Text = "";
 
@@ -552,7 +526,6 @@ namespace StudyManagementApp
                         {
                             if (oRong != 0)
                             {
-                                notMoveRight = false;
                                 Game[i, j + oRong].Text = Game[i, j].Text;
                                 Game[i, j].Text = "";
 
