@@ -25,10 +25,20 @@ namespace StudyManagementApp
             if (TypesRadioButton.Checked == true)
             {
                 var lines = new List<string>();
-                string[] columnNames = WorkPlace.bang_AllTYPEITEM_TDL.Columns
+                string[] columnNames;
+                if (WorkPlace.bang_AllTYPEITEM_TDL != null)
+                {
+                    columnNames = WorkPlace.bang_AllTYPEITEM_TDL.Columns
                     .Cast<DataColumn>()
                     .Select(column => column.ColumnName)
                     .ToArray();
+                }
+                else
+                {
+                    CustomMessageBox mssBox = new CustomMessageBox("Error", "You have no ToDo List to export");
+                    mssBox.ShowDialog();
+                    return;
+                }
 
                 var header = string.Join(",", columnNames.Select(name => $"\"{name}\""));
                 lines.Add(header);
@@ -41,15 +51,16 @@ namespace StudyManagementApp
                 open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
 
                 if (open.ShowDialog() == DialogResult.OK)
+                {
                     ExcelFilePath = open.FileName;
+                    File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
+                    InformSuccess inform = new InformSuccess();
+                    inform.ShowDialog();
+                }
 
                 if (open.FileName == "")
                     ExcelFilePath = "No name";
 
-                File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-                InformSuccess inform = new InformSuccess();
-                inform.ShowDialog();
-             
             }
            if (TasksRadioButtion.Checked == true)
             {
@@ -70,15 +81,16 @@ namespace StudyManagementApp
                 SaveFileDialog open = new SaveFileDialog();
                 open.Filter = "xml files (*.xls)|*.xls|All files (*.*)|*.*";
                 if (open.ShowDialog() == DialogResult.OK)
+                {
                     ExcelFilePath = open.FileName;
+                    File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
+                    InformSuccess inform = new InformSuccess();
+                    inform.ShowDialog();
+                }
+
                 if (open.FileName == "")
                     ExcelFilePath = "No name";
 
-                File.WriteAllLines(ExcelFilePath, lines, Encoding.UTF8);
-
-                InformSuccess inform = new InformSuccess();
-                inform.ShowDialog();
-             
             }    
             
         }

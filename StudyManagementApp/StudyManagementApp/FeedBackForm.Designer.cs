@@ -699,7 +699,7 @@ namespace StudyManagementApp
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(69, 9);
-            this.panel6.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panel6.Margin = new System.Windows.Forms.Padding(9);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(178, 29);
             this.panel6.TabIndex = 2;
@@ -710,7 +710,7 @@ namespace StudyManagementApp
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(9, 56);
-            this.panel7.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panel7.Margin = new System.Windows.Forms.Padding(9);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(42, 38);
             this.panel7.TabIndex = 2;
@@ -747,7 +747,7 @@ namespace StudyManagementApp
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(9, 112);
-            this.panel9.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panel9.Margin = new System.Windows.Forms.Padding(9);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(42, 38);
             this.panel9.TabIndex = 2;
@@ -784,7 +784,7 @@ namespace StudyManagementApp
             this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(9, 9);
-            this.panel15.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panel15.Margin = new System.Windows.Forms.Padding(9);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(42, 40);
             this.panel15.TabIndex = 3;
@@ -795,7 +795,7 @@ namespace StudyManagementApp
             this.panelattach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelattach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelattach.Location = new System.Drawing.Point(9, 304);
-            this.panelattach.Margin = new System.Windows.Forms.Padding(9, 9, 9, 9);
+            this.panelattach.Margin = new System.Windows.Forms.Padding(9);
             this.panelattach.Name = "panelattach";
             this.panelattach.Size = new System.Drawing.Size(42, 39);
             this.panelattach.TabIndex = 2;
@@ -876,7 +876,7 @@ namespace StudyManagementApp
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(196, 57);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
@@ -965,7 +965,7 @@ namespace StudyManagementApp
             this.close_iconButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.close_iconButton.IconSize = 40;
             this.close_iconButton.Location = new System.Drawing.Point(346, 2);
-            this.close_iconButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.close_iconButton.Margin = new System.Windows.Forms.Padding(2);
             this.close_iconButton.Name = "close_iconButton";
             this.close_iconButton.Size = new System.Drawing.Size(28, 28);
             this.close_iconButton.TabIndex = 2;

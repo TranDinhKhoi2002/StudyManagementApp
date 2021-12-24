@@ -280,6 +280,7 @@ namespace StudyManagementApp
                 txbEmail.Clear();
                 txbSubject.Clear();
                 rtxbFeedback.Clear();
+                NamFile_Label.Text = "";
                 txbEmail.Focus();
                 CustomMessageBox customMessageBox = new CustomMessageBox("Notification", "Thanks for your feedback!");
                 customMessageBox.ShowDialog();
