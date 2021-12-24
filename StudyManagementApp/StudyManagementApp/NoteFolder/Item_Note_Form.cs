@@ -106,6 +106,7 @@ namespace StudyManagementApp.NoteFolder
         {
             string hex = color_comboBox.Items[color_comboBox.SelectedIndex].ToString();
             Color color = ColorTranslator.FromHtml(hex);
+            color_comboBox.BackColor = color;
             mainbackground_panel.BackColor = color;
             title_textBox.BackColor = color;
             color_ID = hex;

@@ -255,13 +255,12 @@ namespace StudyManagementApp
         private void ThuGonTraiButton_Click(object sender, EventArgs e)
         {
             LeftMenuTablePanel.Hide();
-            Leftmenu_panel.Width = 50;
             MoRongLeftMenu_iconButton.Show();
         }
 
         private void MoRongLeftMenu_iconButton_Click(object sender, EventArgs e)
         {
-            Leftmenu_panel.Width = 251;
+            
             LeftMenuTablePanel.Show();
             MoRongLeftMenu_iconButton.Hide();
         }
