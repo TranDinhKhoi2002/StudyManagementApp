@@ -141,6 +141,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1E4F9A9716EF4A02894E8836C26D93FF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1E5F486849F64510A8B3175C2D54C1F8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -160,6 +166,12 @@
         "Entry"
         {
         "MsmKey" = "8:_2346ADD04CF640FFBB4857E2953DD703"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_23660550267F4409B7CF6479FEEF6B46"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -213,6 +225,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_397E755C3893444BBED9196D5972E879"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3AE07BE8C80645B38033F5D06A87BB60"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -250,6 +268,12 @@
         "Entry"
         {
         "MsmKey" = "8:_44DA19219CD34E158234393F05E640C9"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_474F8E663889451FA099A0EE03B0CC32"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -322,6 +346,12 @@
         "Entry"
         {
         "MsmKey" = "8:_62F8D6A1A950428D8EDD8A736972B7F1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_63B3A1343A7D47CD89892234ED28D332"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -424,6 +454,12 @@
         "Entry"
         {
         "MsmKey" = "8:_79A405CDE9EE4102B0578CC6D0CC4378"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_79B658045055404FBAB52FAD27EA9100"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -538,6 +574,18 @@
         "Entry"
         {
         "MsmKey" = "8:_8A6B5314B40A41A69D8559FD6AA310BF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8BFDE12A1C734F12A39D41EFC4CA9D1A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8CDED4BF617E4E04B550E18F00F2FFEB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -766,13 +814,13 @@
         "Entry"
         {
         "MsmKey" = "8:_CC797AB2CD3AFA119799228468ABB33D"
-        "OwnerKey" = "8:_01368AE965522ED4D86E3823899A8EB5"
+        "OwnerKey" = "8:_1185C8583A35445BBF5F585DA4AA8734"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_CC797AB2CD3AFA119799228468ABB33D"
-        "OwnerKey" = "8:_1185C8583A35445BBF5F585DA4AA8734"
+        "OwnerKey" = "8:_01368AE965522ED4D86E3823899A8EB5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -802,6 +850,12 @@
         "Entry"
         {
         "MsmKey" = "8:_D31E209EE9904DDBBA6DF329DED66DD8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D5BB384D294441599CE718ADA9BC9E1F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1012,19 +1066,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D65C21B50FFE89EEAD1CFA63F919E420"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1185C8583A35445BBF5F585DA4AA8734"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9FF80FA471F0BDAE0B0CA4D9AB7D7A54"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1054,13 +1096,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_01368AE965522ED4D86E3823899A8EB5"
+        "OwnerKey" = "8:_CC797AB2CD3AFA119799228468ABB33D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CC797AB2CD3AFA119799228468ABB33D"
+        "OwnerKey" = "8:_9FF80FA471F0BDAE0B0CA4D9AB7D7A54"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_01368AE965522ED4D86E3823899A8EB5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1105,6 +1153,12 @@
         "OwnerKey" = "8:_37AB14627E36CB7ABFF27C6672B60476"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D65C21B50FFE89EEAD1CFA63F919E420"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1123,6 +1177,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -1139,6 +1209,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1198,7 +1276,7 @@
                     "_01368AE965522ED4D86E3823899A8EB5"
                     {
                     "Name" = "8:LiveCharts.WinForms.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:LiveCharts.WinForms.dll"
@@ -1209,7 +1287,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -1409,7 +1487,7 @@
                     "_153B02CA5E18A481F38445F459B9DBD0"
                     {
                     "Name" = "8:ClosedXML.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:ClosedXML.dll"
@@ -1420,7 +1498,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -1590,6 +1668,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1E4F9A9716EF4A02894E8836C26D93FF"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\PersonSubstitutions.xml"
+            "TargetName" = "8:PersonSubstitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1E5F486849F64510A8B3175C2D54C1F8"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\32.png"
@@ -1656,6 +1754,26 @@
             "TargetName" = "8:youremail.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_23660550267F4409B7CF6479FEEF6B46"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\GenderSubstitutions.xml"
+            "TargetName" = "8:GenderSubstitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1820,13 +1938,33 @@
                     "_37AB14627E36CB7ABFF27C6672B60476"
                     {
                     "Name" = "8:AIMLbot.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:AIMLbot.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_472848CA66FD45598BA284FAB654EF26"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:TRUE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_397E755C3893444BBED9196D5972E879"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\Sound\\Windows Background.wav"
+            "TargetName" = "8:Windows Background.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_7378D1F2B94044C095C837A481A546FD"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1838,7 +1976,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3AE07BE8C80645B38033F5D06A87BB60"
@@ -1911,7 +2049,7 @@
                     "_3D39673ED91A3201068058D8E25CE2BA"
                     {
                     "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:Newtonsoft.Json.dll"
@@ -1922,7 +2060,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -1992,6 +2130,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_474F8E663889451FA099A0EE03B0CC32"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\DefaultPredicates.xml"
+            "TargetName" = "8:DefaultPredicates.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C0A82B1EBD9450095BC0F82CD7676F4"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\yourproblem.png"
@@ -2042,7 +2200,7 @@
                     "_4E09E1EB0A2535B98BC153898933BC6C"
                     {
                     "Name" = "8:LiveCharts.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:LiveCharts.dll"
@@ -2053,7 +2211,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -2189,6 +2347,26 @@
             "TargetName" = "8:13_.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_63B3A1343A7D47CD89892234ED28D332"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\Substitutions.xml"
+            "TargetName" = "8:Substitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2543,6 +2721,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79B658045055404FBAB52FAD27EA9100"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\bots.xml"
+            "TargetName" = "8:bots.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7AB3D018FF684D4CB5FB6D1C9EF06CD6"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\getintouch.png"
@@ -2633,7 +2831,7 @@
                     "_7CF452BDD4E7C64FE09F30C6E09B2158"
                     {
                     "Name" = "8:Guna.UI2.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:Guna.UI2.dll"
@@ -2644,7 +2842,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -2684,7 +2882,7 @@
                     "_821A9E132A0EC3B5B41DD5AFA5026318"
                     {
                     "Name" = "8:System.IO.FileSystem.Primitives.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:System.IO.FileSystem.Primitives.dll"
@@ -2695,7 +2893,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -2715,7 +2913,7 @@
                     "_83619E2C950A80429426FCC9DFF41B49"
                     {
                     "Name" = "8:System.IO.Packaging.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:System.IO.Packaging.dll"
@@ -2726,7 +2924,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -2956,6 +3154,46 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8BFDE12A1C734F12A39D41EFC4CA9D1A"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\Settings.xml"
+            "TargetName" = "8:Settings.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8CDED4BF617E4E04B550E18F00F2FFEB"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\Splitters.xml"
+            "TargetName" = "8:Splitters.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_95F37C3220CD4653BAB48EFE20D7276F"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\25.png"
@@ -3146,7 +3384,7 @@
                     "_9FF80FA471F0BDAE0B0CA4D9AB7D7A54"
                     {
                     "Name" = "8:CounterLib.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:CounterLib.dll"
@@ -3157,7 +3395,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -3317,7 +3555,7 @@
                     "_AB1D2D829395E4276DCF3E7D843DB018"
                     {
                     "Name" = "8:QRCoder.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:QRCoder.dll"
@@ -3328,7 +3566,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -3668,7 +3906,7 @@
                     "_C71DEDCC84BE4725D20DCB7C11EE4A69"
                     {
                     "Name" = "8:FontAwesome.Sharp.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:FontAwesome.Sharp.dll"
@@ -3679,7 +3917,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -3739,7 +3977,7 @@
                     "_CC797AB2CD3AFA119799228468ABB33D"
                     {
                     "Name" = "8:LiveCharts.Wpf.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:LiveCharts.Wpf.dll"
@@ -3750,7 +3988,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -3860,6 +4098,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5BB384D294441599CE718ADA9BC9E1F"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\bin\\Debug\\Resources\\config\\Person2Substitutions.xml"
+            "TargetName" = "8:Person2Substitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_6419297B3C064F31A7DA745EE165ED27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D65C21B50FFE89EEAD1CFA63F919E420"
             {
             "AssemblyRegister" = "3:1"
@@ -3870,7 +4128,7 @@
                     "_D65C21B50FFE89EEAD1CFA63F919E420"
                     {
                     "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:System.Net.Http.dll"
@@ -3881,7 +4139,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -3941,7 +4199,7 @@
                     "_D80BA6A4EBBEABB65770822A808DFCAB"
                     {
                     "Name" = "8:DocumentFormat.OpenXml.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:DocumentFormat.OpenXml.dll"
@@ -3952,7 +4210,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -4212,7 +4470,7 @@
                     "_E883388753EBD0131A12A21C4EF00978"
                     {
                     "Name" = "8:ExcelNumberFormat.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:514"
                     }
                 }
             "SourcePath" = "8:ExcelNumberFormat.dll"
@@ -4223,7 +4481,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
@@ -4563,7 +4821,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_472848CA66FD45598BA284FAB654EF26"
             {
-            "DefaultLocation" = "8:C:\\Users\\PC\\Desktop"
+            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -4598,6 +4856,28 @@
                             "Condition" = "8:"
                             "Transitive" = "11:FALSE"
                             "Property" = "8:_8A9603ADB4C04B0C9ACFAA5FE9A33AEE"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_6419297B3C064F31A7DA745EE165ED27"
+                            {
+                            "Name" = "8:config"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_028E9EEA008045239E1586E0E36D0CAB"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_7378D1F2B94044C095C837A481A546FD"
+                            {
+                            "Name" = "8:Sound"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_0852CC98234E4BB28A6FADADFA4FEA26"
                                 "Folders"
                                 {
                                 }
@@ -4678,7 +4958,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ZenSt"
         "ProductCode" = "8:{8844239F-1EFC-458F-AC78-7891F1874CD1}"
-        "PackageCode" = "8:{6BD06B73-92AD-42AF-97AD-0E9E1B5E3119}"
+        "PackageCode" = "8:{DF7C96A9-D990-455B-909B-A6244256D68B}"
         "UpgradeCode" = "8:{D3A882B9-F05A-4F38-BC0E-84758D7D1311}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -4809,7 +5089,7 @@
             "Target" = "8:_1185C8583A35445BBF5F585DA4AA8734"
             "Folder" = "8:_68B03223BDD84121BD96AEC1B50344D2"
             "WorkingFolder" = "8:_472848CA66FD45598BA284FAB654EF26"
-            "Icon" = "8:"
+            "Icon" = "8:_DA18333309B14498A45AE8A6FD03A649"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCBE14D26B594335AF189E9B0E1A9850"
@@ -5235,7 +5515,7 @@
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
+            "Hidden" = "11:TRUE"
             "System" = "11:FALSE"
             "Permanent" = "11:FALSE"
             "SharedLegacy" = "11:FALSE"
