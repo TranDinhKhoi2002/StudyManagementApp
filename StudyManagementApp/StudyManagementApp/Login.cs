@@ -29,20 +29,25 @@ namespace StudyManagementApp
         }
 
         //Sử lại hàm show của form
-        public new void Show()
-        {
-            AlignControls_Non_Maximum();
-            AlignHomeAboutHelp();
-            LoadMau();
-            base.ShowDialog();
-        }
+        //public new void Show()
+        //{
+        //    AlignControls_Non_Maximum();
+        //    AlignHomeAboutHelp();
+        //    LoadMau();
+        //    base.ShowDialog();
+        //}
 
         //khi Login được load sẽ làm gì?
+        public void LoginLoad()
+        {
+            AlignControls_Non_Maximum();
+            AlignHomeAboutHelp();
+            LoadMau();
+        }
+
         private void Login_Load(object sender, EventArgs e)
         {
-            LoadMau();
-            AlignHomeAboutHelp();
-            AlignControls_Non_Maximum();
+            LoginLoad();
         }
 
         #region DoiTheme
@@ -97,7 +102,6 @@ namespace StudyManagementApp
         //Nhấn nút đăng nhập thì làm gì?
         private void SignInButton_Click(object sender, EventArgs e)
         {
-           
             try
             {
                 if (UsernameTextBox.Texts == "" || PasswordTextBox.Texts == "")
@@ -369,5 +373,6 @@ namespace StudyManagementApp
         }
         #endregion
 
+        
     }
 }

@@ -74,8 +74,8 @@ namespace StudyManagementApp
         //Log-out nha
         private void Logout_button_Click(object sender, EventArgs e)
         {
-            Owner.Dispose();
-            Program.globalLogin.Show();
+            Program.IsBackgroundRunningEnable = false;
+            Owner.Close();
         }
         
         //nút mode menu trái
@@ -128,9 +128,7 @@ namespace StudyManagementApp
 
             if (lasttheme != Program.Theme )
             {
-                Owner.Dispose();
-                this.Close();
-                Program.globalLogin.Show();
+                Owner.Close();
             }
 
             using (Microsoft.Win32.RegistryKey reg = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))

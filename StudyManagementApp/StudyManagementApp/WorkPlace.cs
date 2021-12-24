@@ -756,10 +756,12 @@ namespace StudyManagementApp
                 this.Hide();
                 e.Cancel = true;
             }
-            else
-            {
-                Program.globalLogin.Show();
-            }
+        }
+
+        private void WorkPlace_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Program.globalLogin.LoginLoad();
+            Program.globalLogin.Show();
         }
 
         private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -899,5 +901,7 @@ namespace StudyManagementApp
 
             export.ShowDialog();
         }
+
+        
     }
 }
