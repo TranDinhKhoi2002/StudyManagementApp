@@ -23,8 +23,10 @@ II) Mô tả
   - Export file: ứng dụng có hỗ trợ xuất file excel cho 3 định dạng là Flashcard, Todo List và Note để người dùng có thể tiện theo dõi lại sau
   - Calendar: giúp người dùng tiện quan sát ngày tháng năm và có thể truy xuất nhanh đến từng ngày để thêm công việc vào Todo List
   - Giải trí: ứng dụng được tích hợp một số trò chơi đơn giản như 2048, Flappy Bird giúp người dùng có thể thư giản trong thời gian rảnh hoặc bị stress do công việc
+
 III) Đối tượng: 
   - Bất kỳ ai cảm thấy khó khăn trong việc quản lý thời gian, công việc
+
 IV) Tính năng:
   - Đăng nhập
   - Tạo tài khoản, đổi mật khẩu, xác thực tài khoản
@@ -61,6 +63,7 @@ IV) Tính năng:
     + Mô tả vấn đề mà người dùng gặp phải
     + Đính kèm file hình ảnh về vấn đề
     + Chọn biểu tưởng cảm xúc
+
 V) Công nghệ:
   - Ngôn ngữ: C#
   - IDE: Visual Studio 2019
@@ -68,5 +71,6 @@ V) Công nghệ:
   - Công cụ quản lý sourcecode: GitHub
   - Công cụ quản lý quá trình làm việc: Notion
   - Khác: Github Desktop, Microsoft Teams, Facebook
+
 VI) Giảng viên hướng dẫn:
   * Thầy Nguyễn Tấn Toàn, giảng viên Khoa Công Nghệ Phần Mềm, trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh
