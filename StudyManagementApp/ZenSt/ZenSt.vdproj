@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_00132331B1DD4045A58A135F6B6B10FA"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_01368AE965522ED4D86E3823899A8EB5"
         "OwnerKey" = "8:_1185C8583A35445BBF5F585DA4AA8734"
         "MsmSig" = "8:_UNDEFINED"
@@ -255,6 +261,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_45A611C353794723A95A124468685C52"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_46E8A1F13A0944F58D5EB5F0C7F4F2C2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4C0A82B1EBD9450095BC0F82CD7676F4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -351,6 +369,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6E9D6774CB244E9F86FA215564556492"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_6EA8D026EFE648B58ABAAF56E5A39AF2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -423,6 +447,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_79292985DFB94529B25E2A787230B850"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_79A405CDE9EE4102B0578CC6D0CC4378"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -489,12 +519,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_847B94EA3386498F960C61CCD5159DA6"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_84A6004364AD4F818B31F8D90BE1ACE3"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -502,6 +526,12 @@
         "Entry"
         {
         "MsmKey" = "8:_84E2CA598AC34083851ED12308D9F8D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_85F35DE2BD1E4F83B3275E89E7CF9A46"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -669,12 +699,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_ADF151F764004DD8A78C21A5C0D018E0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_AFDF51F26E114F60AC236E27DE07873E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -705,7 +729,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B7EF4E33F1F84A12916176C20CDF3261"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_BA7ED7AD6FA744138F6DD6AAD30824A6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BAE56BB28D084290AC5005F37F477332"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -801,7 +837,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D1F3730196BE431DA628DB14E08E0DC3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D31E209EE9904DDBBA6DF329DED66DD8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D38F01ED1C074AEC95D1EE6AAF6117FF"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -850,6 +898,12 @@
         "Entry"
         {
         "MsmKey" = "8:_DCDDF9E13EF844D881AC7E17B6950775"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DD52050C80C849C7985F6556D57D07A2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1012,12 +1066,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D65C21B50FFE89EEAD1CFA63F919E420"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1185C8583A35445BBF5F585DA4AA8734"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1105,6 +1153,12 @@
         "OwnerKey" = "8:_37AB14627E36CB7ABFF27C6672B60476"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D65C21B50FFE89EEAD1CFA63F919E420"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1123,6 +1177,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -1139,6 +1209,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1184,6 +1262,26 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_00132331B1DD4045A58A135F6B6B10FA"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DRa2276.44526\\AGENCYR.TTF"
+            "TargetName" = "8:AGENCYR.TTF"
+            "Tag" = "8:"
+            "Folder" = "8:_92FAA26E5E8C47FD9CCE4E5468B5A9AE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
@@ -1992,6 +2090,46 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45A611C353794723A95A124468685C52"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DRa2276.44526\\AGENCYB.TTF"
+            "TargetName" = "8:AGENCYB.TTF"
+            "Tag" = "8:"
+            "Folder" = "8:_92FAA26E5E8C47FD9CCE4E5468B5A9AE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:5"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_46E8A1F13A0944F58D5EB5F0C7F4F2C2"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\DefaultPredicates.xml"
+            "TargetName" = "8:DefaultPredicates.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C0A82B1EBD9450095BC0F82CD7676F4"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\yourproblem.png"
@@ -2283,6 +2421,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6E9D6774CB244E9F86FA215564556492"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\GenderSubstitutions.xml"
+            "TargetName" = "8:GenderSubstitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6EA8D026EFE648B58ABAAF56E5A39AF2"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\home.png"
@@ -2509,6 +2667,26 @@
             "TargetName" = "8:22.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_79292985DFB94529B25E2A787230B850"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\Splitters.xml"
+            "TargetName" = "8:Splitters.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2776,26 +2954,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_847B94EA3386498F960C61CCD5159DA6"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DRa17072.31683\\AGENCYR.TTF"
-            "TargetName" = "8:AGENCYR.TTF"
-            "Tag" = "8:"
-            "Folder" = "8:_92FAA26E5E8C47FD9CCE4E5468B5A9AE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_84A6004364AD4F818B31F8D90BE1ACE3"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\31.png"
@@ -2822,6 +2980,26 @@
             "TargetName" = "8:pipe.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_85F35DE2BD1E4F83B3275E89E7CF9A46"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\Substitutions.xml"
+            "TargetName" = "8:Substitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3398,26 +3576,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ADF151F764004DD8A78C21A5C0D018E0"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DRa17072.31683\\AGENCYB.TTF"
-            "TargetName" = "8:AGENCYB.TTF"
-            "Tag" = "8:"
-            "Folder" = "8:_92FAA26E5E8C47FD9CCE4E5468B5A9AE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:5"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AFDF51F26E114F60AC236E27DE07873E"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\15_.png"
@@ -3518,12 +3676,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B7EF4E33F1F84A12916176C20CDF3261"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\Settings.xml"
+            "TargetName" = "8:Settings.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BA7ED7AD6FA744138F6DD6AAD30824A6"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\Background.png"
             "TargetName" = "8:Background.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BAE56BB28D084290AC5005F37F477332"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\bots.xml"
+            "TargetName" = "8:bots.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -3840,12 +4038,52 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D1F3730196BE431DA628DB14E08E0DC3"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\Person2Substitutions.xml"
+            "TargetName" = "8:Person2Substitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D31E209EE9904DDBBA6DF329DED66DD8"
             {
             "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Images\\03.png"
             "TargetName" = "8:03.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D38F01ED1C074AEC95D1EE6AAF6117FF"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\Sound\\Windows Background.wav"
+            "TargetName" = "8:Windows Background.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_6E0604C88ECF401F95C8E882A678F5A2"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -4008,6 +4246,26 @@
             "TargetName" = "8:Short_text.png"
             "Tag" = "8:"
             "Folder" = "8:_09AB96B109184BCFA4C05FC0231235F9"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DD52050C80C849C7985F6556D57D07A2"
+            {
+            "SourcePath" = "8:..\\StudyManagementApp\\Resources\\config\\PersonSubstitutions.xml"
+            "TargetName" = "8:PersonSubstitutions.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_7D44A56AFFB740528F07DA30414DB7C1"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -4563,7 +4821,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_472848CA66FD45598BA284FAB654EF26"
             {
-            "DefaultLocation" = "8:C:\\Users\\PC\\Desktop"
+            "DefaultLocation" = "8:C:\\Users\\PC\\Documents"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -4598,6 +4856,28 @@
                             "Condition" = "8:"
                             "Transitive" = "11:FALSE"
                             "Property" = "8:_8A9603ADB4C04B0C9ACFAA5FE9A33AEE"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_6E0604C88ECF401F95C8E882A678F5A2"
+                            {
+                            "Name" = "8:Sound"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_6D5B293584F44F0E992107E947FABEA9"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_7D44A56AFFB740528F07DA30414DB7C1"
+                            {
+                            "Name" = "8:config"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_82FA64011CCC40A5A85F943A0EE4C8A6"
                                 "Folders"
                                 {
                                 }
@@ -4678,7 +4958,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ZenSt"
         "ProductCode" = "8:{8844239F-1EFC-458F-AC78-7891F1874CD1}"
-        "PackageCode" = "8:{6BD06B73-92AD-42AF-97AD-0E9E1B5E3119}"
+        "PackageCode" = "8:{AF7F260E-5893-49B2-8F35-ABAFE53BD045}"
         "UpgradeCode" = "8:{D3A882B9-F05A-4F38-BC0E-84758D7D1311}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -4809,7 +5089,7 @@
             "Target" = "8:_1185C8583A35445BBF5F585DA4AA8734"
             "Folder" = "8:_68B03223BDD84121BD96AEC1B50344D2"
             "WorkingFolder" = "8:_472848CA66FD45598BA284FAB654EF26"
-            "Icon" = "8:"
+            "Icon" = "8:_DA18333309B14498A45AE8A6FD03A649"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DCBE14D26B594335AF189E9B0E1A9850"
@@ -4823,7 +5103,7 @@
             "Target" = "8:_1185C8583A35445BBF5F585DA4AA8734"
             "Folder" = "8:_027C00C416DD43B4BFD7BB5F5A46BBC5"
             "WorkingFolder" = "8:_472848CA66FD45598BA284FAB654EF26"
-            "Icon" = "8:"
+            "Icon" = "8:_DA18333309B14498A45AE8A6FD03A649"
             "Feature" = "8:"
             }
         }
